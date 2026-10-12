@@ -1,0 +1,40 @@
+{
+  "status": "static_checks_only",
+  "host": "small-01",
+  "integrity_errors": [],
+  "syntax_errors": [],
+  "checked_files": 506,
+  "runtime_status": "pending_implementation_and_review",
+  "execution_authorized": false,
+  "seed_freshness_certified": false,
+  "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+  "platform": "Linux-7.2.5-3-omarchy-x86_64-with-glibc2.44",
+  "architecture": "x86_64",
+  "cpu_count": 4,
+  "physical_memory_bytes": 8091009024,
+  "free_disk_bytes": 454648766464,
+  "docker_executable_present": true,
+  "dependencies": [
+    {
+      "distribution": "numpy",
+      "required": "2.5.3",
+      "installed": "2.5.3",
+      "ok": true
+    },
+    {
+      "distribution": "scipy",
+      "required": "1.18.1",
+      "installed": "1.18.1",
+      "ok": true
+    },
+    {
+      "distribution": "networkx",
+      "required": "3.7",
+      "installed": "3.7",
+      "ok": true
+    }
+  ],
+  "free_disk_reserve_met": true,
+  "working_memory_cap_bytes": 2147483648,
+  "hardware_note": "Presence/capacity only; no workload, benchmark, Docker daemon call, or available-RAM guarantee."
+}
