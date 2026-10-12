@@ -1,0 +1,170 @@
+[
+  {
+    "contrast": "model_x_query",
+    "terms": [
+      [
+        "simple_degree",
+        1
+      ],
+      [
+        "simple_fifo",
+        -1
+      ],
+      [
+        "terminal_degree",
+        -1
+      ],
+      [
+        "terminal_fifo",
+        1
+      ]
+    ],
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "estimate": {
+      "n": 8,
+      "mean": -0.010416666666666671,
+      "sd": 0.2536929621562629,
+      "ci95": [
+        -0.22250929069951703,
+        0.20167595736618366
+      ]
+    },
+    "paired_t_p": 0.9108066471785781,
+    "holm_p": 1.0
+  },
+  {
+    "contrast": "model_x_allocation",
+    "terms": [
+      [
+        "simple_blossom",
+        1
+      ],
+      [
+        "simple_fifo",
+        -1
+      ],
+      [
+        "terminal_blossom",
+        -1
+      ],
+      [
+        "terminal_fifo",
+        1
+      ]
+    ],
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "estimate": {
+      "n": 8,
+      "mean": -0.02083333333333334,
+      "sd": 0.38511490761004313,
+      "ci95": [
+        -0.3427974533268226,
+        0.30113078666015597
+      ]
+    },
+    "paired_t_p": 0.8827093925205997,
+    "holm_p": 1.0
+  },
+  {
+    "contrast": "query_x_allocation",
+    "terms": [
+      [
+        "terminal_degree_blossom",
+        1
+      ],
+      [
+        "terminal_degree",
+        -1
+      ],
+      [
+        "terminal_blossom",
+        -1
+      ],
+      [
+        "terminal_fifo",
+        1
+      ]
+    ],
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "estimate": {
+      "n": 8,
+      "mean": 0.07291666666666669,
+      "sd": 0.2246580293662574,
+      "ci95": [
+        -0.11490214609562655,
+        0.2607354794289599
+      ]
+    },
+    "paired_t_p": 0.38914609407922574,
+    "holm_p": 1.0
+  },
+  {
+    "contrast": "query_x_waiting",
+    "terms": [
+      [
+        "terminal_degree_batching",
+        1
+      ],
+      [
+        "terminal_degree_blossom",
+        -1
+      ],
+      [
+        "terminal_batching",
+        -1
+      ],
+      [
+        "terminal_blossom",
+        1
+      ]
+    ],
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "estimate": {
+      "n": 8,
+      "mean": -0.04166666666666669,
+      "sd": 0.20412414523193148,
+      "ci95": [
+        -0.21231872269034305,
+        0.12898538935700968
+      ]
+    },
+    "paired_t_p": 0.5817882345917439,
+    "holm_p": 1.0
+  }
+]

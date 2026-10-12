@@ -1,0 +1,4 @@
+# Installed offline-research versions; container needs networkx only for K.
+numpy==2.5.3
+scipy==1.18.1
+networkx==3.7

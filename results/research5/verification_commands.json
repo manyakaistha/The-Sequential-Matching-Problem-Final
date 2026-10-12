@@ -1,0 +1,20 @@
+[
+  {
+    "command": "python3 -m research5.verify_logs --workers 6",
+    "output": "results/research5/log_checks.log",
+    "status": "passed",
+    "episodes": 5160,
+    "calls": 619200
+  },
+  {
+    "command": "python3 -m research5.archive_results build",
+    "output": "results/research5/archive_checks.log",
+    "status": "passed",
+    "members": 15501
+  },
+  {
+    "command": "Single preliminary audit(first committed row) via research5.verify_logs.audit",
+    "status": "passed",
+    "note": "Cheap correctness smoke before full audit, no policy inference; separate CPU not included in known total."
+  }
+]

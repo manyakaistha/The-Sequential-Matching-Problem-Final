@@ -1,0 +1,20 @@
+{
+  "measured_cpu_components_seconds": {
+    "main_completed_child_tree": 16410.274014,
+    "verification_full_log_child_tree": 5830.726598,
+    "replay_known": 351.227469,
+    "archive_host_self": 75.50107899999999,
+    "archive_child_tree": 324.024364,
+    "production_host_self": 18.699811,
+    "production_host_children": 8.500757,
+    "initial_world_audit_body": 50.868995,
+    "statistics_audit_body": 0.18705099999999997,
+    "critic_body": 3.362432,
+    "secure_restoration_fixtures": 0.01792400000000001
+  },
+  "sum_known_cpu_seconds": 23073.390494,
+  "scope": "Known measured components, not exhaustive total. Main value is final completed run only; earlier interrupted child trees incompletely metered. Replay direct/audit body values omit startup. Full-log parent CPU, preliminary first-row check, tool overhead, Docker daemon/build/container CPU and some preparation/fixture CPU unknown; package gate separately metered. Child totals are not also added from inner tasks. Concurrent wall times cannot be summed as wall duration.",
+  "main_final_run_wall_seconds": 5658.240507458,
+  "log_audit_wall_seconds": 994.0079020839985,
+  "archive_build_verify_wall_seconds": 439.99568983300014
+}

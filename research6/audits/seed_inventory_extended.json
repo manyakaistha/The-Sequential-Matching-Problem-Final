@@ -1,0 +1,1455 @@
+{
+  "audit_kind": "extended_read_only_seed_source_and_archive_inventory",
+  "review_context": {
+    "requested_by": "/root",
+    "critic_review_read": "research6/reviews/startup_critic.md",
+    "scope": "Source/scratch and archive-member-name follow-up to startup critic; evidence collection only."
+  },
+  "search_method": {
+    "source_scan_roots": [
+      "AGENTS.md",
+      "organise.py",
+      "README.md",
+      "REPORT.md",
+      "PROBLEM_STATEMENT.md",
+      "research",
+      "research2",
+      "research3",
+      "research4",
+      "research5",
+      "research6",
+      "scratch",
+      "docs",
+      "examples"
+    ],
+    "eligible_extensions": [
+      ".csv",
+      ".ini",
+      ".json",
+      ".md",
+      ".py",
+      ".toml",
+      ".tsv",
+      ".txt",
+      ".yaml",
+      ".yml"
+    ],
+    "eligible_source_files_by_root": {
+      "AGENTS.md": {
+        "eligible_text_files": 1
+      },
+      "organise.py": {
+        "eligible_text_files": 1
+      },
+      "README.md": {
+        "eligible_text_files": 1
+      },
+      "REPORT.md": {
+        "eligible_text_files": 1
+      },
+      "PROBLEM_STATEMENT.md": {
+        "eligible_text_files": 1
+      },
+      "research": {
+        "eligible_text_files": 51
+      },
+      "research2": {
+        "eligible_text_files": 4
+      },
+      "research3": {
+        "eligible_text_files": 54
+      },
+      "research4": {
+        "eligible_text_files": 49
+      },
+      "research5": {
+        "eligible_text_files": 27
+      },
+      "research6": {
+        "eligible_text_files": 55
+      },
+      "scratch": {
+        "eligible_text_files": 29
+      },
+      "docs": {
+        "eligible_text_files": 7
+      },
+      "examples": {
+        "eligible_text_files": 4
+      }
+    },
+    "excluded_paths_and_reasons": [
+      "results/** source content omitted; only registrations/file metadata/trace basenames/archive member names scanned.",
+      "research6/audits/** omitted to avoid self-indexing.",
+      ".git/**, .venv/**, **/__pycache__/**, binary and nonlisted extensions omitted.",
+      "Nested trace gzip payloads and result JSON trace contents omitted."
+    ],
+    "result_filename_scan": "All results/** filenames were scanned without reading contents; regex _([0-9]{4,10})(?=[._-]|$).",
+    "R6_exact_literal_hits_in_scanned_source": {
+      "100001": [
+        {
+          "path": "research6/plan.json",
+          "line": 55,
+          "text": "\"training\": {\"first\": 100001, \"last\": 100120, \"policies_max\": 3, \"episodes_max\": 2160, \"conditional\": true},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 188,
+          "text": "| Training | 100001\u2013100120 | 120 \u00d7 6 \u00d7 3 = 2,160 episodes, conditional | Fit only admitted models; collect supported public histories |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 44,
+          "text": "\"training\": {\"first\": 100001, \"last\": 100120, \"policies_max\": 3, \"episodes_max\": 2160, \"conditional\": true},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 188,
+          "text": "| Training | 100001\u2013100120 | 120 \u00d7 6 \u00d7 3 = 2,160 episodes, conditional | Fit only admitted models; collect supported public histories |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "100120": [
+        {
+          "path": "research6/plan.json",
+          "line": 55,
+          "text": "\"training\": {\"first\": 100001, \"last\": 100120, \"policies_max\": 3, \"episodes_max\": 2160, \"conditional\": true},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 188,
+          "text": "| Training | 100001\u2013100120 | 120 \u00d7 6 \u00d7 3 = 2,160 episodes, conditional | Fit only admitted models; collect supported public histories |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 44,
+          "text": "\"training\": {\"first\": 100001, \"last\": 100120, \"policies_max\": 3, \"episodes_max\": 2160, \"conditional\": true},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 188,
+          "text": "| Training | 100001\u2013100120 | 120 \u00d7 6 \u00d7 3 = 2,160 episodes, conditional | Fit only admitted models; collect supported public histories |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "101001": [
+        {
+          "path": "research6/plan.json",
+          "line": 56,
+          "text": "\"validation\": {\"first\": 101001, \"last\": 101040, \"policies_max\": 3, \"episodes_max\": 720, \"conditional\": true},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 189,
+          "text": "| Validation | 101001\u2013101040 | 40 \u00d7 6 \u00d7 3 = 720 episodes, conditional | Lock model/calibration/hyperparameters before B |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 45,
+          "text": "\"validation\": {\"first\": 101001, \"last\": 101040, \"policies_max\": 3, \"episodes_max\": 720, \"conditional\": true},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 189,
+          "text": "| Validation | 101001\u2013101040 | 40 \u00d7 6 \u00d7 3 = 720 episodes, conditional | Lock model/calibration/hyperparameters before B |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "101040": [
+        {
+          "path": "research6/plan.json",
+          "line": 56,
+          "text": "\"validation\": {\"first\": 101001, \"last\": 101040, \"policies_max\": 3, \"episodes_max\": 720, \"conditional\": true},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 189,
+          "text": "| Validation | 101001\u2013101040 | 40 \u00d7 6 \u00d7 3 = 720 episodes, conditional | Lock model/calibration/hyperparameters before B |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 45,
+          "text": "\"validation\": {\"first\": 101001, \"last\": 101040, \"policies_max\": 3, \"episodes_max\": 720, \"conditional\": true},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 38,
+          "text": "- Training 100001\u2013100120, validation 101001\u2013101040."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 189,
+          "text": "| Validation | 101001\u2013101040 | 40 \u00d7 6 \u00d7 3 = 720 episodes, conditional | Lock model/calibration/hyperparameters before B |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "110001": [
+        {
+          "path": "research6/plan.json",
+          "line": 57,
+          "text": "\"B\": {\"first\": 110001, \"last\": 110040, \"policies_max\": 12, \"episodes_max\": 2880},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 190,
+          "text": "| B diverse screen | 110001\u2013110040 | 40 \u00d7 6 \u00d7 12 = 2,880 | Screen distinct mechanisms, not dozens of tuned variants |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 46,
+          "text": "\"B\": {\"first\": 110001, \"last\": 110040, \"policies_max\": 12, \"episodes_max\": 2880},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 190,
+          "text": "| B diverse screen | 110001\u2013110040 | 40 \u00d7 6 \u00d7 12 = 2,880 | Screen distinct mechanisms, not dozens of tuned variants |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "110040": [
+        {
+          "path": "research6/plan.json",
+          "line": 57,
+          "text": "\"B\": {\"first\": 110001, \"last\": 110040, \"policies_max\": 12, \"episodes_max\": 2880},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 190,
+          "text": "| B diverse screen | 110001\u2013110040 | 40 \u00d7 6 \u00d7 12 = 2,880 | Screen distinct mechanisms, not dozens of tuned variants |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 46,
+          "text": "\"B\": {\"first\": 110001, \"last\": 110040, \"policies_max\": 12, \"episodes_max\": 2880},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 190,
+          "text": "| B diverse screen | 110001\u2013110040 | 40 \u00d7 6 \u00d7 12 = 2,880 | Screen distinct mechanisms, not dozens of tuned variants |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "120001": [
+        {
+          "path": "research6/plan.json",
+          "line": 58,
+          "text": "\"C\": {\"first\": 120001, \"last\": 120060, \"policies_max\": 12, \"episodes_max\": 4320},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 191,
+          "text": "| C replication/ablations | 120001\u2013120060 | 60 \u00d7 6 \u00d7 at most 12 = 4,320 | Replicate at most two promoted mechanisms against their own controls |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 47,
+          "text": "\"C\": {\"first\": 120001, \"last\": 120060, \"policies_max\": 12, \"episodes_max\": 4320},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 191,
+          "text": "| C replication/ablations | 120001\u2013120060 | 60 \u00d7 6 \u00d7 at most 12 = 4,320 | Replicate at most two promoted mechanisms against their own controls |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "120060": [
+        {
+          "path": "research6/plan.json",
+          "line": 58,
+          "text": "\"C\": {\"first\": 120001, \"last\": 120060, \"policies_max\": 12, \"episodes_max\": 4320},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 191,
+          "text": "| C replication/ablations | 120001\u2013120060 | 60 \u00d7 6 \u00d7 at most 12 = 4,320 | Replicate at most two promoted mechanisms against their own controls |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 47,
+          "text": "\"C\": {\"first\": 120001, \"last\": 120060, \"policies_max\": 12, \"episodes_max\": 4320},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 191,
+          "text": "| C replication/ablations | 120001\u2013120060 | 60 \u00d7 6 \u00d7 at most 12 = 4,320 | Replicate at most two promoted mechanisms against their own controls |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "130001": [
+        {
+          "path": "research6/plan.json",
+          "line": 59,
+          "text": "\"D\": {\"first\": 130001, \"last\": 130080, \"policies_max\": 4, \"episodes_max\": 1920},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 192,
+          "text": "| D independent selection | 130001\u2013130080 | 80 \u00d7 6 \u00d7 at most 4 = 1,920 | Decide whether any frozen candidate merits confirmation |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 48,
+          "text": "\"D\": {\"first\": 130001, \"last\": 130080, \"policies_max\": 4, \"episodes_max\": 1920},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 192,
+          "text": "| D independent selection | 130001\u2013130080 | 80 \u00d7 6 \u00d7 at most 4 = 1,920 | Decide whether any frozen candidate merits confirmation |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "130080": [
+        {
+          "path": "research6/plan.json",
+          "line": 59,
+          "text": "\"D\": {\"first\": 130001, \"last\": 130080, \"policies_max\": 4, \"episodes_max\": 1920},"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 192,
+          "text": "| D independent selection | 130001\u2013130080 | 80 \u00d7 6 \u00d7 at most 4 = 1,920 | Decide whether any frozen candidate merits confirmation |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 48,
+          "text": "\"D\": {\"first\": 130001, \"last\": 130080, \"policies_max\": 4, \"episodes_max\": 1920},"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 39,
+          "text": "- B 110001\u2013110040; C 120001\u2013120060; D 130001\u2013130080."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 192,
+          "text": "| D independent selection | 130001\u2013130080 | 80 \u00d7 6 \u00d7 at most 4 = 1,920 | Decide whether any frozen candidate merits confirmation |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "140001": [
+        {
+          "path": "research6/plan.json",
+          "line": 60,
+          "text": "\"E_reserve\": {\"first\": 140001, \"last\": 142000, \"policies_max\": 2, \"used_n_max\": 900, \"illustrative_n\": 447, \"illustrative_episodes\": 5364}"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 40,
+          "text": "- E 140001\u2013142000 reserve, use only the first registered n (at most 900)."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 193,
+          "text": "| E confirmation | First fixed n of 140001\u2013142000 reserve | 12n; illustrative n=447 gives 5,364 | Test exactly one frozen candidate against shipped greedy |"
+        },
+        {
+          "path": "research6/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 49,
+          "text": "\"E_reserve\": {\"first\": 140001, \"last\": 142000, \"policies_max\": 2, \"used_n_max\": 900, \"illustrative_n\": 447, \"illustrative_episodes\": 5364}"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 40,
+          "text": "- E 140001\u2013142000 reserve, use only the first registered n (at most 900)."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 193,
+          "text": "| E confirmation | First fixed n of 140001\u2013142000 reserve | 12n; illustrative n=447 gives 5,364 | Test exactly one frozen candidate against shipped greedy |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md",
+          "line": 99,
+          "text": "The provisional numerical partitions training100001\u2013100120, validation101001\u2013101040, B110001\u2013110040, C120001\u2013120060, D130001\u2013130080 and E140001onward with2000reserved clusters must remain explicitly unverified until the new inventory checks them. Reserve does "
+        }
+      ],
+      "142000": [
+        {
+          "path": "research6/plan.json",
+          "line": 60,
+          "text": "\"E_reserve\": {\"first\": 140001, \"last\": 142000, \"policies_max\": 2, \"used_n_max\": 900, \"illustrative_n\": 447, \"illustrative_episodes\": 5364}"
+        },
+        {
+          "path": "research6/EXPERIMENT_REGISTRY.md",
+          "line": 40,
+          "text": "- E 140001\u2013142000 reserve, use only the first registered n (at most 900)."
+        },
+        {
+          "path": "research6/PLAN.md",
+          "line": 193,
+          "text": "| E confirmation | First fixed n of 140001\u2013142000 reserve | 12n; illustrative n=447 gives 5,364 | Test exactly one frozen candidate against shipped greedy |"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+          "line": 49,
+          "text": "\"E_reserve\": {\"first\": 140001, \"last\": 142000, \"policies_max\": 2, \"used_n_max\": 900, \"illustrative_n\": 447, \"illustrative_episodes\": 5364}"
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md",
+          "line": 40,
+          "text": "- E 140001\u2013142000 reserve, use only the first registered n (at most 900)."
+        },
+        {
+          "path": "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md",
+          "line": 193,
+          "text": "| E confirmation | First fixed n of 140001\u2013142000 reserve | 12n; illustrative n=447 gives 5,364 | Test exactly one frozen candidate against shipped greedy |"
+        }
+      ]
+    },
+    "R6_literal_interpretation": "Proposed R6 tokens appear in current R6 planning and retained R6 planning revisions only; no exact IDs in scanned non-R6 source/scratch/docs. Some short digit substring hits are unrelated, e.g. cgroup value 100000.",
+    "broad_seed_search": "Seed/range declarations, range(...) calls, default_rng/Random and seed arithmetic were searched across source roots. Earlier rg pass returned 1,316 matching lines; this is a broad reference scan, not a semantic parser."
+  },
+  "prior_range_evidence": [
+    {
+      "label": "round2 declared development",
+      "range": [
+        4001,
+        4040
+      ],
+      "status": "declared/excluded",
+      "evidence": [
+        "research2/EXPERIMENT_REGISTRY.md",
+        "results/research3/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "round2 declared selection",
+      "range": [
+        5001,
+        5020
+      ],
+      "status": "declared/excluded",
+      "evidence": [
+        "research2/EXPERIMENT_REGISTRY.md",
+        "results/research3/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "round2 declared confirmation",
+      "range": [
+        6001,
+        6040
+      ],
+      "status": "declared/excluded; prior report says used",
+      "evidence": [
+        "research2/EXPERIMENT_REGISTRY.md",
+        "research2/FINAL_REPORT.md",
+        "results/research3/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "R3 screen",
+      "range": [
+        70001,
+        70012
+      ],
+      "status": "observed; 936 archive members",
+      "evidence": [
+        "results/research3/screen.json",
+        "results/research3/screen_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R3 focus",
+      "range": [
+        71001,
+        71032
+      ],
+      "status": "observed; 1344 archive members",
+      "evidence": [
+        "results/research3/focus.json",
+        "results/research3/focus_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R3 selection",
+      "range": [
+        72001,
+        72020
+      ],
+      "status": "observed; 480 archive members",
+      "evidence": [
+        "results/research3/selection.json",
+        "results/research3/selection_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R3 confirmation",
+      "range": [
+        73001,
+        73040
+      ],
+      "status": "complete plus preserved 396-row interrupted snapshot; 480 archive members",
+      "evidence": [
+        "results/research3/confirmation.json",
+        "results/research3/confirmation_interrupted.json",
+        "results/research3/confirmation_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R4 screen",
+      "range": [
+        80001,
+        80012
+      ],
+      "status": "observed; 576 archive members",
+      "evidence": [
+        "results/research4/screen.json",
+        "results/research4/screen_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R4 focus",
+      "range": [
+        81001,
+        81032
+      ],
+      "status": "observed; 768 archive members",
+      "evidence": [
+        "results/research4/focus.json",
+        "results/research4/focus_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R4 selection",
+      "range": [
+        82001,
+        82020
+      ],
+      "status": "observed; 360 archive members",
+      "evidence": [
+        "results/research4/selection.json",
+        "results/research4/selection_traces.tar.gz"
+      ]
+    },
+    {
+      "label": "R4 confirmation actual",
+      "range": [
+        83001,
+        83056
+      ],
+      "status": "observed within full preserved reserve 83001\u201383160; 672 archive members",
+      "evidence": [
+        "results/research4/confirmation.json",
+        "results/research4/confirmation_traces.tar.gz",
+        "results/research4/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "R4 unused reserve tail",
+      "range": [
+        83057,
+        83160
+      ],
+      "status": "reserved/exclude conservatively; no run claim",
+      "evidence": [
+        "results/research4/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "R5 fixed confirmation",
+      "range": [
+        90001,
+        90430
+      ],
+      "status": "complete 5160-row grid, plus 108/118-row interrupted snapshots; archives cover range",
+      "evidence": [
+        "results/research5/design.json",
+        "results/research5/confirmation.json",
+        "results/research5/interrupted_runs/20261010T170752Z/confirmation.json",
+        "results/research5/interrupted_runs/20261010T171453Z/confirmation.json",
+        "results/research5/raw_full_logs.tar",
+        "results/research5/raw_population_control.tar.gz"
+      ]
+    },
+    {
+      "label": "old R3 proposal",
+      "range": [
+        10001,
+        10040
+      ],
+      "status": "proposed reserve; 5-digit IDs, distinct from R6 100001",
+      "evidence": [
+        "results/research3/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "old R3 proposed ranges",
+      "ranges": [
+        [
+          11001,
+          11012
+        ],
+        [
+          12001,
+          12032
+        ],
+        [
+          13001,
+          13020
+        ],
+        [
+          14001,
+          14200
+        ]
+      ],
+      "status": "proposed and conservatively excluded; 5-digit IDs distinct from R6",
+      "evidence": [
+        "results/research3/seed_inventory.json"
+      ]
+    },
+    {
+      "label": "inherited guard",
+      "range": [
+        1,
+        10000
+      ],
+      "status": "reserved/excluded",
+      "evidence": [
+        "results/research3/seed_inventory.json",
+        "results/research4/seed_inventory.json"
+      ]
+    }
+  ],
+  "derived_or_random_seed_namespaces": [
+    {
+      "path": "organise.py",
+      "line": 22,
+      "sha256": "da9d6b3a197f1ff882b68d84a7c4491d92dfbecf186f3275ff2c855ba1aa6a3e",
+      "mechanism": "secrets.randbits(63) for 120 private worlds, duplicate retries; requires workspace outside repository. No private workspace inventory in this task; cannot exclude unknown exposure."
+    },
+    {
+      "path": "scratch/eda_missingness.py",
+      "line": 206,
+      "sha256": "ae693424f99fba7e77a9d2d8ca1336f30eb30e97f63e107e2fce3e1645222bd7",
+      "mechanism": "20261000 + pool_idx; old inventory blocks 20261000\u201320261009."
+    },
+    {
+      "path": "research3/inherited_sources/kit.py",
+      "line": 35,
+      "sha256": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "mechanism": "Caller-supplied seed; no internally allocated world-seed range."
+    },
+    {
+      "path": "research3/recovered_frozen/policy.py",
+      "line": 24,
+      "sha256": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+      "mechanism": "random.Random(17 + day) is policy tie ordering, not simulator world seed."
+    },
+    {
+      "path": "research3/ablations.py",
+      "line": 19,
+      "sha256": "854e5d4d5e0156fbcc1a72c3faa50a51880c7abad402bb79f3da217a73d5c070",
+      "mechanism": "default_rng(90210) used for bootstrap draws."
+    },
+    {
+      "path": "research5/analyze.py",
+      "line": 33,
+      "sha256": "2edda9dd5b2e554ec35c8a6b8b9243542304adb16d89f773bdd46491ffcdc090",
+      "mechanism": "default_rng(90210) used for bootstrap draws."
+    }
+  ],
+  "unbounded_source_interfaces": [
+    "Simulator generation accepts caller-supplied integer seeds; source inspection cannot recover shell/external/deleted invocations.",
+    "Private organizer outputs live outside repository and were not searched."
+  ],
+  "result_trace_filename_seed_inventory": {
+    "extended/confirmation_traces": {
+      "matching_files": 480,
+      "distinct_seed_suffixes": 40,
+      "minimum": 3001,
+      "maximum": 3040
+    },
+    "extended/development_traces": {
+      "matching_files": 1056,
+      "distinct_seed_suffixes": 8,
+      "minimum": 1001,
+      "maximum": 1008
+    },
+    "extended/guard_regression_traces": {
+      "matching_files": 132,
+      "distinct_seed_suffixes": 1,
+      "minimum": 1001,
+      "maximum": 1001
+    },
+    "extended/smoke_v1_traces": {
+      "matching_files": 4,
+      "distinct_seed_suffixes": 1,
+      "minimum": 1001,
+      "maximum": 1001
+    },
+    "extended/subprocess_traces": {
+      "matching_files": 12,
+      "distinct_seed_suffixes": 1,
+      "minimum": 1001,
+      "maximum": 1001
+    },
+    "research3/confirmation_traces": {
+      "matching_files": 480,
+      "distinct_seed_suffixes": 40,
+      "minimum": 73001,
+      "maximum": 73040
+    },
+    "research3/focus_traces": {
+      "matching_files": 1344,
+      "distinct_seed_suffixes": 32,
+      "minimum": 71001,
+      "maximum": 71032
+    },
+    "research3/screen_traces": {
+      "matching_files": 936,
+      "distinct_seed_suffixes": 12,
+      "minimum": 70001,
+      "maximum": 70012
+    },
+    "research3/selection_traces": {
+      "matching_files": 480,
+      "distinct_seed_suffixes": 20,
+      "minimum": 72001,
+      "maximum": 72020
+    },
+    "research4/confirmation_traces": {
+      "matching_files": 672,
+      "distinct_seed_suffixes": 56,
+      "minimum": 83001,
+      "maximum": 83056
+    },
+    "research4/focus_traces": {
+      "matching_files": 768,
+      "distinct_seed_suffixes": 32,
+      "minimum": 81001,
+      "maximum": 81032
+    },
+    "research4/screen_traces": {
+      "matching_files": 576,
+      "distinct_seed_suffixes": 12,
+      "minimum": 80001,
+      "maximum": 80012
+    },
+    "research4/selection_traces": {
+      "matching_files": 360,
+      "distinct_seed_suffixes": 20,
+      "minimum": 82001,
+      "maximum": 82020
+    },
+    "research5/confirmation_traces": {
+      "matching_files": 5042,
+      "distinct_seed_suffixes": 421,
+      "minimum": 90010,
+      "maximum": 90430
+    },
+    "research5/confirmation_traces_full": {
+      "matching_files": 10084,
+      "distinct_seed_suffixes": 421,
+      "minimum": 90010,
+      "maximum": 90430
+    },
+    "research5/interrupted_runs/20261010T170752Z/confirmation_traces": {
+      "matching_files": 111,
+      "distinct_seed_suffixes": 10,
+      "minimum": 90001,
+      "maximum": 90010
+    },
+    "research5/interrupted_runs/20261010T170752Z/confirmation_traces_full": {
+      "matching_files": 230,
+      "distinct_seed_suffixes": 10,
+      "minimum": 90001,
+      "maximum": 90010
+    },
+    "research5/interrupted_runs/20261010T171453Z/confirmation_traces": {
+      "matching_files": 10,
+      "distinct_seed_suffixes": 1,
+      "minimum": 90010,
+      "maximum": 90010
+    },
+    "research5/interrupted_runs/20261010T171453Z/confirmation_traces_full": {
+      "matching_files": 24,
+      "distinct_seed_suffixes": 1,
+      "minimum": 90010,
+      "maximum": 90010
+    }
+  },
+  "archive_streaming": {
+    "method": "All 19 repository .tar/.tar.gz/.tgz files were traversed in stream mode by member headers, with no member restored. Only small members with exact registration/index/manifest basenames were eligible for reading; none found. Outer tar.gz decoded as needed for member enumeration; nested trace gzip members never opened.",
+    "archives": [
+      {
+        "path": "results/research5/raw_full_logs.tar",
+        "archive_bytes": 28249620480,
+        "member_headers_seen": 10338,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 430,
+          "min": 90001,
+          "max": 90430
+        },
+        "seed_filename_examples": [
+          "results/research5/confirmation_traces_full/greedy_cold_start_90011.invocations.jsonl.gz",
+          "results/research5/confirmation_traces_full/greedy_cold_start_90011.privileged.jsonl.gz",
+          "results/research5/confirmation_traces_full/greedy_cold_start_90012.invocations.jsonl.gz",
+          "results/research5/confirmation_traces_full/greedy_cold_start_90012.privileged.jsonl.gz"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 9.012898,
+        "seed_extraction_note": "numeric token before .invocations/.privileged; member names only"
+      },
+      {
+        "path": "results/research5/raw_greedy.tar.gz",
+        "archive_bytes": 6351568515,
+        "member_headers_seen": 830,
+        "member_listing_status": "partial_cpu_stop",
+        "seed_tokens_from_filenames": {
+          "count": 420,
+          "min": 90011,
+          "max": 90430
+        },
+        "seed_filename_examples": [
+          "results/research5/confirmation_traces/greedy_cold_start_90011.json",
+          "results/research5/confirmation_traces/greedy_cold_start_90012.json",
+          "results/research5/confirmation_traces/greedy_cold_start_90013.json",
+          "results/research5/confirmation_traces/greedy_cold_start_90014.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 12.006534000000002,
+        "scope_limit": "Member-name scan stopped at per-archive 12 CPU-second cap; remaining archive member names unknown."
+      },
+      {
+        "path": "results/research4/confirmation_traces.tar.gz",
+        "archive_bytes": 398717114,
+        "member_headers_seen": 672,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 56,
+          "min": 83001,
+          "max": 83056
+        },
+        "seed_filename_examples": [
+          "results/research4/confirmation_traces/greedy_cold_start_83001.json",
+          "results/research4/confirmation_traces/greedy_cold_start_83002.json",
+          "results/research4/confirmation_traces/greedy_cold_start_83003.json",
+          "results/research4/confirmation_traces/greedy_cold_start_83004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 3.351205
+      },
+      {
+        "path": "results/research4/focus_traces.tar.gz",
+        "archive_bytes": 234727768,
+        "member_headers_seen": 768,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 32,
+          "min": 81001,
+          "max": 81032
+        },
+        "seed_filename_examples": [
+          "results/research4/focus_traces/goal_surplus_control_cold_start_81001.json",
+          "results/research4/focus_traces/goal_surplus_control_cold_start_81002.json",
+          "results/research4/focus_traces/goal_surplus_control_cold_start_81003.json",
+          "results/research4/focus_traces/goal_surplus_control_cold_start_81004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 2.0771599999999992
+      },
+      {
+        "path": "results/research4/selection_traces.tar.gz",
+        "archive_bytes": 142829270,
+        "member_headers_seen": 360,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 20,
+          "min": 82001,
+          "max": 82020
+        },
+        "seed_filename_examples": [
+          "results/research4/selection_traces/greedy_cold_start_82001.json",
+          "results/research4/selection_traces/greedy_cold_start_82002.json",
+          "results/research4/selection_traces/greedy_cold_start_82003.json",
+          "results/research4/selection_traces/greedy_cold_start_82004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 1.2189389999999989
+      },
+      {
+        "path": "results/research5/raw_population_control.tar.gz",
+        "archive_bytes": 96050915,
+        "member_headers_seen": 2581,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 430,
+          "min": 90001,
+          "max": 90430
+        },
+        "seed_filename_examples": [
+          "results/research5/confirmation_traces/population_control_cold_start_90011.json",
+          "results/research5/confirmation_traces/population_control_cold_start_90012.json",
+          "results/research5/confirmation_traces/population_control_cold_start_90013.json",
+          "results/research5/confirmation_traces/population_control_cold_start_90014.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.6149200000000015
+      },
+      {
+        "path": "results/research4/screen_traces.tar.gz",
+        "archive_bytes": 95387223,
+        "member_headers_seen": 576,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 12,
+          "min": 80001,
+          "max": 80012
+        },
+        "seed_filename_examples": [
+          "results/research4/screen_traces/acceptance_shrinkage_cold_start_80001.json",
+          "results/research4/screen_traces/acceptance_shrinkage_cold_start_80002.json",
+          "results/research4/screen_traces/acceptance_shrinkage_cold_start_80003.json",
+          "results/research4/screen_traces/acceptance_shrinkage_cold_start_80004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.8334949999999992
+      },
+      {
+        "path": "results/extended/development_traces.tar.gz",
+        "archive_bytes": 46561603,
+        "member_headers_seen": 1056,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 8,
+          "min": 1001,
+          "max": 1008
+        },
+        "seed_filename_examples": [
+          "results/extended/development_traces/fixed_regime_fifo_cold_start_1001.json",
+          "results/extended/development_traces/fixed_regime_fifo_cold_start_1002.json",
+          "results/extended/development_traces/fixed_regime_fifo_cold_start_1003.json",
+          "results/extended/development_traces/fixed_regime_fifo_cold_start_1004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.43252499999999827
+      },
+      {
+        "path": "results/research3/focus_traces.tar.gz",
+        "archive_bytes": 37180083,
+        "member_headers_seen": 1344,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 32,
+          "min": 71001,
+          "max": 71032
+        },
+        "seed_filename_examples": [
+          "results/research3/focus_traces/clean_cold_start_71001.json",
+          "results/research3/focus_traces/clean_cold_start_71002.json",
+          "results/research3/focus_traces/clean_cold_start_71003.json",
+          "results/research3/focus_traces/clean_cold_start_71004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.3204439999999984
+      },
+      {
+        "path": "results/research3/screen_traces.tar.gz",
+        "archive_bytes": 25730373,
+        "member_headers_seen": 936,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 12,
+          "min": 70001,
+          "max": 70012
+        },
+        "seed_filename_examples": [
+          "results/research3/screen_traces/canonical_cold_start_70001.json",
+          "results/research3/screen_traces/canonical_cold_start_70002.json",
+          "results/research3/screen_traces/canonical_cold_start_70003.json",
+          "results/research3/screen_traces/canonical_cold_start_70004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.21729900000000058
+      },
+      {
+        "path": "results/extended/confirmation_traces.tar.gz",
+        "archive_bytes": 18404712,
+        "member_headers_seen": 480,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 40,
+          "min": 3001,
+          "max": 3040
+        },
+        "seed_filename_examples": [
+          "results/extended/confirmation_traces/greedy_cold_start_3001.json",
+          "results/extended/confirmation_traces/greedy_cold_start_3002.json",
+          "results/extended/confirmation_traces/greedy_cold_start_3003.json",
+          "results/extended/confirmation_traces/greedy_cold_start_3004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.1828150000000015
+      },
+      {
+        "path": "results/research3/confirmation_traces.tar.gz",
+        "archive_bytes": 14314419,
+        "member_headers_seen": 480,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 40,
+          "min": 73001,
+          "max": 73040
+        },
+        "seed_filename_examples": [
+          "results/research3/confirmation_traces/clean_cold_start_73001.json",
+          "results/research3/confirmation_traces/clean_cold_start_73002.json",
+          "results/research3/confirmation_traces/clean_cold_start_73003.json",
+          "results/research3/confirmation_traces/clean_cold_start_73004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.12353200000000086
+      },
+      {
+        "path": "results/research3/selection_traces.tar.gz",
+        "archive_bytes": 12779273,
+        "member_headers_seen": 480,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 20,
+          "min": 72001,
+          "max": 72020
+        },
+        "seed_filename_examples": [
+          "results/research3/selection_traces/clean_cold_start_72001.json",
+          "results/research3/selection_traces/clean_cold_start_72002.json",
+          "results/research3/selection_traces/clean_cold_start_72003.json",
+          "results/research3/selection_traces/clean_cold_start_72004.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.11435399999999873
+      },
+      {
+        "path": "results/extended/guard_regression_traces.tar.gz",
+        "archive_bytes": 6992143,
+        "member_headers_seen": 132,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 1,
+          "min": 1001,
+          "max": 1001
+        },
+        "seed_filename_examples": [
+          "results/extended/guard_regression_traces/fixed_regime_fifo_cold_start_1001.json",
+          "results/extended/guard_regression_traces/fixed_regime_fifo_delayed_1001.json",
+          "results/extended/guard_regression_traces/fixed_regime_fifo_development_1001.json",
+          "results/extended/guard_regression_traces/fixed_regime_fifo_drift_1001.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.06074999999999875
+      },
+      {
+        "path": "results/extended/subprocess_traces.tar.gz",
+        "archive_bytes": 543248,
+        "member_headers_seen": 12,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 1,
+          "min": 1001,
+          "max": 1001
+        },
+        "seed_filename_examples": [
+          "results/extended/subprocess_traces/greedy_cold_start_1001.json",
+          "results/extended/subprocess_traces/greedy_delayed_1001.json",
+          "results/extended/subprocess_traces/greedy_development_1001.json",
+          "results/extended/subprocess_traces/greedy_drift_1001.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.00525299999999973
+      },
+      {
+        "path": "results/research3/smoke_all_traces.tar.gz",
+        "archive_bytes": 526198,
+        "member_headers_seen": 13,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 1,
+          "min": 101,
+          "max": 101
+        },
+        "seed_filename_examples": [
+          "results/research3/smoke_all_traces/canonical_development_101.json",
+          "results/research3/smoke_all_traces/clean_development_101.json",
+          "results/research3/smoke_all_traces/four_queries_development_101.json",
+          "results/research3/smoke_all_traces/goal_development_101.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.004660000000001219
+      },
+      {
+        "path": "results/research4/smoke_traces.tar.gz",
+        "archive_bytes": 251156,
+        "member_headers_seen": 8,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 1,
+          "min": 101,
+          "max": 101
+        },
+        "seed_filename_examples": [
+          "results/research4/smoke_traces/acceptance_shrinkage_development_101.json",
+          "results/research4/smoke_traces/coordinated_goal_development_101.json",
+          "results/research4/smoke_traces/goal_surplus_control_development_101.json",
+          "results/research4/smoke_traces/greedy_development_101.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.003161999999999665
+      },
+      {
+        "path": "results/extended/smoke_v1_traces.tar.gz",
+        "archive_bytes": 228295,
+        "member_headers_seen": 4,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 1,
+          "min": 1001,
+          "max": 1001
+        },
+        "seed_filename_examples": [
+          "results/extended/smoke_v1_traces/greedy_development_1001.json",
+          "results/extended/smoke_v1_traces/simple_fifo_development_1001.json",
+          "results/extended/smoke_v1_traces/terminal_fifo_development_1001.json",
+          "results/extended/smoke_v1_traces/terminal_two_query_development_1001.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.0023900000000018906
+      },
+      {
+        "path": "results/research3/smoke_traces.tar.gz",
+        "archive_bytes": 41884,
+        "member_headers_seen": 1,
+        "member_listing_status": "listed_to_end",
+        "seed_tokens_from_filenames": {
+          "count": 1,
+          "min": 101,
+          "max": 101
+        },
+        "seed_filename_examples": [
+          "results/research3/smoke_traces/greedy_development_101.json"
+        ],
+        "exact_registration_metadata_members_read": 0,
+        "stream_cpu_seconds": 0.0005220000000001335
+      }
+    ],
+    "raw_full_logs_corrected_seed_parse": {
+      "path": "results/research5/raw_full_logs.tar",
+      "members_seen": 10338,
+      "distinct_seeds": 430,
+      "min_seed": 90001,
+      "max_seed": 90430,
+      "status": "listed_to_end",
+      "cpu_seconds": 8.519069,
+      "extraction": "numeric token before .invocations/.privileged; member names only"
+    },
+    "gaps": [
+      "results/research5/raw_greedy.tar.gz listing stopped at 12 CPU seconds after 830 member headers; 420 observed suffixes span 90011\u201390430; remainder unknown.",
+      "Filename seed parsing is convention-specific and does not check payload agreement.",
+      "Trace payload content not inspected; incomplete/archive-only orphan attempts may therefore contain unindexed metadata."
+    ]
+  },
+  "r6_recheck": {
+    "proposed_ranges": [
+      [
+        100001,
+        100120
+      ],
+      [
+        101001,
+        101040
+      ],
+      [
+        110001,
+        110040
+      ],
+      [
+        120001,
+        120060
+      ],
+      [
+        130001,
+        130080
+      ],
+      [
+        140001,
+        142000
+      ]
+    ],
+    "non_r6_exact_literal_hits": {},
+    "archive_seed_max": 90430,
+    "result_filename_seed_max": 90430,
+    "interpretation": "No proposed R6 ID appears in scanned non-R6 source/scratch/docs or scanned archive member seed filenames. This is incomplete repository-visible evidence, not freshness certification; private/external use, partial archive remainder, payloads and deleted files remain unknown."
+  },
+  "hashes_of_seed_evidence_sources": [
+    {
+      "path": "research/EXPERIMENT_REGISTRY.md",
+      "sha256": "f28b4454f2ed748471bfec42ad6eb144173c0a9674918f2ef6471f8b551a39bd"
+    },
+    {
+      "path": "research/EXTENDED_EMPIRICAL.md",
+      "sha256": "706329e431bdf302eb75edf1882d17102328193ac2a8d5c6bfd275838ed58164"
+    },
+    {
+      "path": "research2/EXPERIMENT_REGISTRY.md",
+      "sha256": "9fdb16773038c0232ea443f42afbc9ea8b343fdaf366264ceae9ab2e76bf2e7c"
+    },
+    {
+      "path": "research2/FINAL_REPORT.md",
+      "sha256": "432a07bc631fd741a95ec886a8e55bb2acbfdddd844ca9114c4ef63c44050ee4"
+    },
+    {
+      "path": "research3/EXPERIMENT_REGISTRY.md",
+      "sha256": "b28ad5fd8fe3ab9112b5a46d00d7458fe77030ce59e5c86af190d6a84db29510"
+    },
+    {
+      "path": "research3/stages.py",
+      "sha256": "1e9a0c70964a68927b6fec02587bff10a12c4f0fb70e9d7337cf3068530a9c40"
+    },
+    {
+      "path": "research3/seed_inventory.py",
+      "sha256": "9040d5a876fe5aec1221e2487e3aae18694c8a6e84bb67ccf1a507a19f92ad08"
+    },
+    {
+      "path": "research4/EXPERIMENT_REGISTRY.md",
+      "sha256": "b39f07cc7a2c87f680bbefb676d1b56125c56d9b0b5694269b97a6ec856048ea"
+    },
+    {
+      "path": "research5/EXPERIMENT_REGISTRY.md",
+      "sha256": "d90f3e2020edf0eabe70bccf0faed52cde22aac0df877a46066602e0e1c5d83f"
+    },
+    {
+      "path": "research5/prepare.py",
+      "sha256": "c10d6b4b6e5053bacc298b6ab4ad0941fa55abe427893bd1959a430884f85e86"
+    },
+    {
+      "path": "research6/PLAN.md",
+      "sha256": "8f84f316efdf0dbb3d7b828fa5100e9d7aad73e54898fa683f1be7993a9f0d20"
+    },
+    {
+      "path": "research6/EXPERIMENT_REGISTRY.md",
+      "sha256": "32bc818de826b4f74d458a371abd3f4b1cd215d988a041bea1d0a42f14d77441"
+    },
+    {
+      "path": "research6/plan.json",
+      "sha256": "d190f02595f8432ab5ff8b11aeb58f62637d8313df15959fa2d3c9c15e036498"
+    },
+    {
+      "path": "research6/planning_revisions/2026-10-11-before-model-routing/plan.json",
+      "sha256": "6c590db7fca195af43088da534fee7f9c9fdae3dcc0dda04090cb852f7baad01"
+    },
+    {
+      "path": "organise.py",
+      "sha256": "da9d6b3a197f1ff882b68d84a7c4491d92dfbecf186f3275ff2c855ba1aa6a3e"
+    },
+    {
+      "path": "scratch/eda_missingness.py",
+      "sha256": "ae693424f99fba7e77a9d2d8ca1336f30eb30e97f63e107e2fce3e1645222bd7"
+    },
+    {
+      "path": "results/research3/seed_inventory.json",
+      "sha256": "4b79789f23df5448258ae57f99c3df1d187fb52f04df3647ccfac7ba93976a96"
+    },
+    {
+      "path": "results/research4/seed_inventory.json",
+      "sha256": "5506d7dd88aac103a63fef12cfa419add0293b9ca78708817bce3565349dcf9e"
+    },
+    {
+      "path": "results/research5/design.json",
+      "sha256": "56a8eb63200c069d3a64185c716ab62986d61f423a762e675d16f22f389663dc"
+    }
+  ],
+  "compute_scope": {
+    "archive_stream_cpu_seconds": 36.811148,
+    "maximum_requested_cpu_seconds": 120,
+    "worlds_generated": false,
+    "episodes_executed": false,
+    "fitting_performed": false,
+    "trace_payload_expansion": false
+  }
+}

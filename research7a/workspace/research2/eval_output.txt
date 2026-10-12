@@ -1,0 +1,7 @@
+### Evaluation vs Baseline (Confirmation 6001-6040 x 6 Variants)
+- **Greedy Baseline MSMI/100**: 0.3792
+- **Proposed Policy MSMI/100**: 0.3042
+- **Absolute Improvement**: -0.0750
+
+> [!WARNING]
+> **Target MISS!** Expected improvement fell short.

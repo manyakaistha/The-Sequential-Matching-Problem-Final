@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "status": "planning_only",
+  "work_orders": [
+    {
+      "id": "WO00",
+      "phase": "P0",
+      "host": "7a",
+      "role_profile": "evidence_medium",
+      "question": "Do raw R6 artifacts match every summary?",
+      "falsifiable_hypothesis": "Stage counts and numeric means are consistent with authoritative analysis.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7A.md",
+        "research6/REPORT.md",
+        "research6/MANIFEST.json",
+        "results/research6/stage_b_screen/analysis.json",
+        "results/research6/stage_c_replication/analysis.json",
+        "results/research6/stage_d_selection/analysis.json",
+        "results/research6/stage_e_confirmation/confirmation_analysis.json",
+        "research7/inputs/research6_transcript.txt"
+      ],
+      "exclusive_ownership": [
+        "reviews/inventory.md"
+      ],
+      "deliverable": "Evidence table with exact paths/omissions.",
+      "named_reviewer": "critic",
+      "agent_CPU_seconds_allowance": 60,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO02",
+      "phase": "P1",
+      "host": "7a",
+      "role_profile": "implementation_medium",
+      "question": "Can independent history-tree enumeration verify T02-T10/T31?",
+      "falsifiable_hypothesis": "Nonanticipating rational solver reproduces exact values.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7A.md"
+      ],
+      "exclusive_ownership": [
+        "exact_independent/",
+        "metrics_independent.py"
+      ],
+      "deliverable": "Standalone checker and complete case ledger.",
+      "named_reviewer": "theory_specialist",
+      "agent_CPU_seconds_allowance": 120,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO04",
+      "phase": "P1",
+      "host": "7a",
+      "role_profile": "implementation_medium",
+      "question": "Does merger reject conflicts and incomplete clusters?",
+      "falsifiable_hypothesis": "Synthetic invalid/missing/conflicting cells never yield primary analysis.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7A.md"
+      ],
+      "exclusive_ownership": [
+        "merge_independent.py"
+      ],
+      "deliverable": "Independent merge checker/fixtures.",
+      "named_reviewer": "production_critic",
+      "agent_CPU_seconds_allowance": 120,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO06",
+      "phase": "P2a",
+      "host": "7a",
+      "role_profile": "implementation_medium",
+      "question": "Do light policies obey frozen contracts?",
+      "falsifiable_hypothesis": "Q1/H1/A1/A2 actions are valid and deterministic.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7A.md"
+      ],
+      "exclusive_ownership": [
+        "policies/light.py",
+        "policies/history.py",
+        "policies/static_allocation.py"
+      ],
+      "deliverable": "Light modules/tests and pilot evidence when separately authorized.",
+      "named_reviewer": "independent_implementation_reviewer",
+      "agent_CPU_seconds_allowance": 120,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO11",
+      "phase": "P5-P7",
+      "host": "7a",
+      "role_profile": "science_high",
+      "question": "Do raw outcomes reconstruct all six simultaneous contrasts?",
+      "falsifiable_hypothesis": "Independent Q/A/cluster/CI matches director within tolerance.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7A.md",
+        "research7/STATISTICS.md",
+        "research7/MERGE_PROTOCOL.md",
+        "<future closed public phase bundle>",
+        "<future frozen global registration>"
+      ],
+      "exclusive_ownership": [
+        "statistics_independent.py",
+        "reviews/independent_statistics.md"
+      ],
+      "deliverable": "Full grid/denominator/CI and no-winner verification.",
+      "named_reviewer": "critic",
+      "agent_CPU_seconds_allowance": 150,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO13",
+      "phase": "P7",
+      "host": "7a",
+      "role_profile": "evidence_medium",
+      "question": "Can transferred archive restore exact evidence?",
+      "falsifiable_hypothesis": "Safe restore yields exact expected path/hash set.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7A.md"
+      ],
+      "exclusive_ownership": [
+        "reviews/archive_inventory.md"
+      ],
+      "deliverable": "Manifest/raw artifact inventory and omissions.",
+      "named_reviewer": "production_critic",
+      "agent_CPU_seconds_allowance": 60,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    }
+  ],
+  "dispatch_blocked_until": "Each queued template is completed with concrete input paths/hashes, named live reviewer, actual provider/model/effort and separately authorized phase execution resource/cell limits, then reviewed.",
+  "handoff_scope": "P0/P1 implementation only; every empirical invocation/test/fit remains blocked under current no-experiments authorization."
+}

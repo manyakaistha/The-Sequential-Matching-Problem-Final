@@ -1,0 +1,185 @@
+{
+  "estimand": "equal six-family reward per seed, paired independent seed clusters",
+  "seeds": [
+    83001,
+    83002,
+    83003,
+    83004,
+    83005,
+    83006,
+    83007,
+    83008,
+    83009,
+    83010,
+    83011,
+    83012,
+    83013,
+    83014,
+    83015,
+    83016,
+    83017,
+    83018,
+    83019,
+    83020,
+    83021,
+    83022,
+    83023,
+    83024,
+    83025,
+    83026,
+    83027,
+    83028,
+    83029,
+    83030,
+    83031,
+    83032,
+    83033,
+    83034,
+    83035,
+    83036,
+    83037,
+    83038,
+    83039,
+    83040,
+    83041,
+    83042,
+    83043,
+    83044,
+    83045,
+    83046,
+    83047,
+    83048,
+    83049,
+    83050,
+    83051,
+    83052,
+    83053,
+    83054,
+    83055,
+    83056
+  ],
+  "source": "results/research4/confirmation.json",
+  "code_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/benchmark.py": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64"
+  },
+  "policies": {
+    "greedy": {
+      "primary": {
+        "n": 56,
+        "mean": 0.31398809523809523,
+        "sd": 0.2167197320964159,
+        "ci95": [
+          0.25595017197995973,
+          0.37202601849623074
+        ],
+        "p_two_sided": 2.8480227157561464e-15,
+        "standardized": 1.4488209827539185
+      },
+      "paired": {
+        "n": 56,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided": null,
+        "standardized": null
+      },
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scenario_means": {
+        "development": 0.3392857142857143,
+        "sparse": 0.08928571428571429,
+        "cold_start": 0.41964285714285715,
+        "delayed": 0.375,
+        "shift": 0.3392857142857143,
+        "drift": 0.32142857142857145
+      },
+      "totals": {
+        "assignments": 25182,
+        "mutual_acceptances": 3557,
+        "dates": 2716,
+        "mutual_second_meeting_intention": 211,
+        "served_members": 22554,
+        "arrived_members": 67200,
+        "ask_cost": 66135
+      },
+      "latency_seconds": {
+        "mean": 0.017552240209739098,
+        "p95": 0.03949711104905873,
+        "p99": 0.04666920451927576,
+        "max": 0.14237349999893922
+      },
+      "mean_coverage": 0.335625,
+      "peak_request_bytes": 494760,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 872.4697048359812
+    },
+    "population_control": {
+      "primary": {
+        "n": 56,
+        "mean": 0.3705357142857143,
+        "sd": 0.25021185107518473,
+        "ci95": [
+          0.3035285429935449,
+          0.4375428855778837
+        ],
+        "p_two_sided": 1.2387961370896882e-15,
+        "standardized": 1.4808879463282263
+      },
+      "paired": {
+        "n": 56,
+        "mean": 0.05654761904761905,
+        "sd": 0.227584562404248,
+        "ci95": [
+          -0.004399924767531926,
+          0.11749516286277002
+        ],
+        "p_two_sided": 0.06832724834867526,
+        "standardized": 0.2484686063511466
+      },
+      "bootstrap95": [
+        -0.0014880952380952463,
+        0.11458333333333336
+      ],
+      "scenario_means": {
+        "development": 0.41964285714285715,
+        "sparse": 0.08928571428571429,
+        "cold_start": 0.42857142857142855,
+        "delayed": 0.44642857142857145,
+        "shift": 0.45535714285714285,
+        "drift": 0.38392857142857145
+      },
+      "totals": {
+        "assignments": 24954,
+        "mutual_acceptances": 3646,
+        "dates": 2799,
+        "mutual_second_meeting_intention": 249,
+        "served_members": 22520,
+        "arrived_members": 67200,
+        "ask_cost": 66135
+      },
+      "latency_seconds": {
+        "mean": 0.017263434010497184,
+        "p95": 0.03922982705043977,
+        "p99": 0.04677304946126239,
+        "max": 0.1606375410046894
+      },
+      "mean_coverage": 0.3351190476190476,
+      "peak_request_bytes": 489231,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 861.2451358169856,
+      "exploratory_holm_p": 0.06832724834867526
+    }
+  }
+}

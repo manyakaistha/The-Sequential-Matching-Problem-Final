@@ -1,0 +1,32 @@
+{
+  "valid": true,
+  "checks": {
+    "standard_two_formats": true,
+    "archive_only_after_original_deletion": true,
+    "standard_restore_two_and_identical_skip": true,
+    "differing_existing_refused_unchanged": true,
+    "root_symlink_refused": true,
+    "parent_symlink_refused_no_external_creation": true,
+    "leaf_symlink_refused_even_matching_bytes": true,
+    "archive_digest_corruption_refused": true,
+    "duplicate_index_member_refused": true,
+    "unregistered_member_refused": true,
+    "duplicate_tar_member_refused": true,
+    "nonregular_member_refused": true,
+    "traversal_refused": true,
+    "payload_mismatch_refused": true
+  },
+  "fixture_scope": "Temporary synthetic2file archives and adversarial members only; no real archive/log scans, new worlds or policy inference.",
+  "command": [
+    "python3",
+    "-"
+  ],
+  "started_utc": "2026-10-10T19:19:07.540927+00:00",
+  "wall_seconds": 0.020062582998434664,
+  "cpu_seconds": 0.01792400000000001,
+  "source_hashes": {
+    "research5/archive_results.py": "f1ed68e285221dc716b3bdcc1b04c167044617f9f2bcd37fe5ab465a1b4695b5",
+    "research5/restore_artifacts.py": "0a287d1337ea96e394c3eb09e88b5ed01bbd72dd11f18d1335cb4e3893818f87"
+  },
+  "note": "O_NOFOLLOW dirfd safety tested root/parent/leaf symlinks; no guarantee against arbitrary concurrent filesystem tampering."
+}

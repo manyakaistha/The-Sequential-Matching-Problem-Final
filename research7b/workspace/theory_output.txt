@@ -1,0 +1,5 @@
+static_greedy_trap {'exact_dp': '6/5', 'greedy': '7/10', 'blossom': '6/5', 'batching': '0', 'reservation': '6/5'}
+known_future_arrivals {'exact_dp': '8/5', 'greedy': '3/10', 'blossom': '3/10', 'batching': '8/5', 'reservation': '8/5'}
+early_exit {'exact_dp': '4/5', 'greedy': '4/5', 'blossom': '4/5', 'batching': '0', 'reservation': '4/5'}
+nonseparable_reservation {'exact_dp': '1', 'greedy': '1', 'blossom': '1', 'batching': '9/10', 'reservation': '9/10'}
+stochastic_repeated_members {'exact_dp': '709/1000', 'greedy': '709/1000', 'blossom': '709/1000', 'batching': '7/10', 'reservation': '77/125'}

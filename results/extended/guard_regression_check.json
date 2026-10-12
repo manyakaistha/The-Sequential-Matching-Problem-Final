@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "paired_episodes": 132,
+  "semantic_or_outcome_differences": [],
+  "ordering_only_differences": [],
+  "changed_inference_files": [
+    "extended_policy.py"
+  ],
+  "old_code_hashes": {
+    "extended_policy.py": "6cf508147f6cb5de51185e92c35bd25501c5c5737cc5db7e22b8f9f411509c60",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research/extended_candidates.py": "4d4a76082af2df84660c9414fb0fbde9400a25fcaa7180e90636fb93bb13a81f",
+    "research_policy.py": "ddd58f9c35872b97220af124686ff477f6ff135d156068d9857b839019bb76b3",
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162"
+  },
+  "new_code_hashes": {
+    "extended_policy.py": "823794e0818b2c3c0ea61b37e89078c537f6c3117ee8bf0e036eab94b6e81891",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research/extended_candidates.py": "4d4a76082af2df84660c9414fb0fbde9400a25fcaa7180e90636fb93bb13a81f",
+    "research_policy.py": "ddd58f9c35872b97220af124686ff477f6ff135d156068d9857b839019bb76b3",
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162"
+  },
+  "original_development_max_call_seconds": 0.29650854200008325,
+  "original_max_below_guard": true,
+  "scope": "Tested ordinary-world semantic equivalence, not all-resource/all-state proof. Stress demonstrates changed protective behavior."
+}

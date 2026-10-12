@@ -1,0 +1,1171 @@
+{
+  "overall_summary": {
+    "total_pools": 10,
+    "total_members": 2000,
+    "pooled_age": {
+      "min": 21,
+      "max": 46,
+      "mean": 33.65,
+      "std": 7.6,
+      "median": 34.0
+    },
+    "pooled_gender": {
+      "woman": {
+        "count": 925,
+        "pct": 46.25
+      },
+      "man": {
+        "count": 927,
+        "pct": 46.35
+      },
+      "non_binary": {
+        "count": 148,
+        "pct": 7.4
+      }
+    },
+    "pooled_zones": {
+      "zone_a": {
+        "count": 1181,
+        "pct": 59.05
+      },
+      "zone_d": {
+        "count": 88,
+        "pct": 4.4
+      },
+      "zone_b": {
+        "count": 487,
+        "pct": 24.35
+      },
+      "zone_c": {
+        "count": 244,
+        "pct": 12.2
+      }
+    },
+    "pooled_who_to_meet": {
+      "man/non_binary": {
+        "count": 79,
+        "pct": 3.95
+      },
+      "non_binary": {
+        "count": 301,
+        "pct": 15.05
+      },
+      "[MISSING]": {
+        "count": 637,
+        "pct": 31.85
+      },
+      "man": {
+        "count": 307,
+        "pct": 15.35
+      },
+      "woman": {
+        "count": 341,
+        "pct": 17.05
+      },
+      "non_binary/woman": {
+        "count": 93,
+        "pct": 4.65
+      },
+      "man/non_binary/woman": {
+        "count": 151,
+        "pct": 7.55
+      },
+      "man/woman": {
+        "count": 91,
+        "pct": 4.55
+      }
+    },
+    "pooled_pair_statuses": {
+      "infeasible": {
+        "count": 172405,
+        "pct": 86.64
+      },
+      "needs_clarification": {
+        "count": 25608,
+        "pct": 12.87
+      },
+      "feasible": {
+        "count": 987,
+        "pct": 0.5
+      }
+    },
+    "pooled_edge_genders": {
+      "non_binary-woman": {
+        "count": 34,
+        "pct": 3.44
+      },
+      "man-woman": {
+        "count": 407,
+        "pct": 41.24
+      },
+      "woman-woman": {
+        "count": 242,
+        "pct": 24.52
+      },
+      "man-man": {
+        "count": 234,
+        "pct": 23.71
+      },
+      "man-non_binary": {
+        "count": 63,
+        "pct": 6.38
+      },
+      "non_binary-non_binary": {
+        "count": 7,
+        "pct": 0.71
+      }
+    }
+  },
+  "per_pool": {
+    "public_01": {
+      "pool_id": "public_01",
+      "total_members": 200,
+      "available_members": 166,
+      "past_introductions": 57,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 34.1,
+        "std": 7.6,
+        "median": 34.5
+      },
+      "gender": {
+        "woman": 88,
+        "man": 102,
+        "non_binary": 10
+      },
+      "zones": {
+        "zone_a": 126,
+        "zone_d": 7,
+        "zone_b": 37,
+        "zone_c": 30
+      },
+      "who_to_meet": {
+        "man/non_binary": 7,
+        "non_binary": 26,
+        "[MISSING]": 71,
+        "man": 28,
+        "woman": 40,
+        "non_binary/woman": 10,
+        "man/non_binary/woman": 11,
+        "man/woman": 7
+      },
+      "who_to_meet_missing": 71,
+      "orientations": {
+        "women_seeking_multiple": 15,
+        "men_seeking_nb_only": 12,
+        "missing": 71,
+        "men_seeking_multiple": 19,
+        "men_seeking_men_only": 18,
+        "women_seeking_women_only": 20,
+        "men_seeking_women_only": 19,
+        "women_seeking_nb_only": 12,
+        "women_seeking_men_only": 9,
+        "nb_seeking_single_gender": 4,
+        "nb_seeking_multiple": 1
+      },
+      "pair_status": {
+        "infeasible": 16721,
+        "needs_clarification": 3081,
+        "feasible": 98
+      },
+      "feasible_edges": 98,
+      "degrees_all": {
+        "min": 0,
+        "max": 13,
+        "mean": 0.98,
+        "median": 0.0,
+        "std": 1.96,
+        "isolated_count": 139,
+        "isolated_pct": 69.5,
+        "histogram": {
+          "0": 139,
+          "1": 16,
+          "2": 13,
+          "3": 10,
+          "4": 9,
+          "5": 5,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "13": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 144,
+        "largest_component": 47,
+        "components_gt_1": 5,
+        "top_component_sizes": [
+          47,
+          7,
+          3,
+          2,
+          2
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "non_binary-woman": 3,
+          "man-woman": 41,
+          "woman-woman": 19,
+          "man-man": 32,
+          "man-non_binary": 3
+        }
+      },
+      "available_graph": {
+        "avail_members": 166,
+        "avail_feasible_edges": 15,
+        "avail_feasible_unintroduced": 0,
+        "avail_deg_mean": 0.18,
+        "avail_isolated": 146,
+        "avail_isolated_pct": 87.95
+      }
+    },
+    "public_02": {
+      "pool_id": "public_02",
+      "total_members": 200,
+      "available_members": 168,
+      "past_introductions": 57,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 33.26,
+        "std": 7.35,
+        "median": 33.5
+      },
+      "gender": {
+        "man": 92,
+        "woman": 88,
+        "non_binary": 20
+      },
+      "zones": {
+        "zone_b": 54,
+        "zone_a": 122,
+        "zone_c": 18,
+        "zone_d": 6
+      },
+      "who_to_meet": {
+        "non_binary/woman": 6,
+        "man": 44,
+        "non_binary": 34,
+        "[MISSING]": 57,
+        "man/non_binary/woman": 19,
+        "woman": 30,
+        "man/non_binary": 2,
+        "man/woman": 8
+      },
+      "who_to_meet_missing": 57,
+      "orientations": {
+        "men_seeking_multiple": 18,
+        "men_seeking_men_only": 17,
+        "women_seeking_men_only": 24,
+        "men_seeking_nb_only": 19,
+        "missing": 57,
+        "women_seeking_nb_only": 13,
+        "women_seeking_multiple": 11,
+        "nb_seeking_single_gender": 11,
+        "women_seeking_women_only": 15,
+        "men_seeking_women_only": 9,
+        "nb_seeking_multiple": 6
+      },
+      "pair_status": {
+        "infeasible": 17691,
+        "needs_clarification": 2125,
+        "feasible": 84
+      },
+      "feasible_edges": 84,
+      "degrees_all": {
+        "min": 0,
+        "max": 12,
+        "mean": 0.84,
+        "median": 0.0,
+        "std": 1.68,
+        "isolated_count": 133,
+        "isolated_pct": 66.5,
+        "histogram": {
+          "0": 133,
+          "1": 26,
+          "2": 18,
+          "3": 10,
+          "4": 6,
+          "5": 2,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "12": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 141,
+        "largest_component": 34,
+        "components_gt_1": 8,
+        "top_component_sizes": [
+          34,
+          16,
+          4,
+          4,
+          3
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "man-woman": 36,
+          "man-man": 27,
+          "non_binary-woman": 5,
+          "man-non_binary": 7,
+          "woman-woman": 9
+        }
+      },
+      "available_graph": {
+        "avail_members": 168,
+        "avail_feasible_edges": 12,
+        "avail_feasible_unintroduced": 0,
+        "avail_deg_mean": 0.14,
+        "avail_isolated": 146,
+        "avail_isolated_pct": 86.9
+      }
+    },
+    "public_03": {
+      "pool_id": "public_03",
+      "total_members": 200,
+      "available_members": 175,
+      "past_introductions": 56,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 34.52,
+        "std": 7.45,
+        "median": 35.0
+      },
+      "gender": {
+        "woman": 92,
+        "man": 86,
+        "non_binary": 22
+      },
+      "zones": {
+        "zone_b": 44,
+        "zone_a": 122,
+        "zone_c": 22,
+        "zone_d": 12
+      },
+      "who_to_meet": {
+        "man/non_binary/woman": 19,
+        "non_binary": 32,
+        "woman": 27,
+        "non_binary/woman": 10,
+        "man": 35,
+        "man/woman": 7,
+        "man/non_binary": 11,
+        "[MISSING]": 59
+      },
+      "who_to_meet_missing": 59,
+      "orientations": {
+        "women_seeking_multiple": 20,
+        "women_seeking_nb_only": 15,
+        "women_seeking_women_only": 13,
+        "men_seeking_men_only": 16,
+        "men_seeking_multiple": 22,
+        "nb_seeking_multiple": 5,
+        "men_seeking_nb_only": 13,
+        "missing": 59,
+        "men_seeking_women_only": 12,
+        "women_seeking_men_only": 17,
+        "nb_seeking_single_gender": 8
+      },
+      "pair_status": {
+        "infeasible": 17643,
+        "needs_clarification": 2178,
+        "feasible": 79
+      },
+      "feasible_edges": 79,
+      "degrees_all": {
+        "min": 0,
+        "max": 9,
+        "mean": 0.79,
+        "median": 0.0,
+        "std": 1.48,
+        "isolated_count": 133,
+        "isolated_pct": 66.5,
+        "histogram": {
+          "0": 133,
+          "1": 28,
+          "2": 14,
+          "3": 12,
+          "4": 7,
+          "5": 3,
+          "6": 1,
+          "8": 1,
+          "9": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 140,
+        "largest_component": 51,
+        "components_gt_1": 7,
+        "top_component_sizes": [
+          51,
+          5,
+          3,
+          2,
+          2
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "woman-woman": 15,
+          "man-man": 25,
+          "man-woman": 26,
+          "non_binary-woman": 5,
+          "man-non_binary": 4,
+          "non_binary-non_binary": 4
+        }
+      },
+      "available_graph": {
+        "avail_members": 175,
+        "avail_feasible_edges": 23,
+        "avail_feasible_unintroduced": 1,
+        "avail_deg_mean": 0.26,
+        "avail_isolated": 141,
+        "avail_isolated_pct": 80.57
+      }
+    },
+    "public_04": {
+      "pool_id": "public_04",
+      "total_members": 200,
+      "available_members": 169,
+      "past_introductions": 62,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 34.41,
+        "std": 7.35,
+        "median": 35.0
+      },
+      "gender": {
+        "man": 99,
+        "non_binary": 12,
+        "woman": 89
+      },
+      "zones": {
+        "zone_c": 27,
+        "zone_a": 119,
+        "zone_d": 11,
+        "zone_b": 43
+      },
+      "who_to_meet": {
+        "[MISSING]": 56,
+        "woman": 33,
+        "non_binary": 40,
+        "man": 23,
+        "man/woman": 12,
+        "man/non_binary/woman": 16,
+        "man/non_binary": 10,
+        "non_binary/woman": 10
+      },
+      "who_to_meet_missing": 56,
+      "orientations": {
+        "missing": 56,
+        "men_seeking_women_only": 14,
+        "men_seeking_nb_only": 22,
+        "women_seeking_women_only": 17,
+        "men_seeking_men_only": 9,
+        "men_seeking_multiple": 23,
+        "women_seeking_men_only": 13,
+        "women_seeking_multiple": 22,
+        "women_seeking_nb_only": 15,
+        "nb_seeking_multiple": 3,
+        "nb_seeking_single_gender": 6
+      },
+      "pair_status": {
+        "infeasible": 17784,
+        "needs_clarification": 2031,
+        "feasible": 85
+      },
+      "feasible_edges": 85,
+      "degrees_all": {
+        "min": 0,
+        "max": 12,
+        "mean": 0.85,
+        "median": 0.0,
+        "std": 1.53,
+        "isolated_count": 127,
+        "isolated_pct": 63.5,
+        "histogram": {
+          "0": 127,
+          "1": 30,
+          "2": 15,
+          "3": 16,
+          "4": 7,
+          "5": 3,
+          "7": 1,
+          "12": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 135,
+        "largest_component": 37,
+        "components_gt_1": 8,
+        "top_component_sizes": [
+          37,
+          12,
+          8,
+          5,
+          4
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "woman-woman": 26,
+          "man-woman": 30,
+          "man-man": 18,
+          "non_binary-woman": 5,
+          "man-non_binary": 6
+        }
+      },
+      "available_graph": {
+        "avail_members": 169,
+        "avail_feasible_edges": 20,
+        "avail_feasible_unintroduced": 2,
+        "avail_deg_mean": 0.24,
+        "avail_isolated": 141,
+        "avail_isolated_pct": 83.43
+      }
+    },
+    "public_05": {
+      "pool_id": "public_05",
+      "total_members": 200,
+      "available_members": 153,
+      "past_introductions": 85,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 33.51,
+        "std": 7.92,
+        "median": 34.0
+      },
+      "gender": {
+        "woman": 88,
+        "man": 91,
+        "non_binary": 21
+      },
+      "zones": {
+        "zone_a": 120,
+        "zone_b": 49,
+        "zone_c": 25,
+        "zone_d": 6
+      },
+      "who_to_meet": {
+        "non_binary/woman": 7,
+        "woman": 40,
+        "man": 28,
+        "[MISSING]": 63,
+        "man/non_binary": 11,
+        "man/woman": 13,
+        "non_binary": 20,
+        "man/non_binary/woman": 18
+      },
+      "who_to_meet_missing": 63,
+      "orientations": {
+        "women_seeking_multiple": 26,
+        "men_seeking_women_only": 18,
+        "nb_seeking_single_gender": 10,
+        "missing": 63,
+        "women_seeking_men_only": 13,
+        "men_seeking_men_only": 13,
+        "men_seeking_multiple": 18,
+        "men_seeking_nb_only": 9,
+        "nb_seeking_multiple": 5,
+        "women_seeking_nb_only": 8,
+        "women_seeking_women_only": 17
+      },
+      "pair_status": {
+        "infeasible": 17275,
+        "needs_clarification": 2483,
+        "feasible": 142
+      },
+      "feasible_edges": 142,
+      "degrees_all": {
+        "min": 0,
+        "max": 17,
+        "mean": 1.42,
+        "median": 1.0,
+        "std": 2.26,
+        "isolated_count": 96,
+        "isolated_pct": 48.0,
+        "histogram": {
+          "0": 96,
+          "1": 42,
+          "2": 20,
+          "3": 13,
+          "4": 18,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "14": 1,
+          "17": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 108,
+        "largest_component": 65,
+        "components_gt_1": 12,
+        "top_component_sizes": [
+          65,
+          7,
+          6,
+          5,
+          4
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "man-woman": 54,
+          "non_binary-woman": 11,
+          "man-non_binary": 13,
+          "man-man": 27,
+          "woman-woman": 37
+        }
+      },
+      "available_graph": {
+        "avail_members": 153,
+        "avail_feasible_edges": 31,
+        "avail_feasible_unintroduced": 4,
+        "avail_deg_mean": 0.41,
+        "avail_isolated": 107,
+        "avail_isolated_pct": 69.93
+      }
+    },
+    "public_06": {
+      "pool_id": "public_06",
+      "total_members": 200,
+      "available_members": 158,
+      "past_introductions": 59,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 33.44,
+        "std": 7.57,
+        "median": 32.0
+      },
+      "gender": {
+        "woman": 94,
+        "man": 95,
+        "non_binary": 11
+      },
+      "zones": {
+        "zone_a": 116,
+        "zone_c": 21,
+        "zone_b": 57,
+        "zone_d": 6
+      },
+      "who_to_meet": {
+        "[MISSING]": 69,
+        "man/non_binary/woman": 16,
+        "man/non_binary": 10,
+        "non_binary/woman": 14,
+        "non_binary": 21,
+        "woman": 29,
+        "man": 35,
+        "man/woman": 6
+      },
+      "who_to_meet_missing": 69,
+      "orientations": {
+        "missing": 69,
+        "men_seeking_multiple": 26,
+        "women_seeking_multiple": 19,
+        "men_seeking_nb_only": 8,
+        "women_seeking_women_only": 15,
+        "nb_seeking_single_gender": 6,
+        "women_seeking_men_only": 15,
+        "men_seeking_women_only": 14,
+        "men_seeking_men_only": 16,
+        "women_seeking_nb_only": 11,
+        "nb_seeking_multiple": 1
+      },
+      "pair_status": {
+        "needs_clarification": 3191,
+        "infeasible": 16592,
+        "feasible": 117
+      },
+      "feasible_edges": 117,
+      "degrees_all": {
+        "min": 0,
+        "max": 15,
+        "mean": 1.17,
+        "median": 0.0,
+        "std": 2.18,
+        "isolated_count": 126,
+        "isolated_pct": 63.0,
+        "histogram": {
+          "0": 126,
+          "1": 18,
+          "2": 24,
+          "3": 12,
+          "4": 4,
+          "5": 3,
+          "6": 6,
+          "7": 2,
+          "8": 1,
+          "9": 2,
+          "10": 1,
+          "15": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 131,
+        "largest_component": 50,
+        "components_gt_1": 5,
+        "top_component_sizes": [
+          50,
+          14,
+          4,
+          4,
+          2
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "man-woman": 57,
+          "man-non_binary": 7,
+          "man-man": 28,
+          "woman-woman": 25
+        }
+      },
+      "available_graph": {
+        "avail_members": 158,
+        "avail_feasible_edges": 13,
+        "avail_feasible_unintroduced": 1,
+        "avail_deg_mean": 0.16,
+        "avail_isolated": 135,
+        "avail_isolated_pct": 85.44
+      }
+    },
+    "public_07": {
+      "pool_id": "public_07",
+      "total_members": 200,
+      "available_members": 163,
+      "past_introductions": 64,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 33.25,
+        "std": 7.63,
+        "median": 32.0
+      },
+      "gender": {
+        "man": 90,
+        "woman": 101,
+        "non_binary": 9
+      },
+      "zones": {
+        "zone_b": 40,
+        "zone_a": 124,
+        "zone_c": 24,
+        "zone_d": 12
+      },
+      "who_to_meet": {
+        "non_binary": 38,
+        "[MISSING]": 59,
+        "man": 30,
+        "non_binary/woman": 11,
+        "man/non_binary/woman": 10,
+        "woman": 43,
+        "man/non_binary": 6,
+        "man/woman": 3
+      },
+      "who_to_meet_missing": 59,
+      "orientations": {
+        "men_seeking_nb_only": 12,
+        "missing": 59,
+        "men_seeking_men_only": 11,
+        "women_seeking_multiple": 13,
+        "men_seeking_multiple": 14,
+        "women_seeking_women_only": 21,
+        "women_seeking_nb_only": 23,
+        "men_seeking_women_only": 22,
+        "women_seeking_men_only": 18,
+        "nb_seeking_single_gender": 4,
+        "nb_seeking_multiple": 3
+      },
+      "pair_status": {
+        "infeasible": 17436,
+        "needs_clarification": 2352,
+        "feasible": 112
+      },
+      "feasible_edges": 112,
+      "degrees_all": {
+        "min": 0,
+        "max": 11,
+        "mean": 1.12,
+        "median": 0.0,
+        "std": 2.0,
+        "isolated_count": 127,
+        "isolated_pct": 63.5,
+        "histogram": {
+          "0": 127,
+          "1": 22,
+          "2": 15,
+          "3": 12,
+          "4": 8,
+          "5": 8,
+          "6": 1,
+          "7": 3,
+          "8": 1,
+          "9": 2,
+          "11": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 131,
+        "largest_component": 62,
+        "components_gt_1": 4,
+        "top_component_sizes": [
+          62,
+          5,
+          4,
+          2,
+          1
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "man-man": 14,
+          "woman-woman": 30,
+          "man-woman": 59,
+          "man-non_binary": 6,
+          "non_binary-non_binary": 3
+        }
+      },
+      "available_graph": {
+        "avail_members": 163,
+        "avail_feasible_edges": 21,
+        "avail_feasible_unintroduced": 2,
+        "avail_deg_mean": 0.26,
+        "avail_isolated": 136,
+        "avail_isolated_pct": 83.44
+      }
+    },
+    "public_08": {
+      "pool_id": "public_08",
+      "total_members": 200,
+      "available_members": 167,
+      "past_introductions": 53,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 32.73,
+        "std": 7.63,
+        "median": 33.0
+      },
+      "gender": {
+        "woman": 103,
+        "man": 87,
+        "non_binary": 10
+      },
+      "zones": {
+        "zone_b": 45,
+        "zone_a": 115,
+        "zone_c": 30,
+        "zone_d": 10
+      },
+      "who_to_meet": {
+        "non_binary/woman": 11,
+        "man": 29,
+        "[MISSING]": 63,
+        "woman": 33,
+        "non_binary": 31,
+        "man/woman": 12,
+        "man/non_binary/woman": 15,
+        "man/non_binary": 6
+      },
+      "who_to_meet_missing": 63,
+      "orientations": {
+        "women_seeking_multiple": 23,
+        "women_seeking_men_only": 11,
+        "missing": 63,
+        "men_seeking_women_only": 13,
+        "nb_seeking_single_gender": 4,
+        "men_seeking_men_only": 17,
+        "men_seeking_nb_only": 11,
+        "women_seeking_women_only": 20,
+        "women_seeking_nb_only": 17,
+        "men_seeking_multiple": 19,
+        "nb_seeking_multiple": 2
+      },
+      "pair_status": {
+        "infeasible": 17327,
+        "needs_clarification": 2467,
+        "feasible": 106
+      },
+      "feasible_edges": 106,
+      "degrees_all": {
+        "min": 0,
+        "max": 15,
+        "mean": 1.06,
+        "median": 0.0,
+        "std": 2.23,
+        "isolated_count": 139,
+        "isolated_pct": 69.5,
+        "histogram": {
+          "0": 139,
+          "1": 16,
+          "2": 14,
+          "3": 8,
+          "4": 9,
+          "5": 4,
+          "6": 1,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 2,
+          "15": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 145,
+        "largest_component": 47,
+        "components_gt_1": 6,
+        "top_component_sizes": [
+          47,
+          4,
+          3,
+          3,
+          2
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "man-woman": 31,
+          "woman-woman": 48,
+          "man-man": 23,
+          "non_binary-woman": 2,
+          "man-non_binary": 2
+        }
+      },
+      "available_graph": {
+        "avail_members": 167,
+        "avail_feasible_edges": 15,
+        "avail_feasible_unintroduced": 0,
+        "avail_deg_mean": 0.18,
+        "avail_isolated": 143,
+        "avail_isolated_pct": 85.63
+      }
+    },
+    "public_09": {
+      "pool_id": "public_09",
+      "total_members": 200,
+      "available_members": 176,
+      "past_introductions": 55,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 34.06,
+        "std": 7.64,
+        "median": 35.0
+      },
+      "gender": {
+        "woman": 88,
+        "man": 98,
+        "non_binary": 14
+      },
+      "zones": {
+        "zone_a": 114,
+        "zone_b": 49,
+        "zone_c": 29,
+        "zone_d": 8
+      },
+      "who_to_meet": {
+        "man/woman": 13,
+        "man": 28,
+        "[MISSING]": 76,
+        "woman": 31,
+        "non_binary": 29,
+        "man/non_binary": 7,
+        "man/non_binary/woman": 12,
+        "non_binary/woman": 4
+      },
+      "who_to_meet_missing": 76,
+      "orientations": {
+        "women_seeking_multiple": 12,
+        "women_seeking_men_only": 14,
+        "missing": 76,
+        "men_seeking_women_only": 11,
+        "women_seeking_women_only": 19,
+        "men_seeking_nb_only": 14,
+        "women_seeking_nb_only": 13,
+        "nb_seeking_single_gender": 6,
+        "men_seeking_multiple": 23,
+        "men_seeking_men_only": 11,
+        "nb_seeking_multiple": 1
+      },
+      "pair_status": {
+        "infeasible": 16587,
+        "feasible": 75,
+        "needs_clarification": 3238
+      },
+      "feasible_edges": 75,
+      "degrees_all": {
+        "min": 0,
+        "max": 8,
+        "mean": 0.75,
+        "median": 0.0,
+        "std": 1.41,
+        "isolated_count": 134,
+        "isolated_pct": 67.0,
+        "histogram": {
+          "0": 134,
+          "1": 26,
+          "2": 18,
+          "3": 14,
+          "4": 2,
+          "5": 3,
+          "7": 1,
+          "8": 2
+        }
+      },
+      "connected_components": {
+        "total_components": 143,
+        "largest_component": 42,
+        "components_gt_1": 9,
+        "top_component_sizes": [
+          42,
+          5,
+          5,
+          3,
+          3
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "man-woman": 36,
+          "woman-woman": 14,
+          "man-man": 17,
+          "man-non_binary": 7,
+          "non_binary-woman": 1
+        }
+      },
+      "available_graph": {
+        "avail_members": 176,
+        "avail_feasible_edges": 22,
+        "avail_feasible_unintroduced": 0,
+        "avail_deg_mean": 0.25,
+        "avail_isolated": 140,
+        "avail_isolated_pct": 79.55
+      }
+    },
+    "public_10": {
+      "pool_id": "public_10",
+      "total_members": 200,
+      "available_members": 157,
+      "past_introductions": 65,
+      "age": {
+        "min": 21,
+        "max": 46,
+        "mean": 33.2,
+        "std": 7.63,
+        "median": 34.0
+      },
+      "gender": {
+        "woman": 94,
+        "man": 87,
+        "non_binary": 19
+      },
+      "zones": {
+        "zone_a": 103,
+        "zone_b": 69,
+        "zone_c": 18,
+        "zone_d": 10
+      },
+      "who_to_meet": {
+        "non_binary": 30,
+        "man/non_binary": 9,
+        "[MISSING]": 64,
+        "non_binary/woman": 10,
+        "woman": 35,
+        "man/non_binary/woman": 15,
+        "man": 27,
+        "man/woman": 10
+      },
+      "who_to_meet_missing": 64,
+      "orientations": {
+        "women_seeking_nb_only": 15,
+        "men_seeking_multiple": 23,
+        "missing": 64,
+        "men_seeking_nb_only": 12,
+        "men_seeking_women_only": 11,
+        "men_seeking_men_only": 12,
+        "women_seeking_men_only": 13,
+        "women_seeking_women_only": 21,
+        "women_seeking_multiple": 15,
+        "nb_seeking_multiple": 6,
+        "nb_seeking_single_gender": 8
+      },
+      "pair_status": {
+        "infeasible": 17349,
+        "feasible": 89,
+        "needs_clarification": 2462
+      },
+      "feasible_edges": 89,
+      "degrees_all": {
+        "min": 0,
+        "max": 7,
+        "mean": 0.89,
+        "median": 0.0,
+        "std": 1.43,
+        "isolated_count": 126,
+        "isolated_pct": 63.0,
+        "histogram": {
+          "0": 126,
+          "1": 23,
+          "2": 20,
+          "3": 19,
+          "4": 6,
+          "5": 3,
+          "6": 2,
+          "7": 1
+        }
+      },
+      "connected_components": {
+        "total_components": 134,
+        "largest_component": 43,
+        "components_gt_1": 8,
+        "top_component_sizes": [
+          43,
+          12,
+          5,
+          5,
+          3
+        ]
+      },
+      "graph_structure": {
+        "is_bipartite": false,
+        "edge_gender_breakdown": {
+          "non_binary-woman": 2,
+          "man-man": 23,
+          "man-woman": 37,
+          "woman-woman": 19,
+          "man-non_binary": 8
+        }
+      },
+      "available_graph": {
+        "avail_members": 157,
+        "avail_feasible_edges": 15,
+        "avail_feasible_unintroduced": 1,
+        "avail_deg_mean": 0.19,
+        "avail_isolated": 134,
+        "avail_isolated_pct": 85.35
+      }
+    }
+  }
+}

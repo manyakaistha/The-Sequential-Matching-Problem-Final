@@ -1,0 +1,55 @@
+{
+  "status": "confirmatory",
+  "stage": "E",
+  "candidate": "N3_two",
+  "baseline": "G",
+  "n_clusters": 571,
+  "first_seed": 140001,
+  "last_seed": 140571,
+  "total_episodes": 6852,
+  "primary_alpha": 0.01,
+  "primary_confidence": 0.99,
+  "mean_difference": 0.0032107413893753657,
+  "paired_sd": 0.25604657485037224,
+  "se": 0.010715215664984212,
+  "t_statistic": 0.2996431886917226,
+  "df": 570,
+  "p_value_two_sided": 0.7645585696400229,
+  "standardized_effect": 0.012539677171044563,
+  "primary_ci_99": [
+    -0.024482541518607695,
+    0.030904024297358425
+  ],
+  "nominal_ci_95": [
+    -0.017835384069560294,
+    0.024256866848311024
+  ],
+  "bootstrap_sensitivity": {
+    "seed": 90210,
+    "replicates": 10000,
+    "ci_99": [
+      -0.02335084646818447,
+      0.031231757151196728
+    ],
+    "ci_95": [
+      -0.017808669001751314,
+      0.024376094570928146
+    ],
+    "scope": "whole seed clusters"
+  },
+  "family_mean_differences": {
+    "development": 0.012259194395796848,
+    "sparse": -0.002626970227670753,
+    "cold_start": 0.03415061295971979,
+    "delayed": -0.03415061295971979,
+    "shift": 0.005253940455341506,
+    "drift": 0.0043782837127845885
+  },
+  "leave_one_seed_influence": {
+    "min_mean": 0.0007309941520467843,
+    "max_mean": 0.004824561403508773,
+    "std_loo_means": 0.0004492045172813548
+  },
+  "is_confirmed_superior": false,
+  "conclusion": "confirmatory superiority not established; retain greedy baseline"
+}

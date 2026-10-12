@@ -1,0 +1,26 @@
+{
+  "completed_at_utc": "2026-10-08T11:00:41.173493+00:00",
+  "scope": "Completed registered research package; no substantially better policy established.",
+  "main_episodes": 2040,
+  "original_tests_passed": 22,
+  "extended_tests_passed": 28,
+  "archived_raw_files": 1687,
+  "archive_bytes": 92399417,
+  "registered_confirmation": {
+    "policy": "simple_fifo",
+    "greedy_score": 0.3729166666666667,
+    "candidate_score": 0.33125,
+    "difference": -0.04166666666666667,
+    "ci95": [
+      -0.09106796681222393,
+      0.007734633478890578
+    ],
+    "p": 0.09596045449533595
+  },
+  "reviews": [
+    "research/FINAL_STATISTICAL_REVIEW.md",
+    "research/FINAL_THEORY_REVIEW.md",
+    "research/FINAL_PACKAGE_REVIEW.md"
+  ],
+  "provenance_note": "Manifest regenerated after sealing command ledger and package record; manifest excludes itself to avoid a hash cycle."
+}

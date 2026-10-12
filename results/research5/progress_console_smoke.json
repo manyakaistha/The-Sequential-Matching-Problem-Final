@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "initial_fixture_error": "Missing policies field caused KeyError before launching child; corrected synthetic fixture, no source changes.",
+  "scope": "Real subprocess pipe/selector/console+file tee using print-only child; design checks and analysis mocked; no worlds or policy invocations."
+}

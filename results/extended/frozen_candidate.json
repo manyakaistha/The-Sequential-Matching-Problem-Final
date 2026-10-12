@@ -1,0 +1,104 @@
+{
+  "policy": "simple_fifo",
+  "configuration": {
+    "model": "simple"
+  },
+  "code_hashes": {
+    "extended_policy.py": "823794e0818b2c3c0ea61b37e89078c537f6c3117ee8bf0e036eab94b6e81891",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research/extended_candidates.py": "4d4a76082af2df84660c9414fb0fbde9400a25fcaa7180e90636fb93bb13a81f",
+    "research_policy.py": "ddd58f9c35872b97220af124686ff477f6ff135d156068d9857b839019bb76b3",
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162"
+  },
+  "selection_primary": 0.31249999999999994,
+  "maximum_selection_primary": 0.34722222222222227,
+  "simplicity_candidates": [
+    "no_learning_fifo",
+    "independent_fifo",
+    "simple_fifo",
+    "terminal_fifo"
+  ],
+  "complexity_order": {
+    "no_learning_fifo": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "independent_fifo": [
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "simple_fifo": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "terminal_fifo": [
+      2,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "rule": "within .05 of top; registered model/query/allocation/waiting cost tuple, score, alphabetical",
+  "frozen_before_confirmation": true,
+  "confirmation_seeds": [
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006,
+    3007,
+    3008,
+    3009,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3015,
+    3016,
+    3017,
+    3018,
+    3019,
+    3020,
+    3021,
+    3022,
+    3023,
+    3024,
+    3025,
+    3026,
+    3027,
+    3028,
+    3029,
+    3030,
+    3031,
+    3032,
+    3033,
+    3034,
+    3035,
+    3036,
+    3037,
+    3038,
+    3039,
+    3040
+  ],
+  "confirmatory_comparison": "simple_fifo minus greedy, scenario-balanced seed clusters, two-sided alpha .05",
+  "selection_artifact": "results/extended/selection.json",
+  "auxiliary_code_hashes": {
+    "policy.py": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+    "research/extended_benchmark.py": "c8bd4eb2bd6f0003856b19b688a49d99687aa4c1ad1139e6c86670a62d211b67",
+    "research/extended_select.py": "dff605f9ef3b89bb70cf3c78765c151a9a30d0d1fc65fe726011649cc1ce008a"
+  },
+  "frozen_at_utc": "2026-10-08T06:16:43.879895+00:00"
+}

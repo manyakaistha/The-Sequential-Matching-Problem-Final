@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "execution": "subprocess",
+      "response": {
+        "pairs": [],
+        "memory": {}
+      },
+      "seconds": 0.041169750000335625,
+      "stderr": "round3 fallback: TypeError\n",
+      "fallback_warning_count": 1
+    },
+    {
+      "execution": "container",
+      "response": {
+        "pairs": [],
+        "memory": {}
+      },
+      "seconds": 0.3992518749996634,
+      "stderr": "round3 fallback: TypeError\n",
+      "fallback_warning_count": 1
+    }
+  ],
+  "request": {
+    "phase": "match",
+    "state": {
+      "members": null
+    },
+    "memory": null
+  },
+  "scope": "Malformed valid JSON state triggers explicit fallback; capture telemetry verification"
+}

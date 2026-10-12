@@ -1,0 +1,15 @@
+[
+  {
+    "recorded_utc": "2026-10-10T03:06:06.338393+00:00",
+    "phase": "prediction-audit preparation",
+    "command": ".venv/bin/python - [heredoc helper checks]",
+    "exact_command_preserved_in": "tool transcript; helper calls proper(.1,.9)/(0,1), proper(.5,.5)/(0,1), interval(1,2,3,4), terminal_label date30 second33/34 and future public-event assertion",
+    "cpu_seconds_reported": 0.007446999999999981,
+    "outcome": "passed",
+    "compute_scope": "CPU measurement excludes Python imports; no full episodes",
+    "seed_exposure": "Previously examined101 day0 only",
+    "future_execution": [
+      "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research4.prediction_audit --input results/research4/focus.json --output results/research4/prediction_audit.json > results/research4/prediction_audit.log"
+    ]
+  }
+]

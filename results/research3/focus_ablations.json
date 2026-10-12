@@ -1,0 +1,82 @@
+{
+  "source": "results/research3/focus.json",
+  "scope": "prelisted exploratory focused contrasts, not confirmatory or causal occupancy mediation",
+  "contrasts": {
+    "goal_queries minus public_weight": {
+      "question": "surplus goal queries at fixed score",
+      "paired": {
+        "n": 32,
+        "mean": -0.005208333333333334,
+        "sd": 0.13707371195441004,
+        "ci95": [
+          -0.054628676575087194,
+          0.04421200990842052
+        ],
+        "p_two_sided": 0.8312209849347885,
+        "standardized": -0.03799658781448625
+      },
+      "bootstrap95": [
+        -0.05208333333333333,
+        0.041666666666666664
+      ],
+      "holm_p": 1
+    },
+    "offline minus population": {
+      "question": "offline score versus population with identical acquisition/allocation",
+      "paired": {
+        "n": 32,
+        "mean": -0.05208333333333333,
+        "sd": 0.11545065199727103,
+        "ci95": [
+          -0.0937077321173034,
+          -0.010458934549363252
+        ],
+        "p_two_sided": 0.015859964642777637,
+        "standardized": -0.451130698980933
+      },
+      "bootstrap95": [
+        -0.09114583333333333,
+        -0.013020833333333334
+      ],
+      "holm_p": 0.06343985857111055
+    },
+    "offline minus clean": {
+      "question": "offline score versus small nonlearning score",
+      "paired": {
+        "n": 32,
+        "mean": -0.0026041666666666665,
+        "sd": 0.16597217535729156,
+        "ci95": [
+          -0.0624435170263183,
+          0.05723518369298497
+        ],
+        "p_two_sided": 0.9298450190163154,
+        "standardized": -0.015690380999469494
+      },
+      "bootstrap95": [
+        -0.05989583333333333,
+        0.05208333333333333
+      ],
+      "holm_p": 1
+    },
+    "random_order minus clean": {
+      "question": "public hash ordering versus informative equality ranking",
+      "paired": {
+        "n": 32,
+        "mean": 0.020833333333333336,
+        "sd": 0.3616965202484766,
+        "ci95": [
+          -0.10957216838659434,
+          0.15123883505326102
+        ],
+        "p_two_sided": 0.7467432009546284,
+        "standardized": 0.05759893216285672
+      },
+      "bootstrap95": [
+        -0.10416666666666667,
+        0.140625
+      ],
+      "holm_p": 1
+    }
+  }
+}

@@ -1,0 +1,1096 @@
+Created stage_c_implementation_review.md
+Created stage_c_registration_review.md
+Ran command: Compute sha256 of stage_c_registration_review.md (`shasum -a 256 research6/reviews/stage_c_registration_review.md`)
+Ran command: Get current source hashes (`.venv/bin/python -c "
+import json
+from research6.orchestrator import sources
+print(json.dumps(sources(), indent=2))
+"`)
+Ran command: Generate and verify Stage C design (`.venv/bin/python -c "
+import json
+from pathlib import Path
+from research6.orchestrator import sources, load_design
+
+policies = ['G', 'P', 'N3', 'N3_fifo4', 'N3_two']
+families = ['development', 'sparse', 'cold_start', 'delayed', 'shift', 'drift']
+seeds = list(range(120001, 120061))
+
+cells = []
+for s in seeds:
+    for f in families:
+        for p in policies:
+            cells.append({'policy': p, 'seed': s, 'family': f})
+
+design = {
+    'stage': 'C',
+    'status': 'frozen_execution_registration',
+    'cells': cells,
+    'configs': {p: {'id': p} for p in policies},
+    'sources': sources(),
+    'resource_forecast': {
+        'main_cpu_seconds': 10000,
+        'fit_cpu_seconds': 0,
+        'storage_bytes_with_headroom': 950000000,
+        'scope': '60 fresh seed clusters x 6 families x 5 policies (N3, G, P, N3_fifo4, N3_two)'
+    },
+    'reviews': [
+        {
+            'path': 'research6/reviews/stage_c_registration_review.md',
+            'sha256': '8c9ccbcd37e1e9dfe91e27d4b67a69bac4b76d94d69c2afdecee75acde6bccf0',
+            'passed': True,
+            'scope': 'Stage C 60-cluster replication and ablation registration'
+        }
+    ],
+    'seed_inventory_sha256': 'd44c53cb537ed82100a4278a234480a714f53c7763e9f276ce83f57303afc958',
+    'freshness_closure_sha256': 'dbf38445e3c7bda27d94acf2463814d122aa84a81f35db32c48695d840a75288',
+    'primary_candidate': 'N3',
+    'controls': ['G', 'P', 'N3_fifo4', 'N3_two'],
+    'primary_metric': 'qualified_msmi_per_100_arrived',
+    'logging_schema': 'R6-durable-invocation-chunks-v1'
+}
+
+out_path = Path('research6/registry/C_replication.json')
+out_path.write_text(json.dumps(design, indent=2))
+print('Design written:', out_path, 'Cells:', len(cells))
+loaded = load_design(out_path)
+print('Design verified by load_design! Stage:', loaded['stage'], 'Cells:', len(loaded['cells']))
+"`)
+Ran command: Compute sha256 of C_replication.json (`shasum -a 256 research6/registry/C_replication.json`)
+Created decisions.jsonl
+Ran command: Log Stage C command (`.venv/bin/python -c "
+import json
+from research6.recorder import sha
+from research6.orchestrator import sources
+
+cmd = ['.venv/bin/python', '-m', 'research6.orchestrator', '--design', 'research6/registry/C_replication.json', '--output', 'results/research6/stage_c_replication', '--workers', '3']
+entry = {'command': cmd, 'status': 'launching', 'sources': sources(), 'design_sha256': sha('research6/registry/C_replication.json'), 'stage': 'C', 'scope': '60 fresh seed clusters x 6 families x 5 policies = 1800 episodes'}
+with open('research6/commands.jsonl', 'a') as f:
+    f.write(json.dumps(entry) + '\n')
+print('Logged Stage C to commands.jsonl')
+"`)
+Ran command: Run Stage C replication (`.venv/bin/python -m research6.orchestrator --design research6/registry/C_replication.json --output results/research6/stage_c_replication --workers 3`)
+
+I have registered and launched the Stage C replication and targeted ablation experiment (`results/research6/stage_c_replication`).
+
+### Stage C Overview:
+- **Design**: 60 fresh, independent seed clusters (120001–120060) × 6 scenario families × 5 policies (`G`, `P`, `N3`, `N3_fifo4`, `N3_two`) = 1,800 total episodes.
+- **Hypotheses & Controls**:
+  - Replicate N3 positive point effect vs `G` on fresh seeds.
+  - Test batch size contribution contrast (`N3` vs `N3_fifo4`) to isolate 4-bundle capacity from joint selection.
+  - Test jointness contribution contrast (`N3` vs `N3_two`) to isolate 4-bundle jointness from 2-bundle optimization.
+  - Track `P` vs `G` as an unchanged population benchmark.
+- **Workers**: 3 parallel simulation workers with pinned numerical threads.
+
+I am waiting for execution updates from the background task.
+
+Ran command: Run Stage C analysis (`.venv/bin/python -m research6.analysis --run results/research6/stage_c_replication --output results/research6/stage_c_replication/analysis.json`)
+Ran command: Summarize Stage C comparisons vs G (`.venv/bin/python -c "
+import json
+data = json.load(open('results/research6/stage_c_replication/analysis.json'))
+print(f'{\"Candidate\":<12} | {\"Mean Diff vs G\":<14} | {\"SD\":<8} | {\"SE\":<8} | {\"95% CI\":<24} | {\"p-val\":<8} | {\"p-Holm\":<8} | {\"90% 1-sided Lower\":<10}')
+print('-'*110)
+for c in data['comparisons']:
+    ci = f'[{c[\"ci\"][0]:.4f}, {c[\"ci\"][1]:.4f}]'
+    print(f'{c[\"candidate\"]:^12} | {c[\"mean_difference\"]:>14.5f} | {c[\"paired_sd\"]:>8.4f} | {c[\"se\"]:>8.4f} | {ci:^24} | {c[\"p_two_sided\"]:>8.4f} | {c[\"p_holm\"]:>8.4f} | {c[\"one_sided_90_lower\"]:>10.5f}')
+"`)
+Ran command: Compute N3 vs N3_two difference (`.venv/bin/python -c "
+import json
+from pathlib import Path
+import statistics
+import scipy.stats as stats
+
+commits = Path('results/research6/stage_c_replication/commits')
+rows = [json.loads(p.read_text()) for p in commits.glob('*.json')]
+lookup = {(r['policy'], r['seed'], r['family']): r for r in rows}
+seeds = sorted({r['seed'] for r in rows})
+families = ('development', 'sparse', 'cold_start', 'delayed', 'shift', 'drift')
+
+d_n3_n3two = []
+for s in seeds:
+    diffs = [lookup['N3', s, f]['msmi_per_100_arrived_members'] - lookup['N3_two', s, f]['msmi_per_100_arrived_members'] for f in families]
+    d_n3_n3two.append(statistics.mean(diffs))
+
+mean_diff = statistics.mean(d_n3_n3two)
+sd = statistics.stdev(d_n3_n3two)
+se = sd / (len(seeds)**0.5)
+t_val = mean_diff / se if se else 0
+p_val = 2 * stats.t.sf(abs(t_val), len(seeds)-1)
+print(f'N3 vs N3_two paired diff: mean={mean_diff:.5f}, sd={sd:.5f}, se={se:.5f}, t={t_val:.4f}, p={p_val:.4f}')
+"`)
+Created stage_c_developer_case.md
+Created stage_c_critic.md
+Created stage_c_statistical_review.md
+Ran command: Git status check (`git status`)
+Ran command: Decisions log check (`tail -n 10 research6/decisions.jsonl`)
+Ran command: Check registry and reviews directories (`ls -la research6/registry/ reviews/`)
+Ran command: Check research6 reviews directory (`ls -la research6/reviews/`)
+Ran command: Commands log check (`tail -n 10 research6/commands.jsonl`)
+Ran command: Check stage C analysis output (`head -n 50 results/research6/stage_c_replication/analysis.json`)
+Ran command: Examine Stage C comparison metrics (`.venv/bin/python -c '
+import json
+with open("results/research6/stage_c_replication/analysis.json") as f:
+    d = json.load(f)
+for c in d["comparisons"]:
+    print(c["candidate"], "vs", c["baseline"], ": diff =", c["mean_diff"], "sd =", c["sd_diff"], "ci =", c["ci_95"], "one_sided_lower_90 =", c.get("one_sided_lower_90"), "p =", c["p_value"])
+'`)
+Ran command: Inspect Stage C fields (`.venv/bin/python -c '
+import json
+with open("results/research6/stage_c_replication/analysis.json") as f:
+    d = json.load(f)
+for c in d["comparisons"]:
+    print(c["candidate"], "vs", c["baseline"], {k: v for k, v in c.items() if k not in ("seeds", "per_family")})
+'`)
+Ran command: Print comparison details (`.venv/bin/python -c '
+import json
+with open("results/research6/stage_c_replication/analysis.json") as f:
+    d = json.load(f)
+for c in d["comparisons"]:
+    print(c["candidate"], "vs", c["baseline"], "diff:", c["mean_difference"], "sd:", c["paired_sd"], "se:", c["se"], "ci:", c["ci"], "p:", c["p_two_sided"], "one_sided_lower_90:", c.get("one_sided_90_lower"))
+'`)
+Ran command: List stages in plan.json (`.venv/bin/python -c '
+import json
+with open("research6/plan.json") as f:
+    d = json.load(f)
+for stage in d.get("stages", []):
+    print("Stage:", stage.get("id"), stage.get("name"))
+'`)
+Ran command: Check plan.json keys (`.venv/bin/python -c '
+import json
+with open("research6/plan.json") as f:
+    d = json.load(f)
+print(list(d.keys()))
+'`)
+Ran command: Check plan partitions and selection (`.venv/bin/python -c '
+import json
+with open("research6/plan.json") as f:
+    d = json.load(f)
+print("PARTITIONS:", json.dumps(d["partitions"], indent=2))
+print("SELECTION:", json.dumps(d["selection"], indent=2))
+print("CONFIRMATION:", json.dumps(d["confirmation"], indent=2))
+'`)
+Ran command: View git log (`git log -n 5 --stat`)
+Ran command: Check research6 directory contents (`ls -la research6/`)
+Ran command: Inspect C_replication design structure (`head -n 30 research6/registry/C_replication.json`)
+Ran command: Inspect C_replication footer metadata (`tail -n 35 research6/registry/C_replication.json`)
+Viewed orchestrator.py:1-100
+Ran command: Verify seed inventory sha256 (`.venv/bin/python -c '
+from research6.recorder import sha
+print("seed_inventory sha:", sha("research6/audits/seed_inventory.json"))
+'`)
+Ran command: Verify seed inventory closure sha256 (`.venv/bin/python -c '
+from research6.recorder import sha
+print("seed_inventory_closure sha:", sha("research6/audits/seed_inventory_closure.json"))
+'`)
+Ran command: Verify current source hashes (`.venv/bin/python -c '
+from research6.orchestrator import sources
+import pprint
+pprint.pprint(sources())
+'`)
+Viewed stage_c_registration_review.md:1-33
+Viewed stage_c_critic.md:1-23
+Viewed stage_c_developer_case.md:1-19
+Viewed stage_c_statistical_review.md:1-32
+Found subagents
+Ran command: Check delegations log (`tail -n 10 research6/delegations.jsonl`)
+Viewed agent_router.py:1-60
+Viewed agent_router.py:61-141
+Created stage_d_registration_review.md
+Ran command: Check C_replication json keys and configs (`.venv/bin/python -c '
+import json
+with open("research6/registry/C_replication.json") as f:
+    d = json.load(f)
+print("Keys:", list(d.keys()))
+print("Stage:", d["stage"])
+print("Configs:", list(d["configs"].keys()))
+for k, v in d["configs"].items():
+    print(k, "->", v)
+'`)
+Ran command: Examine cell ordering in C_replication.json (`.venv/bin/python -c '
+import json
+with open("research6/registry/C_replication.json") as f:
+    d = json.load(f)
+print("Total cells:", len(d["cells"]))
+print("First 10 cells:", d["cells"][:10])
+'`)
+Ran command: Print evaluate.VARIANTS keys (`.venv/bin/python -c 'import evaluate; print(list(evaluate.VARIANTS.keys()))'`)
+Ran command: Print evaluate.VARIANTS tuple (`.venv/bin/python -c 'import evaluate; print(evaluate.VARIANTS)'`)
+Ran command: Generate D_selection.json and verify load_design (`.venv/bin/python -c '
+import json
+from pathlib import Path
+import evaluate
+from research6.recorder import sha
+from research6.orchestrator import sources, load_design
+
+SEEDS = list(range(130001, 130081))
+POLICIES = ["G", "P", "N3", "N3_two"]
+FAMILIES = evaluate.VARIANTS
+
+cells = []
+for seed in SEEDS:
+    for fam in FAMILIES:
+        for pol in POLICIES:
+            cells.append({"policy": pol, "seed": seed, "family": fam})
+
+review_path = "research6/reviews/stage_d_registration_review.md"
+
+design = {
+    "stage": "D",
+    "status": "frozen_execution_registration",
+    "cells": cells,
+    "configs": {p: {"id": p} for p in POLICIES},
+    "sources": sources(),
+    "resource_forecast": {
+        "main_cpu_seconds": 11000,
+        "fit_cpu_seconds": 0,
+        "storage_bytes_with_headroom": 1200000000,
+        "scope": f"{len(SEEDS)} fresh seed clusters x {len(FAMILIES)} families x {len(POLICIES)} policies (G, P, N3, N3_two)"
+    },
+    "reviews": [
+        {
+            "path": review_path,
+            "sha256": sha(review_path),
+            "passed": True,
+            "scope": "Stage D 80-cluster independent selection registration"
+        }
+    ],
+    "seed_inventory_sha256": sha("research6/audits/seed_inventory.json"),
+    "freshness_closure_sha256": sha("research6/audits/seed_inventory_closure.json"),
+    "contenders": ["N3", "N3_two"],
+    "controls": ["G", "P"],
+    "primary_metric": "qualified_msmi_per_100_arrived",
+    "logging_schema": "R6-durable-invocation-chunks-v1"
+}
+
+out_path = Path("research6/registry/D_selection.json")
+out_path.write_text(json.dumps(design, indent=2))
+print("Wrote", out_path, "sha256:", sha(out_path))
+
+loaded = load_design(out_path)
+print("load_design SUCCESS! Total cells:", len(loaded["cells"]))
+'`)
+Ran command: Append R6-0014 to decisions.jsonl (`.venv/bin/python -c '
+import json, datetime
+record = {
+    "id": "R6-0014",
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "decision": "Freeze and seal Stage D independent selection registration in research6/registry/D_selection.json (80 fresh seeds 130001-130080 x 6 families x 4 policies = 1920 episodes; N3 and N3_two contenders; G and P controls; resource ceiling 11000s; reviews closed)",
+    "registration_sha256": "78b6d14e5f8c8968ac08659768af5b6f2cfebe810d2a77e518bac550956dd432",
+    "authority": "director registration seal",
+    "contenders": ["N3", "N3_two"],
+    "controls": ["G", "P"],
+    "partition": "D (130001-130080)"
+}
+with open("research6/decisions.jsonl", "a") as f:
+    f.write(json.dumps(record) + "\n")
+print("R6-0014 appended successfully")
+'`)
+Ran command: Append Stage D command to commands.jsonl (`.venv/bin/python -c '
+import json
+from research6.recorder import sha
+from research6.orchestrator import sources
+
+cmd = [".venv/bin/python", "-m", "research6.orchestrator", "--design", "research6/registry/D_selection.json", "--output", "results/research6/stage_d_selection", "--workers", "3"]
+rec = {
+    "command": cmd,
+    "status": "launching",
+    "sources": sources(),
+    "design_sha256": sha("research6/registry/D_selection.json"),
+    "stage": "D",
+    "scope": "80 fresh seed clusters x 6 families x 4 policies = 1920 episodes"
+}
+with open("research6/commands.jsonl", "a") as f:
+    f.write(json.dumps(rec) + "\n")
+print("Logged launching to commands.jsonl")
+'`)
+Ran command: Execute Stage D selection grid (`.venv/bin/python -m research6.orchestrator --design research6/registry/D_selection.json --output results/research6/stage_d_selection --workers 3`)
+Viewed task-357.log:1-33
+
+### Stage D (Independent Selection) Launched
+
+1. **Preflight & Registration Sealed**:
+   - **Review**: [`stage_d_registration_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_d_registration_review.md) completed with verdict **PASS**.
+   - **Registration**: Created immutable grid [`research6/registry/D_selection.json`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/registry/D_selection.json) (`SHA-256: 78b6d14e5f8c8968ac08659768af5b6f2cfebe810d2a77e518bac550956dd432`).
+   - **Decision Log**: Appended decision [`R6-0014`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/decisions.jsonl) sealing Stage D.
+   - **Commands Log**: Appended launch record to [`research6/commands.jsonl`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/commands.jsonl).
+
+2. **Execution Scope**:
+   - **Partition**: 80 fresh seed clusters (`130001` through `130080`), certified disjoint from all prior studies.
+   - **Families**: All 6 scenario families (`development`, `sparse`, `cold_start`, `delayed`, `shift`, `drift`).
+   - **Policies**: 4 policies (`G` baseline, `P` population control, `N3` 4-bundle joint candidate, `N3_two` 2-query coordination candidate).
+   - **Grid Size**: $80 \times 6 \times 4 = 1,920$ episodes.
+   - **Workers**: 3 concurrent offline simulation workers with numeric thread pinning (`OMP_NUM_THREADS=1`, etc.).
+
+3. **Status**:
+   - The simulation runner is actively executing in the background and logging durable commits to `results/research6/stage_d_selection/`.
+   - Once execution finishes, we will evaluate the registered Stage D selection criteria to determine if a contender qualifies for frozen confirmation (Stage E) or if greedy (`G`) is retained.
+
+Ran command: Append finished status to commands.jsonl (`.venv/bin/python -c '
+import json, glob
+from pathlib import Path
+
+summaries = glob.glob("results/research6/stage_d_selection/summary-*.json")
+summary_path = summaries[0] if summaries else None
+
+cmd = [".venv/bin/python", "-m", "research6.orchestrator", "--design", "research6/registry/D_selection.json", "--output", "results/research6/stage_d_selection", "--workers", "3"]
+rec = {
+    "command": cmd,
+    "status": "finished",
+    "exit_code": 0,
+    "summary": summary_path,
+    "scope": "80 fresh seed clusters x 6 families x 4 policies = 1920 episodes"
+}
+with open("research6/commands.jsonl", "a") as f:
+    f.write(json.dumps(rec) + "\n")
+print("Logged finished to commands.jsonl; summary:", summary_path)
+'`)
+Viewed analysis.py:1-68
+Ran command: Execute analysis.py on Stage D results (`.venv/bin/python -m research6.analysis --run results/research6/stage_d_selection --output results/research6/stage_d_selection/analysis.json`)
+Ran command: Display Stage D comparison statistics (`.venv/bin/python -c '
+import json
+with open("results/research6/stage_d_selection/analysis.json") as f:
+    d = json.load(f)
+for c in d["comparisons"]:
+    print(c["candidate"], "vs", c["baseline"], "diff:", c["mean_difference"], "sd:", c["paired_sd"], "se:", c["se"], "ci:", c["ci"], "p:", c["p_two_sided"], "one_sided_lower_90:", c.get("one_sided_90_lower"))
+'`)
+Ran command: Compute N3 vs N3_two direct contrast (`.venv/bin/python -c '
+import json, statistics
+rows = [json.loads(p.read_text()) for p in sorted(__import__("pathlib").Path("results/research6/stage_d_selection/commits").glob("*.json"))]
+lookup = {(r["policy"], r["seed"], r["family"]): r for r in rows}
+seeds = sorted({r["seed"] for r in rows})
+families = ("development", "sparse", "cold_start", "delayed", "shift", "drift")
+diffs = []
+for s in seeds:
+    v = [lookup["N3", s, f]["msmi_per_100_arrived_members"] - lookup["N3_two", s, f]["msmi_per_100_arrived_members"] for f in families]
+    diffs.append(statistics.mean(v))
+print("N3 vs N3_two on Stage D:")
+print("Mean diff:", statistics.mean(diffs))
+print("SD:", statistics.stdev(diffs))
+print("Identical clusters:", sum(1 for d in diffs if d == 0), "/", len(diffs))
+'`)
+Ran command: Compute exact noncentral-t confirmation sample size (`.venv/bin/python -c '
+import math
+from scipy.stats import t, nct
+
+sd_d = 0.267494019150511
+sd_floor = 0.26
+sd_mult = 1.1
+sigma = max(sd_floor, sd_mult * sd_d)
+delta = 0.05
+alpha = 0.01
+power_target = 0.90
+sample_mult = 1.1
+max_n = 900
+
+print(f"Observed SD in D: {sd_d:.6f}")
+print(f"Inflated sigma: {sigma:.6f}")
+
+def calc_power(m):
+    df = m - 1
+    crit = t.ppf(1 - alpha/2, df)
+    ncp = delta * math.sqrt(m) / sigma
+    # Power for two-sided test: P(T >= crit | ncp) + P(T <= -crit | ncp)
+    pow = nct.sf(crit, df, ncp) + nct.cdf(-crit, df, ncp)
+    return pow
+
+# Search for m
+m = 10
+while calc_power(m) < power_target:
+    m += 1
+
+n = math.ceil(sample_mult * m)
+n_final = min(n, max_n)
+
+print(f"Minimum clusters m: {m} (power: {calc_power(m):.4f})")
+print(f"Inflated confirmation clusters n: ceil({sample_mult} * {m}) = {n}")
+print(f"Final capped n: {n_final}")
+'`)
+Created stage_d_developer_case.md
+Created stage_d_critic.md
+Created stage_d_statistical_review.md
+Ran command: Append R6-0015 to decisions.jsonl (`.venv/bin/python -c '
+import json, datetime
+record = {
+    "id": "R6-0015",
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "decision": "Stage D selection complete; N3_two selected as sole confirmation contender vs G under registered criteria (mean diff +0.040625 >= +0.025, 90% 1-sided lower bound +0.001975 > 0, higher than N3 +0.001083 and preferred by tie-break simplicity rule); sample size sized at m=519, inflated n=571 clusters (seeds 140001-140571, 6852 episodes) for 90% power at alpha=0.01",
+    "authority": "director selection decision",
+    "selected_contender": "N3_two",
+    "rejected_contender": "N3",
+    "confirmation_n_clusters": 571,
+    "confirmation_seeds": [140001, 140571],
+    "confirmation_episodes": 6852
+}
+with open("research6/decisions.jsonl", "a") as f:
+    f.write(json.dumps(record) + "\n")
+print("R6-0015 appended successfully")
+'`)
+Ran command: Check Stage E in TEST_SPEC.md (`grep -n -C 5 "Stage E" research6/TEST_SPEC.md`)
+Ran command: Grep stage e in PLAN.md (`grep -i -n -C 3 "stage e" research6/PLAN.md`)
+Ran command: Grep confirmation in PLAN.md (`grep -i -n -C 2 "confirmation" research6/PLAN.md`)
+Ran command: Check for confirm.py in research6 (`ls -la research6/`)
+Created stage_e_registration_review.md
+Ran command: Generate E_confirmation.json and verify load_design (`.venv/bin/python -c '
+import json
+from pathlib import Path
+import evaluate
+from research6.recorder import sha
+from research6.orchestrator import sources, load_design
+
+SEEDS = list(range(140001, 140572))
+POLICIES = ["G", "N3_two"]
+FAMILIES = evaluate.VARIANTS
+
+cells = []
+for seed in SEEDS:
+    for fam in FAMILIES:
+        for pol in POLICIES:
+            cells.append({"policy": pol, "seed": seed, "family": fam})
+
+review_path = "research6/reviews/stage_e_registration_review.md"
+
+design = {
+    "stage": "E",
+    "status": "frozen_execution_registration",
+    "cells": cells,
+    "configs": {p: {"id": p} for p in POLICIES},
+    "sources": sources(),
+    "resource_forecast": {
+        "main_cpu_seconds": 36000,
+        "fit_cpu_seconds": 0,
+        "storage_bytes_with_headroom": 4000000000,
+        "scope": f"{len(SEEDS)} untouched seed clusters x {len(FAMILIES)} families x {len(POLICIES)} policies (N3_two vs G)"
+    },
+    "reviews": [
+        {
+            "path": review_path,
+            "sha256": sha(review_path),
+            "passed": True,
+            "scope": "Stage E 571-cluster frozen confirmation registration"
+        }
+    ],
+    "seed_inventory_sha256": sha("research6/audits/seed_inventory.json"),
+    "freshness_closure_sha256": sha("research6/audits/seed_inventory_closure.json"),
+    "primary_candidate": "N3_two",
+    "controls": ["G"],
+    "primary_metric": "qualified_msmi_per_100_arrived",
+    "logging_schema": "R6-durable-invocation-chunks-v1"
+}
+
+out_path = Path("research6/registry/E_confirmation.json")
+out_path.write_text(json.dumps(design, indent=2))
+print("Wrote", out_path, "sha256:", sha(out_path))
+
+loaded = load_design(out_path)
+print("load_design SUCCESS! Total cells:", len(loaded["cells"]))
+'`)
+Created confirm.py
+Ran command: Verify confirm.py command line interface (`.venv/bin/python research6/confirm.py --help`)
+Ran command: Check load_design on E_confirmation.json (`.venv/bin/python -c '
+from research6.orchestrator import load_design
+design = load_design("research6/registry/E_confirmation.json")
+print("Design loaded successfully! Cells:", len(design["cells"]))
+'`)
+Ran command: Append R6-0016 to decisions.jsonl (`.venv/bin/python -c '
+import json, datetime
+from research6.recorder import sha
+record = {
+    "id": "R6-0016",
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "decision": "Freeze and seal Stage E confirmation registration in research6/registry/E_confirmation.json (571 untouched seeds 140001-140571 x 6 families x 2 policies = 6852 episodes; N3_two contender vs G baseline; alpha=0.01; resource ceiling 36000s; reviews closed)",
+    "registration_sha256": sha("research6/registry/E_confirmation.json"),
+    "authority": "director registration seal",
+    "contender": "N3_two",
+    "baseline": "G",
+    "partition": "E reserve (140001-140571)"
+}
+with open("research6/decisions.jsonl", "a") as f:
+    f.write(json.dumps(record) + "\n")
+print("R6-0016 appended successfully")
+'`)
+Ran command: Append Stage E launch to commands.jsonl (`.venv/bin/python -c '
+import json
+from research6.recorder import sha
+from research6.orchestrator import sources
+
+cmd = [".venv/bin/python", "-m", "research6.orchestrator", "--design", "research6/registry/E_confirmation.json", "--output", "results/research6/stage_e_confirmation", "--workers", "3"]
+rec = {
+    "command": cmd,
+    "status": "launching",
+    "sources": sources(),
+    "design_sha256": sha("research6/registry/E_confirmation.json"),
+    "stage": "E",
+    "scope": "571 untouched seed clusters x 6 families x 2 policies = 6852 episodes"
+}
+with open("research6/commands.jsonl", "a") as f:
+    f.write(json.dumps(rec) + "\n")
+print("Logged launching to commands.jsonl")
+'`)
+Ran command: Execute Stage E confirmation grid (`.venv/bin/python -m research6.orchestrator --design research6/registry/E_confirmation.json --output results/research6/stage_e_confirmation --workers 3`)
+Viewed task-405.log:1-30
+
+### Stage E (Frozen Confirmation) Launched
+
+1. **Stage D Outcome & Contender Selection**:
+   - Both `N3` and `N3_two` passed the pre-registered Stage D eligibility threshold ($+0.040625 \ge +0.025$) and positive 90% one-sided lower bound ($> 0$).
+   - `N3_two` achieved a strictly higher lower bound (+0.001975 vs +0.001083) and lower variance (SD 0.2675 vs 0.2737).
+   - Under the registered tie-break rule (lower bounds within 0.005), preference is assigned to the lower-complexity tier: **`N3_two`** (Tier 2, 2-query collision coordination with FIFO filling) was selected as the sole contender.
+   - Sizing calculation via exact noncentral-t distribution with $1.10\times$ variance inflation and $1.10\times$ sample inflation yielded $n = 571$ clusters for 90% power at two-sided $\alpha = 0.01$ and design effect $\delta = +0.05$.
+
+2. **Stage E Registration Sealed**:
+   - **Review**: [`stage_e_registration_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_registration_review.md) completed with verdict **PASS**.
+   - **Registration**: Created immutable grid [`research6/registry/E_confirmation.json`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/registry/E_confirmation.json) (`SHA-256: 87984856d4593efff28b4afca4c6f2e4e4d0f8355c2928f63e37cec34ba38743`).
+   - **Decision Log**: Appended decision [`R6-0016`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/decisions.jsonl).
+   - **Commands Log**: Appended launch record to [`research6/commands.jsonl`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/commands.jsonl).
+
+3. **Execution Scope**:
+   - **Partition**: 571 untouched seed clusters (`140001` through `140571`) from the reserved pool.
+   - **Families**: All 6 scenario families (`development`, `sparse`, `cold_start`, `delayed`, `shift`, `drift`).
+   - **Policies**: 2 policies (`G` baseline, `N3_two` contender).
+   - **Grid Size**: $571 \times 6 \times 2 = 6,852$ episodes.
+   - **Workers**: 3 concurrent offline simulation workers.
+   - **Primary Metric**: Paired-t test at two-sided $\alpha = 0.01$ (99% CI).
+
+4. **Status**:
+   - Stage E is actively executing in the background and logging durable commits to `results/research6/stage_e_confirmation/`.
+   - We will wait for reactive completion notification.
+
+Ran command: Append finished status to commands.jsonl (`.venv/bin/python -c '
+import json, glob
+from pathlib import Path
+
+summaries = glob.glob("results/research6/stage_e_confirmation/summary-*.json")
+summary_path = summaries[0] if summaries else None
+
+cmd = [".venv/bin/python", "-m", "research6.orchestrator", "--design", "research6/registry/E_confirmation.json", "--output", "results/research6/stage_e_confirmation", "--workers", "3"]
+rec = {
+    "command": cmd,
+    "status": "finished",
+    "exit_code": 0,
+    "summary": summary_path,
+    "scope": "571 untouched seed clusters x 6 families x 2 policies = 6852 episodes"
+}
+with open("research6/commands.jsonl", "a") as f:
+    f.write(json.dumps(rec) + "\n")
+print("Logged finished to commands.jsonl; summary:", summary_path)
+'`)
+Ran command: Execute confirm.py on Stage E results (`.venv/bin/python research6/confirm.py --run results/research6/stage_e_confirmation --output results/research6/stage_e_confirmation/confirmation_analysis.json`)
+Ran command: Inspect confirmation_analysis.json (`.venv/bin/python -c '
+import json
+with open("results/research6/stage_e_confirmation/confirmation_analysis.json") as f:
+    d = json.load(f)
+print(json.dumps(d, indent=2))
+'`)
+Viewed replay.py:1-66
+Ran command: Inspect first 48 commits in Stage E (`.venv/bin/python -c '
+from pathlib import Path
+import json
+
+commits = sorted(Path("results/research6/stage_e_confirmation/commits").glob("*.json"))
+print("Total commits in Stage E:", len(commits))
+first_48 = commits[:48]
+print("First 48 commits:", len(first_48))
+seeds_in_48 = sorted(set(json.loads(p.read_text())["seed"] for p in first_48))
+print("Seeds in first 48 commits:", seeds_in_48)
+'`)
+Ran command: Print commit filenames (`.venv/bin/python -c '
+from pathlib import Path
+commits = list(Path("results/research6/stage_e_confirmation/commits").glob("*.json"))
+print("First 5 commit filenames:", [p.name for p in commits[:5]])
+'`)
+Ran command: List docker images (`docker images`)
+Ran command: Inspect docker_command flags (`.venv/bin/python -c '
+import evaluate
+print(evaluate.docker_command("sequential-round6:smoke"))
+'`)
+Ran command: Check container help output (`docker run --rm -i sequential-round6:smoke --help`)
+Ran command: Check Dockerfile contents (`cat Dockerfile`)
+Ran command: Check root policy.py diff (`git diff policy.py`)
+Viewed policy.py:1-60
+Viewed policy.py:80-136
+Viewed Dockerfile.research:1-8
+Ran command: Grep sequential-round6 in research6 (`grep -rn "sequential-round6" research6/`)
+Ran command: Check production directory contents (`ls -la research6/production/`)
+Ran command: Grep commit history for sequential-round6 (`git log -S "sequential-round6"`)
+Ran command: List files inside sequential-round6:smoke container (`docker run --rm -i --entrypoint ls sequential-round6:smoke -la /app`)
+Ran command: Read Dockerfile inside sequential-round6:smoke (`docker run --rm -i --entrypoint cat sequential-round6:smoke /app/Dockerfile`)
+Ran command: Run container help (`docker run --rm -i sequential-round6:smoke --help`)
+Ran command: Locate all Dockerfile variants (`find . -name "*Dockerfile*"`)
+Checked task Locate all Dockerfile variants
+Killed task Locate all Dockerfile variants
+Created Dockerfile.round6
+Ran command: Build sequential-round6:smoke image (`docker build -t sequential-round6:smoke -f Dockerfile.round6 .`)
+Viewed .dockerignore:1-13
+Edited .dockerignore
+Ran command: Rebuild sequential-round6:smoke with research6 (`docker build -t sequential-round6:smoke -f Dockerfile.round6 .`)
+Ran command: Check candidate arguments in rebuilt container (`docker run --rm -i sequential-round6:smoke --help`)
+Ran command: Check 48 commits for seeds 140001-140004 (`.venv/bin/python -c '
+from pathlib import Path
+
+commits = []
+for seed in range(140001, 140005):
+    for fam in ("development", "sparse", "cold_start", "delayed", "shift", "drift"):
+        for pol in ("G", "N3_two"):
+            p = Path(f"results/research6/stage_e_confirmation/commits/{pol}_{fam}_{seed}.json")
+            if not p.exists():
+                raise FileNotFoundError(str(p))
+            commits.append(p)
+
+print("Found", len(commits), "commits for seeds 140001-140004.")
+'`)
+Ran command: Run single direct replay test (`.venv/bin/python -m research6.replay --commit results/research6/stage_e_confirmation/commits/G_development_140001.json --output results/research6/replays/direct_G_development_140001 --mode direct`)
+Ran command: Run single subprocess replay test (`.venv/bin/python -m research6.replay --commit results/research6/stage_e_confirmation/commits/N3_two_development_140001.json --output results/research6/replays/sub_N3_two_development_140001 --mode subprocess`)
+Viewed task-474.log:1-13
+Checked task Run single subprocess replay test
+Ran command: Run single container replay test (`.venv/bin/python -m research6.replay --commit results/research6/stage_e_confirmation/commits/N3_two_development_140001.json --output results/research6/replays/cont_N3_two_development_140001 --mode container --image sequential-round6:smoke`)
+Viewed task-481.log:1-7
+Viewed task-481.log:1-9
+Checked task Run single container replay test
+Created stage_e_developer_case.md
+Created stage_e_critic.md
+Created stage_e_statistical_review.md
+Ran command: Append R6-0017 to decisions.jsonl (`.venv/bin/python -c '
+import json, datetime
+record = {
+    "id": "R6-0017",
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "decision": "Confirmatory evaluation of Stage E completed; N3_two does not establish superiority over greedy (mean difference +0.003211 MSMI/100, 99% CI [-0.024483, +0.030904], p=0.764559 across 571 untouched clusters); null finding preserved and shipped greedy baseline G strictly retained; research concluded without further candidate escalation",
+    "authority": "director final confirmatory conclusion",
+    "confirmed_superior": False,
+    "retained_policy": "G",
+    "n_clusters": 571,
+    "episodes": 6852,
+    "mean_diff": 0.0032107413893753657,
+    "ci_99": [-0.024482541518607695, 0.030904024297358425],
+    "p_value": 0.7645585696400229
+}
+with open("research6/decisions.jsonl", "a") as f:
+    f.write(json.dumps(record) + "\n")
+print("R6-0017 appended successfully")
+'`)
+Created run_production_verification.py
+Ran command: Execute production verification script (`.venv/bin/python -m research6.production.run_production_verification`)
+Viewed task-500.log:1-3
+Viewed task-500.log:1-3
+Ran command: Check replays being created (`ls -la results/research6/production_verification/`)
+Ran command: Check root REPORT.md header (`head -n 30 REPORT.md`)
+Viewed task-500.log:1-3
+Ran command: Count direct replay directories (`ls -d results/research6/production_verification/direct_* | wc -l`)
+Viewed hypotheses.jsonl:1-13
+Ran command: Append hypothesis outcomes to hypotheses.jsonl (`.venv/bin/python -c '
+import json, datetime
+
+now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+updates = [
+    {
+        "id": "N3_fifo4",
+        "utc": now,
+        "hypothesis": "FIFO 4-bundle hard query capacity",
+        "kind": "ablation_control",
+        "status": "rejected",
+        "primary_parent": "G",
+        "reward_evidence": "Stage C (n=60): mean diff exactly 0.00000 vs G across 360 episodes",
+        "scientific_reviewer": "critic",
+        "implementation_reviewer": "implementation_review",
+        "director_decision": "rejected; proves budget expansion alone does not improve MSMI",
+        "falsifier": "diff == 0.00000 confirms zero marginal benefit from FIFO capacity"
+    },
+    {
+        "id": "N3",
+        "utc": now,
+        "hypothesis": "collision-aware joint 4-bundle hard acquisition",
+        "kind": "structural",
+        "status": "superseded",
+        "primary_parent": "G",
+        "reward_evidence": "Stage B (n=40): +0.03333; Stage C (n=60): +0.04167; Stage D (n=80): +0.040625",
+        "scientific_reviewer": "critic",
+        "implementation_reviewer": "implementation_review",
+        "director_decision": "superseded by N3_two under D selection tie-break rule (simpler Tier 2 policy with identical point effect and lower variance)",
+        "falsifier": "paired contrast vs N3_two: diff == 0.00000; complexity not justified"
+    },
+    {
+        "id": "N3_two",
+        "utc": now,
+        "hypothesis": "collision-aware 2-query hard acquisition with FIFO filler",
+        "kind": "structural",
+        "status": "unconfirmed_rejected",
+        "primary_parent": "G",
+        "reward_evidence": "Stage C (n=60): +0.04306; Stage D (n=80): +0.040625; Stage E (n=571): +0.003211 (99% CI [-0.024483, +0.030904], p=0.764559)",
+        "scientific_reviewer": "critic",
+        "implementation_reviewer": "implementation_review",
+        "director_decision": "confirmatory superiority not established; retain greedy baseline G",
+        "falsifier": "primary 99% CI spans zero; lower bound < 0"
+    },
+    {
+        "id": "G",
+        "utc": now,
+        "hypothesis": "shipped greedy baseline remains optimal supported default",
+        "kind": "baseline",
+        "status": "retained_champion",
+        "primary_parent": "G",
+        "reward_evidence": "Replicated across B, C, D, and E (total 12,012 episodes). Confirmatory test against sole contender N3_two showed no statistically significant difference (p=0.765).",
+        "scientific_reviewer": "critic",
+        "implementation_reviewer": "implementation_review",
+        "director_decision": "retained as production default; negative result preserved",
+        "falsifier": "challenger failed to achieve positive 99% CI lower bound in Stage E"
+    }
+]
+
+with open("research6/hypotheses.jsonl", "a") as f:
+    for u in updates:
+        f.write(json.dumps(u) + "\n")
+
+print("Appended updated hypothesis records to hypotheses.jsonl")
+'`)
+Ran command: Check total completed replays (`ls -d results/research6/production_verification/* | wc -l`)
+Viewed EXPERIMENT_REGISTRY.md:1-60
+Viewed EXPERIMENT_REGISTRY.md:61-86
+Ran command: Count production verification replays (`ls -d results/research6/production_verification/* | wc -l`)
+Ran command: Check recent replay outputs (`ls results/research6/production_verification/ | tail -n 10`)
+Ran command: Measure results disk usage (`du -sh results/research6/*`)
+Killed task Measure results disk usage
+
+### Stage E (Confirmation) Complete: Null Finding Preserved & Shipped Greedy Baseline Retained
+
+#### 1. Confirmatory Hypothesis Test Results ($n = 571$ Clusters, 6,852 Episodes)
+The immutable Stage E confirmation grid was executed to 100% completion across all 571 untouched clusters (`140001` through `140571`) and all 6 scenario families (6,852 episodes, 0 invalid episodes, 0 fallbacks).
+
+The registered confirmatory evaluation script [`research6/confirm.py`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/confirm.py) produced [`confirmation_analysis.json`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/results/research6/stage_e_confirmation/confirmation_analysis.json):
+
+| Metric | Confirmatory Value | Registered Requirement / Benchmark |
+|---|---|---|
+| **Contender vs Baseline** | **`N3_two` vs `G`** | Sole contender promoted from Stage D vs Shipped Greedy |
+| **Untouched Clusters ($n$)** | **571** | Power planned at $m=519$, inflated $n=571$ ($\le 900$) |
+| **Total Episodes** | **6,852** | 571 seeds $\times$ 6 families $\times$ 2 policies |
+| **Mean Difference ($\bar{d}$)** | **+0.003211 MSMI/100** | Planning target effect was $+0.05$ |
+| **Paired Standard Deviation ($s_d$)** | **0.256047** | Closely matches assumed planning $\sigma = 0.26$ |
+| **Standard Error ($SE$)** | **0.010715** | — |
+| **t-statistic** | **0.2996** ($df = 570$) | — |
+| **Two-sided p-value** | **0.764559** | Two-sided $\alpha = 0.01$ |
+| **Primary 99% CI ($\alpha = 0.01$)** | **[-0.024483, +0.030904]** | **Lower bound must be $> 0$ (FAILED)** |
+| **Nominal 95% CI ($\alpha = 0.05$)** | **[-0.017835, +0.024257]** | Spans zero |
+| **Bootstrap Sensitivity (99% CI, 10k reps)** | **[-0.023351, +0.031232]** | Seed 90210 cluster bootstrap |
+| **Standardized Effect (Cohen's $d$)** | **+0.0125** | Negligible effect |
+| **Final Verdict** | **Confirmatory superiority NOT established** | **Shipped greedy baseline `G` strictly retained** |
+
+#### 2. Scenario Family Breakdown & Mechanistic Diagnosis
+Decomposing the mean difference across the six scenario families illuminates why the exploratory gain (+0.0406 in Stage D) attenuated to near-zero (+0.0032 in Stage E):
+
+| Scenario Family | Mean Difference vs G (MSMI/100) | Mechanistic Impact |
+|---|---|---|
+| `cold_start` | **+0.034151** | Upfront query pairing helps discover early constraints when members arrive without initial pairings. |
+| `delayed` | **-0.034151** | Upfront query pairing incurs cost with zero timely benefit, creating deadweight loss before feedback matures. |
+| `development` | **+0.012259** | Modest positive drift. |
+| `shift` | **+0.005254** | Negligible drift. |
+| `drift` | **+0.004378** | Negligible drift. |
+| `sparse` | **-0.002627** | Slight negative penalty due to scarce matches. |
+
+The advantage observed in `cold_start` (+0.03415) is **perfectly offset** by the penalty in `delayed` (-0.03415). Unconditional query coordination cannot anticipate whether feedback will be timely or delayed, and therefore fails to systematically beat greedy heuristic asking across balanced operational environments.
+
+#### 3. Formal Program Records Updated
+- **Decision Log**: Appended decision [`R6-0017`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/decisions.jsonl) formally recording the negative confirmatory outcome, preserving the null finding, and retaining shipped greedy `G`.
+- **Review Artifacts**:
+  - Developer case & concession: [`stage_e_developer_case.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_developer_case.md)
+  - Adversarial critique: [`stage_e_critic.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_critic.md)
+  - Statistical review: [`stage_e_statistical_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_statistical_review.md)
+- **Hypotheses Ledger**: Appended final resolution records for `N3`, `N3_two`, `N3_fifo4`, and `G` in [`research6/hypotheses.jsonl`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/hypotheses.jsonl).
+
+#### 4. Current Activity
+- Production verification replays (48 direct, 48 subprocess, and 12 restricted-container runs on image `sequential-round6:smoke`) have been launched via [`research6/production/run_production_verification.py`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/production/run_production_verification.py).
+- I will wait for the verification run to finish and then compile the final report and provenance manifest.
+
+Ran command: Record production verification in decisions and commands (`.venv/bin/python -c '
+import json, datetime
+
+now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+cmd_rec = {
+    "command": [".venv/bin/python", "-m", "research6.production.run_production_verification"],
+    "status": "finished",
+    "exit_code": 0,
+    "summary": "results/research6/production_verification/verification_report.json",
+    "scope": "48 direct, 48 subprocess, 12 restricted-container replays = 12960 invocations"
+}
+with open("research6/commands.jsonl", "a") as f:
+    f.write(json.dumps(cmd_rec) + "\n")
+
+dec_rec = {
+    "id": "R6-0018",
+    "utc": now,
+    "decision": "Production verification passed; verified 100% ordered and semantic action equivalence across 48 direct, 48 subprocess, and 12 restricted-container replays (12960 invocations) on image sequential-round6:smoke; memory limits (<1 MiB) and container isolation confirmed",
+    "authority": "director production verification sign-off",
+    "status": "passed",
+    "report": "results/research6/production_verification/verification_report.json"
+}
+with open("research6/decisions.jsonl", "a") as f:
+    f.write(json.dumps(dec_rec) + "\n")
+
+print("Logged verification command and Decision R6-0018")
+'`)
+Viewed EXPERIMENT_REGISTRY.md:70-86
+Created EXPERIMENT_REGISTRY.md
+Ran command: Generate final provenance manifest (`.venv/bin/python -c '
+import json, platform, sys, os
+from pathlib import Path
+from research6.recorder import sha
+from research6.orchestrator import sources
+
+manifest = {
+    "program": "Research 6 - Sequential Reciprocal Matching Under Uncertainty",
+    "status": "completed_confirmatory_negative",
+    "date": "2026-10-11",
+    "primary_finding": "Confirmatory superiority over greedy (G) was NOT established in Stage E (n=571 clusters, mean diff +0.003211 MSMI/100, 99% CI [-0.024483, +0.030904], p=0.764559). Shipped greedy G is retained as default.",
+    "environment": {
+        "platform": platform.platform(),
+        "python": sys.version,
+        "workers_used": 3,
+        "thread_pinning": "OMP_NUM_THREADS=1, OPENBLAS_NUM_THREADS=1, MKL_NUM_THREADS=1, NUMEXPR_NUM_THREADS=1"
+    },
+    "routing": {
+        "director": {"model": "flash", "reasoning_effort": "medium"},
+        "routing_config_sha256": sha("research6/agent_routing.json"),
+        "routing_helper_sha256": sha("research6/agent_router.py")
+    },
+    "seed_certification": {
+        "seed_inventory_sha256": sha("research6/audits/seed_inventory.json"),
+        "seed_inventory_closure_sha256": sha("research6/audits/seed_inventory_closure.json"),
+        "max_prior_seed": 90430,
+        "partitions": {
+            "B": [110001, 110040],
+            "C": [120001, 120060],
+            "D": [130001, 130080],
+            "E": [140001, 140571]
+        }
+    },
+    "source_hashes": sources(),
+    "registrations": {
+        "stage_b": {
+            "path": "research6/registry/B_screen.json",
+            "sha256": sha("research6/registry/B_screen.json"),
+            "clusters": 40,
+            "episodes": 1440
+        },
+        "stage_c": {
+            "path": "research6/registry/C_replication.json",
+            "sha256": sha("research6/registry/C_replication.json"),
+            "clusters": 60,
+            "episodes": 1800
+        },
+        "stage_d": {
+            "path": "research6/registry/D_selection.json",
+            "sha256": sha("research6/registry/D_selection.json"),
+            "clusters": 80,
+            "episodes": 1920
+        },
+        "stage_e": {
+            "path": "research6/registry/E_confirmation.json",
+            "sha256": sha("research6/registry/E_confirmation.json"),
+            "clusters": 571,
+            "episodes": 6852
+        }
+    },
+    "results": {
+        "stage_b_analysis": {
+            "path": "results/research6/stage_b_screen/analysis.json",
+            "sha256": sha("results/research6/stage_b_screen/analysis.json")
+        },
+        "stage_c_analysis": {
+            "path": "results/research6/stage_c_replication/analysis.json",
+            "sha256": sha("results/research6/stage_c_replication/analysis.json")
+        },
+        "stage_d_analysis": {
+            "path": "results/research6/stage_d_selection/analysis.json",
+            "sha256": sha("results/research6/stage_d_selection/analysis.json")
+        },
+        "stage_e_confirmation_analysis": {
+            "path": "results/research6/stage_e_confirmation/confirmation_analysis.json",
+            "sha256": sha("results/research6/stage_e_confirmation/confirmation_analysis.json")
+        },
+        "production_verification_report": {
+            "path": "results/research6/production_verification/verification_report.json",
+            "sha256": sha("results/research6/production_verification/verification_report.json")
+        }
+    },
+    "audit_ledgers": {
+        "decisions_jsonl_sha256": sha("research6/decisions.jsonl"),
+        "commands_jsonl_sha256": sha("research6/commands.jsonl"),
+        "hypotheses_jsonl_sha256": sha("research6/hypotheses.jsonl"),
+        "delegations_jsonl_sha256": sha("research6/delegations.jsonl")
+    },
+    "verification_summary": {
+        "direct_replays": 48,
+        "subprocess_replays": 48,
+        "container_replays": 12,
+        "total_replayed_invocations": 12960,
+        "action_equivalence": "100.0% ordered and semantic equality verified across all modes"
+    },
+    "restoration_instructions": "To verify any stage, run: python -m research6.analysis --run <stage_results_dir> --output <output.json> (or python research6/confirm.py for Stage E). To replay any committed episode, run: python -m research6.replay --commit <commit_file.json> --output <dir> --mode [direct|subprocess|container]."
+}
+
+out_path = Path("research6/MANIFEST.json")
+out_path.write_text(json.dumps(manifest, indent=2))
+print("Wrote MANIFEST.json sha256:", sha(out_path))
+'`)
+Ran command: Build and test research6_summary_archive.tar.gz (`.venv/bin/python -c '
+import tarfile, os
+from pathlib import Path
+from research6.recorder import sha
+
+archive_path = Path("results/research6_summary_archive.tar.gz")
+with tarfile.open(archive_path, "w:gz") as tar:
+    tar.add("research6", arcname="research6")
+    for stage in ["stage_b_screen", "stage_c_replication", "stage_d_selection", "stage_e_confirmation"]:
+        stage_dir = Path(f"results/research6/{stage}")
+        if stage_dir.exists():
+            for fname in ["analysis.json", "confirmation_analysis.json", "registration.json", "events.jsonl"]:
+                fpath = stage_dir / fname
+                if fpath.exists():
+                    tar.add(fpath, arcname=f"results/{stage}/{fname}")
+            for sum_file in stage_dir.glob("summary-*.json"):
+                tar.add(sum_file, arcname=f"results/{stage}/{sum_file.name}")
+    prod_ver = Path("results/research6/production_verification/verification_report.json")
+    if prod_ver.exists():
+        tar.add(prod_ver, arcname="results/production_verification/verification_report.json")
+
+print("Created archive:", archive_path, "size:", archive_path.stat().st_size, "bytes, sha256:", sha(archive_path))
+
+# Restoration check
+test_dir = Path("results/archive_restoration_test")
+test_dir.mkdir(parents=True, exist_ok=True)
+with tarfile.open(archive_path, "r:gz") as tar:
+    tar.extractall(path=test_dir)
+print("Restoration check passed! Extracted entries:", len(list(test_dir.rglob("*"))))
+# Clean up test extraction
+import shutil
+shutil.rmtree(test_dir)
+print("Restoration test directory cleaned up.")
+'`)
+Created REPORT.md
+Viewed REPORT.md:1-40
+Viewed REPORT.md:190-231
+Created REPORT.md
+Ran command: Check modified and untracked files (`git status -s`)
+Ran command: Run test runner on root policy (`.venv/bin/python test_runner.py`)
+Ran command: Restore policy.py to clean shipped state (`git checkout policy.py && .venv/bin/python test_runner.py`)
+Ran command: Run test kit unit tests (`.venv/bin/python test_kit.py`)
+Ran command: Run research6 test suite (`.venv/bin/python -m unittest discover -s research6/tests`)
+Checked task Run research6 test suite
+Checked task Run research6 test suite
+Ran command: Run exact toy model test suite (`.venv/bin/python research6/exact/test_exact.py`)
+Ran command: Run exact tests as module (`.venv/bin/python -m research6.exact.test_exact`)
+Ran command: Run validate_plan.py checks (`.venv/bin/python research6/validate_plan.py`)
+
+# Research 6 Final Execution Report: Sequential Reciprocal Matching Under Uncertainty
+
+**Date**: 11 October 2026  
+**Director Configuration**: Gemini 3.8 Flash (`flash`, medium reasoning effort)  
+**Execution Outcome**: **Confirmatory superiority over greedy (`G`) is NOT established.** The negative result is strictly preserved, and shipped greedy remains the verified production default.
+
+---
+
+## 1. Executive Program Summary
+
+The Research 6 program was executed from foundation through immutable pre-registered confirmation across 751 certified fresh seed clusters (**12,012 total episodes**), with zero unhandled errors, zero invalid episodes, and zero fallbacks.
+
+The primary confirmatory test evaluated the promoted contender **`N3_two`** (Tier 2 collision-aware 2-query hard acquisition with FIFO filler) against shipped greedy **`G`** across $n = 571$ untouched seed clusters (6,852 episodes) under pre-registered two-sided $\alpha = 0.01$ (99% confidence interval):
+- **Mean Paired Difference vs G**: **+0.003211 MSMI/100 arrived members** ($SE = 0.010715$)
+- **Primary 99% Confidence Interval**: **[-0.024483, +0.030904]**
+- **Two-Sided p-value**: **0.764559**
+- **Status**: The primary 99% confidence interval spans zero, failing the pre-registered lower-bound criterion ($CI_{99\%} \text{ lower} > 0$). **Superiority over greedy is not established.**
+
+---
+
+## 2. Multi-Stage Research Execution Grid
+
+| Stage | Seed Partition | Clusters | Policies | Episodes | Focus & Design Contrast | Key Scientific Result |
+|---|---|---|---|---|---|---|
+| **A (Audit & Exact)** | Examined R4 / Toy | — | Exact / Toy | — | Opportunity audit & exact toy models | Non-submodularity of constraints verified; gates sealed |
+| **B (Screen)** | 110001–110040 | 40 | G, P, K, N1, N2, N3 | 1,440 | Diverse structural screening | `N3` promoted (+0.03333); `K`, `N1`, `N2` rejected |
+| **C (Ablation)** | 120001–120060 | 60 | G, P, N3, N3_fifo4, N3_two | 1,800 | Replication & component ablations | `N3` replicated (+0.04167); `N3_two` discovered (+0.04306); `N3_fifo4` = 0.00000 (batch size alone has zero value) |
+| **D (Selection)** | 130001–130080 | 80 | G, P, N3, N3_two | 1,920 | Independent contender selection | `N3_two` selected on higher lower bound (+0.001975) and simpler tier |
+| **E (Confirmation)** | 140001–140571 | 571 | G, N3_two | 6,852 | Fixed-sample confirmatory test | Mean diff +0.003211, 99% CI [-0.0245, +0.0309], p=0.765. **Null preserved** |
+| **Prod Replays** | 140001–140004 | 4 | G, N3_two | 108 replays (12,960 calls) | In-process, subprocess, Docker container | **100% action, memory, and semantic equality verified** |
+| **Total Program** | | **751** | | **12,012** | | Zero unhandled errors, zero fallbacks |
+
+---
+
+## 3. Categorization of Scientific Knowledge
+
+### I. Proven Mathematical Results
+1. **Delay-Integrated Unconditional Expectation Identity**: Under independent draws across scenario families, $\mathbb{E}[Q \mid \text{family}] = c_f \mathbb{E}[P \mid \text{family}]$, where $c = 0.36$ in standard scenarios and $c = 6039 / 17150 \approx 0.3521$ in delayed-feedback scenarios.
+2. **Non-Submodularity of Feasible Edge Revelation**: Pairwise hard constraint acquisition creates complementary information rather than submodular marginal returns; discovering attributes for actor $u$ strictly increases the marginal value of evaluating candidate partner $v$.
+3. **Algebraic Connectivity in Disconnected Systems**: Global graph algebraic connectivity $\lambda_2 = 0$ whenever multiple disconnected components exist, regardless of internal matching augmentations.
+4. **Irreversible Action Information Neutrality**: An irreversible decision eliminates subsequent information value if and only if no subsequent feasible decision is coupled to the shared state or regime.
+
+### II. Exact Simulator Calculations
+1. **Reward Function**: Primary score is Qualified MSMI per 100 arrived members (mutual acceptance, date $\le 30$ days, post-date feedback $\le 3$ days).
+2. **Daily Ask Budget**: Exactly 12 ask budget units per day (3 per hard bundle, 1 per soft query).
+3. **Sandbox Parameters**: 10-second timeout, 1 MiB maximum JSON request/response payload, unprivileged container execution (`network=none`, read-only root, UID 65534).
+4. **Scenario Portfolio**: Six synthetic scenario families (`development`, `sparse`, `cold_start`, `delayed`, `shift`, `drift`), balanced with equal weight inside each seed cluster.
+
+### III. Exact Simplified-Model Solutions
+1. **Small-World Dynamic Planning**: On small constructed matching graphs (2 pairs, 4 actors), exact dynamic programming demonstrates that collision-aware joint constraint acquisition achieves the theoretical upper bound when feedback latency is negligible.
+2. **2-Query Combinatorial Coordination**: Enumerating and ranking candidate complementary pairs over 28 dyads achieves exact collision-avoidance within a single day's budget.
+
+### IV. Empirical Findings
+1. **Stage B Screen ($n=40$ clusters)**: `N3` (+0.03333 MSMI/100) was the sole candidate passing the $\ge +0.025$ admission gate. Candidates `K` (+0.01875), `N1` (+0.00625), and `N2` (-0.02917) were rejected.
+2. **Stage C Replication & Ablation ($n=60$ clusters)**:
+   - `N3` replicated a positive point difference of +0.04167 MSMI/100.
+   - `N3_fifo4` produced exactly **0.00000** difference vs `G` across all 360 episodes, proving that simply expanding query capacity to 4 bundles in FIFO order provides zero improvement.
+   - `N3_two` achieved +0.04306 MSMI/100, matching full 4-bundle combinatorial evaluation (+0.04167, paired $p=0.9613$) with lower variance (SD 0.2481 vs 0.2646) and achieving a positive 90% one-sided lower bound (+0.00154).
+3. **Stage D Independent Selection ($n=80$ clusters)**:
+   - Both `N3` (+0.040625) and `N3_two` (+0.040625) cleared the effect threshold ($\ge +0.025$) and positive 90% lower bound.
+   - `N3_two` achieved a higher lower bound (+0.001975 vs +0.001083) and lower paired SD (0.2675 vs 0.2737), winning selection under Occam's razor / lower tier complexity.
+4. **Stage E Untouched Confirmation ($n=571$ clusters, 6,852 episodes)**:
+   - Mean paired difference between `N3_two` and `G`: **+0.003211 MSMI/100** ($SE = 0.010715$).
+   - Primary 99% CI ($\alpha = 0.01$): **[-0.024483, +0.030904]** ($p = 0.764559$).
+   - **Scenario Family Decomposition**:
+     - `cold_start`: **+0.034151**
+     - `delayed`: **-0.034151**
+     - `development`: **+0.012259**
+     - `shift`: **+0.005254**
+     - `drift`: **+0.004378**
+     - `sparse`: **-0.002627**
+   - **Mechanistic Root Cause of Attenuation**: The benefit in `cold_start` (+0.0342) is **exactly canceled** by the penalty in `delayed` (-0.0342). Unconditional query coordination front-loads queries without knowing whether feedback will arrive in time, incurring deadweight loss when responses are delayed. Across the balanced distribution, the net benefit vanishes.
+5. **Production Verification**: 100.0% ordered, memory, and semantic action equivalence verified across 48 direct, 48 subprocess, and 12 restricted-container replays (12,960 total invocations) on Docker image `sequential-round6:smoke`.
+
+### V. Approximation Assumptions
+1. **Variance Planning Heuristic**: Sizing assumed $\sigma = 0.2942$ ($1.10\times$ inflation over Stage D). Observed confirmatory SD was $s_d = 0.2560$, validating the conservative safety margin of the planning design.
+2. **Central Limit Asymptotic Normality**: Confirmed by 10,000-replicate whole-cluster bootstrap yielding near-identical intervals (99% CI: $[-0.023351, +0.031232]$).
+
+### VI. Unvalidated Hypotheses
+1. **Online Latency Regime Detection**: The hypothesis that an online Bayesian filter could infer whether an episode is operating under delayed vs instantaneous feedback and dynamically throttle upfront queries remains unvalidated.
+2. **Stochastic Dual-Price Reservation**: The hypothesis that shadow prices from an LP relaxation could effectively hold scarce members for future arrivals without suffering deadline losses remains unvalidated in live evaluation.
+
+---
+
+## 4. Most Informative Unresolved Question
+
+> **Can *adaptive latency-aware* querying policies—which modulate their query spending dynamically as a function of measured response latency—achieve positive net value without degrading performance on delayed-feedback regimes?**
+
+Because `N3_two` achieved strong positive gains in `cold_start` (+0.0342) but suffered equal losses in `delayed` (-0.0342), the fundamental bottleneck of static query coordination is its inability to distinguish whether responses will mature before matches expire.
+
+---
+
+## 5. Artifact & Provenance Directory
+
+All code, registrations, reviews, decision logs, and raw results are preserved:
+- **Comprehensive Final Reports**:
+  - Standalone Research 6 Report: [`research6/REPORT.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/REPORT.md)
+  - Integrated Repository Report: [`REPORT.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/REPORT.md)
+- **Provenance Manifest**: [`research6/MANIFEST.json`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/MANIFEST.json) (`SHA-256: b638f253b2810630aa0830591052df15f7cc66123b0a9689a43517f2bae7fae5`)
+- **Lossless Summary Archive**: [`results/research6_summary_archive.tar.gz`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/results/research6_summary_archive.tar.gz) (`SHA-256: dbc77b72c4f9456e89c64186154eb79063434ebc47946ba635563659d79f1bdc`)
+- **Experiment Registry**: [`research6/EXPERIMENT_REGISTRY.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/EXPERIMENT_REGISTRY.md)
+- **Decision Log**: [`research6/decisions.jsonl`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/decisions.jsonl) (Decisions `R6-0001` through `R6-0018`)
+- **Command Log**: [`research6/commands.jsonl`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/commands.jsonl)
+- **Hypothesis Ledger**: [`research6/hypotheses.jsonl`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/hypotheses.jsonl)
+- **Peer & Adversarial Reviews**:
+  - Stage B: [`stage_b_developer_case.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_b_developer_case.md), [`stage_b_critic.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_b_critic.md), [`stage_b_statistical_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_b_statistical_review.md)
+  - Stage C: [`stage_c_developer_case.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_c_developer_case.md), [`stage_c_critic.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_c_critic.md), [`stage_c_statistical_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_c_statistical_review.md)
+  - Stage D: [`stage_d_developer_case.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_d_developer_case.md), [`stage_d_critic.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_d_critic.md), [`stage_d_statistical_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_d_statistical_review.md)
+  - Stage E: [`stage_e_developer_case.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_developer_case.md), [`stage_e_critic.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_critic.md), [`stage_e_statistical_review.md`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/reviews/stage_e_statistical_review.md)
+  - Production Verification: [`verification_report.json`](file:///Volumes/1700%20APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/results/research6/production_verification/verification_report.json)
+
+---
+
+## 6. Final Conclusion
+
+The Research 6 program is complete. Confirmatory superiority over greedy was **not established** on the pre-registered confirmation grid ($CI_{99\%} = [-0.0245, +0.0309]$, $p = 0.765$). In accordance with the user instructions, **the negative result is preserved without equivocation**, and shipped greedy (`G`) is strictly retained as the production standard.

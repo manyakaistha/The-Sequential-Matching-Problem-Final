@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "archives": 3,
+  "verified_members": 15501,
+  "sample_restored_files": 3,
+  "identical_existing_skipped": true,
+  "different_existing_refused": true,
+  "original_files_retained": true,
+  "completed_utc": "2026-10-10T19:21:31.518357+00:00",
+  "source_sha256": "f1ed68e285221dc716b3bdcc1b04c167044617f9f2bcd37fe5ab465a1b4695b5",
+  "index_sha256": "7fce78beefa52c25cae8bcf2c6068bb796d146b35a55cc3bacafce8d509996e6",
+  "wall_seconds": 439.99568983300014,
+  "own_cpu_seconds": 75.50107899999999,
+  "child_cpu_seconds": 324.024364
+}

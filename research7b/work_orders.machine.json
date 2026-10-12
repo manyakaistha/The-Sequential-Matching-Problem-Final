@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "status": "planning_only",
+  "work_orders": [
+    {
+      "id": "WO01",
+      "phase": "P0",
+      "host": "7b",
+      "role_profile": "science_high",
+      "question": "What public transitions can change future opportunities?",
+      "falsifiable_hypothesis": "Immediate queries and downstream occupancy are correctly distinguished.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md",
+        "kit.py",
+        "evaluate.py",
+        "research6/audits/simulator_contract.md"
+      ],
+      "exclusive_ownership": [
+        "reviews/simulator_semantics.md"
+      ],
+      "deliverable": "Source deductions and falsifiers.",
+      "named_reviewer": "critic",
+      "agent_CPU_seconds_allowance": 150,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO03",
+      "phase": "P1",
+      "host": "7b",
+      "role_profile": "implementation_medium",
+      "question": "Can logs/leases resume without deleting failure?",
+      "falsifiable_hypothesis": "Lossless chunks and authoritative commits survive injected interruption.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "runtime/runner.py",
+        "runtime/recorder.py",
+        "runtime/leases.py"
+      ],
+      "deliverable": "Focused implementation with raw failure fixtures.",
+      "named_reviewer": "independent_runtime_reviewer",
+      "agent_CPU_seconds_allowance": 120,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO05",
+      "phase": "P2",
+      "host": "7b",
+      "role_profile": "science_high",
+      "question": "Does public history improve actionable target/return prediction?",
+      "falsifiable_hypothesis": "Frozen public-only models pass count and proper-score gates.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "models/",
+        "public_exports/"
+      ],
+      "deliverable": "Fit ledger/provenance/validation and failed gates.",
+      "named_reviewer": "predictive_critic",
+      "agent_CPU_seconds_allowance": 150,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO07",
+      "phase": "P2-P3",
+      "host": "7b",
+      "role_profile": "proof_high",
+      "question": "Does D1 joint continuation avoid separable-loss failure?",
+      "falsifiable_hypothesis": "Whole-action values reproduce rational cases without hidden future use.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "reviews/dynamic_reduction.md"
+      ],
+      "deliverable": "Bounded design/proof/counterexamples; implementation separate.",
+      "named_reviewer": "critic",
+      "agent_CPU_seconds_allowance": 180,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO08",
+      "phase": "P2-P3",
+      "host": "7b",
+      "role_profile": "implementation_medium",
+      "question": "Can bounded D1/Q2/D2 execute the reviewed interface?",
+      "falsifiable_hypothesis": "Work caps include independent validation and postanswer controller agrees.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "policies/continuation.py",
+        "policies/reward_acquisition.py"
+      ],
+      "deliverable": "Planner/acquisition code, tests and operation ledger.",
+      "named_reviewer": "independent_planner_reviewer",
+      "agent_CPU_seconds_allowance": 120,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO09",
+      "phase": "P3-P5",
+      "host": "7b",
+      "role_profile": "science_high",
+      "question": "Do promoted effects replicate vs own parent?",
+      "falsifiable_hypothesis": "Complete paired grids satisfy fixed gate and controls.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "reviews/mechanism_*.md"
+      ],
+      "deliverable": "All candidate/control results and alternative explanations.",
+      "named_reviewer": "critic",
+      "agent_CPU_seconds_allowance": 150,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO10",
+      "phase": "P5",
+      "host": "7b",
+      "role_profile": "science_high",
+      "question": "Is frozen version deployable and portable?",
+      "falsifiable_hypothesis": "All examined trajectories/actions/memory and limits agree across modes.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "reviews/production.md"
+      ],
+      "deliverable": "Resource/parity/isolation report, tested scope.",
+      "named_reviewer": "independent_production_reviewer",
+      "agent_CPU_seconds_allowance": 150,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    },
+    {
+      "id": "WO12",
+      "phase": "P6",
+      "host": "7b",
+      "role_profile": "evidence_low",
+      "question": "Are original cells logging durably within limits?",
+      "falsifiable_hypothesis": "Health counts/errors/leases reconcile without viewing effects.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "exclusive_ownership": [
+        "results/<program>/health_only/"
+      ],
+      "deliverable": "Health/error/resource evidence only.",
+      "named_reviewer": "provenance_critic",
+      "agent_CPU_seconds_allowance": 30,
+      "execution_CPU_budget": "Later phase work order, bounded by machine plan; agent allowance does not authorize simulator/fitting",
+      "status": "queued_specification_not_dispatched",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "authorization": "planning package is not research execution authority",
+      "concrete_input_hashes": "REQUIRED_AT_DISPATCH_NOT_RESOLVED",
+      "live_reviewer_id": "REQUIRED_AT_DISPATCH_ROLE_IS_ONLY_PLACEHOLDER"
+    }
+  ],
+  "dispatch_blocked_until": "Each queued template is completed with concrete input paths/hashes, named live reviewer, actual provider/model/effort and separately authorized phase execution resource/cell limits, then reviewed.",
+  "handoff_scope": "P0/P1 implementation only; every empirical invocation/test/fit remains blocked under current no-experiments authorization."
+}

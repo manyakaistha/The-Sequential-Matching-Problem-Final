@@ -1,0 +1,11 @@
+test_empty_exhausted_no_edges (__main__.WrapperChecks.test_empty_exhausted_no_edges) ... ok
+test_malformed_memory_ignored (__main__.WrapperChecks.test_malformed_memory_ignored) ... ok
+test_oversized_and_malformed_state (__main__.WrapperChecks.test_oversized_and_malformed_state) ... ok
+test_real_deadline_and_outer_timer (__main__.WrapperChecks.test_real_deadline_and_outer_timer) ... ok
+test_subprocess_control_equivalence (__main__.WrapperChecks.test_subprocess_control_equivalence) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.939s
+
+OK
+

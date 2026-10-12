@@ -1,0 +1,14 @@
+{
+  "archive": "results/research5/interrupted_runs/20261010T171453Z",
+  "source_result": "results/research5/interrupted_runs/20261010T171453Z/confirmation.json",
+  "source_result_sha256": "81c1b61ed8d799c68459ef9826bca418145943744367cc675ea4ccb09a87cf53",
+  "prior_design_sha256": "74e2e9c1b48d82ca3ac7f978805bd180caee26b65bf93c645b1ab663fa1db79e",
+  "archive_manifest": "results/research5/interrupted_runs/20261010T171453Z/archive_manifest.json",
+  "archive_manifest_sha256": "4775b1783e3ac8bffb2bc6230100c34c153847f18dae6e308e577e6691418730",
+  "preserved_rows": 118,
+  "prior_recorder_sha256s": [
+    "28c41137ce30508c0bb3933c5d09ef14404917878468a7443ad9ab3b990515ee",
+    "ea0c115df9eb6f2ae215945eefec6d089104d8a27d6ad41d973b4d7e7d0da4da"
+  ],
+  "reason": "User requested three workers after interrupting run; retain all persisted rows, including failures, and exact original fixed sample."
+}

@@ -1,0 +1,11 @@
+{
+  "python": "3.14.7",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "analysis_packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "prior_round_manifest_sha256": "db19130907053ac1bb06e73a620dd5c2319d4840524470af5182cba876a261d2",
+  "scope": "Host analysis versions; container Python/image separately recorded production_prepare.json"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "startup_not_execution_registration",
+  "director": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "completed": [
+    "initial_read",
+    "director_override",
+    "37_planning_checks",
+    "29_inherited_source_evidence_hashes_match",
+    "bounded_candidate_implementation",
+    "constructed_tests_initial"
+  ],
+  "pending": [
+    "complete_repository_seed_inventory",
+    "telemetry_independent_review",
+    "registered_examined_stage_A",
+    "candidate_admission",
+    "measured_storage_runtime",
+    "frozen_B_registration"
+  ],
+  "no_new_worlds_generated": true,
+  "superiority_established": false
+}

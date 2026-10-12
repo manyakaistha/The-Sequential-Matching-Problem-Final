@@ -1,0 +1,135 @@
+{
+  "scope": "Finite complete seed101 replay, not universal latency guarantee",
+  "build": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 495B 0.0s done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.12.7-slim\n#2 DONE 1.6s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/6] FROM docker.io/library/python:3.12.7-slim@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d\n#4 resolve docker.io/library/python:3.12.7-slim@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 53.74kB done\n#5 DONE 0.0s\n\n#6 [4/6] COPY research/terminal_model.py /app/research/terminal_model.py\n#6 CACHED\n\n#7 [2/6] WORKDIR /app\n#7 CACHED\n\n#8 [3/6] COPY kit.py /app/kit.py\n#8 CACHED\n\n#9 [5/6] COPY research3/__init__.py research3/policy.py research3/model_candidates.py /app/research3/\n#9 CACHED\n\n#10 [6/6] COPY research4/__init__.py research4/policy.py research4/candidates.py /app/research4/\n#10 DONE 0.0s\n\n#11 exporting to image\n#11 exporting layers 0.0s done\n#11 exporting manifest sha256:fecadc83f9fca1af0d531b4165589e6d30f4db516f3d41f4b567924b1263c5b3 done\n#11 exporting config sha256:98685a5a1f4a090497eeacc065098eeb96d66d79e402b17666fee54f774c2d5b done\n#11 exporting attestation manifest sha256:7eb38b60b69e051536a91c3479ea8ae2ea171277e842bec763213be49d92bfd3 done\n#11 exporting manifest list sha256:be49abf3061a3a5473fc93c1d5391cc6fad76f33bda18f683b7093ca3e3f2397 done\n#11 naming to docker.io/library/sequential-round4:research\n#11 naming to docker.io/library/sequential-round4:research done\n#11 unpacking to docker.io/library/sequential-round4:research done\n#11 DONE 0.1s\n",
+    "command": [
+      "docker",
+      "build",
+      "-t",
+      "sequential-round4:research",
+      "/var/folders/gy/gpw4ryp96xs834jndpmgvj500000gn/T/round4-image-20lwj29j"
+    ]
+  },
+  "image": {
+    "id": "sha256:be49abf3061a3a5473fc93c1d5391cc6fad76f33bda18f683b7093ca3e3f2397",
+    "size_bytes": 44748144,
+    "below_documented_2GiB": true,
+    "user": "65534:65534",
+    "entrypoint": [
+      "python",
+      "-m",
+      "research4.policy"
+    ]
+  },
+  "resource_command": [
+    "docker",
+    "run",
+    "--rm",
+    "-i",
+    "--name",
+    "sequential-237bbd4de3064dcfb2592e77a5bbad41",
+    "--network=none",
+    "--cpus=2",
+    "--memory=1g",
+    "--memory-swap=1g",
+    "--pids-limit=64",
+    "--read-only",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--user=65534:65534",
+    "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+    "sequential-round4:research"
+  ],
+  "rows": [],
+  "equivalence": {},
+  "valid": true,
+  "wall_seconds": 5.731493750005029,
+  "source_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/__init__.py": "3f013c7dd9e67cff6d5a54f3fe3e23f638557393d1b4fb578f631cf14b7f228d",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research4/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research4/Dockerfile": "e6ffea4ba79ca14f54ac8987fa2ccbf781723d4f0aac5717f6528593d162ac5e",
+    "research4/production.py": "160766732bd8b7b61a46790b321423bcbb7302c82c20fdd512134c10e8158e5c"
+  },
+  "resource_probe": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "-i",
+      "--name",
+      "sequential-ffab0e8cc2724b8f839daae7646e82e0",
+      "--network=none",
+      "--cpus=2",
+      "--memory=1g",
+      "--memory-swap=1g",
+      "--pids-limit=64",
+      "--read-only",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--user=65534:65534",
+      "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+      "--entrypoint",
+      "python",
+      "sequential-round4:research",
+      "-c",
+      "import os,json,hashlib,socket\nfrom pathlib import Path\nout={'uid':os.getuid(),'gid':os.getgid(),'cgroups':{}}\nfor name in ['cpu.max','memory.max','memory.swap.max','pids.max']:\n out['cgroups'][name]=(Path('/sys/fs/cgroup')/name).read_text().strip()\ntry:Path('/round4_write_probe').write_text('probe');out['root_write']='unexpected success'\nexcept OSError as e:out['root_write_errno']=e.errno\ns=socket.socket();s.settimeout(.1)\ntry:s.connect(('1.1.1.1',53));out['egress']='unexpected success'\nexcept OSError as e:out['egress_errno']=e.errno\nfinally:s.close()\nout['source_hashes']={str(p.relative_to('/app')):hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('/app').rglob('*.py')}\nprint(json.dumps(out))"
+    ],
+    "probe": {
+      "uid": 65534,
+      "gid": 65534,
+      "cgroups": {
+        "cpu.max": "200000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "64"
+      },
+      "root_write_errno": 30,
+      "egress_errno": 101,
+      "source_hashes": {
+        "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+        "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+        "research4/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+        "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+        "research3/__init__.py": "3f013c7dd9e67cff6d5a54f3fe3e23f638557393d1b4fb578f631cf14b7f228d",
+        "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+        "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf"
+      }
+    },
+    "host_source_hashes": {
+      "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+      "research3/__init__.py": "3f013c7dd9e67cff6d5a54f3fe3e23f638557393d1b4fb578f631cf14b7f228d",
+      "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+      "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+      "research4/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+      "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c"
+    },
+    "valid": true
+  },
+  "prepare_only": true,
+  "python": "3.14.7",
+  "command": [
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research4/production.py",
+    "--prepare",
+    "--output",
+    "results/research4/production_prepare.json"
+  ],
+  "compute": {
+    "started_utc": "2026-10-10T03:04:58.747916+00:00",
+    "host_self_cpu_seconds": 0.013330000000000022,
+    "host_children_cpu_seconds": 0.288012,
+    "docker_daemon_container_cpu_seconds": null,
+    "note": "Host child usage includes Python/docker clients; daemon/build/container CPU not included. Sequential modes, no fresh seeds."
+  }
+}

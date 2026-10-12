@@ -1,0 +1,15 @@
+{
+  "selected": "population_control",
+  "nominal_superiority": false,
+  "program_superiority": false,
+  "nominal95": [
+    -0.004399924767531926,
+    0.11749516286277002
+  ],
+  "program98_333333": [
+    -0.018552709964787938,
+    0.13164794806002603
+  ],
+  "p_two_sided": 0.06832724834867526,
+  "scope": "Bonferroni family: valid old extended, round3 and round4 primary confirmations only; not unbounded future rounds"
+}

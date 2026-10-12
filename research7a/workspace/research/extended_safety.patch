@@ -1,0 +1,106 @@
+--- a/extended_policy.py
++++ b/extended_policy.py
+@@ -15,6 +15,12 @@
+              opportunity='none',batching=False,uncertainty=0.,query_samples=4,
+              query_candidates=10,solver_seconds=.2,query_seconds=.65,soft=False)
+ LIMIT=1024*1024
++INVOCATION_SECONDS=7.
++
++
++class InvocationTimeout(BaseException):
++    """Whole-invocation deadline; allocation solver must not swallow it."""
++    pass
+ 
+ 
+ def blocked(m): return any(m['field_status'].get(k)=='declined' for k in HARD)
+@@ -76,11 +82,14 @@
+         if not hasattr(signal,'setitimer'): return greedy
+         previous=signal.getsignal(signal.SIGALRM)
+         old_timer=signal.getitimer(signal.ITIMER_REAL)
+-        def timeout(*_): raise SolverTimeout()
++        def timeout(*args):
++            if old_timer[0] and time.monotonic()-started>=old_timer[0] and callable(previous):
++                previous(*args)
++            raise SolverTimeout()
+         started=time.monotonic()
+         try:
+             signal.signal(signal.SIGALRM,timeout)
+-            signal.setitimer(signal.ITIMER_REAL,max(.001,seconds))
++            signal.setitimer(signal.ITIMER_REAL,max(.001,min(seconds,old_timer[0]) if old_timer[0] else seconds))
+             graph=nx.Graph();graph.add_weighted_edges_from((p[0],p[1],w) for w,p in edges)
+             return sorted([sorted(p) for p in nx.max_weight_matching(graph,weight='weight')])
+         finally:
+@@ -267,10 +276,32 @@
+ 
+ 
+ def fallback(request):
+-    return {'asks' if isinstance(request,dict) and request.get('phase')=='ask' else 'pairs':[],'memory':{}}
+-
+-
+-def decide(request,config=None):
++    """Legal observation-only fallback; memory resets after unsafe/costly inference."""
++    key='asks' if isinstance(request,dict) and request.get('phase')=='ask' else 'pairs'
++    empty={key:[],'memory':{}}
++    try:
++        state=request['state']
++        if not isinstance(state,dict) or not isinstance(state.get('members'),list): return empty
++        if not 0<=state.get('day',0)<=59: return empty
++        members=[m for m in state['members'] if m.get('available') and not blocked(m)]
++        if key=='asks':
++            budget=max(0,min(12,int(state.get('ask_budget_remaining',0))))
++            asks=[dict(member_id=m['member_id'],field='constraints') for m in members if not verified(m)][:budget//3]
++            return dict(asks=asks,memory={})
++        members=[m for m in members if verified(m)]
++        past={tuple(sorted((i['user_a'],i['user_b']))) for i in state.get('introductions',[])}
++        # First-fit matching avoids model integration and solver imports.
++        used=set();pairs=[]
++        for a,b in itertools.combinations(members,2):
++            pair=tuple(sorted((a['member_id'],b['member_id'])))
++            if used.intersection(pair) or pair in past: continue
++            if eligibility(a,b)['status']=='feasible':
++                used.update(pair);pairs.append(list(pair))
++        return dict(pairs=sorted(pairs),memory={})
++    except (ValueError,TypeError,KeyError,AttributeError,IndexError,ArithmeticError): return empty
++
++
++def _decide_inner(request,config=None):
+     try:
+         cfg=dict(DEFAULT);cfg.update(config or {})
+         if not isinstance(request,dict) or request.get('phase') not in ('ask','match'): return fallback(request)
+@@ -286,7 +317,35 @@
+         response={key:actions,'memory':memory}
+         if len(json.dumps(response,allow_nan=False).encode())>=LIMIT: return fallback(request)
+         return response
+-    except (ValueError,TypeError,KeyError,AttributeError,IndexError,OverflowError): return fallback(request)
++    except (ValueError,TypeError,KeyError,AttributeError,IndexError,ArithmeticError): return fallback(request)
++
++
++
++def decide(request,config=None):
++    """Bound complete inference, reserving three seconds for a legal fallback."""
++    if not hasattr(signal,'setitimer'): return fallback(request)
++    try:
++        previous=signal.getsignal(signal.SIGALRM)
++        old_timer=signal.getitimer(signal.ITIMER_REAL)
++    except (ValueError,OSError): return fallback(request)
++    started=time.monotonic()
++    def timeout(*_): raise InvocationTimeout()
++    installed=False
++    try:
++        signal.signal(signal.SIGALRM,timeout)
++        installed=True
++        deadline=min(INVOCATION_SECONDS,old_timer[0]) if old_timer[0] else INVOCATION_SECONDS
++        signal.setitimer(signal.ITIMER_REAL,max(.001,deadline))
++        try: return _decide_inner(request,config)
++        except (InvocationTimeout,ArithmeticError):
++            signal.setitimer(signal.ITIMER_REAL,0)
++            return fallback(request)
++    except (ValueError,OSError): return fallback(request)
++    finally:
++        if installed:
++            signal.setitimer(signal.ITIMER_REAL,0)
++            signal.signal(signal.SIGALRM,previous)
++            if old_timer[0]: signal.setitimer(signal.ITIMER_REAL,max(.001,old_timer[0]-(time.monotonic()-started)),old_timer[1])
+ 
+ 
+ def main():

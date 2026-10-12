@@ -1,0 +1,6219 @@
+{
+  "held_out_constructed_sweep": [
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_00",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_01",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_02",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_03",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_04",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_05",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_06",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_07",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_08",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_09",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_10",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_11",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_12",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_13",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_14",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_15",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_16",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_17",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_18",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_19",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_20",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_21",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_22",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_23",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_24",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_25",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_26",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_27",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_28",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_29",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_30",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_31",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_32",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_33",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_34",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_35",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_36",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_37",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_38",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_39",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_40",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_41",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_42",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_43",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_44",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_45",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_46",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_47",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_48",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_49",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_50",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_51",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_52",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_53",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_54",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_55",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_56",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_57",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_58",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_59",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_60",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_61",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_62",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "graph4_63",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "1",
+      "expected_first_action": null,
+      "id": "odd_cycle_3",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            3,
+            4
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            4
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "2",
+      "expected_first_action": null,
+      "id": "odd_cycle_5",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 5,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            3,
+            4
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            4,
+            5
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            5,
+            6
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            6
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "3",
+      "expected_first_action": null,
+      "id": "odd_cycle_7",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 7,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "0",
+          "q": "0"
+        },
+        {
+          "days": [],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "0",
+          "q": "0"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_0_q_0",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_0_q_1_3",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_0_q_1",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "0",
+          "q": "0"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "0",
+          "q": "0"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_1_q_0",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_1_q_1_3",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_1_q_1",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "0",
+          "q": "0"
+        },
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "0",
+          "q": "0"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_2_q_0",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_2_q_1_3",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_2_q_1",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1,
+        2
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1,
+            2
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "0",
+          "q": "0"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "0",
+          "q": "0"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_3_q_0",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1,
+        2
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1,
+            2
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/3",
+          "q": "1/3"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_3_q_1_3",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1,
+        2
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1,
+            2
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected_first_action": null,
+      "id": "horizon_3_q_1",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    }
+  ],
+  "information": [
+    {
+      "expected": "1",
+      "id": "complementary_verification",
+      "information": "Only AB feasible; neither endpoint verified; each bundle deterministically verifies its endpoint. Values are immediate maximum matching counts, with no query cost subtraction.",
+      "initial": "initial",
+      "kind": "explicit_acyclic_mdp",
+      "states": {
+        "initial": {
+          "actions": {
+            "bundle_A": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "0"
+                }
+              ]
+            },
+            "bundle_A_and_B": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1"
+                }
+              ]
+            },
+            "bundle_B": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "0"
+                }
+              ]
+            },
+            "empty": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "0"
+                }
+              ]
+            }
+          },
+          "rank": 0
+        },
+        "terminal": {
+          "actions": {},
+          "rank": 10
+        }
+      }
+    },
+    {
+      "expected": "7/5",
+      "id": "collision_distinct_partners",
+      "information": "Two independent Bernoulli candidate-partner edges revealed by each batch; matching chosen after reveal. Shared batch p=4/5, distinct p=7/10.",
+      "initial": "initial",
+      "kind": "explicit_acyclic_mdp",
+      "states": {
+        "initial": {
+          "actions": {
+            "distinct": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "9/100",
+                  "reward": "0"
+                },
+                {
+                  "next": "terminal",
+                  "probability": "21/100",
+                  "reward": "1"
+                },
+                {
+                  "next": "terminal",
+                  "probability": "21/100",
+                  "reward": "1"
+                },
+                {
+                  "next": "terminal",
+                  "probability": "49/100",
+                  "reward": "2"
+                }
+              ]
+            },
+            "shared": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1/25",
+                  "reward": "0"
+                },
+                {
+                  "next": "terminal",
+                  "probability": "4/25",
+                  "reward": "1"
+                },
+                {
+                  "next": "terminal",
+                  "probability": "4/25",
+                  "reward": "1"
+                },
+                {
+                  "next": "terminal",
+                  "probability": "16/25",
+                  "reward": "1"
+                }
+              ]
+            }
+          },
+          "rank": 0
+        },
+        "terminal": {
+          "actions": {},
+          "rank": 10
+        }
+      }
+    },
+    {
+      "expected": "7/10",
+      "id": "soft_value_hard_cost",
+      "information": "AB state is high/low equiprobably; reveal exposes state before choosing AB/AC. Forgone disjoint hard opportunity is represented by additive cost 1/4.",
+      "initial": "initial",
+      "kind": "explicit_acyclic_mdp",
+      "states": {
+        "high": {
+          "actions": {
+            "AB": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "9/10"
+                }
+              ]
+            },
+            "AC": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1/2"
+                }
+              ]
+            }
+          },
+          "rank": 1
+        },
+        "initial": {
+          "actions": {
+            "no_information": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1/2"
+                }
+              ]
+            },
+            "reveal_displaces_hard": {
+              "transitions": [
+                {
+                  "next": "high",
+                  "probability": "1/2",
+                  "reward": "-1/4"
+                },
+                {
+                  "next": "low",
+                  "probability": "1/2",
+                  "reward": "-1/4"
+                }
+              ]
+            },
+            "reveal_free": {
+              "transitions": [
+                {
+                  "next": "high",
+                  "probability": "1/2",
+                  "reward": "0"
+                },
+                {
+                  "next": "low",
+                  "probability": "1/2",
+                  "reward": "0"
+                }
+              ]
+            }
+          },
+          "rank": 0
+        },
+        "low": {
+          "actions": {
+            "AB": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1/10"
+                }
+              ]
+            },
+            "AC": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1/2"
+                }
+              ]
+            }
+          },
+          "rank": 1
+        },
+        "terminal": {
+          "actions": {},
+          "rank": 10
+        }
+      }
+    },
+    {
+      "expected": "1",
+      "id": "no_return_can_still_have_learning",
+      "information": "One fair shared regime controls later alternatives B/C. An earlier disjoint pair retires without reward but publicly reveals regime; its endpoints never return. Other endpoints remain. No-return alone does not imply zero learning value.",
+      "initial": "initial",
+      "kind": "explicit_acyclic_mdp",
+      "states": {
+        "initial": {
+          "actions": {
+            "introduce_informative_disjoint_pair": {
+              "transitions": [
+                {
+                  "next": "type_0",
+                  "probability": "1/2",
+                  "reward": "0"
+                },
+                {
+                  "next": "type_1",
+                  "probability": "1/2",
+                  "reward": "0"
+                }
+              ]
+            },
+            "skip_experiment": {
+              "transitions": [
+                {
+                  "next": "unknown",
+                  "probability": "1",
+                  "reward": "0"
+                }
+              ]
+            }
+          },
+          "rank": 0
+        },
+        "terminal": {
+          "actions": {},
+          "rank": 10
+        },
+        "type_0": {
+          "actions": {
+            "choice_B": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1"
+                }
+              ]
+            },
+            "choice_C": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "0"
+                }
+              ]
+            }
+          },
+          "rank": 1
+        },
+        "type_1": {
+          "actions": {
+            "choice_B": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "0"
+                }
+              ]
+            },
+            "choice_C": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1"
+                }
+              ]
+            }
+          },
+          "rank": 1
+        },
+        "unknown": {
+          "actions": {
+            "choice_B": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1/2"
+                }
+              ]
+            },
+            "choice_C": {
+              "transitions": [
+                {
+                  "next": "terminal",
+                  "probability": "1",
+                  "reward": "1/2"
+                }
+              ]
+            }
+          },
+          "rank": 1
+        }
+      }
+    }
+  ],
+  "inherited_nonmonotone_occupancy": {
+    "action_days": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "arrival_probability": "1/2",
+    "duration": 2,
+    "expected_costs": [
+      "0",
+      "0",
+      "1/2",
+      "0"
+    ],
+    "future_partner_day": 3,
+    "future_reward": "1",
+    "scope": "Isolated current AB introduction, no retirement; independent future AC opportunity only on day 3. Reward not required to be a subset of retirement."
+  },
+  "lp_certificates": {
+    "triangle_degree_relaxation": {
+      "A": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "b": [
+        1,
+        1,
+        1
+      ],
+      "c": [
+        1,
+        1,
+        1
+      ],
+      "dual": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "primal": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    },
+    "triangle_odd_set": {
+      "A": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "b": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "c": [
+        1,
+        1,
+        1
+      ],
+      "dual": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "primal": [
+        1,
+        0,
+        0
+      ]
+    },
+    "two_day_renewal": {
+      "A": [
+        [
+          1,
+          0
+        ],
+        [
+          "1/2",
+          1
+        ]
+      ],
+      "b": [
+        1,
+        1
+      ],
+      "c": [
+        "1/2",
+        "1/2"
+      ],
+      "dual": [
+        "1/4",
+        "1/2"
+      ],
+      "primal": [
+        1,
+        "1/2"
+      ]
+    }
+  },
+  "matching": [
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "11/100",
+          "q": "11/100"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "1/5",
+      "expected_first_action": "0-1,2-3",
+      "id": "local_cardinality_repair",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "9/10",
+          "q": "9/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "9/10",
+      "expected_first_action": "0-1",
+      "id": "cardinality_reward_reversal",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "1",
+      "expected_first_action": null,
+      "id": "odd_triangle",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "11/100",
+          "q": "11/100"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "1/5",
+      "expected_first_action": "1-3",
+      "id": "known_return_reservation",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "11/100",
+          "q": "11/100"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "11/100",
+      "expected_first_action": "0-1",
+      "id": "known_return_removed",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        8,
+        16
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            8,
+            16
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0,
+            8,
+            16
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0,
+            8,
+            16
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "271/1000",
+      "expected_first_action": null,
+      "id": "repeat_opportunities",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "1/10",
+      "expected_first_action": null,
+      "id": "repeat_short_horizon",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1/2"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1",
+          "q": "1/2"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "9/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "1",
+      "expected_first_action": "0-1,2-3",
+      "id": "nonseparable_alternatives",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        59
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            59
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/5",
+          "q": "1/5"
+        },
+        {
+          "days": [
+            59
+          ],
+          "duration": 8,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "3/10",
+      "expected_first_action": "0-1,2-3",
+      "id": "last_action_day",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1/2"
+        }
+      ],
+      "exit": [
+        100,
+        100
+      ],
+      "expected": "1/2",
+      "expected_first_action": "0-1",
+      "id": "single_introduction_no_learning",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 2,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        59
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            59
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/5",
+          "q": "1/5"
+        },
+        {
+          "days": [
+            59
+          ],
+          "duration": 20,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "3/10",
+          "q": "3/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "3/10",
+      "expected_first_action": "0-2",
+      "id": "inherited_throughput_last_day",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        1
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "9/10",
+          "q": "9/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "9/10",
+      "expected_first_action": "wait",
+      "id": "inherited_waiting_future_arrival",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/5",
+          "q": "1/5"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "4/5",
+          "q": "4/5"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "21/25",
+      "expected_first_action": "0-1",
+      "id": "inherited_retry_option",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "7/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "3/5"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1",
+          "q": "3/5"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "6/5",
+      "expected_first_action": "0-2,1-3",
+      "id": "inherited_static_greedy_trap",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "3/10"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1",
+          "q": "4/5"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1",
+          "q": "4/5"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "8/5",
+      "expected_first_action": "wait",
+      "id": "inherited_known_future_arrivals",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1
+          ],
+          "duration": 8,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "4/5"
+        }
+      ],
+      "exit": [
+        1,
+        1,
+        100,
+        100
+      ],
+      "expected": "4/5",
+      "expected_first_action": "0-1",
+      "id": "inherited_early_exit",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "2/5",
+          "q": "1/5"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration": 2,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/2",
+          "q": "3/10"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration": 2,
+          "endpoints": [
+            1,
+            3
+          ],
+          "pause": "1/2",
+          "q": "3/10"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration": 1,
+          "endpoints": [
+            2,
+            3
+          ],
+          "pause": "2/5",
+          "q": "1/5"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1/5",
+          "q": "1/10"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "709/1000",
+      "expected_first_action": null,
+      "id": "inherited_stochastic_returning",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/10",
+          "q": "1/10"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            3
+          ],
+          "pause": "1",
+          "q": "1"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "expected": "1",
+      "expected_first_action": null,
+      "id": "pause_not_qualified_penalty",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 4,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    },
+    {
+      "action_days": [
+        0,
+        1
+      ],
+      "arrival": [
+        0,
+        0,
+        0
+      ],
+      "edges": [
+        {
+          "days": [
+            0
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            1
+          ],
+          "pause": "1/2",
+          "q": "1/2"
+        },
+        {
+          "days": [
+            1
+          ],
+          "duration": 1,
+          "endpoints": [
+            0,
+            2
+          ],
+          "pause": "1/2",
+          "q": "1/2"
+        }
+      ],
+      "exit": [
+        100,
+        100,
+        100
+      ],
+      "expected": "3/4",
+      "expected_first_action": "0-1",
+      "id": "renewal_certificate_toy",
+      "information": "All edge probabilities, action days and arrival/exit schedules are known toy inputs.",
+      "n": 3,
+      "reward_bookkeeping": "Expected eventual reward booked once at assignment; full follow-up assumed."
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Constructed exact reduced models only; no simulator worlds, seeds or empirical policy claims."
+}

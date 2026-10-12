@@ -1,0 +1,43 @@
+{
+  "public_trace_deadline_totals": {
+    "greedy": {
+      "K": 637,
+      "qualified": 211,
+      "positive": 642
+    },
+    "population_control": {
+      "K": 673,
+      "qualified": 249,
+      "positive": 677
+    }
+  },
+  "proxy_mean": 0.019285714285714288,
+  "proxy_ci95": [
+    -0.011865039482274822,
+    0.0504364680537034
+  ],
+  "proxy_bootstrap95": [
+    -0.010714285714285707,
+    0.04929910714285695
+  ],
+  "preservation": {
+    "audited_round3_records": 3380,
+    "audited_older_records": 1889,
+    "actual_mismatches": {
+      "round3": [
+        "research3/FINAL_REVIEW.md",
+        "research3/REPLICATION.md",
+        "results/research3/package_gate.log"
+      ],
+      "older": []
+    },
+    "prefix_and_exact_current_copy_checks": true,
+    "scope": "Independent full-file hashing; recovered prefixes are present-day reconciliation, not historical prelaunch snapshots. No prior bytes changed by audit."
+  },
+  "production_three_mode_equal": true,
+  "production_eight_application_hashes_match": true,
+  "freeze_host_evaluator_hashes_match": true,
+  "cpu_seconds": 36.446611,
+  "wall_seconds": 40.71958008399997,
+  "audit_correction": "Initial helper wrongly required deployed application8files equal host freeze8files, which instead includes evaluator/benchmark and excludes initializer modules. Corrected check compares deployed8to applicationhost8 and allfreeze8to currenthost. Failedhelper produced no artifact; its CPU not captured."
+}

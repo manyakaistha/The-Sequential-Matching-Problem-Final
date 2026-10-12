@@ -1,0 +1,53 @@
+[
+  {
+    "command": "python3 -m py_compile research5/benchmark.py research5/run_test.py research5/prepare.py research5/analyze.py",
+    "status": "passed"
+  },
+  {
+    "command": "python3 -m research5.prepare > results/research5/preparation.log",
+    "status": "passed",
+    "notes": "Final pre-execution registration; earlier unlaunched designs retained."
+  },
+  {
+    "command": "python3 -m research5.launch --check",
+    "status": "passed",
+    "worlds_generated": false
+  },
+  {
+    "command": "Streaming SHA256 of every results/research4/manifest.json file entry",
+    "status": "passed",
+    "files": 2524,
+    "wall_seconds": 10.973
+  },
+  {
+    "command": "Compare original and amended registration scientific fields",
+    "status": "passed",
+    "fields": [
+      "candidate",
+      "configuration",
+      "baseline",
+      "policies",
+      "seeds",
+      "families",
+      "n_clusters",
+      "planned_episodes",
+      "decision_days",
+      "follow_up_days",
+      "alpha",
+      "family_size",
+      "adjusted_confidence",
+      "primary_target_effect_for_power",
+      "planning_sd",
+      "minimum_n_model_power90",
+      "sample_inflation",
+      "model_power_at_fixed_n",
+      "success",
+      "frozen_inherited_hashes",
+      "initializer_hashes",
+      "analysis_helper_hashes",
+      "prior_manifest_sha256",
+      "seed_inventory",
+      "power_sensitivity"
+    ]
+  }
+]

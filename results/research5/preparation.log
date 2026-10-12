@@ -1,0 +1,15 @@
+{
+  "n_clusters": 430,
+  "planned_episodes": 5160,
+  "alpha": 0.0125,
+  "model_power_at_fixed_n": 0.9299681380546858,
+  "cost_estimate": {
+    "episodes": 5160,
+    "workers": 2,
+    "wall_seconds": 6769.087654697505,
+    "os_child_cpu_seconds": 13471.039531607143,
+    "raw_trace_bytes": 56735315704.10715,
+    "compressed_trace_bytes": 3061577839.642857,
+    "scope": "Linear extrapolation from round4 E; not guaranteed, excludes new full logging, replication/analysis/archive overhead. No external spend."
+  }
+}

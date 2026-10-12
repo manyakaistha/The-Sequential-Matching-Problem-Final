@@ -1,0 +1,9659 @@
+{
+  "stage": "D",
+  "status": "frozen_execution_registration",
+  "cells": [
+    {
+      "policy": "G",
+      "seed": 130001,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130001,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130001,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130001,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130001,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130001,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130001,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130001,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130001,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130001,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130001,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130001,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130001,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130001,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130001,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130001,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130001,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130001,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130001,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130001,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130001,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130001,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130001,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130001,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130002,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130002,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130002,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130002,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130002,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130002,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130002,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130002,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130002,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130002,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130002,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130002,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130002,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130002,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130002,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130002,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130002,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130002,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130002,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130002,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130002,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130002,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130002,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130002,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130003,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130003,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130003,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130003,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130003,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130003,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130003,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130003,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130003,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130003,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130003,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130003,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130003,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130003,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130003,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130003,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130003,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130003,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130003,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130003,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130003,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130003,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130003,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130003,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130004,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130004,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130004,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130004,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130004,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130004,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130004,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130004,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130004,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130004,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130004,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130004,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130004,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130004,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130004,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130004,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130004,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130004,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130004,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130004,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130004,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130004,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130004,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130004,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130005,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130005,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130005,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130005,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130005,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130005,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130005,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130005,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130005,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130005,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130005,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130005,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130005,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130005,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130005,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130005,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130005,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130005,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130005,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130005,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130005,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130005,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130005,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130005,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130006,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130006,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130006,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130006,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130006,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130006,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130006,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130006,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130006,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130006,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130006,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130006,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130006,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130006,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130006,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130006,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130006,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130006,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130006,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130006,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130006,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130006,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130006,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130006,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130007,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130007,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130007,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130007,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130007,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130007,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130007,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130007,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130007,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130007,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130007,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130007,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130007,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130007,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130007,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130007,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130007,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130007,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130007,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130007,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130007,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130007,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130007,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130007,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130008,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130008,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130008,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130008,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130008,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130008,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130008,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130008,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130008,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130008,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130008,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130008,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130008,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130008,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130008,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130008,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130008,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130008,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130008,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130008,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130008,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130008,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130008,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130008,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130009,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130009,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130009,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130009,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130009,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130009,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130009,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130009,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130009,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130009,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130009,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130009,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130009,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130009,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130009,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130009,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130009,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130009,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130009,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130009,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130009,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130009,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130009,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130009,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130010,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130010,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130010,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130010,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130010,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130010,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130010,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130010,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130010,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130010,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130010,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130010,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130010,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130010,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130010,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130010,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130010,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130010,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130010,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130010,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130010,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130010,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130010,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130010,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130011,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130011,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130011,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130011,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130011,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130011,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130011,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130011,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130011,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130011,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130011,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130011,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130011,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130011,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130011,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130011,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130011,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130011,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130011,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130011,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130011,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130011,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130011,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130011,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130012,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130012,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130012,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130012,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130012,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130012,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130012,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130012,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130012,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130012,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130012,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130012,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130012,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130012,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130012,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130012,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130012,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130012,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130012,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130012,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130012,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130012,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130012,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130012,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130013,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130013,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130013,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130013,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130013,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130013,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130013,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130013,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130013,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130013,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130013,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130013,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130013,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130013,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130013,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130013,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130013,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130013,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130013,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130013,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130013,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130013,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130013,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130013,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130014,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130014,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130014,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130014,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130014,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130014,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130014,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130014,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130014,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130014,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130014,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130014,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130014,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130014,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130014,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130014,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130014,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130014,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130014,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130014,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130014,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130014,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130014,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130014,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130015,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130015,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130015,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130015,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130015,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130015,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130015,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130015,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130015,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130015,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130015,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130015,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130015,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130015,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130015,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130015,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130015,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130015,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130015,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130015,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130015,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130015,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130015,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130015,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130016,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130016,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130016,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130016,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130016,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130016,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130016,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130016,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130016,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130016,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130016,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130016,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130016,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130016,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130016,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130016,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130016,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130016,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130016,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130016,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130016,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130016,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130016,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130016,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130017,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130017,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130017,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130017,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130017,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130017,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130017,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130017,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130017,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130017,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130017,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130017,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130017,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130017,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130017,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130017,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130017,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130017,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130017,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130017,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130017,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130017,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130017,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130017,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130018,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130018,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130018,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130018,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130018,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130018,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130018,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130018,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130018,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130018,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130018,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130018,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130018,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130018,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130018,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130018,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130018,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130018,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130018,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130018,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130018,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130018,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130018,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130018,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130019,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130019,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130019,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130019,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130019,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130019,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130019,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130019,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130019,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130019,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130019,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130019,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130019,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130019,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130019,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130019,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130019,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130019,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130019,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130019,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130019,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130019,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130019,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130019,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130020,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130020,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130020,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130020,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130020,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130020,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130020,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130020,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130020,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130020,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130020,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130020,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130020,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130020,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130020,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130020,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130020,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130020,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130020,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130020,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130020,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130020,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130020,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130020,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130021,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130021,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130021,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130021,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130021,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130021,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130021,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130021,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130021,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130021,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130021,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130021,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130021,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130021,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130021,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130021,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130021,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130021,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130021,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130021,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130021,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130021,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130021,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130021,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130022,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130022,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130022,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130022,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130022,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130022,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130022,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130022,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130022,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130022,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130022,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130022,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130022,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130022,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130022,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130022,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130022,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130022,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130022,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130022,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130022,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130022,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130022,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130022,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130023,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130023,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130023,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130023,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130023,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130023,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130023,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130023,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130023,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130023,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130023,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130023,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130023,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130023,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130023,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130023,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130023,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130023,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130023,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130023,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130023,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130023,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130023,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130023,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130024,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130024,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130024,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130024,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130024,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130024,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130024,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130024,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130024,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130024,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130024,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130024,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130024,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130024,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130024,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130024,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130024,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130024,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130024,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130024,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130024,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130024,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130024,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130024,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130025,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130025,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130025,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130025,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130025,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130025,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130025,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130025,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130025,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130025,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130025,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130025,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130025,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130025,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130025,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130025,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130025,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130025,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130025,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130025,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130025,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130025,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130025,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130025,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130026,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130026,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130026,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130026,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130026,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130026,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130026,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130026,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130026,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130026,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130026,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130026,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130026,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130026,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130026,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130026,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130026,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130026,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130026,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130026,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130026,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130026,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130026,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130026,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130027,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130027,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130027,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130027,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130027,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130027,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130027,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130027,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130027,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130027,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130027,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130027,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130027,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130027,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130027,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130027,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130027,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130027,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130027,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130027,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130027,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130027,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130027,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130027,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130028,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130028,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130028,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130028,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130028,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130028,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130028,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130028,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130028,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130028,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130028,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130028,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130028,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130028,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130028,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130028,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130028,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130028,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130028,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130028,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130028,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130028,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130028,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130028,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130029,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130029,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130029,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130029,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130029,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130029,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130029,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130029,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130029,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130029,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130029,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130029,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130029,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130029,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130029,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130029,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130029,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130029,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130029,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130029,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130029,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130029,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130029,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130029,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130030,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130030,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130030,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130030,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130030,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130030,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130030,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130030,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130030,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130030,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130030,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130030,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130030,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130030,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130030,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130030,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130030,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130030,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130030,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130030,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130030,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130030,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130030,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130030,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130031,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130031,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130031,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130031,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130031,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130031,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130031,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130031,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130031,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130031,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130031,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130031,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130031,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130031,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130031,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130031,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130031,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130031,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130031,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130031,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130031,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130031,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130031,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130031,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130032,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130032,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130032,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130032,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130032,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130032,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130032,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130032,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130032,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130032,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130032,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130032,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130032,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130032,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130032,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130032,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130032,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130032,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130032,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130032,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130032,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130032,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130032,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130032,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130033,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130033,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130033,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130033,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130033,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130033,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130033,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130033,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130033,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130033,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130033,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130033,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130033,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130033,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130033,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130033,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130033,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130033,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130033,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130033,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130033,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130033,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130033,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130033,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130034,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130034,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130034,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130034,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130034,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130034,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130034,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130034,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130034,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130034,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130034,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130034,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130034,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130034,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130034,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130034,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130034,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130034,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130034,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130034,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130034,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130034,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130034,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130034,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130035,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130035,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130035,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130035,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130035,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130035,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130035,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130035,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130035,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130035,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130035,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130035,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130035,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130035,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130035,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130035,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130035,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130035,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130035,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130035,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130035,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130035,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130035,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130035,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130036,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130036,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130036,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130036,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130036,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130036,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130036,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130036,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130036,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130036,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130036,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130036,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130036,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130036,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130036,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130036,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130036,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130036,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130036,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130036,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130036,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130036,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130036,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130036,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130037,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130037,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130037,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130037,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130037,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130037,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130037,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130037,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130037,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130037,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130037,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130037,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130037,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130037,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130037,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130037,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130037,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130037,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130037,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130037,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130037,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130037,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130037,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130037,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130038,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130038,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130038,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130038,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130038,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130038,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130038,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130038,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130038,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130038,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130038,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130038,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130038,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130038,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130038,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130038,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130038,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130038,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130038,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130038,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130038,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130038,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130038,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130038,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130039,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130039,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130039,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130039,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130039,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130039,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130039,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130039,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130039,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130039,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130039,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130039,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130039,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130039,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130039,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130039,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130039,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130039,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130039,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130039,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130039,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130039,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130039,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130039,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130040,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130040,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130040,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130040,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130040,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130040,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130040,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130040,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130040,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130040,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130040,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130040,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130040,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130040,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130040,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130040,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130040,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130040,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130040,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130040,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130040,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130040,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130040,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130040,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130041,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130041,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130041,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130041,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130041,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130041,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130041,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130041,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130041,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130041,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130041,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130041,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130041,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130041,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130041,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130041,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130041,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130041,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130041,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130041,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130041,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130041,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130041,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130041,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130042,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130042,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130042,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130042,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130042,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130042,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130042,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130042,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130042,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130042,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130042,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130042,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130042,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130042,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130042,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130042,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130042,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130042,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130042,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130042,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130042,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130042,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130042,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130042,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130043,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130043,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130043,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130043,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130043,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130043,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130043,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130043,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130043,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130043,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130043,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130043,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130043,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130043,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130043,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130043,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130043,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130043,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130043,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130043,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130043,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130043,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130043,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130043,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130044,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130044,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130044,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130044,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130044,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130044,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130044,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130044,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130044,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130044,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130044,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130044,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130044,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130044,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130044,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130044,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130044,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130044,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130044,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130044,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130044,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130044,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130044,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130044,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130045,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130045,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130045,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130045,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130045,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130045,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130045,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130045,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130045,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130045,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130045,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130045,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130045,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130045,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130045,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130045,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130045,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130045,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130045,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130045,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130045,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130045,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130045,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130045,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130046,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130046,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130046,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130046,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130046,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130046,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130046,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130046,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130046,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130046,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130046,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130046,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130046,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130046,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130046,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130046,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130046,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130046,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130046,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130046,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130046,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130046,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130046,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130046,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130047,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130047,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130047,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130047,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130047,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130047,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130047,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130047,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130047,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130047,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130047,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130047,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130047,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130047,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130047,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130047,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130047,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130047,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130047,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130047,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130047,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130047,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130047,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130047,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130048,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130048,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130048,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130048,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130048,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130048,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130048,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130048,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130048,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130048,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130048,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130048,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130048,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130048,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130048,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130048,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130048,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130048,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130048,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130048,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130048,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130048,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130048,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130048,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130049,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130049,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130049,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130049,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130049,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130049,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130049,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130049,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130049,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130049,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130049,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130049,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130049,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130049,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130049,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130049,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130049,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130049,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130049,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130049,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130049,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130049,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130049,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130049,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130050,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130050,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130050,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130050,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130050,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130050,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130050,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130050,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130050,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130050,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130050,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130050,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130050,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130050,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130050,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130050,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130050,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130050,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130050,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130050,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130050,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130050,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130050,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130050,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130051,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130051,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130051,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130051,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130051,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130051,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130051,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130051,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130051,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130051,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130051,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130051,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130051,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130051,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130051,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130051,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130051,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130051,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130051,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130051,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130051,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130051,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130051,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130051,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130052,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130052,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130052,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130052,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130052,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130052,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130052,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130052,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130052,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130052,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130052,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130052,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130052,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130052,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130052,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130052,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130052,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130052,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130052,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130052,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130052,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130052,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130052,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130052,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130053,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130053,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130053,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130053,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130053,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130053,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130053,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130053,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130053,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130053,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130053,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130053,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130053,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130053,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130053,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130053,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130053,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130053,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130053,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130053,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130053,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130053,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130053,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130053,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130054,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130054,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130054,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130054,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130054,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130054,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130054,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130054,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130054,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130054,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130054,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130054,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130054,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130054,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130054,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130054,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130054,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130054,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130054,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130054,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130054,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130054,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130054,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130054,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130055,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130055,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130055,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130055,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130055,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130055,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130055,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130055,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130055,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130055,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130055,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130055,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130055,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130055,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130055,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130055,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130055,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130055,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130055,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130055,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130055,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130055,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130055,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130055,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130056,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130056,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130056,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130056,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130056,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130056,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130056,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130056,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130056,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130056,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130056,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130056,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130056,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130056,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130056,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130056,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130056,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130056,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130056,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130056,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130056,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130056,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130056,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130056,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130057,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130057,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130057,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130057,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130057,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130057,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130057,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130057,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130057,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130057,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130057,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130057,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130057,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130057,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130057,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130057,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130057,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130057,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130057,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130057,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130057,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130057,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130057,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130057,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130058,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130058,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130058,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130058,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130058,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130058,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130058,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130058,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130058,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130058,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130058,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130058,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130058,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130058,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130058,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130058,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130058,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130058,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130058,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130058,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130058,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130058,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130058,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130058,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130059,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130059,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130059,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130059,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130059,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130059,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130059,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130059,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130059,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130059,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130059,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130059,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130059,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130059,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130059,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130059,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130059,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130059,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130059,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130059,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130059,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130059,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130059,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130059,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130060,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130060,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130060,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130060,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130060,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130060,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130060,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130060,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130060,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130060,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130060,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130060,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130060,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130060,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130060,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130060,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130060,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130060,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130060,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130060,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130060,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130060,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130060,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130060,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130061,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130061,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130061,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130061,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130061,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130061,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130061,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130061,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130061,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130061,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130061,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130061,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130061,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130061,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130061,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130061,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130061,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130061,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130061,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130061,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130061,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130061,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130061,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130061,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130062,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130062,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130062,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130062,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130062,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130062,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130062,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130062,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130062,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130062,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130062,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130062,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130062,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130062,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130062,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130062,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130062,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130062,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130062,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130062,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130062,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130062,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130062,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130062,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130063,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130063,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130063,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130063,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130063,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130063,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130063,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130063,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130063,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130063,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130063,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130063,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130063,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130063,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130063,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130063,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130063,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130063,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130063,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130063,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130063,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130063,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130063,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130063,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130064,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130064,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130064,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130064,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130064,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130064,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130064,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130064,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130064,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130064,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130064,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130064,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130064,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130064,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130064,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130064,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130064,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130064,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130064,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130064,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130064,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130064,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130064,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130064,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130065,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130065,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130065,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130065,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130065,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130065,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130065,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130065,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130065,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130065,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130065,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130065,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130065,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130065,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130065,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130065,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130065,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130065,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130065,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130065,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130065,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130065,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130065,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130065,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130066,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130066,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130066,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130066,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130066,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130066,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130066,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130066,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130066,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130066,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130066,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130066,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130066,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130066,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130066,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130066,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130066,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130066,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130066,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130066,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130066,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130066,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130066,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130066,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130067,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130067,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130067,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130067,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130067,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130067,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130067,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130067,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130067,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130067,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130067,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130067,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130067,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130067,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130067,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130067,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130067,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130067,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130067,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130067,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130067,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130067,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130067,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130067,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130068,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130068,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130068,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130068,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130068,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130068,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130068,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130068,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130068,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130068,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130068,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130068,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130068,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130068,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130068,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130068,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130068,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130068,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130068,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130068,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130068,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130068,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130068,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130068,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130069,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130069,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130069,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130069,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130069,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130069,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130069,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130069,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130069,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130069,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130069,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130069,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130069,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130069,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130069,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130069,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130069,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130069,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130069,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130069,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130069,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130069,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130069,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130069,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130070,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130070,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130070,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130070,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130070,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130070,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130070,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130070,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130070,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130070,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130070,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130070,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130070,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130070,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130070,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130070,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130070,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130070,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130070,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130070,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130070,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130070,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130070,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130070,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130071,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130071,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130071,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130071,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130071,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130071,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130071,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130071,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130071,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130071,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130071,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130071,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130071,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130071,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130071,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130071,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130071,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130071,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130071,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130071,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130071,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130071,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130071,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130071,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130072,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130072,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130072,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130072,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130072,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130072,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130072,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130072,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130072,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130072,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130072,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130072,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130072,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130072,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130072,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130072,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130072,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130072,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130072,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130072,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130072,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130072,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130072,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130072,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130073,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130073,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130073,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130073,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130073,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130073,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130073,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130073,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130073,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130073,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130073,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130073,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130073,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130073,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130073,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130073,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130073,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130073,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130073,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130073,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130073,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130073,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130073,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130073,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130074,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130074,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130074,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130074,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130074,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130074,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130074,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130074,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130074,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130074,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130074,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130074,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130074,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130074,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130074,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130074,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130074,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130074,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130074,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130074,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130074,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130074,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130074,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130074,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130075,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130075,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130075,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130075,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130075,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130075,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130075,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130075,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130075,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130075,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130075,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130075,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130075,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130075,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130075,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130075,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130075,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130075,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130075,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130075,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130075,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130075,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130075,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130075,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130076,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130076,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130076,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130076,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130076,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130076,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130076,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130076,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130076,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130076,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130076,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130076,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130076,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130076,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130076,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130076,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130076,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130076,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130076,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130076,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130076,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130076,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130076,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130076,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130077,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130077,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130077,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130077,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130077,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130077,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130077,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130077,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130077,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130077,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130077,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130077,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130077,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130077,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130077,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130077,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130077,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130077,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130077,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130077,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130077,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130077,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130077,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130077,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130078,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130078,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130078,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130078,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130078,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130078,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130078,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130078,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130078,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130078,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130078,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130078,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130078,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130078,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130078,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130078,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130078,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130078,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130078,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130078,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130078,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130078,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130078,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130078,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130079,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130079,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130079,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130079,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130079,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130079,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130079,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130079,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130079,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130079,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130079,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130079,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130079,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130079,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130079,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130079,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130079,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130079,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130079,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130079,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130079,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130079,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130079,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130079,
+      "family": "drift"
+    },
+    {
+      "policy": "G",
+      "seed": 130080,
+      "family": "development"
+    },
+    {
+      "policy": "P",
+      "seed": 130080,
+      "family": "development"
+    },
+    {
+      "policy": "N3",
+      "seed": 130080,
+      "family": "development"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130080,
+      "family": "development"
+    },
+    {
+      "policy": "G",
+      "seed": 130080,
+      "family": "sparse"
+    },
+    {
+      "policy": "P",
+      "seed": 130080,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3",
+      "seed": 130080,
+      "family": "sparse"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130080,
+      "family": "sparse"
+    },
+    {
+      "policy": "G",
+      "seed": 130080,
+      "family": "cold_start"
+    },
+    {
+      "policy": "P",
+      "seed": 130080,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3",
+      "seed": 130080,
+      "family": "cold_start"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130080,
+      "family": "cold_start"
+    },
+    {
+      "policy": "G",
+      "seed": 130080,
+      "family": "delayed"
+    },
+    {
+      "policy": "P",
+      "seed": 130080,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3",
+      "seed": 130080,
+      "family": "delayed"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130080,
+      "family": "delayed"
+    },
+    {
+      "policy": "G",
+      "seed": 130080,
+      "family": "shift"
+    },
+    {
+      "policy": "P",
+      "seed": 130080,
+      "family": "shift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130080,
+      "family": "shift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130080,
+      "family": "shift"
+    },
+    {
+      "policy": "G",
+      "seed": 130080,
+      "family": "drift"
+    },
+    {
+      "policy": "P",
+      "seed": 130080,
+      "family": "drift"
+    },
+    {
+      "policy": "N3",
+      "seed": 130080,
+      "family": "drift"
+    },
+    {
+      "policy": "N3_two",
+      "seed": 130080,
+      "family": "drift"
+    }
+  ],
+  "configs": {
+    "G": {
+      "id": "G"
+    },
+    "P": {
+      "id": "P"
+    },
+    "N3": {
+      "id": "N3"
+    },
+    "N3_two": {
+      "id": "N3_two"
+    }
+  },
+  "sources": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research6/recorder.py": "b1feddc2698ebdc80cfccdf5aa804b58c15c5814720affc2b655e835942d6a1a",
+    "research6/orchestrator.py": "f80018abe9fe73bf3f77ebe3e90cb6c9483ee58cacfb48558362fa7be6092b50",
+    "research6/policies/policy.py": "67c733565b9869dfb6c36b4a61046893a2c16bfc2e035eda7d6a83c08b12ff97",
+    "research6/policies/allocation.py": "296ed10fcde8fc65b5e5dbca76ed3dd25da80a9b002b0e89794399d35c9ce1f3",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf"
+  },
+  "resource_forecast": {
+    "main_cpu_seconds": 11000,
+    "fit_cpu_seconds": 0,
+    "storage_bytes_with_headroom": 1200000000,
+    "scope": "80 fresh seed clusters x 6 families x 4 policies (G, P, N3, N3_two)"
+  },
+  "reviews": [
+    {
+      "path": "research6/reviews/stage_d_registration_review.md",
+      "sha256": "7a09bff817e9fffab20a135c2e2f0f490282bce60ef9c1d835500f7c690fb663",
+      "passed": true,
+      "scope": "Stage D 80-cluster independent selection registration"
+    }
+  ],
+  "seed_inventory_sha256": "d44c53cb537ed82100a4278a234480a714f53c7763e9f276ce83f57303afc958",
+  "freshness_closure_sha256": "dbf38445e3c7bda27d94acf2463814d122aa84a81f35db32c48695d840a75288",
+  "contenders": [
+    "N3",
+    "N3_two"
+  ],
+  "controls": [
+    "G",
+    "P"
+  ],
+  "primary_metric": "qualified_msmi_per_100_arrived",
+  "logging_schema": "R6-durable-invocation-chunks-v1"
+}

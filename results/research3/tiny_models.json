@@ -1,0 +1,285 @@
+{
+  "exact_simplified_models": {
+    "greedy_cardinality_path": {
+      "claim_refuted": "largest immediate edge gives best matching",
+      "exact": {
+        "expected_reward": "1/5",
+        "first_action": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "states": 12
+      },
+      "greedy_reward": "11/100",
+      "maximum_cardinality_reward": "1/5"
+    },
+    "retry_option": {
+      "claim_supported_only_in_specified_model": "short occupancy can make present low-probability attempts useful",
+      "exact": {
+        "expected_reward": "21/25",
+        "first_action": [
+          [
+            0,
+            1
+          ]
+        ],
+        "states": 11
+      },
+      "immediate_then_retry_reward": "21/25",
+      "wait_reward": "4/5"
+    },
+    "scarcity_weight_tradeoff": {
+      "claim_refuted": "minimum-degree-first always improves reward",
+      "exact": {
+        "expected_reward": "9/10",
+        "first_action": [
+          [
+            0,
+            1
+          ]
+        ],
+        "states": 12
+      },
+      "scarce_reward": "1/5"
+    },
+    "throughput_last_day": {
+      "claim_refuted": "reward per busy day is a universal finite-horizon edge ordering",
+      "exact": {
+        "expected_reward": "3/10",
+        "first_action": [
+          [
+            0,
+            2
+          ]
+        ],
+        "states": 6
+      },
+      "ratio_reward": "1/5"
+    },
+    "waiting_future_arrival": {
+      "claim_refuted": "introducing any currently legal positive edge is optimal",
+      "exact": {
+        "expected_reward": "9/10",
+        "first_action": [],
+        "states": 9
+      },
+      "immediate_reward": "1/10"
+    }
+  },
+  "offline_learning": {
+    "coverage_limitation": "baseline selected actions only; no propensity logging; no counterfactual policy-value estimate",
+    "features": [
+      "intercept",
+      "goal_eq-.5",
+      "pace_eq-1/3",
+      "lifestyle_eq-1/3",
+      "conversation_eq-.25",
+      "day>=35"
+    ],
+    "gradient_max": 1.1905276764423434e-09,
+    "optimizer_success": true,
+    "penalty": [
+      2.0,
+      25.0,
+      25.0,
+      25.0,
+      25.0,
+      25.0
+    ],
+    "scope": "old selected baseline cohort, assignment-weighted descriptive audit; no new untouched seeds",
+    "train": {
+      "constant_training_rate": {
+        "brier": 0.010936819558398547,
+        "log_loss": 0.06081356262409958,
+        "observed_mean": 0.01105912377711612,
+        "predicted_mean": 0.011059123777116124
+      },
+      "n": 2351,
+      "offline": {
+        "brier": 0.010932956115899608,
+        "log_loss": 0.06063798639937563,
+        "observed_mean": 0.01105912377711612,
+        "predicted_mean": 0.010974048960212921
+      },
+      "per_seed": {
+        "1001": {
+          "n": 594,
+          "offline": {
+            "brier": 0.006709429488302641,
+            "log_loss": 0.04146890856941307,
+            "observed_mean": 0.006734006734006734,
+            "predicted_mean": 0.01093374754234179
+          },
+          "population": {
+            "brier": 0.00671877309621238,
+            "log_loss": 0.041386589641005125,
+            "observed_mean": 0.006734006734006734,
+            "predicted_mean": 0.010272643175859077
+          }
+        },
+        "1002": {
+          "n": 406,
+          "offline": {
+            "brier": 0.009757084868615326,
+            "log_loss": 0.05540348563746372,
+            "observed_mean": 0.009852216748768473,
+            "predicted_mean": 0.011054983796822
+          },
+          "population": {
+            "brier": 0.009772737987357822,
+            "log_loss": 0.055659361560112405,
+            "observed_mean": 0.009852216748768473,
+            "predicted_mean": 0.010588369159481012
+          }
+        },
+        "1003": {
+          "n": 425,
+          "offline": {
+            "brier": 0.018510235939139114,
+            "log_loss": 0.09485409774665207,
+            "observed_mean": 0.018823529411764704,
+            "predicted_mean": 0.01093671229702063
+          },
+          "population": {
+            "brier": 0.018420086777984176,
+            "log_loss": 0.09101847888965792,
+            "observed_mean": 0.018823529411764704,
+            "predicted_mean": 0.009697575222990083
+          }
+        },
+        "1004": {
+          "n": 462,
+          "offline": {
+            "brier": 0.006470248248752979,
+            "log_loss": 0.040203434708179005,
+            "observed_mean": 0.006493506493506494,
+            "predicted_mean": 0.010953876701852286
+          },
+          "population": {
+            "brier": 0.006471296160395584,
+            "log_loss": 0.03977726247929619,
+            "observed_mean": 0.006493506493506494,
+            "predicted_mean": 0.010056191510052468
+          }
+        },
+        "1005": {
+          "n": 464,
+          "offline": {
+            "brier": 0.014871761402397392,
+            "log_loss": 0.07876418273358757,
+            "observed_mean": 0.015086206896551725,
+            "predicted_mean": 0.011009107502823919
+          },
+          "population": {
+            "brier": 0.014880986143997167,
+            "log_loss": 0.07887002883680443,
+            "observed_mean": 0.015086206896551725,
+            "predicted_mean": 0.010541358595047531
+          }
+        }
+      },
+      "population": {
+        "brier": 0.010923749944524946,
+        "log_loss": 0.059905137054010814,
+        "observed_mean": 0.01105912377711612,
+        "predicted_mean": 0.010233708320172976
+      },
+      "positive": 26
+    },
+    "train_seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ],
+    "validation": {
+      "constant_training_rate": {
+        "brier": 0.011380811237007666,
+        "log_loss": 0.06285370989361252,
+        "observed_mean": 0.011513157894736841,
+        "predicted_mean": 0.011059123777116122
+      },
+      "n": 1216,
+      "offline": {
+        "brier": 0.011377399317834422,
+        "log_loss": 0.06270716417433532,
+        "observed_mean": 0.011513157894736841,
+        "predicted_mean": 0.0109913798851553
+      },
+      "per_seed": {
+        "1006": {
+          "n": 360,
+          "offline": {
+            "brier": 0.027278176209471795,
+            "log_loss": 0.13564522373328305,
+            "observed_mean": 0.027777777777777776,
+            "predicted_mean": 0.01105075913000423
+          },
+          "population": {
+            "brier": 0.027260680011340348,
+            "log_loss": 0.1358911525085129,
+            "observed_mean": 0.027777777777777776,
+            "predicted_mean": 0.010739164947197807
+          }
+        },
+        "1007": {
+          "n": 346,
+          "offline": {
+            "brier": 0.011425654174569928,
+            "log_loss": 0.06298697369848257,
+            "observed_mean": 0.011560693641618497,
+            "predicted_mean": 0.010959777392308629
+          },
+          "population": {
+            "brier": 0.011427194990918753,
+            "log_loss": 0.06274767633229139,
+            "observed_mean": 0.011560693641618497,
+            "predicted_mean": 0.00988126214279826
+          }
+        },
+        "1008": {
+          "n": 510,
+          "offline": {
+            "brier": 0.00012058390328551736,
+            "log_loss": 0.011031643514382093,
+            "observed_mean": 0.0,
+            "predicted_mean": 0.010970905246683406
+          },
+          "population": {
+            "brier": 0.00010670567271472831,
+            "log_loss": 0.009757785484692548,
+            "observed_mean": 0.0,
+            "predicted_mean": 0.009703996012898699
+          }
+        }
+      },
+      "population": {
+        "brier": 0.011366837305941551,
+        "log_loss": 0.06217761637436732,
+        "observed_mean": 0.011513157894736841,
+        "predicted_mean": 0.010060899711330382
+      },
+      "positive": 14
+    },
+    "validation_seeds": [
+      1006,
+      1007,
+      1008
+    ],
+    "weights": [
+      -4.4951144034601525,
+      0.06971259815380544,
+      0.08371633600294244,
+      -0.0454263648284883,
+      -0.013228700815476958,
+      -0.04053548205036358
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "status": "planning_not_execution_registration",
+  "date": "2026-10-11",
+  "new_policy_episodes_executed": 0,
+  "seed_freshness_verified": false,
+  "families": ["development", "sparse", "cold_start", "delayed", "shift", "drift"],
+  "members_per_episode": 200,
+  "action_days": 60,
+  "follow_up_days": 40,
+  "offline_workers": 3,
+  "global_agent_slots_including_director": 4,
+  "agent_routing": {
+    "policy_path": "research6/agent_routing.json",
+    "helper_path": "research6/agent_router.py",
+    "instructions_path": "AGENTS.md",
+    "simple_model": "gpt-6-luna",
+    "implementation_model": "gpt-6.1-sol",
+    "proof_planning_model": "gpt-6-astra",
+    "allowed_efforts": ["low", "medium", "high"],
+    "live_delegation_configured": true,
+    "research_experiment_runner_implemented": false
+  },
+  "budgets": {
+    "main_cpu_hours": 40,
+    "offline_fit_plan_cpu_hours": 10,
+    "storage_forecast_multiplier": 1.25,
+    "free_disk_reserve_GiB": 20
+  },
+  "production": {
+    "cpu_cores": 2,
+    "ram_bytes": 1073741824,
+    "pids": 64,
+    "invocation_seconds": 10,
+    "memory_strictly_less_than_bytes": 1048576,
+    "image_max_bytes": 2147483648,
+    "read_only": true,
+    "network": false
+  },
+  "candidates": [
+    {"id": "G", "kind": "baseline", "mechanism": "shipped greedy", "cost_tier": 0},
+    {"id": "P", "kind": "unchanged_control", "mechanism": "frozen population", "cost_tier": 2},
+    {"id": "K", "kind": "allocation_control", "mechanism": "maximum cardinality shipped secondary score", "cost_tier": 2},
+    {"id": "N1", "kind": "structural", "mechanism": "local alternating-path repair", "cost_tier": 1},
+    {"id": "N2", "kind": "structural", "mechanism": "periodic stable reranking", "cost_tier": 1},
+    {"id": "N3", "kind": "structural", "mechanism": "collision-aware hard batch", "cost_tier": 3},
+    {"id": "N4", "kind": "structural", "mechanism": "decision-changing hard soft packages", "cost_tier": 3},
+    {"id": "N5", "kind": "structural", "mechanism": "public-return reservation", "cost_tier": 3},
+    {"id": "N6", "kind": "structural", "mechanism": "component public-belief rollout", "cost_tier": 4},
+    {"id": "N7", "kind": "robust_allocation", "mechanism": "whole-matching uncertainty gate", "cost_tier": 2},
+    {"id": "L1", "kind": "learning", "mechanism": "joint reciprocal survivor posterior", "cost_tier": 4},
+    {"id": "L2", "kind": "learning", "mechanism": "public continuation distillation", "cost_tier": 2}
+  ],
+  "partitions": {
+    "training": {"first": 100001, "last": 100120, "policies_max": 3, "episodes_max": 2160, "conditional": true},
+    "validation": {"first": 101001, "last": 101040, "policies_max": 3, "episodes_max": 720, "conditional": true},
+    "B": {"first": 110001, "last": 110040, "policies_max": 12, "episodes_max": 2880},
+    "C": {"first": 120001, "last": 120060, "policies_max": 12, "episodes_max": 4320},
+    "D": {"first": 130001, "last": 130080, "policies_max": 4, "episodes_max": 1920},
+    "E_reserve": {"first": 140001, "last": 142000, "policies_max": 2, "used_n_max": 900, "illustrative_n": 447, "illustrative_episodes": 5364}
+  },
+  "illustrative_main_episodes_max": 17364,
+  "selection": {
+    "B_promoted_mechanisms_max": 2,
+    "B_point_effect_min": 0.025,
+    "C_contenders_max": 2,
+    "C_combination_max": 1,
+    "D_point_effect_min": 0.025,
+    "D_one_sided_bound_confidence": 0.9,
+    "D_lower_bound_min_strict": 0,
+    "D_tie_band": 0.005,
+    "baseline_if_none": true,
+    "unchanged_P_can_be_confirmed": false
+  },
+  "confirmation": {
+    "comparisons_this_round_max": 1,
+    "finite_program_comparisons": 5,
+    "program_alpha": 0.05,
+    "two_sided_alpha": 0.01,
+    "ci_confidence": 0.99,
+    "planning_effect": 0.05,
+    "desired_power": 0.9,
+    "sd_floor": 0.26,
+    "D_sd_multiplier": 1.1,
+    "sample_multiplier": 1.1,
+    "bootstrap_seed": 90210,
+    "bootstrap_replicates": 10000,
+    "extend_after_results": false,
+    "primary": "seed-cluster mean of equal-six-family qualified MSMI/100 differences",
+    "raw_actual_reward_remains_primary": true
+  },
+  "logging": {
+    "lossless_all_public_io": true,
+    "host_privileged_initial_final": true,
+    "privileged_policy_access": false,
+    "preserve_all_attempts": true,
+    "heartbeat_seconds_max": 15,
+    "remove_old_data": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "reviewed_utc": "2026-10-10T03:47:42.087302+00:00",
+  "candidate": "population_control",
+  "all_official_and_shared_recorded_metrics_equal": {
+    "assignments": true,
+    "mutual_acceptances": true,
+    "dates": true,
+    "mutual_second_meeting_intention": true,
+    "missing_feedback": true,
+    "ask_cost": true,
+    "arrived_members": true,
+    "msmi_per_100_arrived_members": true,
+    "status": true,
+    "valid": true,
+    "served_members": true,
+    "unserved_members": true,
+    "coverage": true,
+    "mutual_acceptances_per_100": true,
+    "first_introduction_wait_days": true,
+    "action_sha256": true,
+    "captured_fallback_warning_count": true,
+    "seed": true,
+    "variant": true,
+    "candidate": true,
+    "semantic_action_sha256": true
+  },
+  "freeze_hashes_unchanged": true,
+  "scope": "Independent post-replay validation, direct/subprocess/container full oldseed101; no fitted data or new worlds",
+  "selected_artifact_sha256": "d8d55a056aa85e7c2e61439e606f17bf806d524ad9c03271b66177e395c8eda5"
+}

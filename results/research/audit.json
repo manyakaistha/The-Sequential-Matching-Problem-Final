@@ -1,0 +1,3468 @@
+{
+  "public": {
+    "pools": [
+      {
+        "pool": "public_01",
+        "day": 30,
+        "acceptance": {
+          "n": 55,
+          "counts": {
+            "(0, 1)": 16,
+            "(1, 0)": 10,
+            "(0, 0)": 21,
+            "(1, 1)": 8
+          },
+          "joint": {
+            "(0, 1)": 0.2909090909090909,
+            "(1, 0)": 0.18181818181818182,
+            "(0, 0)": 0.38181818181818183,
+            "(1, 1)": 0.14545454545454545
+          },
+          "p_a": 0.32727272727272727,
+          "p_b": 0.43636363636363634,
+          "p_both": 0.14545454545454545,
+          "independent_product": 0.14280991735537188,
+          "pearson": 0.011364920566550456,
+          "mutual_information_bits": 9.310686454950482e-05
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 98,
+          "density": 0.00492462311557789,
+          "degree_histogram": {
+            "4": 9,
+            "0": 139,
+            "2": 13,
+            "3": 10,
+            "1": 16,
+            "5": 5,
+            "13": 1,
+            "8": 3,
+            "7": 2,
+            "6": 2
+          },
+          "islands": 155,
+          "super_spreaders": 0,
+          "max_degree": 13,
+          "components": 144,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 166,
+          "edges": 15,
+          "density": 0.001095290251916758,
+          "degree_histogram": {
+            "2": 8,
+            "0": 146,
+            "1": 11,
+            "3": 1
+          },
+          "islands": 157,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 152,
+          "bipartite": false
+        },
+        "mature_or_resolved_introductions": 51,
+        "observed_mutual_second": 0,
+        "observed_qualified": 0,
+        "late_feedback": 0
+      },
+      {
+        "pool": "public_02",
+        "day": 30,
+        "acceptance": {
+          "n": 51,
+          "counts": {
+            "(0, 0)": 20,
+            "(1, 1)": 10,
+            "(0, 1)": 10,
+            "(1, 0)": 11
+          },
+          "joint": {
+            "(0, 0)": 0.39215686274509803,
+            "(1, 1)": 0.19607843137254902,
+            "(0, 1)": 0.19607843137254902,
+            "(1, 0)": 0.21568627450980393
+          },
+          "p_a": 0.4117647058823529,
+          "p_b": 0.39215686274509803,
+          "p_both": 0.19607843137254902,
+          "independent_product": 0.16147635524798154,
+          "pearson": 0.1440046082211958,
+          "mutual_information_bits": 0.014912407347081026
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 84,
+          "density": 0.004221105527638191,
+          "degree_histogram": {
+            "1": 26,
+            "2": 18,
+            "0": 133,
+            "7": 1,
+            "6": 1,
+            "3": 10,
+            "5": 2,
+            "4": 6,
+            "9": 1,
+            "12": 1,
+            "8": 1
+          },
+          "islands": 159,
+          "super_spreaders": 0,
+          "max_degree": 12,
+          "components": 141,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 168,
+          "edges": 12,
+          "density": 0.000855431993156544,
+          "degree_histogram": {
+            "0": 146,
+            "1": 20,
+            "2": 2
+          },
+          "islands": 166,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 156,
+          "bipartite": true
+        },
+        "mature_or_resolved_introductions": 47,
+        "observed_mutual_second": 1,
+        "observed_qualified": 0,
+        "late_feedback": 1
+      },
+      {
+        "pool": "public_03",
+        "day": 30,
+        "acceptance": {
+          "n": 50,
+          "counts": {
+            "(0, 0)": 22,
+            "(1, 1)": 10,
+            "(1, 0)": 8,
+            "(0, 1)": 10
+          },
+          "joint": {
+            "(0, 0)": 0.44,
+            "(1, 1)": 0.2,
+            "(1, 0)": 0.16,
+            "(0, 1)": 0.2
+          },
+          "p_a": 0.36,
+          "p_b": 0.4,
+          "p_both": 0.2,
+          "independent_product": 0.144,
+          "pearson": 0.23814483610392018,
+          "mutual_information_bits": 0.040698744090791925
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 79,
+          "density": 0.003969849246231155,
+          "degree_histogram": {
+            "0": 133,
+            "2": 14,
+            "3": 12,
+            "1": 28,
+            "9": 1,
+            "5": 3,
+            "4": 7,
+            "6": 1,
+            "8": 1
+          },
+          "islands": 161,
+          "super_spreaders": 0,
+          "max_degree": 9,
+          "components": 140,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 175,
+          "edges": 23,
+          "density": 0.0015106732348111659,
+          "degree_histogram": {
+            "0": 141,
+            "1": 24,
+            "3": 2,
+            "2": 8
+          },
+          "islands": 165,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 153,
+          "bipartite": false
+        },
+        "mature_or_resolved_introductions": 47,
+        "observed_mutual_second": 2,
+        "observed_qualified": 1,
+        "late_feedback": 1
+      },
+      {
+        "pool": "public_04",
+        "day": 30,
+        "acceptance": {
+          "n": 54,
+          "counts": {
+            "(0, 1)": 16,
+            "(0, 0)": 23,
+            "(1, 0)": 9,
+            "(1, 1)": 6
+          },
+          "joint": {
+            "(0, 1)": 0.2962962962962963,
+            "(0, 0)": 0.42592592592592593,
+            "(1, 0)": 0.16666666666666666,
+            "(1, 1)": 0.1111111111111111
+          },
+          "p_a": 0.2777777777777778,
+          "p_b": 0.4074074074074074,
+          "p_both": 0.1111111111111111,
+          "independent_product": 0.11316872427983539,
+          "pearson": -0.009349469900084593,
+          "mutual_information_bits": 6.31304383396287e-05
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 85,
+          "density": 0.004271356783919598,
+          "degree_histogram": {
+            "0": 127,
+            "4": 7,
+            "2": 15,
+            "1": 30,
+            "3": 16,
+            "12": 1,
+            "7": 1,
+            "5": 3
+          },
+          "islands": 157,
+          "super_spreaders": 0,
+          "max_degree": 12,
+          "components": 135,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 169,
+          "edges": 20,
+          "density": 0.0014088475626937165,
+          "degree_histogram": {
+            "0": 141,
+            "2": 6,
+            "1": 19,
+            "3": 3
+          },
+          "islands": 160,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 150,
+          "bipartite": true
+        },
+        "mature_or_resolved_introductions": 52,
+        "observed_mutual_second": 0,
+        "observed_qualified": 0,
+        "late_feedback": 0
+      },
+      {
+        "pool": "public_05",
+        "day": 30,
+        "acceptance": {
+          "n": 76,
+          "counts": {
+            "(0, 1)": 14,
+            "(1, 1)": 11,
+            "(0, 0)": 40,
+            "(1, 0)": 11
+          },
+          "joint": {
+            "(0, 1)": 0.18421052631578946,
+            "(1, 1)": 0.14473684210526316,
+            "(0, 0)": 0.5263157894736842,
+            "(1, 0)": 0.14473684210526316
+          },
+          "p_a": 0.2894736842105263,
+          "p_b": 0.32894736842105265,
+          "p_both": 0.14473684210526316,
+          "independent_product": 0.09522160664819945,
+          "pearson": 0.23238212588928817,
+          "mutual_information_bits": 0.037744229266733584
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 142,
+          "density": 0.007135678391959799,
+          "degree_histogram": {
+            "0": 96,
+            "1": 42,
+            "3": 13,
+            "4": 18,
+            "5": 2,
+            "2": 20,
+            "7": 2,
+            "14": 1,
+            "17": 1,
+            "8": 3,
+            "6": 2
+          },
+          "islands": 138,
+          "super_spreaders": 0,
+          "max_degree": 17,
+          "components": 108,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 153,
+          "edges": 31,
+          "density": 0.002665978672170623,
+          "degree_histogram": {
+            "0": 107,
+            "1": 34,
+            "3": 4,
+            "2": 8
+          },
+          "islands": 141,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 122,
+          "bipartite": true
+        },
+        "mature_or_resolved_introductions": 71,
+        "observed_mutual_second": 0,
+        "observed_qualified": 0,
+        "late_feedback": 0
+      },
+      {
+        "pool": "public_06",
+        "day": 30,
+        "acceptance": {
+          "n": 52,
+          "counts": {
+            "(0, 1)": 10,
+            "(0, 0)": 16,
+            "(1, 1)": 13,
+            "(1, 0)": 13
+          },
+          "joint": {
+            "(0, 1)": 0.19230769230769232,
+            "(0, 0)": 0.3076923076923077,
+            "(1, 1)": 0.25,
+            "(1, 0)": 0.25
+          },
+          "p_a": 0.5,
+          "p_b": 0.4423076923076923,
+          "p_both": 0.25,
+          "independent_product": 0.22115384615384615,
+          "pearson": 0.11616046389935497,
+          "mutual_information_bits": 0.009756534087137232
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 117,
+          "density": 0.005879396984924623,
+          "degree_histogram": {
+            "0": 126,
+            "5": 3,
+            "1": 18,
+            "3": 12,
+            "2": 24,
+            "4": 4,
+            "7": 2,
+            "6": 6,
+            "15": 1,
+            "9": 2,
+            "8": 1,
+            "10": 1
+          },
+          "islands": 144,
+          "super_spreaders": 0,
+          "max_degree": 15,
+          "components": 131,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 158,
+          "edges": 13,
+          "density": 0.0010481335160848182,
+          "degree_histogram": {
+            "0": 135,
+            "1": 20,
+            "2": 3
+          },
+          "islands": 155,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 145,
+          "bipartite": true
+        },
+        "mature_or_resolved_introductions": 44,
+        "observed_mutual_second": 2,
+        "observed_qualified": 1,
+        "late_feedback": 1
+      },
+      {
+        "pool": "public_07",
+        "day": 30,
+        "acceptance": {
+          "n": 60,
+          "counts": {
+            "(0, 0)": 19,
+            "(1, 1)": 10,
+            "(0, 1)": 20,
+            "(1, 0)": 11
+          },
+          "joint": {
+            "(0, 0)": 0.31666666666666665,
+            "(1, 1)": 0.16666666666666666,
+            "(0, 1)": 0.3333333333333333,
+            "(1, 0)": 0.18333333333333332
+          },
+          "p_a": 0.35,
+          "p_b": 0.5,
+          "p_both": 0.16666666666666666,
+          "independent_product": 0.175,
+          "pearson": -0.0349428278907306,
+          "mutual_information_bits": 0.000881016551293478
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 112,
+          "density": 0.005628140703517588,
+          "degree_histogram": {
+            "0": 127,
+            "1": 22,
+            "4": 8,
+            "2": 15,
+            "7": 3,
+            "3": 12,
+            "5": 8,
+            "9": 2,
+            "11": 1,
+            "6": 1,
+            "8": 1
+          },
+          "islands": 149,
+          "super_spreaders": 0,
+          "max_degree": 11,
+          "components": 131,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 163,
+          "edges": 21,
+          "density": 0.0015905476028175414,
+          "degree_histogram": {
+            "0": 136,
+            "2": 9,
+            "1": 15,
+            "3": 3
+          },
+          "islands": 151,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 144,
+          "bipartite": false
+        },
+        "mature_or_resolved_introductions": 56,
+        "observed_mutual_second": 1,
+        "observed_qualified": 0,
+        "late_feedback": 1
+      },
+      {
+        "pool": "public_08",
+        "day": 30,
+        "acceptance": {
+          "n": 48,
+          "counts": {
+            "(0, 1)": 16,
+            "(1, 0)": 7,
+            "(0, 0)": 20,
+            "(1, 1)": 5
+          },
+          "joint": {
+            "(0, 1)": 0.3333333333333333,
+            "(1, 0)": 0.14583333333333334,
+            "(0, 0)": 0.4166666666666667,
+            "(1, 1)": 0.10416666666666667
+          },
+          "p_a": 0.25,
+          "p_b": 0.4375,
+          "p_both": 0.10416666666666667,
+          "independent_product": 0.109375,
+          "pearson": -0.024246432248443577,
+          "mutual_information_bits": 0.0004251742470427174
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 106,
+          "density": 0.0053266331658291454,
+          "degree_histogram": {
+            "0": 139,
+            "2": 14,
+            "1": 16,
+            "4": 9,
+            "5": 4,
+            "3": 8,
+            "10": 2,
+            "7": 2,
+            "15": 1,
+            "6": 1,
+            "8": 3,
+            "9": 1
+          },
+          "islands": 155,
+          "super_spreaders": 0,
+          "max_degree": 15,
+          "components": 145,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 167,
+          "edges": 15,
+          "density": 0.0010821730033908088,
+          "degree_histogram": {
+            "0": 143,
+            "1": 19,
+            "2": 4,
+            "3": 1
+          },
+          "islands": 162,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 153,
+          "bipartite": false
+        },
+        "mature_or_resolved_introductions": 44,
+        "observed_mutual_second": 1,
+        "observed_qualified": 0,
+        "late_feedback": 1
+      },
+      {
+        "pool": "public_09",
+        "day": 30,
+        "acceptance": {
+          "n": 47,
+          "counts": {
+            "(0, 0)": 25,
+            "(0, 1)": 13,
+            "(1, 0)": 3,
+            "(1, 1)": 6
+          },
+          "joint": {
+            "(0, 0)": 0.5319148936170213,
+            "(0, 1)": 0.2765957446808511,
+            "(1, 0)": 0.06382978723404255,
+            "(1, 1)": 0.1276595744680851
+          },
+          "p_a": 0.19148936170212766,
+          "p_b": 0.40425531914893614,
+          "p_both": 0.1276595744680851,
+          "independent_product": 0.07741059302851969,
+          "pearson": 0.26022805133578164,
+          "mutual_information_bits": 0.04819847912050168
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 75,
+          "density": 0.0037688442211055275,
+          "degree_histogram": {
+            "4": 2,
+            "0": 134,
+            "3": 14,
+            "1": 26,
+            "2": 18,
+            "7": 1,
+            "5": 3,
+            "8": 2
+          },
+          "islands": 160,
+          "super_spreaders": 0,
+          "max_degree": 8,
+          "components": 143,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 176,
+          "edges": 22,
+          "density": 0.0014285714285714286,
+          "degree_histogram": {
+            "0": 140,
+            "1": 28,
+            "2": 8
+          },
+          "islands": 168,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 154,
+          "bipartite": true
+        },
+        "mature_or_resolved_introductions": 47,
+        "observed_mutual_second": 2,
+        "observed_qualified": 1,
+        "late_feedback": 1
+      },
+      {
+        "pool": "public_10",
+        "day": 30,
+        "acceptance": {
+          "n": 53,
+          "counts": {
+            "(0, 0)": 30,
+            "(1, 0)": 8,
+            "(1, 1)": 5,
+            "(0, 1)": 10
+          },
+          "joint": {
+            "(0, 0)": 0.5660377358490566,
+            "(1, 0)": 0.1509433962264151,
+            "(1, 1)": 0.09433962264150944,
+            "(0, 1)": 0.18867924528301888
+          },
+          "p_a": 0.24528301886792453,
+          "p_b": 0.2830188679245283,
+          "p_both": 0.09433962264150944,
+          "independent_product": 0.06941972232111071,
+          "pearson": 0.12857571271486293,
+          "mutual_information_bits": 0.011471298247223025
+        },
+        "all_visible_graph": {
+          "n": 200,
+          "edges": 89,
+          "density": 0.004472361809045226,
+          "degree_histogram": {
+            "1": 23,
+            "0": 126,
+            "3": 19,
+            "4": 6,
+            "2": 20,
+            "7": 1,
+            "6": 2,
+            "5": 3
+          },
+          "islands": 149,
+          "super_spreaders": 0,
+          "max_degree": 7,
+          "components": 134,
+          "bipartite": false
+        },
+        "active_graph": {
+          "n": 157,
+          "edges": 15,
+          "density": 0.001224889759921607,
+          "degree_histogram": {
+            "1": 17,
+            "0": 134,
+            "2": 5,
+            "3": 1
+          },
+          "islands": 151,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 143,
+          "bipartite": false
+        },
+        "mature_or_resolved_introductions": 51,
+        "observed_mutual_second": 0,
+        "observed_qualified": 0,
+        "late_feedback": 0
+      }
+    ],
+    "acceptance": {
+      "n": 546,
+      "counts": {
+        "(0, 1)": 135,
+        "(1, 0)": 91,
+        "(0, 0)": 236,
+        "(1, 1)": 84
+      },
+      "joint": {
+        "(0, 1)": 0.24725274725274726,
+        "(1, 0)": 0.16666666666666666,
+        "(0, 0)": 0.43223443223443225,
+        "(1, 1)": 0.15384615384615385
+      },
+      "p_a": 0.32051282051282054,
+      "p_b": 0.4010989010989011,
+      "p_both": 0.15384615384615385,
+      "independent_product": 0.12855734009580166,
+      "pearson": 0.11056351327142265,
+      "mutual_information_bits": 0.008748631277450208
+    },
+    "acceptance_both_responded": {
+      "n": 332,
+      "counts": {
+        "(1, 0)": 62,
+        "(0, 0)": 102,
+        "(1, 1)": 84,
+        "(0, 1)": 84
+      },
+      "joint": {
+        "(1, 0)": 0.18674698795180722,
+        "(0, 0)": 0.3072289156626506,
+        "(1, 1)": 0.25301204819277107,
+        "(0, 1)": 0.25301204819277107
+      },
+      "p_a": 0.4397590361445783,
+      "p_b": 0.5060240963855421,
+      "p_both": 0.25301204819277107,
+      "independent_product": 0.2225286688924372,
+      "pearson": 0.12283717287512541,
+      "mutual_information_bits": 0.01091624732625214
+    },
+    "soft_associations": {
+      "relationship_goal": {
+        "1": {
+          "n": 99,
+          "date_rate": 0.1111111111111111,
+          "msmi_rate": 0.010101010101010102
+        },
+        "0": {
+          "n": 112,
+          "date_rate": 0.09821428571428571,
+          "msmi_rate": 0.008928571428571428
+        }
+      },
+      "relationship_pace": {
+        "0": {
+          "n": 133,
+          "date_rate": 0.06766917293233082,
+          "msmi_rate": 0.007518796992481203
+        },
+        "1": {
+          "n": 83,
+          "date_rate": 0.13253012048192772,
+          "msmi_rate": 0.012048192771084338
+        }
+      },
+      "lifestyle": {
+        "1": {
+          "n": 84,
+          "date_rate": 0.13095238095238096,
+          "msmi_rate": 0.0
+        },
+        "0": {
+          "n": 122,
+          "date_rate": 0.08196721311475409,
+          "msmi_rate": 0.01639344262295082
+        }
+      },
+      "conversations": {
+        "1": {
+          "n": 56,
+          "date_rate": 0.16071428571428573,
+          "msmi_rate": 0.017857142857142856
+        },
+        "0": {
+          "n": 158,
+          "date_rate": 0.08860759493670886,
+          "msmi_rate": 0.006329113924050633
+        }
+      }
+    },
+    "conversations_pace_interaction": {
+      "(1, 0)": {
+        "n": 30,
+        "msmi_rate": 0.03333333333333333
+      },
+      "(0, 1)": {
+        "n": 54,
+        "msmi_rate": 0.018518518518518517
+      },
+      "(0, 0)": {
+        "n": 88,
+        "msmi_rate": 0.0
+      },
+      "(1, 1)": {
+        "n": 20,
+        "msmi_rate": 0.0
+      }
+    },
+    "funnel_survival": {
+      "assignment_to_response": [
+        {
+          "day": 1,
+          "risk": 1226,
+          "events": 118,
+          "competing": 0,
+          "censored": 12,
+          "km_net_survival": 0.9037520391517129,
+          "nelson_aalen": 0.09624796084828711,
+          "cumulative_incidence": 0.09624796084828711
+        },
+        {
+          "day": 2,
+          "risk": 1096,
+          "events": 142,
+          "competing": 0,
+          "censored": 24,
+          "km_net_survival": 0.7866600778747573,
+          "nelson_aalen": 0.22581000464390755,
+          "cumulative_incidence": 0.2133399221252426
+        },
+        {
+          "day": 3,
+          "risk": 930,
+          "events": 126,
+          "competing": 0,
+          "censored": 23,
+          "km_net_survival": 0.6800803253884998,
+          "nelson_aalen": 0.3612938756116495,
+          "cumulative_incidence": 0.31991967461150006
+        },
+        {
+          "day": 4,
+          "risk": 781,
+          "events": 118,
+          "competing": 0,
+          "censored": 4,
+          "km_net_survival": 0.5773281123336432,
+          "nelson_aalen": 0.5123822238830964,
+          "cumulative_incidence": 0.42267188766635666
+        },
+        {
+          "day": 5,
+          "risk": 659,
+          "events": 141,
+          "competing": 0,
+          "censored": 8,
+          "km_net_survival": 0.45380267403463914,
+          "nelson_aalen": 0.7263427701653422,
+          "cumulative_incidence": 0.5461973259653607
+        },
+        {
+          "day": 6,
+          "risk": 510,
+          "events": 121,
+          "competing": 0,
+          "censored": 20,
+          "km_net_survival": 0.34613576509700905,
+          "nelson_aalen": 0.9635976721261266,
+          "cumulative_incidence": 0.6538642349029908
+        },
+        {
+          "day": 7,
+          "risk": 369,
+          "events": 120,
+          "competing": 249,
+          "censored": 0,
+          "km_net_survival": 0.23357128864269716,
+          "nelson_aalen": 1.2888009241586469,
+          "cumulative_incidence": 0.7664287113573027
+        }
+      ],
+      "first_to_second_response": [
+        {
+          "day": 0,
+          "risk": 554,
+          "events": 55,
+          "competing": 24,
+          "censored": 17,
+          "km_net_survival": 0.9007220216606499,
+          "nelson_aalen": 0.09927797833935018,
+          "cumulative_incidence": 0.09927797833935018
+        },
+        {
+          "day": 1,
+          "risk": 458,
+          "events": 81,
+          "competing": 27,
+          "censored": 12,
+          "km_net_survival": 0.7414240221966485,
+          "nelson_aalen": 0.2761338735358567,
+          "cumulative_incidence": 0.250914350574622
+        },
+        {
+          "day": 2,
+          "risk": 338,
+          "events": 56,
+          "competing": 33,
+          "censored": 3,
+          "km_net_survival": 0.6185845392291565,
+          "nelson_aalen": 0.4418143469086378,
+          "cumulative_incidence": 0.35947132682604027
+        },
+        {
+          "day": 3,
+          "risk": 246,
+          "events": 65,
+          "competing": 22,
+          "censored": 5,
+          "km_net_survival": 0.45513740487998916,
+          "nelson_aalen": 0.7060419891850606,
+          "cumulative_incidence": 0.48701158964755625
+        },
+        {
+          "day": 4,
+          "risk": 154,
+          "events": 41,
+          "competing": 23,
+          "censored": 0,
+          "km_net_survival": 0.33396445942492714,
+          "nelson_aalen": 0.9722757554188268,
+          "cumulative_incidence": 0.570072026544006
+        },
+        {
+          "day": 5,
+          "risk": 90,
+          "events": 19,
+          "competing": 26,
+          "censored": 6,
+          "km_net_survival": 0.2634608513241092,
+          "nelson_aalen": 1.1833868665299379,
+          "cumulative_incidence": 0.6085634485204096
+        },
+        {
+          "day": 6,
+          "risk": 39,
+          "events": 15,
+          "competing": 24,
+          "censored": 0,
+          "km_net_survival": 0.16212975466099028,
+          "nelson_aalen": 1.5680022511453224,
+          "cumulative_incidence": 0.6436264847337326
+        }
+      ],
+      "mutual_acceptance_to_date": [
+        {
+          "day": 0,
+          "risk": 84,
+          "events": 0,
+          "competing": 0,
+          "censored": 1,
+          "km_net_survival": 1.0,
+          "nelson_aalen": 0.0,
+          "cumulative_incidence": 0.0
+        },
+        {
+          "day": 1,
+          "risk": 83,
+          "events": 4,
+          "competing": 0,
+          "censored": 1,
+          "km_net_survival": 0.9518072289156626,
+          "nelson_aalen": 0.04819277108433735,
+          "cumulative_incidence": 0.04819277108433735
+        },
+        {
+          "day": 2,
+          "risk": 78,
+          "events": 1,
+          "competing": 2,
+          "censored": 4,
+          "km_net_survival": 0.9396045721346926,
+          "nelson_aalen": 0.06101328390485017,
+          "cumulative_incidence": 0.06039542786530738
+        },
+        {
+          "day": 3,
+          "risk": 71,
+          "events": 6,
+          "competing": 1,
+          "censored": 3,
+          "km_net_survival": 0.8602013688557045,
+          "nelson_aalen": 0.1455203261583713,
+          "cumulative_incidence": 0.13773621027990618
+        },
+        {
+          "day": 4,
+          "risk": 61,
+          "events": 4,
+          "competing": 0,
+          "censored": 2,
+          "km_net_survival": 0.8037947217176256,
+          "nelson_aalen": 0.2110940966501746,
+          "cumulative_incidence": 0.1918324952474944
+        },
+        {
+          "day": 5,
+          "risk": 55,
+          "events": 4,
+          "competing": 3,
+          "censored": 3,
+          "km_net_survival": 0.7453369237745255,
+          "nelson_aalen": 0.2838213693774473,
+          "cumulative_incidence": 0.24789591785026766
+        },
+        {
+          "day": 6,
+          "risk": 45,
+          "events": 4,
+          "competing": 1,
+          "censored": 5,
+          "km_net_survival": 0.6790847527723455,
+          "nelson_aalen": 0.3727102582663362,
+          "cumulative_incidence": 0.30769690195989247
+        },
+        {
+          "day": 7,
+          "risk": 35,
+          "events": 4,
+          "competing": 2,
+          "censored": 3,
+          "km_net_survival": 0.6014750667412203,
+          "nelson_aalen": 0.48699597255205046,
+          "cumulative_incidence": 0.37604088379946365
+        },
+        {
+          "day": 8,
+          "risk": 26,
+          "events": 3,
+          "competing": 2,
+          "censored": 5,
+          "km_net_survival": 0.5320740975018488,
+          "nelson_aalen": 0.6023805879366658,
+          "cumulative_incidence": 0.4332132532229511
+        },
+        {
+          "day": 9,
+          "risk": 16,
+          "events": 2,
+          "competing": 0,
+          "censored": 3,
+          "km_net_survival": 0.46556483531411763,
+          "nelson_aalen": 0.7273805879366658,
+          "cumulative_incidence": 0.4832390764685026
+        },
+        {
+          "day": 10,
+          "risk": 11,
+          "events": 2,
+          "competing": 0,
+          "censored": 0,
+          "km_net_survival": 0.3809166834388235,
+          "nelson_aalen": 0.9091987697548476,
+          "cumulative_incidence": 0.5469083060537501
+        },
+        {
+          "day": 11,
+          "risk": 9,
+          "events": 2,
+          "competing": 1,
+          "censored": 1,
+          "km_net_survival": 0.2962685315635294,
+          "nelson_aalen": 1.1314209919770697,
+          "cumulative_incidence": 0.6105775356389975
+        },
+        {
+          "day": 12,
+          "risk": 5,
+          "events": 1,
+          "competing": 0,
+          "censored": 0,
+          "km_net_survival": 0.2370148252508235,
+          "nelson_aalen": 1.3314209919770696,
+          "cumulative_incidence": 0.648779073390146
+        },
+        {
+          "day": 13,
+          "risk": 4,
+          "events": 3,
+          "competing": 0,
+          "censored": 0,
+          "km_net_survival": 0.05925370631270588,
+          "nelson_aalen": 2.08142099197707,
+          "cumulative_incidence": 0.7633836866435912
+        },
+        {
+          "day": 14,
+          "risk": 1,
+          "events": 0,
+          "competing": 1,
+          "censored": 0,
+          "km_net_survival": 0.05925370631270588,
+          "nelson_aalen": 2.08142099197707,
+          "cumulative_incidence": 0.7633836866435912
+        }
+      ],
+      "date_to_feedback": [
+        {
+          "day": 0,
+          "risk": 80,
+          "events": 0,
+          "competing": 0,
+          "censored": 2,
+          "km_net_survival": 1.0,
+          "nelson_aalen": 0.0,
+          "cumulative_incidence": 0.0
+        },
+        {
+          "day": 1,
+          "risk": 78,
+          "events": 9,
+          "competing": 0,
+          "censored": 2,
+          "km_net_survival": 0.8846153846153846,
+          "nelson_aalen": 0.11538461538461539,
+          "cumulative_incidence": 0.11538461538461539
+        },
+        {
+          "day": 2,
+          "risk": 67,
+          "events": 19,
+          "competing": 0,
+          "censored": 2,
+          "km_net_survival": 0.6337543053960965,
+          "nelson_aalen": 0.39896670493685416,
+          "cumulative_incidence": 0.36624569460390355
+        },
+        {
+          "day": 3,
+          "risk": 46,
+          "events": 13,
+          "competing": 0,
+          "censored": 0,
+          "km_net_survival": 0.4546498277841562,
+          "nelson_aalen": 0.681575400589028,
+          "cumulative_incidence": 0.5453501722158438
+        },
+        {
+          "day": 4,
+          "risk": 33,
+          "events": 10,
+          "competing": 0,
+          "censored": 1,
+          "km_net_survival": 0.3168771526980483,
+          "nelson_aalen": 0.984605703619331,
+          "cumulative_incidence": 0.6831228473019517
+        },
+        {
+          "day": 5,
+          "risk": 22,
+          "events": 9,
+          "competing": 13,
+          "censored": 0,
+          "km_net_survival": 0.18724559023066487,
+          "nelson_aalen": 1.3936966127102401,
+          "cumulative_incidence": 0.8127544097693351
+        }
+      ]
+    },
+    "demographics": {
+      "not_declined": {
+        "n": 1300,
+        "age_sum": 43605,
+        "gender:woman": 616,
+        "zone:zone_a": 776,
+        "gender:man": 593,
+        "zone:zone_d": 63,
+        "zone:zone_b": 320,
+        "zone:zone_c": 141,
+        "gender:non_binary": 91
+      },
+      "declined": {
+        "n": 700,
+        "age_sum": 23689,
+        "gender:woman": 309,
+        "zone:zone_a": 405,
+        "gender:man": 334,
+        "zone:zone_b": 167,
+        "zone:zone_c": 103,
+        "gender:non_binary": 57,
+        "zone:zone_d": 25
+      }
+    },
+    "limitations": [
+      "All ten pools audited descriptively; development-test never used to fit policy.",
+      "Day-30 snapshots cannot identify unobserved hard constraints or eventual outcomes.",
+      "Soft associations use snapshot fields and are descriptive, not assignment-time causal estimates.",
+      "Empirical directional dependence is selected-pair dependence; sorting arbitrary IDs defines direction."
+    ]
+  },
+  "offline_graph_audit": {
+    "development": [
+      {
+        "seed": 101,
+        "before": {
+          "n": 136,
+          "edges": 16,
+          "density": 0.0017429193899782135,
+          "degree_histogram": {
+            "0": 117,
+            "2": 6,
+            "1": 10,
+            "4": 1,
+            "3": 2
+          },
+          "islands": 127,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 121,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 136,
+          "edges": 52,
+          "density": 0.005664488017429194,
+          "degree_histogram": {
+            "0": 86,
+            "2": 8,
+            "1": 27,
+            "3": 5,
+            "5": 4,
+            "4": 5,
+            "6": 1
+          },
+          "islands": 113,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 94,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 273,
+          "density": 0.01371859296482412,
+          "degree_histogram": {
+            "2": 25,
+            "0": 58,
+            "4": 16,
+            "1": 36,
+            "14": 1,
+            "3": 18,
+            "9": 2,
+            "7": 6,
+            "12": 2,
+            "10": 4,
+            "8": 5,
+            "5": 12,
+            "6": 13,
+            "11": 1,
+            "15": 1
+          },
+          "islands": 94,
+          "super_spreaders": 0,
+          "max_degree": 15,
+          "components": 65,
+          "bipartite": false
+        },
+        "declined_fraction": 0.265
+      },
+      {
+        "seed": 102,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "1": 11,
+            "2": 2,
+            "3": 6,
+            "4": 1,
+            "5": 1
+          },
+          "islands": 130,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 55,
+          "density": 0.005652620760534429,
+          "degree_histogram": {
+            "2": 10,
+            "0": 89,
+            "1": 25,
+            "3": 8,
+            "5": 5,
+            "4": 1,
+            "6": 2
+          },
+          "islands": 114,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 98,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 271,
+          "density": 0.013618090452261306,
+          "degree_histogram": {
+            "4": 19,
+            "1": 39,
+            "0": 54,
+            "2": 28,
+            "6": 10,
+            "5": 13,
+            "3": 15,
+            "8": 3,
+            "10": 3,
+            "7": 8,
+            "11": 3,
+            "9": 3,
+            "12": 1,
+            "19": 1
+          },
+          "islands": 93,
+          "super_spreaders": 0,
+          "max_degree": 19,
+          "components": 64,
+          "bipartite": false
+        },
+        "declined_fraction": 0.35
+      },
+      {
+        "seed": 103,
+        "before": {
+          "n": 132,
+          "edges": 17,
+          "density": 0.001966227157066852,
+          "degree_histogram": {
+            "0": 111,
+            "4": 1,
+            "2": 6,
+            "1": 12,
+            "3": 2
+          },
+          "islands": 123,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 116,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 132,
+          "edges": 63,
+          "density": 0.007286606523247745,
+          "degree_histogram": {
+            "0": 78,
+            "7": 2,
+            "3": 11,
+            "1": 23,
+            "9": 1,
+            "2": 12,
+            "4": 2,
+            "5": 3
+          },
+          "islands": 101,
+          "super_spreaders": 0,
+          "max_degree": 9,
+          "components": 84,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 216,
+          "density": 0.010854271356783919,
+          "degree_histogram": {
+            "0": 66,
+            "4": 11,
+            "2": 32,
+            "9": 3,
+            "1": 45,
+            "6": 10,
+            "10": 2,
+            "3": 13,
+            "5": 6,
+            "7": 4,
+            "11": 1,
+            "8": 5,
+            "12": 2
+          },
+          "islands": 111,
+          "super_spreaders": 0,
+          "max_degree": 12,
+          "components": 76,
+          "bipartite": false
+        },
+        "declined_fraction": 0.315
+      },
+      {
+        "seed": 104,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "3": 4,
+            "2": 5,
+            "1": 10,
+            "4": 1,
+            "6": 1
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 88,
+          "density": 0.009044193216855087,
+          "degree_histogram": {
+            "0": 87,
+            "5": 6,
+            "1": 11,
+            "7": 3,
+            "6": 4,
+            "4": 3,
+            "3": 12,
+            "2": 12,
+            "8": 1,
+            "10": 1
+          },
+          "islands": 98,
+          "super_spreaders": 0,
+          "max_degree": 10,
+          "components": 91,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 329,
+          "density": 0.016532663316582916,
+          "degree_histogram": {
+            "5": 13,
+            "6": 9,
+            "9": 7,
+            "2": 22,
+            "1": 37,
+            "11": 2,
+            "7": 9,
+            "0": 54,
+            "3": 18,
+            "4": 11,
+            "15": 2,
+            "12": 3,
+            "10": 4,
+            "8": 6,
+            "18": 1,
+            "21": 1,
+            "19": 1
+          },
+          "islands": 91,
+          "super_spreaders": 0,
+          "max_degree": 21,
+          "components": 69,
+          "bipartite": false
+        },
+        "declined_fraction": 0.385
+      },
+      {
+        "seed": 105,
+        "before": {
+          "n": 137,
+          "edges": 14,
+          "density": 0.0015027908973808501,
+          "degree_histogram": {
+            "0": 121,
+            "1": 8,
+            "3": 4,
+            "2": 4
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 126,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 137,
+          "edges": 40,
+          "density": 0.004293688278231,
+          "degree_histogram": {
+            "0": 92,
+            "2": 14,
+            "1": 23,
+            "3": 4,
+            "5": 1,
+            "4": 3
+          },
+          "islands": 115,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 102,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 236,
+          "density": 0.01185929648241206,
+          "degree_histogram": {
+            "0": 74,
+            "4": 11,
+            "2": 30,
+            "13": 1,
+            "1": 34,
+            "14": 1,
+            "5": 12,
+            "6": 11,
+            "3": 10,
+            "10": 4,
+            "15": 1,
+            "16": 1,
+            "9": 4,
+            "7": 4,
+            "8": 2
+          },
+          "islands": 108,
+          "super_spreaders": 0,
+          "max_degree": 16,
+          "components": 83,
+          "bipartite": false
+        },
+        "declined_fraction": 0.36
+      }
+    ],
+    "sparse": [
+      {
+        "seed": 101,
+        "before": {
+          "n": 137,
+          "edges": 2,
+          "density": 0.00021468441391155003,
+          "degree_histogram": {
+            "0": 133,
+            "1": 4
+          },
+          "islands": 137,
+          "super_spreaders": 0,
+          "max_degree": 1,
+          "components": 135,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 137,
+          "edges": 10,
+          "density": 0.00107342206955775,
+          "degree_histogram": {
+            "1": 16,
+            "0": 119,
+            "2": 2
+          },
+          "islands": 135,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 127,
+          "bipartite": true
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 44,
+          "density": 0.0022110552763819095,
+          "degree_histogram": {
+            "0": 141,
+            "1": 39,
+            "3": 7,
+            "2": 12,
+            "4": 1
+          },
+          "islands": 180,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 161,
+          "bipartite": false
+        },
+        "declined_fraction": 0.305
+      },
+      {
+        "seed": 102,
+        "before": {
+          "n": 147,
+          "edges": 3,
+          "density": 0.0002795638803466592,
+          "degree_histogram": {
+            "0": 143,
+            "2": 2,
+            "1": 2
+          },
+          "islands": 145,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 144,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 147,
+          "edges": 11,
+          "density": 0.0010250675612710838,
+          "degree_histogram": {
+            "0": 127,
+            "1": 18,
+            "2": 2
+          },
+          "islands": 145,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 136,
+          "bipartite": true
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 59,
+          "density": 0.002964824120603015,
+          "degree_histogram": {
+            "0": 123,
+            "1": 53,
+            "2": 12,
+            "3": 8,
+            "4": 3,
+            "5": 1
+          },
+          "islands": 176,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 149,
+          "bipartite": false
+        },
+        "declined_fraction": 0.315
+      },
+      {
+        "seed": 103,
+        "before": {
+          "n": 149,
+          "edges": 0,
+          "density": 0.0,
+          "degree_histogram": {
+            "0": 149
+          },
+          "islands": 149,
+          "super_spreaders": 0,
+          "max_degree": 0,
+          "components": 149,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 149,
+          "edges": 2,
+          "density": 0.00018138944313440957,
+          "degree_histogram": {
+            "0": 145,
+            "1": 4
+          },
+          "islands": 149,
+          "super_spreaders": 0,
+          "max_degree": 1,
+          "components": 147,
+          "bipartite": true
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 27,
+          "density": 0.0013567839195979898,
+          "degree_histogram": {
+            "0": 155,
+            "1": 36,
+            "2": 9
+          },
+          "islands": 191,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 173,
+          "bipartite": true
+        },
+        "declined_fraction": 0.315
+      },
+      {
+        "seed": 104,
+        "before": {
+          "n": 147,
+          "edges": 2,
+          "density": 0.00018637592023110615,
+          "degree_histogram": {
+            "0": 143,
+            "1": 4
+          },
+          "islands": 147,
+          "super_spreaders": 0,
+          "max_degree": 1,
+          "components": 145,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 147,
+          "edges": 13,
+          "density": 0.0012114434815021899,
+          "degree_histogram": {
+            "0": 127,
+            "1": 15,
+            "2": 4,
+            "3": 1
+          },
+          "islands": 142,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 134,
+          "bipartite": true
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 51,
+          "density": 0.0025628140703517588,
+          "degree_histogram": {
+            "0": 136,
+            "3": 4,
+            "2": 20,
+            "1": 37,
+            "4": 2,
+            "5": 1
+          },
+          "islands": 173,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 151,
+          "bipartite": false
+        },
+        "declined_fraction": 0.345
+      },
+      {
+        "seed": 105,
+        "before": {
+          "n": 149,
+          "edges": 3,
+          "density": 0.00027208416470161435,
+          "degree_histogram": {
+            "0": 143,
+            "1": 6
+          },
+          "islands": 149,
+          "super_spreaders": 0,
+          "max_degree": 1,
+          "components": 146,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 149,
+          "edges": 5,
+          "density": 0.00045347360783602395,
+          "degree_histogram": {
+            "0": 140,
+            "1": 8,
+            "2": 1
+          },
+          "islands": 148,
+          "super_spreaders": 0,
+          "max_degree": 2,
+          "components": 144,
+          "bipartite": true
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 47,
+          "density": 0.0023618090452261304,
+          "degree_histogram": {
+            "0": 144,
+            "1": 32,
+            "6": 1,
+            "2": 16,
+            "3": 4,
+            "4": 3
+          },
+          "islands": 176,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 159,
+          "bipartite": false
+        },
+        "declined_fraction": 0.41
+      }
+    ],
+    "cold_start": [
+      {
+        "seed": 101,
+        "before": {
+          "n": 149,
+          "edges": 9,
+          "density": 0.0008162524941048431,
+          "degree_histogram": {
+            "0": 134,
+            "1": 13,
+            "3": 1,
+            "2": 1
+          },
+          "islands": 147,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 140,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 149,
+          "edges": 61,
+          "density": 0.005532378015599492,
+          "degree_histogram": {
+            "0": 88,
+            "3": 7,
+            "1": 36,
+            "2": 9,
+            "4": 7,
+            "6": 1,
+            "13": 1
+          },
+          "islands": 124,
+          "super_spreaders": 0,
+          "max_degree": 13,
+          "components": 96,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 261,
+          "density": 0.013115577889447236,
+          "degree_histogram": {
+            "4": 14,
+            "0": 59,
+            "1": 45,
+            "2": 21,
+            "15": 1,
+            "10": 4,
+            "5": 7,
+            "3": 22,
+            "7": 8,
+            "8": 5,
+            "12": 2,
+            "11": 1,
+            "6": 9,
+            "9": 1,
+            "29": 1
+          },
+          "islands": 104,
+          "super_spreaders": 0,
+          "max_degree": 29,
+          "components": 68,
+          "bipartite": false
+        },
+        "declined_fraction": 0.32
+      },
+      {
+        "seed": 102,
+        "before": {
+          "n": 133,
+          "edges": 5,
+          "density": 0.0005696058327637275,
+          "degree_histogram": {
+            "0": 127,
+            "1": 3,
+            "3": 1,
+            "2": 2
+          },
+          "islands": 130,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 128,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 133,
+          "edges": 37,
+          "density": 0.004215083162451583,
+          "degree_histogram": {
+            "1": 24,
+            "0": 93,
+            "3": 7,
+            "2": 5,
+            "5": 1,
+            "4": 2,
+            "6": 1
+          },
+          "islands": 117,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 101,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 271,
+          "density": 0.013618090452261306,
+          "degree_histogram": {
+            "4": 18,
+            "2": 28,
+            "0": 51,
+            "6": 9,
+            "7": 7,
+            "1": 42,
+            "3": 23,
+            "10": 3,
+            "12": 1,
+            "5": 7,
+            "8": 5,
+            "9": 1,
+            "20": 1,
+            "11": 1,
+            "13": 2,
+            "17": 1
+          },
+          "islands": 93,
+          "super_spreaders": 0,
+          "max_degree": 20,
+          "components": 61,
+          "bipartite": false
+        },
+        "declined_fraction": 0.425
+      },
+      {
+        "seed": 103,
+        "before": {
+          "n": 135,
+          "edges": 3,
+          "density": 0.0003316749585406302,
+          "degree_histogram": {
+            "0": 129,
+            "1": 6
+          },
+          "islands": 135,
+          "super_spreaders": 0,
+          "max_degree": 1,
+          "components": 132,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 135,
+          "edges": 29,
+          "density": 0.0032061912658927585,
+          "degree_histogram": {
+            "0": 95,
+            "4": 3,
+            "1": 28,
+            "2": 9
+          },
+          "islands": 123,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 106,
+          "bipartite": true
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 228,
+          "density": 0.011457286432160804,
+          "degree_histogram": {
+            "0": 64,
+            "5": 8,
+            "3": 20,
+            "8": 4,
+            "2": 31,
+            "1": 43,
+            "4": 11,
+            "6": 5,
+            "7": 6,
+            "12": 1,
+            "16": 1,
+            "9": 1,
+            "13": 1,
+            "10": 1,
+            "14": 2,
+            "15": 1
+          },
+          "islands": 107,
+          "super_spreaders": 0,
+          "max_degree": 16,
+          "components": 74,
+          "bipartite": false
+        },
+        "declined_fraction": 0.37
+      },
+      {
+        "seed": 104,
+        "before": {
+          "n": 148,
+          "edges": 25,
+          "density": 0.0022982165839308694,
+          "degree_histogram": {
+            "0": 125,
+            "2": 6,
+            "1": 9,
+            "4": 3,
+            "3": 4,
+            "5": 1
+          },
+          "islands": 134,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 129,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 148,
+          "edges": 77,
+          "density": 0.007078507078507079,
+          "degree_histogram": {
+            "0": 86,
+            "3": 8,
+            "1": 23,
+            "4": 5,
+            "6": 6,
+            "2": 17,
+            "5": 2,
+            "7": 1
+          },
+          "islands": 109,
+          "super_spreaders": 0,
+          "max_degree": 7,
+          "components": 92,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 330,
+          "density": 0.016582914572864323,
+          "degree_histogram": {
+            "9": 6,
+            "3": 19,
+            "1": 33,
+            "4": 11,
+            "17": 2,
+            "10": 6,
+            "5": 8,
+            "13": 2,
+            "0": 57,
+            "2": 24,
+            "11": 3,
+            "6": 13,
+            "7": 7,
+            "8": 6,
+            "15": 1,
+            "21": 1,
+            "20": 1
+          },
+          "islands": 90,
+          "super_spreaders": 0,
+          "max_degree": 21,
+          "components": 67,
+          "bipartite": false
+        },
+        "declined_fraction": 0.35
+      },
+      {
+        "seed": 105,
+        "before": {
+          "n": 151,
+          "edges": 1,
+          "density": 8.830022075055188e-05,
+          "degree_histogram": {
+            "0": 149,
+            "1": 2
+          },
+          "islands": 151,
+          "super_spreaders": 0,
+          "max_degree": 1,
+          "components": 150,
+          "bipartite": true
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 151,
+          "edges": 45,
+          "density": 0.003973509933774834,
+          "degree_histogram": {
+            "0": 112,
+            "1": 21,
+            "3": 4,
+            "5": 3,
+            "4": 5,
+            "2": 4,
+            "6": 1,
+            "8": 1
+          },
+          "islands": 133,
+          "super_spreaders": 0,
+          "max_degree": 8,
+          "components": 118,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 274,
+          "density": 0.013768844221105527,
+          "degree_histogram": {
+            "0": 68,
+            "5": 11,
+            "1": 32,
+            "6": 11,
+            "2": 24,
+            "13": 3,
+            "3": 18,
+            "4": 12,
+            "12": 1,
+            "7": 4,
+            "10": 2,
+            "8": 5,
+            "14": 2,
+            "11": 1,
+            "9": 5,
+            "22": 1
+          },
+          "islands": 100,
+          "super_spreaders": 0,
+          "max_degree": 22,
+          "components": 77,
+          "bipartite": false
+        },
+        "declined_fraction": 0.375
+      }
+    ],
+    "delayed": [
+      {
+        "seed": 101,
+        "before": {
+          "n": 136,
+          "edges": 16,
+          "density": 0.0017429193899782135,
+          "degree_histogram": {
+            "0": 117,
+            "2": 6,
+            "1": 10,
+            "4": 1,
+            "3": 2
+          },
+          "islands": 127,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 121,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 136,
+          "edges": 52,
+          "density": 0.005664488017429194,
+          "degree_histogram": {
+            "0": 86,
+            "2": 8,
+            "1": 27,
+            "3": 5,
+            "5": 4,
+            "4": 5,
+            "6": 1
+          },
+          "islands": 113,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 94,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 273,
+          "density": 0.01371859296482412,
+          "degree_histogram": {
+            "2": 25,
+            "0": 58,
+            "4": 16,
+            "1": 36,
+            "14": 1,
+            "3": 18,
+            "9": 2,
+            "7": 6,
+            "12": 2,
+            "10": 4,
+            "8": 5,
+            "5": 12,
+            "6": 13,
+            "11": 1,
+            "15": 1
+          },
+          "islands": 94,
+          "super_spreaders": 0,
+          "max_degree": 15,
+          "components": 65,
+          "bipartite": false
+        },
+        "declined_fraction": 0.265
+      },
+      {
+        "seed": 102,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "1": 11,
+            "2": 2,
+            "3": 6,
+            "4": 1,
+            "5": 1
+          },
+          "islands": 130,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 55,
+          "density": 0.005652620760534429,
+          "degree_histogram": {
+            "2": 10,
+            "0": 89,
+            "1": 25,
+            "3": 8,
+            "5": 5,
+            "4": 1,
+            "6": 2
+          },
+          "islands": 114,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 98,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 271,
+          "density": 0.013618090452261306,
+          "degree_histogram": {
+            "4": 19,
+            "1": 39,
+            "0": 54,
+            "2": 28,
+            "6": 10,
+            "5": 13,
+            "3": 15,
+            "8": 3,
+            "10": 3,
+            "7": 8,
+            "11": 3,
+            "9": 3,
+            "12": 1,
+            "19": 1
+          },
+          "islands": 93,
+          "super_spreaders": 0,
+          "max_degree": 19,
+          "components": 64,
+          "bipartite": false
+        },
+        "declined_fraction": 0.35
+      },
+      {
+        "seed": 103,
+        "before": {
+          "n": 132,
+          "edges": 17,
+          "density": 0.001966227157066852,
+          "degree_histogram": {
+            "0": 111,
+            "4": 1,
+            "2": 6,
+            "1": 12,
+            "3": 2
+          },
+          "islands": 123,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 116,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 132,
+          "edges": 63,
+          "density": 0.007286606523247745,
+          "degree_histogram": {
+            "0": 78,
+            "7": 2,
+            "3": 11,
+            "1": 23,
+            "9": 1,
+            "2": 12,
+            "4": 2,
+            "5": 3
+          },
+          "islands": 101,
+          "super_spreaders": 0,
+          "max_degree": 9,
+          "components": 84,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 216,
+          "density": 0.010854271356783919,
+          "degree_histogram": {
+            "0": 66,
+            "4": 11,
+            "2": 32,
+            "9": 3,
+            "1": 45,
+            "6": 10,
+            "10": 2,
+            "3": 13,
+            "5": 6,
+            "7": 4,
+            "11": 1,
+            "8": 5,
+            "12": 2
+          },
+          "islands": 111,
+          "super_spreaders": 0,
+          "max_degree": 12,
+          "components": 76,
+          "bipartite": false
+        },
+        "declined_fraction": 0.315
+      },
+      {
+        "seed": 104,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "3": 4,
+            "2": 5,
+            "1": 10,
+            "4": 1,
+            "6": 1
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 88,
+          "density": 0.009044193216855087,
+          "degree_histogram": {
+            "0": 87,
+            "5": 6,
+            "1": 11,
+            "7": 3,
+            "6": 4,
+            "4": 3,
+            "3": 12,
+            "2": 12,
+            "8": 1,
+            "10": 1
+          },
+          "islands": 98,
+          "super_spreaders": 0,
+          "max_degree": 10,
+          "components": 91,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 329,
+          "density": 0.016532663316582916,
+          "degree_histogram": {
+            "5": 13,
+            "6": 9,
+            "9": 7,
+            "2": 22,
+            "1": 37,
+            "11": 2,
+            "7": 9,
+            "0": 54,
+            "3": 18,
+            "4": 11,
+            "15": 2,
+            "12": 3,
+            "10": 4,
+            "8": 6,
+            "18": 1,
+            "21": 1,
+            "19": 1
+          },
+          "islands": 91,
+          "super_spreaders": 0,
+          "max_degree": 21,
+          "components": 69,
+          "bipartite": false
+        },
+        "declined_fraction": 0.385
+      },
+      {
+        "seed": 105,
+        "before": {
+          "n": 137,
+          "edges": 14,
+          "density": 0.0015027908973808501,
+          "degree_histogram": {
+            "0": 121,
+            "1": 8,
+            "3": 4,
+            "2": 4
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 126,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 137,
+          "edges": 40,
+          "density": 0.004293688278231,
+          "degree_histogram": {
+            "0": 92,
+            "2": 14,
+            "1": 23,
+            "3": 4,
+            "5": 1,
+            "4": 3
+          },
+          "islands": 115,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 102,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 236,
+          "density": 0.01185929648241206,
+          "degree_histogram": {
+            "0": 74,
+            "4": 11,
+            "2": 30,
+            "13": 1,
+            "1": 34,
+            "14": 1,
+            "5": 12,
+            "6": 11,
+            "3": 10,
+            "10": 4,
+            "15": 1,
+            "16": 1,
+            "9": 4,
+            "7": 4,
+            "8": 2
+          },
+          "islands": 108,
+          "super_spreaders": 0,
+          "max_degree": 16,
+          "components": 83,
+          "bipartite": false
+        },
+        "declined_fraction": 0.36
+      }
+    ],
+    "shift": [
+      {
+        "seed": 101,
+        "before": {
+          "n": 136,
+          "edges": 16,
+          "density": 0.0017429193899782135,
+          "degree_histogram": {
+            "0": 117,
+            "2": 6,
+            "1": 10,
+            "4": 1,
+            "3": 2
+          },
+          "islands": 127,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 121,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 136,
+          "edges": 52,
+          "density": 0.005664488017429194,
+          "degree_histogram": {
+            "0": 86,
+            "2": 8,
+            "1": 27,
+            "3": 5,
+            "5": 4,
+            "4": 5,
+            "6": 1
+          },
+          "islands": 113,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 94,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 273,
+          "density": 0.01371859296482412,
+          "degree_histogram": {
+            "2": 25,
+            "0": 58,
+            "4": 16,
+            "1": 36,
+            "14": 1,
+            "3": 18,
+            "9": 2,
+            "7": 6,
+            "12": 2,
+            "10": 4,
+            "8": 5,
+            "5": 12,
+            "6": 13,
+            "11": 1,
+            "15": 1
+          },
+          "islands": 94,
+          "super_spreaders": 0,
+          "max_degree": 15,
+          "components": 65,
+          "bipartite": false
+        },
+        "declined_fraction": 0.265
+      },
+      {
+        "seed": 102,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "1": 11,
+            "2": 2,
+            "3": 6,
+            "4": 1,
+            "5": 1
+          },
+          "islands": 130,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 55,
+          "density": 0.005652620760534429,
+          "degree_histogram": {
+            "2": 10,
+            "0": 89,
+            "1": 25,
+            "3": 8,
+            "5": 5,
+            "4": 1,
+            "6": 2
+          },
+          "islands": 114,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 98,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 271,
+          "density": 0.013618090452261306,
+          "degree_histogram": {
+            "4": 19,
+            "1": 39,
+            "0": 54,
+            "2": 28,
+            "6": 10,
+            "5": 13,
+            "3": 15,
+            "8": 3,
+            "10": 3,
+            "7": 8,
+            "11": 3,
+            "9": 3,
+            "12": 1,
+            "19": 1
+          },
+          "islands": 93,
+          "super_spreaders": 0,
+          "max_degree": 19,
+          "components": 64,
+          "bipartite": false
+        },
+        "declined_fraction": 0.35
+      },
+      {
+        "seed": 103,
+        "before": {
+          "n": 132,
+          "edges": 17,
+          "density": 0.001966227157066852,
+          "degree_histogram": {
+            "0": 111,
+            "4": 1,
+            "2": 6,
+            "1": 12,
+            "3": 2
+          },
+          "islands": 123,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 116,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 132,
+          "edges": 63,
+          "density": 0.007286606523247745,
+          "degree_histogram": {
+            "0": 78,
+            "7": 2,
+            "3": 11,
+            "1": 23,
+            "9": 1,
+            "2": 12,
+            "4": 2,
+            "5": 3
+          },
+          "islands": 101,
+          "super_spreaders": 0,
+          "max_degree": 9,
+          "components": 84,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 216,
+          "density": 0.010854271356783919,
+          "degree_histogram": {
+            "0": 66,
+            "4": 11,
+            "2": 32,
+            "9": 3,
+            "1": 45,
+            "6": 10,
+            "10": 2,
+            "3": 13,
+            "5": 6,
+            "7": 4,
+            "11": 1,
+            "8": 5,
+            "12": 2
+          },
+          "islands": 111,
+          "super_spreaders": 0,
+          "max_degree": 12,
+          "components": 76,
+          "bipartite": false
+        },
+        "declined_fraction": 0.315
+      },
+      {
+        "seed": 104,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "3": 4,
+            "2": 5,
+            "1": 10,
+            "4": 1,
+            "6": 1
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 88,
+          "density": 0.009044193216855087,
+          "degree_histogram": {
+            "0": 87,
+            "5": 6,
+            "1": 11,
+            "7": 3,
+            "6": 4,
+            "4": 3,
+            "3": 12,
+            "2": 12,
+            "8": 1,
+            "10": 1
+          },
+          "islands": 98,
+          "super_spreaders": 0,
+          "max_degree": 10,
+          "components": 91,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 329,
+          "density": 0.016532663316582916,
+          "degree_histogram": {
+            "5": 13,
+            "6": 9,
+            "9": 7,
+            "2": 22,
+            "1": 37,
+            "11": 2,
+            "7": 9,
+            "0": 54,
+            "3": 18,
+            "4": 11,
+            "15": 2,
+            "12": 3,
+            "10": 4,
+            "8": 6,
+            "18": 1,
+            "21": 1,
+            "19": 1
+          },
+          "islands": 91,
+          "super_spreaders": 0,
+          "max_degree": 21,
+          "components": 69,
+          "bipartite": false
+        },
+        "declined_fraction": 0.385
+      },
+      {
+        "seed": 105,
+        "before": {
+          "n": 137,
+          "edges": 14,
+          "density": 0.0015027908973808501,
+          "degree_histogram": {
+            "0": 121,
+            "1": 8,
+            "3": 4,
+            "2": 4
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 126,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 137,
+          "edges": 40,
+          "density": 0.004293688278231,
+          "degree_histogram": {
+            "0": 92,
+            "2": 14,
+            "1": 23,
+            "3": 4,
+            "5": 1,
+            "4": 3
+          },
+          "islands": 115,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 102,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 236,
+          "density": 0.01185929648241206,
+          "degree_histogram": {
+            "0": 74,
+            "4": 11,
+            "2": 30,
+            "13": 1,
+            "1": 34,
+            "14": 1,
+            "5": 12,
+            "6": 11,
+            "3": 10,
+            "10": 4,
+            "15": 1,
+            "16": 1,
+            "9": 4,
+            "7": 4,
+            "8": 2
+          },
+          "islands": 108,
+          "super_spreaders": 0,
+          "max_degree": 16,
+          "components": 83,
+          "bipartite": false
+        },
+        "declined_fraction": 0.36
+      }
+    ],
+    "drift": [
+      {
+        "seed": 101,
+        "before": {
+          "n": 136,
+          "edges": 16,
+          "density": 0.0017429193899782135,
+          "degree_histogram": {
+            "0": 117,
+            "2": 6,
+            "1": 10,
+            "4": 1,
+            "3": 2
+          },
+          "islands": 127,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 121,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 136,
+          "edges": 52,
+          "density": 0.005664488017429194,
+          "degree_histogram": {
+            "0": 86,
+            "2": 8,
+            "1": 27,
+            "3": 5,
+            "5": 4,
+            "4": 5,
+            "6": 1
+          },
+          "islands": 113,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 94,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 273,
+          "density": 0.01371859296482412,
+          "degree_histogram": {
+            "2": 25,
+            "0": 58,
+            "4": 16,
+            "1": 36,
+            "14": 1,
+            "3": 18,
+            "9": 2,
+            "7": 6,
+            "12": 2,
+            "10": 4,
+            "8": 5,
+            "5": 12,
+            "6": 13,
+            "11": 1,
+            "15": 1
+          },
+          "islands": 94,
+          "super_spreaders": 0,
+          "max_degree": 15,
+          "components": 65,
+          "bipartite": false
+        },
+        "declined_fraction": 0.265
+      },
+      {
+        "seed": 102,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "1": 11,
+            "2": 2,
+            "3": 6,
+            "4": 1,
+            "5": 1
+          },
+          "islands": 130,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 55,
+          "density": 0.005652620760534429,
+          "degree_histogram": {
+            "2": 10,
+            "0": 89,
+            "1": 25,
+            "3": 8,
+            "5": 5,
+            "4": 1,
+            "6": 2
+          },
+          "islands": 114,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 98,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 271,
+          "density": 0.013618090452261306,
+          "degree_histogram": {
+            "4": 19,
+            "1": 39,
+            "0": 54,
+            "2": 28,
+            "6": 10,
+            "5": 13,
+            "3": 15,
+            "8": 3,
+            "10": 3,
+            "7": 8,
+            "11": 3,
+            "9": 3,
+            "12": 1,
+            "19": 1
+          },
+          "islands": 93,
+          "super_spreaders": 0,
+          "max_degree": 19,
+          "components": 64,
+          "bipartite": false
+        },
+        "declined_fraction": 0.35
+      },
+      {
+        "seed": 103,
+        "before": {
+          "n": 132,
+          "edges": 17,
+          "density": 0.001966227157066852,
+          "degree_histogram": {
+            "0": 111,
+            "4": 1,
+            "2": 6,
+            "1": 12,
+            "3": 2
+          },
+          "islands": 123,
+          "super_spreaders": 0,
+          "max_degree": 4,
+          "components": 116,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 132,
+          "edges": 63,
+          "density": 0.007286606523247745,
+          "degree_histogram": {
+            "0": 78,
+            "7": 2,
+            "3": 11,
+            "1": 23,
+            "9": 1,
+            "2": 12,
+            "4": 2,
+            "5": 3
+          },
+          "islands": 101,
+          "super_spreaders": 0,
+          "max_degree": 9,
+          "components": 84,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 216,
+          "density": 0.010854271356783919,
+          "degree_histogram": {
+            "0": 66,
+            "4": 11,
+            "2": 32,
+            "9": 3,
+            "1": 45,
+            "6": 10,
+            "10": 2,
+            "3": 13,
+            "5": 6,
+            "7": 4,
+            "11": 1,
+            "8": 5,
+            "12": 2
+          },
+          "islands": 111,
+          "super_spreaders": 0,
+          "max_degree": 12,
+          "components": 76,
+          "bipartite": false
+        },
+        "declined_fraction": 0.315
+      },
+      {
+        "seed": 104,
+        "before": {
+          "n": 140,
+          "edges": 21,
+          "density": 0.002158273381294964,
+          "degree_histogram": {
+            "0": 119,
+            "3": 4,
+            "2": 5,
+            "1": 10,
+            "4": 1,
+            "6": 1
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 6,
+          "components": 123,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 140,
+          "edges": 88,
+          "density": 0.009044193216855087,
+          "degree_histogram": {
+            "0": 87,
+            "5": 6,
+            "1": 11,
+            "7": 3,
+            "6": 4,
+            "4": 3,
+            "3": 12,
+            "2": 12,
+            "8": 1,
+            "10": 1
+          },
+          "islands": 98,
+          "super_spreaders": 0,
+          "max_degree": 10,
+          "components": 91,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 329,
+          "density": 0.016532663316582916,
+          "degree_histogram": {
+            "5": 13,
+            "6": 9,
+            "9": 7,
+            "2": 22,
+            "1": 37,
+            "11": 2,
+            "7": 9,
+            "0": 54,
+            "3": 18,
+            "4": 11,
+            "15": 2,
+            "12": 3,
+            "10": 4,
+            "8": 6,
+            "18": 1,
+            "21": 1,
+            "19": 1
+          },
+          "islands": 91,
+          "super_spreaders": 0,
+          "max_degree": 21,
+          "components": 69,
+          "bipartite": false
+        },
+        "declined_fraction": 0.385
+      },
+      {
+        "seed": 105,
+        "before": {
+          "n": 137,
+          "edges": 14,
+          "density": 0.0015027908973808501,
+          "degree_histogram": {
+            "0": 121,
+            "1": 8,
+            "3": 4,
+            "2": 4
+          },
+          "islands": 129,
+          "super_spreaders": 0,
+          "max_degree": 3,
+          "components": 126,
+          "bipartite": false
+        },
+        "after_unlimited_non_declined_constraints": {
+          "n": 137,
+          "edges": 40,
+          "density": 0.004293688278231,
+          "degree_histogram": {
+            "0": 92,
+            "2": 14,
+            "1": 23,
+            "3": 4,
+            "5": 1,
+            "4": 3
+          },
+          "islands": 115,
+          "super_spreaders": 0,
+          "max_degree": 5,
+          "components": 102,
+          "bipartite": false
+        },
+        "truth_graph_all_arrivals": {
+          "n": 200,
+          "edges": 236,
+          "density": 0.01185929648241206,
+          "degree_histogram": {
+            "0": 74,
+            "4": 11,
+            "2": 30,
+            "13": 1,
+            "1": 34,
+            "14": 1,
+            "5": 12,
+            "6": 11,
+            "3": 10,
+            "10": 4,
+            "15": 1,
+            "16": 1,
+            "9": 4,
+            "7": 4,
+            "8": 2
+          },
+          "islands": 108,
+          "super_spreaders": 0,
+          "max_degree": 16,
+          "components": 83,
+          "bipartite": false
+        },
+        "declined_fraction": 0.36
+      }
+    ]
+  },
+  "delays": {
+    "standard": {
+      "pmf": {
+        "2": 0.0014577259475218659,
+        "3": 0.0058309037900874635,
+        "4": 0.013119533527696793,
+        "5": 0.023323615160349854,
+        "6": 0.03644314868804665,
+        "7": 0.052478134110787174,
+        "8": 0.07142857142857142,
+        "9": 0.07142857142857142,
+        "10": 0.07142857142857142,
+        "11": 0.07142857142857142,
+        "12": 0.07142857142857142,
+        "13": 0.07142857142857142,
+        "14": 0.07142857142857142,
+        "15": 0.07142857142857142,
+        "16": 0.06997084548104957,
+        "17": 0.06559766763848396,
+        "18": 0.05830903790087463,
+        "19": 0.048104956268221574,
+        "20": 0.03498542274052478,
+        "21": 0.018950437317784258
+      },
+      "mean": 12.642857142857142,
+      "late_date_probability": 0,
+      "feedback_lateness_given_both_yes": 0.64,
+      "before60_given_date_and_both_yes": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 1.0,
+        "9": 1.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 1.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 1.0,
+        "16": 1.0,
+        "17": 1.0,
+        "18": 1.0,
+        "19": 1.0,
+        "20": 1.0,
+        "21": 1.0,
+        "22": 1.0,
+        "23": 1.0,
+        "24": 1.0,
+        "25": 1.0,
+        "26": 1.0,
+        "27": 1.0,
+        "28": 1.0,
+        "29": 1.0,
+        "30": 1.0,
+        "31": 1.0,
+        "32": 1.0,
+        "33": 1.0,
+        "34": 0.9931778425655976,
+        "35": 0.9752769679300292,
+        "36": 0.9443731778425655,
+        "37": 0.9006413994169096,
+        "38": 0.8461224489795919,
+        "39": 0.783731778425656,
+        "40": 0.7163848396501458,
+        "41": 0.646472303206997,
+        "42": 0.5754518950437317,
+        "43": 0.5040816326530613,
+        "44": 0.43265306122448977,
+        "45": 0.36122448979591837,
+        "46": 0.28979591836734697,
+        "47": 0.21836734693877552,
+        "48": 0.1537609329446064,
+        "49": 0.10023323615160351,
+        "50": 0.05970845481049562,
+        "51": 0.03201166180758017,
+        "52": 0.01510204081632653,
+        "53": 0.006064139941690963,
+        "54": 0.001982507288629738,
+        "55": 0.00046647230320699706,
+        "56": 5.830903790087463e-05,
+        "57": 0.0,
+        "58": 0.0,
+        "59": 0.0
+      },
+      "qualifying_before60_given_date_and_both_yes": {
+        "0": 0.36,
+        "1": 0.36,
+        "2": 0.36,
+        "3": 0.36,
+        "4": 0.36,
+        "5": 0.36,
+        "6": 0.36,
+        "7": 0.36,
+        "8": 0.36,
+        "9": 0.36,
+        "10": 0.36,
+        "11": 0.36,
+        "12": 0.36,
+        "13": 0.36,
+        "14": 0.36,
+        "15": 0.36,
+        "16": 0.36,
+        "17": 0.36,
+        "18": 0.36,
+        "19": 0.36,
+        "20": 0.36,
+        "21": 0.36,
+        "22": 0.36,
+        "23": 0.36,
+        "24": 0.36,
+        "25": 0.36,
+        "26": 0.36,
+        "27": 0.36,
+        "28": 0.36,
+        "29": 0.36,
+        "30": 0.36,
+        "31": 0.36,
+        "32": 0.36,
+        "33": 0.36,
+        "34": 0.36,
+        "35": 0.36,
+        "36": 0.35620991253644313,
+        "37": 0.3469387755102041,
+        "38": 0.3323615160349854,
+        "39": 0.3135276967930029,
+        "40": 0.2914868804664723,
+        "41": 0.2672886297376093,
+        "42": 0.24198250728862974,
+        "43": 0.21632653061224488,
+        "44": 0.1906122448979592,
+        "45": 0.16489795918367345,
+        "46": 0.13918367346938776,
+        "47": 0.11346938775510203,
+        "48": 0.08775510204081632,
+        "49": 0.06204081632653061,
+        "50": 0.040116618075801753,
+        "51": 0.0236734693877551,
+        "52": 0.012536443148688048,
+        "53": 0.00565597667638484,
+        "54": 0.001982507288629738,
+        "55": 0.00046647230320699706,
+        "56": 5.830903790087463e-05,
+        "57": 0.0,
+        "58": 0.0,
+        "59": 0.0
+      },
+      "tcrit_conditional_completion": 51,
+      "last_day_fully_observed_with_official_followup": 85
+    },
+    "delayed": {
+      "pmf": {
+        "7": 0.00018221574344023323,
+        "8": 0.0009110787172011661,
+        "9": 0.002551020408163265,
+        "10": 0.005466472303206997,
+        "11": 0.010021865889212828,
+        "12": 0.016581632653061226,
+        "13": 0.025510204081632654,
+        "14": 0.03443877551020408,
+        "15": 0.04318513119533528,
+        "16": 0.05138483965014577,
+        "17": 0.058673469387755105,
+        "18": 0.0646865889212828,
+        "19": 0.0690597667638484,
+        "20": 0.07142857142857142,
+        "21": 0.0712463556851312,
+        "22": 0.07051749271137027,
+        "23": 0.06887755102040816,
+        "24": 0.06596209912536444,
+        "25": 0.0614067055393586,
+        "26": 0.0548469387755102,
+        "27": 0.04591836734693878,
+        "28": 0.036989795918367346,
+        "29": 0.02824344023323615,
+        "30": 0.020043731778425656,
+        "31": 0.012755102040816327,
+        "32": 0.00674198250728863,
+        "33": 0.0023688046647230322
+      },
+      "mean": 21.142857142857142,
+      "late_date_probability": 0.02186588921282799,
+      "feedback_lateness_given_both_yes": 0.64,
+      "before60_given_date_and_both_yes": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0,
+        "7": 1.0,
+        "8": 1.0,
+        "9": 1.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 1.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 1.0,
+        "16": 1.0,
+        "17": 1.0,
+        "18": 1.0,
+        "19": 1.0,
+        "20": 1.0,
+        "21": 1.0,
+        "22": 0.9991472303206997,
+        "23": 0.9960568513119533,
+        "24": 0.9891034985422741,
+        "25": 0.9766836734693878,
+        "26": 0.9574489795918367,
+        "27": 0.9304154518950437,
+        "28": 0.8949635568513119,
+        "29": 0.8507725947521866,
+        "30": 0.7985568513119533,
+        "31": 0.7396574344023324,
+        "32": 0.6756924198250729,
+        "33": 0.608265306122449,
+        "34": 0.5387244897959184,
+        "35": 0.46805393586005833,
+        "36": 0.3977259475218659,
+        "37": 0.3294460641399417,
+        "38": 0.2649781341107872,
+        "39": 0.20596938775510204,
+        "40": 0.15377551020408162,
+        "41": 0.1093804664723032,
+        "42": 0.07340379008746356,
+        "43": 0.0461661807580175,
+        "44": 0.0269533527696793,
+        "45": 0.014424198250728864,
+        "46": 0.006960641399416909,
+        "47": 0.0029591836734693877,
+        "48": 0.0010714285714285713,
+        "49": 0.00031341107871720114,
+        "50": 6.559766763848396e-05,
+        "51": 7.288629737609329e-06,
+        "52": 0.0,
+        "53": 0.0,
+        "54": 0.0,
+        "55": 0.0,
+        "56": 0.0,
+        "57": 0.0,
+        "58": 0.0,
+        "59": 0.0
+      },
+      "qualifying_before60_given_date_and_both_yes": {
+        "0": 0.3521282798833819,
+        "1": 0.3521282798833819,
+        "2": 0.3521282798833819,
+        "3": 0.3521282798833819,
+        "4": 0.3521282798833819,
+        "5": 0.3521282798833819,
+        "6": 0.3521282798833819,
+        "7": 0.3521282798833819,
+        "8": 0.3521282798833819,
+        "9": 0.3521282798833819,
+        "10": 0.3521282798833819,
+        "11": 0.3521282798833819,
+        "12": 0.3521282798833819,
+        "13": 0.3521282798833819,
+        "14": 0.3521282798833819,
+        "15": 0.3521282798833819,
+        "16": 0.3521282798833819,
+        "17": 0.3521282798833819,
+        "18": 0.3521282798833819,
+        "19": 0.3521282798833819,
+        "20": 0.3521282798833819,
+        "21": 0.3521282798833819,
+        "22": 0.3521282798833819,
+        "23": 0.3521282798833819,
+        "24": 0.3521282798833819,
+        "25": 0.3521282798833819,
+        "26": 0.3521282798833819,
+        "27": 0.34811953352769676,
+        "28": 0.3400655976676385,
+        "29": 0.3284766763848396,
+        "30": 0.3137244897959184,
+        "31": 0.295765306122449,
+        "32": 0.2750655976676385,
+        "33": 0.2523104956268222,
+        "34": 0.22816326530612244,
+        "35": 0.20315597667638485,
+        "36": 0.17768950437317785,
+        "37": 0.152033527696793,
+        "38": 0.1268002915451895,
+        "39": 0.10271865889212828,
+        "40": 0.0804591836734694,
+        "41": 0.06055393586005831,
+        "42": 0.043403790087463555,
+        "43": 0.029278425655976673,
+        "44": 0.018316326530612246,
+        "45": 0.010561224489795917,
+        "46": 0.005546647230320699,
+        "47": 0.0025874635568513115,
+        "48": 0.001020408163265306,
+        "49": 0.00031341107871720114,
+        "50": 6.559766763848396e-05,
+        "51": 7.288629737609329e-06,
+        "52": 0.0,
+        "53": 0.0,
+        "54": 0.0,
+        "55": 0.0,
+        "56": 0.0,
+        "57": 0.0,
+        "58": 0.0,
+        "59": 0.0
+      },
+      "tcrit_conditional_completion": 43,
+      "last_day_fully_observed_with_official_followup": 97
+    }
+  },
+  "shift_detection": {
+    "randomized_experiment": [
+      {
+        "n": 100,
+        "trials": 80,
+        "detection_probability": 0.2,
+        "mean_lifestyle_estimate": -0.20476567645139312
+      },
+      {
+        "n": 300,
+        "trials": 80,
+        "detection_probability": 0.4,
+        "mean_lifestyle_estimate": -0.2553279547235409
+      },
+      {
+        "n": 1000,
+        "trials": 80,
+        "detection_probability": 0.7625,
+        "mean_lifestyle_estimate": -0.238299368968226
+      },
+      {
+        "n": 3000,
+        "trials": 80,
+        "detection_probability": 1.0,
+        "mean_lifestyle_estimate": -0.25560048296102944
+      }
+    ],
+    "optimistic_information_bound": 0.125,
+    "optimistic_n_for_95_confidence_95_power": 1386,
+    "warning": "Not a guarantee: adaptive sampling, shared dyadic effects, missingness and nuisance covariance lower information."
+  }
+}

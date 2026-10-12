@@ -1,0 +1,54 @@
+{
+  "source": "results/research4/selection.json",
+  "clusters": {
+    "greedy": {
+      "n": 20,
+      "mean": 0.4166666666666667,
+      "paired_difference": 0.0,
+      "paired_sd": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_two_sided": null
+    },
+    "hard_priority": {
+      "n": 20,
+      "mean": 0.37083333333333335,
+      "paired_difference": -0.045833333333333344,
+      "paired_sd": 0.2892759159618297,
+      "ci95": [
+        -0.18121862943378764,
+        0.08955196276712096
+      ],
+      "p_two_sided": 0.4871933251071206
+    },
+    "population_control": {
+      "n": 20,
+      "mean": 0.3875,
+      "paired_difference": -0.029166666666666664,
+      "paired_sd": 0.2010116955661684,
+      "ci95": [
+        -0.12324303605052857,
+        0.06490970271719525
+      ],
+      "p_two_sided": 0.5241671704701274
+    }
+  },
+  "method": "independent six-family seed average and paired t; no director analysis imports",
+  "exact_selection": {
+    "qualification_totals": {
+      "greedy": 100,
+      "hard_priority": 89,
+      "population_control": 93
+    },
+    "exact_count_band_max_difference": 6,
+    "eligible_band": [
+      "hard_priority",
+      "population_control"
+    ],
+    "selected": "population_control",
+    "registered_confirmation_n": 56,
+    "planned_sd": 0.25261845583684234
+  }
+}

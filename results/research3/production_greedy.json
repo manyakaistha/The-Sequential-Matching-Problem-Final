@@ -1,0 +1,17 @@
+{
+  "build": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 408B done\n#1 DONE 0.0s\n\n#2 [internal] load metadata for docker.io/library/python:3.12.7-slim\n#2 DONE 1.6s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 277B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 transferring context: 213B done\n#4 DONE 0.0s\n\n#5 [2/5] WORKDIR /app\n#5 CACHED\n\n#6 [3/5] COPY kit.py /app/kit.py\n#6 CACHED\n\n#7 [4/5] COPY research/terminal_model.py /app/research/terminal_model.py\n#7 CACHED\n\n#8 [5/5] COPY research3/__init__.py research3/policy.py research3/model_candidates.py /app/research3/\n#8 ERROR: failed to calculate checksum of ref g1hoanznoeuzoxtq6e8ezkiq5::zm3csanwtv8fdaa47fwwb4lsq: \"/research3/policy.py\": not found\n\n#9 [1/5] FROM docker.io/library/python:3.12.7-slim@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d\n#9 resolve docker.io/library/python:3.12.7-slim@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d done\n#9 CANCELED\n------\n > [5/5] COPY research3/__init__.py research3/policy.py research3/model_candidates.py /app/research3/:\n------\nDockerfile:5\n--------------------\n   3 |     COPY kit.py /app/kit.py\n   4 |     COPY research/terminal_model.py /app/research/terminal_model.py\n   5 | >>> COPY research3/__init__.py research3/policy.py research3/model_candidates.py /app/research3/\n   6 |     ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1\n   7 |     USER 65534:65534\n--------------------\nERROR: failed to solve: failed to compute cache key: failed to calculate checksum of ref g1hoanznoeuzoxtq6e8ezkiq5::zm3csanwtv8fdaa47fwwb4lsq: \"/research3/policy.py\": not found\n",
+    "command": [
+      "docker",
+      "build",
+      "-f",
+      "research3/Dockerfile",
+      "-t",
+      "sequential-round3:research",
+      "."
+    ]
+  },
+  "valid": false
+}

@@ -1,0 +1,150 @@
+{
+  "scope": "Inherited source and scientific evidence fingerprints from planning record; not exhaustive raw/archives rehash",
+  "rows": {
+    "kit.py": {
+      "expected": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "actual": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "match": true
+    },
+    "evaluate.py": {
+      "expected": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+      "actual": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+      "match": true
+    },
+    "research/terminal_model.py": {
+      "expected": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+      "actual": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+      "match": true
+    },
+    "research3/policy.py": {
+      "expected": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+      "actual": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+      "match": true
+    },
+    "research3/model_candidates.py": {
+      "expected": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+      "actual": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+      "match": true
+    },
+    "research4/candidates.py": {
+      "expected": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+      "actual": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+      "match": true
+    },
+    "research4/policy.py": {
+      "expected": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+      "actual": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+      "match": true
+    },
+    "research4/benchmark.py": {
+      "expected": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64",
+      "actual": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64",
+      "match": true
+    },
+    "REPORT.md": {
+      "expected": "94c4bbda5267363a84c13d4c491a99972698ac1580bff8898a972b0ed8d145c2",
+      "actual": "94c4bbda5267363a84c13d4c491a99972698ac1580bff8898a972b0ed8d145c2",
+      "match": true
+    },
+    "research/THEORY.md": {
+      "expected": "034c0c8b5b93b60df483781695f4aba404ee43584d08642c404e933c0cf09c4a",
+      "actual": "034c0c8b5b93b60df483781695f4aba404ee43584d08642c404e933c0cf09c4a",
+      "match": true
+    },
+    "research/EXTENDED_THEORY.md": {
+      "expected": "63790a0c8e346e1439871b5e16f18d4248d5622b43d2d6a046279fa44b34ac8c",
+      "actual": "63790a0c8e346e1439871b5e16f18d4248d5622b43d2d6a046279fa44b34ac8c",
+      "match": true
+    },
+    "research/EXTENDED_ALGORITHM.md": {
+      "expected": "f261278b51bd56ce17baf99885f62afbf1359cedb2b93ed5b9f9fd1ab01393ab",
+      "actual": "f261278b51bd56ce17baf99885f62afbf1359cedb2b93ed5b9f9fd1ab01393ab",
+      "match": true
+    },
+    "research/EXTENDED_EMPIRICAL.md": {
+      "expected": "706329e431bdf302eb75edf1882d17102328193ac2a8d5c6bfd275838ed58164",
+      "actual": "706329e431bdf302eb75edf1882d17102328193ac2a8d5c6bfd275838ed58164",
+      "match": true
+    },
+    "research/EXPERIMENT_REGISTRY.md": {
+      "expected": "f28b4454f2ed748471bfec42ad6eb144173c0a9674918f2ef6471f8b551a39bd",
+      "actual": "f28b4454f2ed748471bfec42ad6eb144173c0a9674918f2ef6471f8b551a39bd",
+      "match": true
+    },
+    "research/EXTENDED_REPRODUCTION.md": {
+      "expected": "75fef537254d1e0107e568b49bf0a310f5cef81e09a68f2a15938149e443be94",
+      "actual": "75fef537254d1e0107e568b49bf0a310f5cef81e09a68f2a15938149e443be94",
+      "match": true
+    },
+    "research/FINAL_STATISTICAL_REVIEW.md": {
+      "expected": "f2a92f5b64efffb0795068a1ea3729b41842131f97a0763685793155851113f1",
+      "actual": "f2a92f5b64efffb0795068a1ea3729b41842131f97a0763685793155851113f1",
+      "match": true
+    },
+    "research/FINAL_THEORY_REVIEW.md": {
+      "expected": "21544ffd9d382fba48f4309d0d45a527199e7cf991ea7e35e5d618812d159675",
+      "actual": "21544ffd9d382fba48f4309d0d45a527199e7cf991ea7e35e5d618812d159675",
+      "match": true
+    },
+    "research/FINAL_PACKAGE_REVIEW.md": {
+      "expected": "0d79cbcd1dbe654c78cdf85dac9b1fcc3a66b5879026b50275be0f2fb90035f8",
+      "actual": "0d79cbcd1dbe654c78cdf85dac9b1fcc3a66b5879026b50275be0f2fb90035f8",
+      "match": true
+    },
+    "docs/REFERENCES.md": {
+      "expected": "bef2f73b438ce12d4c55b6b0c50e72a58908a49db7e96a902b1f146bfa993b5e",
+      "actual": "bef2f73b438ce12d4c55b6b0c50e72a58908a49db7e96a902b1f146bfa993b5e",
+      "match": true
+    },
+    "research3/FINAL_REPORT.md": {
+      "expected": "7685411743a915ecdfa9e3c5fd93b6b82ced132753947907f61a45c70a55c7a8",
+      "actual": "7685411743a915ecdfa9e3c5fd93b6b82ced132753947907f61a45c70a55c7a8",
+      "match": true
+    },
+    "research3/THEORY_MODELS.md": {
+      "expected": "392bf3c426f95c83e61b0254ba54ee5020ce38bd9f0e88849482fe97b672d538",
+      "actual": "392bf3c426f95c83e61b0254ba54ee5020ce38bd9f0e88849482fe97b672d538",
+      "match": true
+    },
+    "research4/FINAL_REPORT.md": {
+      "expected": "b9ba6825b93f6c3389d1f0c8c6a9b44c50c624f98770cbc305788291f309ad15",
+      "actual": "b9ba6825b93f6c3389d1f0c8c6a9b44c50c624f98770cbc305788291f309ad15",
+      "match": true
+    },
+    "research4/MECHANISMS.md": {
+      "expected": "ba4cc3dcfd01cf0ce52cf7b000c7e9d5797a081eb6d143ca3cd77a9c96dfa97b",
+      "actual": "ba4cc3dcfd01cf0ce52cf7b000c7e9d5797a081eb6d143ca3cd77a9c96dfa97b",
+      "match": true
+    },
+    "research4/DEADLINE_INVARIANCE.md": {
+      "expected": "5bf08580631fccda61bc88a59d72c302c0b0a390f7677c63f5f05d52490e714b",
+      "actual": "5bf08580631fccda61bc88a59d72c302c0b0a390f7677c63f5f05d52490e714b",
+      "match": true
+    },
+    "research5/FINAL_REPORT.md": {
+      "expected": "337a8fd89e5bc7bd2c3f9d2829973a7707bfbd188c53603ec8a4faf704bd7723",
+      "actual": "337a8fd89e5bc7bd2c3f9d2829973a7707bfbd188c53603ec8a4faf704bd7723",
+      "match": true
+    },
+    "results/research5/analysis.json": {
+      "expected": "213c60c177953e52437b7348138b8bada03af519785f17b102d33ec47617ff95",
+      "actual": "213c60c177953e52437b7348138b8bada03af519785f17b102d33ec47617ff95",
+      "match": true
+    },
+    "results/research5/manifest.json": {
+      "expected": "afeb51d812711552cf74d246728973d7cbf30a8a150756aeca97f454828040ee",
+      "actual": "afeb51d812711552cf74d246728973d7cbf30a8a150756aeca97f454828040ee",
+      "match": true
+    },
+    "results/research5/compute_summary.json": {
+      "expected": "3ed7226b76e5da1e460ab88764fb257436fd0b3b734fbdab43cee5a69166c905",
+      "actual": "3ed7226b76e5da1e460ab88764fb257436fd0b3b734fbdab43cee5a69166c905",
+      "match": true
+    },
+    "AGENTS.md": {
+      "expected": "51c4eaa09ecafbec45c485c1318edeb951c0d35365b4687e8e7dfe3a43a2b0c4",
+      "actual": "51c4eaa09ecafbec45c485c1318edeb951c0d35365b4687e8e7dfe3a43a2b0c4",
+      "match": true
+    }
+  }
+}

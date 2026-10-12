@@ -1,0 +1,42 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.extended
+#1 transferring dockerfile: 387B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12.7-slim
+#2 DONE 1.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 277B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/python:3.12.7-slim@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d
+#4 resolve docker.io/library/python:3.12.7-slim@sha256:60d9996b6a8a3689d36db740b49f4327be3be09a21122bd02fb8895abb38b50d 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 19.78kB done
+#5 DONE 0.0s
+
+#6 [4/5] COPY kit.py extended_policy.py ./
+#6 CACHED
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [3/5] RUN pip install --no-cache-dir networkx==3.7
+#8 CACHED
+
+#9 [5/5] COPY research/terminal_model.py research/extended_candidates.py ./research/
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 exporting manifest sha256:3b0c1b70ccfd4aea37c7d554559ee892652c0346d55d0d35f755a4e5d224b02d done
+#10 exporting config sha256:875782704709abce143a310b874608987bedd2bea75b36ca4f36f18d86aa7e93 done
+#10 exporting attestation manifest sha256:bb2840bc28f5bf5c485623d42ca8ff3ad75d25f9445b264e6d600f796b7c3425 done
+#10 exporting manifest list sha256:09027c26b555728b00a7876d6fac1860d0237851a923b3358648103c7d2ca8c3 done
+#10 naming to docker.io/library/sequential-extended:1.0 done
+#10 unpacking to docker.io/library/sequential-extended:1.0 done
+#10 DONE 0.0s

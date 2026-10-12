@@ -1,0 +1,1 @@
+{"cpu.max": "200000 100000", "memory.max": "1073741824", "pids.max": "64", "root_write_blocked": true, "root_write_errno": 30, "uid": 65534, "network_interfaces": ["lo", "tunl0", "gre0", "gretap0", "erspan0", "ip_vti0", "ip6_vti0", "sit0", "ip6tnl0", "ip6gre0"], "up_network_interfaces": ["lo"], "app_files": ["kit.py", "research_policy.py"]}

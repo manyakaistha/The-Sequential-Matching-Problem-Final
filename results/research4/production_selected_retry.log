@@ -1,0 +1,28 @@
+direct True a5a11d9e161cbf3f31c2d65d1bfbd87c56534d12f9030dc30c89e5d764e859e8
+subprocess True a5a11d9e161cbf3f31c2d65d1bfbd87c56534d12f9030dc30c89e5d764e859e8
+container True a5a11d9e161cbf3f31c2d65d1bfbd87c56534d12f9030dc30c89e5d764e859e8
+{
+  "valid": true,
+  "equivalence": {
+    "assignments": true,
+    "mutual_acceptances": true,
+    "dates": true,
+    "mutual_second_meeting_intention": true,
+    "coverage": true,
+    "ask_cost": true,
+    "action_sha256": true,
+    "semantic_action_sha256": true
+  },
+  "image": {
+    "id": "sha256:ba7e0c2fefe7e1e845bddfb008660ae83dcbd99da593e64b6b7a8af0d3683df5",
+    "size_bytes": 44748144,
+    "below_documented_2GiB": true,
+    "user": "65534:65534",
+    "entrypoint": [
+      "python",
+      "-m",
+      "research4.policy"
+    ]
+  },
+  "wall_seconds": 54.57681662499817
+}

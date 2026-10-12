@@ -1,0 +1,1157 @@
+{
+  "command": [
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research3/final_day_audit.py"
+  ],
+  "completed_utc": "2026-10-09T12:56:20.630447+00:00",
+  "constructed_example": {
+    "analytic_positive": "Every sigmoid and propensity factor is strictly positive; date=.78 and feedback deadline=.36; standard date meetsdeadline. Integral therefore positive irrespective of finite quadrature.",
+    "biases": 0,
+    "day": 59,
+    "family": "development",
+    "public_weight": 0.0,
+    "response_propensity": 0.765,
+    "specified_fields": [
+      {
+        "acceptable_zones": [
+          "zone_a"
+        ],
+        "age_max": 40,
+        "age_min": 21,
+        "conversations": "ideas",
+        "has_children": false,
+        "lifestyle": "quiet",
+        "partner_children": "any",
+        "partner_smoking": "any",
+        "relationship_goal": "long_term",
+        "relationship_pace": "slow",
+        "relationship_structure": "monogamous",
+        "schedule": [
+          "weekday_evening"
+        ],
+        "smoking": "no",
+        "wants_children": "unsure",
+        "who_to_meet": [
+          "man",
+          "woman"
+        ]
+      },
+      {
+        "acceptable_zones": [
+          "zone_a"
+        ],
+        "age_max": 40,
+        "age_min": 21,
+        "conversations": "stories",
+        "has_children": false,
+        "lifestyle": "social",
+        "partner_children": "any",
+        "partner_smoking": "any",
+        "relationship_goal": "exploring",
+        "relationship_pace": "quick",
+        "relationship_structure": "monogamous",
+        "schedule": [
+          "weekday_evening"
+        ],
+        "smoking": "no",
+        "wants_children": "unsure",
+        "who_to_meet": [
+          "man",
+          "woman"
+        ]
+      }
+    ],
+    "terminal_q_15point_quadrature": 0.002912262530837777
+  },
+  "cpu_seconds": 1.6752829999999999,
+  "registry_sha256_before_run": "9482dba0769bcf1d071816a195c71efb8266c0399cad161306ad063f27f53765",
+  "rows": [
+    {
+      "added_edge_expected_qualified_numerical": 0.02104558292105359,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_3e32a99135fa791c925303800d853381",
+          "syn_b9f6df79c63b8c123521f4367deb1f6c"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 81,
+        "dates": 9,
+        "missing_feedback": 36,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 13,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 78,
+        "dates": 9,
+        "missing_feedback": 35,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 13,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "f9256635917629f0cb40d008975d6b0b95baec51446b5fdbfb1467e88a022ff2",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "6bd40150b97d06be46f7b5f3dcd30c70fd0071ac647b908692228854a1cfe0ec",
+      "variant": "development",
+      "zero_legal_edges_between_original_unmatched": 3
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.02104558292105359,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_3e32a99135fa791c925303800d853381",
+          "syn_b9f6df79c63b8c123521f4367deb1f6c"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 228,
+        "assignments": 81,
+        "dates": 9,
+        "missing_feedback": 35,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 13,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 228,
+        "assignments": 78,
+        "dates": 9,
+        "missing_feedback": 34,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 13,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "3f564c8f8d0a53e99b2906c9f48be1d7aafc0850c820a7827c4cc8ed890a9ed2",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "f3e36afafc7b286ddf900bfaacd7a8de7de0851c1257132d76ae98eb348661e4",
+      "variant": "development",
+      "zero_legal_edges_between_original_unmatched": 3
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.007490070526042887,
+      "appended_pairs": [
+        [
+          "syn_00a181b19b00ee75138bd6fdedef3bc9",
+          "syn_187a55c8e5a8fc66035d7b52eb636eb4"
+        ],
+        [
+          "syn_198ec8a71efa7ebf270557902f38773e",
+          "syn_438f3e950b64fa35d5e59ccffa8c402d"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 165,
+        "assignments": 18,
+        "dates": 0,
+        "missing_feedback": 12,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 0,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 165,
+        "assignments": 16,
+        "dates": 0,
+        "missing_feedback": 11,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 0,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "5b95bf67b33832009d0298ac73457a34bcc39823cec0da2f8393aa011304c2bc",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "7773446f09c8d9a8411571c83daa47671ca288356a0f3d378f9d6ce76bc4908b",
+      "variant": "sparse",
+      "zero_legal_edges_between_original_unmatched": 2
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.007490070526042887,
+      "appended_pairs": [
+        [
+          "syn_00a181b19b00ee75138bd6fdedef3bc9",
+          "syn_187a55c8e5a8fc66035d7b52eb636eb4"
+        ],
+        [
+          "syn_198ec8a71efa7ebf270557902f38773e",
+          "syn_438f3e950b64fa35d5e59ccffa8c402d"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 169,
+        "assignments": 18,
+        "dates": 0,
+        "missing_feedback": 12,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 0,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 169,
+        "assignments": 16,
+        "dates": 0,
+        "missing_feedback": 11,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 0,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "5b95bf67b33832009d0298ac73457a34bcc39823cec0da2f8393aa011304c2bc",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "544d66d6444e324c42b43ee7ee5273f2a5ea334fcd2fc48285e1987f35a5dbc2",
+      "variant": "sparse",
+      "zero_legal_edges_between_original_unmatched": 2
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.001127435880764507,
+      "appended_pairs": [
+        [
+          "syn_3d819b858acc33038c11df315f86466e",
+          "syn_d393fbb3701fe184795a0450628db26e"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 249,
+        "assignments": 63,
+        "dates": 2,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 4,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 249,
+        "assignments": 62,
+        "dates": 2,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 4,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "516d499a6994d9945529a15fa6e27925c9cdc4ed5657b58371ed8442bf4df991",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "d1861d2c74a905aacfb2e8423d79fb46105d5b8dbc9a183bb60f6c5e8e072d83",
+      "variant": "cold_start",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.001127435880764507,
+      "appended_pairs": [
+        [
+          "syn_3d819b858acc33038c11df315f86466e",
+          "syn_d393fbb3701fe184795a0450628db26e"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 267,
+        "assignments": 63,
+        "dates": 2,
+        "missing_feedback": 41,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 4,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 267,
+        "assignments": 62,
+        "dates": 2,
+        "missing_feedback": 41,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 4,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "7a1fd758495865075ef0068a3325f7cf38d0ae89fa5d5779df31935770520e14",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "6060d530c786363ccc88e95cfe45f163591287393db5e964e732a4e28b333f58",
+      "variant": "cold_start",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.02058540253648245,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_3e32a99135fa791c925303800d853381",
+          "syn_b9f6df79c63b8c123521f4367deb1f6c"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 82,
+        "dates": 9,
+        "missing_feedback": 38,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 14,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 79,
+        "dates": 9,
+        "missing_feedback": 37,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 14,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "40e3e7c6fd7b0527dfdc84350ba0bf1be24cb2ef73e5e63bee4aa7fceeb6c5e5",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "a552d88e6c491f1f6cd30839cae39cbad7f1ec89b0396152e52d894776f1f79f",
+      "variant": "delayed",
+      "zero_legal_edges_between_original_unmatched": 3
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.02058540253648245,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_3e32a99135fa791c925303800d853381",
+          "syn_b9f6df79c63b8c123521f4367deb1f6c"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 231,
+        "assignments": 82,
+        "dates": 8,
+        "missing_feedback": 36,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 13,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 231,
+        "assignments": 79,
+        "dates": 8,
+        "missing_feedback": 35,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 13,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "f019c7f975379b6cca5352a7f509d2e3bb511e3a07c3c108affff3d7a48b354d",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "f389e0f6a0f559208f92114c5354f1716636517150979628dd220ea5a06ee322",
+      "variant": "delayed",
+      "zero_legal_edges_between_original_unmatched": 3
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.015391472801353358,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_2e0e43b4a10cb4618f3ab18696934cd1",
+          "syn_5676bad8ecff6e21c5d4c012c0764428"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 86,
+        "dates": 5,
+        "missing_feedback": 41,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 9,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 83,
+        "dates": 5,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 9,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "c0edbbe6784807aa269c04feee6626155d6db351c436ede568e593ff12f2aea6",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "08a31d52c6108077200624adee539198e9a805f6d87ccf4a0fa49e4c81eec61b",
+      "variant": "shift",
+      "zero_legal_edges_between_original_unmatched": 5
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.015391472801353358,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_2e0e43b4a10cb4618f3ab18696934cd1",
+          "syn_5676bad8ecff6e21c5d4c012c0764428"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 228,
+        "assignments": 86,
+        "dates": 5,
+        "missing_feedback": 42,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 9,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 228,
+        "assignments": 83,
+        "dates": 5,
+        "missing_feedback": 41,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 9,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "a841a667ee993c6d65926069c7451621eb63439351bb1ee5f6939341a3ecc464",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "0fb0a8d4df91771b38172291f7dbb2eadeb5069bcbe4e81a90e96e0b8903bd0e",
+      "variant": "shift",
+      "zero_legal_edges_between_original_unmatched": 5
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.011849255139786866,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_3e32a99135fa791c925303800d853381",
+          "syn_b9f6df79c63b8c123521f4367deb1f6c"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 81,
+        "dates": 9,
+        "missing_feedback": 36,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 12,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 207,
+        "assignments": 78,
+        "dates": 9,
+        "missing_feedback": 35,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 12,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "76fbcc78ceee48b3090dc16352196e7924b27cfabb81a8570926be83aae412f3",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "e5a0bd367957fdf9f8ef302e5c2a2b066abfb3b0e9cd8140545e62ee515bf14c",
+      "variant": "drift",
+      "zero_legal_edges_between_original_unmatched": 3
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.011849255139786866,
+      "appended_pairs": [
+        [
+          "syn_0261162ad65ee28b074e19550ba452fe",
+          "syn_ec515e22743f62ca99d1446cd81d547f"
+        ],
+        [
+          "syn_3e32a99135fa791c925303800d853381",
+          "syn_b9f6df79c63b8c123521f4367deb1f6c"
+        ],
+        [
+          "syn_4ef430e621896ddcccf1bce010d38dd8",
+          "syn_95ba7b167fa73011a2b032130ebe010c"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 228,
+        "assignments": 81,
+        "dates": 9,
+        "missing_feedback": 35,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 12,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 228,
+        "assignments": 78,
+        "dates": 9,
+        "missing_feedback": 34,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 12,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "64ae1ec3dc79408203597fb2621d8d9fcb8a9eaf29740596e43d41c56e34b716",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70001,
+      "trace_sha256": "f110955c2952b9f1d5a852df60af3f803b2c6813b4517886f5c21bbad55487c7",
+      "variant": "drift",
+      "zero_legal_edges_between_original_unmatched": 3
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.0008673233191902681,
+      "appended_pairs": [
+        [
+          "syn_72447b20f753e5f5e9f05f494935c5de",
+          "syn_b674ec2cf7cbb9457d923ee551089090"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 65,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 7,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 64,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 7,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "37dcaa5a96fb36f49c7780de4d3cf7145e0ea3dd49ad5adfa1bd5327bd569a97",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "c550420991a17c7600876fc3e22383befda39f7c3f0da9b340ff71769c47faff",
+      "variant": "development",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0,
+      "appended_pairs": [],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 193,
+        "assignments": 61,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 8,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 193,
+        "assignments": 61,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 8,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "8d0fb78ea02c6b988f61f34d6a893c5634c23be95020bf19b11c7f346326c29e",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "f9dff9336945d74488579b77f3ac1b22dd5dee160b850b2c85f6df9fe04ea797",
+      "variant": "development",
+      "zero_legal_edges_between_original_unmatched": 0
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.00037549592957076747,
+      "appended_pairs": [
+        [
+          "syn_19265c8c806c36279cef1a409618f9f3",
+          "syn_58bc6d51c0257e765c008d18136455e7"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 201,
+        "assignments": 17,
+        "dates": 4,
+        "missing_feedback": 13,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 4,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 1,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 201,
+        "assignments": 16,
+        "dates": 4,
+        "missing_feedback": 13,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 4,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "e8b6d3866470bc1467a7355118acd085676e4a5eb13671ac9de657a1ffef6ce8",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 1,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "158ffeb10195be53d73edf8a78af832aac00e9b2226efa7ec811dcfe2f19e8cc",
+      "variant": "sparse",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.00037549592957076747,
+      "appended_pairs": [
+        [
+          "syn_19265c8c806c36279cef1a409618f9f3",
+          "syn_58bc6d51c0257e765c008d18136455e7"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 202,
+        "assignments": 17,
+        "dates": 4,
+        "missing_feedback": 9,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 5,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 1,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 202,
+        "assignments": 16,
+        "dates": 4,
+        "missing_feedback": 9,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 5,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "1957dd227d2eb72517bf8a8347b685ebbb847e246cf6aba501a83ee07cb3d2b6",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 1,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "bf11c31251763b758dec956e24710d83beb99f4b5acad6e75942488afcf9fff7",
+      "variant": "sparse",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0,
+      "appended_pairs": [],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 219,
+        "assignments": 88,
+        "dates": 12,
+        "missing_feedback": 51,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 15,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 1,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 219,
+        "assignments": 88,
+        "dates": 12,
+        "missing_feedback": 51,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 15,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "ca8f71f7df082fa1b9cb631ac55a2f5548bb760ac60803650e0698ace79de50f",
+      "new_qualified": 0,
+      "original_pairs_day59": 1,
+      "original_qualified": 1,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "4ddcc2154a85745f53c846a76436ad539b19f5309b079ca6b743dd634f1cc10a",
+      "variant": "cold_start",
+      "zero_legal_edges_between_original_unmatched": 0
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.0003194230814294052,
+      "appended_pairs": [
+        [
+          "syn_72447b20f753e5f5e9f05f494935c5de",
+          "syn_fffbcde20006551ab6a389e280bda1a8"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 248,
+        "assignments": 92,
+        "dates": 11,
+        "missing_feedback": 54,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 14,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 1,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 248,
+        "assignments": 91,
+        "dates": 11,
+        "missing_feedback": 54,
+        "msmi_per_100_arrived_members": 0.5,
+        "mutual_acceptances": 14,
+        "mutual_second_meeting_intention": 1,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "2b22e3d1ec392014cf435605bb04446cc697a5d088242eb077ae85305223069d",
+      "new_qualified": 0,
+      "original_pairs_day59": 1,
+      "original_qualified": 1,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "55bc4365adbbda7efb51bbd513d9c422fac199e2148cb618702aaaaeed5395d3",
+      "variant": "cold_start",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0,
+      "appended_pairs": [],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 63,
+        "dates": 8,
+        "missing_feedback": 38,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 9,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 63,
+        "dates": 8,
+        "missing_feedback": 38,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 9,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "e38db14c1cb7abbad4df5800a5940e2b981cd3eba5cff04682083ae9eeff0576",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "6f443b94164f7339d9d504e05efd91139b574f40b6b433ce40e881b14985f5b7",
+      "variant": "delayed",
+      "zero_legal_edges_between_original_unmatched": 0
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.0008483585235811515,
+      "appended_pairs": [
+        [
+          "syn_72447b20f753e5f5e9f05f494935c5de",
+          "syn_b674ec2cf7cbb9457d923ee551089090"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 195,
+        "assignments": 61,
+        "dates": 8,
+        "missing_feedback": 43,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 10,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 195,
+        "assignments": 60,
+        "dates": 8,
+        "missing_feedback": 43,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 10,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "ccd36a3e0c2493826f5f34468d5b45caf32bc80b2c5655620a6c096382d1c25f",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "5f37acfe1f6904b09d041333c1830f3ceb76cd15b7b9edc0f62c485e22884b04",
+      "variant": "delayed",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.0010362526809790241,
+      "appended_pairs": [
+        [
+          "syn_72447b20f753e5f5e9f05f494935c5de",
+          "syn_b674ec2cf7cbb9457d923ee551089090"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 65,
+        "dates": 6,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 7,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 64,
+        "dates": 6,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 7,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "3a060efa7fa2bf96a34af4521ef763f25b3eae109f69ed0e12c1f6b69ae066ae",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "4487aeffe8d28d2ffd87702deca2c4284c8b01d96ae82d25399508193f853186",
+      "variant": "shift",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0,
+      "appended_pairs": [],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 193,
+        "assignments": 61,
+        "dates": 6,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 8,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 193,
+        "assignments": 61,
+        "dates": 6,
+        "missing_feedback": 40,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 8,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "3ad0808310b388a34af9628da033eca356e38ad844b901672f7f7b8f72662942",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "c978a730b5b32f9d53611a327aef16a515b8a52a76a46f5438a568aba234063a",
+      "variant": "shift",
+      "zero_legal_edges_between_original_unmatched": 0
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0.0004050420353512322,
+      "appended_pairs": [
+        [
+          "syn_72447b20f753e5f5e9f05f494935c5de",
+          "syn_b674ec2cf7cbb9457d923ee551089090"
+        ]
+      ],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 65,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 7,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 180,
+        "assignments": 64,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 7,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "cf0ea9a19b904c52f76fe9f9b9e27766864ecf1656c545dd2b821b87c469def8",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "public_weight",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "e3a0393dadbbb5726d56b98df9a33601e508813ba8029d8cc9b7b52f4c58ff72",
+      "variant": "drift",
+      "zero_legal_edges_between_original_unmatched": 1
+    },
+    {
+      "added_edge_expected_qualified_numerical": 0,
+      "appended_pairs": [],
+      "augmented_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 193,
+        "assignments": 61,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 8,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "augmented_qualified": 0,
+      "baseline_metrics": {
+        "arrived_members": 200,
+        "ask_cost": 193,
+        "assignments": 61,
+        "dates": 6,
+        "missing_feedback": 39,
+        "msmi_per_100_arrived_members": 0.0,
+        "mutual_acceptances": 8,
+        "mutual_second_meeting_intention": 0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      "existing_event_bytes_identical": true,
+      "existing_event_sha256": "70774e57a8aba053b216d73f8138cb2c470e581ffee9758ad96c2122a2b29e47",
+      "new_qualified": 0,
+      "original_pairs_day59": 0,
+      "original_qualified": 0,
+      "policy": "goal_queries",
+      "qualified_gain": 0,
+      "seed": 70002,
+      "trace_sha256": "73151571b348df13b9f02402280a58637c43879bb16c8c7606408d80c2eee1da",
+      "variant": "drift",
+      "zero_legal_edges_between_original_unmatched": 0
+    }
+  ],
+  "scope": "24controlledposthocdiagnostictrajectories on12alreadyexaminedBworlds; no newseeds/neweligiblepolicy/frozenmoduleedits",
+  "started_utc": "2026-10-09T12:56:18.939231+00:00",
+  "summary": {
+    "all_existing_event_bytes_identical": true,
+    "appended_edges": 37,
+    "numerical_expected_qualified_gain_sum": 0.15920583111063993,
+    "realized_qualified_gain": 0,
+    "trajectory_count": 24
+  }
+}

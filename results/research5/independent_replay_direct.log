@@ -1,0 +1,25 @@
+{"policy": "greedy", "seed": 90001, "variant": "development", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "development", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "sparse", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "sparse", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "cold_start", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "cold_start", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "delayed", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "delayed", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "shift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "shift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "drift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "drift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "development", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "development", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "sparse", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "sparse", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "cold_start", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "cold_start", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "delayed", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "delayed", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "shift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "shift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "drift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "drift", "execution": "direct", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"self_cpu_seconds": 63.89110899999999, "os_child_cpu_seconds": 0.0, "wall_seconds": 64.75222304199997, "source_bytes_unchanged": true}

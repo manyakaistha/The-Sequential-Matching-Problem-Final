@@ -1,0 +1,2557 @@
+{
+  "all_pair_orders_and_ties_identical": false,
+  "cpu_seconds": 0.009884999999999998,
+  "days": [
+    {
+      "day": 0,
+      "inversions": [
+        {
+          "a": {
+            "pattern": [
+              0,
+              0,
+              1,
+              "missing"
+            ],
+            "population": 0.004970522157165098,
+            "throughput": 0.0005517968104270324
+          },
+          "b": {
+            "pattern": [
+              0,
+              "missing",
+              "missing",
+              0
+            ],
+            "population": 0.004967255831107397,
+            "throughput": 0.0005519533944267497
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              "missing",
+              1,
+              1
+            ],
+            "population": 0.007977509856035212,
+            "throughput": 0.0008266147650594061
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              0,
+              "missing"
+            ],
+            "population": 0.007844211015649609,
+            "throughput": 0.0008412509611526494
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              "missing",
+              1,
+              1
+            ],
+            "population": 0.007977509856035212,
+            "throughput": 0.0008266147650594061
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              "missing",
+              0
+            ],
+            "population": 0.007821230315446702,
+            "throughput": 0.0008383805605946991
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "population": 0.00942890240114842,
+            "throughput": 0.0009485626306813002
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              1,
+              0
+            ],
+            "population": 0.009081909872862802,
+            "throughput": 0.0009489938285354613
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              "missing"
+            ],
+            "population": 0.00807958228895419,
+            "throughput": 0.0008367175584867158
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              0,
+              "missing"
+            ],
+            "population": 0.007844211015649609,
+            "throughput": 0.0008412509611526494
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              "missing"
+            ],
+            "population": 0.00807958228895419,
+            "throughput": 0.0008367175584867158
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              "missing",
+              0
+            ],
+            "population": 0.007821230315446702,
+            "throughput": 0.0008383805605946991
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              1
+            ],
+            "population": 0.010000152719402746,
+            "throughput": 0.0009926639902026147
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              0,
+              1
+            ],
+            "population": 0.009804172452382477,
+            "throughput": 0.0010136110147511983
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              1
+            ],
+            "population": 0.010000152719402746,
+            "throughput": 0.0009926639902026147
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              1,
+              "missing"
+            ],
+            "population": 0.009750082295129733,
+            "throughput": 0.0010059727696630674
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              1
+            ],
+            "population": 0.010000152719402746,
+            "throughput": 0.0009926639902026147
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              "missing",
+              0,
+              "missing"
+            ],
+            "population": 0.009616451791991448,
+            "throughput": 0.000996606918014953
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              "missing"
+            ],
+            "population": 0.00912261433413606,
+            "throughput": 0.0009216344887378407
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              1,
+              0
+            ],
+            "population": 0.009081909872862802,
+            "throughput": 0.0009489938285354613
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              "missing"
+            ],
+            "population": 0.00912261433413606,
+            "throughput": 0.0009216344887378407
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              "missing",
+              0,
+              0
+            ],
+            "population": 0.008918469798699279,
+            "throughput": 0.0009366183172974361
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "population": 0.01114265335591139,
+            "throughput": 0.001077441823351514
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              "missing",
+              1,
+              0
+            ],
+            "population": 0.010857731257077003,
+            "throughput": 0.0010965864107632347
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "population": 0.01114265335591139,
+            "throughput": 0.001077441823351514
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "population": 0.011032857983016378,
+            "throughput": 0.001130376423211368
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              "missing",
+              "missing",
+              1
+            ],
+            "population": 0.012376692568630826,
+            "throughput": 0.0012175724207956248
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              1,
+              0,
+              0
+            ],
+            "population": 0.012373628322620534,
+            "throughput": 0.0012191862207474203
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              "missing",
+              1,
+              1
+            ],
+            "population": 0.013709282162156592,
+            "throughput": 0.0013139590823769772
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "population": 0.013668102904871178,
+            "throughput": 0.0013359040721987443
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              0,
+              1
+            ],
+            "population": 0.015522848410838891,
+            "throughput": 0.001444340256738318
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              "missing",
+              1
+            ],
+            "population": 0.015381747169562235,
+            "throughput": 0.001465825663887347
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              "missing",
+              0
+            ],
+            "population": 0.013052210223582158,
+            "throughput": 0.001268754140721012
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              "missing",
+              "missing"
+            ],
+            "population": 0.012778891510116543,
+            "throughput": 0.00127009072468385
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              "missing",
+              "missing"
+            ],
+            "population": 0.013844519683043824,
+            "throughput": 0.0013262628772834355
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "population": 0.013668102904871178,
+            "throughput": 0.0013359040721987443
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              "missing",
+              1
+            ],
+            "population": 0.016221448061428827,
+            "throughput": 0.0014892021202370918
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              1,
+              0
+            ],
+            "population": 0.01590189528906963,
+            "throughput": 0.0014982749273418719
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              0
+            ],
+            "population": 0.014409374025505402,
+            "throughput": 0.0013639954881078924
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              0,
+              "missing"
+            ],
+            "population": 0.014190277506747413,
+            "throughput": 0.0013790474292030743
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              0
+            ],
+            "population": 0.014409374025505402,
+            "throughput": 0.0013639954881078924
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              "missing",
+              0
+            ],
+            "population": 0.014162524738542974,
+            "throughput": 0.0013753359633701273
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              "missing"
+            ],
+            "population": 0.01521169235978123,
+            "throughput": 0.0014191440008744342
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              "missing",
+              "missing"
+            ],
+            "population": 0.015055746699122182,
+            "throughput": 0.0014410167935892508
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              1
+            ],
+            "population": 0.017618647362608708,
+            "throughput": 0.0015754274891960757
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "population": 0.01711426101776395,
+            "throughput": 0.0015829018889104733
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              1,
+              0,
+              0,
+              "missing"
+            ],
+            "population": 0.01190351604862763,
+            "throughput": 0.0012019079242765
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              "missing",
+              0
+            ],
+            "population": 0.011911272956967978,
+            "throughput": 0.0012010548078199925
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "population": 0.014515490245461383,
+            "throughput": 0.0014045823925488666
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              1,
+              "missing"
+            ],
+            "population": 0.014529642433094372,
+            "throughput": 0.0014002448543108665
+          }
+        }
+      ],
+      "min_nonzero_q_separation": 3.0642460102925373e-06,
+      "rows": [
+        {
+          "pattern": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "population": 0.0033489230904609267,
+          "throughput": 0.0003868662100659605
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            0,
+            "missing"
+          ],
+          "population": 0.003784905982671588,
+          "throughput": 0.0004328045393584031
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "population": 0.005092854659303573,
+          "throughput": 0.0005652034245626236
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            "missing",
+            0
+          ],
+          "population": 0.003731187673925426,
+          "throughput": 0.0004268798302300056
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            "missing",
+            "missing"
+          ],
+          "population": 0.004180111374169425,
+          "throughput": 0.0004732554291075653
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            "missing",
+            1
+          ],
+          "population": 0.0055268824749014215,
+          "throughput": 0.0006067571711255449
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "population": 0.004495716840854424,
+          "throughput": 0.0005046416378095183
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            1,
+            "missing"
+          ],
+          "population": 0.004970522157165098,
+          "throughput": 0.0005517968104270324
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "population": 0.006394938106097122,
+          "throughput": 0.0006872327653063915
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            0,
+            0
+          ],
+          "population": 0.0045441001341189075,
+          "throughput": 0.000510317265005494
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            0,
+            "missing"
+          ],
+          "population": 0.005042626077235479,
+          "throughput": 0.0005597648614694215
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            0,
+            1
+          ],
+          "population": 0.006538203906585188,
+          "throughput": 0.0007014859946919572
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            "missing",
+            0
+          ],
+          "population": 0.004967255831107397,
+          "throughput": 0.0005519533944267497
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            "missing",
+            "missing"
+          ],
+          "population": 0.005479935012431015,
+          "throughput": 0.000601713834399435
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            "missing",
+            1
+          ],
+          "population": 0.007017972556401862,
+          "throughput": 0.0007441695246041602
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            1,
+            0
+          ],
+          "population": 0.005813567225084377,
+          "throughput": 0.0006326443613490364
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            1,
+            "missing"
+          ],
+          "population": 0.0063545528828220866,
+          "throughput": 0.0006829408618957174
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            1,
+            1
+          ],
+          "population": 0.007977509856035212,
+          "throughput": 0.0008266147650594061
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "population": 0.006934454221434871,
+          "throughput": 0.0007376842491853455
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            0,
+            "missing"
+          ],
+          "population": 0.0075580662663632565,
+          "throughput": 0.0007926426298573557
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "population": 0.00942890240114842,
+          "throughput": 0.0009485626306813002
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            "missing",
+            0
+          ],
+          "population": 0.007439392145471341,
+          "throughput": 0.0007816929104579962
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            "missing",
+            "missing"
+          ],
+          "population": 0.00807958228895419,
+          "throughput": 0.0008367175584867158
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            "missing",
+            1
+          ],
+          "population": 0.010000152719402746,
+          "throughput": 0.0009926639902026147
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "population": 0.008449267993544281,
+          "throughput": 0.0008665492066814111
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            1,
+            "missing"
+          ],
+          "population": 0.00912261433413606,
+          "throughput": 0.0009216344887378407
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "population": 0.01114265335591139,
+          "throughput": 0.001077441823351514
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            0,
+            0
+          ],
+          "population": 0.007190890536738651,
+          "throughput": 0.0007809021231853079
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            0,
+            "missing"
+          ],
+          "population": 0.007844211015649609,
+          "throughput": 0.0008412509611526494
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            0,
+            1
+          ],
+          "population": 0.009804172452382477,
+          "throughput": 0.0010136110147511983
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            "missing",
+            0
+          ],
+          "population": 0.007821230315446702,
+          "throughput": 0.0008383805605946991
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            "missing",
+            "missing"
+          ],
+          "population": 0.008479501442142982,
+          "throughput": 0.0008975831015038853
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            "missing",
+            1
+          ],
+          "population": 0.010454314822231829,
+          "throughput": 0.0010666330017085049
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            1,
+            0
+          ],
+          "population": 0.009081909872862802,
+          "throughput": 0.0009489938285354613
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            1,
+            "missing"
+          ],
+          "population": 0.009750082295129733,
+          "throughput": 0.0010059727696630674
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            1,
+            1
+          ],
+          "population": 0.011754599561930534,
+          "throughput": 0.001168606179729386
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            0,
+            0
+          ],
+          "population": 0.008918469798699279,
+          "throughput": 0.0009366183172974361
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            0,
+            "missing"
+          ],
+          "population": 0.009616451791991448,
+          "throughput": 0.000996606918014953
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            0,
+            1
+          ],
+          "population": 0.011710397771867947,
+          "throughput": 0.0011674439774438487
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            "missing",
+            0
+          ],
+          "population": 0.009564890284825186,
+          "throughput": 0.0009913388712648032
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            "missing",
+            "missing"
+          ],
+          "population": 0.010267840855776597,
+          "throughput": 0.0010501384551541222
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            "missing",
+            1
+          ],
+          "population": 0.012376692568630826,
+          "throughput": 0.0012175724207956248
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            1,
+            0
+          ],
+          "population": 0.010857731257077003,
+          "throughput": 0.0010965864107632347
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            1,
+            "missing"
+          ],
+          "population": 0.011570618983346902,
+          "throughput": 0.001153091149577267
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            1,
+            1
+          ],
+          "population": 0.013709282162156592,
+          "throughput": 0.0013139590823769772
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            0,
+            0
+          ],
+          "population": 0.012373628322620534,
+          "throughput": 0.0012191862207474203
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            0,
+            "missing"
+          ],
+          "population": 0.01316093334467512,
+          "throughput": 0.0012779271840358548
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            0,
+            1
+          ],
+          "population": 0.015522848410838891,
+          "throughput": 0.001444340256738318
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            "missing",
+            0
+          ],
+          "population": 0.013052210223582158,
+          "throughput": 0.001268754140721012
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            "missing",
+            "missing"
+          ],
+          "population": 0.013844519683043824,
+          "throughput": 0.0013262628772834355
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            "missing",
+            1
+          ],
+          "population": 0.016221448061428827,
+          "throughput": 0.0014892021202370918
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            1,
+            0
+          ],
+          "population": 0.014409374025505402,
+          "throughput": 0.0013639954881078924
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            1,
+            "missing"
+          ],
+          "population": 0.01521169235978123,
+          "throughput": 0.0014191440008744342
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            1,
+            1
+          ],
+          "population": 0.017618647362608708,
+          "throughput": 0.0015754274891960757
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "population": 0.011032857983016378,
+          "throughput": 0.001130376423211368
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            0,
+            "missing"
+          ],
+          "population": 0.01190351604862763,
+          "throughput": 0.0012019079242765
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "population": 0.014515490245461383,
+          "throughput": 0.0014045823925488666
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            "missing",
+            0
+          ],
+          "population": 0.011911272956967978,
+          "throughput": 0.0012010548078199925
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            "missing",
+            "missing"
+          ],
+          "population": 0.012778891510116543,
+          "throughput": 0.00127009072468385
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            "missing",
+            1
+          ],
+          "population": 0.015381747169562235,
+          "throughput": 0.001465825663887347
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "population": 0.013668102904871178,
+          "throughput": 0.0013359040721987443
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            1,
+            "missing"
+          ],
+          "population": 0.014529642433094372,
+          "throughput": 0.0014002448543108665
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "population": 0.01711426101776395,
+          "throughput": 0.0015829018889104733
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            0,
+            0
+          ],
+          "population": 0.013292839463279655,
+          "throughput": 0.0013109932139777477
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            0,
+            "missing"
+          ],
+          "population": 0.014190277506747413,
+          "throughput": 0.0013790474292030743
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            0,
+            1
+          ],
+          "population": 0.016882591637150706,
+          "throughput": 0.0015717755132484423
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            "missing",
+            0
+          ],
+          "population": 0.014162524738542974,
+          "throughput": 0.0013753359633701273
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            "missing",
+            "missing"
+          ],
+          "population": 0.015055746699122182,
+          "throughput": 0.0014410167935892508
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            "missing",
+            1
+          ],
+          "population": 0.017735412580859793,
+          "throughput": 0.001627176235062463
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            1,
+            0
+          ],
+          "population": 0.01590189528906963,
+          "throughput": 0.0014982749273418719
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            1,
+            "missing"
+          ],
+          "population": 0.016786685083871714,
+          "throughput": 0.0015594947920005633
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            1,
+            1
+          ],
+          "population": 0.01944105446827797,
+          "throughput": 0.0017332831568683924
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "population": 0.017812802423806198,
+          "throughput": 0.0016345207421508293
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            0,
+            "missing"
+          ],
+          "population": 0.018763800422986986,
+          "throughput": 0.001696233688253767
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "population": 0.02161679442052936,
+          "throughput": 0.0018708509818647226
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            "missing",
+            0
+          ],
+          "population": 0.01866502830169297,
+          "throughput": 0.001687948434781767
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            "missing",
+            "missing"
+          ],
+          "population": 0.019609457077133456,
+          "throughput": 0.0017475356643758672
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            "missing",
+            1
+          ],
+          "population": 0.022442743403454913,
+          "throughput": 0.001916321651876551
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "population": 0.02036948005746653,
+          "throughput": 0.0017902974025974356
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            1,
+            "missing"
+          ],
+          "population": 0.021300770385426403,
+          "throughput": 0.0018458938771996418
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "population": 0.024094641369306023,
+          "throughput": 0.002003704596059162
+        }
+      ],
+      "tie_mismatches": []
+    },
+    {
+      "day": 40,
+      "inversions": [
+        {
+          "a": {
+            "pattern": [
+              0,
+              "missing",
+              1,
+              1
+            ],
+            "population": 0.0074979092621827005,
+            "throughput": 0.000784331100148218
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              0,
+              "missing"
+            ],
+            "population": 0.0073483506091642364,
+            "throughput": 0.0007946171185765311
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              "missing",
+              1,
+              1
+            ],
+            "population": 0.0074979092621827005,
+            "throughput": 0.000784331100148218
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              "missing",
+              0
+            ],
+            "population": 0.007312569594840152,
+            "throughput": 0.0007905662844186756
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              1
+            ],
+            "population": 0.009481313913370303,
+            "throughput": 0.000950558683649413
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              0,
+              1
+            ],
+            "population": 0.009248360286777644,
+            "throughput": 0.0009648996825416701
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              "missing",
+              1
+            ],
+            "population": 0.009481313913370303,
+            "throughput": 0.000950558683649413
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              1,
+              "missing"
+            ],
+            "population": 0.009159828080457077,
+            "throughput": 0.0009543790856493562
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              "missing"
+            ],
+            "population": 0.008596850169724194,
+            "throughput": 0.0008774768825308252
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              0,
+              1,
+              0
+            ],
+            "population": 0.008507680684600923,
+            "throughput": 0.0008975494388625081
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              "missing"
+            ],
+            "population": 0.008596850169724194,
+            "throughput": 0.0008774768825308252
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              "missing",
+              0,
+              0
+            ],
+            "population": 0.008393238210741942,
+            "throughput": 0.0008891632197436166
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "population": 0.010568549335251042,
+            "throughput": 0.001033144199840525
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              "missing",
+              1,
+              0
+            ],
+            "population": 0.010247344625379108,
+            "throughput": 0.0010454002543095339
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "population": 0.010568549335251042,
+            "throughput": 0.001033144199840525
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "population": 0.010334563830287124,
+            "throughput": 0.001069935935055674
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              0,
+              1,
+              1
+            ],
+            "population": 0.011116270268025545,
+            "throughput": 0.001116722721661543
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              "missing",
+              0,
+              1
+            ],
+            "population": 0.011115281661828456,
+            "throughput": 0.001118817949843833
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              "missing",
+              "missing",
+              1
+            ],
+            "population": 0.011759955136341774,
+            "throughput": 0.0011684701367999976
+          },
+          "b": {
+            "pattern": [
+              "missing",
+              1,
+              0,
+              0
+            ],
+            "population": 0.011749686532306297,
+            "throughput": 0.0011693712671838748
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              "missing",
+              1,
+              1
+            ],
+            "population": 0.013049302085368412,
+            "throughput": 0.0012640357132731798
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "population": 0.01287020198467161,
+            "throughput": 0.0012726659877174622
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              0,
+              1
+            ],
+            "population": 0.014849124411930084,
+            "throughput": 0.0013962567341737578
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              "missing",
+              1
+            ],
+            "population": 0.01457945399549358,
+            "throughput": 0.0014053952634469366
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              0
+            ],
+            "population": 0.013726672506935485,
+            "throughput": 0.0013136357193292325
+          },
+          "b": {
+            "pattern": [
+              1,
+              0,
+              1,
+              "missing"
+            ],
+            "population": 0.013720139316104349,
+            "throughput": 0.0013378186023740213
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              0
+            ],
+            "population": 0.013726672506935485,
+            "throughput": 0.0013136357193292325
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              0,
+              "missing"
+            ],
+            "population": 0.013430591761683574,
+            "throughput": 0.0013196299510430194
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              0
+            ],
+            "population": 0.013726672506935485,
+            "throughput": 0.0013136357193292325
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              "missing",
+              0
+            ],
+            "population": 0.013394024862643916,
+            "throughput": 0.0013152732033968248
+          }
+        },
+        {
+          "a": {
+            "pattern": [
+              "missing",
+              1,
+              1,
+              "missing"
+            ],
+            "population": 0.014523845810215152,
+            "throughput": 0.001369852444857909
+          },
+          "b": {
+            "pattern": [
+              1,
+              "missing",
+              "missing",
+              "missing"
+            ],
+            "population": 0.014274963405890694,
+            "throughput": 0.001381682604056017
+          }
+        }
+      ],
+      "min_nonzero_q_separation": 9.88606197089431e-07,
+      "rows": [
+        {
+          "pattern": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "population": 0.0030954642696324084,
+          "throughput": 0.00035945605806773364
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            0,
+            "missing"
+          ],
+          "population": 0.003512227011103355,
+          "throughput": 0.00040387484504278214
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "population": 0.0047625152355161935,
+          "throughput": 0.0005320811690514014
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            "missing",
+            0
+          ],
+          "population": 0.003445362641265017,
+          "throughput": 0.0003965073556167709
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            "missing",
+            "missing"
+          ],
+          "population": 0.0038746569556721722,
+          "throughput": 0.00044143206494062066
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            "missing",
+            1
+          ],
+          "population": 0.005162539898893638,
+          "throughput": 0.0005709480586002604
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "population": 0.004145159384530233,
+          "throughput": 0.0004686556420993636
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            1,
+            "missing"
+          ],
+          "population": 0.004599516844809808,
+          "throughput": 0.0005145010859869077
+        },
+        {
+          "pattern": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "population": 0.005962589225648529,
+          "throughput": 0.0006463733156471537
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            0,
+            0
+          ],
+          "population": 0.004237794438962278,
+          "throughput": 0.0004789023603103471
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            0,
+            "missing"
+          ],
+          "population": 0.0047169063853435686,
+          "throughput": 0.000527081786349401
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            0,
+            1
+          ],
+          "population": 0.006154242224487441,
+          "throughput": 0.0006653616592846316
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            "missing",
+            0
+          ],
+          "population": 0.004628522501931413,
+          "throughput": 0.0005178826445504785
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            "missing",
+            "missing"
+          ],
+          "population": 0.005121924685711692,
+          "throughput": 0.0005665055821900435
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            "missing",
+            1
+          ],
+          "population": 0.006602131237052527,
+          "throughput": 0.0007058948478761692
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            1,
+            0
+          ],
+          "population": 0.005409978627869683,
+          "throughput": 0.000593574188599427
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            1,
+            "missing"
+          ],
+          "population": 0.005931961286447937,
+          "throughput": 0.0006429901251484816
+        },
+        {
+          "pattern": [
+            0,
+            "missing",
+            1,
+            1
+          ],
+          "population": 0.0074979092621827005,
+          "throughput": 0.000784331100148218
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "population": 0.006522454777622017,
+          "throughput": 0.0006995433887666683
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            0,
+            "missing"
+          ],
+          "population": 0.007126265133823995,
+          "throughput": 0.0007537318437301607
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "population": 0.00893769620242993,
+          "throughput": 0.0009076617004352056
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            "missing",
+            0
+          ],
+          "population": 0.006994842223264203,
+          "throughput": 0.000741479130153572
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            "missing",
+            "missing"
+          ],
+          "population": 0.007616460145790727,
+          "throughput": 0.0007959647405621236
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            "missing",
+            1
+          ],
+          "population": 0.009481313913370303,
+          "throughput": 0.000950558683649413
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "population": 0.007939617114548577,
+          "throughput": 0.0008224896923144122
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            1,
+            "missing"
+          ],
+          "population": 0.008596850169724194,
+          "throughput": 0.0008774768825308252
+        },
+        {
+          "pattern": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "population": 0.010568549335251042,
+          "throughput": 0.001033144199840525
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            0,
+            0
+          ],
+          "population": 0.0067150140499597655,
+          "throughput": 0.0007350633376233674
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            0,
+            "missing"
+          ],
+          "population": 0.0073483506091642364,
+          "throughput": 0.0007946171185765311
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            0,
+            1
+          ],
+          "population": 0.009248360286777644,
+          "throughput": 0.0009648996825416701
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            "missing",
+            0
+          ],
+          "population": 0.007312569594840152,
+          "throughput": 0.0007905662844186756
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            "missing",
+            "missing"
+          ],
+          "population": 0.007952176432928516,
+          "throughput": 0.0008491981294970262
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            "missing",
+            1
+          ],
+          "population": 0.009870996947193612,
+          "throughput": 0.0010167917742547729
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            1,
+            0
+          ],
+          "population": 0.008507680684600923,
+          "throughput": 0.0008975494388625081
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            1,
+            "missing"
+          ],
+          "population": 0.009159828080457077,
+          "throughput": 0.0009543790856493562
+        },
+        {
+          "pattern": [
+            "missing",
+            0,
+            1,
+            1
+          ],
+          "population": 0.011116270268025545,
+          "throughput": 0.001116722721661543
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            0,
+            0
+          ],
+          "population": 0.008393238210741942,
+          "throughput": 0.0008891632197436166
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            0,
+            "missing"
+          ],
+          "population": 0.009073749073513573,
+          "throughput": 0.0009488073522847076
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            0,
+            1
+          ],
+          "population": 0.011115281661828456,
+          "throughput": 0.001118817949843833
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            "missing",
+            0
+          ],
+          "population": 0.009011273682287664,
+          "throughput": 0.0009425598994103462
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            "missing",
+            "missing"
+          ],
+          "population": 0.009698444045801193,
+          "throughput": 0.0010012413270075317
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            "missing",
+            1
+          ],
+          "population": 0.011759955136341774,
+          "throughput": 0.0011684701367999976
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            1,
+            0
+          ],
+          "population": 0.010247344625379108,
+          "throughput": 0.0010454002543095339
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            1,
+            "missing"
+          ],
+          "population": 0.010947833990376438,
+          "throughput": 0.0011022102546305406
+        },
+        {
+          "pattern": [
+            "missing",
+            "missing",
+            1,
+            1
+          ],
+          "population": 0.013049302085368412,
+          "throughput": 0.0012640357132731798
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            0,
+            0
+          ],
+          "population": 0.011749686532306297,
+          "throughput": 0.0011693712671838748
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            0,
+            "missing"
+          ],
+          "population": 0.012524546002212242,
+          "throughput": 0.0012285424752612318
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            0,
+            1
+          ],
+          "population": 0.014849124411930084,
+          "throughput": 0.0013962567341737578
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            "missing",
+            0
+          ],
+          "population": 0.012408681857182694,
+          "throughput": 0.0012187236337187985
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            "missing",
+            "missing"
+          ],
+          "population": 0.013190979271546544,
+          "throughput": 0.0012768855562404822
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            "missing",
+            1
+          ],
+          "population": 0.015537871514638105,
+          "throughput": 0.0014417293662671708
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            1,
+            0
+          ],
+          "population": 0.013726672506935485,
+          "throughput": 0.0013136357193292325
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            1,
+            "missing"
+          ],
+          "population": 0.014523845810215152,
+          "throughput": 0.001369852444857909
+        },
+        {
+          "pattern": [
+            "missing",
+            1,
+            1,
+            1
+          ],
+          "population": 0.01691536572005415,
+          "throughput": 0.0015291650318624748
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "population": 0.010334563830287124,
+          "throughput": 0.001069935935055674
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            0,
+            "missing"
+          ],
+          "population": 0.011184474207225119,
+          "throughput": 0.0011413894690844464
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "population": 0.013734205338039098,
+          "throughput": 0.0013440071768063841
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            "missing",
+            0
+          ],
+          "population": 0.011179776548415286,
+          "throughput": 0.001139596294090675
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            "missing",
+            "missing"
+          ],
+          "population": 0.01202969591018486,
+          "throughput": 0.0012088687487118203
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            "missing",
+            1
+          ],
+          "population": 0.01457945399549358,
+          "throughput": 0.0014053952634469366
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "population": 0.01287020198467161,
+          "throughput": 0.0012726659877174622
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            1,
+            "missing"
+          ],
+          "population": 0.013720139316104349,
+          "throughput": 0.0013378186023740213
+        },
+        {
+          "pattern": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "population": 0.016269951310402563,
+          "throughput": 0.0015228254979456196
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            0,
+            0
+          ],
+          "population": 0.01254868198252161,
+          "throughput": 0.0012511166363995427
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            0,
+            "missing"
+          ],
+          "population": 0.013430591761683574,
+          "throughput": 0.0013196299510430194
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            0,
+            1
+          ],
+          "population": 0.016076321099169472,
+          "throughput": 0.0015137467390427851
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            "missing",
+            0
+          ],
+          "population": 0.013394024862643916,
+          "throughput": 0.0013152732033968248
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            "missing",
+            "missing"
+          ],
+          "population": 0.014274963405890694,
+          "throughput": 0.001381682604056017
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            "missing",
+            1
+          ],
+          "population": 0.016917779035631023,
+          "throughput": 0.0015699565519719718
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            1,
+            0
+          ],
+          "population": 0.015084710622888537,
+          "throughput": 0.001437954879974235
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            1,
+            "missing"
+          ],
+          "population": 0.015963706694304934,
+          "throughput": 0.001500397710805476
+        },
+        {
+          "pattern": [
+            1,
+            "missing",
+            1,
+            1
+          ],
+          "population": 0.018600694908554125,
+          "throughput": 0.0016776390029066759
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "population": 0.016976918286990578,
+          "throughput": 0.001576043531491985
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            0,
+            "missing"
+          ],
+          "population": 0.01792282687060049,
+          "throughput": 0.0016390879823827498
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "population": 0.020760552621430232,
+          "throughput": 0.0018174408726443609
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            "missing",
+            0
+          ],
+          "population": 0.017822521491101178,
+          "throughput": 0.00163063977556309
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            "missing",
+            "missing"
+          ],
+          "population": 0.01876549839730236,
+          "throughput": 0.0016917535258770319
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            "missing",
+            1
+          ],
+          "population": 0.021594429115905905,
+          "throughput": 0.001864799597699555
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "population": 0.019513727899322392,
+          "throughput": 0.0017352323371040068
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            1,
+            "missing"
+          ],
+          "population": 0.02045084145070611,
+          "throughput": 0.0017927162802924912
+        },
+        {
+          "pattern": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "population": 0.023262182104857254,
+          "throughput": 0.001955764690468014
+        }
+      ],
+      "tie_mismatches": []
+    }
+  ],
+  "offline_ranking_deduction": "Within an invocation, frozenoffline shared intercept and common day>=35 add the same constant to every edge logit. Sigmoid is strictly increasing mathematically, so removing common offsets leaves mathematical edge ranking unchanged. Floating rounding/saturation and zero cutoff are not universal byteequivalence guarantees; executable not changed.",
+  "offline_weights": [
+    -4.4951144034601525,
+    0.06971259815380544,
+    0.08371633600294244,
+    -0.0454263648284883,
+    -0.013228700815476958,
+    -0.04053548205036358
+  ],
+  "scope": "All81discreteobservableequalitypatterns per pre/post35day; exact executed floating calculations, not exact probabilities/optimality",
+  "started_utc": "2026-10-09T12:57:02.878905+00:00"
+}

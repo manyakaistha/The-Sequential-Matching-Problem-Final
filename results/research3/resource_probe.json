@@ -1,0 +1,71 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "-i",
+    "--name",
+    "sequential-dc1c86122c004c88aebf577c3c0ed1bd",
+    "--network=none",
+    "--cpus=2",
+    "--memory=1g",
+    "--memory-swap=1g",
+    "--pids-limit=64",
+    "--read-only",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--user=65534:65534",
+    "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+    "--entrypoint",
+    "python",
+    "sequential-round3:research",
+    "-c",
+    "import os,json,hashlib,socket\nfrom pathlib import Path\nout={'uid':os.getuid(),'gid':os.getgid(),'cgroups':{}}\nfor name in ['cpu.max','memory.max','memory.swap.max','pids.max']:\n p=Path('/sys/fs/cgroup')/name;out['cgroups'][name]=p.read_text().strip() if p.exists() else None\ntry:\n Path('/round3_write_probe').write_text('probe');out['root_write']='unexpectedly succeeded';Path('/round3_write_probe').unlink()\nexcept OSError as e:out['root_write_errno']=e.errno;out['root_write_error']=str(e)\nout['network_interfaces']=os.listdir('/sys/class/net')\ns=socket.socket();s.settimeout(.1)\ntry:s.connect(('1.1.1.1',53));out['egress_connect']='unexpectedly succeeded'\nexcept OSError as e:out['egress_errno']=e.errno;out['egress_error']=str(e)\nfinally:s.close()\nout['source_hashes']={str(p.relative_to('/app')):hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('/app').rglob('*.py')}\nprint(json.dumps(out))"
+  ],
+  "started_utc": "2026-10-09T12:29:26.824021+00:00",
+  "wall_seconds": 1.2923770419997709,
+  "returncode": 0,
+  "stderr": "",
+  "probe": {
+    "uid": 65534,
+    "gid": 65534,
+    "cgroups": {
+      "cpu.max": "200000 100000",
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "pids.max": "64"
+    },
+    "root_write_errno": 30,
+    "root_write_error": "[Errno 30] Read-only file system: '/round3_write_probe'",
+    "network_interfaces": [
+      "gre0",
+      "tunl0",
+      "ip6gre0",
+      "bonding_masters",
+      "gretap0",
+      "erspan0",
+      "ip6_vti0",
+      "lo",
+      "ip6tnl0",
+      "ip_vti0",
+      "sit0"
+    ],
+    "egress_errno": 101,
+    "egress_error": "[Errno 101] Network is unreachable",
+    "source_hashes": {
+      "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+      "research3/__init__.py": "3f013c7dd9e67cff6d5a54f3fe3e23f638557393d1b4fb578f631cf14b7f228d",
+      "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+      "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf"
+    }
+  },
+  "host_source_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research3/__init__.py": "3f013c7dd9e67cff6d5a54f3fe3e23f638557393d1b4fb578f631cf14b7f228d",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf"
+  },
+  "all_app_source_hashes_match": true
+}

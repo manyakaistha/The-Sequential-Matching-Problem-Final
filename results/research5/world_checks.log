@@ -1,0 +1,18 @@
+initial-world audit 600 / 5160
+initial-world audit 1200 / 5160
+initial-world audit 1800 / 5160
+initial-world audit 2400 / 5160
+initial-world audit 3000 / 5160
+initial-world audit 3600 / 5160
+initial-world audit 4200 / 5160
+initial-world audit 4800 / 5160
+{
+  "complete": true,
+  "pass": true,
+  "committed_rows_processed": 5160,
+  "paired_seed_family_cells": 2580,
+  "generator_calls": 2580,
+  "cpu_seconds": 50.868995,
+  "wall_seconds": 57.24522212500051,
+  "failures": []
+}

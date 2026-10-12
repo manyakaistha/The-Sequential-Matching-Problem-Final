@@ -1,0 +1,4358 @@
+{
+  "scope": "OFFLINE prospective validation on identical recorded greedy DEVELOPMENT assignments and histories. No evaluated actions are chosen here; no model/config is modified or trained across episodes.",
+  "models": [
+    "terminal_fifo",
+    "independent_fifo",
+    "simple_fifo",
+    "no_learning_fifo"
+  ],
+  "independent_seed_clusters": 8,
+  "calibration_by_model": {
+    "terminal_fifo": {
+      "both_response": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 1944,
+        "predicted_mean": 0.5780737340238253,
+        "observed_mean": 0.5449957947855341,
+        "log_loss": 0.6848759880525835,
+        "brier": 0.24596490351703382,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.03641244278598498,
+          "sd": 0.04832448656224091,
+          "ci95": [
+            -0.07681272457903222,
+            0.0039878390070622605
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.6851568337575401,
+          "sd": 0.021796649580744374,
+          "ci95": [
+            0.6669343786866063,
+            0.7033792888284739
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.24610174399681178,
+          "sd": 0.010718119020615972,
+          "ci95": [
+            0.23714117225505948,
+            0.2550623157385641
+          ]
+        },
+        "roc_auc": 0.5763762110505111,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.5112373052546596,
+            "observed": 0.4677871148459384,
+            "observed_ci95_seed_bootstrap": [
+              0.3931923983951487,
+              0.5314090129488753
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.38721725019494885,
+              0.5445761621206321
+            ]
+          },
+          {
+            "n": 515,
+            "predicted": 0.5636721668557979,
+            "observed": 0.487378640776699,
+            "observed_ci95_seed_bootstrap": [
+              0.40965433641811155,
+              0.5533006397958528
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.5445761621206321,
+              0.585225
+            ]
+          },
+          {
+            "n": 1212,
+            "predicted": 0.5861075224113111,
+            "observed": 0.5346534653465347,
+            "observed_ci95_seed_bootstrap": [
+              0.4801215900233827,
+              0.5823265743785975
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.585225,
+              0.6006333333333334
+            ]
+          },
+          {
+            "n": 1126,
+            "predicted": 0.618394396285891,
+            "observed": 0.6314387211367674,
+            "observed_ci95_seed_bootstrap": [
+              0.5655395484071726,
+              0.6948598187238254
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.6006333333333334,
+              0.7218139406039609
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.5761772422037593,
+            "observed_mean": 0.528169014084507,
+            "log_loss": 0.6871853254303476,
+            "brier": 0.24712433757383667
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.5853525035532309,
+            "observed_mean": 0.535483870967742,
+            "log_loss": 0.6950344003839606,
+            "brier": 0.2508461044638559
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.5827671180092091,
+            "observed_mean": 0.5621805792163543,
+            "log_loss": 0.6819858425998493,
+            "brier": 0.24449385617810976
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.5780129494147328,
+            "observed_mean": 0.5572065378900446,
+            "log_loss": 0.6839422883769166,
+            "brier": 0.24550106278273076
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.5764890715440468,
+            "observed_mean": 0.551440329218107,
+            "log_loss": 0.6822413202067674,
+            "brier": 0.2446928824694141
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.5761935243540454,
+            "observed_mean": 0.5315568022440392,
+            "log_loss": 0.6863225303702594,
+            "brier": 0.24669868839608244
+          }
+        }
+      },
+      "both_accept_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 515,
+        "predicted_mean": 0.13915626289867516,
+        "observed_mean": 0.1443790299971965,
+        "log_loss": 0.4029661387889944,
+        "brier": 0.12120498664233022,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.005224151526329936,
+          "sd": 0.0342898962317119,
+          "ci95": [
+            -0.023442919123893007,
+            0.03389122217655288
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.40278566709078256,
+          "sd": 0.06846262582828748,
+          "ci95": [
+            0.3455494795486276,
+            0.46002185463293754
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.12120719143367953,
+          "sd": 0.026729273634936455,
+          "ci95": [
+            0.09886095945490722,
+            0.14355342341245184
+          ]
+        },
+        "roc_auc": 0.6057546221481378,
+        "reliability": [
+          {
+            "n": 713,
+            "predicted": 0.08177834890627546,
+            "observed": 0.0729312762973352,
+            "observed_ci95_seed_bootstrap": [
+              0.04122428511452162,
+              0.0955995224784533
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.024560417921018013,
+              0.1099535647721673
+            ]
+          },
+          {
+            "n": 700,
+            "predicted": 0.1234628438749622,
+            "observed": 0.14,
+            "observed_ci95_seed_bootstrap": [
+              0.08645553322519388,
+              0.18489407711479255
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.1099535647721673,
+              0.1327088211320585
+            ]
+          },
+          {
+            "n": 722,
+            "predicted": 0.13858396604865483,
+            "observed": 0.1329639889196676,
+            "observed_ci95_seed_bootstrap": [
+              0.09599806288906919,
+              0.1658696933962264
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.1327088211320585,
+              0.14457117359401347
+            ]
+          },
+          {
+            "n": 717,
+            "predicted": 0.14818472096602625,
+            "observed": 0.1799163179916318,
+            "observed_ci95_seed_bootstrap": [
+              0.11058507473785975,
+              0.24417474136376305
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.14457117359401347,
+              0.15852753189383745
+            ]
+          },
+          {
+            "n": 715,
+            "predicted": 0.20326205294707234,
+            "observed": 0.1958041958041958,
+            "observed_ci95_seed_bootstrap": [
+              0.15445046268543225,
+              0.25404315687299334
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.15852753189383745,
+              0.38796508628395754
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.13931426050127396,
+            "observed_mean": 0.15211267605633802,
+            "log_loss": 0.4171413299708461,
+            "brier": 0.12684748558686512
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.1413330349504771,
+            "observed_mean": 0.13548387096774195,
+            "log_loss": 0.3896399222814476,
+            "brier": 0.11533523819584447
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.13965735466272056,
+            "observed_mean": 0.13458262350936967,
+            "log_loss": 0.38844775545086585,
+            "brier": 0.1148206076564511
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.13909597842641785,
+            "observed_mean": 0.1589895988112927,
+            "log_loss": 0.42779371494518376,
+            "brier": 0.13103395855772423
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.13866150619017223,
+            "observed_mean": 0.13305898491083676,
+            "log_loss": 0.38310623331609217,
+            "brier": 0.11342172539836197
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.13867594068122593,
+            "observed_mean": 0.14446002805049088,
+            "log_loss": 0.40057116147576416,
+            "brier": 0.120798768649468
+          }
+        }
+      },
+      "date_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 422,
+        "predicted_mean": 0.10984610950224784,
+        "observed_mean": 0.11830670030838239,
+        "log_loss": 0.3544898182323681,
+        "brier": 0.10259168638575439,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.008992584065671397,
+          "sd": 0.033115458914785935,
+          "ci95": [
+            -0.018692632416458778,
+            0.03667780054780157
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.35540149358993783,
+          "sd": 0.07566357968477049,
+          "ci95": [
+            0.29214515796807294,
+            0.4186578292118027
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.10300940801918694,
+          "sd": 0.028112746920773337,
+          "ci95": [
+            0.07950656342893919,
+            0.1265122526094347
+          ]
+        },
+        "roc_auc": 0.6141803358976484,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.064148255315098,
+            "observed": 0.049019607843137254,
+            "observed_ci95_seed_bootstrap": [
+              0.027591258704073227,
+              0.07390519909529195
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.017309331795184055,
+              0.08599077914596935
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.09703035051905731,
+            "observed": 0.1093969144460028,
+            "observed_ci95_seed_bootstrap": [
+              0.06998444790046657,
+              0.14765203923593187
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.08599077914596935,
+              0.10422814444287
+            ]
+          },
+          {
+            "n": 663,
+            "predicted": 0.10879372295983952,
+            "observed": 0.12368024132730016,
+            "observed_ci95_seed_bootstrap": [
+              0.09031492529433503,
+              0.15737788263705185
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.10422814444287,
+              0.11276551540333052
+            ]
+          },
+          {
+            "n": 763,
+            "predicted": 0.11704426830995493,
+            "observed": 0.15072083879423329,
+            "observed_ci95_seed_bootstrap": [
+              0.09319121764592729,
+              0.2101421339169318
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.11276551540333052,
+              0.1261457899809353
+            ]
+          },
+          {
+            "n": 714,
+            "predicted": 0.16162683940697625,
+            "observed": 0.1568627450980392,
+            "observed_ci95_seed_bootstrap": [
+              0.12574012996205344,
+              0.19252194542187617
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.1261457899809353,
+              0.32699914415362136
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.11083266907323354,
+            "observed_mean": 0.12816901408450704,
+            "log_loss": 0.37204888500353195,
+            "brier": 0.10972519968985897
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.11004759100043106,
+            "observed_mean": 0.0967741935483871,
+            "log_loss": 0.3151461815391951,
+            "brier": 0.08704776127993054
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.11051547001460965,
+            "observed_mean": 0.11243611584327087,
+            "log_loss": 0.34708272179196115,
+            "brier": 0.0987977606587874
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.10623292883055127,
+            "observed_mean": 0.11441307578008915,
+            "log_loss": 0.34980672893811576,
+            "brier": 0.10015378229496125
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.11114831593722782,
+            "observed_mean": 0.11659807956104253,
+            "log_loss": 0.3498491990515003,
+            "brier": 0.101095350549888
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.11034787745817604,
+            "observed_mean": 0.12342215988779803,
+            "log_loss": 0.3608208453969108,
+            "brier": 0.1058218219042235
+          }
+        }
+      },
+      "both_second_yes_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 92,
+        "predicted_mean": 0.026989716718315467,
+        "observed_mean": 0.02579198205775161,
+        "log_loss": 0.11731560447106691,
+        "brier": 0.025031862144034227,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.0004895801177585272,
+          "sd": 0.009957112027642422,
+          "ci95": [
+            -0.008813934091878427,
+            0.007834773856361374
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.11984410564530569,
+          "sd": 0.03808284015407199,
+          "ci95": [
+            0.08800605452142146,
+            0.15168215676918992
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.025718688008675807,
+          "sd": 0.010014107990739778,
+          "ci95": [
+            0.017346684216958085,
+            0.03409069180039353
+          ]
+        },
+        "roc_auc": 0.6200688145136065,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.01404369587997163,
+            "observed": 0.008403361344537815,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.01556572227626459
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0026090032762556736,
+              0.02004544970170474
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.022787126381023454,
+            "observed": 0.028050490883590462,
+            "observed_ci95_seed_bootstrap": [
+              0.012852236108871035,
+              0.05008924727795802
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.02004544970170474,
+              0.025042415669476504
+            ]
+          },
+          {
+            "n": 712,
+            "predicted": 0.027039811135402454,
+            "observed": 0.019662921348314606,
+            "observed_ci95_seed_bootstrap": [
+              0.00850825102205246,
+              0.031725189501818345
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.025042415669476504,
+              0.028003222563752046
+            ]
+          },
+          {
+            "n": 714,
+            "predicted": 0.02925586592549066,
+            "observed": 0.03081232492997199,
+            "observed_ci95_seed_bootstrap": [
+              0.012697515604274866,
+              0.04878138981093953
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.028003222563752046,
+              0.03188695653918743
+            ]
+          },
+          {
+            "n": 714,
+            "predicted": 0.04181633860932062,
+            "observed": 0.04201680672268908,
+            "observed_ci95_seed_bootstrap": [
+              0.03476237909047534,
+              0.05111932535849617
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.03188695653918743,
+              0.08711739477320249
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.027183980363697288,
+            "observed_mean": 0.029577464788732393,
+            "log_loss": 0.130787783905834,
+            "brier": 0.028620494101447822
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.027348175909742294,
+            "observed_mean": 0.012903225806451613,
+            "log_loss": 0.06834694926685508,
+            "brier": 0.012678076154402019
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.02730163383914826,
+            "observed_mean": 0.02385008517887564,
+            "log_loss": 0.11417309359506976,
+            "brier": 0.023386377319093415
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.026135608164197875,
+            "observed_mean": 0.02526002971768202,
+            "log_loss": 0.11483089753835032,
+            "brier": 0.0244789933107989
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.027183974238875388,
+            "observed_mean": 0.023319615912208505,
+            "log_loss": 0.10678134077750442,
+            "brier": 0.0226084052493036
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.027069124308233918,
+            "observed_mean": 0.029453015427769985,
+            "log_loss": 0.13024861154049727,
+            "brier": 0.028498325723130442
+          }
+        }
+      },
+      "terminal": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 40,
+        "predicted_mean": 0.009692954039075755,
+        "observed_mean": 0.011213905242500702,
+        "log_loss": 0.060438603781122445,
+        "brier": 0.011069004199922418,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.002338656685734339,
+          "sd": 0.008436383590814065,
+          "ci95": [
+            -0.004714336499079807,
+            0.009391649870548486
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.06405804386487965,
+          "sd": 0.0383403931173724,
+          "ci95": [
+            0.03200467307524854,
+            0.09611141465451076
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.011874751248566115,
+          "sd": 0.008344555942632746,
+          "ci95": [
+            0.004898527898815604,
+            0.018850974598316625
+          ]
+        },
+        "roc_auc": 0.6163063510065211,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.005041830979639791,
+            "observed": 0.0028011204481792717,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.008087074030980891
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0009376099550319178,
+              0.007185468518755615
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.008184820297747118,
+            "observed": 0.015427769985974754,
+            "observed_ci95_seed_bootstrap": [
+              0.0026397332380772654,
+              0.035208717156105095
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.007185468518755615,
+              0.008999223611684091
+            ]
+          },
+          {
+            "n": 706,
+            "predicted": 0.009705654203645468,
+            "observed": 0.0056657223796034,
+            "observed_ci95_seed_bootstrap": [
+              0.0017359609284890425,
+              0.008895387093846432
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.008999223611684091,
+              0.010044421201219867
+            ]
+          },
+          {
+            "n": 720,
+            "predicted": 0.010504934476344537,
+            "observed": 0.013888888888888888,
+            "observed_ci95_seed_bootstrap": [
+              0.0038060849798915897,
+              0.025389902706300076
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.010044421201219867,
+              0.011459959601373786
+            ]
+          },
+          {
+            "n": 714,
+            "predicted": 0.015018736939614774,
+            "observed": 0.018207282913165267,
+            "observed_ci95_seed_bootstrap": [
+              0.004895811200258564,
+              0.034165296553403966
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.011459959601373786,
+              0.03136226183729664
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.009775185539121042,
+            "observed_mean": 0.01267605633802817,
+            "log_loss": 0.06651478117857815,
+            "brier": 0.01248600883638445
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.009817882141778162,
+            "observed_mean": 0.0064516129032258064,
+            "log_loss": 0.037271071070773924,
+            "brier": 0.006378146538054343
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.009814699129924088,
+            "observed_mean": 0.01192504258943782,
+            "log_loss": 0.0661328860568407,
+            "brier": 0.011814044169916629
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.00933945233408419,
+            "observed_mean": 0.005943536404160475,
+            "log_loss": 0.037385491734466605,
+            "brier": 0.005938052094080782
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.009774587933162219,
+            "observed_mean": 0.013717421124828532,
+            "log_loss": 0.07046266945226906,
+            "brier": 0.0134887551306043
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.009733883841868593,
+            "observed_mean": 0.012622720897615708,
+            "log_loss": 0.06624721311520002,
+            "brier": 0.01243338501630283
+          }
+        }
+      }
+    },
+    "independent_fifo": {
+      "both_response": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 1944,
+        "predicted_mean": 0.5780737340238253,
+        "observed_mean": 0.5449957947855341,
+        "log_loss": 0.6848759880525835,
+        "brier": 0.24596490351703382,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.03641244278598498,
+          "sd": 0.04832448656224091,
+          "ci95": [
+            -0.07681272457903222,
+            0.0039878390070622605
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.6851568337575401,
+          "sd": 0.021796649580744374,
+          "ci95": [
+            0.6669343786866063,
+            0.7033792888284739
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.24610174399681178,
+          "sd": 0.010718119020615972,
+          "ci95": [
+            0.23714117225505948,
+            0.2550623157385641
+          ]
+        },
+        "roc_auc": 0.5763762110505111,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.5112373052546596,
+            "observed": 0.4677871148459384,
+            "observed_ci95_seed_bootstrap": [
+              0.3931923983951487,
+              0.5314090129488753
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.38721725019494885,
+              0.5445761621206321
+            ]
+          },
+          {
+            "n": 515,
+            "predicted": 0.5636721668557979,
+            "observed": 0.487378640776699,
+            "observed_ci95_seed_bootstrap": [
+              0.40965433641811155,
+              0.5533006397958528
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.5445761621206321,
+              0.585225
+            ]
+          },
+          {
+            "n": 1212,
+            "predicted": 0.5861075224113111,
+            "observed": 0.5346534653465347,
+            "observed_ci95_seed_bootstrap": [
+              0.4801215900233827,
+              0.5823265743785975
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.585225,
+              0.6006333333333334
+            ]
+          },
+          {
+            "n": 1126,
+            "predicted": 0.618394396285891,
+            "observed": 0.6314387211367674,
+            "observed_ci95_seed_bootstrap": [
+              0.5655395484071726,
+              0.6948598187238254
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.6006333333333334,
+              0.7218139406039609
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.5761772422037593,
+            "observed_mean": 0.528169014084507,
+            "log_loss": 0.6871853254303476,
+            "brier": 0.24712433757383667
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.5853525035532309,
+            "observed_mean": 0.535483870967742,
+            "log_loss": 0.6950344003839606,
+            "brier": 0.2508461044638559
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.5827671180092091,
+            "observed_mean": 0.5621805792163543,
+            "log_loss": 0.6819858425998493,
+            "brier": 0.24449385617810976
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.5780129494147328,
+            "observed_mean": 0.5572065378900446,
+            "log_loss": 0.6839422883769166,
+            "brier": 0.24550106278273076
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.5764890715440468,
+            "observed_mean": 0.551440329218107,
+            "log_loss": 0.6822413202067674,
+            "brier": 0.2446928824694141
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.5761935243540454,
+            "observed_mean": 0.5315568022440392,
+            "log_loss": 0.6863225303702594,
+            "brier": 0.24669868839608244
+          }
+        }
+      },
+      "both_accept_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 515,
+        "predicted_mean": 0.1343746920713774,
+        "observed_mean": 0.1443790299971965,
+        "log_loss": 0.40323052140934346,
+        "brier": 0.1212788913038399,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.01000716053140812,
+          "sd": 0.034335989231019215,
+          "ci95": [
+            -0.0186984448305764,
+            0.03871276589339264
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.4030378764488951,
+          "sd": 0.06988182016097885,
+          "ci95": [
+            0.3446152127527518,
+            0.4614605401450384
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.12128307747876732,
+          "sd": 0.027051623580049103,
+          "ci95": [
+            0.09866735420179465,
+            0.14389880075574
+          ]
+        },
+        "roc_auc": 0.6056184707783532,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.07754777774733801,
+            "observed": 0.07282913165266107,
+            "observed_ci95_seed_bootstrap": [
+              0.04133280479210712,
+              0.09538014444571821
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.022249575994647504,
+              0.10522906810621377
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.11887202438785922,
+            "observed": 0.1276297335203366,
+            "observed_ci95_seed_bootstrap": [
+              0.08027876311334893,
+              0.16715564406705474
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.10522906810621377,
+              0.12785873982024498
+            ]
+          },
+          {
+            "n": 705,
+            "predicted": 0.13375153868549658,
+            "observed": 0.15177304964539007,
+            "observed_ci95_seed_bootstrap": [
+              0.11310868718348267,
+              0.18403672059345166
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.12785873982024498,
+              0.1396276687313299
+            ]
+          },
+          {
+            "n": 721,
+            "predicted": 0.14323496825818127,
+            "observed": 0.17337031900138697,
+            "observed_ci95_seed_bootstrap": [
+              0.10361759438590348,
+              0.23962791563605415
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.1396276687313299,
+              0.15333899377168803
+            ]
+          },
+          {
+            "n": 714,
+            "predicted": 0.19835071853086336,
+            "observed": 0.19607843137254902,
+            "observed_ci95_seed_bootstrap": [
+              0.15404237088911435,
+              0.2554399151473455
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.15333899377168803,
+              0.3846183154295188
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.1345404839451132,
+            "observed_mean": 0.15211267605633802,
+            "log_loss": 0.4177366715226442,
+            "brier": 0.12699653621813384
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.13648249369461513,
+            "observed_mean": 0.13548387096774195,
+            "log_loss": 0.3895782477824119,
+            "brier": 0.11531168360294053
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.13484442822792128,
+            "observed_mean": 0.13458262350936967,
+            "log_loss": 0.388335470804656,
+            "brier": 0.11480135414559833
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.13431404844536632,
+            "observed_mean": 0.1589895988112927,
+            "log_loss": 0.4286100230790576,
+            "brier": 0.13123386967730696
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.1339000065186421,
+            "observed_mean": 0.13305898491083676,
+            "log_loss": 0.38294684570130455,
+            "brier": 0.1133928085988996
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.13390723389803094,
+            "observed_mean": 0.14446002805049088,
+            "log_loss": 0.4007992808821699,
+            "brier": 0.12088191719856171
+          }
+        }
+      },
+      "date_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 422,
+        "predicted_mean": 0.1060721033032726,
+        "observed_mean": 0.11830670030838239,
+        "log_loss": 0.35482986121836635,
+        "brier": 0.10267721548965299,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.012767926544228666,
+          "sd": 0.03317766479519005,
+          "ci95": [
+            -0.014969295355367741,
+            0.04050514844382507
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.3557528285647839,
+          "sd": 0.0769675310485212,
+          "ci95": [
+            0.2914063623220358,
+            0.420099294807532
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.10310056454473218,
+          "sd": 0.028361562611538042,
+          "ci95": [
+            0.07938970483137539,
+            0.12681142425808897
+          ]
+        },
+        "roc_auc": 0.6134961836662423,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.060807716371212316,
+            "observed": 0.05042016806722689,
+            "observed_ci95_seed_bootstrap": [
+              0.028373430253058125,
+              0.0750477285124289
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.015842893226228574,
+              0.08257247360394102
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.09329871963599426,
+            "observed": 0.10518934081346423,
+            "observed_ci95_seed_bootstrap": [
+              0.06554446778711485,
+              0.14119859085695557
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.08257247360394102,
+              0.10036250851204864
+            ]
+          },
+          {
+            "n": 699,
+            "predicted": 0.10511379347757563,
+            "observed": 0.1301859799713877,
+            "observed_ci95_seed_bootstrap": [
+              0.09494640122511486,
+              0.17088517862139724
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.10036250851204864,
+              0.10897559495241153
+            ]
+          },
+          {
+            "n": 726,
+            "predicted": 0.11332078339104651,
+            "observed": 0.1487603305785124,
+            "observed_ci95_seed_bootstrap": [
+              0.0938342027879966,
+              0.20448844043754935
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.10897559495241153,
+              0.12215209717493555
+            ]
+          },
+          {
+            "n": 715,
+            "predicted": 0.1575875042105437,
+            "observed": 0.15664335664335666,
+            "observed_ci95_seed_bootstrap": [
+              0.1251716732484359,
+              0.1920245588984528
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.12215209717493555,
+              0.3241782944334516
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.10703236214490906,
+            "observed_mean": 0.12816901408450704,
+            "log_loss": 0.3726813667894764,
+            "brier": 0.10988636575724793
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.10627206681210595,
+            "observed_mean": 0.0967741935483871,
+            "log_loss": 0.31485146821813365,
+            "brier": 0.08698239239787456
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.10670723692220684,
+            "observed_mean": 0.11243611584327087,
+            "log_loss": 0.3472682055311,
+            "brier": 0.09882886305795587
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.10258987246471107,
+            "observed_mean": 0.11441307578008915,
+            "log_loss": 0.3501611407977296,
+            "brier": 0.10021396098870361
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.10732934979058473,
+            "observed_mean": 0.11659807956104253,
+            "log_loss": 0.3500777437807455,
+            "brier": 0.101164992183372
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.1065509351537017,
+            "observed_mean": 0.12342215988779803,
+            "log_loss": 0.36123535392956874,
+            "brier": 0.10594981694274869
+          }
+        }
+      },
+      "both_second_yes_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 92,
+        "predicted_mean": 0.022861442373304768,
+        "observed_mean": 0.02579198205775161,
+        "log_loss": 0.11739778636407258,
+        "brier": 0.02504085360751113,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.003641230582175575,
+          "sd": 0.010012420645103522,
+          "ci95": [
+            -0.004729362553288218,
+            0.01201182371763937
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.12006093907496962,
+          "sd": 0.03987248902208499,
+          "ci95": [
+            0.08672670405505559,
+            0.15339517409488365
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.025735139083389286,
+          "sd": 0.010100569464141658,
+          "ci95": [
+            0.017290851690992662,
+            0.03417942647578591
+          ]
+        },
+        "roc_auc": 0.6183109164842039,
+        "reliability": [
+          {
+            "n": 714,
+            "predicted": 0.011234437171632425,
+            "observed": 0.008403361344537815,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.015287600361178221
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0018889564597782769,
+              0.01669171012577924
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.019005638453099386,
+            "observed": 0.028050490883590462,
+            "observed_ci95_seed_bootstrap": [
+              0.012783185520216329,
+              0.04863029815901285
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.01669171012577924,
+              0.02098433949741056
+            ]
+          },
+          {
+            "n": 643,
+            "predicted": 0.022716998051807498,
+            "observed": 0.024883359253499222,
+            "observed_ci95_seed_bootstrap": [
+              0.014168276519782853,
+              0.03612801928772342
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.02098433949741056,
+              0.02375431533267785
+            ]
+          },
+          {
+            "n": 782,
+            "predicted": 0.02469546599250884,
+            "observed": 0.02557544757033248,
+            "observed_ci95_seed_bootstrap": [
+              0.010835285750146431,
+              0.03986924886247509
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.02375431533267785,
+              0.02717555641629812
+            ]
+          },
+          {
+            "n": 715,
+            "predicted": 0.03644122018813785,
+            "observed": 0.04195804195804196,
+            "observed_ci95_seed_bootstrap": [
+              0.034869348678211884,
+              0.051051545779717114
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.02717555641629812,
+              0.08008719289940357
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.023034905653530738,
+            "observed_mean": 0.029577464788732393,
+            "log_loss": 0.13146168530101213,
+            "brier": 0.028658124407026045
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.0231659228386285,
+            "observed_mean": 0.012903225806451613,
+            "log_loss": 0.0659377353329278,
+            "brier": 0.012593389010991005
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.02311684548465651,
+            "observed_mean": 0.02385008517887564,
+            "log_loss": 0.1141633930144921,
+            "brier": 0.02336509460722206
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.022140364474669678,
+            "observed_mean": 0.02526002971768202,
+            "log_loss": 0.11489350306502998,
+            "brier": 0.0244893528749834
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.023020358068789267,
+            "observed_mean": 0.023319615912208505,
+            "log_loss": 0.10633886166685295,
+            "brier": 0.022604349927071162
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.02293039168091224,
+            "observed_mean": 0.029453015427769985,
+            "log_loss": 0.13091372931685366,
+            "brier": 0.028536136151699927
+          }
+        }
+      },
+      "terminal": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 40,
+        "predicted_mean": 0.00821034417619103,
+        "observed_mean": 0.011213905242500702,
+        "log_loss": 0.060787708327174554,
+        "brier": 0.011076869205471313,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.003822215540643455,
+          "sd": 0.008443219398596508,
+          "ci95": [
+            -0.0032364925224930546,
+            0.010880923603779964
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.06454212156720414,
+          "sd": 0.03975704429655322,
+          "ci95": [
+            0.03130440075312647,
+            0.09777984238128182
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.011885643212274217,
+          "sd": 0.008373640426844192,
+          "ci95": [
+            0.0048851046252281274,
+            0.018886181799320306
+          ]
+        },
+        "roc_auc": 0.6140452225687553,
+        "reliability": [
+          {
+            "n": 713,
+            "predicted": 0.004030328741950583,
+            "observed": 0.002805049088359046,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.008075642202334093
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0006788432952264329,
+              0.005996543620398644
+            ]
+          },
+          {
+            "n": 713,
+            "predicted": 0.0068243862482171205,
+            "observed": 0.015427769985974754,
+            "observed_ci95_seed_bootstrap": [
+              0.0026664893617021276,
+              0.03422132246473963
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.005996543620398644,
+              0.0075505439259271594
+            ]
+          },
+          {
+            "n": 640,
+            "predicted": 0.008155090097971548,
+            "observed": 0.00625,
+            "observed_ci95_seed_bootstrap": [
+              0.0017916380690917411,
+              0.010248901903367497
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0075505439259271594,
+              0.008520388966120571
+            ]
+          },
+          {
+            "n": 787,
+            "predicted": 0.008868608481060664,
+            "observed": 0.012706480304955527,
+            "observed_ci95_seed_bootstrap": [
+              0.003468208092485549,
+              0.02279269202087994
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.008520388966120571,
+              0.009748046479624429
+            ]
+          },
+          {
+            "n": 714,
+            "predicted": 0.013092483685136271,
+            "observed": 0.018207282913165267,
+            "observed_ci95_seed_bootstrap": [
+              0.004931276949291187,
+              0.03405969983966411
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.009748046479624429,
+              0.028831389185409714
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.008283166896789576,
+            "observed_mean": 0.01267605633802817,
+            "log_loss": 0.06705603413309985,
+            "brier": 0.012499222496144992
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.008316409428145747,
+            "observed_mean": 0.0064516129032258064,
+            "log_loss": 0.03665904016698646,
+            "brier": 0.0063726642958600215
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.008310293791994737,
+            "observed_mean": 0.01192504258943782,
+            "log_loss": 0.06672019280056489,
+            "brier": 0.011819771720002035
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.007911915478669962,
+            "observed_mean": 0.005943536404160475,
+            "log_loss": 0.0370019900214763,
+            "brier": 0.005928299771779988
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.008277427430740458,
+            "observed_mean": 0.013717421124828532,
+            "log_loss": 0.07112933913107211,
+            "brier": 0.013507028326162376
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.008245581414214059,
+            "observed_mean": 0.012622720897615708,
+            "log_loss": 0.06678462757042233,
+            "brier": 0.012446572401084759
+          }
+        }
+      }
+    },
+    "simple_fifo": {
+      "both_response": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 1944,
+        "predicted_mean": 0.5795876579267926,
+        "observed_mean": 0.5449957947855341,
+        "log_loss": 0.6949826235343245,
+        "brier": 0.25087636386570544,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.03789739400789577,
+          "sd": 0.046014924015643,
+          "ci95": [
+            -0.07636683319217476,
+            0.0005720451763832207
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.6958051003343908,
+          "sd": 0.021326043218795294,
+          "ci95": [
+            0.6779760820278985,
+            0.7136341186408831
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.25128296253714766,
+          "sd": 0.0105619365798338,
+          "ci95": [
+            0.24245296258348045,
+            0.2601129624908149
+          ]
+        },
+        "roc_auc": 0.48827569354114847,
+        "reliability": [
+          {
+            "n": 370,
+            "predicted": 0.5199565503677036,
+            "observed": 0.6135135135135135,
+            "observed_ci95_seed_bootstrap": [
+              0.5240795284030011,
+              0.7097890199637024
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.41594202898550725,
+              0.585
+            ]
+          },
+          {
+            "n": 3197,
+            "predicted": 0.5864889747228085,
+            "observed": 0.5370659993744135,
+            "observed_ci95_seed_bootstrap": [
+              0.49261744966442955,
+              0.5797266705782458
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.585,
+              0.6678571428571428
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.5783284488729616,
+            "observed_mean": 0.528169014084507,
+            "log_loss": 0.7003602202122198,
+            "brier": 0.2535369905654772
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.5844569892473118,
+            "observed_mean": 0.535483870967742,
+            "log_loss": 0.6943868541866975,
+            "brier": 0.2505827105734767
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.5826524386840436,
+            "observed_mean": 0.5621805792163543,
+            "log_loss": 0.6879872961479465,
+            "brier": 0.24740966466773073
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.578379383635185,
+            "observed_mean": 0.5572065378900446,
+            "log_loss": 0.6909604328547256,
+            "brier": 0.24889818549234616
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.5797142195253081,
+            "observed_mean": 0.551440329218107,
+            "log_loss": 0.695265404839812,
+            "brier": 0.25100028071674696
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.578270927158163,
+            "observed_mean": 0.5315568022440392,
+            "log_loss": 0.6990237098443532,
+            "brier": 0.2528853433797732
+          }
+        }
+      },
+      "both_accept_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 515,
+        "predicted_mean": 0.17714390286285941,
+        "observed_mean": 0.1443790299971965,
+        "log_loss": 0.41877749517443513,
+        "brier": 0.1252221129838281,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.03264518337274734,
+          "sd": 0.03606241219511692,
+          "ci95": [
+            -0.06279411445229952,
+            -0.0024962522931951635
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.4188753683938018,
+          "sd": 0.059194988742866814,
+          "ci95": [
+            0.36938711934912993,
+            0.46836361743847366
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.1252869464761706,
+          "sd": 0.024875230873995777,
+          "ci95": [
+            0.10449073303514082,
+            0.14608315991720042
+          ]
+        },
+        "roc_auc": 0.47814643270686735,
+        "reliability": [
+          {
+            "n": 369,
+            "predicted": 0.13917867064465908,
+            "observed": 0.15718157181571815,
+            "observed_ci95_seed_bootstrap": [
+              0.12337531771177884,
+              0.1850566758929748
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.08571428571428572,
+              0.18
+            ]
+          },
+          {
+            "n": 3198,
+            "predicted": 0.18152450658034405,
+            "observed": 0.14290181363352095,
+            "observed_ci95_seed_bootstrap": [
+              0.1179373877881048,
+              0.17049495060072797
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.18,
+              0.304
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.1773256731292932,
+            "observed_mean": 0.15211267605633802,
+            "log_loss": 0.43272499767471456,
+            "brier": 0.1306898685228099
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.1796344086021505,
+            "observed_mean": 0.13548387096774195,
+            "log_loss": 0.4034532776684681,
+            "brier": 0.11898845878136201
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.17981145198066056,
+            "observed_mean": 0.13458262350936967,
+            "log_loss": 0.4051843124641743,
+            "brier": 0.1194064411430685
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.17713791002825116,
+            "observed_mean": 0.1589895988112927,
+            "log_loss": 0.4399507694257638,
+            "brier": 0.13431625041396966
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.17419673381042997,
+            "observed_mean": 0.13305898491083676,
+            "log_loss": 0.3986155939481764,
+            "brier": 0.11717385113040955
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.17724429950522252,
+            "observed_mean": 0.14446002805049088,
+            "log_loss": 0.42003996026833146,
+            "brier": 0.1255653636709078
+          }
+        }
+      },
+      "date_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 422,
+        "predicted_mean": 0.1380150860548707,
+        "observed_mean": 0.11830670030838239,
+        "log_loss": 0.36633540399585285,
+        "brier": 0.10499665773137398,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.019082340770961305,
+          "sd": 0.03501681821274186,
+          "ci95": [
+            -0.04835713340571781,
+            0.0101924518637952
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.36758600533312025,
+          "sd": 0.06950615259775476,
+          "ci95": [
+            0.30947740757940995,
+            0.42569460308683055
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.10548515615156337,
+          "sd": 0.027257943803799756,
+          "ci95": [
+            0.08269694485097982,
+            0.1282733674521469
+          ]
+        },
+        "roc_auc": 0.48335166780943195,
+        "reliability": [
+          {
+            "n": 357,
+            "predicted": 0.10698696903388885,
+            "observed": 0.12044817927170869,
+            "observed_ci95_seed_bootstrap": [
+              0.08362340204864066,
+              0.16606589977360336
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.04810126582278481,
+              0.13999999999999999
+            ]
+          },
+          {
+            "n": 3210,
+            "predicted": 0.14146587663944718,
+            "observed": 0.11806853582554518,
+            "observed_ci95_seed_bootstrap": [
+              0.09554606416037759,
+              0.14085693842740227
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.13999999999999999,
+              0.24583333333333335
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.1384246391777502,
+            "observed_mean": 0.12816901408450704,
+            "log_loss": 0.3845937908380333,
+            "brier": 0.11214974200212932
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.13976344086021503,
+            "observed_mean": 0.0967741935483871,
+            "log_loss": 0.32622414353890394,
+            "brier": 0.08921584229390682
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.14085149222022775,
+            "observed_mean": 0.11243611584327087,
+            "log_loss": 0.35733560622190547,
+            "brier": 0.10118914572654018
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.13620881736256,
+            "observed_mean": 0.11441307578008915,
+            "log_loss": 0.35971615217056,
+            "brier": 0.10225837502614157
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.13626761484063676,
+            "observed_mean": 0.11659807956104253,
+            "log_loss": 0.36164487876155244,
+            "brier": 0.10340795246165158
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.13838363754710672,
+            "observed_mean": 0.12342215988779803,
+            "log_loss": 0.37532673833023306,
+            "brier": 0.10864795718390931
+          }
+        }
+      },
+      "both_second_yes_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 92,
+        "predicted_mean": 0.031713422635940805,
+        "observed_mean": 0.02579198205775161,
+        "log_loss": 0.1202759537264345,
+        "brier": 0.025173598183784358,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.0052748159961087115,
+          "sd": 0.009723549720395535,
+          "ci95": [
+            -0.013403906994866106,
+            0.0028542750026486832
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.12287998404766157,
+          "sd": 0.03734431999812525,
+          "ci95": [
+            0.09165935122519404,
+            0.1541006168701291
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.025863251030942794,
+          "sd": 0.009985726127942171,
+          "ci95": [
+            0.017514975070318694,
+            0.03421152699156689
+          ]
+        },
+        "roc_auc": 0.5270832030028152,
+        "reliability": [
+          {
+            "n": 406,
+            "predicted": 0.01996941591915071,
+            "observed": 0.012315270935960592,
+            "observed_ci95_seed_bootstrap": [
+              0.0033758861320336733,
+              0.02393656835265639
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.007647058823529412,
+              0.0325
+            ]
+          },
+          {
+            "n": 3161,
+            "predicted": 0.03322182716837257,
+            "observed": 0.027522935779816515,
+            "observed_ci95_seed_bootstrap": [
+              0.021168068211311553,
+              0.033704266625807784
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0325,
+              0.07934782608695652
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.03234432556227419,
+            "observed_mean": 0.029577464788732393,
+            "log_loss": 0.13277266791278206,
+            "brier": 0.02871354791104766
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.032395161290322584,
+            "observed_mean": 0.012903225806451613,
+            "log_loss": 0.07671877436594972,
+            "brier": 0.013114898073476704
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.031338936537352265,
+            "observed_mean": 0.02385008517887564,
+            "log_loss": 0.11587096755524089,
+            "brier": 0.023428839207123957
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.03154220867948155,
+            "observed_mean": 0.02526002971768202,
+            "log_loss": 0.11821577266690463,
+            "brier": 0.024667162936745063
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.03080585231468848,
+            "observed_mean": 0.023319615912208505,
+            "log_loss": 0.11101257675956573,
+            "brier": 0.022813320211134632
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.03233482309545782,
+            "observed_mean": 0.029453015427769985,
+            "log_loss": 0.13234317150058592,
+            "brier": 0.028597695369421815
+          }
+        }
+      },
+      "terminal": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 40,
+        "predicted_mean": 0.011434168079588252,
+        "observed_mean": 0.011213905242500702,
+        "log_loss": 0.06110096357924824,
+        "brier": 0.01107528110085171,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.0005265515816795671,
+          "sd": 0.008064474151978649,
+          "ci95": [
+            -0.0062155175313166056,
+            0.0072686206946757405
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.06478958258911152,
+          "sd": 0.03784034276111198,
+          "ci95": [
+            0.03315426435918252,
+            0.09642490081904052
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.011880250119239202,
+          "sd": 0.008316131609507843,
+          "ci95": [
+            0.0049277901066644815,
+            0.018832710131813923
+          ]
+        },
+        "roc_auc": 0.5453501559398922,
+        "reliability": [
+          {
+            "n": 438,
+            "predicted": 0.006150499877545311,
+            "observed": 0.0045662100456621,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.012226063869680651
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0027529411764705886,
+              0.0117
+            ]
+          },
+          {
+            "n": 3129,
+            "predicted": 0.012173780311130217,
+            "observed": 0.012144455097475231,
+            "observed_ci95_seed_bootstrap": [
+              0.007495357066319123,
+              0.01806037177895581
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0117,
+              0.04380392156862745
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.011632416447158145,
+            "observed_mean": 0.01267605633802817,
+            "log_loss": 0.06639740224074078,
+            "brier": 0.012465260817173604
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.01166225806451613,
+            "observed_mean": 0.0064516129032258064,
+            "log_loss": 0.04035277655466806,
+            "brier": 0.006436774661290319
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.01124387204513303,
+            "observed_mean": 0.01192504258943782,
+            "log_loss": 0.06701789138723385,
+            "brier": 0.011819728835556702
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.010914529773383218,
+            "observed_mean": 0.005943536404160475,
+            "log_loss": 0.03734627703350212,
+            "brier": 0.005931131129518162
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.011629185214623063,
+            "observed_mean": 0.013717421124828532,
+            "log_loss": 0.07256174563183897,
+            "brier": 0.013548070155925275
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.011634929050447143,
+            "observed_mean": 0.012622720897615708,
+            "log_loss": 0.0661700447080157,
+            "brier": 0.012413909135677085
+          }
+        }
+      }
+    },
+    "no_learning_fifo": {
+      "both_response": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 1944,
+        "predicted_mean": 0.5852250000000001,
+        "observed_mean": 0.5449957947855341,
+        "log_loss": 0.6923987217834983,
+        "brier": 0.24959376740380568,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.04367570431309935,
+          "sd": 0.05106618508769805,
+          "ci95": [
+            -0.08636810343423008,
+            -0.0009833051919686114
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.6935852141978374,
+          "sd": 0.01758005428169568,
+          "ci95": [
+            0.6788879210149538,
+            0.708282507380721
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.2501812231751678,
+          "sd": 0.00870423124819813,
+          "ci95": [
+            0.24290430374497105,
+            0.2574581426053645
+          ]
+        },
+        "roc_auc": 0.5,
+        "reliability": [
+          {
+            "n": 3567,
+            "predicted": 0.5852250000000001,
+            "observed": 0.5449957947855341,
+            "observed_ci95_seed_bootstrap": [
+              0.5092135791001915,
+              0.5878772289595834
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.585225,
+              0.585225
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.5852250000000001,
+            "observed_mean": 0.528169014084507,
+            "log_loss": 0.6981915124061427,
+            "brier": 0.25246189217429577
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.5852250000000001,
+            "observed_mean": 0.535483870967742,
+            "log_loss": 0.6956732984285514,
+            "brier": 0.2512150748185484
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.585225,
+            "observed_mean": 0.5621805792163543,
+            "log_loss": 0.6864826847309119,
+            "brier": 0.24666462089757238
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.5852250000000001,
+            "observed_mean": 0.5572065378900446,
+            "log_loss": 0.6881950491138348,
+            "brier": 0.24751244624164193
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.5852250000000001,
+            "observed_mean": 0.551440329218107,
+            "log_loss": 0.6901801251730344,
+            "brier": 0.24849529650977367
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.5852250000000001,
+            "observed_mean": 0.5315568022440392,
+            "log_loss": 0.6970252318305097,
+            "brier": 0.2518844436825035
+          }
+        }
+      },
+      "both_accept_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 515,
+        "predicted_mean": 0.14181169516224693,
+        "observed_mean": 0.1443790299971965,
+        "log_loss": 0.4043029441517661,
+        "brier": 0.12141289092349349,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.002535351658681309,
+          "sd": 0.035325398232586215,
+          "ci95": [
+            -0.026997420328661988,
+            0.032068123646024606
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.4043326520766344,
+          "sd": 0.06581757178828045,
+          "ci95": [
+            0.3493077850507665,
+            0.4593575191025023
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.1214752236357463,
+          "sd": 0.026186033488086184,
+          "ci95": [
+            0.09958315178521,
+            0.14336729548628258
+          ]
+        },
+        "roc_auc": 0.5890391785109875,
+        "reliability": [
+          {
+            "n": 655,
+            "predicted": 0.08851832245618228,
+            "observed": 0.09312977099236641,
+            "observed_ci95_seed_bootstrap": [
+              0.04595879556259905,
+              0.12658227848101267
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.04756786032091367,
+              0.12743541284858703
+            ]
+          },
+          {
+            "n": 749,
+            "predicted": 0.1302143124761021,
+            "observed": 0.11882510013351134,
+            "observed_ci95_seed_bootstrap": [
+              0.09408667894239177,
+              0.13844406246896923
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.12743541284858703,
+              0.13905350544310663
+            ]
+          },
+          {
+            "n": 71,
+            "predicted": 0.1390535054431066,
+            "observed": 0.11267605633802817,
+            "observed_ci95_seed_bootstrap": [
+              0.05,
+              0.17048611111111106
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.13905350544310663,
+              0.14457117359401347
+            ]
+          },
+          {
+            "n": 2092,
+            "predicted": 0.1627435451739361,
+            "observed": 0.17065009560229447,
+            "observed_ci95_seed_bootstrap": [
+              0.13637671874862733,
+              0.20771535863702809
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.14457117359401347,
+              0.326978978949451
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.14208306949926217,
+            "observed_mean": 0.15211267605633802,
+            "log_loss": 0.4183313510713192,
+            "brier": 0.12701471534319328
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.14142405714586892,
+            "observed_mean": 0.13548387096774195,
+            "log_loss": 0.3887757927915889,
+            "brier": 0.11515465197224659
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.14106853712379927,
+            "observed_mean": 0.13458262350936967,
+            "log_loss": 0.389753600275391,
+            "brier": 0.1150924300981715
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.14193927247870386,
+            "observed_mean": 0.1589895988112927,
+            "log_loss": 0.42863658740627414,
+            "brier": 0.13107353152298268
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.1419643348942275,
+            "observed_mean": 0.13305898491083676,
+            "log_loss": 0.38426945660606787,
+            "brier": 0.11363708800509163
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.1419610752228882,
+            "observed_mean": 0.14446002805049088,
+            "log_loss": 0.40320178694826964,
+            "brier": 0.12123027017732114
+          }
+        }
+      },
+      "date_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 422,
+        "predicted_mean": 0.1106131222265526,
+        "observed_mean": 0.11830670030838239,
+        "log_loss": 0.35597832655082123,
+        "brier": 0.1028317985953013,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.008212895921229493,
+          "sd": 0.03475286241318252,
+          "ci95": [
+            -0.020841224142709905,
+            0.03726701598516889
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.3570381038622572,
+          "sd": 0.07407178368746963,
+          "ci95": [
+            0.29511254299710227,
+            0.41896366472741214
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.10328848297381413,
+          "sd": 0.027925626479759626,
+          "ci95": [
+            0.07994207498711842,
+            0.12663489096050984
+          ]
+        },
+        "roc_auc": 0.6042484497321409,
+        "reliability": [
+          {
+            "n": 655,
+            "predicted": 0.06904429151582218,
+            "observed": 0.07022900763358779,
+            "observed_ci95_seed_bootstrap": [
+              0.038834951456310676,
+              0.09495369357543935
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.03710293105031266,
+              0.09939962202189788
+            ]
+          },
+          {
+            "n": 749,
+            "predicted": 0.10156716373135963,
+            "observed": 0.08811748998664887,
+            "observed_ci95_seed_bootstrap": [
+              0.06432588131771434,
+              0.10567563862913233
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.09939962202189788,
+              0.10846173424562316
+            ]
+          },
+          {
+            "n": 71,
+            "predicted": 0.10846173424562318,
+            "observed": 0.07042253521126761,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.11766042780748662
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.10846173424562316,
+              0.11276551540333052
+            ]
+          },
+          {
+            "n": 2092,
+            "predicted": 0.12693996523567017,
+            "observed": 0.14579349904397707,
+            "observed_ci95_seed_bootstrap": [
+              0.1152809114376893,
+              0.1808300395256917
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.11276551540333052,
+              0.25504360358057176
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.1108247942094245,
+            "observed_mean": 0.12816901408450704,
+            "log_loss": 0.37474347655551304,
+            "brier": 0.11018878095907632
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.11031076457377775,
+            "observed_mean": 0.0967741935483871,
+            "log_loss": 0.31475346550550337,
+            "brier": 0.08697615548275646
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.11003345895656344,
+            "observed_mean": 0.11243611584327087,
+            "log_loss": 0.3478204503974476,
+            "brier": 0.09891307490492629
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.110712632533389,
+            "observed_mean": 0.11441307578008915,
+            "log_loss": 0.3490593359701195,
+            "brier": 0.09993918981318384
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.11073218121749744,
+            "observed_mean": 0.11659807956104253,
+            "log_loss": 0.3515163974391597,
+            "brier": 0.1014210699062336
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.1107296386738528,
+            "observed_mean": 0.12342215988779803,
+            "log_loss": 0.3640631754202978,
+            "brier": 0.10635158111298677
+          }
+        }
+      },
+      "both_second_yes_unconditional": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 92,
+        "predicted_mean": 0.027453110169196805,
+        "observed_mean": 0.02579198205775161,
+        "log_loss": 0.11780168871459808,
+        "brier": 0.02504619580187495,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": -0.0009630923864892454,
+          "sd": 0.010231356915628783,
+          "ci95": [
+            -0.00951672082461574,
+            0.0075905360516372485
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.12047556074026151,
+          "sd": 0.03778967115414224,
+          "ci95": [
+            0.08888260503389181,
+            0.15206851644663122
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.025741101649263062,
+          "sd": 0.010002010775322001,
+          "ci95": [
+            0.017379211382728063,
+            0.03410299191579806
+          ]
+        },
+        "roc_auc": 0.595559899906162,
+        "reliability": [
+          {
+            "n": 692,
+            "predicted": 0.016151219107644894,
+            "observed": 0.01300578034682081,
+            "observed_ci95_seed_bootstrap": [
+              0.003826165949225942,
+              0.025738883757751675
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.008158999734845143,
+              0.022592571277780107
+            ]
+          },
+          {
+            "n": 721,
+            "predicted": 0.024951743925062504,
+            "observed": 0.016643550624133148,
+            "observed_ci95_seed_bootstrap": [
+              0.004469621978494718,
+              0.02976210612797216
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.022592571277780107,
+              0.027996166708130047
+            ]
+          },
+          {
+            "n": 1402,
+            "predicted": 0.027996166708130047,
+            "observed": 0.033523537803138374,
+            "observed_ci95_seed_bootstrap": [
+              0.02046221322537112,
+              0.04796829268292683
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.027996166708130047,
+              0.02865849346856028
+            ]
+          },
+          {
+            "n": 752,
+            "predicted": 0.03923905220248183,
+            "observed": 0.031914893617021274,
+            "observed_ci95_seed_bootstrap": [
+              0.02608363757052771,
+              0.0389273626659724
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.02865849346856028,
+              0.06604534294331192
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.027495237882197078,
+            "observed_mean": 0.029577464788732393,
+            "log_loss": 0.1312102486003823,
+            "brier": 0.028632244279964657
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.02738557809373337,
+            "observed_mean": 0.012903225806451613,
+            "log_loss": 0.06831035427413931,
+            "brier": 0.01266736249146915
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.027355975957724946,
+            "observed_mean": 0.02385008517887564,
+            "log_loss": 0.11330998082845606,
+            "brier": 0.02332736860863877
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.027464571903702946,
+            "observed_mean": 0.02526002971768202,
+            "log_loss": 0.115206877683863,
+            "brier": 0.02447986370263642
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.027478756028561774,
+            "observed_mean": 0.023319615912208505,
+            "log_loss": 0.10861514318101508,
+            "brier": 0.022700975075574854
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.027468769354050824,
+            "observed_mean": 0.029453015427769985,
+            "log_loss": 0.13074840872328872,
+            "brier": 0.028513774649503495
+          }
+        }
+      },
+      "terminal": {
+        "n_seed_clusters": 8,
+        "n": 3567,
+        "events": 40,
+        "predicted_mean": 0.009847102460980415,
+        "observed_mean": 0.011213905242500702,
+        "log_loss": 0.06070408648840482,
+        "brier": 0.011074195656467003,
+        "signed_observed_minus_predicted_by_seed": {
+          "n": 8,
+          "mean": 0.002181139863755266,
+          "sd": 0.008381643383127666,
+          "ci95": [
+            -0.0048260893621786954,
+            0.009188369089689228
+          ]
+        },
+        "log_loss_by_seed": {
+          "n": 8,
+          "mean": 0.06443555197776957,
+          "sd": 0.038527951000615374,
+          "ci95": [
+            0.03222537887373075,
+            0.09664572508180838
+          ]
+        },
+        "brier_by_seed": {
+          "n": 8,
+          "mean": 0.011882119321068451,
+          "sd": 0.008350164148565483,
+          "ci95": [
+            0.004901207393825364,
+            0.01886303124831154
+          ]
+        },
+        "roc_auc": 0.5755989509498157,
+        "reliability": [
+          {
+            "n": 692,
+            "predicted": 0.005793249232692569,
+            "observed": 0.004335260115606936,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.016252953121681877
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.0029265356774868744,
+              0.008103685260365267
+            ]
+          },
+          {
+            "n": 721,
+            "predicted": 0.008949892288922564,
+            "observed": 0.009708737864077669,
+            "observed_ci95_seed_bootstrap": [
+              0.0,
+              0.02088088587390263
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.008103685260365267,
+              0.010041890350149386
+            ]
+          },
+          {
+            "n": 1402,
+            "predicted": 0.010041890350149385,
+            "observed": 0.015691868758915834,
+            "observed_ci95_seed_bootstrap": [
+              0.007972965236523879,
+              0.023443373120601404
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.010041890350149386,
+              0.010279459042090296
+            ]
+          },
+          {
+            "n": 752,
+            "predicted": 0.014074578986796909,
+            "observed": 0.010638297872340425,
+            "observed_ci95_seed_bootstrap": [
+              0.0011573405824993584,
+              0.025042076357516162
+            ],
+            "uncertainty_note": null,
+            "supporting_seed_clusters": 8,
+            "range": [
+              0.010279459042090296,
+              0.02368967505048299
+            ]
+          }
+        ],
+        "scenario": {
+          "development": {
+            "n": 710,
+            "predicted_mean": 0.009862213168066201,
+            "observed_mean": 0.01267605633802817,
+            "log_loss": 0.06695293016618599,
+            "brier": 0.012494482906941362
+          },
+          "sparse": {
+            "n": 155,
+            "predicted_mean": 0.009822879512746402,
+            "observed_mean": 0.0064516129032258064,
+            "log_loss": 0.03727567131864851,
+            "brier": 0.006377369054055502
+          },
+          "cold_start": {
+            "n": 587,
+            "predicted_mean": 0.009812261580404954,
+            "observed_mean": 0.01192504258943782,
+            "log_loss": 0.06517770175695058,
+            "brier": 0.011796028540969969
+          },
+          "delayed": {
+            "n": 673,
+            "predicted_mean": 0.009851213648141614,
+            "observed_mean": 0.005943536404160475,
+            "log_loss": 0.037455826050138384,
+            "brier": 0.0059370789395227965
+          },
+          "shift": {
+            "n": 729,
+            "predicted_mean": 0.009856301324180626,
+            "observed_mean": 0.013717421124828532,
+            "log_loss": 0.07159203693232649,
+            "brier": 0.013512882562139797
+          },
+          "drift": {
+            "n": 713,
+            "predicted_mean": 0.009852719223407792,
+            "observed_mean": 0.012622720897615708,
+            "log_loss": 0.06670335237730472,
+            "brier": 0.012442169104716284
+          }
+        }
+      }
+    }
+  },
+  "conditional_calibration_by_model": {
+    "terminal_fifo": {
+      "directional_response": {
+        "n": 7134,
+        "events": 5241,
+        "mean_predicted": 0.7603262250692123,
+        "mean_observed": 0.7346509671993272,
+        "log_loss": 0.5744260405066941,
+        "brier": 0.19343200899982102,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_acceptance_given_response": {
+        "n": 5241,
+        "events": 2511,
+        "mean_predicted": 0.4619830243651677,
+        "mean_observed": 0.47910704064109905,
+        "log_loss": 0.675677052771455,
+        "brier": 0.24159620024596168,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "mutual_acceptance_given_both_response": {
+        "n": 1944,
+        "events": 515,
+        "mean_predicted": 0.241372666855077,
+        "mean_observed": 0.264917695473251,
+        "log_loss": 0.5607306965711747,
+        "brier": 0.18820531035910507,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "date_given_mutual_acceptance": {
+        "n": 515,
+        "events": 422,
+        "mean_predicted": 0.7907569840623409,
+        "mean_observed": 0.8194174757281554,
+        "log_loss": 0.4771217176260839,
+        "brier": 0.14951144099243702,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "both_positive_seconds_given_date": {
+        "n": 422,
+        "events": 92,
+        "mean_predicted": 0.24807124429852082,
+        "mean_observed": 0.21800947867298578,
+        "log_loss": 0.5247778974729571,
+        "brier": 0.17071371092841542,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_second_yes_given_response_and_date": {
+        "n": 656,
+        "events": 397,
+        "mean_predicted": 0.628443003313765,
+        "mean_observed": 0.6051829268292683,
+        "log_loss": 0.6702511601149437,
+        "brier": 0.2386228934023361,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "qualified_given_both_positive_seconds": {
+        "n": 92,
+        "events": 40,
+        "mean_predicted": 0.3591459212336308,
+        "mean_observed": 0.43478260869565216,
+        "log_loss": 0.6962982160233796,
+        "brier": 0.2512718973699919,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      }
+    },
+    "independent_fifo": {
+      "directional_response": {
+        "n": 7134,
+        "events": 5241,
+        "mean_predicted": 0.7603262250692123,
+        "mean_observed": 0.7346509671993272,
+        "log_loss": 0.5744260405066941,
+        "brier": 0.19343200899982102,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_acceptance_given_response": {
+        "n": 5241,
+        "events": 2511,
+        "mean_predicted": 0.4619821860601623,
+        "mean_observed": 0.47910704064109905,
+        "log_loss": 0.6756770976374851,
+        "brier": 0.24159621770829606,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "mutual_acceptance_given_both_response": {
+        "n": 1944,
+        "events": 515,
+        "mean_predicted": 0.23310720077324654,
+        "mean_observed": 0.264917695473251,
+        "log_loss": 0.5619587187032287,
+        "brier": 0.18866649840786112,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "date_given_mutual_acceptance": {
+        "n": 515,
+        "events": 422,
+        "mean_predicted": 0.7907569840623409,
+        "mean_observed": 0.8194174757281554,
+        "log_loss": 0.4771217176260839,
+        "brier": 0.14951144099243702,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "both_positive_seconds_given_date": {
+        "n": 422,
+        "events": 92,
+        "mean_predicted": 0.2178055358460614,
+        "mean_observed": 0.21800947867298578,
+        "log_loss": 0.5220819580243475,
+        "brier": 0.16979387604454915,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_second_yes_given_response_and_date": {
+        "n": 656,
+        "events": 397,
+        "mean_predicted": 0.594762748747131,
+        "mean_observed": 0.6051829268292683,
+        "log_loss": 0.6685316562540924,
+        "brier": 0.2377977359798999,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "qualified_given_both_positive_seconds": {
+        "n": 92,
+        "events": 40,
+        "mean_predicted": 0.3591459212336308,
+        "mean_observed": 0.43478260869565216,
+        "log_loss": 0.6962982160233796,
+        "brier": 0.2512718973699919,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      }
+    },
+    "simple_fifo": {
+      "directional_response": {
+        "n": 7134,
+        "events": 5241,
+        "mean_predicted": 0.7603262250692123,
+        "mean_observed": 0.7346509671993272,
+        "log_loss": 0.5744260405066941,
+        "brier": 0.19343200899982102,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_acceptance_given_response": {
+        "n": 5241,
+        "events": 2511,
+        "mean_predicted": 0.4619830243651677,
+        "mean_observed": 0.47910704064109905,
+        "log_loss": 0.675677052771455,
+        "brier": 0.24159620024596168,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "mutual_acceptance_given_both_response": {
+        "n": 1944,
+        "events": 515,
+        "mean_predicted": 0.241372666855077,
+        "mean_observed": 0.264917695473251,
+        "log_loss": 0.5607306965711747,
+        "brier": 0.18820531035910507,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "date_given_mutual_acceptance": {
+        "n": 515,
+        "events": 422,
+        "mean_predicted": 0.7907569840623409,
+        "mean_observed": 0.8194174757281554,
+        "log_loss": 0.4771217176260839,
+        "brier": 0.14951144099243702,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "both_positive_seconds_given_date": {
+        "n": 422,
+        "events": 92,
+        "mean_predicted": 0.2316676181751811,
+        "mean_observed": 0.21800947867298578,
+        "log_loss": 0.5286532318262347,
+        "brier": 0.17226042021442295,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_second_yes_given_response_and_date": {
+        "n": 656,
+        "events": 397,
+        "mean_predicted": 0.628443003313765,
+        "mean_observed": 0.6051829268292683,
+        "log_loss": 0.6702511601149437,
+        "brier": 0.2386228934023361,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "qualified_given_both_positive_seconds": {
+        "n": 92,
+        "events": 40,
+        "mean_predicted": 0.3591459212336308,
+        "mean_observed": 0.43478260869565216,
+        "log_loss": 0.6962982160233796,
+        "brier": 0.2512718973699919,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      }
+    },
+    "no_learning_fifo": {
+      "directional_response": {
+        "n": 7134,
+        "events": 5241,
+        "mean_predicted": 0.7650000000000001,
+        "mean_observed": 0.7346509671993272,
+        "log_loss": 0.5810683399073169,
+        "brier": 0.19585998738435662,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_acceptance_given_response": {
+        "n": 5241,
+        "events": 2511,
+        "mean_predicted": 0.46400690466010186,
+        "mean_observed": 0.47910704064109905,
+        "log_loss": 0.6788996517813851,
+        "brier": 0.2431093981769146,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "mutual_acceptance_given_both_response": {
+        "n": 1944,
+        "events": 515,
+        "mean_predicted": 0.243194291307588,
+        "mean_observed": 0.264917695473251,
+        "log_loss": 0.5622831630893331,
+        "brier": 0.1886080282853855,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "date_given_mutual_acceptance": {
+        "n": 515,
+        "events": 422,
+        "mean_predicted": 0.78,
+        "mean_observed": 0.8194174757281554,
+        "log_loss": 0.4770185878806523,
+        "brier": 0.149526213592233,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "both_positive_seconds_given_date": {
+        "n": 422,
+        "events": 92,
+        "mean_predicted": 0.24940080803831063,
+        "mean_observed": 0.21800947867298578,
+        "log_loss": 0.5257586792578851,
+        "brier": 0.17104490764689542,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "directional_second_yes_given_response_and_date": {
+        "n": 656,
+        "events": 397,
+        "mean_predicted": 0.6281758343631418,
+        "mean_observed": 0.6051829268292683,
+        "log_loss": 0.6711404718623308,
+        "brier": 0.23904036729233166,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      },
+      "qualified_given_both_positive_seconds": {
+        "n": 92,
+        "events": 40,
+        "mean_predicted": 0.3586880466472304,
+        "mean_observed": 0.43478260869565216,
+        "log_loss": 0.6968753369420272,
+        "brier": 0.25153707424479665,
+        "note": "Selected stage-eligible assignments, not unconditional population probability."
+      }
+    }
+  },
+  "paired_proper_loss_comparisons": [
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_response",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "paired_t_p": 1.0,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_response",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "paired_t_p": 1.0,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_accept_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.00021804519097620018,
+        "sd": 0.0014500321694206632,
+        "ci95": [
+          -0.000994212039695592,
+          0.0014303024216479924
+        ]
+      },
+      "paired_t_p": 0.6833745332840747,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.7121440226029452
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_accept_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 6.233441019131217e-05,
+        "sd": 0.00033944581911068126,
+        "ci95": [
+          -0.00022144939634495179,
+          0.0003461182167275761
+        ]
+      },
+      "paired_t_p": 0.6194954000850121,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "date_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.000250242920317046,
+        "sd": 0.0012617149506864596,
+        "ci95": [
+          -0.0008045771755898334,
+          0.0013050630162239254
+        ]
+      },
+      "paired_t_p": 0.5923080482249905,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.5940817844751533
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "date_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 6.523811595283719e-05,
+        "sd": 0.00024552872915769897,
+        "ci95": [
+          -0.00014002903848415405,
+          0.00027050527038982846
+        ]
+      },
+      "paired_t_p": 0.4768378420642257,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.7955895206033254
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_second_yes_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": -8.012860450653386e-05,
+        "sd": 0.0015780284066673133,
+        "ci95": [
+          -0.0013993933674064057,
+          0.001239136158393338
+        ]
+      },
+      "paired_t_p": 0.8898469070085722,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.8898469070085722
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_second_yes_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 2.6337472135153864e-06,
+        "sd": 8.154972166346561e-05,
+        "ci95": [
+          -6.554352625022155e-05,
+          7.081102067725232e-05
+        ]
+      },
+      "paired_t_p": 0.9297755903310959,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "terminal",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.00034483047751550475,
+        "sd": 0.0012650410251443189,
+        "ci95": [
+          -0.0007127702862250434,
+          0.0014024312412560529
+        ]
+      },
+      "paired_t_p": 0.46593779436159,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "independent_fifo",
+      "reference": "terminal_fifo",
+      "stage": "terminal",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 8.186071674042568e-06,
+        "sd": 2.605716270789383e-05,
+        "ci95": [
+          -1.3598261508066172e-05,
+          2.997040485615131e-05
+        ]
+      },
+      "paired_t_p": 0.40373120154473163,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_response",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.009087856629196658,
+        "sd": 0.004723552609396324,
+        "ci95": [
+          0.0051388678233227165,
+          0.0130368454350706
+        ]
+      },
+      "paired_t_p": 0.0009644550413498776,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.02893365124049633,
+      "holm_three_models_within_stage_metric_p": 0.0028933651240496327
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_response",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.004426645932635819,
+        "sd": 0.002323482089664611,
+        "ci95": [
+          0.002484166294644284,
+          0.006369125570627354
+        ]
+      },
+      "paired_t_p": 0.0010208339446702147,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.029604184395436228,
+      "holm_three_models_within_stage_metric_p": 0.003062501834010644
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_accept_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.015460835914534843,
+        "sd": 0.012411698539866055,
+        "ci95": [
+          0.005084396262245883,
+          0.025837275566823803
+        ]
+      },
+      "paired_t_p": 0.009684903751080793,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.24212259377701983,
+      "holm_three_models_within_stage_metric_p": 0.02905471125324238
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_accept_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.003943092973106117,
+        "sd": 0.003236035374881339,
+        "ci95": [
+          0.001237699696571472,
+          0.0066484862496407615
+        ]
+      },
+      "paired_t_p": 0.01074323443711142,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.2578376264906741,
+      "holm_three_models_within_stage_metric_p": 0.03222970331133426
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "date_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.011917881521155832,
+        "sd": 0.008347311418694162,
+        "ci95": [
+          0.004939354535768927,
+          0.018896408506542738
+        ]
+      },
+      "paired_t_p": 0.0049435714050004445,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.133476427935012,
+      "holm_three_models_within_stage_metric_p": 0.014830714215001334
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "date_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.002414898374852548,
+        "sd": 0.0016156688515597574,
+        "ci95": [
+          0.0010641654125231425,
+          0.003765631337181953
+        ]
+      },
+      "paired_t_p": 0.003899815830016434,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.10919484324046015,
+      "holm_three_models_within_stage_metric_p": 0.011699447490049301
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_second_yes_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0033896215264650163,
+        "sd": 0.0025209746630151923,
+        "ci95": [
+          0.0012820339652859047,
+          0.0054972090876441275
+        ]
+      },
+      "paired_t_p": 0.006688485226272211,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.17390061588307748,
+      "holm_three_models_within_stage_metric_p": 0.020065455678816634
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_second_yes_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.0001629222739246046,
+        "sd": 0.000166862941730603,
+        "ci95": [
+          2.3421363593141087e-05,
+          0.0003024231842560681
+        ]
+      },
+      "paired_t_p": 0.028030041846845353,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.6446909624774431,
+      "holm_three_models_within_stage_metric_p": 0.08409012554053606
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "terminal",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0008238940796616919,
+        "sd": 0.0025466982512426465,
+        "ci95": [
+          -0.001305198939454959,
+          0.002952987098778343
+        ]
+      },
+      "paired_t_p": 0.3906031709081736,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "simple_fifo",
+      "reference": "terminal_fifo",
+      "stage": "terminal",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 7.914620234542817e-06,
+        "sd": 8.115186579670065e-05,
+        "ci95": [
+          -5.9930037400785496e-05,
+          7.575927786987113e-05
+        ]
+      },
+      "paired_t_p": 0.7906276233875341,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_response",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0075961789272556285,
+        "sd": 0.007989869387272523,
+        "ci95": [
+          0.0009164809584070377,
+          0.014275876896104218
+        ]
+      },
+      "paired_t_p": 0.031128079980698716,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.6848177595753717,
+      "holm_three_models_within_stage_metric_p": 0.06225615996139743
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_response",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.00368523186059359,
+        "sd": 0.003930061256531913,
+        "ci95": [
+          0.000399618426846559,
+          0.006970845294340621
+        ]
+      },
+      "paired_t_p": 0.03283544364876657,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 0.6895443166240979,
+      "holm_three_models_within_stage_metric_p": 0.06567088729753313
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_accept_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0013462187615667295,
+        "sd": 0.0038539853526766282,
+        "ci95": [
+          -0.0018757936249253924,
+          0.0045682311480588515
+        ]
+      },
+      "paired_t_p": 0.3560720113014726,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.7121440226029452
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_accept_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.0002391553107138917,
+        "sd": 0.0009692252239821912,
+        "ci95": [
+          -0.000571137254306463,
+          0.0010494478757342464
+        ]
+      },
+      "paired_t_p": 0.5077453662484654,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "date_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0013605781716055886,
+        "sd": 0.0034158097595292708,
+        "ci95": [
+          -0.0014951102516678346,
+          0.004216266594879012
+        ]
+      },
+      "paired_t_p": 0.2970408922375766,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.5940817844751533
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "date_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 0.000231810535892496,
+        "sd": 0.0007281376916504589,
+        "ci95": [
+          -0.0003769278081544511,
+          0.0008405488799394431
+        ]
+      },
+      "paired_t_p": 0.3977947603016627,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.7955895206033254
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_second_yes_unconditional",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.0005393108535863434,
+        "sd": 0.001504250019314436,
+        "ci95": [
+          -0.0007182736339224223,
+          0.0017968953410951091
+        ]
+      },
+      "paired_t_p": 0.34431474790198235,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 0.6886294958039647
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "both_second_yes_unconditional",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 1.770326918969613e-05,
+        "sd": 8.849070491909562e-05,
+        "ci95": [
+          -5.6276811492429e-05,
+          9.168334987182126e-05
+        ]
+      },
+      "paired_t_p": 0.5891666810114901,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "terminal",
+      "metric": "log_loss",
+      "difference": {
+        "n": 8,
+        "mean": 0.00027428694450360694,
+        "sd": 0.0008253314002025359,
+        "ci95": [
+          -0.00041570737334365707,
+          0.000964281262350871
+        ]
+      },
+      "paired_t_p": 0.3785199864921503,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    },
+    {
+      "model": "no_learning_fifo",
+      "reference": "terminal_fifo",
+      "stage": "terminal",
+      "metric": "brier",
+      "difference": {
+        "n": 8,
+        "mean": 5.393890955296769e-06,
+        "sd": 1.5240345486555781e-05,
+        "ci95": [
+          -7.347356724328803e-06,
+          1.813513863492234e-05
+        ]
+      },
+      "paired_t_p": 0.3501465551625285,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "interpretation": "Negative loss difference favors this model on the identical greedy-selected prospective cohort.",
+      "holm_all_30_exploratory_p": 1.0,
+      "holm_three_models_within_stage_metric_p": 1.0
+    }
+  ],
+  "comparison_weighting": "Within each seed, equally average six family mean assignment losses; pair those seed values across models.",
+  "caveats": [
+    "This establishes predictive performance on greedy-selected contexts, not terminal reward superiority when models allocate different pairs.",
+    "Model memories learn only from observation histories visible at each replayed action time. Assignment snapshots precede all outcomes for that introduction.",
+    "Eight development seed clusters and rare terminal labels provide exploratory evidence only. All30 stage/metric/model comparisons receive global Holm adjustment; within-stage3 adjustment also recorded.",
+    "Simple directional conditional fields are auxiliary parametric diagnostics; primary joint predictions are direct mature empirical counts."
+  ],
+  "family_balanced_cluster_loss_summaries": {
+    "terminal_fifo": {
+      "both_response": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.6872735186894212,
+          "sd": 0.020453884042234683,
+          "ci95": [
+            0.6701736437015249,
+            0.7043733936773175
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.24713196436294502,
+          "sd": 0.010068392597023457,
+          "ci95": [
+            0.2387145775046517,
+            0.25554935122123834
+          ]
+        }
+      },
+      "both_accept_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.4013418790180826,
+          "sd": 0.06861027904279314,
+          "ci95": [
+            0.343982250299455,
+            0.4587015077367102
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.12048837939143117,
+          "sd": 0.02704049322767493,
+          "ci95": [
+            0.0978819613219084,
+            0.14309479746095394
+          ]
+        }
+      },
+      "date_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.349150518338383,
+          "sd": 0.07192944109556257,
+          "ci95": [
+            0.2890160007013608,
+            0.4092850359754052
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.10048249587111173,
+          "sd": 0.026877864350783636,
+          "ci95": [
+            0.07801203894513123,
+            0.12295295279709223
+          ]
+        }
+      },
+      "both_second_yes_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.11377763386804016,
+          "sd": 0.0339668297032075,
+          "ci95": [
+            0.08538065359472517,
+            0.14217461414135513
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.024116645122596425,
+          "sd": 0.009038061452080718,
+          "ci95": [
+            0.016560636657681937,
+            0.03167265358751091
+          ]
+        }
+      },
+      "terminal": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.060450603098354455,
+          "sd": 0.034261689941573935,
+          "ci95": [
+            0.03180711349680841,
+            0.0890940926999005
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.011092223061183137,
+          "sd": 0.0074484542234133045,
+          "ci95": [
+            0.0048651594966084314,
+            0.01731928662575784
+          ]
+        }
+      }
+    },
+    "independent_fifo": {
+      "both_response": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.6872735186894212,
+          "sd": 0.020453884042234683,
+          "ci95": [
+            0.6701736437015249,
+            0.7043733936773175
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.24713196436294502,
+          "sd": 0.010068392597023457,
+          "ci95": [
+            0.2387145775046517,
+            0.25554935122123834
+          ]
+        }
+      },
+      "both_accept_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.4015599242090588,
+          "sd": 0.07004415454184608,
+          "ci95": [
+            0.3430015455742107,
+            0.46011830284390687
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.12055071380162247,
+          "sd": 0.027377809110760563,
+          "ci95": [
+            0.09766229259664211,
+            0.14343913500660282
+          ]
+        }
+      },
+      "date_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.34940076125870007,
+          "sd": 0.07318193175224601,
+          "ci95": [
+            0.28821913522854475,
+            0.4105823872888554
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.10054773398706457,
+          "sd": 0.027122276305344254,
+          "ci95": [
+            0.07787294355357499,
+            0.12322252442055415
+          ]
+        }
+      },
+      "both_second_yes_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.11369750526353362,
+          "sd": 0.03553591193545665,
+          "ci95": [
+            0.08398873941630089,
+            0.14340627111076634
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.02411927886980994,
+          "sd": 0.0091181645072952,
+          "ci95": [
+            0.016496302574849686,
+            0.031742255164770194
+          ]
+        }
+      },
+      "terminal": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.060795433575869966,
+          "sd": 0.03552242343472756,
+          "ci95": [
+            0.031097944397448184,
+            0.09049292275429174
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.011100409132857179,
+          "sd": 0.007474232847654563,
+          "ci95": [
+            0.004851794099085951,
+            0.017349024166628407
+          ]
+        }
+      }
+    },
+    "simple_fifo": {
+      "both_response": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.6963613753186179,
+          "sd": 0.020572591637026277,
+          "ci95": [
+            0.6791622582979194,
+            0.7135604923393163
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.2515586102955808,
+          "sd": 0.010187821740946094,
+          "ci95": [
+            0.24304137817431584,
+            0.2600758424168458
+          ]
+        }
+      },
+      "both_accept_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.41680271493261745,
+          "sd": 0.06106206574859725,
+          "ci95": [
+            0.36575355044886115,
+            0.46785187941637374
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.12443147236453728,
+          "sd": 0.02567272330502642,
+          "ci95": [
+            0.10296853856632453,
+            0.14589440616275
+          ]
+        }
+      },
+      "date_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.36106839985953887,
+          "sd": 0.06662751707885947,
+          "ci95": [
+            0.30536640162537143,
+            0.4167703980937063
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.10289739424596428,
+          "sd": 0.026169116141131314,
+          "ci95": [
+            0.08101946565142074,
+            0.12477532284050782
+          ]
+        }
+      },
+      "both_second_yes_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.11716725539450515,
+          "sd": 0.03345130625102784,
+          "ci95": [
+            0.08920126351280314,
+            0.14513324727620716
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.024279567396521033,
+          "sd": 0.009018942690530805,
+          "ci95": [
+            0.016739542616257923,
+            0.031819592176784144
+          ]
+        }
+      },
+      "terminal": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.06127449717801615,
+          "sd": 0.03371507563440535,
+          "ci95": [
+            0.033087988573325164,
+            0.08946100578270713
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.011100137681417679,
+          "sd": 0.0074235126235404365,
+          "ci95": [
+            0.004893925816155608,
+            0.01730634954667975
+          ]
+        }
+      }
+    },
+    "no_learning_fifo": {
+      "both_response": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.6948696976166768,
+          "sd": 0.016894857547322957,
+          "ci95": [
+            0.6807452432391612,
+            0.7089941519941925
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.2508171962235386,
+          "sd": 0.008364976844831475,
+          "ci95": [
+            0.2438239005723114,
+            0.2578104918747658
+          ]
+        }
+      },
+      "both_accept_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.4026880977796493,
+          "sd": 0.06621359543448431,
+          "ci95": [
+            0.34733214670009493,
+            0.4580440488592037
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.12072753470214506,
+          "sd": 0.026551758848362084,
+          "ci95": [
+            0.09852970879884755,
+            0.14292536060544256
+          ]
+        }
+      },
+      "date_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.3505110965099886,
+          "sd": 0.0707362094493792,
+          "ci95": [
+            0.2913741454935263,
+            0.40964804752645084
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.10071430640700423,
+          "sd": 0.026756438158947404,
+          "ci95": [
+            0.07834536431783265,
+            0.1230832484961758
+          ]
+        }
+      },
+      "both_second_yes_unconditional": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.1143169447216265,
+          "sd": 0.03360747739392899,
+          "ci95": [
+            0.0862203904971043,
+            0.1424134989461487
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.024134348391786124,
+          "sd": 0.009021214590922155,
+          "ci95": [
+            0.01659242425526399,
+            0.031676272528308264
+          ]
+        }
+      },
+      "terminal": {
+        "log_loss": {
+          "n": 8,
+          "mean": 0.06072489004285807,
+          "sd": 0.03434362694932228,
+          "ci95": [
+            0.03201289938857867,
+            0.08943688069713747
+          ]
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.011097616952138433,
+          "sd": 0.007451551346078988,
+          "ci95": [
+            0.004867964128218363,
+            0.017327269776058505
+          ]
+        }
+      }
+    }
+  },
+  "archived_assignment_row_count": 3567,
+  "raw_assignment_archive": "results/extended/audit_common_cohort_calibration.json.gz"
+}

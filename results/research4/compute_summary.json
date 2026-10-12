@@ -1,0 +1,1062 @@
+{
+  "primary_leaf_commands": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "research4.benchmark",
+        "--policies",
+        "greedy,population_control,goal_surplus_control,coordinated_goal,hard_priority,response_beta_control,response_uniform,acceptance_shrinkage",
+        "--seeds",
+        "80001:80012",
+        "--workers",
+        "2",
+        "--output",
+        "results/research4/screen.json",
+        "--traces",
+        "results/research4/screen_traces"
+      ],
+      "cpu_seconds": 1684.4785439999998,
+      "wall_seconds": 846.9644112500027
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "research4.benchmark",
+        "--policies",
+        "goal_surplus_control,greedy,hard_priority,population_control",
+        "--seeds",
+        "81001:81032",
+        "--workers",
+        "2",
+        "--output",
+        "results/research4/focus.json",
+        "--traces",
+        "results/research4/focus_traces"
+      ],
+      "cpu_seconds": 2223.076512,
+      "wall_seconds": 1111.504479958996
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "research4.benchmark",
+        "--policies",
+        "greedy,hard_priority,population_control",
+        "--seeds",
+        "82001:82020",
+        "--workers",
+        "2",
+        "--output",
+        "results/research4/selection.json",
+        "--traces",
+        "results/research4/selection_traces"
+      ],
+      "cpu_seconds": 945.871475,
+      "wall_seconds": 477.4272012500005
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "research4.benchmark",
+        "--policies",
+        "greedy,population_control",
+        "--seeds",
+        "83001:83056",
+        "--workers",
+        "2",
+        "--output",
+        "results/research4/confirmation.json",
+        "--traces",
+        "results/research4/confirmation_traces"
+      ],
+      "cpu_seconds": 1754.367939,
+      "wall_seconds": 881.5556015420007
+    }
+  ],
+  "primary_os_child_cpu_seconds": 6607.79447,
+  "primary_sequential_stage_wall_seconds": 3317.451694001,
+  "note": "Only primary benchmark leaf commands are summed. Host analysis, replication, subprocess and container tests are separately reported in their original ledgers; parent/child or script self/outer measurements may overlap. Docker daemon/container CPU is unknown. Offline resource costs are separate from inference limits.",
+  "ledger_records": [
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:04:08.372638+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "greedy,population_control,goal_surplus_control,coordinated_goal,hard_priority,response_beta_control,response_uniform,acceptance_shrinkage",
+          "--seeds",
+          "80001:80012",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/screen.json",
+          "--traces",
+          "results/research4/screen_traces"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:18:15.340532+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "greedy,population_control,goal_surplus_control,coordinated_goal,hard_priority,response_beta_control,response_uniform,acceptance_shrinkage",
+          "--seeds",
+          "80001:80012",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/screen.json",
+          "--traces",
+          "results/research4/screen_traces"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 846.9644112500027,
+        "child_cpu_seconds": 1684.4785439999998
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:18:15.341097+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.stages",
+          "focus"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:18:16.213899+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "goal_surplus_control,greedy,hard_priority,population_control",
+          "--seeds",
+          "81001:81032",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/focus.json",
+          "--traces",
+          "results/research4/focus_traces"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:47.723151+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "goal_surplus_control,greedy,hard_priority,population_control",
+          "--seeds",
+          "81001:81032",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/focus.json",
+          "--traces",
+          "results/research4/focus_traces"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 1111.504479958996,
+        "child_cpu_seconds": 2223.076512,
+        "compute_scope": "OS child usage including reaped worker usage, separate from episode wall sum"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:47.859520+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.stages",
+          "focus"
+        ],
+        "status": "finished"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:47.859759+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.stages",
+          "selection"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:48.540365+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "greedy,hard_priority,population_control",
+          "--seeds",
+          "82001:82020",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/selection.json",
+          "--traces",
+          "results/research4/selection_traces"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:53.152146+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.ablations",
+          "results/research4/focus.json",
+          "--output",
+          "results/research4/focus_ablations.json"
+        ],
+        "status": "started",
+        "analysis_source_sha256": "b8f47ae0bb6dfd30c06b65469215f0ad180c199d55e48977a2815063676d983d"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:53.675470+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.ablations",
+          "results/research4/focus.json",
+          "--output",
+          "results/research4/focus_ablations.json"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 0.5230747500027064,
+        "child_cpu_seconds": 0.516543,
+        "analysis_source_sha256": "b8f47ae0bb6dfd30c06b65469215f0ad180c199d55e48977a2815063676d983d"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:36:53.676146+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.mechanisms",
+          "results/research4/focus.json",
+          "--output",
+          "results/research4/focus_mechanisms.json"
+        ],
+        "status": "started",
+        "analysis_source_sha256": "02072c331d3beadfd38885a8aa42c37b10008ea1e654c1f99cd701878e51f3a9"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:37:16.188129+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.mechanisms",
+          "results/research4/focus.json",
+          "--output",
+          "results/research4/focus_mechanisms.json"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 22.511615041999903,
+        "child_cpu_seconds": 21.376047000000003,
+        "analysis_source_sha256": "02072c331d3beadfd38885a8aa42c37b10008ea1e654c1f99cd701878e51f3a9"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:37:16.188770+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.deadline_audit",
+          "--input",
+          "results/research4/focus.json",
+          "--output",
+          "results/research4/deadline_audit_focus.json"
+        ],
+        "status": "started",
+        "analysis_source_sha256": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:37:39.840078+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.deadline_audit",
+          "--input",
+          "results/research4/focus.json",
+          "--output",
+          "results/research4/deadline_audit_focus.json"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 23.65094775000034,
+        "child_cpu_seconds": 22.817141000000003,
+        "analysis_source_sha256": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:41:31.315393+00:00",
+        "command": [
+          "signal",
+          "SIGSTOP",
+          "68223"
+        ],
+        "status": "finished",
+        "reason": "Pause outer orchestration only; running registered D continues. Exact integer-count selection band audit before any E. No inference/registry changes."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:44:45.969551+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "greedy,hard_priority,population_control",
+          "--seeds",
+          "82001:82020",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/selection.json",
+          "--traces",
+          "results/research4/selection_traces"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 477.4272012500005,
+        "child_cpu_seconds": 945.871475,
+        "compute_scope": "OS child usage including reaped worker usage, separate from episode wall sum"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:45:59.000469+00:00",
+        "command": [
+          "signal",
+          "SIGCONT",
+          "68223"
+        ],
+        "status": "finished",
+        "reason": "Independent exact-count D band and n audit passed. Resume registered fixed E; no source/config/registry/freeze correction."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:45:59.001301+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.stages",
+          "selection"
+        ],
+        "status": "finished"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:45:59.001539+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.stages",
+          "confirmation"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:45:59.697120+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "greedy,population_control",
+          "--seeds",
+          "83001:83056",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/confirmation.json",
+          "--traces",
+          "results/research4/confirmation_traces"
+        ],
+        "status": "started"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T04:00:41.256185+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.benchmark",
+          "--policies",
+          "greedy,population_control",
+          "--seeds",
+          "83001:83056",
+          "--workers",
+          "2",
+          "--output",
+          "results/research4/confirmation.json",
+          "--traces",
+          "results/research4/confirmation_traces"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 881.5556015420007,
+        "child_cpu_seconds": 1754.367939,
+        "compute_scope": "OS child usage including reaped worker usage, separate from episode wall sum"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T04:00:41.341566+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.mechanisms",
+          "results/research4/confirmation.json",
+          "--output",
+          "results/research4/confirmation_mechanisms.json"
+        ],
+        "status": "started",
+        "analysis_source_sha256": "02072c331d3beadfd38885a8aa42c37b10008ea1e654c1f99cd701878e51f3a9"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T04:00:41.381369+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.stages",
+          "confirmation"
+        ],
+        "status": "finished"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T04:01:17.261324+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.mechanisms",
+          "results/research4/confirmation.json",
+          "--output",
+          "results/research4/confirmation_mechanisms.json"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 35.919203208999534,
+        "child_cpu_seconds": 34.043507000000005,
+        "analysis_source_sha256": "02072c331d3beadfd38885a8aa42c37b10008ea1e654c1f99cd701878e51f3a9"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T04:01:17.262877+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.deadline_audit",
+          "--input",
+          "results/research4/confirmation.json",
+          "--output",
+          "results/research4/deadline_audit_confirmation.json"
+        ],
+        "status": "started",
+        "analysis_source_sha256": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T04:01:55.512792+00:00",
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.deadline_audit",
+          "--input",
+          "results/research4/confirmation.json",
+          "--output",
+          "results/research4/deadline_audit_confirmation.json"
+        ],
+        "status": "finished",
+        "returncode": 0,
+        "wall_seconds": 38.249364916999184,
+        "child_cpu_seconds": 36.431711,
+        "analysis_source_sha256": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134"
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:20:30.982072+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.report"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root integration commands completed; CPU not independently measured. Reports/secondary post-completion analyses only; no primary runs."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:20:30.982184+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.compute"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root integration commands completed; CPU not independently measured. Reports/secondary post-completion analyses only; no primary runs."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:20:30.982189+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.trajectory_review"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root integration commands completed; CPU not independently measured. Reports/secondary post-completion analyses only; no primary runs."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:20:30.982193+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.trajectory_review",
+          "--input",
+          "results/research4/confirmation_mechanisms.json",
+          "--candidate",
+          "population_control",
+          "--control",
+          "greedy",
+          "--output",
+          "results/research4/trajectory_review_confirmation.json"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root integration commands completed; CPU not independently measured. Reports/secondary post-completion analyses only; no primary runs."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:25:34.105816+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.archive",
+          "build"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root package/figure integration; completed successfully. CPU not independently measured; archive/verify logs retained. No primary experiments."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:25:34.105975+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.archive",
+          "verify"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root package/figure integration; completed successfully. CPU not independently measured; archive/verify logs retained. No primary experiments."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:25:34.105982+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.report"
+        ],
+        "status": "finished",
+        "cpu_seconds": null,
+        "note": "Root package/figure integration; completed successfully. CPU not independently measured; archive/verify logs retained. No primary experiments."
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:28:04.198290+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.report"
+        ],
+        "status": "finished",
+        "note": "Final report/figures regenerated after independent review; no primary changes.",
+        "cpu_seconds": null
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:28:04.198450+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.compute"
+        ],
+        "status": "requested",
+        "note": "Final ledger aggregation follows; no later ledger additions.",
+        "cpu_seconds": null
+      }
+    },
+    {
+      "ledger": "results/research4/commands.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:28:04.198456+00:00",
+        "command": [
+          "python3",
+          "-m",
+          "research4.package"
+        ],
+        "status": "requested",
+        "note": "Final direct gate invocation follows; internally finalizes gate log before manifest hashes. Completion captured by tool stdout/manifest; no ledger append after sealing.",
+        "cpu_seconds": null
+      }
+    },
+    {
+      "ledger": "results/research4/commands_production.jsonl",
+      "record": {
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.production",
+          "--prepare",
+          "--output",
+          "results/research4/production_prepare.json"
+        ],
+        "output": "results/research4/production_prepare.json",
+        "compute": {
+          "started_utc": "2026-10-10T03:04:58.747916+00:00",
+          "host_self_cpu_seconds": 0.013330000000000022,
+          "host_children_cpu_seconds": 0.288012,
+          "docker_daemon_container_cpu_seconds": null,
+          "note": "Host child usage includes Python/docker clients; daemon/build/container CPU not included. Sequential modes, no fresh seeds."
+        },
+        "wall_seconds": 5.731493750005029
+      }
+    },
+    {
+      "ledger": "results/research4/commands_production.jsonl",
+      "record": {
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.test_wrapper",
+          "--dense",
+          "--output",
+          "results/research4/production_wrapper.json"
+        ],
+        "output": "results/research4/production_wrapper.json",
+        "compute": {
+          "started_utc": "2026-10-10T03:05:53.362049+00:00",
+          "host_self_cpu_seconds": 2.4291139999999998,
+          "host_children_cpu_seconds": 0.690558,
+          "docker_daemon_container_cpu_seconds": null
+        },
+        "wall_seconds": 6.578700124999159
+      }
+    },
+    {
+      "ledger": "results/research4/commands_production.jsonl",
+      "record": {
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.test_diverse",
+          "--output",
+          "results/research4/production_diverse.json"
+        ],
+        "output": "results/research4/production_diverse.json",
+        "compute": {
+          "started_utc": "2026-10-10T03:31:35.974182+00:00",
+          "host_self_cpu_seconds": 1.3279639999999997,
+          "host_children_cpu_seconds": 0.184619,
+          "docker_daemon_container_cpu_seconds": null
+        },
+        "wall_seconds": 7.110616916994331
+      }
+    },
+    {
+      "ledger": "results/research4/commands_production.jsonl",
+      "record": {
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.production",
+          "--prepare",
+          "--output",
+          "results/research4/production_prepare_retry.json"
+        ],
+        "output": "results/research4/production_prepare_retry.json",
+        "compute": {
+          "started_utc": "2026-10-10T03:45:36.444145+00:00",
+          "host_self_cpu_seconds": 0.016649999999999998,
+          "host_children_cpu_seconds": 0.307126,
+          "docker_daemon_container_cpu_seconds": null,
+          "note": "Host child usage includes Python/docker clients; daemon/build/container CPU not included. Sequential modes, no fresh seeds."
+        },
+        "wall_seconds": 4.151386874997115
+      }
+    },
+    {
+      "ledger": "results/research4/commands_production.jsonl",
+      "record": {
+        "command": [
+          "python3",
+          "-m",
+          "research4.production",
+          "--candidate",
+          "population_control",
+          "--skip-build",
+          "--output",
+          "results/research4/production_selected.json"
+        ],
+        "output": "results/research4/production_selected.log",
+        "started_utc": null,
+        "timestamp_status": "reconstructed; exact start not retained after pre-output exception",
+        "status": "failed before selected JSON: Docker image missing",
+        "note": "Frozen sources were SHA-checked before invocation; image recreation separately recorded. No policy changes."
+      }
+    },
+    {
+      "ledger": "results/research4/commands_production.jsonl",
+      "record": {
+        "command": [
+          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "-m",
+          "research4.production",
+          "--candidate",
+          "population_control",
+          "--skip-build",
+          "--output",
+          "results/research4/production_selected.json"
+        ],
+        "output": "results/research4/production_selected.json",
+        "compute": {
+          "started_utc": "2026-10-10T03:45:49.127572+00:00",
+          "host_self_cpu_seconds": 5.402923,
+          "host_children_cpu_seconds": 9.606238000000001,
+          "docker_daemon_container_cpu_seconds": null,
+          "note": "Host child usage includes Python/docker clients; daemon/build/container CPU not included. Sequential modes, no fresh seeds."
+        },
+        "wall_seconds": 54.57681662499817
+      }
+    },
+    {
+      "ledger": "research4/commands_models.jsonl",
+      "record": {
+        "deliverable": "research4/LITERATURE.md",
+        "failed_open": "https://www.cs.cmu.edu/~guestrin/Publications/UAI2005/uai2005.pdf timed out",
+        "kind": "primary_literature_review",
+        "open_attempts": 3,
+        "primary_sources": [
+          "https://arxiv.org/abs/1401.3474",
+          "https://proceedings.mlr.press/v28/chen13b.html",
+          "https://arxiv.org/abs/1301.2294",
+          "https://proceedings.mlr.press/v37/hernandez-lobatoc15.pdf",
+          "https://dlmf.nist.gov/8.17.E1"
+        ],
+        "recorded_utc": "2026-10-10T03:09:17.537048+00:00",
+        "scope": "Exact queries/results retained in tool transcript; no fulltext retrieval falsely claimed for timedout source; no simulations or inference edits",
+        "search_calls": 3,
+        "tool": "web.run"
+      }
+    },
+    {
+      "ledger": "research4/commands_models.jsonl",
+      "record": {
+        "checks": [
+          "uniform first prior=.765;one-success/one-failure monotonicity",
+          "coherent five-stage projection monotonicity",
+          "terminal equality within1e-12 against fixed population/Beta/Uniform/acceptance scores atdays0/40 andzero/nonzero publiccounts"
+        ],
+        "command": ".venv/bin/python - [heredoc; exact command in tool transcript]",
+        "compute_scope": "CPU measurement excludes imports; previouslyexamined101day0pair only; no episodes",
+        "cpu_seconds_reported": 0.007105000000000028,
+        "kind": "prediction_funnel_extension_helper_checks",
+        "recorded_utc": "2026-10-10T03:16:39.099328+00:00",
+        "source_scope": "host audit only; frozen inference unchanged"
+      }
+    },
+    {
+      "ledger": "research4/commands_models.jsonl",
+      "record": {
+        "analysis_cpu_seconds_estimate_difference": 8.453684,
+        "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research4.deadline_audit --interventions --input results/research4/screen.json --output results/research4/deadline_audit_screen.json > results/research4/deadline_audit_screen.log",
+        "cpu_seconds_total": 52.477752,
+        "intervention_replays": 16,
+        "kind": "deadline_invariance_audit",
+        "normal_original_comparison": "existing smoke actions matchall8 fast/slow exactly; no extra original replays",
+        "provenance_note": "results/research4/deadline_audit_screen_execution_note.json records runninghostscript version correction; frozeninference unchanged",
+        "recorded_utc": "2026-10-10T03:26:37.359240+00:00",
+        "replay_cpu_seconds": 44.024068,
+        "result": "all8 identicalbyteactions/availability/intros, zero fallback",
+        "seed_exposure": "Alreadyexamined101development only; publicinputs; 60action40followup",
+        "supplementary_bootstrap_cpu_seconds": 0.06045800000000001
+      }
+    },
+    {
+      "ledger": "research4/commands_models.jsonl",
+      "record": {
+        "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research4.prediction_audit --input results/research4/focus.json --output results/research4/prediction_audit.json > results/research4/prediction_audit.log",
+        "compute_allowance_cpu_seconds": 300,
+        "input_sha256": "66c72c5bcdf39fa2760891b144a8523e4ef3183e77f975ba262c5c7078cc7fa5",
+        "kind": "prediction_audit_launch",
+        "prelaunch_source_sha256": {
+          "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+          "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+          "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+          "research4/prediction_audit.py": "2a39ae88c550f0292eff641c8e877721755e57ebd7947513eb96d4c68fe100bf"
+        },
+        "started_utc": "2026-10-10T03:37:09.724556+00:00",
+        "workers": 1
+      }
+    },
+    {
+      "ledger": "research4/commands_models.jsonl",
+      "record": {
+        "completed_utc": "2026-10-10T03:39:38.966977+00:00",
+        "cpu_seconds": 28.835588,
+        "figure_inspection": "view_image inspected renderedpng; allfourmodelsclearlylabeled, overlappingclusterintervals; nofalseprecision conclusion",
+        "input_hash_unchanged": true,
+        "kind": "prediction_audit_completed",
+        "n_assignments": 14023,
+        "n_positive": 125,
+        "n_seed_clusters": 32,
+        "outputs": {
+          "results/research4/prediction_audit.json": "172b83e40c70cbfdb5434c0d4ed0a20877d28cd26a52e957c5f75b9aaa66088a",
+          "results/research4/prediction_audit.log": "8aea5c1c837ba8da0d9f76fd9383e33f3177fc2371719acc85c0b82dcfc67555",
+          "results/research4/prediction_audit.png": "da9d7626626c3ece849ac8ef8f935eeb56747801bf00ee90eaea4db9dd900ea3"
+        },
+        "prelaunch_and_closing_source_hashes_equal": true
+      }
+    },
+    {
+      "ledger": "results/research4/commands_critic.jsonl",
+      "record": {
+        "utc": "2026-10-10T03:47:02.692670+00:00",
+        "command": [
+          "python3",
+          "-c",
+          "from research4.independent_replicator import preservation_audit; import json; print(json.dumps(preservation_audit(), indent=2))"
+        ],
+        "purpose": "Independent full inherited manifest exception and prefix verification",
+        "observed_result": {
+          "audited_round3_records": 3380,
+          "audited_older_records": 1889,
+          "actual_mismatches": {
+            "round3": [
+              "research3/FINAL_REVIEW.md",
+              "research3/REPLICATION.md",
+              "results/research3/package_gate.log"
+            ],
+            "older": []
+          },
+          "prefix_and_exact_current_copy_checks": true,
+          "scope": "Independent full-file hashing; recovered prefixes are present-day reconciliation, not historical prelaunch snapshots. No prior bytes changed by audit.",
+          "cpu_seconds": 2.015151,
+          "wall_seconds": 3.8831935839989455
+        },
+        "command_note": "Reproducible equivalent named call; timing/ledger wrapper recorded separately in tool transcript"
+      }
+    },
+    {
+      "ledger": "results/research4/commands_critic.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:18:52.382501+00:00",
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "research4.independent_replicator",
+          "--policies",
+          "greedy,population_control",
+          "--seeds",
+          "83001,83002",
+          "--variants",
+          "all",
+          "--reference",
+          "results/research4/confirmation.json",
+          "--cluster-audit",
+          "--output",
+          "results/research4/replication_confirmation.json"
+        ],
+        "purpose": "Frozen selected/comparator independent24episode direct replay, complete-grid cluster/program/bootstrap audit; no new seeds",
+        "wall_seconds": 64.33361662500002,
+        "os_child_cpu_seconds": 62.793442,
+        "returncode": 0,
+        "replicator_sha256": "d6af7874906fe4d3795ab653e70f1a4208691201fc79d6a0636ea2cee64ef874",
+        "replicator_unchanged": true
+      }
+    },
+    {
+      "ledger": "results/research4/commands_critic.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:25:01.808045+00:00",
+        "purpose": "Independent reconstruction all672 public deadline counts,56cluster proxy/bootstrap, full5269 inheritedhash audit, selectedproduction validation; no episodes",
+        "cpu_seconds": 36.446611,
+        "wall_seconds": 40.71958008399997,
+        "audit_correction": "Initial helper wrongly required deployed application8files equal host freeze8files, which instead includes evaluator/benchmark and excludes initializer modules. Corrected check compares deployed8to applicationhost8 and allfreeze8to currenthost. Failedhelper produced no artifact; its CPU not captured."
+      }
+    },
+    {
+      "ledger": "results/research4/commands_critic.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:25:17.944042+00:00",
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "research4.independent_replicator",
+          "--policies",
+          "greedy,population_control",
+          "--seeds",
+          "83001,83002",
+          "--variants",
+          "all",
+          "--mode",
+          "subprocess",
+          "--reference",
+          "results/research4/confirmation.json",
+          "--cluster-audit",
+          "--output",
+          "results/research4/replication_confirmation.json"
+        ],
+        "purpose": "Frozen selected/comparator independent24episode subprocess replay; no new seeds",
+        "wall_seconds": 191.382817375,
+        "os_child_cpu_seconds": 187.75471399999998,
+        "returncode": 0,
+        "replicator_sha256": "d6af7874906fe4d3795ab653e70f1a4208691201fc79d6a0636ea2cee64ef874",
+        "replicator_unchanged": true
+      }
+    },
+    {
+      "ledger": "results/research4/commands_critic.jsonl",
+      "record": {
+        "utc": "2026-10-10T16:27:00.134933+00:00",
+        "purpose": "Final independent48replay coverage validation and review closure before director manifest",
+        "validated_episode_grid": "2policies\u00d72existingconfirmationseeds\u00d76families\u00d72executionmodes=48",
+        "all5760calls_ordered_semantic_digests_metrics_exact": true,
+        "replay_os_cpu_seconds": 250.548156,
+        "successful_auxiliary_cpu_seconds": 36.446611,
+        "known_measured_cpu_lower_bound": 286.994767,
+        "failed_helper_cpu": "not captured; additional ancillary cost, entire verification cannot be certified <=300CPU seconds",
+        "no_further_review_writes_planned": true,
+        "file_hashes": {
+          "research4/REPLICATION.md": "7a21855aeefea22e9bd4e8e46adc85b61978ac7ebacbcaa3bcd4d7de71088435",
+          "research4/FINAL_REVIEW.md": "45ea0d3ececfbaf6c9fa830a4415a2a8212b493c5186d39c54a3fea9dda879cd",
+          "research4/independent_replicator.py": "d6af7874906fe4d3795ab653e70f1a4208691201fc79d6a0636ea2cee64ef874",
+          "results/research4/replication_confirmation.json": "1bbc67fb1545f15c336f27ddb1aa0d581e5f0aa739df5780873d491864c13447",
+          "results/research4/independent_confirmation_statistics.json": "17499d2c3c0f719ad4f1d845ffbac57b293eb92260fa0f694906c992c282c139",
+          "results/research4/independent_final_auxiliary_audit.json": "378a617a41600d4131b6a9d54d149a8b8bba1119793a44ab45c12dcaf448a517"
+        }
+      }
+    },
+    {
+      "ledger": "research4/modelcommandledger.json",
+      "record": {
+        "recorded_utc": "2026-10-10T03:06:06.338393+00:00",
+        "phase": "prediction-audit preparation",
+        "command": ".venv/bin/python - [heredoc helper checks]",
+        "exact_command_preserved_in": "tool transcript; helper calls proper(.1,.9)/(0,1), proper(.5,.5)/(0,1), interval(1,2,3,4), terminal_label date30 second33/34 and future public-event assertion",
+        "cpu_seconds_reported": 0.007446999999999981,
+        "outcome": "passed",
+        "compute_scope": "CPU measurement excludes Python imports; no full episodes",
+        "seed_exposure": "Previously examined101 day0 only",
+        "future_execution": [
+          "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research4.prediction_audit --input results/research4/focus.json --output results/research4/prediction_audit.json > results/research4/prediction_audit.log"
+        ]
+      }
+    }
+  ]
+}

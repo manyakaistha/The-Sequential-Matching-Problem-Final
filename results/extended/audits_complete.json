@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "development_calibration_policies": [
+    "no_learning_fifo",
+    "terminal_soft",
+    "independent_fifo",
+    "simple_fifo",
+    "terminal_fifo"
+  ],
+  "selected_policy": "simple_fifo",
+  "artifacts": [
+    "audit_development_calibration.json",
+    "mechanisms.json",
+    "audit_confirmation_calibration.json"
+  ]
+}

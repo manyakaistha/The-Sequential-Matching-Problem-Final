@@ -1,0 +1,4 @@
+greedy development 1001 0.0 True
+terminal_fifo development 1001 0.0 True
+simple_fifo development 1001 0.5 True
+terminal_two_query development 1001 0.0 True

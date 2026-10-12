@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-10-10T03:37:16.833320+00:00",
+  "command": [
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research4/deadline_audit.py",
+    "--input",
+    "results/research4/focus.json",
+    "--output",
+    "results/research4/deadline_audit_focus.json"
+  ],
+  "completed_utc": "2026-10-10T03:37:39.702529+00:00",
+  "cpu_seconds": 22.230458,
+  "source_sha256": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/deadline_audit.py": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134"
+  }
+}
+{
+  "goal_surplus_control": {
+    "actual_score": 0.3098958333333333,
+    "deadline_integrated_proxy": 0.3459375,
+    "actual_minus_proxy": -0.036041666666666666
+  },
+  "greedy": {
+    "actual_score": 0.32552083333333337,
+    "deadline_integrated_proxy": 0.343125,
+    "actual_minus_proxy": -0.017604166666666667
+  },
+  "hard_priority": {
+    "actual_score": 0.3828125,
+    "deadline_integrated_proxy": 0.37875,
+    "actual_minus_proxy": 0.0040625
+  },
+  "population_control": {
+    "actual_score": 0.3515625,
+    "deadline_integrated_proxy": 0.36187499999999995,
+    "actual_minus_proxy": -0.010312499999999987
+  }
+}

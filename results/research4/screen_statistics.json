@@ -1,0 +1,477 @@
+{
+  "estimand": "equal six-family reward per seed, paired independent seed clusters",
+  "seeds": [
+    80001,
+    80002,
+    80003,
+    80004,
+    80005,
+    80006,
+    80007,
+    80008,
+    80009,
+    80010,
+    80011,
+    80012
+  ],
+  "source": "results/research4/screen.json",
+  "code_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/benchmark.py": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64"
+  },
+  "policies": {
+    "acceptance_shrinkage": {
+      "primary": {
+        "n": 12,
+        "mean": 0.4791666666666667,
+        "sd": 0.27090616736270795,
+        "ci95": [
+          0.30704109981348104,
+          0.6512922335198523
+        ],
+        "p_two_sided": 7.4446301209685e-05,
+        "standardized": 1.7687551056197446
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.1736111111111111,
+        "sd": 0.2115906966187854,
+        "ci95": [
+          0.03917279635836121,
+          0.30804942586386097
+        ],
+        "p_two_sided": 0.016015525716662832,
+        "standardized": 0.8205044639741386
+      },
+      "bootstrap95": [
+        0.06250000000000001,
+        0.29166666666666663
+      ],
+      "scenario_means": {
+        "development": 0.75,
+        "sparse": 0.125,
+        "cold_start": 0.16666666666666666,
+        "delayed": 0.5,
+        "shift": 0.7083333333333334,
+        "drift": 0.625
+      },
+      "totals": {
+        "assignments": 5450,
+        "mutual_acceptances": 833,
+        "dates": 621,
+        "mutual_second_meeting_intention": 69,
+        "served_members": 4831,
+        "arrived_members": 14400,
+        "ask_cost": 13716
+      },
+      "latency_seconds": {
+        "mean": 0.017177055381565273,
+        "p95": 0.03938821600095251,
+        "p99": 0.04375614338081506,
+        "max": 0.12041450000106124
+      },
+      "mean_coverage": 0.3354861111111111,
+      "peak_request_bytes": 476762,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 184.09454511800868,
+      "exploratory_holm_p": 0.09479415605867522
+    },
+    "coordinated_goal": {
+      "primary": {
+        "n": 12,
+        "mean": 0.39583333333333337,
+        "sd": 0.32396883813232424,
+        "ci95": [
+          0.18999335394432795,
+          0.6016733127223388
+        ],
+        "p_two_sided": 0.001406428633785092,
+        "standardized": 1.2218253323847654
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.09027777777777779,
+        "sd": 0.3453484796413217,
+        "ci95": [
+          -0.1291461777520405,
+          0.3097017333075961
+        ],
+        "p_two_sided": 0.3845782167995456,
+        "standardized": 0.2614106709592008
+      },
+      "bootstrap95": [
+        -0.11111111111111109,
+        0.2638888888888889
+      ],
+      "scenario_means": {
+        "development": 0.5,
+        "sparse": 0.08333333333333333,
+        "cold_start": 0.2916666666666667,
+        "delayed": 0.6666666666666666,
+        "shift": 0.375,
+        "drift": 0.4583333333333333
+      },
+      "totals": {
+        "assignments": 5425,
+        "mutual_acceptances": 888,
+        "dates": 667,
+        "mutual_second_meeting_intention": 57,
+        "served_members": 4797,
+        "arrived_members": 14400,
+        "ask_cost": 17524
+      },
+      "latency_seconds": {
+        "mean": 0.031210767719028774,
+        "p95": 0.04104614310163014,
+        "p99": 0.047248699630872595,
+        "max": 0.15714054200361716
+      },
+      "mean_coverage": 0.333125,
+      "peak_request_bytes": 482708,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 305.4445945039988,
+      "exploratory_holm_p": 0.3845782167995456
+    },
+    "goal_surplus_control": {
+      "primary": {
+        "n": 12,
+        "mean": 0.5,
+        "sd": 0.28867513459481287,
+        "ci95": [
+          0.31658456999236345,
+          0.6834154300076365
+        ],
+        "p_two_sided": 8.92612920406913e-05,
+        "standardized": 1.7320508075688774
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.19444444444444445,
+        "sd": 0.2690549616538829,
+        "ci95": [
+          0.02349507758365968,
+          0.3653938113052292
+        ],
+        "p_two_sided": 0.029324106739197976,
+        "standardized": 0.7226941411865925
+      },
+      "bootstrap95": [
+        0.048611111111111126,
+        0.3402777777777777
+      ],
+      "scenario_means": {
+        "development": 0.7916666666666666,
+        "sparse": 0.125,
+        "cold_start": 0.16666666666666666,
+        "delayed": 0.5416666666666666,
+        "shift": 0.625,
+        "drift": 0.75
+      },
+      "totals": {
+        "assignments": 5426,
+        "mutual_acceptances": 865,
+        "dates": 630,
+        "mutual_second_meeting_intention": 72,
+        "served_members": 4799,
+        "arrived_members": 14400,
+        "ask_cost": 15050
+      },
+      "latency_seconds": {
+        "mean": 0.028469375704067143,
+        "p95": 0.04128128155280137,
+        "p99": 0.04709152063194781,
+        "max": 0.18360391700116452
+      },
+      "mean_coverage": 0.3332638888888889,
+      "peak_request_bytes": 479821,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 281.72309396096534,
+      "exploratory_holm_p": 0.09479415605867522
+    },
+    "greedy": {
+      "primary": {
+        "n": 12,
+        "mean": 0.3055555555555556,
+        "sd": 0.259499648053841,
+        "ci95": [
+          0.1406773453091756,
+          0.4704337658019355
+        ],
+        "p_two_sided": 0.0018235815026426843,
+        "standardized": 1.1774796530443035
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided": null,
+        "standardized": null
+      },
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scenario_means": {
+        "development": 0.4583333333333333,
+        "sparse": 0.125,
+        "cold_start": 0.20833333333333334,
+        "delayed": 0.3333333333333333,
+        "shift": 0.2916666666666667,
+        "drift": 0.4166666666666667
+      },
+      "totals": {
+        "assignments": 5479,
+        "mutual_acceptances": 806,
+        "dates": 624,
+        "mutual_second_meeting_intention": 44,
+        "served_members": 4817,
+        "arrived_members": 14400,
+        "ask_cost": 13716
+      },
+      "latency_seconds": {
+        "mean": 0.017157219273785475,
+        "p95": 0.03914701909816358,
+        "p99": 0.0437133732521761,
+        "max": 0.10905283300235169
+      },
+      "mean_coverage": 0.3345138888888889,
+      "peak_request_bytes": 478415,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 183.46082120398933
+    },
+    "hard_priority": {
+      "primary": {
+        "n": 12,
+        "mean": 0.5069444444444444,
+        "sd": 0.21159069661878543,
+        "ci95": [
+          0.3725061296916945,
+          0.6413827591971943
+        ],
+        "p_two_sided": 4.5975990960650885e-06,
+        "standardized": 2.3958730348044845
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.2013888888888889,
+        "sd": 0.244789987636623,
+        "ci95": [
+          0.04585675098253664,
+          0.3569210267952412
+        ],
+        "p_two_sided": 0.015799026009779202,
+        "standardized": 0.822700678378396
+      },
+      "bootstrap95": [
+        0.06250000000000001,
+        0.3263888888888889
+      ],
+      "scenario_means": {
+        "development": 0.7083333333333334,
+        "sparse": 0.125,
+        "cold_start": 0.3333333333333333,
+        "delayed": 0.7083333333333334,
+        "shift": 0.5,
+        "drift": 0.6666666666666666
+      },
+      "totals": {
+        "assignments": 5459,
+        "mutual_acceptances": 812,
+        "dates": 614,
+        "mutual_second_meeting_intention": 73,
+        "served_members": 4808,
+        "arrived_members": 14400,
+        "ask_cost": 13716
+      },
+      "latency_seconds": {
+        "mean": 0.017488667142251196,
+        "p95": 0.038917183053490574,
+        "p99": 0.04300377262945404,
+        "max": 0.09173045799980173
+      },
+      "mean_coverage": 0.3338888888888889,
+      "peak_request_bytes": 474236,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 186.4629770779793,
+      "exploratory_holm_p": 0.09479415605867522
+    },
+    "population_control": {
+      "primary": {
+        "n": 12,
+        "mean": 0.5,
+        "sd": 0.28867513459481287,
+        "ci95": [
+          0.31658456999236345,
+          0.6834154300076365
+        ],
+        "p_two_sided": 8.92612920406913e-05,
+        "standardized": 1.7320508075688774
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.19444444444444445,
+        "sd": 0.21418548241050528,
+        "ci95": [
+          0.05835748145451952,
+          0.3305314074343694
+        ],
+        "p_two_sided": 0.009327869591081433,
+        "standardized": 0.9078320447124171
+      },
+      "bootstrap95": [
+        0.08333333333333333,
+        0.3057291666666642
+      ],
+      "scenario_means": {
+        "development": 0.7916666666666666,
+        "sparse": 0.125,
+        "cold_start": 0.125,
+        "delayed": 0.5,
+        "shift": 0.75,
+        "drift": 0.7083333333333334
+      },
+      "totals": {
+        "assignments": 5393,
+        "mutual_acceptances": 862,
+        "dates": 618,
+        "mutual_second_meeting_intention": 72,
+        "served_members": 4809,
+        "arrived_members": 14400,
+        "ask_cost": 13716
+      },
+      "latency_seconds": {
+        "mean": 0.01690776371740412,
+        "p95": 0.03907693545043003,
+        "p99": 0.04422607125088693,
+        "max": 0.12219541599915829
+      },
+      "mean_coverage": 0.33395833333333336,
+      "peak_request_bytes": 475615,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 181.68250325197005,
+      "exploratory_holm_p": 0.06529508713757003
+    },
+    "response_beta_control": {
+      "primary": {
+        "n": 12,
+        "mean": 0.4791666666666667,
+        "sd": 0.277809341641044,
+        "ci95": [
+          0.3026550321306658,
+          0.6556783012026676
+        ],
+        "p_two_sided": 9.254203830222582e-05,
+        "standardized": 1.7248040106793654
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.1736111111111111,
+        "sd": 0.2145536043935155,
+        "ci95": [
+          0.037290254571941434,
+          0.30993196765028075
+        ],
+        "p_two_sided": 0.017180487343013168,
+        "standardized": 0.809173593712687
+      },
+      "bootstrap95": [
+        0.06250000000000001,
+        0.2916666666666667
+      ],
+      "scenario_means": {
+        "development": 0.7083333333333334,
+        "sparse": 0.125,
+        "cold_start": 0.25,
+        "delayed": 0.5833333333333334,
+        "shift": 0.5833333333333334,
+        "drift": 0.625
+      },
+      "totals": {
+        "assignments": 5396,
+        "mutual_acceptances": 858,
+        "dates": 626,
+        "mutual_second_meeting_intention": 69,
+        "served_members": 4824,
+        "arrived_members": 14400,
+        "ask_cost": 13716
+      },
+      "latency_seconds": {
+        "mean": 0.01676263569028783,
+        "p95": 0.03864742884979931,
+        "p99": 0.042434083492626104,
+        "max": 0.08266512500267709
+      },
+      "mean_coverage": 0.335,
+      "peak_request_bytes": 475551,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 180.2272801590152,
+      "exploratory_holm_p": 0.09479415605867522
+    },
+    "response_uniform": {
+      "primary": {
+        "n": 12,
+        "mean": 0.4861111111111111,
+        "sd": 0.2904918619953438,
+        "ci95": [
+          0.3015413875830342,
+          0.6706808346391879
+        ],
+        "p_two_sided": 0.00011984089922547096,
+        "standardized": 1.6734069855592126
+      },
+      "paired": {
+        "n": 12,
+        "mean": 0.18055555555555555,
+        "sd": 0.22706219204711087,
+        "ci95": [
+          0.036287121589973104,
+          0.324823989521138
+        ],
+        "p_two_sided": 0.018736317066361998,
+        "standardized": 0.7951810643935556
+      },
+      "bootstrap95": [
+        0.06250000000000001,
+        0.3055555555555556
+      ],
+      "scenario_means": {
+        "development": 0.75,
+        "sparse": 0.125,
+        "cold_start": 0.25,
+        "delayed": 0.5833333333333334,
+        "shift": 0.5833333333333334,
+        "drift": 0.625
+      },
+      "totals": {
+        "assignments": 5398,
+        "mutual_acceptances": 863,
+        "dates": 629,
+        "mutual_second_meeting_intention": 70,
+        "served_members": 4826,
+        "arrived_members": 14400,
+        "ask_cost": 13716
+      },
+      "latency_seconds": {
+        "mean": 0.016836293854742137,
+        "p95": 0.03892012080541461,
+        "p99": 0.04341340276194391,
+        "max": 0.13656933399761328
+      },
+      "mean_coverage": 0.3351388888888889,
+      "peak_request_bytes": 476335,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 180.95189237294835,
+      "exploratory_holm_p": 0.09479415605867522
+    }
+  }
+}

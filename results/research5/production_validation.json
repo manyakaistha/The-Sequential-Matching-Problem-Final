@@ -1,0 +1,31 @@
+{
+  "reviewed_utc": "2026-10-10T19:13:17.688064+00:00",
+  "production_artifact_sha256": "9955b982177d61fb1824e7ead35ea00680a7f44a1c64039264f67e58b42afbc6",
+  "current_frozen_and_initializer_hashes_match": true,
+  "prior_round_manifest_matches_design": true,
+  "sealed_round4_before_after_equal": true,
+  "container_python_version": "Python 3.12.7",
+  "container_version_command": [
+    "docker",
+    "run",
+    "--rm",
+    "-i",
+    "--name",
+    "sequential-3d4fa3c4b2c4479c9dd404c8e0542926",
+    "--network=none",
+    "--cpus=2",
+    "--memory=1g",
+    "--memory-swap=1g",
+    "--pids-limit=64",
+    "--read-only",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--user=65534:65534",
+    "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+    "--entrypoint",
+    "python",
+    "sequential-round5:production-checks",
+    "--version"
+  ],
+  "scope": "Independent post-replay frozen-source/design linkage and version check; no new worlds or primary reward inference"
+}

@@ -1,0 +1,7 @@
+{
+  "raw_sha256": "0af380fd5e0cb09612b9f3763e72d8755ce63922faca47c845f8ca5ed8fb30f8",
+  "scope_correction": "Initial raw integrated scope text incorrectly mentioned bootstrap, but inherited interval helper computes Student-t only. Raw artifact retained. Bootstrap sensitivities computed separately from preserved raw rows.",
+  "execution_source_sha256_reconstructed_from_exact_initial_tool_patch": "4c41c0da55dde27e9b73fe035bca317e1a27862b3a068a17f704db562401aa1c",
+  "disk_source_sha256_at_output": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134",
+  "provenance_correction": "Host audit bootstrap block was edited while replay process was already running. Python executed initial module code; closing source_sha256 hashes read the amended disk source. Reconstruction above records the executed source separately. No frozen simulator/policy source changed; intervention and original Student-t calculations identical."
+}

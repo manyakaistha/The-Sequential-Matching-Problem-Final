@@ -1,0 +1,20 @@
+{
+  "release": "1.0.0",
+  "mode": "trusted_local",
+  "decision_days": 60,
+  "follow_up_days": 40,
+  "members_per_episode": 200,
+  "episodes": [
+    {
+      "valid": false,
+      "error": "Policy exited unsuccessfully: Traceback (most recent call last):\n  File \"/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/policy.py\", line 124, in <module>\n    print(json.dumps(decide(request), allow_nan=False))\n                     ~~~~~~^^^^^^^^^\n  File \"/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/policy.py\", line 86, in decide\n    if eligibility(a, b)['status'] != 'feasible': continue\n       ~~~~~~~~~~~^^^^^^\n  File \"/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/policy.py\", line 12, in eligibility\n    fa, fb = a['fields']; b_f = b['fields']\n    ^^^^^^\nValueError: too many values to unpack (expected 2, got 18)\n",
+      "seed": 5001,
+      "variant": "development"
+    }
+  ],
+  "summary": {
+    "eligible": false,
+    "primary_score": null,
+    "reason": "At least one episode is invalid"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source": "results/research4/focus.json",
+  "clusters": {
+    "goal_surplus_control": {
+      "n": 32,
+      "mean": 0.3098958333333333,
+      "paired_difference": -0.01562500000000001,
+      "paired_sd": 0.21939708440442252,
+      "ci95": [
+        -0.09472608410220057,
+        0.06347608410220054
+      ],
+      "p_two_sided": 0.689809363416214
+    },
+    "greedy": {
+      "n": 32,
+      "mean": 0.3255208333333333,
+      "paired_difference": 0.0,
+      "paired_sd": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_two_sided": null
+    },
+    "hard_priority": {
+      "n": 32,
+      "mean": 0.3828125,
+      "paired_difference": 0.057291666666666664,
+      "paired_sd": 0.3493705938226012,
+      "ci95": [
+        -0.06866986468101366,
+        0.18325319801434697
+      ],
+      "p_two_sided": 0.3607603261631322
+    },
+    "population_control": {
+      "n": 32,
+      "mean": 0.3515625,
+      "paired_difference": 0.026041666666666657,
+      "paired_sd": 0.25261845583684234,
+      "ci95": [
+        -0.06503699910121494,
+        0.11712033243454825
+      ],
+      "p_two_sided": 0.5640123935672914
+    }
+  },
+  "method": "independent six-family seed average and paired t; no director analysis imports",
+  "prelisted_priority_minus_population": {
+    "n": 32,
+    "mean": 0.03125000000000001,
+    "sd": 0.41302169139492423,
+    "ci95": [
+      -0.11766019922051646,
+      0.18016019922051646
+    ],
+    "p": 0.6716040871099533
+  }
+}

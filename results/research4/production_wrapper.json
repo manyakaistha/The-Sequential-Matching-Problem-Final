@@ -1,0 +1,108 @@
+{
+  "valid": true,
+  "tests": 5,
+  "log": "test_empty_exhausted_no_edges (__main__.WrapperChecks.test_empty_exhausted_no_edges) ... ok\ntest_malformed_memory_ignored (__main__.WrapperChecks.test_malformed_memory_ignored) ... ok\ntest_oversized_and_malformed_state (__main__.WrapperChecks.test_oversized_and_malformed_state) ... ok\ntest_real_deadline_and_outer_timer (__main__.WrapperChecks.test_real_deadline_and_outer_timer) ... ok\ntest_subprocess_control_equivalence (__main__.WrapperChecks.test_subprocess_control_equivalence) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 1.939s\n\nOK\n",
+  "dense_rows": [
+    {
+      "candidate": "greedy",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.06046112500189338,
+      "container_seconds": 0.49312250000366475,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "population_control",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.07508650000090711,
+      "container_seconds": 0.3779612919970532,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "goal_surplus_control",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.07504354199772933,
+      "container_seconds": 0.3660637919965666,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "coordinated_goal",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.07427979199565016,
+      "container_seconds": 0.34089062500424916,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "hard_priority",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.07431687499774853,
+      "container_seconds": 0.33702495799661847,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "response_beta_control",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.07762991700292332,
+      "container_seconds": 0.3290073329990264,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "response_uniform",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.08103083400055766,
+      "container_seconds": 0.3999617500012391,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    },
+    {
+      "candidate": "acceptance_shrinkage",
+      "pairs": 100,
+      "exact_response_equal": true,
+      "host_seconds": 0.5589527089978219,
+      "container_seconds": 0.8801782080045086,
+      "request_bytes": 567018,
+      "memory_bytes": 2,
+      "fallback_warning_count": 0
+    }
+  ],
+  "scope": "Existingseed101/synthetic public states, finite workload only; no universal timeout or peakRSS guarantee",
+  "wall_seconds": 6.578700124999159,
+  "compute": {
+    "started_utc": "2026-10-10T03:05:53.362049+00:00",
+    "host_self_cpu_seconds": 2.4291139999999998,
+    "host_children_cpu_seconds": 0.690558,
+    "docker_daemon_container_cpu_seconds": null
+  },
+  "source_hashes": {
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/test_wrapper.py": "3eaeab684082df5d95182735cd0e2123f93a78fe9b0d98fa4aed8c06921a2a87"
+  },
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-m",
+    "research4.test_wrapper",
+    "--dense",
+    "--output",
+    "results/research4/production_wrapper.json"
+  ]
+}

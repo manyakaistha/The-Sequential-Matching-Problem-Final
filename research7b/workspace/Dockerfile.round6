@@ -1,0 +1,10 @@
+FROM sequential-research:1.0
+WORKDIR /app
+COPY kit.py /app/
+COPY research /app/research
+COPY research3 /app/research3
+COPY research4 /app/research4
+COPY research6 /app/research6
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+USER 65534:65534
+ENTRYPOINT ["python", "-m", "research6.policies.policy"]

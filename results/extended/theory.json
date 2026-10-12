@@ -1,0 +1,2240 @@
+{
+  "scope": "Exact rational finite toy MDPs; numerical quadrature is labeled separately. Not full-simulator optimality.",
+  "exact_dynamic_benchmarks": [
+    {
+      "instance": {
+        "name": "static_greedy_trap",
+        "horizon": 1,
+        "arrivals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "exits": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "edges": [
+          {
+            "u": 0,
+            "v": 1,
+            "reward": "7/10",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 0,
+            "v": 2,
+            "reward": "3/5",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 1,
+            "v": 3,
+            "reward": "3/5",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          }
+        ],
+        "description": "A highest-weight edge blocks two edges worth more in total."
+      },
+      "policies": {
+        "exact_dp": {
+          "expected_reward": 1.2,
+          "rational_reward": "6/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            1,
+            2
+          ]
+        },
+        "greedy": {
+          "expected_reward": 0.7,
+          "rational_reward": "7/10",
+          "regret": 0.5,
+          "rational_regret": "1/2",
+          "initial_action": [
+            0
+          ]
+        },
+        "blossom": {
+          "expected_reward": 1.2,
+          "rational_reward": "6/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            1,
+            2
+          ]
+        },
+        "batching": {
+          "expected_reward": 0.0,
+          "rational_reward": "0",
+          "regret": 1.2,
+          "rational_regret": "6/5",
+          "initial_action": []
+        },
+        "reservation": {
+          "expected_reward": 1.2,
+          "rational_reward": "6/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            1,
+            2
+          ]
+        }
+      },
+      "dp_states": 6
+    },
+    {
+      "instance": {
+        "name": "known_future_arrivals",
+        "horizon": 2,
+        "arrivals": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "exits": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "edges": [
+          {
+            "u": 0,
+            "v": 1,
+            "reward": "3/10",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 0,
+            "v": 2,
+            "reward": "4/5",
+            "retire": "1",
+            "busy": 1,
+            "start": 1,
+            "end": 100
+          },
+          {
+            "u": 1,
+            "v": 3,
+            "reward": "4/5",
+            "retire": "1",
+            "busy": 1,
+            "start": 1,
+            "end": 100
+          }
+        ],
+        "description": "Immediate blossom consumes endpoints before deterministic high-value arrivals."
+      },
+      "policies": {
+        "exact_dp": {
+          "expected_reward": 1.6,
+          "rational_reward": "8/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": []
+        },
+        "greedy": {
+          "expected_reward": 0.3,
+          "rational_reward": "3/10",
+          "regret": 1.3,
+          "rational_regret": "13/10",
+          "initial_action": [
+            0
+          ]
+        },
+        "blossom": {
+          "expected_reward": 0.3,
+          "rational_reward": "3/10",
+          "regret": 1.3,
+          "rational_regret": "13/10",
+          "initial_action": [
+            0
+          ]
+        },
+        "batching": {
+          "expected_reward": 1.6,
+          "rational_reward": "8/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": []
+        },
+        "reservation": {
+          "expected_reward": 1.6,
+          "rational_reward": "8/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": []
+        }
+      },
+      "dp_states": 9
+    },
+    {
+      "instance": {
+        "name": "early_exit",
+        "horizon": 2,
+        "arrivals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "exits": [
+          1,
+          1,
+          100,
+          100
+        ],
+        "edges": [
+          {
+            "u": 0,
+            "v": 1,
+            "reward": "4/5",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          }
+        ],
+        "description": "Waiting one day loses the only feasible assignment."
+      },
+      "policies": {
+        "exact_dp": {
+          "expected_reward": 0.8,
+          "rational_reward": "4/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0
+          ]
+        },
+        "greedy": {
+          "expected_reward": 0.8,
+          "rational_reward": "4/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0
+          ]
+        },
+        "blossom": {
+          "expected_reward": 0.8,
+          "rational_reward": "4/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0
+          ]
+        },
+        "batching": {
+          "expected_reward": 0.0,
+          "rational_reward": "0",
+          "regret": 0.8,
+          "rational_regret": "4/5",
+          "initial_action": []
+        },
+        "reservation": {
+          "expected_reward": 0.8,
+          "rational_reward": "4/5",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0
+          ]
+        }
+      },
+      "dp_states": 5
+    },
+    {
+      "instance": {
+        "name": "nonseparable_reservation",
+        "horizon": 2,
+        "arrivals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "exits": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "edges": [
+          {
+            "u": 0,
+            "v": 1,
+            "reward": "1/2",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 0
+          },
+          {
+            "u": 2,
+            "v": 3,
+            "reward": "1/2",
+            "retire": "1",
+            "busy": 1,
+            "start": 0,
+            "end": 0
+          },
+          {
+            "u": 0,
+            "v": 2,
+            "reward": "9/10",
+            "retire": "1",
+            "busy": 1,
+            "start": 1,
+            "end": 100
+          }
+        ],
+        "description": "Each separate endpoint removal destroys the same future edge; summing penalties double-counts its loss."
+      },
+      "policies": {
+        "exact_dp": {
+          "expected_reward": 1.0,
+          "rational_reward": "1",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0,
+            1
+          ]
+        },
+        "greedy": {
+          "expected_reward": 1.0,
+          "rational_reward": "1",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0,
+            1
+          ]
+        },
+        "blossom": {
+          "expected_reward": 1.0,
+          "rational_reward": "1",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            0,
+            1
+          ]
+        },
+        "batching": {
+          "expected_reward": 0.9,
+          "rational_reward": "9/10",
+          "regret": 0.1,
+          "rational_regret": "1/10",
+          "initial_action": []
+        },
+        "reservation": {
+          "expected_reward": 0.9,
+          "rational_reward": "9/10",
+          "regret": 0.1,
+          "rational_regret": "1/10",
+          "initial_action": []
+        }
+      },
+      "dp_states": 10
+    },
+    {
+      "instance": {
+        "name": "stochastic_repeated_members",
+        "horizon": 4,
+        "arrivals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "exits": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "edges": [
+          {
+            "u": 0,
+            "v": 1,
+            "reward": "1/5",
+            "retire": "2/5",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 0,
+            "v": 2,
+            "reward": "3/10",
+            "retire": "1/2",
+            "busy": 2,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 1,
+            "v": 3,
+            "reward": "3/10",
+            "retire": "1/2",
+            "busy": 2,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 2,
+            "v": 3,
+            "reward": "1/5",
+            "retire": "2/5",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          },
+          {
+            "u": 0,
+            "v": 3,
+            "reward": "1/10",
+            "retire": "1/5",
+            "busy": 1,
+            "start": 0,
+            "end": 100
+          }
+        ],
+        "description": "Nonretired members return; edge-specific busy times and dyad exhaustion affect continuation."
+      },
+      "policies": {
+        "exact_dp": {
+          "expected_reward": 0.709,
+          "rational_reward": "709/1000",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            1,
+            2
+          ]
+        },
+        "greedy": {
+          "expected_reward": 0.709,
+          "rational_reward": "709/1000",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            1,
+            2
+          ]
+        },
+        "blossom": {
+          "expected_reward": 0.709,
+          "rational_reward": "709/1000",
+          "regret": 0.0,
+          "rational_regret": "0",
+          "initial_action": [
+            1,
+            2
+          ]
+        },
+        "batching": {
+          "expected_reward": 0.7,
+          "rational_reward": "7/10",
+          "regret": 0.009,
+          "rational_regret": "9/1000",
+          "initial_action": []
+        },
+        "reservation": {
+          "expected_reward": 0.616,
+          "rational_reward": "77/125",
+          "regret": 0.093,
+          "rational_regret": "93/1000",
+          "initial_action": [
+            0,
+            3
+          ]
+        }
+      },
+      "dp_states": 1339
+    }
+  ],
+  "exact_simulator_delays": {
+    "standard": {
+      "mean_date_delay": "177/14",
+      "late_date_probability": 0.0,
+      "late_date_rational": "0",
+      "on_time_feedback_probability": "9/25",
+      "qualification_given_date_and_both_yes": 0.36,
+      "latest_feedback_day_for_assignment_59": 85
+    },
+    "delayed": {
+      "mean_date_delay": "148/7",
+      "late_date_probability": 0.021865889212827987,
+      "late_date_rational": "15/686",
+      "on_time_feedback_probability": "9/25",
+      "qualification_given_date_and_both_yes": 0.3521282798833819,
+      "latest_feedback_day_for_assignment_59": 97
+    }
+  },
+  "missing_feature_approximation": [
+    {
+      "regime": "development",
+      "intercept": -2,
+      "exact_missing_feature_enumeration": 0.15269047233324268,
+      "logistic_of_expected_features": 0.13587289700909427,
+      "signed_error": -0.016817575324148404,
+      "absolute_error": 0.016817575324148404,
+      "second_derivative_error_bound": 0.019425430932109286
+    },
+    {
+      "regime": "development",
+      "intercept": -1,
+      "exact_missing_feature_enumeration": 0.3146488520415527,
+      "logistic_of_expected_features": 0.29943285752602705,
+      "signed_error": -0.015215994515525633,
+      "absolute_error": 0.015215994515525633,
+      "second_derivative_error_bound": 0.019425430932109286
+    },
+    {
+      "regime": "development",
+      "intercept": -0.25,
+      "exact_missing_feature_enumeration": 0.47691175431153066,
+      "logistic_of_expected_features": 0.47502081252106,
+      "signed_error": -0.0018909417904706682,
+      "absolute_error": 0.0018909417904706682,
+      "second_derivative_error_bound": 0.019425430932109286
+    },
+    {
+      "regime": "development",
+      "intercept": 0,
+      "exact_missing_feature_enumeration": 0.5337832721058189,
+      "logistic_of_expected_features": 0.5374298453437496,
+      "signed_error": 0.003646573237930717,
+      "absolute_error": 0.003646573237930717,
+      "second_derivative_error_bound": 0.019425430932109286
+    },
+    {
+      "regime": "development",
+      "intercept": 1,
+      "exact_missing_feature_enumeration": 0.7417100098930749,
+      "logistic_of_expected_features": 0.759510916949111,
+      "signed_error": 0.017800907056036097,
+      "absolute_error": 0.017800907056036097,
+      "second_derivative_error_bound": 0.019425430932109286
+    },
+    {
+      "regime": "development",
+      "intercept": 2,
+      "exact_missing_feature_enumeration": 0.8810165680645167,
+      "logistic_of_expected_features": 0.8956687768809987,
+      "signed_error": 0.014652208816481993,
+      "absolute_error": 0.014652208816481993,
+      "second_derivative_error_bound": 0.019425430932109286
+    },
+    {
+      "regime": "shift",
+      "intercept": -2,
+      "exact_missing_feature_enumeration": 0.13900367477279116,
+      "logistic_of_expected_features": 0.11920292202211755,
+      "signed_error": -0.01980075275067361,
+      "absolute_error": 0.01980075275067361,
+      "second_derivative_error_bound": 0.0236653469714706
+    },
+    {
+      "regime": "shift",
+      "intercept": -1,
+      "exact_missing_feature_enumeration": 0.2876943367197287,
+      "logistic_of_expected_features": 0.2689414213699951,
+      "signed_error": -0.018752915349733612,
+      "absolute_error": 0.018752915349733612,
+      "second_derivative_error_bound": 0.0236653469714706
+    },
+    {
+      "regime": "shift",
+      "intercept": -0.25,
+      "exact_missing_feature_enumeration": 0.44170906540382276,
+      "logistic_of_expected_features": 0.43782349911420193,
+      "signed_error": -0.0038855662896208343,
+      "absolute_error": 0.0038855662896208343,
+      "second_derivative_error_bound": 0.0236653469714706
+    },
+    {
+      "regime": "shift",
+      "intercept": 0,
+      "exact_missing_feature_enumeration": 0.49736587771091284,
+      "logistic_of_expected_features": 0.5,
+      "signed_error": 0.0026341222890871596,
+      "absolute_error": 0.0026341222890871596,
+      "second_derivative_error_bound": 0.0236653469714706
+    },
+    {
+      "regime": "shift",
+      "intercept": 1,
+      "exact_missing_feature_enumeration": 0.7101843860071049,
+      "logistic_of_expected_features": 0.7310585786300049,
+      "signed_error": 0.020874192622900023,
+      "absolute_error": 0.020874192622900023,
+      "second_derivative_error_bound": 0.0236653469714706
+    },
+    {
+      "regime": "shift",
+      "intercept": 2,
+      "exact_missing_feature_enumeration": 0.8624744034395923,
+      "logistic_of_expected_features": 0.8807970779778823,
+      "signed_error": 0.018322674538290062,
+      "absolute_error": 0.018322674538290062,
+      "second_derivative_error_bound": 0.0236653469714706
+    }
+  ],
+  "numerical_shared_effect_audit": [
+    {
+      "quadrature_nodes": 16,
+      "acceptance_joint": 0.2875037619515202,
+      "independent_marginal_product": 0.2768804687225399,
+      "acceptance_dependence_gap": 0.010623293228980313,
+      "retirement_probability": 0.031143879658018146,
+      "qualified_probability_standard": 0.011211796676886533,
+      "four_factor_independence_approximation": 0.009277864785394238
+    },
+    {
+      "quadrature_nodes": 32,
+      "acceptance_joint": 0.28750376195152016,
+      "independent_marginal_product": 0.27688046872253985,
+      "acceptance_dependence_gap": 0.010623293228980313,
+      "retirement_probability": 0.031143879658016772,
+      "qualified_probability_standard": 0.011211796676886038,
+      "four_factor_independence_approximation": 0.009277864785394238
+    },
+    {
+      "quadrature_nodes": 64,
+      "acceptance_joint": 0.28750376195152016,
+      "independent_marginal_product": 0.2768804687225399,
+      "acceptance_dependence_gap": 0.010623293228980257,
+      "retirement_probability": 0.03114387965801678,
+      "qualified_probability_standard": 0.01121179667688604,
+      "four_factor_independence_approximation": 0.00927786478539424
+    }
+  ],
+  "production_quadrature_audit": {
+    "terminal_model_sha256": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "cases": [
+      {
+        "case": 0,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "actor_b": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "regime": 0,
+        "day": 0,
+        "five_node": [
+          0.4794630657501688,
+          0.4794630657501688,
+          0.2556947550194916,
+          0.3460086661988268,
+          0.10398500321336361,
+          0.5781279779064901,
+          0.5781279779064901
+        ],
+        "reference_64_node": [
+          0.4794631737821575,
+          0.4794631737821575,
+          0.25569431534383424,
+          0.3460085722753945,
+          0.10398476472869579,
+          0.578127838638277,
+          0.578127838638277
+        ],
+        "max_absolute_probability_error": 4.3967565738212144e-07,
+        "full_four_factor_relative_error": 2.2934577814511473e-06,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 0,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "actor_b": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "regime": 0,
+        "day": 40,
+        "five_node": [
+          0.4794630657501688,
+          0.4794630657501688,
+          0.2556947550194916,
+          0.3460086661988268,
+          0.10398500321336361,
+          0.5781279779064901,
+          0.5781279779064901
+        ],
+        "reference_64_node": [
+          0.4794631737821575,
+          0.4794631737821575,
+          0.25569431534383424,
+          0.3460085722753945,
+          0.10398476472869579,
+          0.578127838638277,
+          0.578127838638277
+        ],
+        "max_absolute_probability_error": 4.3967565738212144e-07,
+        "full_four_factor_relative_error": 2.2934577814511473e-06,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 0,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "actor_b": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "regime": 1,
+        "day": 0,
+        "five_node": [
+          0.4483141686529017,
+          0.4483141686529017,
+          0.2297160831637003,
+          0.3460086661988268,
+          0.09050389461784693,
+          0.5781279779064901,
+          0.5781279779064901
+        ],
+        "reference_64_node": [
+          0.4483146668426839,
+          0.4483146668426839,
+          0.2297161085374893,
+          0.3460085722753945,
+          0.09050388584024636,
+          0.578127838638277,
+          0.578127838638277
+        ],
+        "max_absolute_probability_error": 4.981897822053938e-07,
+        "full_four_factor_relative_error": 9.698589714206245e-08,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 0,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "actor_b": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "regime": 1,
+        "day": 40,
+        "five_node": [
+          0.4483141686529017,
+          0.4483141686529017,
+          0.2297160831637003,
+          0.3460086661988268,
+          0.09050389461784693,
+          0.5781279779064901,
+          0.5781279779064901
+        ],
+        "reference_64_node": [
+          0.4483146668426839,
+          0.4483146668426839,
+          0.2297161085374893,
+          0.3460085722753945,
+          0.09050388584024636,
+          0.578127838638277,
+          0.578127838638277
+        ],
+        "max_absolute_probability_error": 4.981897822053938e-07,
+        "full_four_factor_relative_error": 9.698589714206245e-08,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 0,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "actor_b": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "regime": 2,
+        "day": 0,
+        "five_node": [
+          0.4794630657501688,
+          0.4794630657501688,
+          0.2556947550194916,
+          0.3460086661988268,
+          0.10398500321336361,
+          0.5781279779064901,
+          0.5781279779064901
+        ],
+        "reference_64_node": [
+          0.4794631737821575,
+          0.4794631737821575,
+          0.25569431534383424,
+          0.3460085722753945,
+          0.10398476472869579,
+          0.578127838638277,
+          0.578127838638277
+        ],
+        "max_absolute_probability_error": 4.3967565738212144e-07,
+        "full_four_factor_relative_error": 2.2934577814511473e-06,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 0,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "actor_b": [
+          0.0,
+          0.49,
+          0.0,
+          0.25
+        ],
+        "regime": 2,
+        "day": 40,
+        "five_node": [
+          0.3799439331263931,
+          0.3799439331263931,
+          0.16785284423939953,
+          0.3460086661988268,
+          0.07026013078757665,
+          0.5781279779064901,
+          0.5781279779064901
+        ],
+        "reference_64_node": [
+          0.3799444889472149,
+          0.3799444889472149,
+          0.16785311653157722,
+          0.3460085722753945,
+          0.0702601081895577,
+          0.578127838638277,
+          0.578127838638277
+        ],
+        "max_absolute_probability_error": 5.558208218126026e-07,
+        "full_four_factor_relative_error": 3.216337054485216e-07,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 1,
+        "equal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_a": [
+          -1.0,
+          0.49,
+          0.7,
+          0.25
+        ],
+        "actor_b": [
+          1.0,
+          0.49,
+          -0.7,
+          0.25
+        ],
+        "regime": 0,
+        "day": 0,
+        "five_node": [
+          0.5647886126434419,
+          0.8859495159520987,
+          0.5044664106028908,
+          0.3609889182808304,
+          0.1940910720066782,
+          0.7579557194888885,
+          0.4660524039324643
+        ],
+        "reference_64_node": [
+          0.5647865020125691,
+          0.8859501266276335,
+          0.5044646468286836,
+          0.36098899493255027,
+          0.19409051651678685,
+          0.7579557431315318,
+          0.46605248777910735
+        ],
+        "max_absolute_probability_error": 2.1106308728535694e-06,
+        "full_four_factor_relative_error": 2.8620145966126724e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 1,
+        "equal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_a": [
+          -1.0,
+          0.49,
+          0.7,
+          0.25
+        ],
+        "actor_b": [
+          1.0,
+          0.49,
+          -0.7,
+          0.25
+        ],
+        "regime": 0,
+        "day": 40,
+        "five_node": [
+          0.5647886126434419,
+          0.8859495159520987,
+          0.5044664106028908,
+          0.3609889182808304,
+          0.1940910720066782,
+          0.7579557194888885,
+          0.4660524039324643
+        ],
+        "reference_64_node": [
+          0.5647865020125691,
+          0.8859501266276335,
+          0.5044646468286836,
+          0.36098899493255027,
+          0.19409051651678685,
+          0.7579557431315318,
+          0.46605248777910735
+        ],
+        "max_absolute_probability_error": 2.1106308728535694e-06,
+        "full_four_factor_relative_error": 2.8620145966126724e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 1,
+        "equal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_a": [
+          -1.0,
+          0.49,
+          0.7,
+          0.25
+        ],
+        "actor_b": [
+          1.0,
+          0.49,
+          -0.7,
+          0.25
+        ],
+        "regime": 1,
+        "day": 0,
+        "five_node": [
+          0.5108518058974376,
+          0.8604239819864372,
+          0.444407073890707,
+          0.3609889182808304,
+          0.17247324692816707,
+          0.7579557194888885,
+          0.4660524039324643
+        ],
+        "reference_64_node": [
+          0.510851409571763,
+          0.8604251225513782,
+          0.4444070351981562,
+          0.36098899493255027,
+          0.17247321213310596,
+          0.7579557431315318,
+          0.46605248777910735
+        ],
+        "max_absolute_probability_error": 1.1405649409379492e-06,
+        "full_four_factor_relative_error": 2.0174182807760205e-07,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 1,
+        "equal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_a": [
+          -1.0,
+          0.49,
+          0.7,
+          0.25
+        ],
+        "actor_b": [
+          1.0,
+          0.49,
+          -0.7,
+          0.25
+        ],
+        "regime": 1,
+        "day": 40,
+        "five_node": [
+          0.5108518058974376,
+          0.8604239819864372,
+          0.444407073890707,
+          0.3609889182808304,
+          0.17247324692816707,
+          0.7579557194888885,
+          0.4660524039324643
+        ],
+        "reference_64_node": [
+          0.510851409571763,
+          0.8604251225513782,
+          0.4444070351981562,
+          0.36098899493255027,
+          0.17247321213310596,
+          0.7579557431315318,
+          0.46605248777910735
+        ],
+        "max_absolute_probability_error": 1.1405649409379492e-06,
+        "full_four_factor_relative_error": 2.0174182807760205e-07,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 1,
+        "equal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_a": [
+          -1.0,
+          0.49,
+          0.7,
+          0.25
+        ],
+        "actor_b": [
+          1.0,
+          0.49,
+          -0.7,
+          0.25
+        ],
+        "regime": 2,
+        "day": 0,
+        "five_node": [
+          0.5647886126434419,
+          0.8859495159520987,
+          0.5044664106028908,
+          0.3609889182808304,
+          0.1940910720066782,
+          0.7579557194888885,
+          0.4660524039324643
+        ],
+        "reference_64_node": [
+          0.5647865020125691,
+          0.8859501266276335,
+          0.5044646468286836,
+          0.36098899493255027,
+          0.19409051651678685,
+          0.7579557431315318,
+          0.46605248777910735
+        ],
+        "max_absolute_probability_error": 2.1106308728535694e-06,
+        "full_four_factor_relative_error": 2.8620145966126724e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 1,
+        "equal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_a": [
+          -1.0,
+          0.49,
+          0.7,
+          0.25
+        ],
+        "actor_b": [
+          1.0,
+          0.49,
+          -0.7,
+          0.25
+        ],
+        "regime": 2,
+        "day": 40,
+        "five_node": [
+          0.4566851165529578,
+          0.8306202900765043,
+          0.3849008670970401,
+          0.3609889182808304,
+          0.1507535697314178,
+          0.7579557194888885,
+          0.4660524039324643
+        ],
+        "reference_64_node": [
+          0.4566866234828657,
+          0.8306217195738128,
+          0.3849025934431537,
+          0.36098899493255027,
+          0.15075420619752217,
+          0.7579557431315318,
+          0.46605248777910735
+        ],
+        "max_absolute_probability_error": 1.7263461136174385e-06,
+        "full_four_factor_relative_error": -4.221879577553589e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 2,
+        "equal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.0,
+          0.2,
+          -1.0,
+          0.15
+        ],
+        "actor_b": [
+          0.5,
+          0.6,
+          1.0,
+          0.3
+        ],
+        "regime": 0,
+        "day": 0,
+        "five_node": [
+          0.05469998923200416,
+          0.38975507366857953,
+          0.023432592089410686,
+          0.237983112430318,
+          0.007002357057323327,
+          0.3125591360735912,
+          0.7387760003690227
+        ],
+        "reference_64_node": [
+          0.05470000024075747,
+          0.3897615631272781,
+          0.023432884314130608,
+          0.23798320426501088,
+          0.007002430887187841,
+          0.31255918674189487,
+          0.7387759658159316
+        ],
+        "max_absolute_probability_error": 6.489458698577533e-06,
+        "full_four_factor_relative_error": -1.0543462078110203e-05,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 2,
+        "equal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.0,
+          0.2,
+          -1.0,
+          0.15
+        ],
+        "actor_b": [
+          0.5,
+          0.6,
+          1.0,
+          0.3
+        ],
+        "regime": 0,
+        "day": 40,
+        "five_node": [
+          0.05469998923200416,
+          0.38975507366857953,
+          0.023432592089410686,
+          0.237983112430318,
+          0.007002357057323327,
+          0.3125591360735912,
+          0.7387760003690227
+        ],
+        "reference_64_node": [
+          0.05470000024075747,
+          0.3897615631272781,
+          0.023432884314130608,
+          0.23798320426501088,
+          0.007002430887187841,
+          0.31255918674189487,
+          0.7387759658159316
+        ],
+        "max_absolute_probability_error": 6.489458698577533e-06,
+        "full_four_factor_relative_error": -1.0543462078110203e-05,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 2,
+        "equal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.0,
+          0.2,
+          -1.0,
+          0.15
+        ],
+        "actor_b": [
+          0.5,
+          0.6,
+          1.0,
+          0.3
+        ],
+        "regime": 1,
+        "day": 0,
+        "five_node": [
+          0.06136115384521109,
+          0.41548090418826866,
+          0.027878190060749625,
+          0.237983112430318,
+          0.008289990823677103,
+          0.3125591360735912,
+          0.7387760003690227
+        ],
+        "reference_64_node": [
+          0.06136116517335083,
+          0.4154866945206303,
+          0.027878419378293582,
+          0.23798320426501088,
+          0.008290032563552917,
+          0.31255918674189487,
+          0.7387759658159316
+        ],
+        "max_absolute_probability_error": 5.790332361643724e-06,
+        "full_four_factor_relative_error": -5.034947148202238e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 2,
+        "equal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.0,
+          0.2,
+          -1.0,
+          0.15
+        ],
+        "actor_b": [
+          0.5,
+          0.6,
+          1.0,
+          0.3
+        ],
+        "regime": 1,
+        "day": 40,
+        "five_node": [
+          0.06136115384521109,
+          0.41548090418826866,
+          0.027878190060749625,
+          0.237983112430318,
+          0.008289990823677103,
+          0.3125591360735912,
+          0.7387760003690227
+        ],
+        "reference_64_node": [
+          0.06136116517335083,
+          0.4154866945206303,
+          0.027878419378293582,
+          0.23798320426501088,
+          0.008290032563552917,
+          0.31255918674189487,
+          0.7387759658159316
+        ],
+        "max_absolute_probability_error": 5.790332361643724e-06,
+        "full_four_factor_relative_error": -5.034947148202238e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 2,
+        "equal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.0,
+          0.2,
+          -1.0,
+          0.15
+        ],
+        "actor_b": [
+          0.5,
+          0.6,
+          1.0,
+          0.3
+        ],
+        "regime": 2,
+        "day": 0,
+        "five_node": [
+          0.05469998923200416,
+          0.38975507366857953,
+          0.023432592089410686,
+          0.237983112430318,
+          0.007002357057323327,
+          0.3125591360735912,
+          0.7387760003690227
+        ],
+        "reference_64_node": [
+          0.05470000024075747,
+          0.3897615631272781,
+          0.023432884314130608,
+          0.23798320426501088,
+          0.007002430887187841,
+          0.31255918674189487,
+          0.7387759658159316
+        ],
+        "max_absolute_probability_error": 6.489458698577533e-06,
+        "full_four_factor_relative_error": -1.0543462078110203e-05,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 2,
+        "equal": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.0,
+          0.2,
+          -1.0,
+          0.15
+        ],
+        "actor_b": [
+          0.5,
+          0.6,
+          1.0,
+          0.3
+        ],
+        "regime": 2,
+        "day": 40,
+        "five_node": [
+          0.03421756405426107,
+          0.29330724031610805,
+          0.011256567848854305,
+          0.237983112430318,
+          0.0034263009454824456,
+          0.3125591360735912,
+          0.7387760003690227
+        ],
+        "reference_64_node": [
+          0.0342175690276949,
+          0.293310499156294,
+          0.011256758911694148,
+          0.23798320426501088,
+          0.0034263835435003895,
+          0.31255918674189487,
+          0.7387759658159316
+        ],
+        "max_absolute_probability_error": 3.2588401859268146e-06,
+        "full_four_factor_relative_error": -2.410647170561163e-05,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 3,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          -2.5,
+          0.49,
+          2.5,
+          0.25
+        ],
+        "actor_b": [
+          2.5,
+          0.49,
+          -2.5,
+          0.25
+        ],
+        "regime": 0,
+        "day": 0,
+        "five_node": [
+          0.0998715291373386,
+          0.8829704409411256,
+          0.09215562145189206,
+          0.11533125406614053,
+          0.013300643589080074,
+          0.9335861868999056,
+          0.1220602252100888
+        ],
+        "reference_64_node": [
+          0.09987121912240653,
+          0.8829708763896811,
+          0.0921553160565488,
+          0.11533120736728839,
+          0.013300598985263843,
+          0.9335861708177766,
+          0.12206017953944732
+        ],
+        "max_absolute_probability_error": 4.354485554358689e-07,
+        "full_four_factor_relative_error": 3.353519362564014e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 3,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          -2.5,
+          0.49,
+          2.5,
+          0.25
+        ],
+        "actor_b": [
+          2.5,
+          0.49,
+          -2.5,
+          0.25
+        ],
+        "regime": 0,
+        "day": 40,
+        "five_node": [
+          0.0998715291373386,
+          0.8829704409411256,
+          0.09215562145189206,
+          0.11533125406614053,
+          0.013300643589080074,
+          0.9335861868999056,
+          0.1220602252100888
+        ],
+        "reference_64_node": [
+          0.09987121912240653,
+          0.8829708763896811,
+          0.0921553160565488,
+          0.11533120736728839,
+          0.013300598985263843,
+          0.9335861708177766,
+          0.12206017953944732
+        ],
+        "max_absolute_probability_error": 4.354485554358689e-07,
+        "full_four_factor_relative_error": 3.353519362564014e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 3,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          -2.5,
+          0.49,
+          2.5,
+          0.25
+        ],
+        "actor_b": [
+          2.5,
+          0.49,
+          -2.5,
+          0.25
+        ],
+        "regime": 1,
+        "day": 0,
+        "five_node": [
+          0.09111239196207581,
+          0.8662355262511816,
+          0.08349937897747109,
+          0.11533125406614053,
+          0.011528462560272103,
+          0.9335861868999056,
+          0.1220602252100888
+        ],
+        "reference_64_node": [
+          0.09111224255391755,
+          0.8662360636784967,
+          0.08349923564965497,
+          0.11533120736728839,
+          0.01152845244757761,
+          0.9335861708177766,
+          0.12206017953944732
+        ],
+        "max_absolute_probability_error": 5.374273150948738e-07,
+        "full_four_factor_relative_error": 8.771944489992799e-07,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 3,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          -2.5,
+          0.49,
+          2.5,
+          0.25
+        ],
+        "actor_b": [
+          2.5,
+          0.49,
+          -2.5,
+          0.25
+        ],
+        "regime": 1,
+        "day": 40,
+        "five_node": [
+          0.09111239196207581,
+          0.8662355262511816,
+          0.08349937897747109,
+          0.11533125406614053,
+          0.011528462560272103,
+          0.9335861868999056,
+          0.1220602252100888
+        ],
+        "reference_64_node": [
+          0.09111224255391755,
+          0.8662360636784967,
+          0.08349923564965497,
+          0.11533120736728839,
+          0.01152845244757761,
+          0.9335861708177766,
+          0.12206017953944732
+        ],
+        "max_absolute_probability_error": 5.374273150948738e-07,
+        "full_four_factor_relative_error": 8.771944489992799e-07,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 3,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          -2.5,
+          0.49,
+          2.5,
+          0.25
+        ],
+        "actor_b": [
+          2.5,
+          0.49,
+          -2.5,
+          0.25
+        ],
+        "regime": 2,
+        "day": 0,
+        "five_node": [
+          0.0998715291373386,
+          0.8829704409411256,
+          0.09215562145189206,
+          0.11533125406614053,
+          0.013300643589080074,
+          0.9335861868999056,
+          0.1220602252100888
+        ],
+        "reference_64_node": [
+          0.09987121912240653,
+          0.8829708763896811,
+          0.0921553160565488,
+          0.11533120736728839,
+          0.013300598985263843,
+          0.9335861708177766,
+          0.12206017953944732
+        ],
+        "max_absolute_probability_error": 4.354485554358689e-07,
+        "full_four_factor_relative_error": 3.353519362564014e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      },
+      {
+        "case": 3,
+        "equal": [
+          0.5,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.25
+        ],
+        "actor_a": [
+          -2.5,
+          0.49,
+          2.5,
+          0.25
+        ],
+        "actor_b": [
+          2.5,
+          0.49,
+          -2.5,
+          0.25
+        ],
+        "regime": 2,
+        "day": 40,
+        "five_node": [
+          0.06569001728711131,
+          0.8293195214411047,
+          0.05822008279108422,
+          0.11533125406614053,
+          0.008570587539669381,
+          0.9335861868999056,
+          0.1220602252100888
+        ],
+        "reference_64_node": [
+          0.06568999973298596,
+          0.8293197877480539,
+          0.058220064578487,
+          0.11533120736728839,
+          0.008570580294448515,
+          0.9335861708177766,
+          0.12206017953944732
+        ],
+        "max_absolute_probability_error": 2.6630694927032295e-07,
+        "full_four_factor_relative_error": 8.453594292396222e-07,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 4,
+        "equal": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.5,
+          0.001,
+          -2.5,
+          0.001
+        ],
+        "actor_b": [
+          2.5,
+          0.001,
+          2.5,
+          0.001
+        ],
+        "regime": 0,
+        "day": 0,
+        "five_node": [
+          0.11674595224527062,
+          0.9432566760528766,
+          0.11113451640354864,
+          0.1271847497611793,
+          0.01657268430121863,
+          0.13273807078009708,
+          0.9506956560497467
+        ],
+        "reference_64_node": [
+          0.11674594678008615,
+          0.9432566671450049,
+          0.11113451096129418,
+          0.1271847302457649,
+          0.016572766472041638,
+          0.13273805135184555,
+          0.9506956493659984
+        ],
+        "max_absolute_probability_error": 8.217082300698841e-08,
+        "full_four_factor_relative_error": -4.958183846107475e-06,
+        "reference_32_64_max_difference": 3.3306690738754696e-16
+      },
+      {
+        "case": 4,
+        "equal": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.5,
+          0.001,
+          -2.5,
+          0.001
+        ],
+        "actor_b": [
+          2.5,
+          0.001,
+          2.5,
+          0.001
+        ],
+        "regime": 0,
+        "day": 40,
+        "five_node": [
+          0.11674595224527062,
+          0.9432566760528766,
+          0.11113451640354864,
+          0.1271847497611793,
+          0.01657268430121863,
+          0.13273807078009708,
+          0.9506956560497467
+        ],
+        "reference_64_node": [
+          0.11674594678008615,
+          0.9432566671450049,
+          0.11113451096129418,
+          0.1271847302457649,
+          0.016572766472041638,
+          0.13273805135184555,
+          0.9506956493659984
+        ],
+        "max_absolute_probability_error": 8.217082300698841e-08,
+        "full_four_factor_relative_error": -4.958183846107475e-06,
+        "reference_32_64_max_difference": 3.3306690738754696e-16
+      },
+      {
+        "case": 4,
+        "equal": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.5,
+          0.001,
+          -2.5,
+          0.001
+        ],
+        "actor_b": [
+          2.5,
+          0.001,
+          2.5,
+          0.001
+        ],
+        "regime": 1,
+        "day": 0,
+        "five_node": [
+          0.03536157390781682,
+          0.8229028959216205,
+          0.03001491009367641,
+          0.1271847497611793,
+          0.004627470798459121,
+          0.13273807078009708,
+          0.9506956560497467
+        ],
+        "reference_64_node": [
+          0.03536157627734789,
+          0.8229029529989527,
+          0.030014912091207265,
+          0.1271847302457649,
+          0.0046274800826306296,
+          0.13273805135184555,
+          0.9506956493659984
+        ],
+        "max_absolute_probability_error": 5.70773321939555e-08,
+        "full_four_factor_relative_error": -2.006312581158054e-06,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 4,
+        "equal": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.5,
+          0.001,
+          -2.5,
+          0.001
+        ],
+        "actor_b": [
+          2.5,
+          0.001,
+          2.5,
+          0.001
+        ],
+        "regime": 1,
+        "day": 40,
+        "five_node": [
+          0.03536157390781682,
+          0.8229028959216205,
+          0.03001491009367641,
+          0.1271847497611793,
+          0.004627470798459121,
+          0.13273807078009708,
+          0.9506956560497467
+        ],
+        "reference_64_node": [
+          0.03536157627734789,
+          0.8229029529989527,
+          0.030014912091207265,
+          0.1271847302457649,
+          0.0046274800826306296,
+          0.13273805135184555,
+          0.9506956493659984
+        ],
+        "max_absolute_probability_error": 5.70773321939555e-08,
+        "full_four_factor_relative_error": -2.006312581158054e-06,
+        "reference_32_64_max_difference": 1.1102230246251565e-16
+      },
+      {
+        "case": 4,
+        "equal": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.5,
+          0.001,
+          -2.5,
+          0.001
+        ],
+        "actor_b": [
+          2.5,
+          0.001,
+          2.5,
+          0.001
+        ],
+        "regime": 2,
+        "day": 0,
+        "five_node": [
+          0.11674595224527062,
+          0.9432566760528766,
+          0.11113451640354864,
+          0.1271847497611793,
+          0.01657268430121863,
+          0.13273807078009708,
+          0.9506956560497467
+        ],
+        "reference_64_node": [
+          0.11674594678008615,
+          0.9432566671450049,
+          0.11113451096129418,
+          0.1271847302457649,
+          0.016572766472041638,
+          0.13273805135184555,
+          0.9506956493659984
+        ],
+        "max_absolute_probability_error": 8.217082300698841e-08,
+        "full_four_factor_relative_error": -4.958183846107475e-06,
+        "reference_32_64_max_difference": 3.3306690738754696e-16
+      },
+      {
+        "case": 4,
+        "equal": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "actor_a": [
+          -2.5,
+          0.001,
+          -2.5,
+          0.001
+        ],
+        "actor_b": [
+          2.5,
+          0.001,
+          2.5,
+          0.001
+        ],
+        "regime": 2,
+        "day": 40,
+        "five_node": [
+          0.07483357606289613,
+          0.9103468921471303,
+          0.06916097048646548,
+          0.1271847497611793,
+          0.0104483262348622,
+          0.13273807078009708,
+          0.9506956560497467
+        ],
+        "reference_64_node": [
+          0.07483358779984128,
+          0.9103468824765709,
+          0.06916098236862042,
+          0.1271847302457649,
+          0.010448372676881361,
+          0.13273805135184555,
+          0.9506956493659984
+        ],
+        "max_absolute_probability_error": 4.644201916093049e-08,
+        "full_four_factor_relative_error": -4.444904541325429e-06,
+        "reference_32_64_max_difference": 2.220446049250313e-16
+      }
+    ],
+    "scope": "Numerical quadrature error at fixed assumed actor posterior distributions, not model calibration."
+  },
+  "counterexamples": {
+    "query_complementarity": {
+      "F_empty": 0,
+      "F_u": 0,
+      "F_v": 0,
+      "F_uv": 1,
+      "marginal_v_empty": 0,
+      "marginal_v_given_u": 1
+    },
+    "general_graph_odd_set": {
+      "triangle_integer": 1,
+      "triangle_node_only_fractional": 1.5,
+      "missing_constraint": "x01+x02+x12<=1"
+    },
+    "nonseparable_dynamic_loss": {
+      "future_edge_AC": 0.9,
+      "loss_remove_AB": 0.9,
+      "loss_remove_CD": 0.9,
+      "loss_remove_both": 0.9
+    },
+    "nonmonotone_reservation": {
+      "horizon": 4,
+      "current_edge_AB": 0.1,
+      "future_edge_AC_day3": 1,
+      "AC_arrival_probability_independent": 0.5,
+      "cost_assign_AB_day0_busy2_no_retirement": 0,
+      "cost_assign_AB_day1_busy2_no_retirement": 0,
+      "cost_assign_AB_day2_busy2_no_retirement": 0.5,
+      "cost_assign_AB_day3_busy2_no_retirement": 0,
+      "assumptions": "Constant busy duration two; no retirement, reward paid immediately, future AC available only day3. This counterexample refutes unrestricted monotonicity, not the stationary offer theorem."
+    },
+    "entropy_not_value": {
+      "unrelated_fair_coin_entropy_bits": 1,
+      "matching_value_change": 0
+    },
+    "disconnected_connectivity": {
+      "before_edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "after_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "vertices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "lambda2_before": 0,
+      "lambda2_after": 0,
+      "maximum_matching_before": 1,
+      "maximum_matching_after": 2
+    }
+  },
+  "controlled_query_benchmark": {
+    "scope": "Artificial controlled observation-interface benchmark; not six-family empirical reward evidence.",
+    "observations": {
+      "day": 0,
+      "ask_budget_remaining": 6,
+      "members": [
+        {
+          "member_id": "toy_u",
+          "pool_id": "artificial_query",
+          "age": 30,
+          "gender": "woman",
+          "zone": "zone_a",
+          "available": true,
+          "arrived_day": 0,
+          "fields": {
+            "age_min": 18,
+            "age_max": 65,
+            "who_to_meet": [
+              "woman",
+              "man",
+              "non_binary"
+            ],
+            "relationship_structure": "monogamous",
+            "smoking": "no",
+            "partner_smoking": "any",
+            "has_children": false,
+            "partner_children": "any",
+            "wants_children": "unsure",
+            "acceptable_zones": [
+              "zone_a"
+            ],
+            "schedule": null,
+            "relationship_goal": "long_term",
+            "relationship_pace": "steady",
+            "lifestyle": "quiet",
+            "conversations": "ideas"
+          },
+          "field_status": {
+            "age_min": "observed",
+            "age_max": "observed",
+            "who_to_meet": "observed",
+            "relationship_structure": "observed",
+            "smoking": "observed",
+            "partner_smoking": "observed",
+            "has_children": "observed",
+            "partner_children": "observed",
+            "wants_children": "observed",
+            "acceptable_zones": "observed",
+            "schedule": "not_asked",
+            "relationship_goal": "observed",
+            "relationship_pace": "observed",
+            "lifestyle": "observed",
+            "conversations": "observed"
+          }
+        },
+        {
+          "member_id": "toy_v",
+          "pool_id": "artificial_query",
+          "age": 30,
+          "gender": "man",
+          "zone": "zone_a",
+          "available": true,
+          "arrived_day": 0,
+          "fields": {
+            "age_min": 18,
+            "age_max": 65,
+            "who_to_meet": [
+              "woman",
+              "man",
+              "non_binary"
+            ],
+            "relationship_structure": "monogamous",
+            "smoking": "no",
+            "partner_smoking": "any",
+            "has_children": false,
+            "partner_children": "any",
+            "wants_children": "unsure",
+            "acceptable_zones": [
+              "zone_a"
+            ],
+            "schedule": null,
+            "relationship_goal": "long_term",
+            "relationship_pace": "steady",
+            "lifestyle": "quiet",
+            "conversations": "ideas"
+          },
+          "field_status": {
+            "age_min": "observed",
+            "age_max": "observed",
+            "who_to_meet": "observed",
+            "relationship_structure": "observed",
+            "smoking": "observed",
+            "partner_smoking": "observed",
+            "has_children": "observed",
+            "partner_children": "observed",
+            "wants_children": "observed",
+            "acceptable_zones": "observed",
+            "schedule": "not_asked",
+            "relationship_goal": "observed",
+            "relationship_pace": "observed",
+            "lifestyle": "observed",
+            "conversations": "observed"
+          }
+        }
+      ],
+      "introductions": [],
+      "feedback": [],
+      "ask_log": []
+    },
+    "config": {
+      "model": "integrated",
+      "regime": true,
+      "learning": true,
+      "asks": "two_query",
+      "engine": "greedy",
+      "opportunity": "none",
+      "batching": false,
+      "uncertainty": 0.0,
+      "query_samples": 16,
+      "query_candidates": 2,
+      "solver_seconds": 0.2,
+      "query_seconds": 0.65,
+      "soft": false
+    },
+    "selected_asks": [
+      {
+        "member_id": "toy_u",
+        "field": "constraints"
+      },
+      {
+        "member_id": "toy_v",
+        "field": "constraints"
+      }
+    ],
+    "before_pairs": [],
+    "after_pairs": [
+      [
+        "toy_u",
+        "toy_v"
+      ]
+    ],
+    "deterministic_reveal_matching_values": {
+      "empty": 0,
+      "toy_u": 0,
+      "toy_v": 0,
+      "toy_u,toy_v": 1
+    },
+    "exact_public_schedule_compatibility_probability": "23/27",
+    "joint_query_expected_immediate_model_value": 0.020180093561522547,
+    "singleton_query_expected_immediate_model_value": 0.0,
+    "model_edge_terminal_probability": 0.02368967505048299,
+    "declined_schedule_asks": [],
+    "declined_schedule_pairs": []
+  },
+  "adaptive_pause_identity_audit": {
+    "scope": "Exact rational artificial reduced model: feedback-dependent assignment count. Not simulator outcomes.",
+    "cases": [
+      {
+        "family": "standard",
+        "qualification_factor": "9/25",
+        "expected_pauses": "34/25",
+        "expected_qualified": "306/625",
+        "expected_paused_members": "68/25",
+        "identity_residual": "0",
+        "expected_realized_qualified_per_pause": "153/625",
+        "expected_ratio_equals_factor": false,
+        "paths": [
+          {
+            "probability": "16/25",
+            "pauses": 1,
+            "qualified": 0
+          },
+          {
+            "probability": "144/625",
+            "pauses": 2,
+            "qualified": 1
+          },
+          {
+            "probability": "81/625",
+            "pauses": 2,
+            "qualified": 2
+          }
+        ]
+      },
+      {
+        "family": "delayed",
+        "qualification_factor": "6039/17150",
+        "expected_pauses": "23189/17150",
+        "expected_qualified": "140038371/294122500",
+        "expected_paused_members": "23189/8575",
+        "identity_residual": "0",
+        "expected_realized_qualified_per_pause": "140038371/588245000",
+        "expected_ratio_equals_factor": false,
+        "paths": [
+          {
+            "probability": "11111/17150",
+            "pauses": 1,
+            "qualified": 0
+          },
+          {
+            "probability": "67099329/294122500",
+            "pauses": 2,
+            "qualified": 1
+          },
+          {
+            "probability": "36469521/294122500",
+            "pauses": 2,
+            "qualified": 2
+          }
+        ]
+      }
+    ]
+  }
+}

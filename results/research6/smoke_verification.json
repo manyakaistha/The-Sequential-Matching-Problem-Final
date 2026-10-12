@@ -1,0 +1,67 @@
+{
+  "scope": "One already examined development episode and identical request replay for G only; not candidate production eligibility",
+  "new_confirmation_clusters": 0,
+  "valid": true,
+  "successful_phase_calls": 120,
+  "fallbacks": 0,
+  "episode_cpu_seconds": 3.9222810000000004,
+  "episode_wall_seconds": 4.177757292003662,
+  "episode_storage_bytes": 12089468,
+  "peak_request_bytes": 474970,
+  "peak_memory_bytes": 2,
+  "image_bytes": 52775517,
+  "image_id": "sha256:d2143c479b767b825f12d6c50926be69d59a85f2ac4f0eb3abaacfc43e7cbe70",
+  "effective_probe": {
+    "uid": 65534,
+    "gid": 65534,
+    "python": "3.12.7 (main, Dec  3 2024, 09:02:00) [GCC 12.2.0]",
+    "cgroups": {
+      "cpu.max": "200000 100000",
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "pids.max": "64"
+    },
+    "route": "Iface\tDestination\tGateway \tFlags\tRefCnt\tUse\tMetric\tMask\t\tMTU\tWindow\tIRTT                                                       \n",
+    "root_write_succeeded": false,
+    "root_write_error": "[Errno 30] Read-only file system: '/app/write-probe'"
+  },
+  "replays": {
+    "direct": {
+      "mode": "direct",
+      "invocations": 120,
+      "all_ordered_equal": true,
+      "all_semantic_equal": true,
+      "literal_wire_equal_count": 120,
+      "scope": "Recorded request replay, no new simulator episode or independent outcome cluster"
+    },
+    "subprocess": {
+      "mode": "subprocess",
+      "invocations": 120,
+      "all_ordered_equal": true,
+      "all_semantic_equal": true,
+      "literal_wire_equal_count": 0,
+      "scope": "Recorded request replay, no new simulator episode or independent outcome cluster"
+    },
+    "container": {
+      "mode": "container",
+      "invocations": 120,
+      "all_ordered_equal": true,
+      "all_semantic_equal": true,
+      "literal_wire_equal_count": 0,
+      "source_sha256": "2ba829b8f468f7aa25f860b1f3fe2f947dadf24b8d15b6e037a0e6a571c63a77",
+      "command": [
+        "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research6/replay.py",
+        "--commit",
+        "results/research6/smoke_G101/commits/G_development_101.json",
+        "--output",
+        "results/research6/smoke_G101_replay_container",
+        "--mode",
+        "container",
+        "--image",
+        "sequential-round6:smoke"
+      ],
+      "scope": "Recorded request replay, no new simulator episode or independent outcome cluster"
+    }
+  },
+  "limits": "Finite constructed/smoke checks do not establish universal resource/runtime guarantees; container daemon CPU not measured; public replay is not new outcome evidence."
+}

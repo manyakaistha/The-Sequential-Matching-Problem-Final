@@ -1,0 +1,1 @@
+{"stage": "smoke", "registration_sha256": "9f2a8e7490049c2b2a20caeb2c95d1b9b3e0ef4cdfc5e408128be6fb0902d653", "complete": true, "planned": 1, "committed": 1, "invalid": 0, "fallbacks": 0, "wall_seconds": 0.006310500000836328, "child_cpu_seconds_this_launch": 0.0, "episode_cpu_seconds": 3.9222810000000004, "storage_bytes": 12088912, "attempts": 1, "remaining": 0, "stopped": false}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "status": "active_delegation_policy_not_experiment_runner",
+  "requested_by_user": true,
+  "director": {
+    "model": "flash",
+    "reasoning_effort": "medium",
+    "mode": "existing_root"
+  },
+  "global_active_agent_limit": 4,
+  "child_active_agent_limit": 3,
+  "spawn_fork_turns": "none",
+  "allowed_reasoning_efforts": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "silent_model_substitution": false,
+  "child_spawning_allowed": false,
+  "escalations_per_task_max": 1,
+  "profiles": {
+    "luna_low": {
+      "model": "flash_lite",
+      "reasoning_effort": "low",
+      "subagent_type": "research",
+      "suggested_cpu_seconds": 30,
+      "suggested_response_words_max": 600
+    },
+    "luna_medium": {
+      "model": "flash_lite",
+      "reasoning_effort": "medium",
+      "subagent_type": "research",
+      "suggested_cpu_seconds": 60,
+      "suggested_response_words_max": 1000
+    },
+    "sol_medium": {
+      "model": "flash",
+      "reasoning_effort": "medium",
+      "subagent_type": "self",
+      "suggested_cpu_seconds": 120,
+      "suggested_response_words_max": 1500
+    },
+    "sol_high": {
+      "model": "pro",
+      "reasoning_effort": "high",
+      "subagent_type": "self",
+      "suggested_cpu_seconds": 300,
+      "suggested_response_words_max": 2000
+    },
+    "astra_high": {
+      "model": "pro",
+      "reasoning_effort": "high",
+      "subagent_type": "self",
+      "suggested_cpu_seconds": 300,
+      "suggested_response_words_max": 2500
+    }
+  },
+  "tasks": {
+    "file_discovery": {
+      "profile": "luna_low",
+      "purpose": "Find files, source locations and existing artifacts; read only."
+    },
+    "bounded_read": {
+      "profile": "luna_low",
+      "purpose": "Read specified files and extract cited facts; no research verdict."
+    },
+    "mechanical_checks": {
+      "profile": "luna_low",
+      "purpose": "Run specified checks and report complete output; no interpretation or scientific promotion."
+    },
+    "structured_extraction": {
+      "profile": "luna_medium",
+      "purpose": "Build bounded inventories/tables from specified files with provenance and omissions."
+    },
+    "artifact_indexing": {
+      "profile": "luna_medium",
+      "purpose": "Prepare file/count/hash evidence using specified scripts; no old-file mutation."
+    },
+    "bounded_implementation": {
+      "profile": "sol_medium",
+      "purpose": "Implement a specified interface in exclusively owned files."
+    },
+    "implementation_review": {
+      "profile": "sol_medium",
+      "purpose": "Independently check bounded implementation and tests; escalate subtle issues explicitly."
+    },
+    "simulator_forensics": {
+      "profile": "sol_high",
+      "purpose": "Reconcile transition/observation rules and influenceable bottlenecks."
+    },
+    "algorithm_design": {
+      "profile": "sol_high",
+      "purpose": "Develop candidate objectives, controls and falsifiers."
+    },
+    "predictive_research": {
+      "profile": "sol_high",
+      "purpose": "Audit likelihoods, selection, dependence, leakage and model evaluation."
+    },
+    "statistical_design": {
+      "profile": "sol_high",
+      "purpose": "Register inference, power, multiplicity and selection/confirmation rules."
+    },
+    "independent_statistics": {
+      "profile": "sol_high",
+      "purpose": "Reconstruct scientific results without implementer analysis imports."
+    },
+    "production_review": {
+      "profile": "sol_high",
+      "purpose": "Check protocol/resource/isolation/replay/provenance behavior and tested scope."
+    },
+    "adversarial_review": {
+      "profile": "sol_high",
+      "purpose": "Challenge apparent gains, causal explanations, leakage and confounding."
+    },
+    "mathematical_proof": {
+      "profile": "astra_high",
+      "purpose": "Prove/refute difficult structural claims and certify reductions/bounds."
+    },
+    "dynamic_planning": {
+      "profile": "astra_high",
+      "purpose": "Analyze nonseparable continuation, belief-state planning and exact-model reductions."
+    }
+  },
+  "escalation": {
+    "luna_low": [
+      "luna_medium",
+      "sol_medium"
+    ],
+    "luna_medium": [
+      "sol_medium"
+    ],
+    "sol_medium": [
+      "sol_high"
+    ],
+    "sol_high": [
+      "astra_high"
+    ],
+    "astra_high": []
+  },
+  "evidence_review": {
+    "luna_may_issue_final_scientific_approval": false,
+    "developer_can_independently_review_own_candidate": false,
+    "reasoning_effort_is_hard_token_cap": false,
+    "cpu_allowance_is_hard_enforced_by_router": false
+  },
+  "documentation": {
+    "antigravity_subagents": "Antigravity invoke_subagent supports research, self, and custom defined subagents with model tiers flash_lite, flash, and pro.",
+    "authority_for_model_slugs_and_fork_rules": "Actual collaboration tool schema in this environment; reconciled with Google/Gemini Antigravity models."
+  }
+}

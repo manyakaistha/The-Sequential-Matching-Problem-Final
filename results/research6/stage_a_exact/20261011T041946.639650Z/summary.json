@@ -1,0 +1,30 @@
+{
+  "cpu_allowance_seconds": 300,
+  "cpu_seconds": 0.434292,
+  "explicit_state_count": 2231,
+  "files": {
+    "models.json": {
+      "bytes": 1692026,
+      "sha256": "039245b11fa3ad33d7d192c60568b29bb4704bb2a326b444b488198ed89544de"
+    },
+    "registration.json": {
+      "bytes": 1795,
+      "sha256": "3706fe6c9f2afe4b7f334e012b8aadaff798bf09a01233d1612bee56bc7b09a9"
+    },
+    "solutions.json": {
+      "bytes": 371015,
+      "sha256": "a0a69ea047f65a40e7100eb265fe630419c428620df04655756d567b387cc74f"
+    },
+    "specifications.json": {
+      "bytes": 120704,
+      "sha256": "68185d4f437e5e4746cee4a84e2641c01ea8a08a4cba6520f58c83303563e717"
+    }
+  },
+  "fit_calls": 0,
+  "held_out_sweep_count": 79,
+  "named_model_count": 23,
+  "scope": "Exact reduced-model values; symbolic ideal-stream LP proof separate; no certified simulator LP or policy improvement.",
+  "simulator_episodes": 0,
+  "simulator_worlds_generated": 0,
+  "status": "constructed_checks_passed_independent_review_pending"
+}

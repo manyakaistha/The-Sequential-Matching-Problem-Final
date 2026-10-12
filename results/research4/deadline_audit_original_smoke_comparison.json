@@ -1,0 +1,42 @@
+[
+  {
+    "policy": "greedy",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 1
+  },
+  {
+    "policy": "population_control",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 1
+  },
+  {
+    "policy": "goal_surplus_control",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 1
+  },
+  {
+    "policy": "coordinated_goal",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 2
+  },
+  {
+    "policy": "hard_priority",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 2
+  },
+  {
+    "policy": "response_beta_control",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 1
+  },
+  {
+    "policy": "response_uniform",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 1
+  },
+  {
+    "policy": "acceptance_shrinkage",
+    "shipped_smoke_actions_equal_fast_and_slow": true,
+    "original_qualified": 1
+  }
+]

@@ -1,0 +1,524 @@
+{
+  "metadata": {
+    "total_pools": 10,
+    "total_members": 2000,
+    "pools": [
+      "public_01",
+      "public_02",
+      "public_03",
+      "public_04",
+      "public_05",
+      "public_06",
+      "public_07",
+      "public_08",
+      "public_09",
+      "public_10"
+    ]
+  },
+  "field_missingness_snapshot_day30": {
+    "age_min": {
+      "observed": 1362,
+      "observed_pct": 68.10000000000001,
+      "not_asked": 563,
+      "not_asked_pct": 28.15,
+      "declined": 75,
+      "declined_pct": 3.75
+    },
+    "age_max": {
+      "observed": 1368,
+      "observed_pct": 68.4,
+      "not_asked": 536,
+      "not_asked_pct": 26.8,
+      "declined": 96,
+      "declined_pct": 4.8
+    },
+    "who_to_meet": {
+      "observed": 1363,
+      "observed_pct": 68.15,
+      "not_asked": 537,
+      "not_asked_pct": 26.85,
+      "declined": 100,
+      "declined_pct": 5.0
+    },
+    "relationship_structure": {
+      "observed": 1364,
+      "observed_pct": 68.2,
+      "not_asked": 553,
+      "not_asked_pct": 27.650000000000002,
+      "declined": 83,
+      "declined_pct": 4.15
+    },
+    "smoking": {
+      "observed": 1370,
+      "observed_pct": 68.5,
+      "not_asked": 553,
+      "not_asked_pct": 27.650000000000002,
+      "declined": 77,
+      "declined_pct": 3.85
+    },
+    "partner_smoking": {
+      "observed": 1362,
+      "observed_pct": 68.10000000000001,
+      "not_asked": 549,
+      "not_asked_pct": 27.450000000000003,
+      "declined": 89,
+      "declined_pct": 4.45
+    },
+    "has_children": {
+      "observed": 1368,
+      "observed_pct": 68.4,
+      "not_asked": 532,
+      "not_asked_pct": 26.6,
+      "declined": 100,
+      "declined_pct": 5.0
+    },
+    "partner_children": {
+      "observed": 1369,
+      "observed_pct": 68.45,
+      "not_asked": 540,
+      "not_asked_pct": 27.0,
+      "declined": 91,
+      "declined_pct": 4.55
+    },
+    "wants_children": {
+      "observed": 1369,
+      "observed_pct": 68.45,
+      "not_asked": 552,
+      "not_asked_pct": 27.6,
+      "declined": 79,
+      "declined_pct": 3.95
+    },
+    "acceptable_zones": {
+      "observed": 1362,
+      "observed_pct": 68.10000000000001,
+      "not_asked": 558,
+      "not_asked_pct": 27.900000000000002,
+      "declined": 80,
+      "declined_pct": 4.0
+    },
+    "schedule": {
+      "observed": 1356,
+      "observed_pct": 67.80000000000001,
+      "not_asked": 559,
+      "not_asked_pct": 27.950000000000003,
+      "declined": 85,
+      "declined_pct": 4.25
+    },
+    "relationship_goal": {
+      "observed": 793,
+      "observed_pct": 39.65,
+      "not_asked": 1131,
+      "not_asked_pct": 56.55,
+      "declined": 76,
+      "declined_pct": 3.8
+    },
+    "relationship_pace": {
+      "observed": 801,
+      "observed_pct": 40.050000000000004,
+      "not_asked": 1133,
+      "not_asked_pct": 56.65,
+      "declined": 66,
+      "declined_pct": 3.3000000000000003
+    },
+    "lifestyle": {
+      "observed": 798,
+      "observed_pct": 39.900000000000006,
+      "not_asked": 1128,
+      "not_asked_pct": 56.39999999999999,
+      "declined": 74,
+      "declined_pct": 3.6999999999999997
+    },
+    "conversations": {
+      "observed": 822,
+      "observed_pct": 41.099999999999994,
+      "not_asked": 1091,
+      "not_asked_pct": 54.55,
+      "declined": 87,
+      "declined_pct": 4.35
+    },
+    "emotional_availability": {
+      "observed": 797,
+      "observed_pct": 39.85,
+      "not_asked": 1125,
+      "not_asked_pct": 56.25,
+      "declined": 78,
+      "declined_pct": 3.9
+    },
+    "space_for_relationship": {
+      "observed": 800,
+      "observed_pct": 40.0,
+      "not_asked": 1129,
+      "not_asked_pct": 56.45,
+      "declined": 71,
+      "declined_pct": 3.55
+    },
+    "relocate": {
+      "observed": 799,
+      "observed_pct": 39.95,
+      "not_asked": 1118,
+      "not_asked_pct": 55.900000000000006,
+      "declined": 83,
+      "declined_pct": 4.15
+    }
+  },
+  "field_missingness_arrival": {
+    "age_min": {
+      "observed": 911,
+      "observed_pct": 45.550000000000004,
+      "not_asked": 1014,
+      "not_asked_pct": 50.7,
+      "declined": 75,
+      "declined_pct": 3.75
+    },
+    "age_max": {
+      "observed": 917,
+      "observed_pct": 45.85,
+      "not_asked": 987,
+      "not_asked_pct": 49.35,
+      "declined": 96,
+      "declined_pct": 4.8
+    },
+    "who_to_meet": {
+      "observed": 912,
+      "observed_pct": 45.6,
+      "not_asked": 988,
+      "not_asked_pct": 49.4,
+      "declined": 100,
+      "declined_pct": 5.0
+    },
+    "relationship_structure": {
+      "observed": 913,
+      "observed_pct": 45.65,
+      "not_asked": 1004,
+      "not_asked_pct": 50.2,
+      "declined": 83,
+      "declined_pct": 4.15
+    },
+    "smoking": {
+      "observed": 919,
+      "observed_pct": 45.95,
+      "not_asked": 1004,
+      "not_asked_pct": 50.2,
+      "declined": 77,
+      "declined_pct": 3.85
+    },
+    "partner_smoking": {
+      "observed": 911,
+      "observed_pct": 45.550000000000004,
+      "not_asked": 1000,
+      "not_asked_pct": 50.0,
+      "declined": 89,
+      "declined_pct": 4.45
+    },
+    "has_children": {
+      "observed": 917,
+      "observed_pct": 45.85,
+      "not_asked": 983,
+      "not_asked_pct": 49.15,
+      "declined": 100,
+      "declined_pct": 5.0
+    },
+    "partner_children": {
+      "observed": 918,
+      "observed_pct": 45.9,
+      "not_asked": 991,
+      "not_asked_pct": 49.55,
+      "declined": 91,
+      "declined_pct": 4.55
+    },
+    "wants_children": {
+      "observed": 918,
+      "observed_pct": 45.9,
+      "not_asked": 1003,
+      "not_asked_pct": 50.14999999999999,
+      "declined": 79,
+      "declined_pct": 3.95
+    },
+    "acceptable_zones": {
+      "observed": 911,
+      "observed_pct": 45.550000000000004,
+      "not_asked": 1009,
+      "not_asked_pct": 50.449999999999996,
+      "declined": 80,
+      "declined_pct": 4.0
+    },
+    "schedule": {
+      "observed": 905,
+      "observed_pct": 45.25,
+      "not_asked": 1010,
+      "not_asked_pct": 50.5,
+      "declined": 85,
+      "declined_pct": 4.25
+    },
+    "relationship_goal": {
+      "observed": 793,
+      "observed_pct": 39.65,
+      "not_asked": 1131,
+      "not_asked_pct": 56.55,
+      "declined": 76,
+      "declined_pct": 3.8
+    },
+    "relationship_pace": {
+      "observed": 801,
+      "observed_pct": 40.050000000000004,
+      "not_asked": 1133,
+      "not_asked_pct": 56.65,
+      "declined": 66,
+      "declined_pct": 3.3000000000000003
+    },
+    "lifestyle": {
+      "observed": 798,
+      "observed_pct": 39.900000000000006,
+      "not_asked": 1128,
+      "not_asked_pct": 56.39999999999999,
+      "declined": 74,
+      "declined_pct": 3.6999999999999997
+    },
+    "conversations": {
+      "observed": 822,
+      "observed_pct": 41.099999999999994,
+      "not_asked": 1091,
+      "not_asked_pct": 54.55,
+      "declined": 87,
+      "declined_pct": 4.35
+    },
+    "emotional_availability": {
+      "observed": 797,
+      "observed_pct": 39.85,
+      "not_asked": 1125,
+      "not_asked_pct": 56.25,
+      "declined": 78,
+      "declined_pct": 3.9
+    },
+    "space_for_relationship": {
+      "observed": 800,
+      "observed_pct": 40.0,
+      "not_asked": 1129,
+      "not_asked_pct": 56.45,
+      "declined": 71,
+      "declined_pct": 3.55
+    },
+    "relocate": {
+      "observed": 799,
+      "observed_pct": 39.95,
+      "not_asked": 1118,
+      "not_asked_pct": 55.900000000000006,
+      "declined": 83,
+      "declined_pct": 4.15
+    }
+  },
+  "decline_analysis": {
+    "total_members": 2000,
+    "members_with_declined_hard": 700,
+    "pct_with_declined_hard": 35.0,
+    "members_with_declined_soft": 448,
+    "pct_with_declined_soft": 22.400000000000002,
+    "members_with_any_declined": 911,
+    "pct_with_any_declined": 45.550000000000004,
+    "decline_count_dist": {
+      "0": 1089,
+      "1": 496,
+      "2": 286,
+      "3": 102,
+      "4": 20,
+      "5": 6,
+      "6": 1
+    },
+    "hard_decline_count_dist": {
+      "0": 1300,
+      "1": 499,
+      "2": 155,
+      "3": 39,
+      "4": 6,
+      "5": 1
+    }
+  },
+  "generation_correlation_analysis": {
+    "mean_pairwise_phi": 0.7566709587348307,
+    "min_pairwise_phi": 0.6428074315323653,
+    "max_pairwise_phi": 0.8991637526361225,
+    "r_age_obs_count": -0.028930233391835015,
+    "gender_means_obs_count": {
+      "woman": 7.91027027027027,
+      "man": 7.911542610571737,
+      "non_binary": 6.831081081081081
+    },
+    "zone_means_obs_count": {
+      "zone_a": 8.068585944115156,
+      "zone_d": 7.863636363636363,
+      "zone_b": 7.704312114989733,
+      "zone_c": 6.922131147540983
+    },
+    "complete_members": 670,
+    "pct_complete_members": 33.5,
+    "zero_obs_members": 323,
+    "obs_count_distribution": {
+      "18": 670,
+      "1": 385,
+      "11": 92,
+      "4": 40,
+      "3": 139,
+      "2": 256,
+      "12": 61,
+      "0": 323,
+      "13": 22,
+      "5": 7,
+      "14": 3,
+      "15": 1,
+      "6": 1
+    }
+  },
+  "cost_benefit_analysis": {
+    "daily_budget": 12,
+    "constraints_cost": 3,
+    "constraints_unlocked_fields": 11,
+    "soft_field_cost": 1,
+    "soft_fields_total": 7,
+    "max_people_unblocked_per_day_matching": 4,
+    "max_people_unblocked_per_day_full_profile": 1,
+    "wasted_ask_risk_pct_members": 35.0,
+    "actual_rollout_asks": {
+      "total_asks": 630,
+      "total_cost": 1890,
+      "ask_fields": {
+        "constraints": 630
+      },
+      "unlocked_fields": {
+        "acceptable_zones": 630,
+        "age_max": 630,
+        "age_min": 630,
+        "has_children": 630,
+        "partner_children": 630,
+        "partner_smoking": 630,
+        "relationship_structure": 630,
+        "schedule": 630,
+        "smoking": 630,
+        "wants_children": 630,
+        "who_to_meet": 630
+      },
+      "declined_encountered": {}
+    }
+  },
+  "feasibility_transition_analysis": {
+    "total_pairs_across_10_pools": 199000,
+    "overall_transitions": {
+      "infeasible -> infeasible": 127766,
+      "needs_clarification -> infeasible": 68071,
+      "needs_clarification -> needs_clarification": 2176,
+      "feasible -> feasible": 289,
+      "needs_clarification -> feasible": 698
+    },
+    "failure_reasons_for_clarified_infeasible": {
+      "who_to_meet": 49301,
+      "age": 37158,
+      "geography": 33934,
+      "children_plans": 14381,
+      "smoking": 14087,
+      "relationship_structure": 10941,
+      "schedule": 9752,
+      "children_present": 9070
+    },
+    "pool_results": {
+      "public_01": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 12832,
+          "needs_clarification -> infeasible": 6731,
+          "needs_clarification -> needs_clarification": 239,
+          "feasible -> feasible": 26,
+          "needs_clarification -> feasible": 72
+        }
+      },
+      "public_02": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 12873,
+          "needs_clarification -> infeasible": 6734,
+          "needs_clarification -> needs_clarification": 209,
+          "needs_clarification -> feasible": 60,
+          "feasible -> feasible": 24
+        }
+      },
+      "public_03": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 13686,
+          "needs_clarification -> infeasible": 5910,
+          "needs_clarification -> needs_clarification": 225,
+          "feasible -> feasible": 35,
+          "needs_clarification -> feasible": 44
+        }
+      },
+      "public_04": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 12875,
+          "needs_clarification -> infeasible": 6756,
+          "needs_clarification -> needs_clarification": 184,
+          "needs_clarification -> feasible": 72,
+          "feasible -> feasible": 13
+        }
+      },
+      "public_05": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 12320,
+          "needs_clarification -> infeasible": 7213,
+          "needs_clarification -> needs_clarification": 225,
+          "needs_clarification -> feasible": 95,
+          "feasible -> feasible": 47
+        }
+      },
+      "public_06": {
+        "total_pairs": 19900,
+        "transitions": {
+          "needs_clarification -> infeasible": 7784,
+          "infeasible -> infeasible": 11703,
+          "needs_clarification -> needs_clarification": 296,
+          "needs_clarification -> feasible": 89,
+          "feasible -> feasible": 28
+        }
+      },
+      "public_07": {
+        "total_pairs": 19900,
+        "transitions": {
+          "needs_clarification -> infeasible": 6392,
+          "infeasible -> infeasible": 13171,
+          "needs_clarification -> needs_clarification": 225,
+          "feasible -> feasible": 38,
+          "needs_clarification -> feasible": 74
+        }
+      },
+      "public_08": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 13037,
+          "needs_clarification -> infeasible": 6495,
+          "needs_clarification -> needs_clarification": 262,
+          "needs_clarification -> feasible": 79,
+          "feasible -> feasible": 27
+        }
+      },
+      "public_09": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 11976,
+          "feasible -> feasible": 22,
+          "needs_clarification -> infeasible": 7697,
+          "needs_clarification -> needs_clarification": 152,
+          "needs_clarification -> feasible": 53
+        }
+      },
+      "public_10": {
+        "total_pairs": 19900,
+        "transitions": {
+          "infeasible -> infeasible": 13293,
+          "feasible -> feasible": 29,
+          "needs_clarification -> infeasible": 6359,
+          "needs_clarification -> needs_clarification": 159,
+          "needs_clarification -> feasible": 60
+        }
+      }
+    }
+  }
+}

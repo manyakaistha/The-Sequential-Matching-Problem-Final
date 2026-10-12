@@ -1,0 +1,134 @@
+{
+  "owner": "theory_models researcher",
+  "commands": [
+    {
+      "command": ".venv/bin/python -m research3.tiny_models",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed; timestamp not captured",
+      "exit_code": 0,
+      "wall_seconds": 0.35676175,
+      "purpose": "exact tiny models and first old-seed ridge audit"
+    },
+    {
+      "command": ".venv/bin/python -m research3.tiny_models > /tmp/research3-theory-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 1,
+      "wall_seconds": 0.333501625,
+      "purpose": "per-seed descriptive proper-score edit failed array shape; no final artifact written"
+    },
+    {
+      "command": ".venv/bin/python -m research3.tiny_models > /tmp/research3-theory-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 0,
+      "wall_seconds": 0.352832708,
+      "purpose": "corrected per-seed audit and exact family/deadline coupling"
+    },
+    {
+      "command": ".venv/bin/python -m research3.prediction_audit > /tmp/research3-prediction-audit-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 0,
+      "cpu_seconds": 7.276346,
+      "purpose": "initial independent common-cohort probability and sampled current-edge oracle audit"
+    },
+    {
+      "command": ".venv/bin/python -m research3.prediction_audit > /tmp/research3-prediction-audit-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 0,
+      "cpu_seconds": 7.573517,
+      "purpose": "independent raw label/timestamp/coherence assertions"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research3.prediction_audit > /tmp/research3-prediction-audit-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 0,
+      "cpu_seconds": 7.762267,
+      "purpose": "add exploratory cluster errorbars"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research3.prediction_audit > /tmp/research3-prediction-audit-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 0,
+      "cpu_seconds": 8.227521,
+      "purpose": "critic correction: unavailable uncertainty for degenerate/fewer-than3seed bins"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research3.oracle_audit > /tmp/research3-oracle-output.json",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed",
+      "exit_code": 0,
+      "purpose": "completed120privileged old-world diagnostic episodes; no new examined seeds",
+      "cpu_seconds": 229.239853
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research3.available_feedback_audit",
+      "timestamp_utc": "2026-10-09T12:40:51.573335+00:00",
+      "timestamp_status": "captured by audit process",
+      "completed_utc": "2026-10-09T12:40:59.830209+00:00",
+      "exit_code": 0,
+      "cpu_seconds": 8.221822,
+      "purpose": "48oldgreedytrajectory invariant replay and exact rational truncated-uniform response posterior comparison; no newseeds/no frozenmodel change"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research3.final_day_audit",
+      "timestamp_utc": "2026-10-09T12:56:18.939231+00:00",
+      "timestamp_status": "captured by audit process",
+      "completed_utc": "2026-10-09T12:56:20.630447+00:00",
+      "exit_code": 0,
+      "cpu_seconds": 1.6752829999999999,
+      "purpose": "registered24finalday interventions on12alreadyexaminedBworlds; no neweligiblepolicy/frozenmodule change"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m research3.tiny_models --score-ordering",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed; timestamp not captured for verification replay",
+      "exit_code": 0,
+      "cpu_seconds": 0.010283,
+      "purpose": "semantic reproduction verifies every81pattern/2day score row/counterordering, preserves initialoutputbytes"
+    }
+  ],
+  "literature_tool_commands": [
+    {
+      "queries": [
+        "site.stat.washington.edu Raftery strictly proper scoring rules prediction estimation 2007 pdf",
+        "site.web.stanford.edu DynamicMatching thickness information dynamic matching markets Akbarpour pdf",
+        "site.lyariv.com Optimal Dynamic Matching pdf Baccara Lee Yariv",
+        "site.arxiv.org predict then optimize decision focused learning calibration prediction optimization Elmachtoub Grigas Smart Predict then Optimize"
+      ],
+      "method": "web search_query"
+    },
+    {
+      "queries": [
+        "feature selection conditional irrelevance Markov blanket Koller Sahami 1996 pdf primary",
+        "reciprocal recommendation online dating RECON Pizzato 2010 paper pdf",
+        "site.arxiv.org reciprocal recommendation online dating Xia Liu Sun Chen 1501.06247"
+      ],
+      "method": "web search_query"
+    }
+  ],
+  "compute_scope": "one audit worker, oracle environment threads1; no deployable policy full episodes by this researcher. Oracle uses120already examined-world diagnostic episodes only. Wall clocks for multi-call sessions were not instrumented; no fabricated wall duration. Historical timestamps null where not captured. Setup/edit/read-only shell calls excluded from experiment command list.",
+  "audit_cpu_seconds_known": 269.99677699999995,
+  "tiny_run_wall_seconds_known": 1.043096083,
+  "reviews": "Critic requested exact coupling and uncertainty corrections before report delivery.",
+  "remaining_expected_cost_cpu_seconds": 0,
+  "literature_tool_opens": [
+    "https://ai.stanford.edu/~koller/Papers/Koller+Sahami:ICML96.pdf",
+    "https://arxiv.org/abs/1501.06247",
+    "https://arxiv.org/abs/1710.08005",
+    "https://www.lyariv.com/papers/DynamicMatching.pdf",
+    "https://web.stanford.edu/~mohamwad/DynamicMatching.pdf"
+  ],
+  "finite_score_ordering_check": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python - [inline enumeration of itertools.product((0,missing,1),repeat=4) and all pattern combinations at day0/day40; exact full inline command captured in tool transcript]",
+    "timestamp_status": "captured by inline process",
+    "timestamp_utc": "2026-10-09T12:57:02.878905+00:00",
+    "cpu_seconds": 0.009885,
+    "output": "results/research3/score_ordering.json",
+    "note": "Replay can be achieved by enumerating frozen score_edge population/throughput as described in THEORY_MODELS; command string here is schematic, not falsely represented as exact inline body."
+  }
+}

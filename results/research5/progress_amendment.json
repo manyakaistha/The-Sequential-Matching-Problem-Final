@@ -1,0 +1,35 @@
+{
+  "status": "registered_recovery_ready_not_restarted",
+  "design_sha256": "74e2e9c1b48d82ca3ac7f978805bd180caee26b65bf93c645b1ab663fa1db79e",
+  "archive": "results/research5/interrupted_runs/20261010T170752Z",
+  "archived_files": 372,
+  "persisted_rows": 108,
+  "remaining_fixed_cells": 5052,
+  "unchanged_scientific_fields": [
+    "candidate",
+    "configuration",
+    "baseline",
+    "policies",
+    "seeds",
+    "families",
+    "n_clusters",
+    "planned_episodes",
+    "decision_days",
+    "follow_up_days",
+    "alpha",
+    "family_size",
+    "adjusted_confidence",
+    "primary_target_effect_for_power",
+    "planning_sd",
+    "success",
+    "frozen_inherited_hashes"
+  ],
+  "policy_worker_function_ast_identical": true,
+  "terminated_orphan_pids": [
+    82944,
+    82945,
+    82946
+  ],
+  "primary_outcomes_not_used_for_recovery_decision": true,
+  "note": "No new episodes run in this amendment; previous incomplete results retained. User can relaunch original command with terminal progress; duplicate/partial next-run output still refused."
+}

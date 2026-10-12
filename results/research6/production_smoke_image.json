@@ -1,0 +1,72 @@
+[
+    {
+        "Id": "sha256:d2143c479b767b825f12d6c50926be69d59a85f2ac4f0eb3abaacfc43e7cbe70",
+        "RepoTags": [
+            "sequential-round6:smoke"
+        ],
+        "RepoDigests": [
+            "sequential-round6@sha256:d2143c479b767b825f12d6c50926be69d59a85f2ac4f0eb3abaacfc43e7cbe70"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-11T04:22:37.643695507Z",
+        "DockerVersion": "27.4.0",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "65534:65534",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.7",
+                "PYTHON_SHA256=24887b92e2afd4a2ac602419ad4b596372f67ac9b077190f459aba390faf5550",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "python",
+                "-m",
+                "research6.policies.policy"
+            ],
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "arm64",
+        "Variant": "v8",
+        "Os": "linux",
+        "Size": 52775517,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:3e620c160447d1acff162610a533282fc64863123cba28ce40eaf98c17dde780",
+                "sha256:29a9c1058a4b8a096f5de532183c47bac13bbcba2813839312c1ca45b20e6a73",
+                "sha256:079794927954cbd42a1205ca791f74db6726126b661a8d1c34e83ae839f818c9",
+                "sha256:2c3814303de4695aa165b99e16c0bec4ac25295a69ea8814b44244737cf05d42",
+                "sha256:ac805122220943c0488d0aca6967cd6697263d50600101dededf633c9dd95170",
+                "sha256:d29febdf255fe148490220e42b868c1a0813ca67483d79f4e6315bd5ed1431c4",
+                "sha256:801db0dfcff0e1a3cdc058ce4edadaeda25359100630f6e29c51f0a6d003305c",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:e743844a213dd6c6e04aed168ea2761150488f16987ed49615275f441783fd14"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-11T04:22:37.714973382Z"
+        }
+    }
+]

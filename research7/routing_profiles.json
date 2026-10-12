@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "status": "planning_only_provider_capability_preflight_required",
+  "provider_model_versions_pinned": false,
+  "director": "existing_root_runtime; future cheap Flash/Sol medium coordinator preference",
+  "global_slots": 4,
+  "children_max": 3,
+  "allowed_efforts": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "clean_context": true,
+  "codex_fork_turns": "none",
+  "nested_spawn": false,
+  "silent_substitution": false,
+  "escalations_per_work_order_max": 1,
+  "role_profiles": {
+    "evidence_low": {
+      "task_kinds": [
+        "file_discovery",
+        "bounded_read",
+        "mechanical_checks"
+      ],
+      "codex": [
+        "gpt-6-luna",
+        "low"
+      ],
+      "gemini": [
+        "flash_lite",
+        "low"
+      ],
+      "antigravity": [
+        "flash",
+        "low"
+      ],
+      "cpu_seconds_default": 30
+    },
+    "evidence_medium": {
+      "task_kinds": [
+        "structured_extraction",
+        "artifact_indexing"
+      ],
+      "codex": [
+        "gpt-6-luna",
+        "medium"
+      ],
+      "gemini": [
+        "flash_lite",
+        "medium"
+      ],
+      "antigravity": [
+        "flash",
+        "medium"
+      ],
+      "cpu_seconds_default": 60
+    },
+    "implementation_medium": {
+      "task_kinds": [
+        "bounded_implementation",
+        "independent_bounded_review"
+      ],
+      "codex": [
+        "gpt-6.1-sol",
+        "medium"
+      ],
+      "gemini": [
+        "flash",
+        "medium"
+      ],
+      "antigravity": [
+        "flash",
+        "medium"
+      ],
+      "cpu_seconds_default": 120
+    },
+    "science_high": {
+      "task_kinds": [
+        "simulator_forensics",
+        "algorithm_design",
+        "predictive_research",
+        "statistical_design",
+        "independent_statistics",
+        "production_review",
+        "adversarial_review"
+      ],
+      "codex": [
+        "gpt-6.1-sol",
+        "high"
+      ],
+      "gemini": [
+        "pro",
+        "high"
+      ],
+      "antigravity": [
+        "pro",
+        "high"
+      ],
+      "cpu_seconds_default": 150
+    },
+    "proof_high": {
+      "task_kinds": [
+        "mathematical_proof",
+        "coupled_dynamic_planning"
+      ],
+      "codex": [
+        "gpt-6-astra",
+        "high"
+      ],
+      "gemini": [
+        "pro",
+        "high"
+      ],
+      "antigravity": [
+        "pro",
+        "high"
+      ],
+      "cpu_seconds_default": 180
+    }
+  },
+  "antigravity_supported_tiers_at_documentation_check": [
+    "inherit",
+    "flash",
+    "pro"
+  ],
+  "antigravity_flash_lite_assumed_supported": false,
+  "direct_gemini_model_IDs": "resolve available official model ID at future preflight; logical tiers are not executable IDs",
+  "thinking_settings": "validate actual provider/API support; record exact requested/resolved values; task effort is not hard token cap",
+  "payload_contracts": {
+    "codex_fields": [
+      "task_name",
+      "model",
+      "reasoning_effort",
+      "fork_turns",
+      "message"
+    ],
+    "antigravity": "validate exposed invoke_subagent schema; do not pass Codex-only fields",
+    "gemini": "validate available model ID and supported thinking parameter"
+  },
+  "R6_conflict": "Historical R6 JSON/helper encode Antigravity aliases while AGENTS/ORCHESTRATION describe Codex routes; leave old files unchanged. Explicit current provider work order governs."
+}

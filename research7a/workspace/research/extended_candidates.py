@@ -1,0 +1,23 @@
+"""Prelisted modular candidates; seed selection is owned by the experiment registry."""
+CANDIDATES={
+ 'terminal_fifo':{},
+ 'terminal_degree':{'asks':'degree'},
+ 'terminal_blossom':{'engine':'blossom'},
+ 'terminal_value':{'asks':'value','engine':'blossom'},
+ 'terminal_two_query':{'asks':'two_query','engine':'blossom'},
+ 'terminal_entropy':{'asks':'entropy'},
+ 'terminal_random':{'asks':'random'},
+ 'terminal_opportunity':{'opportunity':'throughput','engine':'blossom'},
+ 'terminal_batching':{'batching':True,'engine':'blossom'},
+ 'terminal_soft':{'soft':True},
+ 'terminal_conservative':{'uncertainty':.25},
+ 'independent_fifo':{'model':'independent'},
+ 'simple_fifo':{'model':'simple'},
+ 'fixed_regime_fifo':{'regime':False},
+ 'no_learning_fifo':{'learning':False},
+ 'product_fifo':{'model':'ranking_control'},
+ 'simple_degree':{'model':'simple','asks':'degree'},
+ 'simple_blossom':{'model':'simple','engine':'blossom'},
+ 'terminal_degree_blossom':{'asks':'degree','engine':'blossom'},
+ 'terminal_degree_batching':{'asks':'degree','engine':'blossom','batching':True},
+}

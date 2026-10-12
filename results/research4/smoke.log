@@ -1,0 +1,8 @@
+greedy 101 development 1 True
+population_control 101 development 1 True
+goal_surplus_control 101 development 1 True
+coordinated_goal 101 development 2 True
+hard_priority 101 development 2 True
+response_beta_control 101 development 1 True
+response_uniform 101 development 1 True
+acceptance_shrinkage 101 development 1 True

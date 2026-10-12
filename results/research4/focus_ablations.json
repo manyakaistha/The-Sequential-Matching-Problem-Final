@@ -1,0 +1,25 @@
+{
+  "source": "results/research4/focus.json",
+  "scope": "prelisted exploratory focused contrasts, not confirmatory or causal occupancy mediation",
+  "contrasts": {
+    "hard_priority minus population_control": {
+      "question": "public verification priority at fixed score",
+      "paired": {
+        "n": 32,
+        "mean": 0.03125000000000001,
+        "sd": 0.41302169139492423,
+        "ci95": [
+          -0.11766019922051646,
+          0.18016019922051646
+        ],
+        "p_two_sided": 0.6716040871099533,
+        "standardized": 0.0756618856856099
+      },
+      "bootstrap95": [
+        -0.10416666666666666,
+        0.17447916666666669
+      ],
+      "holm_p": 0.6716040871099533
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "estimand": "equal six-family reward per seed, paired independent seed clusters",
+  "seeds": [
+    82001,
+    82002,
+    82003,
+    82004,
+    82005,
+    82006,
+    82007,
+    82008,
+    82009,
+    82010,
+    82011,
+    82012,
+    82013,
+    82014,
+    82015,
+    82016,
+    82017,
+    82018,
+    82019,
+    82020
+  ],
+  "source": "results/research4/selection.json",
+  "code_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/benchmark.py": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64"
+  },
+  "policies": {
+    "greedy": {
+      "primary": {
+        "n": 20,
+        "mean": 0.4166666666666667,
+        "sd": 0.27967190468298,
+        "ci95": [
+          0.2857761862041335,
+          0.5475571471291999
+        ],
+        "p_two_sided": 2.2622254051337917e-06,
+        "standardized": 1.4898409875635386
+      },
+      "paired": {
+        "n": 20,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided": null,
+        "standardized": null
+      },
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scenario_means": {
+        "development": 0.525,
+        "sparse": 0.15,
+        "cold_start": 0.4,
+        "delayed": 0.5,
+        "shift": 0.45,
+        "drift": 0.475
+      },
+      "totals": {
+        "assignments": 8502,
+        "mutual_acceptances": 1196,
+        "dates": 923,
+        "mutual_second_meeting_intention": 100,
+        "served_members": 7579,
+        "arrived_members": 24000,
+        "ask_cost": 23847
+      },
+      "latency_seconds": {
+        "mean": 0.01763967387356287,
+        "p95": 0.03924512920020788,
+        "p99": 0.04461051425940242,
+        "max": 0.15766833299858263
+      },
+      "mean_coverage": 0.31579166666666664,
+      "peak_request_bytes": 491903,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 312.1356700839751
+    },
+    "hard_priority": {
+      "primary": {
+        "n": 20,
+        "mean": 0.37083333333333335,
+        "sd": 0.20674835680347176,
+        "ci95": [
+          0.27407212384566276,
+          0.46759454282100393
+        ],
+        "p_two_sided": 1.6106366855523751e-07,
+        "standardized": 1.7936458556032704
+      },
+      "paired": {
+        "n": 20,
+        "mean": -0.045833333333333344,
+        "sd": 0.2892759159618297,
+        "ci95": [
+          -0.18121862943378764,
+          0.08955196276712096
+        ],
+        "p_two_sided": 0.4871933251071206,
+        "standardized": -0.15844158052681132
+      },
+      "bootstrap95": [
+        -0.17083333333333334,
+        0.07499999999999998
+      ],
+      "scenario_means": {
+        "development": 0.525,
+        "sparse": 0.15,
+        "cold_start": 0.4,
+        "delayed": 0.4,
+        "shift": 0.325,
+        "drift": 0.425
+      },
+      "totals": {
+        "assignments": 8488,
+        "mutual_acceptances": 1195,
+        "dates": 942,
+        "mutual_second_meeting_intention": 89,
+        "served_members": 7574,
+        "arrived_members": 24000,
+        "ask_cost": 23847
+      },
+      "latency_seconds": {
+        "mean": 0.018208223836811865,
+        "p95": 0.03952325625068624,
+        "p99": 0.04410124742455082,
+        "max": 0.17210487500415184
+      },
+      "mean_coverage": 0.3155833333333333,
+      "peak_request_bytes": 499714,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 321.32018837808573,
+      "exploratory_holm_p": 0.9743866502142412
+    },
+    "population_control": {
+      "primary": {
+        "n": 20,
+        "mean": 0.3875,
+        "sd": 0.20990634224486854,
+        "ci95": [
+          0.28926080783049135,
+          0.48573919216950867
+        ],
+        "p_two_sided": 1.0467516734378453e-07,
+        "standardized": 1.8460614188968032
+      },
+      "paired": {
+        "n": 20,
+        "mean": -0.029166666666666664,
+        "sd": 0.2010116955661684,
+        "ci95": [
+          -0.12324303605052857,
+          0.06490970271719525
+        ],
+        "p_two_sided": 0.5241671704701274,
+        "standardized": -0.14509935148059916
+      },
+      "bootstrap95": [
+        -0.11666666666666667,
+        0.05416666666666666
+      ],
+      "scenario_means": {
+        "development": 0.475,
+        "sparse": 0.15,
+        "cold_start": 0.45,
+        "delayed": 0.45,
+        "shift": 0.45,
+        "drift": 0.35
+      },
+      "totals": {
+        "assignments": 8437,
+        "mutual_acceptances": 1225,
+        "dates": 962,
+        "mutual_second_meeting_intention": 93,
+        "served_members": 7575,
+        "arrived_members": 24000,
+        "ask_cost": 23847
+      },
+      "latency_seconds": {
+        "mean": 0.01742765828097466,
+        "p95": 0.039452920200346846,
+        "p99": 0.045114129084540766,
+        "max": 0.14636199999949895
+      },
+      "mean_coverage": 0.315625,
+      "peak_request_bytes": 494207,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 309.1918594659728,
+      "exploratory_holm_p": 0.9743866502142412
+    }
+  }
+}

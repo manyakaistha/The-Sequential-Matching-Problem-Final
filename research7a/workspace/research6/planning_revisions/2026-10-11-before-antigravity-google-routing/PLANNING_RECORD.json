@@ -1,0 +1,244 @@
+{
+  "status": "planning_snapshot_not_execution_registration",
+  "date": "2026-10-11",
+  "new_policy_episodes": 0,
+  "training_runs": 0,
+  "simulator_worlds_generated": 0,
+  "future_orchestrator_implemented": false,
+  "seed_freshness_certified": false,
+  "planning_validator": {
+    "command": ".venv/bin/python research6/validate_plan.py",
+    "observed_exit_code": 0,
+    "observed_passed_checks": 36,
+    "log": "research6/MODEL_ROUTING_CHECKS.log",
+    "scope": "Planning arithmetic/configuration/local links and model routing only; no policy evaluations."
+  },
+  "frozen_round5_dependency_checks": {
+    "kit.py": {
+      "expected": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "actual": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "match": true
+    },
+    "evaluate.py": {
+      "expected": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+      "actual": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+      "match": true
+    },
+    "research/terminal_model.py": {
+      "expected": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+      "actual": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+      "match": true
+    },
+    "research3/policy.py": {
+      "expected": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+      "actual": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+      "match": true
+    },
+    "research3/model_candidates.py": {
+      "expected": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+      "actual": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+      "match": true
+    },
+    "research4/candidates.py": {
+      "expected": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+      "actual": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+      "match": true
+    },
+    "research4/policy.py": {
+      "expected": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+      "actual": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+      "match": true
+    },
+    "research4/benchmark.py": {
+      "expected": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64",
+      "actual": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64",
+      "match": true
+    }
+  },
+  "evidence_input_sha256": {
+    "REPORT.md": "94c4bbda5267363a84c13d4c491a99972698ac1580bff8898a972b0ed8d145c2",
+    "research/THEORY.md": "034c0c8b5b93b60df483781695f4aba404ee43584d08642c404e933c0cf09c4a",
+    "research/EXTENDED_THEORY.md": "63790a0c8e346e1439871b5e16f18d4248d5622b43d2d6a046279fa44b34ac8c",
+    "research/EXTENDED_ALGORITHM.md": "f261278b51bd56ce17baf99885f62afbf1359cedb2b93ed5b9f9fd1ab01393ab",
+    "research/EXTENDED_EMPIRICAL.md": "706329e431bdf302eb75edf1882d17102328193ac2a8d5c6bfd275838ed58164",
+    "research/EXPERIMENT_REGISTRY.md": "f28b4454f2ed748471bfec42ad6eb144173c0a9674918f2ef6471f8b551a39bd",
+    "research/EXTENDED_REPRODUCTION.md": "75fef537254d1e0107e568b49bf0a310f5cef81e09a68f2a15938149e443be94",
+    "research/FINAL_STATISTICAL_REVIEW.md": "f2a92f5b64efffb0795068a1ea3729b41842131f97a0763685793155851113f1",
+    "research/FINAL_THEORY_REVIEW.md": "21544ffd9d382fba48f4309d0d45a527199e7cf991ea7e35e5d618812d159675",
+    "research/FINAL_PACKAGE_REVIEW.md": "0d79cbcd1dbe654c78cdf85dac9b1fcc3a66b5879026b50275be0f2fb90035f8",
+    "docs/REFERENCES.md": "bef2f73b438ce12d4c55b6b0c50e72a58908a49db7e96a902b1f146bfa993b5e",
+    "research3/FINAL_REPORT.md": "7685411743a915ecdfa9e3c5fd93b6b82ced132753947907f61a45c70a55c7a8",
+    "research3/THEORY_MODELS.md": "392bf3c426f95c83e61b0254ba54ee5020ce38bd9f0e88849482fe97b672d538",
+    "research4/FINAL_REPORT.md": "b9ba6825b93f6c3389d1f0c8c6a9b44c50c624f98770cbc305788291f309ad15",
+    "research4/MECHANISMS.md": "ba4cc3dcfd01cf0ce52cf7b000c7e9d5797a081eb6d143ca3cd77a9c96dfa97b",
+    "research4/DEADLINE_INVARIANCE.md": "5bf08580631fccda61bc88a59d72c302c0b0a390f7677c63f5f05d52490e714b",
+    "research5/FINAL_REPORT.md": "337a8fd89e5bc7bd2c3f9d2829973a7707bfbd188c53603ec8a4faf704bd7723",
+    "results/research5/analysis.json": "213c60c177953e52437b7348138b8bada03af519785f17b102d33ec47617ff95",
+    "results/research5/manifest.json": "afeb51d812711552cf74d246728973d7cbf30a8a150756aeca97f454828040ee",
+    "results/research5/compute_summary.json": "3ed7226b76e5da1e460ab88764fb257436fd0b3b734fbdab43cee5a69166c905",
+    "AGENTS.md": "51c4eaa09ecafbec45c485c1318edeb951c0d35365b4687e8e7dfe3a43a2b0c4"
+  },
+  "planning_files": {
+    "research6/EXPERIMENT_REGISTRY.md": {
+      "bytes": 13545,
+      "sha256": "32bc818de826b4f74d458a371abd3f4b1cd215d988a041bea1d0a42f14d77441"
+    },
+    "research6/LEARNING_PROPOSALS.md": {
+      "bytes": 31414,
+      "sha256": "059b41fea4718e1dfd4e4594053f3f26d86090d6347c54347863411f10439fb9"
+    },
+    "research6/LITERATURE.md": {
+      "bytes": 5178,
+      "sha256": "e0e4cbf54b6bc3b9ec58168270d0f07dc237bef2a0c79e9b9359fd94a5ba9443"
+    },
+    "research6/MODEL_ROUTING_CHECKS.log": {
+      "bytes": 1689,
+      "sha256": "8b5fc34ed51a2fa824faf532ce31dd90986eaae84078108b4324f34749d34000"
+    },
+    "research6/MODEL_ROUTING_REVIEW.md": {
+      "bytes": 4381,
+      "sha256": "ef93516b336cfe6638ad25074cc3dcd9bf13e1b402bf0e1734c3333123f8a548"
+    },
+    "research6/ORCHESTRATION.md": {
+      "bytes": 13976,
+      "sha256": "0f2ff07f9b815788b482456bc52480a976d65bf4a58957bd999a060d03667ab9"
+    },
+    "research6/PLAN.md": {
+      "bytes": 42484,
+      "sha256": "8f84f316efdf0dbb3d7b828fa5100e9d7aad73e54898fa683f1be7993a9f0d20"
+    },
+    "research6/PLAN_REVIEW.md": {
+      "bytes": 11180,
+      "sha256": "c2725d7ecbde3302413c5d1496c00f0a88dddc869784396f3c2c4ba55098e965"
+    },
+    "research6/README.md": {
+      "bytes": 2741,
+      "sha256": "3eee59e8af1136d4f50238d038a31cd28f5b2e7b5121d8714cb02cfe264bffe7"
+    },
+    "research6/STATISTICAL_CRITIQUE.md": {
+      "bytes": 24619,
+      "sha256": "36da7e2a251af7507ff8a6f94cfe1b32742be1a2b234fbc92e0c6ff3a25387ce"
+    },
+    "research6/STRUCTURAL_PROPOSALS.md": {
+      "bytes": 35688,
+      "sha256": "acde20baa3c8645f3bc682cc8f4bee2eee11d08fe31b1b3f32840fdd49286000"
+    },
+    "research6/TEST_SPEC.md": {
+      "bytes": 15384,
+      "sha256": "1198f7860e1a64f78d55b2409c5605e0ea55ee17c64e2ffd29e83961c5b09ab5"
+    },
+    "research6/agent_router.py": {
+      "bytes": 7473,
+      "sha256": "d8c2c609b82f71f8cf8aca535fde2ad19552ddab8c4947ab71f0d62471ccd28f"
+    },
+    "research6/agent_routing.json": {
+      "bytes": 4216,
+      "sha256": "e938add0a06f10c36dddc8cccad3c6762befb46cc239c70b7c4a27f65f6590e5"
+    },
+    "research6/plan.json": {
+      "bytes": 4314,
+      "sha256": "d190f02595f8432ab5ff8b11aeb58f62637d8313df15959fa2d3c9c15e036498"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/EXPERIMENT_REGISTRY.md": {
+      "bytes": 13545,
+      "sha256": "32bc818de826b4f74d458a371abd3f4b1cd215d988a041bea1d0a42f14d77441"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/LEARNING_PROPOSALS.md": {
+      "bytes": 31414,
+      "sha256": "059b41fea4718e1dfd4e4594053f3f26d86090d6347c54347863411f10439fb9"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/LITERATURE.md": {
+      "bytes": 5178,
+      "sha256": "e0e4cbf54b6bc3b9ec58168270d0f07dc237bef2a0c79e9b9359fd94a5ba9443"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/ORCHESTRATION.md": {
+      "bytes": 7807,
+      "sha256": "9e83da290f9f8a39c02bb107f7821e4c443656f0aaee55126ccbb7469d66e6e8"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/PLAN.md": {
+      "bytes": 42484,
+      "sha256": "8f84f316efdf0dbb3d7b828fa5100e9d7aad73e54898fa683f1be7993a9f0d20"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/PLANNING_RECORD.json": {
+      "bytes": 6878,
+      "sha256": "4192c434029fc1a0d83f7a98e7d9f00fd5b937e76d6f874027d39a2295566a32"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/PLAN_REVIEW.md": {
+      "bytes": 11180,
+      "sha256": "c2725d7ecbde3302413c5d1496c00f0a88dddc869784396f3c2c4ba55098e965"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/README.md": {
+      "bytes": 2183,
+      "sha256": "51d3a7a7771ab19a9edfc490905fc8d19bd3d8efa07891385653bc628be6e697"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/STATISTICAL_CRITIQUE.md": {
+      "bytes": 24619,
+      "sha256": "36da7e2a251af7507ff8a6f94cfe1b32742be1a2b234fbc92e0c6ff3a25387ce"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/STRUCTURAL_PROPOSALS.md": {
+      "bytes": 35688,
+      "sha256": "acde20baa3c8645f3bc682cc8f4bee2eee11d08fe31b1b3f32840fdd49286000"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/TEST_SPEC.md": {
+      "bytes": 15384,
+      "sha256": "1198f7860e1a64f78d55b2409c5605e0ea55ee17c64e2ffd29e83961c5b09ab5"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/plan.json": {
+      "bytes": 3889,
+      "sha256": "6c590db7fca195af43088da534fee7f9c9fdae3dcc0dda04090cb852f7baad01"
+    },
+    "research6/planning_revisions/2026-10-11-before-model-routing/validate_plan.py": {
+      "bytes": 4781,
+      "sha256": "30fbde8457dc84a003bd5944cb7f4add143fcb39aa21acf435a92c4195cd13cf"
+    },
+    "research6/validate_plan.py": {
+      "bytes": 6199,
+      "sha256": "06920ec7bccb6066b8b8409e67f8aaf050471e6144c97d8c455b5b68f430bdef"
+    },
+    "AGENTS.md": {
+      "bytes": 2737,
+      "sha256": "51c4eaa09ecafbec45c485c1318edeb951c0d35365b4687e8e7dfe3a43a2b0c4"
+    }
+  },
+  "python_for_record": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "limitations": [
+    "Dependency checks cover eight frozen round-five source files, not a fresh exhaustive rehash of all old artifacts.",
+    "Prior complete research5 package verification remains preserved; it was not rerun for planning.",
+    "Fingerprint records current bytes, not tamper-proof timestamps.",
+    "Planning document links/arithmetic were checked before this metadata file was written; no algorithm execution is implied.",
+    "Routing helper prepares live collaboration payloads; director owns actual spawning, current slot accounting and per-task escalation history. The research experiment runner remains unimplemented."
+  ],
+  "revision": "model_effort_routing",
+  "updated_utc": "2026-10-11T03:42:51.806971+00:00",
+  "previous_snapshot": "research6/planning_revisions/2026-10-11-before-model-routing/PLANNING_RECORD.json",
+  "live_agent_routing": {
+    "configured": true,
+    "policy": "research6/agent_routing.json",
+    "helper": "research6/agent_router.py",
+    "persistent_instructions": "AGENTS.md",
+    "no_effort_above_high": true,
+    "global_slots_including_root": 4,
+    "observed_delegations": [
+      {
+        "agent": "/root/routing_inventory",
+        "requested_model": "gpt-6-luna",
+        "requested_reasoning_effort": "low",
+        "fork_turns": "none",
+        "task": "Read-only file discovery and evidence extraction",
+        "tool_accepted": true,
+        "completed": true
+      },
+      {
+        "agent": "/root/routing_review",
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning_effort": "medium",
+        "fork_turns": "none",
+        "task": "Independent routing implementation review",
+        "tool_accepted": true,
+        "completed": true
+      }
+    ],
+    "resolved_model_and_token_usage": "Not exposed by the agent listing; only explicit requests/tool acceptance/completion are recorded."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "main_experiment_grids": {
+    "development": {
+      "episodes": 1056,
+      "seed_clusters": 8,
+      "policies": 22,
+      "valid": true
+    },
+    "selection": {
+      "episodes": 504,
+      "seed_clusters": 12,
+      "policies": 7,
+      "valid": true
+    },
+    "confirmation": {
+      "episodes": 480,
+      "seed_clusters": 40,
+      "policies": 2,
+      "valid": true
+    }
+  },
+  "main_episodes": 2040,
+  "frozen_inference_and_auxiliary_hashes_match": true,
+  "prior_manifest_sources_and_archives_match": true,
+  "report_links_exist": true,
+  "scope": "No new rollout or statistical test; completed-package integrity only."
+}

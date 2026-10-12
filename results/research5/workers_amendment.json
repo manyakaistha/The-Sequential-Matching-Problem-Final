@@ -1,0 +1,12 @@
+{
+  "research_workers": 3,
+  "preserved_rows": 118,
+  "worker_run_ast_unchanged": true,
+  "prior_recorder_versions": [
+    "28c41137ce30508c0bb3933c5d09ef14404917878468a7443ad9ab3b990515ee",
+    "ea0c115df9eb6f2ae215945eefec6d089104d8a27d6ad41d973b4d7e7d0da4da"
+  ],
+  "preflight": "passed",
+  "new_episodes_run": 0,
+  "note": "Independent previous reviews preserved as historical evidence; this administrative concurrency/path-recovery amendment was checked by director."
+}

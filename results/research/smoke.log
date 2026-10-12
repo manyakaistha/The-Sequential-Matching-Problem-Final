@@ -1,0 +1,28 @@
+{"seed": 101, "variant": "development", "valid": true, "msmi": 1}
+{
+  "eligible": true,
+  "primary_score": 0.5,
+  "scenario_means": {
+    "development": {
+      "msmi_per_100_arrived_members": 0.5,
+      "coverage": 0.46,
+      "mutual_acceptances_per_100": 9.5,
+      "ask_cost": 315,
+      "inference_seconds": 11.1582649659249
+    }
+  },
+  "overall": {
+    "msmi_per_100_arrived_members": 0.5,
+    "coverage": 0.46,
+    "mutual_acceptances_per_100": 9.5,
+    "ask_cost": 315,
+    "inference_seconds": 11.1582649659249
+  },
+  "ranking_key_descending": [
+    0.5,
+    0.46,
+    9.5,
+    -315,
+    -11.1582649659249
+  ]
+}

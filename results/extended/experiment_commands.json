@@ -1,0 +1,419 @@
+[
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "unittest",
+      "-v",
+      "research.test_extended_policy",
+      "research.test_extended_safety"
+    ],
+    "log": "results/extended/tests_final_policy.log",
+    "started_at_utc": "2026-10-08T06:04:36.024388+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:04:36.829793+00:00",
+    "environment": {
+      "EXTENDED_SAFETY_TEST_TARGET": "actual"
+    }
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_benchmark",
+      "--policies",
+      "fixed_regime_fifo,greedy,independent_fifo,no_learning_fifo,prior_product,product_fifo,simple_blossom,simple_degree,simple_fifo,terminal_batching,terminal_blossom,terminal_conservative,terminal_degree,terminal_degree_batching,terminal_degree_blossom,terminal_entropy,terminal_fifo,terminal_opportunity,terminal_random,terminal_soft,terminal_two_query,terminal_value",
+      "--seeds",
+      "1001",
+      "--output",
+      "results/extended/guard_regression.json",
+      "--traces",
+      "results/extended/guard_regression_traces"
+    ],
+    "log": "results/extended/guard_regression.log",
+    "started_at_utc": "2026-10-08T06:04:36.830204+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:07:12.973474+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_guard_verify"
+    ],
+    "log": "results/extended/guard_regression_check.log",
+    "started_at_utc": "2026-10-08T06:07:12.974261+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:07:13.017841+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_analysis",
+      "results/extended/development.json"
+    ],
+    "log": "results/extended/development_statistics.log",
+    "started_at_utc": "2026-10-08T06:07:13.018055+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:07:13.637295+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_interactions",
+      "results/extended/development.json"
+    ],
+    "log": "results/extended/interactions.log",
+    "started_at_utc": "2026-10-08T06:07:13.637643+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:07:14.076070+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_select",
+      "shortlist"
+    ],
+    "log": "results/extended/shortlist.log",
+    "started_at_utc": "2026-10-08T06:07:14.076379+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:07:14.563234+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_benchmark",
+      "--policies",
+      "no_learning_fifo,terminal_soft,independent_fifo,simple_fifo,terminal_fifo,greedy,prior_product",
+      "--seeds",
+      "2001:2012",
+      "--output",
+      "results/extended/selection.json"
+    ],
+    "log": "results/extended/selection.log",
+    "started_at_utc": "2026-10-08T06:07:14.563712+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:16:42.940521+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_analysis",
+      "results/extended/selection.json"
+    ],
+    "log": "results/extended/selection_statistics.log",
+    "started_at_utc": "2026-10-08T06:16:42.941411+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:16:43.487137+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_select",
+      "freeze"
+    ],
+    "log": "results/extended/freeze.log",
+    "started_at_utc": "2026-10-08T06:16:43.487657+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:16:43.910127+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_analysis",
+      "results/extended/development.json",
+      "--reference",
+      "simple_fifo",
+      "--output",
+      "results/extended/development_vs_selected_statistics.json"
+    ],
+    "log": "results/extended/development_vs_selected_statistics.log",
+    "started_at_utc": "2026-10-08T06:16:44.246438+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:16:44.722247+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_benchmark",
+      "--policies",
+      "greedy,simple_fifo",
+      "--seeds",
+      "3001:3040",
+      "--output",
+      "results/extended/confirmation.json",
+      "--traces",
+      "results/extended/confirmation_traces"
+    ],
+    "log": "results/extended/confirmation.log",
+    "started_at_utc": "2026-10-08T06:16:44.722628+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:25:26.411157+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_analysis",
+      "results/extended/confirmation.json",
+      "--confirmatory",
+      "simple_fifo"
+    ],
+    "log": "results/extended/confirmation_statistics.log",
+    "started_at_utc": "2026-10-08T06:25:26.434754+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:25:26.980158+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_benchmark",
+      "--policies",
+      "greedy,simple_fifo",
+      "--seeds",
+      "1001",
+      "--output",
+      "results/extended/subprocess.json",
+      "--execution",
+      "subprocess",
+      "--traces",
+      "results/extended/subprocess_traces"
+    ],
+    "log": "results/extended/subprocess.log",
+    "started_at_utc": "2026-10-08T06:25:26.980521+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:26:17.501705+00:00"
+  },
+  {
+    "command": [
+      "docker",
+      "build",
+      "-f",
+      "Dockerfile.extended",
+      "-t",
+      "sequential-extended:1.0",
+      "."
+    ],
+    "log": "results/extended/docker_build_final.log",
+    "started_at_utc": "2026-10-08T06:26:17.502405+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:26:20.570425+00:00"
+  },
+  {
+    "command": [
+      "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/.venv/bin/python",
+      "-m",
+      "research.extended_production",
+      "--config",
+      "{\"model\": \"simple\"}",
+      "--output",
+      "results/extended/production.json"
+    ],
+    "log": "results/extended/production.log",
+    "started_at_utc": "2026-10-08T06:26:20.571564+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T06:26:57.350114+00:00"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_benchmark",
+      "--policies",
+      "fixed_regime_fifo,greedy,independent_fifo,no_learning_fifo,prior_product,product_fifo,simple_blossom,simple_degree,simple_fifo,terminal_batching,terminal_blossom,terminal_conservative,terminal_degree,terminal_degree_batching,terminal_degree_blossom,terminal_entropy,terminal_fifo,terminal_opportunity,terminal_random,terminal_soft,terminal_two_query,terminal_value",
+      "--seeds",
+      "1001:1008",
+      "--output",
+      "results/extended/development.json",
+      "--traces",
+      "results/extended/development_traces"
+    ],
+    "artifacts": [
+      "results/extended/development.json"
+    ],
+    "source_scope": "archived development executable",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run.",
+    "source_sha256": "6cf508147f6cb5de51185e92c35bd25501c5c5737cc5db7e22b8f9f411509c60"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_audit"
+    ],
+    "artifacts": [
+      "results/extended/audit.json"
+    ],
+    "source_scope": "frozen guarded source; audited original baselines unaffected",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_theory"
+    ],
+    "artifacts": [
+      "results/extended/theory.json"
+    ],
+    "source_scope": "offline exact toy/simulator calculations",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_audit",
+      "--traces",
+      "results/extended/development_traces",
+      "--policies",
+      "terminal_fifo,independent_fifo,no_learning_fifo,simple_fifo,terminal_soft",
+      "--output",
+      "results/extended/audit_development_calibration.json"
+    ],
+    "artifacts": [
+      "results/extended/audit_development_calibration.json"
+    ],
+    "source_scope": "offline trace audit",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_audit",
+      "--traces",
+      "results/extended/development_traces",
+      "--common-cohort",
+      "--output",
+      "results/extended/audit_common_cohort_calibration.json"
+    ],
+    "artifacts": [
+      "results/extended/audit_common_cohort_calibration.json"
+    ],
+    "source_scope": "common greedy cohort; independent model memory",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_audit",
+      "--traces",
+      "results/extended/development_traces",
+      "--policies",
+      "simple_fifo,greedy",
+      "--mechanisms",
+      "--replay-graphs",
+      "--output",
+      "results/extended/mechanisms.json"
+    ],
+    "artifacts": [
+      "results/extended/mechanisms.json"
+    ],
+    "source_scope": "public graph replay; offline hidden conditional-probability audit",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_audit",
+      "--traces",
+      "results/extended/confirmation_traces",
+      "--policies",
+      "simple_fifo",
+      "--output",
+      "results/extended/audit_confirmation_calibration.json"
+    ],
+    "artifacts": [
+      "results/extended/audit_confirmation_calibration.json"
+    ],
+    "source_scope": "post-freeze audit; no recalibration",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Reconstructed command from completed source/artifacts; historical timestamp was not recorded. Not a prospective registration or new run."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_archive",
+      "build"
+    ],
+    "artifacts": [
+      "results/extended/archive_index.json"
+    ],
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Observed completed finalization command; exact historical timestamp was not recorded. Not a new rollout."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_archive",
+      "verify"
+    ],
+    "artifacts": [
+      "results/extended/archive_index.json"
+    ],
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "provenance": "Observed completed finalization command; exact historical timestamp was not recorded. Not a new rollout."
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_report"
+    ],
+    "started_at_utc": "2026-10-08T11:00:38.375065+00:00",
+    "scope": "Finalization only; no new simulator episode.",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T11:00:39.040601+00:00"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_integrity"
+    ],
+    "started_at_utc": "2026-10-08T11:00:39.041113+00:00",
+    "scope": "Finalization only; no new simulator episode.",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T11:00:39.115570+00:00"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "research.extended_manifest"
+    ],
+    "started_at_utc": "2026-10-08T11:00:39.115867+00:00",
+    "scope": "Finalization only; no new simulator episode.",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T11:00:41.171956+00:00"
+  }
+]

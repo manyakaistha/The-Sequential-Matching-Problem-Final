@@ -1,0 +1,24 @@
+{
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "offline_audit_workers": 6,
+  "archive_workers": 2,
+  "main_research_workers": 3,
+  "host_cpu_cores": 10,
+  "host_ram_bytes": 17179869184,
+  "container_image": {
+    "id": "sha256:6bb29474ed483cec9926b6c2a00b8cd48541d11731ecd13f709dc98789722668",
+    "size_bytes": 44748144,
+    "below_documented_2GiB": true,
+    "user": "65534:65534",
+    "entrypoint": [
+      "python",
+      "-m",
+      "research4.policy"
+    ]
+  },
+  "container_python": "Python 3.12.7",
+  "scope": "Host dimensions observed during verification; evaluated container remains2CPU/1GiB/64PIDs. No inference tuning."
+}

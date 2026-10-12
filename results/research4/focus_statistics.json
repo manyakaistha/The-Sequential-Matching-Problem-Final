@@ -1,0 +1,273 @@
+{
+  "estimand": "equal six-family reward per seed, paired independent seed clusters",
+  "seeds": [
+    81001,
+    81002,
+    81003,
+    81004,
+    81005,
+    81006,
+    81007,
+    81008,
+    81009,
+    81010,
+    81011,
+    81012,
+    81013,
+    81014,
+    81015,
+    81016,
+    81017,
+    81018,
+    81019,
+    81020,
+    81021,
+    81022,
+    81023,
+    81024,
+    81025,
+    81026,
+    81027,
+    81028,
+    81029,
+    81030,
+    81031,
+    81032
+  ],
+  "source": "results/research4/focus.json",
+  "code_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/benchmark.py": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64"
+  },
+  "policies": {
+    "goal_surplus_control": {
+      "primary": {
+        "n": 32,
+        "mean": 0.3098958333333333,
+        "sd": 0.25770768410745665,
+        "ci95": [
+          0.21698230510799493,
+          0.4028093615586717
+        ],
+        "p_two_sided": 1.2804405842287562e-07,
+        "standardized": 1.2025090924495512
+      },
+      "paired": {
+        "n": 32,
+        "mean": -0.01562500000000001,
+        "sd": 0.21939708440442252,
+        "ci95": [
+          -0.09472608410220057,
+          0.06347608410220054
+        ],
+        "p_two_sided": 0.689809363416214,
+        "standardized": -0.071217901743844
+      },
+      "bootstrap95": [
+        -0.09375000000000001,
+        0.05729166666666666
+      ],
+      "scenario_means": {
+        "development": 0.34375,
+        "sparse": 0.15625,
+        "cold_start": 0.375,
+        "delayed": 0.28125,
+        "shift": 0.328125,
+        "drift": 0.375
+      },
+      "totals": {
+        "assignments": 13970,
+        "mutual_acceptances": 1962,
+        "dates": 1506,
+        "mutual_second_meeting_intention": 119,
+        "served_members": 12360,
+        "arrived_members": 38400,
+        "ask_cost": 41865
+      },
+      "latency_seconds": {
+        "mean": 0.028311562422324403,
+        "p95": 0.04008145834668538,
+        "p99": 0.04423166988097365,
+        "max": 0.08870933300204342
+      },
+      "mean_coverage": 0.321875,
+      "peak_request_bytes": 495590,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 744.1855692929239,
+      "exploratory_holm_p": 1
+    },
+    "greedy": {
+      "primary": {
+        "n": 32,
+        "mean": 0.3255208333333333,
+        "sd": 0.21931730074259514,
+        "ci95": [
+          0.24644851430866932,
+          0.4045931523579973
+        ],
+        "p_two_sided": 1.747671465917541e-09,
+        "standardized": 1.4842460318047843
+      },
+      "paired": {
+        "n": 32,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided": null,
+        "standardized": null
+      },
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scenario_means": {
+        "development": 0.375,
+        "sparse": 0.140625,
+        "cold_start": 0.421875,
+        "delayed": 0.265625,
+        "shift": 0.375,
+        "drift": 0.375
+      },
+      "totals": {
+        "assignments": 14023,
+        "mutual_acceptances": 2079,
+        "dates": 1612,
+        "mutual_second_meeting_intention": 125,
+        "served_members": 12395,
+        "arrived_members": 38400,
+        "ask_cost": 38229
+      },
+      "latency_seconds": {
+        "mean": 0.017064426630244295,
+        "p95": 0.03786163779805065,
+        "p99": 0.042522681747650504,
+        "max": 0.08992954200220993
+      },
+      "mean_coverage": 0.32278645833333336,
+      "peak_request_bytes": 490178,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 484.0239938700033
+    },
+    "hard_priority": {
+      "primary": {
+        "n": 32,
+        "mean": 0.3828125,
+        "sd": 0.3464226905899144,
+        "ci95": [
+          0.2579138011059364,
+          0.5077111988940636
+        ],
+        "p_two_sided": 6.018169967295713e-07,
+        "standardized": 1.1050445320083346
+      },
+      "paired": {
+        "n": 32,
+        "mean": 0.057291666666666664,
+        "sd": 0.3493705938226012,
+        "ci95": [
+          -0.06866986468101366,
+          0.18325319801434697
+        ],
+        "p_two_sided": 0.3607603261631322,
+        "standardized": 0.1639853716359353
+      },
+      "bootstrap95": [
+        -0.05729166666666667,
+        0.18229166666666666
+      ],
+      "scenario_means": {
+        "development": 0.46875,
+        "sparse": 0.171875,
+        "cold_start": 0.46875,
+        "delayed": 0.3125,
+        "shift": 0.4375,
+        "drift": 0.4375
+      },
+      "totals": {
+        "assignments": 14073,
+        "mutual_acceptances": 2001,
+        "dates": 1550,
+        "mutual_second_meeting_intention": 147,
+        "served_members": 12380,
+        "arrived_members": 38400,
+        "ask_cost": 38229
+      },
+      "latency_seconds": {
+        "mean": 0.017615358203911077,
+        "p95": 0.037866166049570896,
+        "p99": 0.04215309299172077,
+        "max": 0.24135124999884283
+      },
+      "mean_coverage": 0.3223958333333333,
+      "peak_request_bytes": 492882,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 497.5063479109667,
+      "exploratory_holm_p": 1
+    },
+    "population_control": {
+      "primary": {
+        "n": 32,
+        "mean": 0.3515625,
+        "sd": 0.29078929096228984,
+        "ci95": [
+          0.24672178061273864,
+          0.45640321938726136
+        ],
+        "p_two_sided": 1.1562672693868933e-07,
+        "standardized": 1.2089939723591518
+      },
+      "paired": {
+        "n": 32,
+        "mean": 0.026041666666666657,
+        "sd": 0.25261845583684234,
+        "ci95": [
+          -0.06503699910121494,
+          0.11712033243454825
+        ],
+        "p_two_sided": 0.5640123935672914,
+        "standardized": 0.10308695214052802
+      },
+      "bootstrap95": [
+        -0.06250000000000001,
+        0.11197916666666666
+      ],
+      "scenario_means": {
+        "development": 0.421875,
+        "sparse": 0.15625,
+        "cold_start": 0.4375,
+        "delayed": 0.25,
+        "shift": 0.40625,
+        "drift": 0.4375
+      },
+      "totals": {
+        "assignments": 13927,
+        "mutual_acceptances": 2032,
+        "dates": 1575,
+        "mutual_second_meeting_intention": 135,
+        "served_members": 12357,
+        "arrived_members": 38400,
+        "ask_cost": 38229
+      },
+      "latency_seconds": {
+        "mean": 0.016853949037717246,
+        "p95": 0.0376476023971918,
+        "p99": 0.0421361259900732,
+        "max": 0.16952987499826122
+      },
+      "mean_coverage": 0.321796875,
+      "peak_request_bytes": 493020,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 479.20890450195293,
+      "exploratory_holm_p": 1
+    }
+  }
+}

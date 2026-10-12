@@ -1,0 +1,12 @@
+greedy development 1001 0.0 True
+simple_fifo development 1001 1.0 True
+greedy sparse 1001 0.0 True
+simple_fifo sparse 1001 0.0 True
+greedy cold_start 1001 1.5 True
+simple_fifo cold_start 1001 0.5 True
+greedy delayed 1001 0.5 True
+simple_fifo delayed 1001 1.0 True
+greedy shift 1001 0.0 True
+simple_fifo shift 1001 0.5 True
+greedy drift 1001 0.0 True
+simple_fifo drift 1001 0.5 True

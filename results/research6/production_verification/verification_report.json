@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "counts": {
+    "direct": 48,
+    "subprocess": 48,
+    "container": 12
+  },
+  "all_ordered_and_semantic_equal": {
+    "direct": true,
+    "subprocess": true,
+    "container": true
+  },
+  "total_replay_invocations": 12960,
+  "memory_limits_verified": "Strict 1 MiB JSON request limit and clean deserialization enforced across all invocations",
+  "container_security_verified": "Evaluated with network=none, read-only root, cap-drop=ALL, no-new-privileges, unprivileged UID 65534"
+}

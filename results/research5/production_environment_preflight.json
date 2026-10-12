@@ -1,0 +1,39 @@
+{
+  "scope": "Reconstructed operator preflight before registered seed101 production revalidation; no policy invocation",
+  "events": [
+    {
+      "command": [
+        "docker",
+        "info",
+        "--format",
+        "{{.ServerVersion}}"
+      ],
+      "status": "daemon unavailable",
+      "stderr": "Cannot connect to the Docker daemon at unix:///Users/manyakaistha/.docker/run/docker.sock. Is the docker daemon running?",
+      "started_utc": null
+    },
+    {
+      "command": [
+        "docker",
+        "image",
+        "inspect",
+        "sequential-round4:research",
+        "--format",
+        "{{.Id}}"
+      ],
+      "status": "daemon unavailable",
+      "started_utc": null
+    },
+    {
+      "command": [
+        "open",
+        "-a",
+        "Docker"
+      ],
+      "returncode": 0,
+      "started_utc": null
+    }
+  ],
+  "timestamp_status": "Historical exact UTC starts not retained; explicit null, not inferred from file times",
+  "note": "Started local Docker reversibly. Revalidation builds distinct sequential-round5:production-checks image; no prior tags/source/artifacts overwritten."
+}

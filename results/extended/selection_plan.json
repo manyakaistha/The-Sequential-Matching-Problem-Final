@@ -1,0 +1,93 @@
+{
+  "rule": "top four development new configurations plus four mandatory controls, deduplicated",
+  "policies": [
+    "no_learning_fifo",
+    "terminal_soft",
+    "independent_fifo",
+    "simple_fifo",
+    "terminal_fifo",
+    "greedy",
+    "prior_product"
+  ],
+  "development_order": [
+    "no_learning_fifo",
+    "terminal_soft",
+    "independent_fifo",
+    "simple_fifo",
+    "terminal_batching",
+    "terminal_fifo",
+    "fixed_regime_fifo",
+    "terminal_conservative",
+    "product_fifo",
+    "terminal_blossom",
+    "terminal_opportunity",
+    "simple_blossom",
+    "terminal_degree_blossom",
+    "terminal_entropy",
+    "terminal_degree_batching",
+    "terminal_degree",
+    "simple_degree",
+    "terminal_value",
+    "terminal_random",
+    "terminal_two_query"
+  ],
+  "development_scores": {
+    "no_learning_fifo": 0.5104166666666667,
+    "terminal_soft": 0.5104166666666666,
+    "independent_fifo": 0.46875,
+    "simple_fifo": 0.46875,
+    "terminal_batching": 0.45833333333333337,
+    "terminal_fifo": 0.4583333333333333,
+    "fixed_regime_fifo": 0.4583333333333333,
+    "terminal_conservative": 0.4479166666666667,
+    "product_fifo": 0.44791666666666663,
+    "terminal_blossom": 0.42708333333333337,
+    "terminal_opportunity": 0.42708333333333326,
+    "simple_blossom": 0.41666666666666663,
+    "terminal_degree_blossom": 0.3541666666666667,
+    "terminal_entropy": 0.34375,
+    "terminal_degree_batching": 0.34375,
+    "terminal_degree": 0.3125,
+    "simple_degree": 0.3125,
+    "terminal_value": 0.30208333333333337,
+    "terminal_random": 0.29166666666666663,
+    "terminal_two_query": 0.25
+  },
+  "code_hashes": {
+    "extended_policy.py": "6cf508147f6cb5de51185e92c35bd25501c5c5737cc5db7e22b8f9f411509c60",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research/extended_candidates.py": "4d4a76082af2df84660c9414fb0fbde9400a25fcaa7180e90636fb93bb13a81f",
+    "research_policy.py": "ddd58f9c35872b97220af124686ff477f6ff135d156068d9857b839019bb76b3",
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162"
+  },
+  "selection_seeds": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012
+  ],
+  "auxiliary_code_hashes": {
+    "policy.py": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+    "research/extended_benchmark.py": "c8bd4eb2bd6f0003856b19b688a49d99687aa4c1ad1139e6c86670a62d211b67",
+    "research/extended_select.py": "dff605f9ef3b89bb70cf3c78765c151a9a30d0d1fc65fe726011649cc1ce008a"
+  },
+  "selection_code_hashes": {
+    "extended_policy.py": "823794e0818b2c3c0ea61b37e89078c537f6c3117ee8bf0e036eab94b6e81891",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research/extended_candidates.py": "4d4a76082af2df84660c9414fb0fbde9400a25fcaa7180e90636fb93bb13a81f",
+    "research_policy.py": "ddd58f9c35872b97220af124686ff477f6ff135d156068d9857b839019bb76b3",
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162"
+  },
+  "production_guard_regression": "results/extended/guard_regression_check.json",
+  "registered_at_utc": "2026-10-08T06:07:14.526880+00:00"
+}

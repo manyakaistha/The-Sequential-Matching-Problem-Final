@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "equivalence": {},
+  "image": {
+    "id": "sha256:ba7e0c2fefe7e1e845bddfb008660ae83dcbd99da593e64b6b7a8af0d3683df5",
+    "size_bytes": 44748144,
+    "below_documented_2GiB": true,
+    "user": "65534:65534",
+    "entrypoint": [
+      "python",
+      "-m",
+      "research4.policy"
+    ]
+  },
+  "wall_seconds": 4.151386874997115
+}

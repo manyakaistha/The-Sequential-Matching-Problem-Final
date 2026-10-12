@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-10-10T17:16:36.375278+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-m",
+    "research5.benchmark",
+    "--policies",
+    "greedy,population_control",
+    "--seeds",
+    "90001:90430",
+    "--workers",
+    "3",
+    "--variants",
+    "all",
+    "--output",
+    "results/research5/confirmation.json",
+    "--traces",
+    "results/research5/confirmation_traces",
+    "--resume-from",
+    "results/research5/interrupted_runs/20261010T171453Z/confirmation.json"
+  ],
+  "design_sha256": "56a8eb63200c069d3a64185c716ab62986d61f423a762e675d16f22f389663dc",
+  "status": "completed",
+  "required_free_disk_bytes": 200000000000,
+  "notes": "No interim effect computation, no significance stopping or sample extension. All rows/failures retained.",
+  "pid": 6940,
+  "completed_utc": "2026-10-10T18:50:54.618470+00:00",
+  "returncode": 0,
+  "wall_seconds": 5658.240507458,
+  "os_child_cpu_seconds": 16410.274014
+}

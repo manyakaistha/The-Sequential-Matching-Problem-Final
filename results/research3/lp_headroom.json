@@ -1,0 +1,62 @@
+{
+  "scope": "Inherited optimistic expected-capacity LP on already examined seed1001 only; numerical quadrature and fresh-stream interpretation. Reveals all nondeclined hard truth, known actors/soft/family/arrival/exit, drops retirement and busy periods longer than8days, fractional schedule. Not a pathwise bound or deployable policy.",
+  "rows": [
+    {
+      "seed": 1001,
+      "variant": "development",
+      "success": true,
+      "variables": 7583,
+      "edges": 162,
+      "bound_msmi_per100": 0.8091495108650937,
+      "caveat": "Expected reward upper bound, not a pathwise bound on stochastic realized MSMI; quadrature numerically approximates rewards."
+    },
+    {
+      "seed": 1001,
+      "variant": "sparse",
+      "success": true,
+      "variables": 1211,
+      "edges": 22,
+      "bound_msmi_per100": 0.10220463096149285,
+      "caveat": "Expected reward upper bound, not a pathwise bound on stochastic realized MSMI; quadrature numerically approximates rewards."
+    },
+    {
+      "seed": 1001,
+      "variant": "cold_start",
+      "success": true,
+      "variables": 5328,
+      "edges": 114,
+      "bound_msmi_per100": 0.6711334948484357,
+      "caveat": "Expected reward upper bound, not a pathwise bound on stochastic realized MSMI; quadrature numerically approximates rewards."
+    },
+    {
+      "seed": 1001,
+      "variant": "delayed",
+      "success": true,
+      "variables": 7583,
+      "edges": 162,
+      "bound_msmi_per100": 0.7914567373039041,
+      "caveat": "Expected reward upper bound, not a pathwise bound on stochastic realized MSMI; quadrature numerically approximates rewards."
+    },
+    {
+      "seed": 1001,
+      "variant": "shift",
+      "success": true,
+      "variables": 7583,
+      "edges": 162,
+      "bound_msmi_per100": 0.6909703666103295,
+      "caveat": "Expected reward upper bound, not a pathwise bound on stochastic realized MSMI; quadrature numerically approximates rewards."
+    },
+    {
+      "seed": 1001,
+      "variant": "drift",
+      "success": true,
+      "variables": 7583,
+      "edges": 162,
+      "bound_msmi_per100": 0.7612402366679732,
+      "caveat": "Expected reward upper bound, not a pathwise bound on stochastic realized MSMI; quadrature numerically approximates rewards."
+    }
+  ],
+  "cpu_seconds": 3.35707,
+  "wall_seconds": 3.395590749999883,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 inline import research.upper_bound.bound, six families seed1001"
+}

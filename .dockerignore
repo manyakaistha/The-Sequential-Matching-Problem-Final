@@ -2,3 +2,15 @@
 !kit.py
 !policy.py
 !Dockerfile
+!research_policy.py
+!Dockerfile.research
+!extended_policy.py
+!research/
+research/*
+!research/terminal_model.py
+!research/extended_candidates.py
+!research3/**
+!research4/**
+!research6/**
+!Dockerfile.round6
+!Dockerfile.extended

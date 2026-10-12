@@ -1,0 +1,3344 @@
+{
+  "scope": "Finite complete seed101 replay, not universal latency guarantee",
+  "build": null,
+  "image": {
+    "id": "sha256:e8e1e0260628e4140ad95506ef643588b0abf6a5af2422f2332c55534072842a",
+    "size_bytes": 44742809,
+    "below_documented_2GiB": true,
+    "user": "65534:65534",
+    "entrypoint": [
+      "python",
+      "-m",
+      "research3.policy"
+    ]
+  },
+  "resource_command": [
+    "docker",
+    "run",
+    "--rm",
+    "-i",
+    "--name",
+    "sequential-f884ef124e164f8e8caf66208707a431",
+    "--network=none",
+    "--cpus=2",
+    "--memory=1g",
+    "--memory-swap=1g",
+    "--pids-limit=64",
+    "--read-only",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--user=65534:65534",
+    "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+    "sequential-round3:research"
+  ],
+  "rows": [
+    {
+      "assignments": 109,
+      "mutual_acceptances": 16,
+      "dates": 15,
+      "mutual_second_meeting_intention": 1,
+      "missing_feedback": 56,
+      "ask_cost": 198,
+      "arrived_members": 200,
+      "msmi_per_100_arrived_members": 0.5,
+      "status": "simulated_not_observed_product_performance",
+      "valid": true,
+      "served_members": 92,
+      "unserved_members": 108,
+      "coverage": 0.46,
+      "mutual_acceptances_per_100": 8.0,
+      "first_introduction_wait_days": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        13,
+        14,
+        14,
+        15,
+        16,
+        16,
+        16,
+        16,
+        16,
+        19,
+        22,
+        24,
+        32,
+        32,
+        40
+      ],
+      "inference_seconds": 2.0135080839463626,
+      "action_sha256": "4898ee5eeffd134c73b7ea85a6b329698fc25e4747a473cc61b7d4136951db94",
+      "optimized_fallback_count": 0,
+      "captured_fallback_warning_count": 0,
+      "execution": "direct",
+      "seed": 101,
+      "variant": "development",
+      "candidate": "clean",
+      "calls": [
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0016595839988440275,
+          "request_bytes": 228864,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02454066700011026,
+          "request_bytes": 231991,
+          "memory_bytes": 2,
+          "response_bytes": 681
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.001817624994146172,
+          "request_bytes": 237950,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.01925633299833862,
+          "request_bytes": 241057,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0017230000012204982,
+          "request_bytes": 243870,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.01974158300436102,
+          "request_bytes": 247030,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.002175417001126334,
+          "request_bytes": 252273,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.01968979099910939,
+          "request_bytes": 255293,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0020235409974702634,
+          "request_bytes": 266693,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.019819166998786386,
+          "request_bytes": 269911,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0021474999957717955,
+          "request_bytes": 278838,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0218309580013738,
+          "request_bytes": 281934,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0020216670018271543,
+          "request_bytes": 290313,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.020874708003248088,
+          "request_bytes": 293293,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0022862499972688965,
+          "request_bytes": 301649,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.027985083004750777,
+          "request_bytes": 304764,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.002210083999671042,
+          "request_bytes": 309806,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.023174333000497427,
+          "request_bytes": 312964,
+          "memory_bytes": 2,
+          "response_bytes": 599
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0022338329945341684,
+          "request_bytes": 326735,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.021007333001762163,
+          "request_bytes": 329799,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0025182500030496158,
+          "request_bytes": 336369,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02045699999871431,
+          "request_bytes": 339677,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.002555624996603001,
+          "request_bytes": 347165,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.022043000004487112,
+          "request_bytes": 350185,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.002638165999087505,
+          "request_bytes": 358865,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.023135458999604452,
+          "request_bytes": 362025,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003345249999256339,
+          "request_bytes": 363235,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.024402791997999884,
+          "request_bytes": 366288,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003521250000630971,
+          "request_bytes": 370726,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02455362500040792,
+          "request_bytes": 373865,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0028024579951306805,
+          "request_bytes": 377149,
+          "memory_bytes": 2,
+          "response_bytes": 103
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02225558400095906,
+          "request_bytes": 377970,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0028119159978814423,
+          "request_bytes": 387142,
+          "memory_bytes": 2,
+          "response_bytes": 182
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02926354199735215,
+          "request_bytes": 388740,
+          "memory_bytes": 2,
+          "response_bytes": 845
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0028843750042142347,
+          "request_bytes": 400392,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02388108299783198,
+          "request_bytes": 400394,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0027624590002233163,
+          "request_bytes": 406779,
+          "memory_bytes": 2,
+          "response_bytes": 103
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02662741699896287,
+          "request_bytes": 407536,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003044707998924423,
+          "request_bytes": 414768,
+          "memory_bytes": 2,
+          "response_bytes": 182
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.026315707997127902,
+          "request_bytes": 416326,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.002982625002914574,
+          "request_bytes": 428086,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.027309208999213297,
+          "request_bytes": 428088,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003045958001166582,
+          "request_bytes": 430952,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.036208375000569504,
+          "request_bytes": 430954,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.006895791993883904,
+          "request_bytes": 432788,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.056356624998443294,
+          "request_bytes": 432790,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.004249457997502759,
+          "request_bytes": 434751,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02828162500372855,
+          "request_bytes": 434753,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0033761659942683764,
+          "request_bytes": 435235,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03381829099816969,
+          "request_bytes": 435237,
+          "memory_bytes": 2,
+          "response_bytes": 599
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0030938339987187646,
+          "request_bytes": 438301,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.028065917002095375,
+          "request_bytes": 438303,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003065333999984432,
+          "request_bytes": 439427,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03154287499637576,
+          "request_bytes": 439429,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.004054999997606501,
+          "request_bytes": 441430,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03071733300021151,
+          "request_bytes": 441432,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0031063330025062896,
+          "request_bytes": 442929,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.029346707997319754,
+          "request_bytes": 442931,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0035669999997480772,
+          "request_bytes": 444308,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.030450833000941202,
+          "request_bytes": 444310,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003378875000635162,
+          "request_bytes": 444805,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.028475958002672996,
+          "request_bytes": 444807,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0032761670008767396,
+          "request_bytes": 447071,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.028797375001886394,
+          "request_bytes": 447073,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003382582995982375,
+          "request_bytes": 448099,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.033264334000705276,
+          "request_bytes": 448101,
+          "memory_bytes": 2,
+          "response_bytes": 517
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003359707996423822,
+          "request_bytes": 451315,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.029093042001477443,
+          "request_bytes": 451317,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003067124998779036,
+          "request_bytes": 452370,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03266570899722865,
+          "request_bytes": 452372,
+          "memory_bytes": 2,
+          "response_bytes": 435
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.009659874995122664,
+          "request_bytes": 454120,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03758279099565698,
+          "request_bytes": 454122,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003975749998062383,
+          "request_bytes": 455115,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03020141599699855,
+          "request_bytes": 455117,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003239124998799525,
+          "request_bytes": 456104,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.02937970899802167,
+          "request_bytes": 456106,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003233750001527369,
+          "request_bytes": 457659,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.031155416996625718,
+          "request_bytes": 457661,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003162875000271015,
+          "request_bytes": 459984,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.030275749995780643,
+          "request_bytes": 459986,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0033394999991287477,
+          "request_bytes": 460636,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03489225000521401,
+          "request_bytes": 460638,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.004810333994100802,
+          "request_bytes": 462434,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03287066699704155,
+          "request_bytes": 462436,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0032299169979523867,
+          "request_bytes": 463612,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03673591700498946,
+          "request_bytes": 463614,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003938959001970943,
+          "request_bytes": 465319,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.035631333994388115,
+          "request_bytes": 465321,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003428874995734077,
+          "request_bytes": 466093,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03825070799939567,
+          "request_bytes": 466095,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003801124999881722,
+          "request_bytes": 467876,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.035571708001953084,
+          "request_bytes": 467878,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0032820000051287934,
+          "request_bytes": 467874,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0339676670046174,
+          "request_bytes": 467876,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0032893749958020635,
+          "request_bytes": 469509,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03403133300162153,
+          "request_bytes": 469511,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003916207999282051,
+          "request_bytes": 469659,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0362944169974071,
+          "request_bytes": 469661,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.00341024999943329,
+          "request_bytes": 470654,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03414550000161398,
+          "request_bytes": 470656,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0033440420011174865,
+          "request_bytes": 471101,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03636804200505139,
+          "request_bytes": 471103,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003583874997275416,
+          "request_bytes": 471822,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0357657080021454,
+          "request_bytes": 471824,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0036583750043064356,
+          "request_bytes": 472492,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.034956624993355945,
+          "request_bytes": 472494,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0034910829999716952,
+          "request_bytes": 473089,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.037171792006120086,
+          "request_bytes": 473091,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0034313329961150885,
+          "request_bytes": 473087,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03752987500047311,
+          "request_bytes": 473089,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003863582998747006,
+          "request_bytes": 473988,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03533929100376554,
+          "request_bytes": 473990,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003586709004594013,
+          "request_bytes": 474140,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03591620799852535,
+          "request_bytes": 474142,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0035178749967599288,
+          "request_bytes": 475042,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03489270799764199,
+          "request_bytes": 475044,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0032992499982356094,
+          "request_bytes": 475718,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03637249999883352,
+          "request_bytes": 475720,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.003558500000508502,
+          "request_bytes": 475717,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.03482191700459225,
+          "request_bytes": 475719,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        }
+      ],
+      "semantic_action_sha256": "e046dd6742da7fa8227229089a91b5c2ff383d6306a346a3f6e4e52c46de8cb5",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "research3.policy",
+        "--candidate",
+        "clean"
+      ]
+    },
+    {
+      "assignments": 109,
+      "mutual_acceptances": 16,
+      "dates": 15,
+      "mutual_second_meeting_intention": 1,
+      "missing_feedback": 56,
+      "ask_cost": 198,
+      "arrived_members": 200,
+      "msmi_per_100_arrived_members": 0.5,
+      "status": "simulated_not_observed_product_performance",
+      "valid": true,
+      "served_members": 92,
+      "unserved_members": 108,
+      "coverage": 0.46,
+      "mutual_acceptances_per_100": 8.0,
+      "first_introduction_wait_days": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        13,
+        14,
+        14,
+        15,
+        16,
+        16,
+        16,
+        16,
+        16,
+        19,
+        22,
+        24,
+        32,
+        32,
+        40
+      ],
+      "inference_seconds": 9.286235037041479,
+      "action_sha256": "4898ee5eeffd134c73b7ea85a6b329698fc25e4747a473cc61b7d4136951db94",
+      "optimized_fallback_count": null,
+      "captured_fallback_warning_count": 0,
+      "execution": "subprocess",
+      "seed": 101,
+      "variant": "development",
+      "candidate": "clean",
+      "calls": [
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.052670040997327305,
+          "request_bytes": 228864,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07574779100104934,
+          "request_bytes": 231991,
+          "memory_bytes": 2,
+          "response_bytes": 681
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04452816699631512,
+          "request_bytes": 237950,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07354120800300734,
+          "request_bytes": 241057,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04470387499895878,
+          "request_bytes": 243870,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07467724999878556,
+          "request_bytes": 247030,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04990504200395662,
+          "request_bytes": 252273,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07623104200320086,
+          "request_bytes": 255293,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04727633400034392,
+          "request_bytes": 266693,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07602012500137789,
+          "request_bytes": 269911,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.050793499998690095,
+          "request_bytes": 278838,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07465816700278083,
+          "request_bytes": 281934,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04986020799697144,
+          "request_bytes": 290313,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.08340741599386092,
+          "request_bytes": 293293,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.09276945800229441,
+          "request_bytes": 301649,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.09380808399873786,
+          "request_bytes": 304764,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.060471791999589186,
+          "request_bytes": 309806,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.08003158299834467,
+          "request_bytes": 312964,
+          "memory_bytes": 2,
+          "response_bytes": 599
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06197033299395116,
+          "request_bytes": 326735,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.08245220800017705,
+          "request_bytes": 329799,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0632623749988852,
+          "request_bytes": 336369,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.09079966700664954,
+          "request_bytes": 339677,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06565520799631486,
+          "request_bytes": 347165,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.08726912499696482,
+          "request_bytes": 350185,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.052113874997303355,
+          "request_bytes": 358865,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07781024999712827,
+          "request_bytes": 362025,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06001758300408255,
+          "request_bytes": 363235,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07448587500402937,
+          "request_bytes": 366288,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.045527250003942754,
+          "request_bytes": 370726,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07395687499956694,
+          "request_bytes": 373865,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04419699999561999,
+          "request_bytes": 377149,
+          "memory_bytes": 2,
+          "response_bytes": 103
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07359437500417698,
+          "request_bytes": 377970,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.048226625003735535,
+          "request_bytes": 387142,
+          "memory_bytes": 2,
+          "response_bytes": 182
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07550625000294531,
+          "request_bytes": 388740,
+          "memory_bytes": 2,
+          "response_bytes": 845
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04695508300210349,
+          "request_bytes": 400392,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07538929200381972,
+          "request_bytes": 400394,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04891920799855143,
+          "request_bytes": 406779,
+          "memory_bytes": 2,
+          "response_bytes": 103
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07668483299494255,
+          "request_bytes": 407536,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04501000000163913,
+          "request_bytes": 414768,
+          "memory_bytes": 2,
+          "response_bytes": 182
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07123529200180201,
+          "request_bytes": 416326,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.045799667001119815,
+          "request_bytes": 428086,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07559029199910583,
+          "request_bytes": 428088,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04515416700451169,
+          "request_bytes": 430952,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07412941600341583,
+          "request_bytes": 430954,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.047614290997444186,
+          "request_bytes": 432788,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07518520799931139,
+          "request_bytes": 432790,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.045016750002105255,
+          "request_bytes": 434751,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07060400000045775,
+          "request_bytes": 434753,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04673650000040652,
+          "request_bytes": 435235,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0733557080020546,
+          "request_bytes": 435237,
+          "memory_bytes": 2,
+          "response_bytes": 599
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04487758300092537,
+          "request_bytes": 438301,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07433504100481514,
+          "request_bytes": 438303,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.043789540999569,
+          "request_bytes": 439427,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07555333400523523,
+          "request_bytes": 439429,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04447012500168057,
+          "request_bytes": 441430,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07461966700066114,
+          "request_bytes": 441432,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04520524999679765,
+          "request_bytes": 442929,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07490824999695178,
+          "request_bytes": 442931,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04629262500384357,
+          "request_bytes": 444308,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07414704200346023,
+          "request_bytes": 444310,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04407616699609207,
+          "request_bytes": 444805,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07378137500199955,
+          "request_bytes": 444807,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04458354200323811,
+          "request_bytes": 447071,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07526504099951126,
+          "request_bytes": 447073,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04505391600105213,
+          "request_bytes": 448099,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07363574999908451,
+          "request_bytes": 448101,
+          "memory_bytes": 2,
+          "response_bytes": 517
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.05563287499535363,
+          "request_bytes": 451315,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07697224999719765,
+          "request_bytes": 451317,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04737791599472985,
+          "request_bytes": 452370,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07627583300200058,
+          "request_bytes": 452372,
+          "memory_bytes": 2,
+          "response_bytes": 435
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04661850000411505,
+          "request_bytes": 454120,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07437304199993378,
+          "request_bytes": 454122,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.056321541997021995,
+          "request_bytes": 455115,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0765862910047872,
+          "request_bytes": 455117,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.048685041001590434,
+          "request_bytes": 456104,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0751455000063288,
+          "request_bytes": 456106,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04774866599473171,
+          "request_bytes": 457659,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07190545900084544,
+          "request_bytes": 457661,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.05979808299889555,
+          "request_bytes": 459984,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.08936154099501437,
+          "request_bytes": 459986,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07203345900052227,
+          "request_bytes": 460636,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.12237912500131642,
+          "request_bytes": 460638,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.061738083997624926,
+          "request_bytes": 462434,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11748787500255276,
+          "request_bytes": 462436,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06678466699668206,
+          "request_bytes": 463612,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11926637499709614,
+          "request_bytes": 463614,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06824100000085309,
+          "request_bytes": 465319,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11874220800382318,
+          "request_bytes": 465321,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06366008300392423,
+          "request_bytes": 466093,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.19446500000049127,
+          "request_bytes": 466095,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.184948499998427,
+          "request_bytes": 467876,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.17942741699516773,
+          "request_bytes": 467878,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06647737500315998,
+          "request_bytes": 467874,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.18383333399833646,
+          "request_bytes": 467876,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3238943750038743,
+          "request_bytes": 469509,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.20769075000134762,
+          "request_bytes": 469511,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.05021737499919254,
+          "request_bytes": 469659,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11262775000068359,
+          "request_bytes": 469661,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06906699999672128,
+          "request_bytes": 470654,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.12631600000167964,
+          "request_bytes": 470656,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.05850383399956627,
+          "request_bytes": 471101,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.1234625419965596,
+          "request_bytes": 471103,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06442620800225995,
+          "request_bytes": 471822,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.1504959170051734,
+          "request_bytes": 471824,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07606579199637054,
+          "request_bytes": 472492,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.12821591700048884,
+          "request_bytes": 472494,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04676983300305437,
+          "request_bytes": 473089,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11145537500124192,
+          "request_bytes": 473091,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.06151791600132128,
+          "request_bytes": 473087,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.1096618750016205,
+          "request_bytes": 473089,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04802208299952326,
+          "request_bytes": 473988,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.1108134579990292,
+          "request_bytes": 473990,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0459376250000787,
+          "request_bytes": 474140,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.10550166600296507,
+          "request_bytes": 474142,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.046653833996970206,
+          "request_bytes": 475042,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11107683300360804,
+          "request_bytes": 475044,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.0457877919980092,
+          "request_bytes": 475718,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.07499883300624788,
+          "request_bytes": 475720,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.04496179200214101,
+          "request_bytes": 475717,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.11388570800045272,
+          "request_bytes": 475719,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        }
+      ],
+      "semantic_action_sha256": "e046dd6742da7fa8227229089a91b5c2ff383d6306a346a3f6e4e52c46de8cb5",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "research3.policy",
+        "--candidate",
+        "clean"
+      ]
+    },
+    {
+      "assignments": 109,
+      "mutual_acceptances": 16,
+      "dates": 15,
+      "mutual_second_meeting_intention": 1,
+      "missing_feedback": 56,
+      "ask_cost": 198,
+      "arrived_members": 200,
+      "msmi_per_100_arrived_members": 0.5,
+      "status": "simulated_not_observed_product_performance",
+      "valid": true,
+      "served_members": 92,
+      "unserved_members": 108,
+      "coverage": 0.46,
+      "mutual_acceptances_per_100": 8.0,
+      "first_introduction_wait_days": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        13,
+        14,
+        14,
+        15,
+        16,
+        16,
+        16,
+        16,
+        16,
+        19,
+        22,
+        24,
+        32,
+        32,
+        40
+      ],
+      "inference_seconds": 41.51896845398733,
+      "action_sha256": "4898ee5eeffd134c73b7ea85a6b329698fc25e4747a473cc61b7d4136951db94",
+      "optimized_fallback_count": null,
+      "captured_fallback_warning_count": 0,
+      "execution": "container",
+      "seed": 101,
+      "variant": "development",
+      "candidate": "clean",
+      "calls": [
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.5287120829962078,
+          "request_bytes": 228864,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3541746670016437,
+          "request_bytes": 231991,
+          "memory_bytes": 2,
+          "response_bytes": 681
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2780994999993709,
+          "request_bytes": 237950,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.27936141599639086,
+          "request_bytes": 241057,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28493574999447446,
+          "request_bytes": 243870,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.27068395799869904,
+          "request_bytes": 247030,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2780166669981554,
+          "request_bytes": 252273,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2676184580050176,
+          "request_bytes": 255293,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2170960829971591,
+          "request_bytes": 266693,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2772277500043856,
+          "request_bytes": 269911,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2689396249988931,
+          "request_bytes": 278838,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2773352500007604,
+          "request_bytes": 281934,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.26626008399762213,
+          "request_bytes": 290313,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2736369999984163,
+          "request_bytes": 293293,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28834987500158604,
+          "request_bytes": 301649,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2761679160030326,
+          "request_bytes": 304764,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.273707625005045,
+          "request_bytes": 309806,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.27561304200207815,
+          "request_bytes": 312964,
+          "memory_bytes": 2,
+          "response_bytes": 599
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2855235419992823,
+          "request_bytes": 326735,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28643866699712817,
+          "request_bytes": 329799,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.27231270800257334,
+          "request_bytes": 336369,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.275684291998914,
+          "request_bytes": 339677,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2732802919999813,
+          "request_bytes": 347165,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2663951250069658,
+          "request_bytes": 350185,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.22411291600292316,
+          "request_bytes": 358865,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2735524579984485,
+          "request_bytes": 362025,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.23145987499447074,
+          "request_bytes": 363235,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2730457919969922,
+          "request_bytes": 366288,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.27329174999613315,
+          "request_bytes": 370726,
+          "memory_bytes": 2,
+          "response_bytes": 340
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2799897500008228,
+          "request_bytes": 373865,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.33490770799835445,
+          "request_bytes": 377149,
+          "memory_bytes": 2,
+          "response_bytes": 103
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2730637089989614,
+          "request_bytes": 377970,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3421001669994439,
+          "request_bytes": 387142,
+          "memory_bytes": 2,
+          "response_bytes": 182
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3399723330003326,
+          "request_bytes": 388740,
+          "memory_bytes": 2,
+          "response_bytes": 845
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28338029100268614,
+          "request_bytes": 400392,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.47654825000063283,
+          "request_bytes": 400394,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3653571250033565,
+          "request_bytes": 406779,
+          "memory_bytes": 2,
+          "response_bytes": 103
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.34347766599967144,
+          "request_bytes": 407536,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.29742020800040336,
+          "request_bytes": 414768,
+          "memory_bytes": 2,
+          "response_bytes": 182
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.343809208003222,
+          "request_bytes": 416326,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2855001670031925,
+          "request_bytes": 428086,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3422895000039716,
+          "request_bytes": 428088,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.289931291998073,
+          "request_bytes": 430952,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3415345410030568,
+          "request_bytes": 430954,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.29191849999915576,
+          "request_bytes": 432788,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.33030095800495474,
+          "request_bytes": 432790,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28785008400154766,
+          "request_bytes": 434751,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.35733745800098404,
+          "request_bytes": 434753,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2892364169965731,
+          "request_bytes": 435235,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.33082800000556745,
+          "request_bytes": 435237,
+          "memory_bytes": 2,
+          "response_bytes": 599
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2858733749962994,
+          "request_bytes": 438301,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3426811669996823,
+          "request_bytes": 438303,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.29353587499645073,
+          "request_bytes": 439427,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.29178612499526935,
+          "request_bytes": 439429,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.29494787499425,
+          "request_bytes": 441430,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2889663330061012,
+          "request_bytes": 441432,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2806434169979184,
+          "request_bytes": 442929,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3451324999987264,
+          "request_bytes": 442931,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2855771670001559,
+          "request_bytes": 444308,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3278092079999624,
+          "request_bytes": 444310,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.31945654199807905,
+          "request_bytes": 444805,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.47760487499908777,
+          "request_bytes": 444807,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3283806249964982,
+          "request_bytes": 447071,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.332517499999085,
+          "request_bytes": 447073,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3429402910041972,
+          "request_bytes": 448099,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4572652080023545,
+          "request_bytes": 448101,
+          "memory_bytes": 2,
+          "response_bytes": 517
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2915835829990101,
+          "request_bytes": 451315,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.34786191699822666,
+          "request_bytes": 451317,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3417207089951262,
+          "request_bytes": 452370,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28792779200011864,
+          "request_bytes": 452372,
+          "memory_bytes": 2,
+          "response_bytes": 435
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2837207499978831,
+          "request_bytes": 454120,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.39536041599785676,
+          "request_bytes": 454122,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.35272633300337475,
+          "request_bytes": 455115,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.34834658299951116,
+          "request_bytes": 455117,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3448425410024356,
+          "request_bytes": 456104,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.41246350000437815,
+          "request_bytes": 456106,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.48417174999485724,
+          "request_bytes": 457659,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4660583340009907,
+          "request_bytes": 457661,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4191179579938762,
+          "request_bytes": 459984,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.41919604199938476,
+          "request_bytes": 459986,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.41904491600143956,
+          "request_bytes": 460636,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4678996669972548,
+          "request_bytes": 460638,
+          "memory_bytes": 2,
+          "response_bytes": 353
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.37060804099746747,
+          "request_bytes": 462434,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.41484099999797763,
+          "request_bytes": 462436,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.36893625000084285,
+          "request_bytes": 463612,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4254806659955648,
+          "request_bytes": 463614,
+          "memory_bytes": 2,
+          "response_bytes": 271
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4269345000066096,
+          "request_bytes": 465319,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.42408595899905777,
+          "request_bytes": 465321,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3784522499990999,
+          "request_bytes": 466093,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.5873567919989,
+          "request_bytes": 466095,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.48286629100039136,
+          "request_bytes": 467876,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.7390089580003405,
+          "request_bytes": 467878,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.41936920800071675,
+          "request_bytes": 467874,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.477848417001951,
+          "request_bytes": 467876,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4229914169991389,
+          "request_bytes": 469509,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.5729661250006757,
+          "request_bytes": 469511,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.37072962499951245,
+          "request_bytes": 469659,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3381483749981271,
+          "request_bytes": 469661,
+          "memory_bytes": 2,
+          "response_bytes": 189
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.35864179200143553,
+          "request_bytes": 470654,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2915522500043153,
+          "request_bytes": 470656,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.29263741599424975,
+          "request_bytes": 471101,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.33609662499657134,
+          "request_bytes": 471103,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.28292845800024224,
+          "request_bytes": 471822,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3360042920030537,
+          "request_bytes": 471824,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.30297937499562977,
+          "request_bytes": 472492,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3365415829975973,
+          "request_bytes": 472494,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.34470091700495686,
+          "request_bytes": 473089,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3979262079956243,
+          "request_bytes": 473091,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.40300950000528246,
+          "request_bytes": 473087,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4079554170020856,
+          "request_bytes": 473089,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4583821250053006,
+          "request_bytes": 473988,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4066260829931707,
+          "request_bytes": 473990,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4579787090042373,
+          "request_bytes": 474140,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4102889999994659,
+          "request_bytes": 474142,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3540169589978177,
+          "request_bytes": 475042,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.4092197499994654,
+          "request_bytes": 475044,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.35869704100332456,
+          "request_bytes": 475718,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3553393749971292,
+          "request_bytes": 475720,
+          "memory_bytes": 2,
+          "response_bytes": 27
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.2792659580009058,
+          "request_bytes": 475717,
+          "memory_bytes": 2,
+          "response_bytes": 26
+        },
+        {
+          "stderr": "",
+          "fallback_warning_count": 0,
+          "seconds": 0.3426073750015348,
+          "request_bytes": 475719,
+          "memory_bytes": 2,
+          "response_bytes": 107
+        }
+      ],
+      "semantic_action_sha256": "e046dd6742da7fa8227229089a91b5c2ff383d6306a346a3f6e4e52c46de8cb5",
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "-i",
+        "--name",
+        "sequential-df2a7b2736984ca7bea67f068681d36a",
+        "--network=none",
+        "--cpus=2",
+        "--memory=1g",
+        "--memory-swap=1g",
+        "--pids-limit=64",
+        "--read-only",
+        "--cap-drop=ALL",
+        "--security-opt=no-new-privileges",
+        "--user=65534:65534",
+        "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+        "sequential-round3:research",
+        "--candidate",
+        "clean"
+      ]
+    }
+  ],
+  "equivalence": {
+    "assignments": true,
+    "mutual_acceptances": true,
+    "dates": true,
+    "mutual_second_meeting_intention": true,
+    "coverage": true,
+    "ask_cost": true,
+    "action_sha256": true,
+    "semantic_action_sha256": true
+  },
+  "valid": true,
+  "wall_seconds": 55.497761874998105,
+  "source_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research3/Dockerfile": "3537a831679d644a1591da6aba58cb5e910d7defdf0f35d9eb72f45656437d69",
+    "research3/production.py": "d0a4095c45d75854b49aa44240f9e87409ad54bf53167f5bcb8ecd2c04084c21"
+  },
+  "python": "3.14.7",
+  "command": [
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research3/production.py",
+    "--candidate",
+    "clean",
+    "--skip-build",
+    "--output",
+    "results/research3/production_selected.json"
+  ]
+}

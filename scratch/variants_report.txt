@@ -1,0 +1,171 @@
+================================================================================
+DATASET VARIANTS ANALYSIS REPORT
+Reciprocal Matching Evaluation Harness & Simulator (kit.py & evaluate.py)
+================================================================================
+
+1. EXECUTIVE SUMMARY & OVERVIEW
+--------------------------------------------------------------------------------
+The sequential reciprocal matching benchmark defines 6 distinct environment variants:
+  1) 'development' : Baseline canonical environment with standard distributions.
+  2) 'sparse'      : Severe geographic fragmentation (12 uniform zones, 0 cross-zone).
+  3) 'cold_start'  : Low initial profile completeness (20% vs 35% complete, 70% missing).
+  4) 'delayed'     : Elongated real-world feedback delays (date_day +5 to +12 days).
+  5) 'shift'       : Preference weight regime shift (pace dominant, lifestyle sign flip).
+  6) 'drift'       : Temporal non-stationarity / platform fatigue (-0.5 logit drift at day >= 35).
+
+Across 60 decision days (+40 follow-up days) with 200 members:
+- 'sparse' is by far the most challenging variant, reducing available feasible pairs by ~83%, slicing introductions from ~100 down to ~18, and crashing coverage to 14.5%.
+- 'cold_start' creates a severe information bottleneck, exhausting ask budgets (cost 244-246 vs 198-200) and reducing match volume by ~35%.
+- 'delayed' breaches the 30-day MSMI qualification deadline and locks members in "busy" state for up to 39 days.
+- 'shift' inverts soft feature importance (lifestyle flips from +0.25 to -0.25, pace doubles to 0.8), severely punishing naive unweighted policies.
+- 'drift' cuts post-day-35 mutual acceptance probabilities by 20% to 57%.
+
+
+2. EXACT MATHEMATICAL SPECIFICATION & PARAMETERS (kit.py)
+--------------------------------------------------------------------------------
+The synthetic generator `generate()` and simulator methods `_prob()` and `advance()`
+differentiate variants via the following exact rules:
+
+A. Geographic & Zone Parameters:
+   - 'development', 'cold_start', 'delayed', 'shift', 'drift':
+     * Zones sampled from 4 skewed zones:
+       P(zone_a)=0.60, P(zone_b)=0.23, P(zone_c)=0.12, P(zone_d)=0.05
+     * Cross-zone acceptance:
+       With probability 0.30, truth['acceptable_zones'] includes a 2nd zone:
+       dict.fromkeys([zone, r.choice(['zone_a','zone_b','zone_c','zone_d'])])
+   - 'sparse':
+     * Zones sampled uniformly from 12 zones:
+       zone = r.choice(['zone_' + str(i) for i in range(12)])  (P = 1/12 = 8.33% each)
+     * Cross-zone acceptance:
+       STRICTLY EXCLUDED: truth['acceptable_zones'] = [zone] (100% single-zone only)
+
+B. Profile Completeness & Missingness Parameters:
+   - 'development', 'sparse', 'delayed', 'shift', 'drift':
+     * P(complete profile upfront) = 0.35
+     * If incomplete, each field observed independently with P = 0.10
+     * Unobserved field status: 'declined' with P = 0.07, else 'not_asked' (0.93)
+     * Initial missing hard constraints: ~58.7%
+   - 'cold_start':
+     * P(complete profile upfront) = 0.20  (43% reduction in complete profiles!)
+     * Initial missing hard constraints: ~70.3%
+     * Initial feasible pairs in raw pool: 16.6 (vs 33.4 in development, -50.3%)
+
+C. Feedback Delay & Timing Parameters:
+   - Introduction response: delay ~ Uniform{1..7} days. Deadline: day + 7.
+   - If both accept:
+     * Base date scheduling delay: max(response_days) + Uniform{1..14} days.
+     * 'delayed' variant penalty:
+       date_day += Uniform{5..12} days.
+     * Consequence on MSMI qualification:
+       MSMI requires: date_occurred_day - intro_assigned_day <= 30.
+       In development: max delay is 7 + 14 = 21 days (100% within window).
+       In delayed: max delay is 7 + 14 + 12 = 33 days. Dates occurring >30 days
+       fail MSMI condition regardless of mutual interest!
+     * Member lockout (busy state):
+       Members locked until date_day + 6. In 'delayed', busy lock can last 39 days,
+       severely diminishing pool liquidity.
+
+D. Acceptance Probability & Soft Feature Weights (`_prob`):
+   z = -0.25 + actor['bias'] + fit + shared + drift
+   P(actor accept) = 1 / (1 + exp(-z))
+   where fit = sum(w_k * (1.0 if f[k] == g[k] else -0.5) for k, w_k in weights.items())
+
+   Weights:
+   | Feature            | Standard / Dev / Sparse / Cold / Delayed | 'shift' Variant | Delta / Impact |
+   |--------------------|------------------------------------------|-----------------|----------------|
+   | relationship_goal  | +0.70                                    | +0.25           | -64.3%         |
+   | relationship_pace  | +0.40                                    | +0.80           | +100.0% (2.0x) |
+   | lifestyle          | +0.25                                    | -0.25           | Sign Inverted! |
+   | conversations      | +0.20                                    | +0.50           | +150.0% (2.5x) |
+   | emotional_avail.   | 0.00 (unweighted in first meeting)       | 0.00            | Unweighted     |
+   | space_for_rel.     | 0.00 (unweighted in first meeting)       | 0.00            | Unweighted     |
+   | relocate           | 0.00 (unweighted in first meeting)       | 0.00            | Unweighted     |
+
+E. Temporal Drift Parameters:
+   - 'drift':
+     * For day < 35: drift = 0.0
+     * For day >= 35: drift = -0.5
+   - Theoretical impact on probabilities:
+     * At z = 0.0 : P(accept) drops 50.0% -> 37.8%; P(mutual) drops 25.0% -> 14.3% (-43.0%)
+     * At z = 0.5 : P(accept) drops 62.2% -> 50.0%; P(mutual) drops 38.7% -> 25.0% (-35.5%)
+     * At z = -0.5: P(accept) drops 37.8% -> 26.9%; P(mutual) drops 14.3% -> 7.2%  (-49.3%)
+
+
+3. EMPIRICAL POOL CHARACTERISTICS (5-Seed Averages)
+--------------------------------------------------------------------------------
+Metric                      | development | sparse  | cold_start | delayed | shift  | drift
+----------------------------|-------------|---------|------------|---------|--------|-------
+Complete Profiles (%)       | 35.1%       | 35.5%   | 22.2%      | 35.1%   | 35.1%  | 35.1%
+Missing Hard Constraints (%)| 58.7%       | 58.1%   | 70.3%      | 58.7%   | 58.7%  | 58.7%
+Missing Soft Fields (%)     | 58.3%       | 58.4%   | 70.1%      | 58.3%   | 58.3%  | 58.3%
+Initial Feasible Pairs      | 33.4        | 5.4     | 16.6       | 33.4    | 33.4   | 33.4
+Ground-Truth Feasible Pairs | 265.0       | 45.6    | 272.8      | 265.0   | 265.0  | 265.0
+
+
+4. BASELINE BENCHMARK PERFORMANCE
+--------------------------------------------------------------------------------
+A. Official Evaluation Harness Result (Seed 101):
+Variant     | MSMI / 100 Arrived | Coverage | Mutual Accept / 100 | Ask Cost | Inference (s)
+------------|--------------------|----------|---------------------|----------|--------------
+development | 0.50               | 46.0%    | 9.00                | 198      | 7.88s
+sparse      | 0.00               | 17.5%    | 2.00                | 192      | 9.48s
+cold_start  | 0.50               | 43.5%    | 7.50                | 246      | 9.33s
+delayed     | 1.00               | 45.5%    | 9.50                | 198      | 8.09s
+shift       | 0.50               | 46.0%    | 9.50                | 198      | 8.44s
+drift       | 0.50               | 46.0%    | 8.00                | 198      | 7.95s
+Overall     | 0.50               | 40.8%    | 7.58                | 205      | 8.53s
+
+B. Multi-Seed Stability (Averaged over Seeds 101, 102, 103):
+Variant     | Mean MSMI | MSMI Rate | Mutual Accept % | Dates | Assignments | Coverage | Ask Cost
+------------|-----------|-----------|-----------------|-------|-------------|----------|---------
+development | 1.00      | 0.50%     | 6.50%           | 10.0  | 99.7        | 43.2%    | 200
+sparse      | 0.33      | 0.17%     | 2.33%           | 4.0   | 17.7        | 14.5%    | 196
+cold_start  | 0.33      | 0.17%     | 4.67%           | 7.7   | 65.0        | 36.0%    | 244
+delayed     | 1.00      | 0.50%     | 6.83%           | 10.7  | 96.3        | 43.0%    | 200
+shift       | 1.00      | 0.50%     | 6.50%           | 10.0  | 99.7        | 43.2%    | 200
+drift       | 1.00      | 0.50%     | 6.17%           | 9.3   | 100.7       | 43.2%    | 200
+
+
+5. WHY EACH VARIANT IS HARD & POLICY RECOMMENDATIONS
+--------------------------------------------------------------------------------
+1) 'sparse':
+   - Cause: 12 zones with 0 cross-zone willingness shrinks the graph density by 83%.
+   - Hardship: Greedy baseline runs out of viable matches immediately; member coverage
+     tanks to 14.5% (most members never receive an introduction).
+   - Solution: Maximize intra-zone matching immediately; batch queries by zone; prioritize
+     asking constraints for members residing in populated zones to create matchable pairs.
+
+2) 'cold_start':
+   - Cause: 70%+ hard constraint missingness creates an initial graph where 94% of potential
+     edges are blocked by unknown constraints.
+   - Hardship: With an ask budget of 12 units/day (each constraints bundle costs 3 = max 4
+     members/day), greedy takes weeks to unlock the pool, leaving members idle and unserved.
+   - Solution: Active learning / targeted constraint acquisition. Ask constraints for members
+     who have the highest centrality or likelihood of pairing with already-feasible members.
+
+3) 'delayed':
+   - Cause: Date scheduling takes 6-26 days (mean 21.8 days). Max observed delay is 33 days.
+   - Hardship: Dates occurring >30 days after intro are disqualified from MSMI. Also, members
+     are locked in 'busy' state for `date_day + 6` days (up to 39 days).
+   - Solution: Front-load introductions early in the 60-day horizon so dates occur well before
+     the final follow-up window; keep track of busy schedules and plan allocations around delays.
+
+4) 'shift':
+   - Cause: Unobserved change in true utility weights.
+     - `relationship_pace`: 0.8 (most important)
+     - `conversations`: 0.5 (second most important)
+     - `relationship_goal`: 0.25 (reduced from 0.70)
+     - `lifestyle`: -0.25 (opposites attract; matching lifestyle penalizes acceptance!)
+   - Hardship: Greedy weights all matches uniformly (+1) and actively pairs people with
+     identical lifestyles, degrading match quality and acceptance probability.
+   - Solution: Learn or detect preference weights from observed binary feedback (`introduction_response`),
+     or calibrate soft matching scores using logistic regression / bandit feedback.
+
+5) 'drift':
+   - Cause: Systematic -0.5 logit drop in user responsiveness/acceptance starting at day 35.
+   - Hardship: First-meeting mutual acceptance falls by up to 50% in the second half of the
+     horizon. A policy saving candidates for later will suffer severe attrition.
+   - Solution: Aggressively match viable candidates during days 0-34 when acceptance rates
+     are highest. In the drift phase (days 35-59), only match high-confidence pairs with strong
+     soft-feature alignment to overcome the -0.5 penalty.
+================================================================================

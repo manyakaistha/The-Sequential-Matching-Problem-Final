@@ -1,0 +1,5 @@
+# Research tools only; the original baseline still uses the standard library.
+networkx==3.7
+numpy>=2.0,<3
+scipy>=1.14,<2
+matplotlib>=3.9,<4

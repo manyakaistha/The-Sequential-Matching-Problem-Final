@@ -1,0 +1,187 @@
+{
+  "owner": "critic/statistician/independent replicator",
+  "records": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "research3/seed_inventory.py"
+      ],
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed from tool execution; historical timestamp not captured",
+      "wall_seconds_observed_lower_bound": 10.0,
+      "cpu_seconds": null,
+      "purpose": "Inherited seed inventory and independent prior confirmation/source-hash checks; no simulation"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "research3.independent_replicator",
+        "--policies",
+        "greedy,clean",
+        "--seeds",
+        "101",
+        "--variants",
+        "development",
+        "--reference",
+        "results/research3/smoke.json"
+      ],
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed; exact command from executed tool call",
+      "purpose": "Independent old-seed direct replay",
+      "parent_cpu_seconds": 4.824831,
+      "wall_seconds_episodes_sum": 4.854927625000073,
+      "child_cpu_seconds": null,
+      "cpu_caveat": "time.process_time excludes subprocess child CPU; parent CPU is not total compute"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "research3.independent_replicator",
+        "--policies",
+        "greedy,clean",
+        "--seeds",
+        "101",
+        "--variants",
+        "development",
+        "--mode",
+        "subprocess",
+        "--reference",
+        "results/research3/smoke.json"
+      ],
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed; exact command from executed tool call",
+      "purpose": "Independent old-seed subprocess replay including stderr fallback counts",
+      "parent_cpu_seconds": 1.7840790000000002,
+      "wall_seconds_episodes_sum": 14.906787376000466,
+      "child_cpu_seconds": null,
+      "cpu_caveat": "time.process_time excludes subprocess child CPU; parent CPU is not total compute"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "research3.independent_replicator",
+        "--policies",
+        "offline",
+        "--seeds",
+        "71001,71002",
+        "--variants",
+        "all",
+        "--reference",
+        "results/research3/focus.json"
+      ],
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed exact tool command; historical timestamp not captured",
+      "purpose": "Independent serious candidate registered C replay12episodes after reference rows existed",
+      "parent_cpu_seconds": 29.746188000000004,
+      "wall_seconds_episodes_sum": 29.922473833998993,
+      "child_cpu_seconds": 0,
+      "child_cpu_note": "direct mode no children"
+    },
+    {
+      "command": null,
+      "record_type": "independent completed B cluster reconstruction",
+      "python_call": "research3.independent_replicator.cluster_audit(\"results/research3/screen.json\")",
+      "timestamp_utc": null,
+      "timestamp_status": "reconstructed inline Python call in tool transcript",
+      "purpose": "All13 seed mean/effect/t intervals independently match director; no episodes",
+      "cpu_seconds": null
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "research3.independent_replicator",
+        "--policies",
+        "greedy,clean",
+        "--seeds",
+        "73001,73002",
+        "--variants",
+        "all",
+        "--reference",
+        "results/research3/confirmation.json",
+        "--output",
+        "results/research3/replication_confirmation.json"
+      ],
+      "timestamp_utc": "2026-10-10T02:57:31.048030+00:00",
+      "purpose": "Frozen selected and comparator independent24episode direct replay; no new seeds",
+      "wall_seconds": 71.40052216700133,
+      "child_cpu_seconds": 68.751558,
+      "returncode": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "research3.final_statistics_review"
+      ],
+      "timestamp_utc": "2026-10-10T03:00:16.593703+00:00",
+      "purpose": "Independent B/C/D/E plannedgrid cluster statistics and frozen confirmation bootstrap/leaveoneout audit",
+      "wall_seconds": 1.0001109169970732,
+      "child_cpu_seconds": 0.7902659999999999,
+      "returncode": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "research3.independent_replicator",
+        "--policies",
+        "greedy,clean",
+        "--seeds",
+        "73001,73002",
+        "--variants",
+        "all",
+        "--mode",
+        "subprocess",
+        "--reference",
+        "results/research3/confirmation.json",
+        "--output",
+        "results/research3/replication_confirmation.json"
+      ],
+      "timestamp_utc": "2026-10-10T02:58:51.387250+00:00",
+      "purpose": "Frozen selected and comparator independent24episode subprocess replay incl stderr fallback; no new seeds",
+      "wall_seconds": 197.5259630829969,
+      "child_cpu_seconds": 192.33700000000002,
+      "returncode": 0
+    }
+  ],
+  "read_only_review_scope": [
+    "REPORT.md",
+    "research/EXPERIMENT_REGISTRY.md",
+    "research/FINAL_STATISTICAL_REVIEW.md",
+    "research/FINAL_THEORY_REVIEW.md",
+    "research/FINAL_PACKAGE_REVIEW.md",
+    "research2/FINAL_REPORT.md",
+    "research2/EXPERIMENT_REGISTRY.md",
+    "research3/policy.py",
+    "research3/benchmark.py",
+    "research3/analyze.py",
+    "research3/stages.py",
+    "research3/mechanisms.py",
+    "research3/archive.py",
+    "research3/model_candidates.py",
+    "research3/tiny_models.py",
+    "research3/forensic_audit.py",
+    "research3/test_round3.py",
+    "research3/production.py",
+    "research3/Dockerfile",
+    "research3/prediction_audit.py"
+  ],
+  "read_only_review_compute": "File reading/hash/statistics overhead not independently measured; no new simulator seeds outside old101. Tools transcript retains literal exploratory shell/read commands. Main reproducible operations above exact. No invented historical timestamps.",
+  "compute_allowance": "one worker; 10 CPU minutes per delegated replication wave; measured direct+parent process CPU far below allowance, child CPU unavailable",
+  "source_review_followup": {
+    "files": [
+      "research3/stages.py",
+      "research3/mechanisms.py",
+      "research3/archive.py",
+      "research3/production.py",
+      "research3/prediction_audit.py"
+    ],
+    "timestamp_utc": null,
+    "timestamp_status": "reconstructed read-only tool transcript; no new experiment or partial ranking",
+    "cpu_seconds": null
+  }
+}

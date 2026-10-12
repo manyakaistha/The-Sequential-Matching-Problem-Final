@@ -1,0 +1,37 @@
+{
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "networkx": "3.7",
+    "matplotlib": "3.11.2"
+  },
+  "hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "policy.py": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+    "research_policy.py": "ddd58f9c35872b97220af124686ff477f6ff135d156068d9857b839019bb76b3",
+    "research/benchmark.py": "8e195cb321bbde4e1255d0a64746db07ddaa38797fe1007e4f6510136b54becb",
+    "research/audit.py": "ff254c567c798ceb714189bad7037b13bcdddd49f7be4dd190ff3c291248861f",
+    "research/funnel_audit.py": "6bf00a835a746fc0bad2c1bbddd457f750d2febcc74cf78eaedd888ae0966bcd",
+    "research/query_compare.py": "8447ab8c34542ceddcceff0078f086f537a4e38deda15cd280186cdbc2918c43",
+    "research/upper_bound.py": "54d31c6ee10ca17cbaf51910c8a9c117ee2c6310c6de0be89ae94792a3f1ddae",
+    "research/statistics.py": "4081af2875f63998be397fcf24bf6fe8edbfa5b304defb827c4f9b27167c4640",
+    "research/build_report.py": "04ced647289491b31cb569274bd3fb5617bf61286c708f44ace71d8c005c721b",
+    "research/test_policy.py": "22bf2d3ff965e1b892c4699cd6b13bf1d65bfda0a638d8d7a0fb139d8fff3620",
+    "research/container_check.py": "9c561b6f4dd886769522e2456685266d9222892203de813770d20d3babd389b0",
+    "research/compare_container.py": "d8517eb0e43d3ab8e5ecd3c4881d8ed0771a10f49b7918dd26667d7908f84434",
+    "Dockerfile.research": "9168baec71e7ca6a2db4036933ef1514581976387cb82e462b456090a020f3be",
+    "docs/REFERENCES.md": "f4bc5cbcaff5530cbea82dcd73a0843ed29be35ca61e7613727fe4cbc6f83c2c",
+    "REPORT.md": "f7633507c1af041be10418ef410141cd8beeb90db89a7e0c45957e3f00b42845"
+  },
+  "rollouts": 1179,
+  "verification": {
+    "subprocess_digests_match": true,
+    "container_semantic_actions_match": true,
+    "container_raw_digest_match": false,
+    "query_degree_digests_match": true,
+    "all_episodes_valid": true
+  }
+}

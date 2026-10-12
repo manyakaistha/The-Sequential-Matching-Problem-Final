@@ -1,0 +1,34 @@
+{
+  "policy": "population_control",
+  "configuration": {
+    "match": "population",
+    "ask": "fifo"
+  },
+  "code_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/benchmark.py": "9696c45fb921a4d8e0841b637d9d02528ff5347b14b4fcc76d3d5d8a7e77ff64"
+  },
+  "frozen_utc": "2026-10-10T03:44:46.014539+00:00",
+  "eligible_selection_band": [
+    "hard_priority",
+    "population_control"
+  ],
+  "selection_rule": "registered engineering cost then higher score then alphabetical within .025",
+  "confirmation_n": 56,
+  "uncapped_power_n": 56,
+  "planning_sd": 0.25261845583684234,
+  "variance_source": "population_control",
+  "confirmation_seeds": [
+    83001,
+    83056
+  ],
+  "comparison": "selected minus shipped greedy",
+  "fit_data": "no offline fitting; fixed public priors and observation-only per-invocation feedback updates",
+  "registry_sha256": "b39f07cc7a2c87f680bbefb676d1b56125c56d9b0b5694269b97a6ec856048ea"
+}

@@ -1,0 +1,33 @@
+test_all_query_modes_legal (research.test_extended_policy.PolicyTests.test_all_query_modes_legal) ... ok
+test_empty_and_no_edges (research.test_extended_policy.PolicyTests.test_empty_and_no_edges) ... ok
+test_exhausted_budget (research.test_extended_policy.PolicyTests.test_exhausted_budget) ... ok
+test_feature_enumeration_linearity (research.test_extended_policy.PolicyTests.test_feature_enumeration_linearity) ... ok
+test_full_trajectory_memory_protocol (research.test_extended_policy.PolicyTests.test_full_trajectory_memory_protocol) ... ok
+test_independent_preserves_marginals (research.test_extended_policy.PolicyTests.test_independent_preserves_marginals) ... ok
+test_legal_no_learning (research.test_extended_policy.PolicyTests.test_legal_no_learning) ... ok
+test_malformed (research.test_extended_policy.PolicyTests.test_malformed) ... ok
+test_malformed_subprocess (research.test_extended_policy.PolicyTests.test_malformed_subprocess) ... ok
+test_no_hidden_import (research.test_extended_policy.PolicyTests.test_no_hidden_import) ... ok
+test_nonfinite (research.test_extended_policy.PolicyTests.test_nonfinite) ... ok
+test_pending_not_negative (research.test_extended_policy.PolicyTests.test_pending_not_negative) ... ok
+test_permanent_decline (research.test_extended_policy.PolicyTests.test_permanent_decline) ... ok
+test_probability_nested (research.test_extended_policy.PolicyTests.test_probability_nested) ... ok
+test_response_moment_exact_prior (research.test_extended_policy.PolicyTests.test_response_moment_exact_prior) ... ok
+test_solver_failure_fallback (research.test_extended_policy.PolicyTests.test_solver_failure_fallback) ... ok
+test_solver_interrupt (research.test_extended_policy.PolicyTests.test_solver_interrupt) ... ok
+test_strict_memory (research.test_extended_policy.PolicyTests.test_strict_memory) ... ok
+test_subprocess_semantic (research.test_extended_policy.PolicyTests.test_subprocess_semantic) ... ok
+test_arithmetic_memory (research.test_extended_safety.SafetyTests.test_arithmetic_memory) ... ok
+test_ask_fallback (research.test_extended_safety.SafetyTests.test_ask_fallback) ... ok
+test_global_timer (research.test_extended_safety.SafetyTests.test_global_timer) ... ok
+test_missing_signal (research.test_extended_safety.SafetyTests.test_missing_signal) ... ok
+test_nested_solver_deadline (research.test_extended_safety.SafetyTests.test_nested_solver_deadline) ... ok
+test_normal_equivalence (research.test_extended_safety.SafetyTests.test_normal_equivalence) ... ok
+test_past_and_unavailable_fallback (research.test_extended_safety.SafetyTests.test_past_and_unavailable_fallback) ... ok
+test_thread_no_signal_fallback (research.test_extended_safety.SafetyTests.test_thread_no_signal_fallback) ... ok
+test_zero_actor_precision (research.test_extended_safety.SafetyTests.test_zero_actor_precision) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.711s
+
+OK

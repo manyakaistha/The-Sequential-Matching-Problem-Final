@@ -1,0 +1,6 @@
+{
+  "completed_at_utc": "2026-10-08T06:26:57.350746+00:00",
+  "frozen_policy": "simple_fifo",
+  "stages": "development guard regression selection confirmation subprocess container",
+  "remaining": "Lead calibration/mechanism audit, report/figures, provenance and final integrity review"
+}

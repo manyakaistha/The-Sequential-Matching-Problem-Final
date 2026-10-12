@@ -1,0 +1,2560 @@
+{
+  "scope": "OFFLINE conditional quality and completed trajectory audit. Evaluated policies remain observation-only.",
+  "episodes": [
+    {
+      "policy": "greedy",
+      "variant": "development",
+      "seed": 1001,
+      "assignments": 122,
+      "served": 86,
+      "repeat_endpoint_assignments": 158,
+      "funnel": {
+        "both_response": 77,
+        "both_accept_unconditional": 19,
+        "date_unconditional": 12,
+        "both_second_yes_unconditional": 1,
+        "terminal": 0
+      },
+      "qualified_per100": 0.0,
+      "oracle_sum_assigned_terminal": 1.1269366842622799,
+      "oracle_mean_assignment_quality": 0.009237185936576065,
+      "realized_minus_oracle_conditional_sum": -1.1269366842622799,
+      "hard_bundle_queries": 62,
+      "soft_queries": 0,
+      "ask_cost": 186,
+      "assigned_before_day35": 90,
+      "mean_known_soft_fields_of8": 5.073770491803279,
+      "busy_mean": 9.934426229508198,
+      "busy_max": 27,
+      "retired_members": 2,
+      "late_date_bothpositive": 0,
+      "late_feedback_bothpositive": 1,
+      "demographics": {
+        "gender": {
+          "woman": {
+            "members": 97,
+            "served": 40,
+            "assignments": 134
+          },
+          "non_binary": {
+            "members": 6,
+            "served": 3,
+            "assignments": 5
+          },
+          "man": {
+            "members": 97,
+            "served": 43,
+            "assignments": 105
+          }
+        },
+        "zone": {
+          "zone_c": {
+            "members": 20,
+            "served": 4,
+            "assignments": 7
+          },
+          "zone_d": {
+            "members": 5,
+            "served": 0,
+            "assignments": 0
+          },
+          "zone_a": {
+            "members": 112,
+            "served": 60,
+            "assignments": 192
+          },
+          "zone_b": {
+            "members": 63,
+            "served": 22,
+            "assignments": 45
+          }
+        },
+        "age_group": {
+          "40\u201346": {
+            "members": 59,
+            "served": 29,
+            "assignments": 73
+          },
+          "21\u201329": {
+            "members": 67,
+            "served": 21,
+            "assignments": 64
+          },
+          "30\u201339": {
+            "members": 74,
+            "served": 36,
+            "assignments": 107
+          }
+        }
+      },
+      "public_graph_replay": {
+        "daily": [
+          {
+            "day": 0,
+            "verified_available_nodes": 64,
+            "verified_feasible_untried_edges": 29,
+            "new_edges_from_queries": 4,
+            "maximum_cardinality": 14,
+            "largest_nonisolated_component": 16,
+            "assignments": 14
+          },
+          {
+            "day": 1,
+            "verified_available_nodes": 42,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 2,
+            "verified_available_nodes": 42,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 3,
+            "verified_available_nodes": 43,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 4,
+            "verified_available_nodes": 48,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 4,
+            "assignments": 1
+          },
+          {
+            "day": 5,
+            "verified_available_nodes": 52,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 6,
+            "verified_available_nodes": 54,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 7,
+            "verified_available_nodes": 61,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 5,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 8,
+            "verified_available_nodes": 81,
+            "verified_feasible_untried_edges": 18,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 10,
+            "largest_nonisolated_component": 8,
+            "assignments": 9
+          },
+          {
+            "day": 9,
+            "verified_available_nodes": 71,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 10,
+            "verified_available_nodes": 77,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 11,
+            "verified_available_nodes": 75,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 4,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 12,
+            "verified_available_nodes": 77,
+            "verified_feasible_untried_edges": 8,
+            "new_edges_from_queries": 7,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 7,
+            "assignments": 3
+          },
+          {
+            "day": 13,
+            "verified_available_nodes": 78,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 14,
+            "verified_available_nodes": 76,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 15,
+            "verified_available_nodes": 84,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 3,
+            "assignments": 5
+          },
+          {
+            "day": 16,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 14,
+            "new_edges_from_queries": 4,
+            "maximum_cardinality": 8,
+            "largest_nonisolated_component": 6,
+            "assignments": 7
+          },
+          {
+            "day": 17,
+            "verified_available_nodes": 80,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 18,
+            "verified_available_nodes": 81,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 19,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 20,
+            "verified_available_nodes": 87,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 5,
+            "assignments": 2
+          },
+          {
+            "day": 21,
+            "verified_available_nodes": 87,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 22,
+            "verified_available_nodes": 83,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 23,
+            "verified_available_nodes": 93,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 2,
+            "assignments": 4
+          },
+          {
+            "day": 24,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 12,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 8,
+            "largest_nonisolated_component": 6,
+            "assignments": 7
+          },
+          {
+            "day": 25,
+            "verified_available_nodes": 87,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 26,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 27,
+            "verified_available_nodes": 92,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 5,
+            "assignments": 2
+          },
+          {
+            "day": 28,
+            "verified_available_nodes": 94,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 2
+          },
+          {
+            "day": 29,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 30,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 31,
+            "verified_available_nodes": 96,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 32,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 6,
+            "assignments": 2
+          },
+          {
+            "day": 33,
+            "verified_available_nodes": 93,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 34,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 35,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 36,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 6,
+            "assignments": 3
+          },
+          {
+            "day": 37,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 7,
+            "assignments": 4
+          },
+          {
+            "day": 38,
+            "verified_available_nodes": 91,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 39,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 40,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 41,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 42,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 4,
+            "assignments": 1
+          },
+          {
+            "day": 43,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 44,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 45,
+            "verified_available_nodes": 108,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 5,
+            "assignments": 2
+          },
+          {
+            "day": 46,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 47,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 48,
+            "verified_available_nodes": 106,
+            "verified_feasible_untried_edges": 8,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 5,
+            "assignments": 4
+          },
+          {
+            "day": 49,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 50,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 51,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 52,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 53,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 54,
+            "verified_available_nodes": 106,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 55,
+            "verified_available_nodes": 110,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 56,
+            "verified_available_nodes": 115,
+            "verified_feasible_untried_edges": 8,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 6,
+            "assignments": 3
+          },
+          {
+            "day": 57,
+            "verified_available_nodes": 109,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 58,
+            "verified_available_nodes": 111,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 59,
+            "verified_available_nodes": 109,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          }
+        ],
+        "mean_verified_available_nodes": 88.51666666666667,
+        "mean_verified_feasible_untried_edges": 3.7333333333333334,
+        "total_new_edges_from_queries": 39,
+        "mean_maximum_cardinality": 2.1333333333333333,
+        "mean_largest_nonisolated_component": 2.933333333333333,
+        "scope": "Recorded actions replayed with identical public observations. Before/after asks isolate realized visibility changes only, not expected matching value or causal terminal reward."
+      }
+    },
+    {
+      "policy": "simple_fifo",
+      "variant": "development",
+      "seed": 1001,
+      "assignments": 119,
+      "served": 87,
+      "repeat_endpoint_assignments": 151,
+      "funnel": {
+        "both_response": 79,
+        "both_accept_unconditional": 21,
+        "date_unconditional": 17,
+        "both_second_yes_unconditional": 4,
+        "terminal": 1
+      },
+      "qualified_per100": 0.5,
+      "oracle_sum_assigned_terminal": 1.2008141853516723,
+      "oracle_mean_assignment_quality": 0.01009087550715691,
+      "realized_minus_oracle_conditional_sum": -0.20081418535167228,
+      "hard_bundle_queries": 62,
+      "soft_queries": 0,
+      "ask_cost": 186,
+      "assigned_before_day35": 92,
+      "mean_known_soft_fields_of8": 5.050420168067227,
+      "busy_mean": 9.865546218487395,
+      "busy_max": 25,
+      "retired_members": 8,
+      "late_date_bothpositive": 0,
+      "late_feedback_bothpositive": 3,
+      "demographics": {
+        "gender": {
+          "woman": {
+            "members": 97,
+            "served": 41,
+            "assignments": 134
+          },
+          "non_binary": {
+            "members": 6,
+            "served": 3,
+            "assignments": 6
+          },
+          "man": {
+            "members": 97,
+            "served": 43,
+            "assignments": 98
+          }
+        },
+        "zone": {
+          "zone_c": {
+            "members": 20,
+            "served": 4,
+            "assignments": 7
+          },
+          "zone_d": {
+            "members": 5,
+            "served": 0,
+            "assignments": 0
+          },
+          "zone_a": {
+            "members": 112,
+            "served": 61,
+            "assignments": 186
+          },
+          "zone_b": {
+            "members": 63,
+            "served": 22,
+            "assignments": 45
+          }
+        },
+        "age_group": {
+          "40\u201346": {
+            "members": 59,
+            "served": 30,
+            "assignments": 75
+          },
+          "21\u201329": {
+            "members": 67,
+            "served": 21,
+            "assignments": 54
+          },
+          "30\u201339": {
+            "members": 74,
+            "served": 36,
+            "assignments": 109
+          }
+        }
+      },
+      "public_graph_replay": {
+        "daily": [
+          {
+            "day": 0,
+            "verified_available_nodes": 64,
+            "verified_feasible_untried_edges": 29,
+            "new_edges_from_queries": 4,
+            "maximum_cardinality": 14,
+            "largest_nonisolated_component": 16,
+            "assignments": 12
+          },
+          {
+            "day": 1,
+            "verified_available_nodes": 46,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 2,
+            "verified_available_nodes": 46,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 3,
+            "verified_available_nodes": 47,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 4,
+            "verified_available_nodes": 52,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 5,
+            "verified_available_nodes": 54,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 6,
+            "verified_available_nodes": 56,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 7,
+            "verified_available_nodes": 61,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 8,
+            "verified_available_nodes": 79,
+            "verified_feasible_untried_edges": 17,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 9,
+            "largest_nonisolated_component": 11,
+            "assignments": 8
+          },
+          {
+            "day": 9,
+            "verified_available_nodes": 71,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 10,
+            "verified_available_nodes": 77,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 11,
+            "verified_available_nodes": 75,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 12,
+            "verified_available_nodes": 79,
+            "verified_feasible_untried_edges": 9,
+            "new_edges_from_queries": 7,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 8,
+            "assignments": 4
+          },
+          {
+            "day": 13,
+            "verified_available_nodes": 78,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 2,
+            "assignments": 3
+          },
+          {
+            "day": 14,
+            "verified_available_nodes": 78,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 15,
+            "verified_available_nodes": 80,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 3,
+            "assignments": 4
+          },
+          {
+            "day": 16,
+            "verified_available_nodes": 87,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 17,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 8,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 7,
+            "assignments": 5
+          },
+          {
+            "day": 18,
+            "verified_available_nodes": 81,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 19,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 20,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 12,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 7,
+            "assignments": 4
+          },
+          {
+            "day": 21,
+            "verified_available_nodes": 87,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 22,
+            "verified_available_nodes": 83,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 23,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 24,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 25,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 11,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 7,
+            "assignments": 5
+          },
+          {
+            "day": 26,
+            "verified_available_nodes": 90,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 27,
+            "verified_available_nodes": 96,
+            "verified_feasible_untried_edges": 8,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 7,
+            "assignments": 4
+          },
+          {
+            "day": 28,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 11,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 8,
+            "assignments": 4
+          },
+          {
+            "day": 29,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 30,
+            "verified_available_nodes": 90,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 31,
+            "verified_available_nodes": 92,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 32,
+            "verified_available_nodes": 92,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 33,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 2,
+            "assignments": 3
+          },
+          {
+            "day": 34,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 35,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 36,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 37,
+            "verified_available_nodes": 107,
+            "verified_feasible_untried_edges": 11,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 11,
+            "assignments": 4
+          },
+          {
+            "day": 38,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 39,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 40,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 41,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 2,
+            "assignments": 3
+          },
+          {
+            "day": 42,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 43,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 44,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 45,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 7,
+            "assignments": 2
+          },
+          {
+            "day": 46,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 6,
+            "assignments": 2
+          },
+          {
+            "day": 47,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 48,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 49,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 50,
+            "verified_available_nodes": 106,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 6,
+            "assignments": 2
+          },
+          {
+            "day": 51,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 52,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 53,
+            "verified_available_nodes": 107,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 54,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 5,
+            "assignments": 2
+          },
+          {
+            "day": 55,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 56,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 57,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 58,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 5,
+            "assignments": 1
+          },
+          {
+            "day": 59,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          }
+        ],
+        "mean_verified_available_nodes": 88.41666666666667,
+        "mean_verified_feasible_untried_edges": 3.7333333333333334,
+        "total_new_edges_from_queries": 36,
+        "mean_maximum_cardinality": 2.0833333333333335,
+        "mean_largest_nonisolated_component": 3.1666666666666665,
+        "scope": "Recorded actions replayed with identical public observations. Before/after asks isolate realized visibility changes only, not expected matching value or causal terminal reward."
+      }
+    },
+    {
+      "policy": "terminal_fifo",
+      "variant": "development",
+      "seed": 1001,
+      "assignments": 119,
+      "served": 87,
+      "repeat_endpoint_assignments": 151,
+      "funnel": {
+        "both_response": 76,
+        "both_accept_unconditional": 19,
+        "date_unconditional": 14,
+        "both_second_yes_unconditional": 2,
+        "terminal": 0
+      },
+      "qualified_per100": 0.0,
+      "oracle_sum_assigned_terminal": 1.1663305580599976,
+      "oracle_mean_assignment_quality": 0.009801097126554602,
+      "realized_minus_oracle_conditional_sum": -1.1663305580599976,
+      "hard_bundle_queries": 62,
+      "soft_queries": 0,
+      "ask_cost": 186,
+      "assigned_before_day35": 90,
+      "mean_known_soft_fields_of8": 5.016806722689076,
+      "busy_mean": 10.050420168067227,
+      "busy_max": 26,
+      "retired_members": 4,
+      "late_date_bothpositive": 0,
+      "late_feedback_bothpositive": 2,
+      "demographics": {
+        "gender": {
+          "woman": {
+            "members": 97,
+            "served": 41,
+            "assignments": 129
+          },
+          "non_binary": {
+            "members": 6,
+            "served": 3,
+            "assignments": 6
+          },
+          "man": {
+            "members": 97,
+            "served": 43,
+            "assignments": 103
+          }
+        },
+        "zone": {
+          "zone_c": {
+            "members": 20,
+            "served": 4,
+            "assignments": 7
+          },
+          "zone_d": {
+            "members": 5,
+            "served": 0,
+            "assignments": 0
+          },
+          "zone_a": {
+            "members": 112,
+            "served": 61,
+            "assignments": 186
+          },
+          "zone_b": {
+            "members": 63,
+            "served": 22,
+            "assignments": 45
+          }
+        },
+        "age_group": {
+          "40\u201346": {
+            "members": 59,
+            "served": 29,
+            "assignments": 77
+          },
+          "21\u201329": {
+            "members": 67,
+            "served": 22,
+            "assignments": 57
+          },
+          "30\u201339": {
+            "members": 74,
+            "served": 36,
+            "assignments": 104
+          }
+        }
+      },
+      "public_graph_replay": {
+        "daily": [
+          {
+            "day": 0,
+            "verified_available_nodes": 64,
+            "verified_feasible_untried_edges": 29,
+            "new_edges_from_queries": 4,
+            "maximum_cardinality": 14,
+            "largest_nonisolated_component": 16,
+            "assignments": 14
+          },
+          {
+            "day": 1,
+            "verified_available_nodes": 42,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 2,
+            "verified_available_nodes": 42,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 3,
+            "verified_available_nodes": 43,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 4,
+            "verified_available_nodes": 48,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 5,
+            "verified_available_nodes": 52,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 6,
+            "verified_available_nodes": 54,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 7,
+            "verified_available_nodes": 59,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 8,
+            "verified_available_nodes": 77,
+            "verified_feasible_untried_edges": 11,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 7,
+            "largest_nonisolated_component": 8,
+            "assignments": 6
+          },
+          {
+            "day": 9,
+            "verified_available_nodes": 73,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 10,
+            "verified_available_nodes": 79,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 11,
+            "verified_available_nodes": 77,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 4,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 12,
+            "verified_available_nodes": 79,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 5,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 6,
+            "assignments": 2
+          },
+          {
+            "day": 13,
+            "verified_available_nodes": 82,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 14,
+            "verified_available_nodes": 82,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 15,
+            "verified_available_nodes": 84,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 16,
+            "verified_available_nodes": 91,
+            "verified_feasible_untried_edges": 9,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 7,
+            "assignments": 5
+          },
+          {
+            "day": 17,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 6,
+            "assignments": 4
+          },
+          {
+            "day": 18,
+            "verified_available_nodes": 83,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 19,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 4,
+            "assignments": 4
+          },
+          {
+            "day": 20,
+            "verified_available_nodes": 85,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 21,
+            "verified_available_nodes": 85,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 6,
+            "assignments": 3
+          },
+          {
+            "day": 22,
+            "verified_available_nodes": 83,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 23,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 24,
+            "verified_available_nodes": 92,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 25,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 15,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 14,
+            "assignments": 5
+          },
+          {
+            "day": 26,
+            "verified_available_nodes": 91,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 27,
+            "verified_available_nodes": 91,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 4,
+            "assignments": 1
+          },
+          {
+            "day": 28,
+            "verified_available_nodes": 94,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 29,
+            "verified_available_nodes": 94,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 6,
+            "assignments": 3
+          },
+          {
+            "day": 30,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 31,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 32,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 33,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 10,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 11,
+            "assignments": 4
+          },
+          {
+            "day": 34,
+            "verified_available_nodes": 94,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 35,
+            "verified_available_nodes": 98,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 36,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 37,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 38,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 39,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 40,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 41,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 10,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 8,
+            "assignments": 3
+          },
+          {
+            "day": 42,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 43,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 44,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 45,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 5,
+            "assignments": 2
+          },
+          {
+            "day": 46,
+            "verified_available_nodes": 100,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 47,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 48,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 49,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 50,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 51,
+            "verified_available_nodes": 101,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 52,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 53,
+            "verified_available_nodes": 105,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 54,
+            "verified_available_nodes": 107,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 4,
+            "assignments": 2
+          },
+          {
+            "day": 55,
+            "verified_available_nodes": 103,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 56,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 57,
+            "verified_available_nodes": 108,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 5,
+            "assignments": 3
+          },
+          {
+            "day": 58,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 59,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          }
+        ],
+        "mean_verified_available_nodes": 88.26666666666667,
+        "mean_verified_feasible_untried_edges": 3.65,
+        "total_new_edges_from_queries": 36,
+        "mean_maximum_cardinality": 2.033333333333333,
+        "mean_largest_nonisolated_component": 3.216666666666667,
+        "scope": "Recorded actions replayed with identical public observations. Before/after asks isolate realized visibility changes only, not expected matching value or causal terminal reward."
+      }
+    },
+    {
+      "policy": "terminal_two_query",
+      "variant": "development",
+      "seed": 1001,
+      "assignments": 121,
+      "served": 87,
+      "repeat_endpoint_assignments": 155,
+      "funnel": {
+        "both_response": 75,
+        "both_accept_unconditional": 21,
+        "date_unconditional": 15,
+        "both_second_yes_unconditional": 3,
+        "terminal": 0
+      },
+      "qualified_per100": 0.0,
+      "oracle_sum_assigned_terminal": 1.1037818379632185,
+      "oracle_mean_assignment_quality": 0.009122163950109244,
+      "realized_minus_oracle_conditional_sum": -1.1037818379632185,
+      "hard_bundle_queries": 62,
+      "soft_queries": 0,
+      "ask_cost": 186,
+      "assigned_before_day35": 94,
+      "mean_known_soft_fields_of8": 5.016528925619835,
+      "busy_mean": 10.074380165289256,
+      "busy_max": 26,
+      "retired_members": 6,
+      "late_date_bothpositive": 0,
+      "late_feedback_bothpositive": 3,
+      "demographics": {
+        "gender": {
+          "woman": {
+            "members": 97,
+            "served": 41,
+            "assignments": 134
+          },
+          "non_binary": {
+            "members": 6,
+            "served": 3,
+            "assignments": 6
+          },
+          "man": {
+            "members": 97,
+            "served": 43,
+            "assignments": 102
+          }
+        },
+        "zone": {
+          "zone_c": {
+            "members": 20,
+            "served": 4,
+            "assignments": 7
+          },
+          "zone_d": {
+            "members": 5,
+            "served": 0,
+            "assignments": 0
+          },
+          "zone_a": {
+            "members": 112,
+            "served": 61,
+            "assignments": 190
+          },
+          "zone_b": {
+            "members": 63,
+            "served": 22,
+            "assignments": 45
+          }
+        },
+        "age_group": {
+          "40\u201346": {
+            "members": 59,
+            "served": 29,
+            "assignments": 72
+          },
+          "21\u201329": {
+            "members": 67,
+            "served": 22,
+            "assignments": 63
+          },
+          "30\u201339": {
+            "members": 74,
+            "served": 36,
+            "assignments": 107
+          }
+        }
+      },
+      "public_graph_replay": {
+        "daily": [
+          {
+            "day": 0,
+            "verified_available_nodes": 64,
+            "verified_feasible_untried_edges": 38,
+            "new_edges_from_queries": 13,
+            "maximum_cardinality": 16,
+            "largest_nonisolated_component": 26,
+            "assignments": 16
+          },
+          {
+            "day": 1,
+            "verified_available_nodes": 38,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 2,
+            "verified_available_nodes": 40,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 3,
+            "verified_available_nodes": 43,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 4,
+            "verified_available_nodes": 46,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 5,
+            "verified_available_nodes": 52,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 6,
+            "verified_available_nodes": 56,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 7,
+            "verified_available_nodes": 61,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 8,
+            "verified_available_nodes": 79,
+            "verified_feasible_untried_edges": 11,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 7,
+            "largest_nonisolated_component": 7,
+            "assignments": 7
+          },
+          {
+            "day": 9,
+            "verified_available_nodes": 71,
+            "verified_feasible_untried_edges": 5,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 10,
+            "verified_available_nodes": 71,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 11,
+            "verified_available_nodes": 73,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 12,
+            "verified_available_nodes": 73,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 13,
+            "verified_available_nodes": 76,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 2,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 14,
+            "verified_available_nodes": 76,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 15,
+            "verified_available_nodes": 80,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 3,
+            "assignments": 4
+          },
+          {
+            "day": 16,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 13,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 6,
+            "largest_nonisolated_component": 10,
+            "assignments": 6
+          },
+          {
+            "day": 17,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 7,
+            "new_edges_from_queries": 1,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 4,
+            "assignments": 5
+          },
+          {
+            "day": 18,
+            "verified_available_nodes": 81,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 19,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 3,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 4,
+            "assignments": 4
+          },
+          {
+            "day": 20,
+            "verified_available_nodes": 81,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 21,
+            "verified_available_nodes": 85,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 22,
+            "verified_available_nodes": 85,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 23,
+            "verified_available_nodes": 90,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 24,
+            "verified_available_nodes": 96,
+            "verified_feasible_untried_edges": 10,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 5,
+            "assignments": 5
+          },
+          {
+            "day": 25,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 14,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 5,
+            "largest_nonisolated_component": 10,
+            "assignments": 5
+          },
+          {
+            "day": 26,
+            "verified_available_nodes": 87,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 27,
+            "verified_available_nodes": 89,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 28,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 29,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 6,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 6,
+            "assignments": 3
+          },
+          {
+            "day": 30,
+            "verified_available_nodes": 83,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 31,
+            "verified_available_nodes": 86,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 32,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 3,
+            "assignments": 3
+          },
+          {
+            "day": 33,
+            "verified_available_nodes": 91,
+            "verified_feasible_untried_edges": 9,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 8,
+            "assignments": 4
+          },
+          {
+            "day": 34,
+            "verified_available_nodes": 85,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 35,
+            "verified_available_nodes": 88,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 2,
+            "assignments": 2
+          },
+          {
+            "day": 36,
+            "verified_available_nodes": 92,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 37,
+            "verified_available_nodes": 96,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 38,
+            "verified_available_nodes": 91,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 39,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 40,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 3,
+            "largest_nonisolated_component": 4,
+            "assignments": 3
+          },
+          {
+            "day": 41,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 8,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 4,
+            "largest_nonisolated_component": 6,
+            "assignments": 4
+          },
+          {
+            "day": 42,
+            "verified_available_nodes": 93,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 43,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 4,
+            "assignments": 1
+          },
+          {
+            "day": 44,
+            "verified_available_nodes": 97,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 45,
+            "verified_available_nodes": 96,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 46,
+            "verified_available_nodes": 95,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 47,
+            "verified_available_nodes": 99,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 48,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 1,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 2,
+            "assignments": 1
+          },
+          {
+            "day": 49,
+            "verified_available_nodes": 108,
+            "verified_feasible_untried_edges": 4,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 5,
+            "assignments": 2
+          },
+          {
+            "day": 50,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 51,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 4,
+            "assignments": 1
+          },
+          {
+            "day": 52,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          },
+          {
+            "day": 53,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 54,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 55,
+            "verified_available_nodes": 107,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 56,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 57,
+            "verified_available_nodes": 106,
+            "verified_feasible_untried_edges": 3,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 2,
+            "largest_nonisolated_component": 3,
+            "assignments": 2
+          },
+          {
+            "day": 58,
+            "verified_available_nodes": 102,
+            "verified_feasible_untried_edges": 0,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 0,
+            "largest_nonisolated_component": 0,
+            "assignments": 0
+          },
+          {
+            "day": 59,
+            "verified_available_nodes": 104,
+            "verified_feasible_untried_edges": 2,
+            "new_edges_from_queries": 0,
+            "maximum_cardinality": 1,
+            "largest_nonisolated_component": 3,
+            "assignments": 1
+          }
+        ],
+        "mean_verified_available_nodes": 85.73333333333333,
+        "mean_verified_feasible_untried_edges": 3.566666666666667,
+        "total_new_edges_from_queries": 38,
+        "mean_maximum_cardinality": 2.0166666666666666,
+        "mean_largest_nonisolated_component": 3.183333333333333,
+        "scope": "Recorded actions replayed with identical public observations. Before/after asks isolate realized visibility changes only, not expected matching value or causal terminal reward."
+      }
+    }
+  ],
+  "representative_largest_positive_negative_seed_clusters": [],
+  "caveats": [
+    "Oracle summed assignment probabilities are descriptive low-noise quality measures along realized trajectories, not expected full-policy rewards or causal effects.",
+    "Busy durations include cancellation lockout; positive but unqualified seconds can retire both members.",
+    "Demographic coverage is synthetic descriptive association, not causal discrimination evidence.",
+    "Known soft fields are an assignment snapshot proxy. Optional public-graph replay reconstructs the exact observation history from recorded legal actions."
+  ]
+}

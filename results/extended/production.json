@@ -1,0 +1,118 @@
+{
+  "limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "1073741824",
+    "pids.max": "64",
+    "root_write_blocked": true,
+    "write_errno": 30,
+    "uid": 65534,
+    "up_interfaces": [
+      "lo"
+    ],
+    "app_files": [
+      "extended_policy.py",
+      "kit.py",
+      "research/extended_candidates.py",
+      "research/terminal_model.py"
+    ],
+    "image_id": "sha256:09027c26b555728b00a7876d6fac1860d0237851a923b3358648103c7d2ca8c3",
+    "image_size_bytes": 52761330,
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "-i",
+      "--name",
+      "sequential-c360f94795024c16b39c8fdecf02478b",
+      "--network=none",
+      "--cpus=2",
+      "--memory=1g",
+      "--memory-swap=1g",
+      "--pids-limit=64",
+      "--read-only",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--user=65534:65534",
+      "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+      "sequential-extended:1.0"
+    ],
+    "package_versions": {
+      "python": "3.12.7 (main, Dec  3 2024, 09:02:00) [GCC 12.2.0]",
+      "networkx": "3.7"
+    }
+  },
+  "replay": {
+    "seed": 1001,
+    "variant": "development",
+    "configuration": {
+      "model": "simple"
+    },
+    "execution_order": [
+      "in_process",
+      "subprocess",
+      "container"
+    ],
+    "ordering_only_differences": [],
+    "semantic_differences": [],
+    "action_sha256": [
+      "7325244387b8c16cfed8a8d2b29802689eb30c82085291b55a7c1c1e8563e2dd",
+      "7325244387b8c16cfed8a8d2b29802689eb30c82085291b55a7c1c1e8563e2dd",
+      "7325244387b8c16cfed8a8d2b29802689eb30c82085291b55a7c1c1e8563e2dd"
+    ],
+    "metrics": [
+      {
+        "assignments": 118,
+        "mutual_acceptances": 18,
+        "dates": 16,
+        "mutual_second_meeting_intention": 2,
+        "missing_feedback": 63,
+        "ask_cost": 186,
+        "arrived_members": 200,
+        "msmi_per_100_arrived_members": 1.0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      {
+        "assignments": 118,
+        "mutual_acceptances": 18,
+        "dates": 16,
+        "mutual_second_meeting_intention": 2,
+        "missing_feedback": 63,
+        "ask_cost": 186,
+        "arrived_members": 200,
+        "msmi_per_100_arrived_members": 1.0,
+        "status": "simulated_not_observed_product_performance"
+      },
+      {
+        "assignments": 118,
+        "mutual_acceptances": 18,
+        "dates": 16,
+        "mutual_second_meeting_intention": 2,
+        "missing_feedback": 63,
+        "ask_cost": 186,
+        "arrived_members": 200,
+        "msmi_per_100_arrived_members": 1.0,
+        "status": "simulated_not_observed_product_performance"
+      }
+    ],
+    "total_inference_seconds": [
+      2.017458753893152,
+      8.116250038903672,
+      22.549740585993277
+    ],
+    "max_call_seconds": [
+      0.031103749992325902,
+      0.08789166700444184,
+      0.23171145899686962
+    ],
+    "peak_memory_bytes": [
+      152643,
+      152643,
+      152643
+    ],
+    "peak_request_bytes": [
+      631222,
+      631222,
+      631222
+    ]
+  }
+}

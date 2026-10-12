@@ -1,0 +1,61 @@
+{
+  "started_utc": "2026-10-10T03:23:12.768766+00:00",
+  "command": [
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research4/deadline_audit.py",
+    "--interventions",
+    "--input",
+    "results/research4/screen.json",
+    "--output",
+    "results/research4/deadline_audit_screen.json"
+  ],
+  "completed_utc": "2026-10-10T03:24:06.102990+00:00",
+  "cpu_seconds": 52.477752,
+  "source_sha256": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "research4/candidates.py": "f9f3bf1ef5d949a17c58a1b8abac76e82a84228a97c143fe3b29a403e7e5096c",
+    "research4/policy.py": "37b0b89500314af00a4f96099cf64a4265276e07f946c9074e0e00bb50cbc3d5",
+    "research4/deadline_audit.py": "dde25dcf4aa9aad212fd4707ce87738d2d3eb0dfb2535302d0434db2d2791134"
+  }
+}
+{
+  "greedy": {
+    "actual_score": 0.3055555555555555,
+    "deadline_integrated_proxy": 0.37749999999999995,
+    "actual_minus_proxy": -0.07194444444444444
+  },
+  "population_control": {
+    "actual_score": 0.5,
+    "deadline_integrated_proxy": 0.43250000000000005,
+    "actual_minus_proxy": 0.0675
+  },
+  "goal_surplus_control": {
+    "actual_score": 0.5,
+    "deadline_integrated_proxy": 0.42,
+    "actual_minus_proxy": 0.08
+  },
+  "coordinated_goal": {
+    "actual_score": 0.3958333333333334,
+    "deadline_integrated_proxy": 0.36000000000000004,
+    "actual_minus_proxy": 0.035833333333333335
+  },
+  "hard_priority": {
+    "actual_score": 0.5069444444444445,
+    "deadline_integrated_proxy": 0.4174999999999999,
+    "actual_minus_proxy": 0.08944444444444445
+  },
+  "response_beta_control": {
+    "actual_score": 0.47916666666666674,
+    "deadline_integrated_proxy": 0.4675,
+    "actual_minus_proxy": 0.011666666666666674
+  },
+  "response_uniform": {
+    "actual_score": 0.48611111111111116,
+    "deadline_integrated_proxy": 0.4649999999999999,
+    "actual_minus_proxy": 0.02111111111111112
+  },
+  "acceptance_shrinkage": {
+    "actual_score": 0.47916666666666674,
+    "deadline_integrated_proxy": 0.43249999999999994,
+    "actual_minus_proxy": 0.04666666666666667
+  }
+}

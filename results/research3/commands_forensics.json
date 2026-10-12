@@ -1,0 +1,261 @@
+{
+  "written_utc": "2026-10-10T02:58:58.563452+00:00",
+  "entries": [
+    {
+      "command": [
+        "python3",
+        "research3/forensic_audit.py"
+      ],
+      "outputs": [
+        "results/research3/forensics.json"
+      ],
+      "note": "Read-only audit; first4.724CPU seconds; followup7.358CPU seconds, no fresh rollout. Ran twice after adding dynamic-opportunity reconstruction.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "research3.test_round3"
+      ],
+      "outputs": [
+        "results/research3/correctness.json"
+      ],
+      "note": "First harness failed2tests due to reviewer-created actors missing response_rate. Corrected harness;12tests pass in2.628wallseconds. Inference unchanged.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research3/production.py"
+      ],
+      "outputs": [],
+      "note": "",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "docker",
+        "build",
+        "-f",
+        "research3/Dockerfile",
+        "-t",
+        "sequential-round3:research",
+        "."
+      ],
+      "outputs": [
+        "results/research3/production_greedy.json"
+      ],
+      "note": "Build command recorded byproduction script; initial failure preserved.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "docker",
+        "build",
+        "-t",
+        "sequential-round3:research",
+        "/var/folders/gy/gpw4ryp96xs834jndpmgvj500000gn/T/round3-image-tva8fzl1"
+      ],
+      "outputs": [
+        "results/research3/production_greedy_retry.json"
+      ],
+      "note": "Isolated temporary five-file context.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "python3",
+        "research3/production.py",
+        "--candidate",
+        "greedy",
+        "--output",
+        "results/research3/production_greedy.json"
+      ],
+      "outputs": [
+        "results/research3/production_greedy.json"
+      ],
+      "note": "Initial infrastructure failure due .dockerignore. Preserved.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "python3",
+        "research3/production.py",
+        "--candidate",
+        "greedy",
+        "--output",
+        "results/research3/production_greedy_retry.json"
+      ],
+      "outputs": [
+        "results/research3/production_greedy_retry.json"
+      ],
+      "note": "Full existingseed101 three-mode replay.47.54958elapsedseconds, includes build and all startup; not CPUmeasurement.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable"
+    },
+    {
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "-i",
+        "--name",
+        "sequential-dc1c86122c004c88aebf577c3c0ed1bd",
+        "--network=none",
+        "--cpus=2",
+        "--memory=1g",
+        "--memory-swap=1g",
+        "--pids-limit=64",
+        "--read-only",
+        "--cap-drop=ALL",
+        "--security-opt=no-new-privileges",
+        "--user=65534:65534",
+        "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+        "--entrypoint",
+        "python",
+        "sequential-round3:research",
+        "-c",
+        "import os,json,hashlib,socket\nfrom pathlib import Path\nout={'uid':os.getuid(),'gid':os.getgid(),'cgroups':{}}\nfor name in ['cpu.max','memory.max','memory.swap.max','pids.max']:\n p=Path('/sys/fs/cgroup')/name;out['cgroups'][name]=p.read_text().strip() if p.exists() else None\ntry:\n Path('/round3_write_probe').write_text('probe');out['root_write']='unexpectedly succeeded';Path('/round3_write_probe').unlink()\nexcept OSError as e:out['root_write_errno']=e.errno;out['root_write_error']=str(e)\nout['network_interfaces']=os.listdir('/sys/class/net')\ns=socket.socket();s.settimeout(.1)\ntry:s.connect(('1.1.1.1',53));out['egress_connect']='unexpectedly succeeded'\nexcept OSError as e:out['egress_errno']=e.errno;out['egress_error']=str(e)\nfinally:s.close()\nout['source_hashes']={str(p.relative_to('/app')):hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('/app').rglob('*.py')}\nprint(json.dumps(out))"
+      ],
+      "outputs": [
+        "results/research3/resource_probe.json"
+      ],
+      "note": "Effective actual cgroups,rootwrite,UID,egress and image/host hashes.",
+      "started_utc": "2026-10-09T12:29:26.824021+00:00",
+      "timestamp_status": "captured"
+    },
+    {
+      "command": [
+        "python3",
+        "-"
+      ],
+      "outputs": [
+        "results/research3/production_dense.json"
+      ],
+      "note": "Exact inline generator retained; no overwrite guard in historical inline command, so replay into separate copied results directory. Historical timestamp unavailable; short overlap disclosed.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable",
+      "stdin_code": "import json,time,subprocess,hashlib\nfrom pathlib import Path\nimport evaluate\nfrom kit import Simulator,generate,HARD\nfrom research3 import policy\nsim=Simulator(generate(101,200,'evaluation'));sim.day=20;s=sim.observe()\nfields=dict(age_min=18,age_max=65,who_to_meet=['man'],relationship_structure='monogamous',smoking='no',partner_smoking='any',has_children=False,partner_children='any',wants_children='unsure',acceptable_zones=['zone_a'],schedule=['weekend_day'])\nfor m in s['members']:\n m.update(age=30,gender='man',zone='zone_a',available=True);m['fields'].update(fields)\n for k in HARD:m['field_status'][k]='observed';m['field_observed_day'][k]=0\ns['feedback']=[dict(introduction_id='stress_'+str(n),member_id=m['member_id'],event='introduction_response',value='yes' if n%2 else None) for m in s['members'] for n in range(4)]\nrows=[]\nfor name,cfg in policy.CANDIDATES.items():\n req=dict(phase='match',state=s,memory={'bad':'ignored'});direct=policy.decide(req,cfg)\n actual,seconds=evaluate.invoke(evaluate.docker_command('sequential-round3:research')+['--candidate',name],req)\n assert actual==direct\n rows.append(dict(candidate=name,seconds=seconds,exact_response_equal=True,pairs=len(actual['pairs']),request_bytes=len(json.dumps(req).encode()),memory_bytes=len(json.dumps(actual['memory']).encode())))\n# Inspect app directory within same strict restricted resource wrapper.\ncommand=evaluate.docker_command('sequential-round3:research')[:-1]+['--entrypoint','python','sequential-round3:research','-c','import os,json;print(json.dumps([(d,f) for d,_,fs in os.walk(\"/app\") for f in fs]))']\nfiles=json.loads(subprocess.check_output(command,text=True))\nPath('results/research3/production_dense.json').write_text(json.dumps(dict(scope='Constructed200member dense graph plus800public history events, existingseed101, all13candidates',rows=rows,application_files=files,resource_command=evaluate.docker_command('sequential-round3:research'),policy_sha256=hashlib.sha256(Path('research3/policy.py').read_bytes()).hexdigest(),image='sequential-round3:research',max_seconds=max(r['seconds'] for r in rows)),indent=2)+'\\n')\nprint('All13 container dense parity passed; maximum',max(r['seconds'] for r in rows),'appfiles',files)\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-"
+      ],
+      "outputs": [
+        "results/research3/production_fallback_capture.json"
+      ],
+      "note": "Reconstructed exact output-producing portion of larger ledger-generation inline command; ledger writer itself omitted.",
+      "started_utc": null,
+      "timestamp_status": "reconstructed; historical timestamp unavailable",
+      "stdin_code": "import json,sys\nfrom pathlib import Path\nfrom research3.production import captured_invoke\nimport evaluate\nreq={'phase':'match','state':{'members':None},'memory':None};rows=[]\nfor execution,cmd in [('subprocess',[sys.executable,'-m','research3.policy']),('container',evaluate.docker_command('sequential-round3:research'))]:\n r,t,e=captured_invoke(cmd,req);rows.append(dict(execution=execution,response=r,seconds=t,stderr=e,fallback_warning_count=e.count('round3 fallback:')))\nassert all(r['fallback_warning_count']==1 for r in rows)\nPath('results/research3/production_fallback_capture.json').write_text(json.dumps(dict(rows=rows,request=req,scope='Malformed valid JSON state triggers explicit fallback; capture telemetry verification'),indent=2)+'\\n')\n"
+    },
+    {
+      "command": [
+        "python3",
+        "research3/trajectory_review.py"
+      ],
+      "outputs": [
+        "results/research3/trajectory_review.json"
+      ],
+      "started_utc": "2026-10-09T12:49:15.677904+00:00",
+      "timestamp_status": "captured",
+      "note": "Stage B existing traces only; full-truth conditional probabilities offline, no future-outcome scoring or policy rollout.",
+      "compute": {
+        "cpu_seconds": 1.5722260000000001,
+        "wall_seconds": 1.706014999999752,
+        "workers": 1
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "research3.production",
+        "--candidate",
+        "clean",
+        "--skip-build",
+        "--output",
+        "results/research3/production_selected.json"
+      ],
+      "outputs": [
+        "results/research3/production_selected.log"
+      ],
+      "started_utc": null,
+      "timestamp_status": "reconstructed; exact UTC start not captured",
+      "note": "Initial selected replay failed before output: Docker daemon stopped. Error retained. No source or result changed."
+    },
+    {
+      "command": [
+        "open",
+        "-a",
+        "Docker"
+      ],
+      "outputs": [],
+      "started_utc": null,
+      "timestamp_status": "reconstructed",
+      "note": "Reversible daemon startup; Docker server27.4.0 became available."
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "research3.production",
+        "--candidate",
+        "clean",
+        "--skip-build",
+        "--output",
+        "results/research3/production_selected.json"
+      ],
+      "outputs": [
+        "results/research3/production_selected.json",
+        "results/research3/production_selected_retry.log"
+      ],
+      "started_utc": null,
+      "timestamp_status": "reconstructed; exact UTC start not captured",
+      "note": "Complete selected clean seed101 60action+40follow-up replay. Three execution modes sequential. 120calls each, zero observed fallback, full parity. Wall55.497761875s; CPU and daemon CPU unmeasured. Concurrent registered benchmark may affect latency."
+    },
+    {
+      "command": [
+        "python3",
+        "-"
+      ],
+      "outputs": [],
+      "started_utc": null,
+      "timestamp_status": "reconstructed",
+      "stdin_code": "import subprocess,json,hashlib\nfrom pathlib import Path\np=json.loads(Path('results/research3/resource_probe.json').read_text())\nr=subprocess.run(p['command'],capture_output=True,text=True,timeout=10)\nassert r.returncode==0,r.stderr\nv=json.loads(r.stdout)\nf=json.loads(Path('results/research3/freeze.json').read_text())\nfor name,sha in f['code_hashes'].items():\n assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==sha,name\nassert v==p['probe'],'Actual current restricted resource probe differs'\n",
+      "note": "Raw-equality assertion failed solely on network-interface list ordering; separate second replay printed only differing key and confirmed same set of interfaces. Effective limits, errors and all application hashes equal historical probe. No artifact overwritten."
+    },
+    {
+      "command": [
+        "python3",
+        "-"
+      ],
+      "outputs": [],
+      "started_utc": null,
+      "timestamp_status": "reconstructed",
+      "stdin_code": "import subprocess,json\nfrom pathlib import Path\np=json.loads(Path('results/research3/resource_probe.json').read_text());v=json.loads(subprocess.check_output(p['command'],text=True))\nprint(json.dumps({k:{'previous':p['probe'].get(k),'current':v.get(k)} for k in set(p['probe'])|set(v) if v.get(k)!=p['probe'].get(k)},indent=2))\n",
+      "note": "Only differing key network_interfaces: identical members in different os.listdir order. No mutation or policy invocation."
+    }
+  ],
+  "compute": {
+    "measured_forensic_cpu_seconds": 7.358357,
+    "initial_forensic_cpu_seconds": 4.724154,
+    "correctness_suite_wall_seconds": 2.628,
+    "production_greedy_retry_wall_seconds": 47.549582958,
+    "cpu_other_tasks": null,
+    "other_cpu_measurement_note": "Historical child/daemon CPU was not instrumented; elapsed time is not CPU time. No fresh simulator seeds; boundedone-workerplanned, short dense/replay overlap disclosed.",
+    "external_spend": 0,
+    "production_selected_wall_seconds": 55.497761874998105
+  }
+}

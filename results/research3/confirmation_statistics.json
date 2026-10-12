@@ -1,0 +1,167 @@
+{
+  "estimand": "equal six-family reward per seed, paired independent seed clusters",
+  "seeds": [
+    73001,
+    73002,
+    73003,
+    73004,
+    73005,
+    73006,
+    73007,
+    73008,
+    73009,
+    73010,
+    73011,
+    73012,
+    73013,
+    73014,
+    73015,
+    73016,
+    73017,
+    73018,
+    73019,
+    73020,
+    73021,
+    73022,
+    73023,
+    73024,
+    73025,
+    73026,
+    73027,
+    73028,
+    73029,
+    73030,
+    73031,
+    73032,
+    73033,
+    73034,
+    73035,
+    73036,
+    73037,
+    73038,
+    73039,
+    73040
+  ],
+  "source": "results/research3/confirmation.json",
+  "code_hashes": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research3/benchmark.py": "6ec7c136269a40938c038d9daca58ff201a6ea82c3c9253b4360ca3505cc6494"
+  },
+  "policies": {
+    "clean": {
+      "primary": {
+        "n": 40,
+        "mean": 0.4270833333333333,
+        "sd": 0.22660279077346948,
+        "ci95": [
+          0.3546122449899901,
+          0.4995544216766765
+        ],
+        "p_two_sided": 1.4137734927994824e-14,
+        "standardized": 1.884722301413668
+      },
+      "paired": {
+        "n": 40,
+        "mean": 0.014583333333333337,
+        "sd": 0.14107783610637015,
+        "ci95": [
+          -0.030535547545645997,
+          0.05970221421231267
+        ],
+        "p_two_sided": 0.5170935942784989,
+        "standardized": 0.10337083227118515
+      },
+      "bootstrap95": [
+        -0.02708333333333333,
+        0.058333333333333334
+      ],
+      "scenario_means": {
+        "development": 0.5875,
+        "sparse": 0.1625,
+        "cold_start": 0.45,
+        "delayed": 0.4375,
+        "shift": 0.3875,
+        "drift": 0.5375
+      },
+      "totals": {
+        "assignments": 19006,
+        "mutual_acceptances": 2818,
+        "dates": 2238,
+        "mutual_second_meeting_intention": 205,
+        "served_members": 16935,
+        "arrived_members": 48000,
+        "ask_cost": 46740
+      },
+      "latency_seconds": {
+        "mean": 0.019191261331453973,
+        "p95": 0.047171091349719065,
+        "p99": 0.06128208457958857,
+        "max": 0.1732519590004813
+      },
+      "mean_coverage": 0.3528125,
+      "peak_request_bytes": 496256,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 689.3354509510236,
+      "exploratory_holm_p": 0.5170935942784989
+    },
+    "greedy": {
+      "primary": {
+        "n": 40,
+        "mean": 0.4125,
+        "sd": 0.20839742603853623,
+        "ci95": [
+          0.3458512697640954,
+          0.47914873023590454
+        ],
+        "p_two_sided": 3.0773217099265434e-15,
+        "standardized": 1.979391050270082
+      },
+      "paired": {
+        "n": 40,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided": null,
+        "standardized": null
+      },
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scenario_means": {
+        "development": 0.6,
+        "sparse": 0.15,
+        "cold_start": 0.4,
+        "delayed": 0.4125,
+        "shift": 0.3875,
+        "drift": 0.525
+      },
+      "totals": {
+        "assignments": 19037,
+        "mutual_acceptances": 2799,
+        "dates": 2199,
+        "mutual_second_meeting_intention": 198,
+        "served_members": 16955,
+        "arrived_members": 48000,
+        "ask_cost": 46740
+      },
+      "latency_seconds": {
+        "mean": 0.019154986912427382,
+        "p95": 0.04679453929988994,
+        "p99": 0.061740368339278554,
+        "max": 0.19513758399989456
+      },
+      "mean_coverage": 0.35322916666666665,
+      "peak_request_bytes": 497119,
+      "peak_memory_bytes": 2,
+      "wall_seconds_sum": 688.4824026209653
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "adopted_at_utc": "2026-10-08T06:04:36.023963+00:00",
+  "old_source": "research/extended_policy_development.py",
+  "old_sha256": "6cf508147f6cb5de51185e92c35bd25501c5c5737cc5db7e22b8f9f411509c60",
+  "new_sha256": "823794e0818b2c3c0ea61b37e89078c537f6c3117ee8bf0e036eab94b6e81891",
+  "change": "Production guard only; unchanged probability, learning, query and allocation objectives.",
+  "patch": "research/extended_safety.patch",
+  "stress_original": "results/extended/stress_container_original.json",
+  "stress_fixed": "results/extended/stress_container_safe.json"
+}

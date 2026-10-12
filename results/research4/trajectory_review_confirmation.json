@@ -1,0 +1,1772 @@
+{
+  "source": "results/research4/confirmation_mechanisms.json",
+  "source_sha256": "54d3d00bd2a5de87acc14790e840b6896816e8ad9425d35b47d08d3564cd448f",
+  "candidate": "population_control",
+  "control": "greedy",
+  "scope": "Post-C exploratory representative trajectory inspection. Common dyad+assignment-day outcomes share hashed simulator streams; changed dyads/days do not. Selection of extreme trajectories is descriptive and not causal mediation or independent evidence. No inference or fitting changes.",
+  "cluster_effect": 0.05654761904761905,
+  "leave_one_seed_out_range": [
+    0.04393939393939394,
+    0.06666666666666667
+  ],
+  "representatives": [
+    {
+      "direction": "largest_gain",
+      "cluster": {
+        "seed": 83003,
+        "qualified_per100": 0.75,
+        "conditional_terminal_per100": -0.03431235833914459,
+        "assignments": -6.166666666666667,
+        "both_respond": 0.16666666666666666,
+        "introduction_nonresponse": -6.333333333333333,
+        "responding_rejection": -3.3333333333333335,
+        "mutual": 3.5,
+        "dates": 2.5,
+        "cancelled": 1,
+        "second_nonresponse": 1.3333333333333333,
+        "second_negative": -0.3333333333333333,
+        "positive_pause": 1.5,
+        "busy_days": -12.166666666666666,
+        "late_date_positive": 0,
+        "late_feedback_positive": 0,
+        "overlap_deadlines": 0,
+        "deadline_disqualified": 0,
+        "qualified": 1.5,
+        "served_members": 0.16666666666666666,
+        "repeat_endpoint_assignments": -12.5,
+        "hard_bundles": 0,
+        "soft_queries": 0,
+        "early_assignments": -3.3333333333333335,
+        "late_assignments": -2.8333333333333335,
+        "goal_unknown_endpoint_at_assignment": -0.5,
+        "goal_known_endpoint_at_assignment": -11.833333333333334,
+        "new_goal_unknown_endpoint": 0.16666666666666666,
+        "new_goal_known_endpoint": 0,
+        "same_batch_hard_goal": 0
+      },
+      "families": [
+        {
+          "family": "development",
+          "candidate_counts": {
+            "assignments": 72,
+            "both_respond": 41,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 26,
+            "mutual": 15,
+            "dates": 11,
+            "cancelled": 4,
+            "second_nonresponse": 6,
+            "second_negative": 2,
+            "positive_pause": 3,
+            "busy_days": 740,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 2,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 77,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 62,
+            "late_assignments": 10,
+            "goal_unknown_endpoint_at_assignment": 65,
+            "goal_known_endpoint_at_assignment": 79,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 82,
+            "both_respond": 40,
+            "introduction_nonresponse": 42,
+            "responding_rejection": 29,
+            "mutual": 11,
+            "dates": 8,
+            "cancelled": 3,
+            "second_nonresponse": 3,
+            "second_negative": 4,
+            "positive_pause": 1,
+            "busy_days": 782,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 97,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 67,
+            "late_assignments": 15,
+            "goal_unknown_endpoint_at_assignment": 67,
+            "goal_known_endpoint_at_assignment": 97,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.30169674208640346,
+          "control_conditional_terminal_per100": 0.3643177851503445,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_development_83003.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_development_83003.json",
+          "candidate_assignments": 72,
+          "control_assignments": 82,
+          "common_dyad_day": 43,
+          "common_dyad_any_day": 71,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1",
+                  "syn_61f8ca1d4f6b7cfece271877c3f6ebe5"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_b91aa7c451b456937057a3b75919a498"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "sparse",
+          "candidate_counts": {
+            "assignments": 23,
+            "both_respond": 15,
+            "introduction_nonresponse": 8,
+            "responding_rejection": 12,
+            "mutual": 3,
+            "dates": 2,
+            "cancelled": 1,
+            "second_nonresponse": 1,
+            "second_negative": 1,
+            "positive_pause": 0,
+            "busy_days": 211,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 0,
+            "served_members": 36,
+            "repeat_endpoint_assignments": 10,
+            "hard_bundles": 58,
+            "soft_queries": 0,
+            "early_assignments": 23,
+            "late_assignments": 0,
+            "goal_unknown_endpoint_at_assignment": 15,
+            "goal_known_endpoint_at_assignment": 31,
+            "new_goal_unknown_endpoint": 11,
+            "new_goal_known_endpoint": 25,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 23,
+            "both_respond": 15,
+            "introduction_nonresponse": 8,
+            "responding_rejection": 12,
+            "mutual": 3,
+            "dates": 2,
+            "cancelled": 1,
+            "second_nonresponse": 1,
+            "second_negative": 1,
+            "positive_pause": 0,
+            "busy_days": 211,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 0,
+            "served_members": 36,
+            "repeat_endpoint_assignments": 10,
+            "hard_bundles": 58,
+            "soft_queries": 0,
+            "early_assignments": 23,
+            "late_assignments": 0,
+            "goal_unknown_endpoint_at_assignment": 15,
+            "goal_known_endpoint_at_assignment": 31,
+            "new_goal_unknown_endpoint": 11,
+            "new_goal_known_endpoint": 25,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.15580822444590178,
+          "control_conditional_terminal_per100": 0.15580822444590178,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_sparse_83003.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_sparse_83003.json",
+          "candidate_assignments": 23,
+          "control_assignments": 23,
+          "common_dyad_day": 23,
+          "common_dyad_any_day": 23,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_1ff6b9ed636a065be2331f3c5821b9af",
+                  "syn_32722520fb7ebf75380320f4bbc4efd8"
+                ],
+                [
+                  "syn_27a1c3786d360d06035922792cfbe423",
+                  "syn_605950d3c7aad08f64860e0b9a9cd5e9"
+                ],
+                [
+                  "syn_2c39f7f8acba8da290ed866508ebc8f9",
+                  "syn_c66fb608c543991942e5d713a5f0366b"
+                ],
+                [
+                  "syn_360669d373b954a3d81780c0830b4241",
+                  "syn_44f965f4fb7acd5ded4e4bbf105185fe"
+                ],
+                [
+                  "syn_5802115b50b0f6288f77244d575b5fe9",
+                  "syn_d602305b8c80f0615f22387d3f7eeabc"
+                ],
+                [
+                  "syn_8d1d03fcd8e1ed090191e85216bab5c0",
+                  "syn_bee01e075599cc4cc7ff3cf85aaa5cdc"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_1ff6b9ed636a065be2331f3c5821b9af",
+                  "syn_32722520fb7ebf75380320f4bbc4efd8"
+                ],
+                [
+                  "syn_360669d373b954a3d81780c0830b4241",
+                  "syn_44f965f4fb7acd5ded4e4bbf105185fe"
+                ],
+                [
+                  "syn_8d1d03fcd8e1ed090191e85216bab5c0",
+                  "syn_bee01e075599cc4cc7ff3cf85aaa5cdc"
+                ],
+                [
+                  "syn_2c39f7f8acba8da290ed866508ebc8f9",
+                  "syn_c66fb608c543991942e5d713a5f0366b"
+                ],
+                [
+                  "syn_27a1c3786d360d06035922792cfbe423",
+                  "syn_605950d3c7aad08f64860e0b9a9cd5e9"
+                ],
+                [
+                  "syn_5802115b50b0f6288f77244d575b5fe9",
+                  "syn_d602305b8c80f0615f22387d3f7eeabc"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "cold_start",
+          "candidate_counts": {
+            "assignments": 66,
+            "both_respond": 35,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 15,
+            "mutual": 20,
+            "dates": 16,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 9,
+            "positive_pause": 3,
+            "busy_days": 742,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 1,
+            "served_members": 61,
+            "repeat_endpoint_assignments": 71,
+            "hard_bundles": 83,
+            "soft_queries": 0,
+            "early_assignments": 48,
+            "late_assignments": 18,
+            "goal_unknown_endpoint_at_assignment": 72,
+            "goal_known_endpoint_at_assignment": 60,
+            "new_goal_unknown_endpoint": 33,
+            "new_goal_known_endpoint": 28,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 68,
+            "both_respond": 33,
+            "introduction_nonresponse": 35,
+            "responding_rejection": 18,
+            "mutual": 15,
+            "dates": 14,
+            "cancelled": 1,
+            "second_nonresponse": 5,
+            "second_negative": 7,
+            "positive_pause": 2,
+            "busy_days": 717,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 61,
+            "repeat_endpoint_assignments": 75,
+            "hard_bundles": 83,
+            "soft_queries": 0,
+            "early_assignments": 52,
+            "late_assignments": 16,
+            "goal_unknown_endpoint_at_assignment": 73,
+            "goal_known_endpoint_at_assignment": 63,
+            "new_goal_unknown_endpoint": 33,
+            "new_goal_known_endpoint": 28,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.30939425603932796,
+          "control_conditional_terminal_per100": 0.31596063791088447,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_cold_start_83003.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_cold_start_83003.json",
+          "candidate_assignments": 66,
+          "control_assignments": 68,
+          "common_dyad_day": 42,
+          "common_dyad_any_day": 61,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 11,
+              "candidate_action": [
+                [
+                  "syn_429f4e7e0d6dfc045bb425b323de308e",
+                  "syn_a6320dd230a57ae1e860777a6037478a"
+                ],
+                [
+                  "syn_4b62ed047431f2e286c15e635ae89876",
+                  "syn_a7da1200e11d78d8cb391e4180e5e250"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_a6320dd230a57ae1e860777a6037478a",
+                  "syn_d01f938ffd96d44737b0115027e18b23"
+                ],
+                [
+                  "syn_4b62ed047431f2e286c15e635ae89876",
+                  "syn_a7da1200e11d78d8cb391e4180e5e250"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "delayed",
+          "candidate_counts": {
+            "assignments": 64,
+            "both_respond": 35,
+            "introduction_nonresponse": 29,
+            "responding_rejection": 21,
+            "mutual": 14,
+            "dates": 11,
+            "cancelled": 3,
+            "second_nonresponse": 4,
+            "second_negative": 1,
+            "positive_pause": 6,
+            "busy_days": 783,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 4,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 61,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 61,
+            "late_assignments": 3,
+            "goal_unknown_endpoint_at_assignment": 56,
+            "goal_known_endpoint_at_assignment": 72,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 71,
+            "both_respond": 34,
+            "introduction_nonresponse": 37,
+            "responding_rejection": 25,
+            "mutual": 9,
+            "dates": 8,
+            "cancelled": 1,
+            "second_nonresponse": 2,
+            "second_negative": 1,
+            "positive_pause": 5,
+            "busy_days": 757,
+            "late_date_positive": 0,
+            "late_feedback_positive": 3,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 3,
+            "qualified": 2,
+            "served_members": 66,
+            "repeat_endpoint_assignments": 76,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 64,
+            "late_assignments": 7,
+            "goal_unknown_endpoint_at_assignment": 54,
+            "goal_known_endpoint_at_assignment": 88,
+            "new_goal_unknown_endpoint": 31,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.27243698632665286,
+          "control_conditional_terminal_per100": 0.3114078169594743,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_delayed_83003.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_delayed_83003.json",
+          "candidate_assignments": 64,
+          "control_assignments": 71,
+          "common_dyad_day": 40,
+          "common_dyad_any_day": 59,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1",
+                  "syn_61f8ca1d4f6b7cfece271877c3f6ebe5"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_b91aa7c451b456937057a3b75919a498"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "shift",
+          "candidate_counts": {
+            "assignments": 72,
+            "both_respond": 41,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 26,
+            "mutual": 15,
+            "dates": 13,
+            "cancelled": 2,
+            "second_nonresponse": 4,
+            "second_negative": 4,
+            "positive_pause": 5,
+            "busy_days": 729,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 4,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 77,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 66,
+            "late_assignments": 6,
+            "goal_unknown_endpoint_at_assignment": 65,
+            "goal_known_endpoint_at_assignment": 79,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 80,
+            "both_respond": 45,
+            "introduction_nonresponse": 35,
+            "responding_rejection": 33,
+            "mutual": 12,
+            "dates": 9,
+            "cancelled": 3,
+            "second_nonresponse": 3,
+            "second_negative": 4,
+            "positive_pause": 2,
+            "busy_days": 769,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 93,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 69,
+            "late_assignments": 11,
+            "goal_unknown_endpoint_at_assignment": 65,
+            "goal_known_endpoint_at_assignment": 95,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.2841770172891715,
+          "control_conditional_terminal_per100": 0.3304747163271154,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_shift_83003.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_shift_83003.json",
+          "candidate_assignments": 72,
+          "control_assignments": 80,
+          "common_dyad_day": 45,
+          "common_dyad_any_day": 68,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1",
+                  "syn_61f8ca1d4f6b7cfece271877c3f6ebe5"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_b91aa7c451b456937057a3b75919a498"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "drift",
+          "candidate_counts": {
+            "assignments": 72,
+            "both_respond": 41,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 26,
+            "mutual": 15,
+            "dates": 11,
+            "cancelled": 4,
+            "second_nonresponse": 6,
+            "second_negative": 2,
+            "positive_pause": 3,
+            "busy_days": 740,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 2,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 77,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 62,
+            "late_assignments": 10,
+            "goal_unknown_endpoint_at_assignment": 65,
+            "goal_known_endpoint_at_assignment": 79,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 82,
+            "both_respond": 40,
+            "introduction_nonresponse": 42,
+            "responding_rejection": 29,
+            "mutual": 11,
+            "dates": 8,
+            "cancelled": 3,
+            "second_nonresponse": 3,
+            "second_negative": 4,
+            "positive_pause": 1,
+            "busy_days": 782,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 97,
+            "hard_bundles": 65,
+            "soft_queries": 0,
+            "early_assignments": 67,
+            "late_assignments": 15,
+            "goal_unknown_endpoint_at_assignment": 67,
+            "goal_known_endpoint_at_assignment": 97,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.29304080433286156,
+          "control_conditional_terminal_per100": 0.3444589997614662,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_drift_83003.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_drift_83003.json",
+          "candidate_assignments": 72,
+          "control_assignments": 82,
+          "common_dyad_day": 43,
+          "common_dyad_any_day": 71,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_1f8b66bdc12c3af019a98fc1f8094b85",
+                  "syn_faa99511fc7e1422c2683908fba237d4"
+                ],
+                [
+                  "syn_5e4a0a0e16aa0d1ae776d2c5315ff0c1",
+                  "syn_61f8ca1d4f6b7cfece271877c3f6ebe5"
+                ],
+                [
+                  "syn_2c226e868313f06cfdd284602421f181",
+                  "syn_b91aa7c451b456937057a3b75919a498"
+                ],
+                [
+                  "syn_49ce9670695be2c8a5234b54d3200bcf",
+                  "syn_f9cb35a669da58eb594431db056cde9f"
+                ],
+                [
+                  "syn_c858d877ba97061cb1bd1d20b7a5c1fe",
+                  "syn_d9fc6d3c01ec2721c06b9aefef52bcf9"
+                ],
+                [
+                  "syn_10ed5ecdccd2d593d7e1ce74be155e97",
+                  "syn_79072e199bb0207a7c8572856dc240b0"
+                ],
+                [
+                  "syn_14d464bca7160a5ad3760185d0533bf2",
+                  "syn_360669d373b954a3d81780c0830b4241"
+                ],
+                [
+                  "syn_df9b06d8dc7d7fef3c6e3e415acef4c3",
+                  "syn_f72b69e485340e2b1eb9da0ee7cb437a"
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "direction": "largest_loss",
+      "cluster": {
+        "seed": 83040,
+        "qualified_per100": -0.5,
+        "conditional_terminal_per100": 0.004754926589692084,
+        "assignments": 2,
+        "both_respond": 1.3333333333333333,
+        "introduction_nonresponse": 0.6666666666666666,
+        "responding_rejection": 2.1666666666666665,
+        "mutual": -0.8333333333333334,
+        "dates": -0.6666666666666666,
+        "cancelled": -0.16666666666666666,
+        "second_nonresponse": -0.8333333333333334,
+        "second_negative": 0.8333333333333334,
+        "positive_pause": -0.6666666666666666,
+        "busy_days": 2,
+        "late_date_positive": 0,
+        "late_feedback_positive": 0.3333333333333333,
+        "overlap_deadlines": 0,
+        "deadline_disqualified": 0.3333333333333333,
+        "qualified": -1,
+        "served_members": 0.3333333333333333,
+        "repeat_endpoint_assignments": 3.6666666666666665,
+        "hard_bundles": 0,
+        "soft_queries": 0,
+        "early_assignments": 1.8333333333333333,
+        "late_assignments": 0.16666666666666666,
+        "goal_unknown_endpoint_at_assignment": 3,
+        "goal_known_endpoint_at_assignment": 1,
+        "new_goal_unknown_endpoint": 0.3333333333333333,
+        "new_goal_known_endpoint": 0,
+        "same_batch_hard_goal": 0
+      },
+      "families": [
+        {
+          "family": "development",
+          "candidate_counts": {
+            "assignments": 76,
+            "both_respond": 44,
+            "introduction_nonresponse": 32,
+            "responding_rejection": 36,
+            "mutual": 8,
+            "dates": 7,
+            "cancelled": 1,
+            "second_nonresponse": 2,
+            "second_negative": 3,
+            "positive_pause": 2,
+            "busy_days": 681,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 78,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 69,
+            "late_assignments": 7,
+            "goal_unknown_endpoint_at_assignment": 46,
+            "goal_known_endpoint_at_assignment": 106,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 72,
+            "both_respond": 41,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 32,
+            "mutual": 9,
+            "dates": 8,
+            "cancelled": 1,
+            "second_nonresponse": 3,
+            "second_negative": 2,
+            "positive_pause": 3,
+            "busy_days": 672,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 3,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 70,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 65,
+            "late_assignments": 7,
+            "goal_unknown_endpoint_at_assignment": 41,
+            "goal_known_endpoint_at_assignment": 103,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.40793753609048744,
+          "control_conditional_terminal_per100": 0.3827965178773389,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_development_83040.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_development_83040.json",
+          "candidate_assignments": 76,
+          "control_assignments": 72,
+          "common_dyad_day": 48,
+          "common_dyad_any_day": 71,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_3bc2322deaa568bbcc79fc3dd38cadac",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_ec7370845af8e43494b41a58c0fe9a5c"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "sparse",
+          "candidate_counts": {
+            "assignments": 23,
+            "both_respond": 11,
+            "introduction_nonresponse": 12,
+            "responding_rejection": 8,
+            "mutual": 3,
+            "dates": 2,
+            "cancelled": 1,
+            "second_nonresponse": 1,
+            "second_negative": 0,
+            "positive_pause": 1,
+            "busy_days": 212,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 29,
+            "repeat_endpoint_assignments": 17,
+            "hard_bundles": 59,
+            "soft_queries": 0,
+            "early_assignments": 20,
+            "late_assignments": 3,
+            "goal_unknown_endpoint_at_assignment": 18,
+            "goal_known_endpoint_at_assignment": 28,
+            "new_goal_unknown_endpoint": 11,
+            "new_goal_known_endpoint": 18,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 23,
+            "both_respond": 12,
+            "introduction_nonresponse": 11,
+            "responding_rejection": 10,
+            "mutual": 2,
+            "dates": 1,
+            "cancelled": 1,
+            "second_nonresponse": 0,
+            "second_negative": 0,
+            "positive_pause": 1,
+            "busy_days": 205,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 29,
+            "repeat_endpoint_assignments": 17,
+            "hard_bundles": 59,
+            "soft_queries": 0,
+            "early_assignments": 21,
+            "late_assignments": 2,
+            "goal_unknown_endpoint_at_assignment": 18,
+            "goal_known_endpoint_at_assignment": 28,
+            "new_goal_unknown_endpoint": 11,
+            "new_goal_known_endpoint": 18,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.10066821822764682,
+          "control_conditional_terminal_per100": 0.10066821822764682,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_sparse_83040.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_sparse_83040.json",
+          "candidate_assignments": 23,
+          "control_assignments": 23,
+          "common_dyad_day": 18,
+          "common_dyad_any_day": 23,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 13,
+              "candidate_action": [
+                [
+                  "syn_1bb55fd83ab40eae5411c13da7d9bdc5",
+                  "syn_7d8474b350118b23c729e1da24f3fe33"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_1bb55fd83ab40eae5411c13da7d9bdc5",
+                  "syn_3dba6c64037121f2f023bb7e9e47bb50"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "cold_start",
+          "candidate_counts": {
+            "assignments": 85,
+            "both_respond": 48,
+            "introduction_nonresponse": 37,
+            "responding_rejection": 34,
+            "mutual": 14,
+            "dates": 10,
+            "cancelled": 4,
+            "second_nonresponse": 1,
+            "second_negative": 7,
+            "positive_pause": 2,
+            "busy_days": 867,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 69,
+            "repeat_endpoint_assignments": 101,
+            "hard_bundles": 82,
+            "soft_queries": 0,
+            "early_assignments": 65,
+            "late_assignments": 20,
+            "goal_unknown_endpoint_at_assignment": 79,
+            "goal_known_endpoint_at_assignment": 91,
+            "new_goal_unknown_endpoint": 34,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 86,
+            "both_respond": 50,
+            "introduction_nonresponse": 36,
+            "responding_rejection": 34,
+            "mutual": 16,
+            "dates": 12,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 6,
+            "positive_pause": 2,
+            "busy_days": 846,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 67,
+            "repeat_endpoint_assignments": 105,
+            "hard_bundles": 82,
+            "soft_queries": 0,
+            "early_assignments": 65,
+            "late_assignments": 21,
+            "goal_unknown_endpoint_at_assignment": 78,
+            "goal_known_endpoint_at_assignment": 94,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 35,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.5268429300466115,
+          "control_conditional_terminal_per100": 0.5714842008999734,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_cold_start_83040.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_cold_start_83040.json",
+          "candidate_assignments": 85,
+          "control_assignments": 86,
+          "common_dyad_day": 31,
+          "common_dyad_any_day": 79,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_0f2e2ff21fcdcbe39cf7afecef17d183",
+                  "syn_253db831fff04bb29ff62c0a6c0a02af"
+                ],
+                [
+                  "syn_13c21c4088d6220e6955cb9c82bb6caf",
+                  "syn_47e08e8aee3f4caca60ceb2aecb5a0fc"
+                ],
+                [
+                  "syn_3bc2322deaa568bbcc79fc3dd38cadac",
+                  "syn_9d281414e4ef0ec925539e0b5a4f349d"
+                ],
+                [
+                  "syn_542e5006c3a24eaa624769cc3b1a327a",
+                  "syn_8331a698405762374bac46910719be25"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_dde5a5302ac237d6429822755c2cdc6f"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_47e08e8aee3f4caca60ceb2aecb5a0fc",
+                  "syn_4a92dfb7023cca895df9dd19875fb6b3"
+                ],
+                [
+                  "syn_7b2e3734ab8ef612c739fe6067d7cab5",
+                  "syn_8331a698405762374bac46910719be25"
+                ],
+                [
+                  "syn_253db831fff04bb29ff62c0a6c0a02af",
+                  "syn_9d281414e4ef0ec925539e0b5a4f349d"
+                ],
+                [
+                  "syn_13c21c4088d6220e6955cb9c82bb6caf",
+                  "syn_542e5006c3a24eaa624769cc3b1a327a"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_dde5a5302ac237d6429822755c2cdc6f"
+                ],
+                [
+                  "syn_0f2e2ff21fcdcbe39cf7afecef17d183",
+                  "syn_27c0bdacd89b91aa24d2e7a306063cc4"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "delayed",
+          "candidate_counts": {
+            "assignments": 77,
+            "both_respond": 46,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 37,
+            "mutual": 9,
+            "dates": 7,
+            "cancelled": 2,
+            "second_nonresponse": 5,
+            "second_negative": 2,
+            "positive_pause": 0,
+            "busy_days": 775,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 0,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 80,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 70,
+            "late_assignments": 7,
+            "goal_unknown_endpoint_at_assignment": 46,
+            "goal_known_endpoint_at_assignment": 108,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 76,
+            "both_respond": 45,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 34,
+            "mutual": 11,
+            "dates": 8,
+            "cancelled": 3,
+            "second_nonresponse": 5,
+            "second_negative": 1,
+            "positive_pause": 2,
+            "busy_days": 827,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 78,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 66,
+            "late_assignments": 10,
+            "goal_unknown_endpoint_at_assignment": 44,
+            "goal_known_endpoint_at_assignment": 108,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.39798327867471434,
+          "control_conditional_terminal_per100": 0.3858811114711885,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_delayed_83040.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_delayed_83040.json",
+          "candidate_assignments": 77,
+          "control_assignments": 76,
+          "common_dyad_day": 48,
+          "common_dyad_any_day": 73,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_3bc2322deaa568bbcc79fc3dd38cadac",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_ec7370845af8e43494b41a58c0fe9a5c"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "shift",
+          "candidate_counts": {
+            "assignments": 76,
+            "both_respond": 42,
+            "introduction_nonresponse": 34,
+            "responding_rejection": 34,
+            "mutual": 8,
+            "dates": 7,
+            "cancelled": 1,
+            "second_nonresponse": 3,
+            "second_negative": 2,
+            "positive_pause": 2,
+            "busy_days": 686,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 78,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 67,
+            "late_assignments": 9,
+            "goal_unknown_endpoint_at_assignment": 46,
+            "goal_known_endpoint_at_assignment": 106,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 72,
+            "both_respond": 38,
+            "introduction_nonresponse": 34,
+            "responding_rejection": 30,
+            "mutual": 8,
+            "dates": 7,
+            "cancelled": 1,
+            "second_nonresponse": 4,
+            "second_negative": 1,
+            "positive_pause": 2,
+            "busy_days": 668,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 2,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 70,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 67,
+            "late_assignments": 5,
+            "goal_unknown_endpoint_at_assignment": 41,
+            "goal_known_endpoint_at_assignment": 103,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.37226110025388187,
+          "control_conditional_terminal_per100": 0.3552799165540341,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_shift_83040.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_shift_83040.json",
+          "candidate_assignments": 76,
+          "control_assignments": 72,
+          "common_dyad_day": 45,
+          "common_dyad_any_day": 71,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_3bc2322deaa568bbcc79fc3dd38cadac",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_ec7370845af8e43494b41a58c0fe9a5c"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "drift",
+          "candidate_counts": {
+            "assignments": 76,
+            "both_respond": 44,
+            "introduction_nonresponse": 32,
+            "responding_rejection": 36,
+            "mutual": 8,
+            "dates": 7,
+            "cancelled": 1,
+            "second_nonresponse": 2,
+            "second_negative": 3,
+            "positive_pause": 2,
+            "busy_days": 681,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 78,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 69,
+            "late_assignments": 7,
+            "goal_unknown_endpoint_at_assignment": 46,
+            "goal_known_endpoint_at_assignment": 106,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 72,
+            "both_respond": 41,
+            "introduction_nonresponse": 31,
+            "responding_rejection": 32,
+            "mutual": 9,
+            "dates": 8,
+            "cancelled": 1,
+            "second_nonresponse": 3,
+            "second_negative": 2,
+            "positive_pause": 3,
+            "busy_days": 672,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 3,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 70,
+            "hard_bundles": 53,
+            "soft_queries": 0,
+            "early_assignments": 65,
+            "late_assignments": 7,
+            "goal_unknown_endpoint_at_assignment": 41,
+            "goal_known_endpoint_at_assignment": 103,
+            "new_goal_unknown_endpoint": 21,
+            "new_goal_known_endpoint": 53,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.3943412903345797,
+          "control_conditional_terminal_per100": 0.37539482905958743,
+          "candidate_trace": "results/research4/confirmation_traces/population_control_drift_83040.json",
+          "control_trace": "results/research4/confirmation_traces/greedy_drift_83040.json",
+          "candidate_assignments": 76,
+          "control_assignments": 72,
+          "common_dyad_day": 48,
+          "common_dyad_any_day": 71,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": null,
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_3bc2322deaa568bbcc79fc3dd38cadac",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_ec7370845af8e43494b41a58c0fe9a5c"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_bfbf08e820151b8ba75e527fe0ea1195",
+                  "syn_d2f3e80e26c517da4684ea7fa857a313"
+                ],
+                [
+                  "syn_1589ae1d5c3d6f396a59a1d7e24b79fe",
+                  "syn_2296443a73e2db8dc5de148c9961dc1e"
+                ],
+                [
+                  "syn_688b27ea12cbf9881bca33ff2f237053",
+                  "syn_7c9e853ef36988b08860da6e88f89870"
+                ],
+                [
+                  "syn_c6f073ce67fa3abf6afa8769e7d07dbd",
+                  "syn_ce274359722d05a8e617efb2a53b83fa"
+                ],
+                [
+                  "syn_3a237cc37aef42ac42720d6f2c3e4282",
+                  "syn_f7544bb110e814fec56a50b921b01a26"
+                ],
+                [
+                  "syn_4143c5c53d6e0e7887f04d54da581145",
+                  "syn_e624685ab1bb292aeae59f895b99bf8c"
+                ],
+                [
+                  "syn_5500daea1b99e27d0647ecc47fd45c9a",
+                  "syn_b2cd76142e962d41effd9751a8f8916d"
+                ],
+                [
+                  "syn_47afed6fac4c164fe3c9183bd93c7b1e",
+                  "syn_5f0298d775052ca424e4aa34be94d0a0"
+                ],
+                [
+                  "syn_2f46adcaea19c40fe6c581f25e74343a",
+                  "syn_71177e391280424750576c582940c2f5"
+                ],
+                [
+                  "syn_649312256ed2dbae3ac547c01c6f3221",
+                  "syn_cd1d7f46bbfdb4898e567bdcfcacc3f1"
+                ],
+                [
+                  "syn_2eeeaf701f507694b8cf910837e8ba16",
+                  "syn_ed83226c07416716fde718bafa94014e"
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

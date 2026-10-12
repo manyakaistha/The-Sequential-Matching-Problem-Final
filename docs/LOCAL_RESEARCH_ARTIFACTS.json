@@ -1,0 +1,645 @@
+[
+  {
+    "path": "results/research3/confirmation_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research3/focus_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research3/selection_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research3/smoke_all_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research3/screen_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research3/smoke_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research3/smoke_all_traces.tar.gz",
+    "bytes": 526198,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research3/smoke_traces.tar.gz",
+    "bytes": 41884,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research3/focus_traces.tar.gz",
+    "bytes": 37180083,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research3/confirmation_traces.tar.gz",
+    "bytes": 14314419,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research3/selection_traces.tar.gz",
+    "bytes": 12779273,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research3/screen_traces.tar.gz",
+    "bytes": 25730373,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research4/confirmation_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research4/focus_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research4/selection_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research4/screen_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research4/smoke_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research4/smoke_traces.tar.gz",
+    "bytes": 251156,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research4/focus_traces.tar.gz",
+    "bytes": 234727768,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research4/confirmation_traces.tar.gz",
+    "bytes": 398717114,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research4/selection_traces.tar.gz",
+    "bytes": 142829270,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research4/screen_traces.tar.gz",
+    "bytes": 95387223,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research5/preparation_v1/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research5/confirmation_traces/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research5/confirmation_traces_full/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research5/interrupted_runs/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research5/raw_full_logs.tar",
+    "bytes": 28249620480,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research5/raw_population_control.tar.gz",
+    "bytes": 96050915,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research5/raw_greedy.tar.gz",
+    "bytes": 6351568515,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research6/production_smoke_context/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_b_screen/commits/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_b_screen/attempts/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_b_screen/events.jsonl",
+    "bytes": 1256349,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research6/smoke_G101/commits/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/smoke_G101/attempts/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/smoke_G101/events.jsonl",
+    "bytes": 1353,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research6/stage_e_confirmation/commits/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_e_confirmation/attempts/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_e_confirmation/events.jsonl",
+    "bytes": 6067166,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research6/stage_c_replication/commits/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_c_replication/attempts/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_c_replication/events.jsonl",
+    "bytes": 1593549,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research6/stage_d_selection/commits/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_d_selection/attempts/",
+    "reason": "raw execution artifacts or generated context"
+  },
+  {
+    "path": "results/research6/stage_d_selection/events.jsonl",
+    "bytes": 1688011,
+    "reason": "raw archive, execution event stream, or large generated evidence"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_sparse_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_cold_start_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_delayed_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_cold_start_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_N3_two_cold_start_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_N3_two_delayed_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_delayed_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_cold_start_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_delayed_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_delayed_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_delayed_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_cold_start_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_delayed_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_delayed_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_cold_start_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_cold_start_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_delayed_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_delayed_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_cold_start_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_sparse_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_sparse_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_shift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_shift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_development_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_G_cold_start_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_development_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_sparse_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_N3_two_sparse_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_sparse_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_drift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_drift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_development_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_sparse_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_shift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_delayed_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_sparse_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_cold_start_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_drift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_G_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_sparse_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_G_delayed_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_shift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_shift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_drift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_shift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_drift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_G_sparse_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_drift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_N3_two_shift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_cold_start_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_sparse_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_cold_start_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_delayed_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_delayed_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_cold_start_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_delayed_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_cold_start_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_cold_start_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_sparse_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_sparse_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_N3_two_drift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_drift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_G_drift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_sparse_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_drift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_drift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_sparse_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_drift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_development_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_N3_two_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_shift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_shift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_development_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_development_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_drift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_drift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_sparse_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_shift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/cont_G_shift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_shift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_sparse_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_N3_two_shift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_shift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_development_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_delayed_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_development_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_shift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_drift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_drift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_cold_start_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_development_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_cold_start_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_sparse_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_shift_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_delayed_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_delayed_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_development_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_shift_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_development_140003/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_development_140004/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_G_cold_start_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/direct_G_drift_140002/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_drift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/production_verification/sub_N3_two_shift_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/replays/sub_N3_two_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/replays/direct_G_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  },
+  {
+    "path": "results/research6/replays/cont_N3_two_development_140001/",
+    "reason": "raw episode replay or production verification trace"
+  }
+]

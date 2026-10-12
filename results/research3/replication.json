@@ -1,0 +1,737 @@
+{
+  "runs": [
+    {
+      "command": [
+        "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research3/independent_replicator.py",
+        "--policies",
+        "greedy,clean",
+        "--seeds",
+        "101",
+        "--variants",
+        "development",
+        "--reference",
+        "results/research3/smoke.json"
+      ],
+      "scope": "independent loop and public-event scoring; single-worker replay, no new unregistered seeds",
+      "episodes": [
+        {
+          "policy": "greedy",
+          "seed": 101,
+          "variant": "development",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 108,
+            "mutual_acceptances": 18,
+            "dates": 15,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 4,
+            "arrived_members": 200,
+            "served_members": 92,
+            "coverage": 0.46,
+            "ask_cost": 198,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "465bbda17b6a7ddbde9d2241dcee43887b3ee8194f93846372e228299102ff1a",
+          "semantic_action_sha256": "bc881042599151147738d43ed86507eef3032a2660f1b633a1f06adcc763f095",
+          "fallback_count": 0,
+          "cpu_seconds": 2.4173839999999998,
+          "wall_seconds": 2.435815165999884,
+          "max_call_seconds": 0.041029417000117974,
+          "invocations": 120,
+          "reference": "results/research3/smoke.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "clean",
+          "seed": 101,
+          "variant": "development",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 109,
+            "mutual_acceptances": 16,
+            "dates": 15,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 4,
+            "arrived_members": 200,
+            "served_members": 92,
+            "coverage": 0.46,
+            "ask_cost": 198,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "4898ee5eeffd134c73b7ea85a6b329698fc25e4747a473cc61b7d4136951db94",
+          "semantic_action_sha256": "e046dd6742da7fa8227229089a91b5c2ff383d6306a346a3f6e4e52c46de8cb5",
+          "fallback_count": 0,
+          "cpu_seconds": 2.4074470000000003,
+          "wall_seconds": 2.419112459000189,
+          "max_call_seconds": 0.03632783400007611,
+          "invocations": 120,
+          "reference": "results/research3/smoke.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        }
+      ],
+      "source_hashes": {
+        "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+        "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+        "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+        "research3/independent_replicator.py": "995c4aad3fe6abd09ae998f764c9f364439ce21b040b8ee1361741328f8c3435"
+      }
+    },
+    {
+      "command": [
+        "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research3/independent_replicator.py",
+        "--policies",
+        "greedy,clean",
+        "--seeds",
+        "101",
+        "--variants",
+        "development",
+        "--mode",
+        "subprocess",
+        "--reference",
+        "results/research3/smoke.json"
+      ],
+      "scope": "independent loop and public-event scoring; single-worker replay, no new unregistered seeds",
+      "episodes": [
+        {
+          "policy": "greedy",
+          "seed": 101,
+          "variant": "development",
+          "execution": "subprocess",
+          "valid": true,
+          "metrics": {
+            "assignments": 108,
+            "mutual_acceptances": 18,
+            "dates": 15,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 4,
+            "arrived_members": 200,
+            "served_members": 92,
+            "coverage": 0.46,
+            "ask_cost": 198,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "465bbda17b6a7ddbde9d2241dcee43887b3ee8194f93846372e228299102ff1a",
+          "semantic_action_sha256": "bc881042599151147738d43ed86507eef3032a2660f1b633a1f06adcc763f095",
+          "fallback_count": 0,
+          "cpu_seconds": 0.882592,
+          "wall_seconds": 7.419472334000147,
+          "max_call_seconds": 0.0857026250000672,
+          "invocations": 120,
+          "reference": "results/research3/smoke.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "clean",
+          "seed": 101,
+          "variant": "development",
+          "execution": "subprocess",
+          "valid": true,
+          "metrics": {
+            "assignments": 109,
+            "mutual_acceptances": 16,
+            "dates": 15,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 4,
+            "arrived_members": 200,
+            "served_members": 92,
+            "coverage": 0.46,
+            "ask_cost": 198,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "4898ee5eeffd134c73b7ea85a6b329698fc25e4747a473cc61b7d4136951db94",
+          "semantic_action_sha256": "e046dd6742da7fa8227229089a91b5c2ff383d6306a346a3f6e4e52c46de8cb5",
+          "fallback_count": 0,
+          "cpu_seconds": 0.901487,
+          "wall_seconds": 7.4873150420003185,
+          "max_call_seconds": 0.09464170799992644,
+          "invocations": 120,
+          "reference": "results/research3/smoke.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        }
+      ],
+      "source_hashes": {
+        "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+        "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+        "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+        "research3/independent_replicator.py": "995c4aad3fe6abd09ae998f764c9f364439ce21b040b8ee1361741328f8c3435"
+      }
+    },
+    {
+      "scope": "Independent completed B cluster reconstruction; no new simulation",
+      "independent_statistics": {
+        "source": "results/research3/screen.json",
+        "clusters": {
+          "canonical": {
+            "n": 12,
+            "mean": 0.3333333333333333,
+            "paired_difference": -0.020833333333333343,
+            "paired_sd": 0.08044227493028522,
+            "ci95": [
+              -0.071943916403954,
+              0.03027724973728732
+            ],
+            "p_two_sided": 0.38885232814171333
+          },
+          "clean": {
+            "n": 12,
+            "mean": 0.3402777777777778,
+            "paired_difference": -0.013888888888888886,
+            "paired_sd": 0.18406648630446384,
+            "ci95": [
+              -0.13083915474020552,
+              0.10306137696242774
+            ],
+            "p_two_sided": 0.7986237432936535
+          },
+          "four_queries": {
+            "n": 12,
+            "mean": 0.4166666666666667,
+            "paired_difference": 0.0625,
+            "paired_sd": 0.16713948085538036,
+            "ci95": [
+              -0.04369535969168843,
+              0.16869535969168842
+            ],
+            "p_two_sided": 0.22171982464270662
+          },
+          "goal": {
+            "n": 12,
+            "mean": 0.4027777777777778,
+            "paired_difference": 0.04861111111111111,
+            "paired_sd": 0.18619777870482987,
+            "ci95": [
+              -0.06969331332623624,
+              0.16691553554845848
+            ],
+            "p_two_sided": 0.38517216392713083
+          },
+          "goal_queries": {
+            "n": 12,
+            "mean": 0.4513888888888889,
+            "paired_difference": 0.09722222222222221,
+            "paired_sd": 0.21270662364888343,
+            "ci95": [
+              -0.03792511873872487,
+              0.2323695631831693
+            ],
+            "p_two_sided": 0.14164974107832498
+          },
+          "greedy": {
+            "n": 12,
+            "mean": 0.3541666666666667,
+            "paired_difference": 0.0,
+            "paired_sd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "p_two_sided": null
+          },
+          "offline": {
+            "n": 12,
+            "mean": 0.4722222222222222,
+            "paired_difference": 0.11805555555555555,
+            "paired_sd": 0.13035660749591912,
+            "ci95": [
+              0.03523091860939051,
+              0.2008801925017206
+            ],
+            "p_two_sided": 0.009455267750363166
+          },
+          "population": {
+            "n": 12,
+            "mean": 0.3611111111111111,
+            "paired_difference": 0.00694444444444444,
+            "paired_sd": 0.16460211182987664,
+            "ci95": [
+              -0.09763874788286725,
+              0.11152763677175612
+            ],
+            "p_two_sided": 0.8864484834127584
+          },
+          "public_weight": {
+            "n": 12,
+            "mean": 0.4097222222222222,
+            "paired_difference": 0.055555555555555546,
+            "paired_sd": 0.16412198797244362,
+            "ci95": [
+              -0.04872258062657895,
+              0.15983369173769005
+            ],
+            "p_two_sided": 0.265723211497773
+          },
+          "random_order": {
+            "n": 12,
+            "mean": 0.4444444444444445,
+            "paired_difference": 0.09027777777777778,
+            "paired_sd": 0.20553678592984367,
+            "ci95": [
+              -0.0403140656334116,
+              0.22086962118896714
+            ],
+            "p_two_sided": 0.1563388794864606
+          },
+          "response": {
+            "n": 12,
+            "mean": 0.4027777777777778,
+            "paired_difference": 0.048611111111111105,
+            "paired_sd": 0.14847003121286856,
+            "ci95": [
+              -0.04572224619857948,
+              0.1429444684208017
+            ],
+            "p_two_sided": 0.2808256611411012
+          },
+          "scarce": {
+            "n": 12,
+            "mean": 0.4236111111111111,
+            "paired_difference": 0.06944444444444445,
+            "paired_sd": 0.1457882325642531,
+            "ci95": [
+              -0.023184979296391614,
+              0.16207386818528052
+            ],
+            "p_two_sided": 0.12715968790489904
+          },
+          "throughput": {
+            "n": 12,
+            "mean": 0.3611111111111111,
+            "paired_difference": 0.00694444444444444,
+            "paired_sd": 0.16460211182987664,
+            "ci95": [
+              -0.09763874788286725,
+              0.11152763677175612
+            ],
+            "p_two_sided": 0.8864484834127584
+          }
+        },
+        "method": "independent six-family seed average and paired t; no director analysis imports"
+      },
+      "all_director_means_effects_cis_match": true
+    },
+    {
+      "command": [
+        "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research3/independent_replicator.py",
+        "--policies",
+        "offline",
+        "--seeds",
+        "71001,71002",
+        "--variants",
+        "all",
+        "--reference",
+        "results/research3/focus.json"
+      ],
+      "scope": "independent loop and public-event scoring; single-worker replay, no new unregistered seeds",
+      "episodes": [
+        {
+          "policy": "offline",
+          "seed": 71001,
+          "variant": "development",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 75,
+            "mutual_acceptances": 16,
+            "dates": 12,
+            "mutual_second_meeting_intention": 2,
+            "positive_pause_dyads": 3,
+            "arrived_members": 200,
+            "served_members": 69,
+            "coverage": 0.345,
+            "ask_cost": 177,
+            "msmi_per_100_arrived_members": 1.0
+          },
+          "action_sha256": "27c8214368510e0dcdae6d2a855b56a3afecd307b9b5b6d95c6f4db691885dcb",
+          "semantic_action_sha256": "53d1f0cef74e84732f2de968dd78d7f6d31f729a404711714079128ed4b12c06",
+          "fallback_count": 0,
+          "cpu_seconds": 2.527105,
+          "wall_seconds": 2.561573999999382,
+          "max_call_seconds": 0.050078957999176055,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71001,
+          "variant": "sparse",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 26,
+            "mutual_acceptances": 3,
+            "dates": 3,
+            "mutual_second_meeting_intention": 0,
+            "positive_pause_dyads": 1,
+            "arrived_members": 200,
+            "served_members": 40,
+            "coverage": 0.2,
+            "ask_cost": 177,
+            "msmi_per_100_arrived_members": 0.0
+          },
+          "action_sha256": "04159907fdcb5c96cb11c92812f0d1e167bb05e28c358f7625f143e9c82a380c",
+          "semantic_action_sha256": "4da1213121eefaa8897c20d9c85be700638a0407186eb7184201ce705658b797",
+          "fallback_count": 0,
+          "cpu_seconds": 2.694448,
+          "wall_seconds": 2.7032896250002523,
+          "max_call_seconds": 0.04381737499988958,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71001,
+          "variant": "cold_start",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 57,
+            "mutual_acceptances": 4,
+            "dates": 4,
+            "mutual_second_meeting_intention": 0,
+            "positive_pause_dyads": 0,
+            "arrived_members": 200,
+            "served_members": 61,
+            "coverage": 0.305,
+            "ask_cost": 243,
+            "msmi_per_100_arrived_members": 0.0
+          },
+          "action_sha256": "66cedaf6dab40e863b2e6eb3f72f60c6c11549753c9fce3bee40b7606c0b9f0a",
+          "semantic_action_sha256": "048496397950eb4b368da224273b781ed6591c9707ee020a42a6cb8325eefc1a",
+          "fallback_count": 0,
+          "cpu_seconds": 2.5530859999999995,
+          "wall_seconds": 2.568580916999963,
+          "max_call_seconds": 0.04851633300040703,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71001,
+          "variant": "delayed",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 72,
+            "mutual_acceptances": 18,
+            "dates": 15,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 1,
+            "arrived_members": 200,
+            "served_members": 71,
+            "coverage": 0.355,
+            "ask_cost": 177,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "b4db6a454f085f3bfd715a6a99698be753ea3aeba74364b8c36b4e228f27c3e0",
+          "semantic_action_sha256": "32e671ca3212aa9b8a5047ef2b4d9709703e241e71bc9cda234cd407c13962ed",
+          "fallback_count": 0,
+          "cpu_seconds": 2.423609000000001,
+          "wall_seconds": 2.431077249999362,
+          "max_call_seconds": 0.03617595900050219,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71001,
+          "variant": "shift",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 75,
+            "mutual_acceptances": 17,
+            "dates": 13,
+            "mutual_second_meeting_intention": 2,
+            "positive_pause_dyads": 3,
+            "arrived_members": 200,
+            "served_members": 69,
+            "coverage": 0.345,
+            "ask_cost": 177,
+            "msmi_per_100_arrived_members": 1.0
+          },
+          "action_sha256": "b0b6c7762c8197ff2f5f23fcb3157300535dc9e791c856b03f6902a72c6d3731",
+          "semantic_action_sha256": "625b0b875a2e372a405bd97e4fcebc41637dca59a60f3894a221b7dd43379b59",
+          "fallback_count": 0,
+          "cpu_seconds": 2.494720000000001,
+          "wall_seconds": 2.5214929159992607,
+          "max_call_seconds": 0.03608387500025856,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71001,
+          "variant": "drift",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 75,
+            "mutual_acceptances": 16,
+            "dates": 12,
+            "mutual_second_meeting_intention": 2,
+            "positive_pause_dyads": 3,
+            "arrived_members": 200,
+            "served_members": 69,
+            "coverage": 0.345,
+            "ask_cost": 177,
+            "msmi_per_100_arrived_members": 1.0
+          },
+          "action_sha256": "27c8214368510e0dcdae6d2a855b56a3afecd307b9b5b6d95c6f4db691885dcb",
+          "semantic_action_sha256": "53d1f0cef74e84732f2de968dd78d7f6d31f729a404711714079128ed4b12c06",
+          "fallback_count": 0,
+          "cpu_seconds": 2.486419999999999,
+          "wall_seconds": 2.4942946250002933,
+          "max_call_seconds": 0.03584791699995549,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71002,
+          "variant": "development",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 113,
+            "mutual_acceptances": 13,
+            "dates": 11,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 4,
+            "arrived_members": 200,
+            "served_members": 91,
+            "coverage": 0.455,
+            "ask_cost": 189,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "a5f39c566ba41877d551e8a667cd1caed6a48b8ac6f9039df2d0e168c4458e7e",
+          "semantic_action_sha256": "c2c91fada485f7336dc94f522b624989e3cb7886f1941d0883942a29d63bc894",
+          "fallback_count": 0,
+          "cpu_seconds": 2.338100999999998,
+          "wall_seconds": 2.345202667000194,
+          "max_call_seconds": 0.03294604199982132,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71002,
+          "variant": "sparse",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 30,
+            "mutual_acceptances": 1,
+            "dates": 1,
+            "mutual_second_meeting_intention": 0,
+            "positive_pause_dyads": 0,
+            "arrived_members": 200,
+            "served_members": 40,
+            "coverage": 0.2,
+            "ask_cost": 177,
+            "msmi_per_100_arrived_members": 0.0
+          },
+          "action_sha256": "7160662dc71d5292dd61b1aa41cc039b281808cdc28dd460ff291f7978a7abc2",
+          "semantic_action_sha256": "5dd44d196a8a59ac770c1429306832afd02638300b82382f029b8930b8fc0b1a",
+          "fallback_count": 0,
+          "cpu_seconds": 2.640688000000001,
+          "wall_seconds": 2.6629208330004985,
+          "max_call_seconds": 0.04983700000047975,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71002,
+          "variant": "cold_start",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 67,
+            "mutual_acceptances": 12,
+            "dates": 11,
+            "mutual_second_meeting_intention": 0,
+            "positive_pause_dyads": 0,
+            "arrived_members": 200,
+            "served_members": 61,
+            "coverage": 0.305,
+            "ask_cost": 228,
+            "msmi_per_100_arrived_members": 0.0
+          },
+          "action_sha256": "a1c5ca22264678c935bb88257dc18e4f8f86d5c6510a9dc5a64628319d72ccd7",
+          "semantic_action_sha256": "41dfc5521decac86c0131007dabf07cc9ac37a89c04fd379c041d2e9edefc203",
+          "fallback_count": 0,
+          "cpu_seconds": 2.636661,
+          "wall_seconds": 2.6457939590000024,
+          "max_call_seconds": 0.039704166999399604,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71002,
+          "variant": "delayed",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 115,
+            "mutual_acceptances": 17,
+            "dates": 14,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 2,
+            "arrived_members": 200,
+            "served_members": 91,
+            "coverage": 0.455,
+            "ask_cost": 189,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "1ae71429aa946ce833ac22a21d3db49239abbf85a2561a4e7cb1652c1c85f7fd",
+          "semantic_action_sha256": "f12126756e0668ae0875a15341b0b30e34993cec7c7d46d131b80bbf6449e7da",
+          "fallback_count": 0,
+          "cpu_seconds": 2.2559780000000025,
+          "wall_seconds": 2.2652572080005484,
+          "max_call_seconds": 0.032712582999920414,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71002,
+          "variant": "shift",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 95,
+            "mutual_acceptances": 18,
+            "dates": 17,
+            "mutual_second_meeting_intention": 2,
+            "positive_pause_dyads": 7,
+            "arrived_members": 200,
+            "served_members": 89,
+            "coverage": 0.445,
+            "ask_cost": 189,
+            "msmi_per_100_arrived_members": 1.0
+          },
+          "action_sha256": "7a72cdc0de4cf2667db25d8eaf97b9bc533727655de5d27690bd93b6f7e89cc7",
+          "semantic_action_sha256": "1bd758b58ed52f855ff0f0bdeea477f1b0ead7ec4841b27c4ec8ca0ff231476d",
+          "fallback_count": 0,
+          "cpu_seconds": 2.3517340000000004,
+          "wall_seconds": 2.371378791999632,
+          "max_call_seconds": 0.0564152090000789,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        },
+        {
+          "policy": "offline",
+          "seed": 71002,
+          "variant": "drift",
+          "execution": "direct",
+          "valid": true,
+          "metrics": {
+            "assignments": 113,
+            "mutual_acceptances": 12,
+            "dates": 10,
+            "mutual_second_meeting_intention": 1,
+            "positive_pause_dyads": 3,
+            "arrived_members": 200,
+            "served_members": 91,
+            "coverage": 0.455,
+            "ask_cost": 189,
+            "msmi_per_100_arrived_members": 0.5
+          },
+          "action_sha256": "a5f39c566ba41877d551e8a667cd1caed6a48b8ac6f9039df2d0e168c4458e7e",
+          "semantic_action_sha256": "c2c91fada485f7336dc94f522b624989e3cb7886f1941d0883942a29d63bc894",
+          "fallback_count": 0,
+          "cpu_seconds": 2.343638000000002,
+          "wall_seconds": 2.351611041999604,
+          "max_call_seconds": 0.03284616700057086,
+          "invocations": 120,
+          "reference": "results/research3/focus.json",
+          "metric_differences": {},
+          "byte_digest_match": true,
+          "semantic_digest_match": true,
+          "ordered_actions_equal": true,
+          "semantic_actions_equal": true
+        }
+      ],
+      "source_hashes": {
+        "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+        "research3/policy.py": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+        "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+        "research3/independent_replicator.py": "995c4aad3fe6abd09ae998f764c9f364439ce21b040b8ee1361741328f8c3435"
+      }
+    }
+  ]
+}

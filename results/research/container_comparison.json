@@ -1,0 +1,71 @@
+{
+  "semantic_action_differences": [],
+  "ordering_only_differences": [
+    {
+      "day": 6,
+      "phase": "ask",
+      "host": [
+        {
+          "member_id": "syn_81d8b107ae035e4aa86c9a90b4e177ac",
+          "field": "constraints"
+        },
+        {
+          "member_id": "syn_7a9ad1fdccc01e983fd6fbcb8e395c5c",
+          "field": "constraints"
+        },
+        {
+          "member_id": "syn_3aa7d00202b7a07befd0cb2966f535b4",
+          "field": "constraints"
+        },
+        {
+          "member_id": "syn_0bd8274b6193661d63d975e5f2f49a90",
+          "field": "constraints"
+        }
+      ],
+      "container": [
+        {
+          "member_id": "syn_81d8b107ae035e4aa86c9a90b4e177ac",
+          "field": "constraints"
+        },
+        {
+          "member_id": "syn_3aa7d00202b7a07befd0cb2966f535b4",
+          "field": "constraints"
+        },
+        {
+          "member_id": "syn_7a9ad1fdccc01e983fd6fbcb8e395c5c",
+          "field": "constraints"
+        },
+        {
+          "member_id": "syn_0bd8274b6193661d63d975e5f2f49a90",
+          "field": "constraints"
+        }
+      ]
+    }
+  ],
+  "peak_call_seconds": [
+    0.20306112500838935,
+    0.30772312499175314
+  ],
+  "host_metrics": {
+    "assignments": 111,
+    "mutual_acceptances": 19,
+    "dates": 16,
+    "mutual_second_meeting_intention": 1,
+    "missing_feedback": 47,
+    "ask_cost": 315,
+    "arrived_members": 200,
+    "msmi_per_100_arrived_members": 0.5,
+    "status": "simulated_not_observed_product_performance"
+  },
+  "container_metrics": {
+    "assignments": 111,
+    "mutual_acceptances": 19,
+    "dates": 16,
+    "mutual_second_meeting_intention": 1,
+    "missing_feedback": 47,
+    "ask_cost": 315,
+    "arrived_members": 200,
+    "msmi_per_100_arrived_members": 0.5,
+    "status": "simulated_not_observed_product_performance"
+  }
+}

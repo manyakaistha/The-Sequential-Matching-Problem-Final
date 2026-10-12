@@ -1,0 +1,78 @@
+{
+  "status": "freshness_certified_under_declared_repository_scope",
+  "date": "2026-10-11",
+  "all_clean": true,
+  "max_prior_seed": 90430,
+  "min_r6_seed": 100001,
+  "max_r6_seed": 142000,
+  "total_prior_seeds_indexed": 461,
+  "total_r6_seeds_reserved": 2340,
+  "partition_checks": {
+    "training": {
+      "range": [
+        100001,
+        100120
+      ],
+      "count": 120,
+      "intersection_with_prior_seeds": [],
+      "overlap_count": 0,
+      "certified_fresh": true
+    },
+    "validation": {
+      "range": [
+        101001,
+        101040
+      ],
+      "count": 40,
+      "intersection_with_prior_seeds": [],
+      "overlap_count": 0,
+      "certified_fresh": true
+    },
+    "B": {
+      "range": [
+        110001,
+        110040
+      ],
+      "count": 40,
+      "intersection_with_prior_seeds": [],
+      "overlap_count": 0,
+      "certified_fresh": true
+    },
+    "C": {
+      "range": [
+        120001,
+        120060
+      ],
+      "count": 60,
+      "intersection_with_prior_seeds": [],
+      "overlap_count": 0,
+      "certified_fresh": true
+    },
+    "D": {
+      "range": [
+        130001,
+        130080
+      ],
+      "count": 80,
+      "intersection_with_prior_seeds": [],
+      "overlap_count": 0,
+      "certified_fresh": true
+    },
+    "E_reserve": {
+      "range": [
+        140001,
+        142000
+      ],
+      "count": 2000,
+      "intersection_with_prior_seeds": [],
+      "overlap_count": 0,
+      "certified_fresh": true
+    }
+  },
+  "source_hashes": {
+    "seed_inventory_json": "d44c53cb537ed82100a4278a234480a714f53c7763e9f276ce83f57303afc958",
+    "seed_inventory_extended_json": "4d32d440b853e97e1da187e62db69ac069f7e4d548c0697c233850bdfcd7a60e",
+    "seed_evidence_manifest_json": "6572eb70ecdfafefe03c5043376863836d425456b5c3c46e58897479a4ace2b4"
+  },
+  "scope_declaration": "No proposed seed intersects repository-visible actual/planned/reserved exposure under the complete declared inventory; unrecorded external/private/deleted usage is not established by this check."
+}

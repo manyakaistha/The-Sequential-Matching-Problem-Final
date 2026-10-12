@@ -1,0 +1,2139 @@
+{
+  "source": "results/research4/focus_mechanisms.json",
+  "source_sha256": "41a27865d8bec6da9c26f94deb9017ae922c252f6825f8121c6f6801eec8734f",
+  "candidate": "hard_priority",
+  "control": "population_control",
+  "scope": "Post-C exploratory representative trajectory inspection. Common dyad+assignment-day outcomes share hashed simulator streams; changed dyads/days do not. Selection of extreme trajectories is descriptive and not causal mediation or independent evidence. No inference or fitting changes.",
+  "cluster_effect": 0.03125000000000001,
+  "leave_one_seed_out_range": [
+    -0.0053763440860215015,
+    0.05645161290322581
+  ],
+  "representatives": [
+    {
+      "direction": "largest_gain",
+      "cluster": {
+        "seed": 81030,
+        "qualified_per100": 1.1666666666666667,
+        "conditional_terminal_per100": 0.007626418750775382,
+        "assignments": 1.6666666666666667,
+        "both_respond": -2.1666666666666665,
+        "introduction_nonresponse": 3.8333333333333335,
+        "responding_rejection": -4.833333333333333,
+        "mutual": 2.6666666666666665,
+        "dates": 3,
+        "cancelled": -0.3333333333333333,
+        "second_nonresponse": 1.8333333333333333,
+        "second_negative": -1.1666666666666667,
+        "positive_pause": 2.3333333333333335,
+        "busy_days": 41.833333333333336,
+        "late_date_positive": 0,
+        "late_feedback_positive": 0,
+        "overlap_deadlines": 0,
+        "deadline_disqualified": 0,
+        "qualified": 2.3333333333333335,
+        "served_members": -0.16666666666666666,
+        "repeat_endpoint_assignments": 3.5,
+        "hard_bundles": 0,
+        "soft_queries": 0,
+        "early_assignments": 1.3333333333333333,
+        "late_assignments": 0.3333333333333333,
+        "goal_unknown_endpoint_at_assignment": 1.3333333333333333,
+        "goal_known_endpoint_at_assignment": 2,
+        "new_goal_unknown_endpoint": 0.5,
+        "new_goal_known_endpoint": -0.6666666666666666,
+        "same_batch_hard_goal": 0
+      },
+      "families": [
+        {
+          "family": "development",
+          "candidate_counts": {
+            "assignments": 96,
+            "both_respond": 52,
+            "introduction_nonresponse": 44,
+            "responding_rejection": 33,
+            "mutual": 19,
+            "dates": 16,
+            "cancelled": 3,
+            "second_nonresponse": 8,
+            "second_negative": 2,
+            "positive_pause": 6,
+            "busy_days": 960,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 5,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 118,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 73,
+            "late_assignments": 23,
+            "goal_unknown_endpoint_at_assignment": 78,
+            "goal_known_endpoint_at_assignment": 114,
+            "new_goal_unknown_endpoint": 37,
+            "new_goal_known_endpoint": 37,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 91,
+            "both_respond": 52,
+            "introduction_nonresponse": 39,
+            "responding_rejection": 36,
+            "mutual": 16,
+            "dates": 12,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 6,
+            "positive_pause": 2,
+            "busy_days": 906,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 108,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 71,
+            "late_assignments": 20,
+            "goal_unknown_endpoint_at_assignment": 73,
+            "goal_known_endpoint_at_assignment": 109,
+            "new_goal_unknown_endpoint": 36,
+            "new_goal_known_endpoint": 38,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.6231277481247158,
+          "control_conditional_terminal_per100": 0.6035080806648375,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_development_81030.json",
+          "control_trace": "results/research4/focus_traces/population_control_development_81030.json",
+          "candidate_assignments": 96,
+          "control_assignments": 91,
+          "common_dyad_day": 21,
+          "common_dyad_any_day": 85,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_c07e28328dc7fa5c89058d9eee117c05",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_b497ce6e5632fd339c7d3c27cd8211c2",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e0f49d867e8a2a2e1657dc8438b5de7a",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_6ea373485d917608b24ba0d9d53f74b7",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_087e821a771af2e5f80de56a9c194520",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c8c6e3d4e7869a531fb033ef95d44e6e",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_bbfe9e032eb43d7e6e3898fe1cd30a8b",
+                  "syn_c07e28328dc7fa5c89058d9eee117c05"
+                ],
+                [
+                  "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "syn_d475c5fd12fa2d1b7bfa1886424232d4"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_087e821a771af2e5f80de56a9c194520",
+                  "syn_6d460955eac3fac8e5653e1271c6ce5d"
+                ],
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "syn_f440b6f7044781372520ce578edc9613"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "sparse",
+          "candidate_counts": {
+            "assignments": 22,
+            "both_respond": 14,
+            "introduction_nonresponse": 8,
+            "responding_rejection": 8,
+            "mutual": 6,
+            "dates": 4,
+            "cancelled": 2,
+            "second_nonresponse": 1,
+            "second_negative": 1,
+            "positive_pause": 2,
+            "busy_days": 214,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 0,
+            "served_members": 34,
+            "repeat_endpoint_assignments": 10,
+            "hard_bundles": 64,
+            "soft_queries": 0,
+            "early_assignments": 22,
+            "late_assignments": 0,
+            "goal_unknown_endpoint_at_assignment": 13,
+            "goal_known_endpoint_at_assignment": 31,
+            "new_goal_unknown_endpoint": 11,
+            "new_goal_known_endpoint": 23,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 22,
+            "both_respond": 11,
+            "introduction_nonresponse": 11,
+            "responding_rejection": 7,
+            "mutual": 4,
+            "dates": 3,
+            "cancelled": 1,
+            "second_nonresponse": 1,
+            "second_negative": 0,
+            "positive_pause": 2,
+            "busy_days": 198,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 0,
+            "served_members": 34,
+            "repeat_endpoint_assignments": 10,
+            "hard_bundles": 64,
+            "soft_queries": 0,
+            "early_assignments": 22,
+            "late_assignments": 0,
+            "goal_unknown_endpoint_at_assignment": 13,
+            "goal_known_endpoint_at_assignment": 31,
+            "new_goal_unknown_endpoint": 11,
+            "new_goal_known_endpoint": 23,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.17764068379621611,
+          "control_conditional_terminal_per100": 0.17764068379621611,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_sparse_81030.json",
+          "control_trace": "results/research4/focus_traces/population_control_sparse_81030.json",
+          "candidate_assignments": 22,
+          "control_assignments": 22,
+          "common_dyad_day": 14,
+          "common_dyad_any_day": 22,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_5fcb143a73f66d8d736c6c6c2cdd7502",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_6135500c5e499f3a1eeb85cda924d472",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_309b573b0e82adb8f64edd9d4fd1c761",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_6d2796bd012b6eca3ee7d34175c7410c",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_6135500c5e499f3a1eeb85cda924d472",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_4221c97c54b24e2508dfc8679e8e994e",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_8980326832151c8aaf31e311e644b845",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_f4e16cb98ea721ce83102d70334d8f6b",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_2e10e22e6aa9f5348e36a9cfd918c615",
+                  "syn_fe5b067de5c22eb22d0576799662ac51"
+                ],
+                [
+                  "syn_7ba2477d8d3ff5e9a1f5986ba4bc83c9",
+                  "syn_eb37cf1a2b4a2ffd8c0b2b6fc920b73e"
+                ],
+                [
+                  "syn_9d5cdff4cd2b1fa285b35c19e9fbe355",
+                  "syn_d2e0086cb1e50e4b4e447c821dc42f8a"
+                ],
+                [
+                  "syn_a3aa076b9a1c2b695076c3144c5b68f2",
+                  "syn_e864a9932fb79b462decec5002bbe41c"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_2e10e22e6aa9f5348e36a9cfd918c615",
+                  "syn_fe5b067de5c22eb22d0576799662ac51"
+                ],
+                [
+                  "syn_7ba2477d8d3ff5e9a1f5986ba4bc83c9",
+                  "syn_eb37cf1a2b4a2ffd8c0b2b6fc920b73e"
+                ],
+                [
+                  "syn_8980326832151c8aaf31e311e644b845",
+                  "syn_a1af122b49fa6593225d3797c6dfd81f"
+                ],
+                [
+                  "syn_9d5cdff4cd2b1fa285b35c19e9fbe355",
+                  "syn_d2e0086cb1e50e4b4e447c821dc42f8a"
+                ],
+                [
+                  "syn_a3aa076b9a1c2b695076c3144c5b68f2",
+                  "syn_e864a9932fb79b462decec5002bbe41c"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "cold_start",
+          "candidate_counts": {
+            "assignments": 78,
+            "both_respond": 45,
+            "introduction_nonresponse": 33,
+            "responding_rejection": 31,
+            "mutual": 14,
+            "dates": 11,
+            "cancelled": 3,
+            "second_nonresponse": 2,
+            "second_negative": 6,
+            "positive_pause": 3,
+            "busy_days": 756,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 1,
+            "served_members": 78,
+            "repeat_endpoint_assignments": 78,
+            "hard_bundles": 76,
+            "soft_queries": 0,
+            "early_assignments": 69,
+            "late_assignments": 9,
+            "goal_unknown_endpoint_at_assignment": 90,
+            "goal_known_endpoint_at_assignment": 66,
+            "new_goal_unknown_endpoint": 46,
+            "new_goal_known_endpoint": 32,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 82,
+            "both_respond": 53,
+            "introduction_nonresponse": 29,
+            "responding_rejection": 40,
+            "mutual": 13,
+            "dates": 9,
+            "cancelled": 4,
+            "second_nonresponse": 1,
+            "second_negative": 4,
+            "positive_pause": 4,
+            "busy_days": 797,
+            "late_date_positive": 0,
+            "late_feedback_positive": 3,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 3,
+            "qualified": 1,
+            "served_members": 78,
+            "repeat_endpoint_assignments": 86,
+            "hard_bundles": 76,
+            "soft_queries": 0,
+            "early_assignments": 64,
+            "late_assignments": 18,
+            "goal_unknown_endpoint_at_assignment": 94,
+            "goal_known_endpoint_at_assignment": 70,
+            "new_goal_unknown_endpoint": 46,
+            "new_goal_known_endpoint": 32,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.39497511510144406,
+          "control_conditional_terminal_per100": 0.40580458717846324,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_cold_start_81030.json",
+          "control_trace": "results/research4/focus_traces/population_control_cold_start_81030.json",
+          "candidate_assignments": 78,
+          "control_assignments": 82,
+          "common_dyad_day": 26,
+          "common_dyad_any_day": 76,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_d33665b4379a32720b6366fb6480f09b",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e0f49d867e8a2a2e1657dc8438b5de7a",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_8163a56f262bfc2369f384beae641bc2",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_d189fdb8d62937dd28a4e97aa8f836f8",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e7259b9264903f2d889ac42a4f160875",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_9816f70b2d7dd03a2a311ad5a5ae3713",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_8814ceae571795bb7498163382d1200d",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_05edbd343ecd3c0378e75bdaae19d850",
+                  "syn_7a403a710a4633ed28e6b82961e5fc2d"
+                ],
+                [
+                  "syn_0c3d99f9268f4ea7b180922136ede1f7",
+                  "syn_bb48b0478aaedc704a7ceb0834f94213"
+                ],
+                [
+                  "syn_0f1a43e97058015825132b94dc346d68",
+                  "syn_dd8a98faafa0647101f94ef43e26968b"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_ef6283251811b0939e35978d3d51a7ba"
+                ],
+                [
+                  "syn_a0a1a350e91030483b76cc1851f504b3",
+                  "syn_e7ea443e91db868f11c176bfcc00b2ca"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_05edbd343ecd3c0378e75bdaae19d850",
+                  "syn_7a403a710a4633ed28e6b82961e5fc2d"
+                ],
+                [
+                  "syn_0c3d99f9268f4ea7b180922136ede1f7",
+                  "syn_bb48b0478aaedc704a7ceb0834f94213"
+                ],
+                [
+                  "syn_0f1a43e97058015825132b94dc346d68",
+                  "syn_dd8a98faafa0647101f94ef43e26968b"
+                ],
+                [
+                  "syn_3688af5e9a497ae0bf60f8ba98e530fe",
+                  "syn_d189fdb8d62937dd28a4e97aa8f836f8"
+                ],
+                [
+                  "syn_a0a1a350e91030483b76cc1851f504b3",
+                  "syn_e7ea443e91db868f11c176bfcc00b2ca"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "delayed",
+          "candidate_counts": {
+            "assignments": 91,
+            "both_respond": 51,
+            "introduction_nonresponse": 40,
+            "responding_rejection": 36,
+            "mutual": 15,
+            "dates": 12,
+            "cancelled": 3,
+            "second_nonresponse": 3,
+            "second_negative": 3,
+            "positive_pause": 6,
+            "busy_days": 1032,
+            "late_date_positive": 0,
+            "late_feedback_positive": 3,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 3,
+            "qualified": 3,
+            "served_members": 75,
+            "repeat_endpoint_assignments": 107,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 70,
+            "late_assignments": 21,
+            "goal_unknown_endpoint_at_assignment": 75,
+            "goal_known_endpoint_at_assignment": 107,
+            "new_goal_unknown_endpoint": 38,
+            "new_goal_known_endpoint": 37,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 88,
+            "both_respond": 53,
+            "introduction_nonresponse": 35,
+            "responding_rejection": 42,
+            "mutual": 11,
+            "dates": 9,
+            "cancelled": 2,
+            "second_nonresponse": 3,
+            "second_negative": 4,
+            "positive_pause": 2,
+            "busy_days": 918,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 0,
+            "served_members": 76,
+            "repeat_endpoint_assignments": 100,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 70,
+            "late_assignments": 18,
+            "goal_unknown_endpoint_at_assignment": 74,
+            "goal_known_endpoint_at_assignment": 102,
+            "new_goal_unknown_endpoint": 38,
+            "new_goal_known_endpoint": 38,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.545889754472762,
+          "control_conditional_terminal_per100": 0.5307605278453741,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_delayed_81030.json",
+          "control_trace": "results/research4/focus_traces/population_control_delayed_81030.json",
+          "candidate_assignments": 91,
+          "control_assignments": 88,
+          "common_dyad_day": 20,
+          "common_dyad_any_day": 81,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_c07e28328dc7fa5c89058d9eee117c05",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_b497ce6e5632fd339c7d3c27cd8211c2",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e0f49d867e8a2a2e1657dc8438b5de7a",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_6ea373485d917608b24ba0d9d53f74b7",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_087e821a771af2e5f80de56a9c194520",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c8c6e3d4e7869a531fb033ef95d44e6e",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_bbfe9e032eb43d7e6e3898fe1cd30a8b",
+                  "syn_c07e28328dc7fa5c89058d9eee117c05"
+                ],
+                [
+                  "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "syn_d475c5fd12fa2d1b7bfa1886424232d4"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_087e821a771af2e5f80de56a9c194520",
+                  "syn_6d460955eac3fac8e5653e1271c6ce5d"
+                ],
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "syn_f440b6f7044781372520ce578edc9613"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "shift",
+          "candidate_counts": {
+            "assignments": 96,
+            "both_respond": 51,
+            "introduction_nonresponse": 45,
+            "responding_rejection": 36,
+            "mutual": 15,
+            "dates": 12,
+            "cancelled": 3,
+            "second_nonresponse": 6,
+            "second_negative": 1,
+            "positive_pause": 5,
+            "busy_days": 938,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 4,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 118,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 74,
+            "late_assignments": 22,
+            "goal_unknown_endpoint_at_assignment": 78,
+            "goal_known_endpoint_at_assignment": 114,
+            "new_goal_unknown_endpoint": 37,
+            "new_goal_known_endpoint": 37,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 94,
+            "both_respond": 57,
+            "introduction_nonresponse": 37,
+            "responding_rejection": 44,
+            "mutual": 13,
+            "dates": 9,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 3,
+            "positive_pause": 2,
+            "busy_days": 892,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 114,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 75,
+            "late_assignments": 19,
+            "goal_unknown_endpoint_at_assignment": 76,
+            "goal_known_endpoint_at_assignment": 112,
+            "new_goal_unknown_endpoint": 36,
+            "new_goal_known_endpoint": 38,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.5492140552694246,
+          "control_conditional_terminal_per100": 0.5404182934845186,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_shift_81030.json",
+          "control_trace": "results/research4/focus_traces/population_control_shift_81030.json",
+          "candidate_assignments": 96,
+          "control_assignments": 94,
+          "common_dyad_day": 21,
+          "common_dyad_any_day": 89,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_c07e28328dc7fa5c89058d9eee117c05",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_b497ce6e5632fd339c7d3c27cd8211c2",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e0f49d867e8a2a2e1657dc8438b5de7a",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_6ea373485d917608b24ba0d9d53f74b7",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_087e821a771af2e5f80de56a9c194520",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c8c6e3d4e7869a531fb033ef95d44e6e",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_bbfe9e032eb43d7e6e3898fe1cd30a8b",
+                  "syn_c07e28328dc7fa5c89058d9eee117c05"
+                ],
+                [
+                  "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "syn_d475c5fd12fa2d1b7bfa1886424232d4"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_087e821a771af2e5f80de56a9c194520",
+                  "syn_6d460955eac3fac8e5653e1271c6ce5d"
+                ],
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "syn_f440b6f7044781372520ce578edc9613"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "drift",
+          "candidate_counts": {
+            "assignments": 96,
+            "both_respond": 52,
+            "introduction_nonresponse": 44,
+            "responding_rejection": 33,
+            "mutual": 19,
+            "dates": 16,
+            "cancelled": 3,
+            "second_nonresponse": 8,
+            "second_negative": 2,
+            "positive_pause": 6,
+            "busy_days": 960,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 5,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 118,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 73,
+            "late_assignments": 23,
+            "goal_unknown_endpoint_at_assignment": 78,
+            "goal_known_endpoint_at_assignment": 114,
+            "new_goal_unknown_endpoint": 37,
+            "new_goal_known_endpoint": 37,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 92,
+            "both_respond": 52,
+            "introduction_nonresponse": 40,
+            "responding_rejection": 37,
+            "mutual": 15,
+            "dates": 11,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 5,
+            "positive_pause": 2,
+            "busy_days": 898,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 74,
+            "repeat_endpoint_assignments": 110,
+            "hard_bundles": 75,
+            "soft_queries": 0,
+            "early_assignments": 71,
+            "late_assignments": 21,
+            "goal_unknown_endpoint_at_assignment": 74,
+            "goal_known_endpoint_at_assignment": 110,
+            "new_goal_unknown_endpoint": 36,
+            "new_goal_known_endpoint": 38,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.5813531431490113,
+          "control_conditional_terminal_per100": 0.568309814439512,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_drift_81030.json",
+          "control_trace": "results/research4/focus_traces/population_control_drift_81030.json",
+          "candidate_assignments": 96,
+          "control_assignments": 92,
+          "common_dyad_day": 21,
+          "common_dyad_any_day": 86,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_c07e28328dc7fa5c89058d9eee117c05",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_b497ce6e5632fd339c7d3c27cd8211c2",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e0f49d867e8a2a2e1657dc8438b5de7a",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_6ea373485d917608b24ba0d9d53f74b7",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_087e821a771af2e5f80de56a9c194520",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_c8c6e3d4e7869a531fb033ef95d44e6e",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_bbfe9e032eb43d7e6e3898fe1cd30a8b",
+                  "syn_c07e28328dc7fa5c89058d9eee117c05"
+                ],
+                [
+                  "syn_c73652efebd9d40aa12e5410f77386f6",
+                  "syn_d475c5fd12fa2d1b7bfa1886424232d4"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_087e821a771af2e5f80de56a9c194520",
+                  "syn_6d460955eac3fac8e5653e1271c6ce5d"
+                ],
+                [
+                  "syn_2cc470416b2f38cab7fe7c12f43de04a",
+                  "syn_35516dae4037f372ca0f18e55fd2c746"
+                ],
+                [
+                  "syn_372be0e16acf2a878952ae8ddb1c4ea1",
+                  "syn_92961168022c996e4331793af042a8f1"
+                ],
+                [
+                  "syn_462576d285631bf36bed06801bc38d42",
+                  "syn_fa8898ce43b2911acb485a7aef1360a3"
+                ],
+                [
+                  "syn_72b06c01189127ff15f9914c805e4e11",
+                  "syn_b9a25a8335302afedadd1e82e7f0aa68"
+                ],
+                [
+                  "syn_8163a56f262bfc2369f384beae641bc2",
+                  "syn_b90582b4a96c52a92a0a656232c23139"
+                ],
+                [
+                  "syn_89f57ea93e12c7b44695c1c0a3736bb0",
+                  "syn_f440b6f7044781372520ce578edc9613"
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "direction": "largest_loss",
+      "cluster": {
+        "seed": 81018,
+        "qualified_per100": -0.75,
+        "conditional_terminal_per100": -0.0010708729033024518,
+        "assignments": 2.5,
+        "both_respond": 3,
+        "introduction_nonresponse": -0.5,
+        "responding_rejection": 7.333333333333333,
+        "mutual": -4.333333333333333,
+        "dates": -2.6666666666666665,
+        "cancelled": -1.6666666666666667,
+        "second_nonresponse": -0.6666666666666666,
+        "second_negative": -0.3333333333333333,
+        "positive_pause": -1.6666666666666667,
+        "busy_days": -24.333333333333332,
+        "late_date_positive": 0,
+        "late_feedback_positive": -0.16666666666666666,
+        "overlap_deadlines": 0,
+        "deadline_disqualified": -0.16666666666666666,
+        "qualified": -1.5,
+        "served_members": 0.16666666666666666,
+        "repeat_endpoint_assignments": 4.833333333333333,
+        "hard_bundles": 0,
+        "soft_queries": 0,
+        "early_assignments": 3,
+        "late_assignments": -0.5,
+        "goal_unknown_endpoint_at_assignment": 1.3333333333333333,
+        "goal_known_endpoint_at_assignment": 3.6666666666666665,
+        "new_goal_unknown_endpoint": 0,
+        "new_goal_known_endpoint": 0.16666666666666666,
+        "same_batch_hard_goal": 0
+      },
+      "families": [
+        {
+          "family": "development",
+          "candidate_counts": {
+            "assignments": 92,
+            "both_respond": 53,
+            "introduction_nonresponse": 39,
+            "responding_rejection": 43,
+            "mutual": 10,
+            "dates": 10,
+            "cancelled": 0,
+            "second_nonresponse": 4,
+            "second_negative": 5,
+            "positive_pause": 1,
+            "busy_days": 838,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 79,
+            "repeat_endpoint_assignments": 105,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 80,
+            "late_assignments": 12,
+            "goal_unknown_endpoint_at_assignment": 64,
+            "goal_known_endpoint_at_assignment": 120,
+            "new_goal_unknown_endpoint": 31,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 91,
+            "both_respond": 49,
+            "introduction_nonresponse": 42,
+            "responding_rejection": 35,
+            "mutual": 14,
+            "dates": 10,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 4,
+            "positive_pause": 2,
+            "busy_days": 868,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 80,
+            "repeat_endpoint_assignments": 102,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 77,
+            "late_assignments": 14,
+            "goal_unknown_endpoint_at_assignment": 65,
+            "goal_known_endpoint_at_assignment": 117,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.47891905303053806,
+          "control_conditional_terminal_per100": 0.49505113738166334,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_development_81018.json",
+          "control_trace": "results/research4/focus_traces/population_control_development_81018.json",
+          "candidate_assignments": 92,
+          "control_assignments": 91,
+          "common_dyad_day": 36,
+          "common_dyad_any_day": 85,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_ac8f2eadf774e94bc1136801918c4b17",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_3053b59cc41615383949b0e596981def",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820bd6d3bc21b789f974fc53f90eb2bb",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820ff0712b4732bfd3f544d171931ca8",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_d5d3ae2839e765578fa95b9656805747",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d7731fd4c066436f57ccea1ff7436857",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_fe60c30ae5c1d2a61f2cf03a96648b11",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d34002bac48697d85f597f4e715f7153",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3053b59cc41615383949b0e596981def",
+                  "syn_76fce916ca562e225205f608cb388ca7"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_8ca1e3002db2a39439dfc2465dc39ed2",
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_76fce916ca562e225205f608cb388ca7",
+                  "syn_c5735314d18d4a514ee77665cb8c56c5"
+                ],
+                [
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac",
+                  "syn_d7731fd4c066436f57ccea1ff7436857"
+                ],
+                [
+                  "syn_d34002bac48697d85f597f4e715f7153",
+                  "syn_fe60c30ae5c1d2a61f2cf03a96648b11"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "sparse",
+          "candidate_counts": {
+            "assignments": 23,
+            "both_respond": 11,
+            "introduction_nonresponse": 12,
+            "responding_rejection": 10,
+            "mutual": 1,
+            "dates": 0,
+            "cancelled": 1,
+            "second_nonresponse": 0,
+            "second_negative": 0,
+            "positive_pause": 0,
+            "busy_days": 196,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 0,
+            "served_members": 32,
+            "repeat_endpoint_assignments": 14,
+            "hard_bundles": 66,
+            "soft_queries": 0,
+            "early_assignments": 23,
+            "late_assignments": 0,
+            "goal_unknown_endpoint_at_assignment": 18,
+            "goal_known_endpoint_at_assignment": 28,
+            "new_goal_unknown_endpoint": 10,
+            "new_goal_known_endpoint": 22,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 23,
+            "both_respond": 14,
+            "introduction_nonresponse": 9,
+            "responding_rejection": 12,
+            "mutual": 2,
+            "dates": 2,
+            "cancelled": 0,
+            "second_nonresponse": 2,
+            "second_negative": 0,
+            "positive_pause": 0,
+            "busy_days": 201,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 0,
+            "served_members": 32,
+            "repeat_endpoint_assignments": 14,
+            "hard_bundles": 66,
+            "soft_queries": 0,
+            "early_assignments": 23,
+            "late_assignments": 0,
+            "goal_unknown_endpoint_at_assignment": 18,
+            "goal_known_endpoint_at_assignment": 28,
+            "new_goal_unknown_endpoint": 10,
+            "new_goal_known_endpoint": 22,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.0939096437676215,
+          "control_conditional_terminal_per100": 0.0939096437676215,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_sparse_81018.json",
+          "control_trace": "results/research4/focus_traces/population_control_sparse_81018.json",
+          "candidate_assignments": 23,
+          "control_assignments": 23,
+          "common_dyad_day": 11,
+          "common_dyad_any_day": 23,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_ac2f7936b7fd19228775ef254c5db28d",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d2b15dc5cf011c882cd09661146904ab",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_2ecbe6207866b1b14a9f8317f5cdade8",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_bb418ec55e7ac72785c3fd6ca4ba6255",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_a019a1a203d3747305da13fe5fe24a16",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_fe5d6769f62ac79089b2951e12610de8",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_ee410290e4e11412fe64cd4bcfd67537",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_e3b3b82005815c793770cf65815789fb",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 1,
+              "candidate_action": [
+                [
+                  "syn_1f8c16fd7f3d41c2ae4da0107fd4fba0",
+                  "syn_83ccfecb5052ea769a308b8ab2970545"
+                ]
+              ],
+              "control_action": []
+            }
+          }
+        },
+        {
+          "family": "cold_start",
+          "candidate_counts": {
+            "assignments": 64,
+            "both_respond": 40,
+            "introduction_nonresponse": 24,
+            "responding_rejection": 29,
+            "mutual": 11,
+            "dates": 8,
+            "cancelled": 3,
+            "second_nonresponse": 3,
+            "second_negative": 2,
+            "positive_pause": 3,
+            "busy_days": 621,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 1,
+            "served_members": 62,
+            "repeat_endpoint_assignments": 66,
+            "hard_bundles": 85,
+            "soft_queries": 0,
+            "early_assignments": 55,
+            "late_assignments": 9,
+            "goal_unknown_endpoint_at_assignment": 91,
+            "goal_known_endpoint_at_assignment": 37,
+            "new_goal_unknown_endpoint": 42,
+            "new_goal_known_endpoint": 20,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 60,
+            "both_respond": 39,
+            "introduction_nonresponse": 21,
+            "responding_rejection": 20,
+            "mutual": 19,
+            "dates": 18,
+            "cancelled": 1,
+            "second_nonresponse": 7,
+            "second_negative": 6,
+            "positive_pause": 5,
+            "busy_days": 657,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 4,
+            "served_members": 61,
+            "repeat_endpoint_assignments": 59,
+            "hard_bundles": 85,
+            "soft_queries": 0,
+            "early_assignments": 46,
+            "late_assignments": 14,
+            "goal_unknown_endpoint_at_assignment": 86,
+            "goal_known_endpoint_at_assignment": 34,
+            "new_goal_unknown_endpoint": 41,
+            "new_goal_known_endpoint": 20,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.34229518529909736,
+          "control_conditional_terminal_per100": 0.350378193875988,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_cold_start_81018.json",
+          "control_trace": "results/research4/focus_traces/population_control_cold_start_81018.json",
+          "candidate_assignments": 64,
+          "control_assignments": 60,
+          "common_dyad_day": 9,
+          "common_dyad_any_day": 50,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_0485b865beb10d2cf57a5e37891e09ba",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_192e1d1b508fc1923c0e1950d3d333ed",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_9951afac0d164a98f686e08079d449be",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_49478d3ffa4d55f4ecc726bebe6cb00a",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_1260ada8db3eef20497e55e055a59421",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_49478d3ffa4d55f4ecc726bebe6cb00a",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_730ccd5ebba45e3ad04149bea53724d9",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_31d87bca386c7ccdb85bc5397db1b103",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_0485b865beb10d2cf57a5e37891e09ba",
+                  "syn_49478d3ffa4d55f4ecc726bebe6cb00a"
+                ],
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_5ad25de3dd08eea1b4bee61902df5f5b"
+                ],
+                [
+                  "syn_6d06489e6e34d49b43c8b8cdbb7a420a",
+                  "syn_bfd03e282cd2f61351b852aacca1c20b"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_5ad25de3dd08eea1b4bee61902df5f5b"
+                ],
+                [
+                  "syn_1260ada8db3eef20497e55e055a59421",
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac"
+                ],
+                [
+                  "syn_31d87bca386c7ccdb85bc5397db1b103",
+                  "syn_a028edb415760f9ae3fc1ad2fe2a441c"
+                ],
+                [
+                  "syn_49478d3ffa4d55f4ecc726bebe6cb00a",
+                  "syn_bfd03e282cd2f61351b852aacca1c20b"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "delayed",
+          "candidate_counts": {
+            "assignments": 91,
+            "both_respond": 53,
+            "introduction_nonresponse": 38,
+            "responding_rejection": 43,
+            "mutual": 10,
+            "dates": 8,
+            "cancelled": 2,
+            "second_nonresponse": 4,
+            "second_negative": 4,
+            "positive_pause": 0,
+            "busy_days": 925,
+            "late_date_positive": 0,
+            "late_feedback_positive": 0,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 0,
+            "qualified": 0,
+            "served_members": 80,
+            "repeat_endpoint_assignments": 102,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 77,
+            "late_assignments": 14,
+            "goal_unknown_endpoint_at_assignment": 64,
+            "goal_known_endpoint_at_assignment": 118,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 84,
+            "both_respond": 45,
+            "introduction_nonresponse": 39,
+            "responding_rejection": 30,
+            "mutual": 15,
+            "dates": 13,
+            "cancelled": 2,
+            "second_nonresponse": 3,
+            "second_negative": 6,
+            "positive_pause": 4,
+            "busy_days": 950,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 3,
+            "served_members": 79,
+            "repeat_endpoint_assignments": 89,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 74,
+            "late_assignments": 10,
+            "goal_unknown_endpoint_at_assignment": 61,
+            "goal_known_endpoint_at_assignment": 107,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 47,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.47482495352420623,
+          "control_conditional_terminal_per100": 0.4520735201673865,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_delayed_81018.json",
+          "control_trace": "results/research4/focus_traces/population_control_delayed_81018.json",
+          "candidate_assignments": 91,
+          "control_assignments": 84,
+          "common_dyad_day": 36,
+          "common_dyad_any_day": 79,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_ac8f2eadf774e94bc1136801918c4b17",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_3053b59cc41615383949b0e596981def",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820bd6d3bc21b789f974fc53f90eb2bb",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820ff0712b4732bfd3f544d171931ca8",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_d5d3ae2839e765578fa95b9656805747",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d7731fd4c066436f57ccea1ff7436857",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_fe60c30ae5c1d2a61f2cf03a96648b11",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d34002bac48697d85f597f4e715f7153",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3053b59cc41615383949b0e596981def",
+                  "syn_76fce916ca562e225205f608cb388ca7"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_8ca1e3002db2a39439dfc2465dc39ed2",
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_76fce916ca562e225205f608cb388ca7",
+                  "syn_c5735314d18d4a514ee77665cb8c56c5"
+                ],
+                [
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac",
+                  "syn_d7731fd4c066436f57ccea1ff7436857"
+                ],
+                [
+                  "syn_d34002bac48697d85f597f4e715f7153",
+                  "syn_fe60c30ae5c1d2a61f2cf03a96648b11"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "shift",
+          "candidate_counts": {
+            "assignments": 92,
+            "both_respond": 53,
+            "introduction_nonresponse": 39,
+            "responding_rejection": 43,
+            "mutual": 10,
+            "dates": 10,
+            "cancelled": 0,
+            "second_nonresponse": 5,
+            "second_negative": 4,
+            "positive_pause": 1,
+            "busy_days": 845,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 79,
+            "repeat_endpoint_assignments": 105,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 79,
+            "late_assignments": 13,
+            "goal_unknown_endpoint_at_assignment": 64,
+            "goal_known_endpoint_at_assignment": 120,
+            "new_goal_unknown_endpoint": 31,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 90,
+            "both_respond": 49,
+            "introduction_nonresponse": 41,
+            "responding_rejection": 36,
+            "mutual": 13,
+            "dates": 8,
+            "cancelled": 5,
+            "second_nonresponse": 2,
+            "second_negative": 3,
+            "positive_pause": 3,
+            "busy_days": 860,
+            "late_date_positive": 0,
+            "late_feedback_positive": 2,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 2,
+            "qualified": 1,
+            "served_members": 79,
+            "repeat_endpoint_assignments": 101,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 79,
+            "late_assignments": 11,
+            "goal_unknown_endpoint_at_assignment": 62,
+            "goal_known_endpoint_at_assignment": 118,
+            "new_goal_unknown_endpoint": 31,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.43171619338503775,
+          "control_conditional_terminal_per100": 0.4345728317975137,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_shift_81018.json",
+          "control_trace": "results/research4/focus_traces/population_control_shift_81018.json",
+          "candidate_assignments": 92,
+          "control_assignments": 90,
+          "common_dyad_day": 36,
+          "common_dyad_any_day": 86,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_ac8f2eadf774e94bc1136801918c4b17",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_3053b59cc41615383949b0e596981def",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820bd6d3bc21b789f974fc53f90eb2bb",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820ff0712b4732bfd3f544d171931ca8",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_d5d3ae2839e765578fa95b9656805747",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d7731fd4c066436f57ccea1ff7436857",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_fe60c30ae5c1d2a61f2cf03a96648b11",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d34002bac48697d85f597f4e715f7153",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3053b59cc41615383949b0e596981def",
+                  "syn_76fce916ca562e225205f608cb388ca7"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_8ca1e3002db2a39439dfc2465dc39ed2",
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_76fce916ca562e225205f608cb388ca7",
+                  "syn_c5735314d18d4a514ee77665cb8c56c5"
+                ],
+                [
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac",
+                  "syn_d7731fd4c066436f57ccea1ff7436857"
+                ],
+                [
+                  "syn_d34002bac48697d85f597f4e715f7153",
+                  "syn_fe60c30ae5c1d2a61f2cf03a96648b11"
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "family": "drift",
+          "candidate_counts": {
+            "assignments": 92,
+            "both_respond": 53,
+            "introduction_nonresponse": 39,
+            "responding_rejection": 44,
+            "mutual": 9,
+            "dates": 9,
+            "cancelled": 0,
+            "second_nonresponse": 2,
+            "second_negative": 6,
+            "positive_pause": 1,
+            "busy_days": 833,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 0,
+            "served_members": 80,
+            "repeat_endpoint_assignments": 104,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 80,
+            "late_assignments": 12,
+            "goal_unknown_endpoint_at_assignment": 64,
+            "goal_known_endpoint_at_assignment": 120,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "control_counts": {
+            "assignments": 91,
+            "both_respond": 49,
+            "introduction_nonresponse": 42,
+            "responding_rejection": 35,
+            "mutual": 14,
+            "dates": 10,
+            "cancelled": 4,
+            "second_nonresponse": 4,
+            "second_negative": 4,
+            "positive_pause": 2,
+            "busy_days": 868,
+            "late_date_positive": 0,
+            "late_feedback_positive": 1,
+            "overlap_deadlines": 0,
+            "deadline_disqualified": 1,
+            "qualified": 1,
+            "served_members": 80,
+            "repeat_endpoint_assignments": 102,
+            "hard_bundles": 63,
+            "soft_queries": 0,
+            "early_assignments": 77,
+            "late_assignments": 14,
+            "goal_unknown_endpoint_at_assignment": 65,
+            "goal_known_endpoint_at_assignment": 117,
+            "new_goal_unknown_endpoint": 32,
+            "new_goal_known_endpoint": 48,
+            "same_batch_hard_goal": 0
+          },
+          "candidate_conditional_terminal_per100": 0.4703972495867345,
+          "control_conditional_terminal_per100": 0.47250218902287705,
+          "candidate_trace": "results/research4/focus_traces/hard_priority_drift_81018.json",
+          "control_trace": "results/research4/focus_traces/population_control_drift_81018.json",
+          "candidate_assignments": 92,
+          "control_assignments": 91,
+          "common_dyad_day": 36,
+          "common_dyad_any_day": 85,
+          "identical_events_for_common_dyad_day": true,
+          "first_divergence": {
+            "ask": {
+              "day": 0,
+              "candidate_action": [
+                {
+                  "member_id": "syn_ac8f2eadf774e94bc1136801918c4b17",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_3053b59cc41615383949b0e596981def",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820bd6d3bc21b789f974fc53f90eb2bb",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_820ff0712b4732bfd3f544d171931ca8",
+                  "field": "constraints"
+                }
+              ],
+              "control_action": [
+                {
+                  "member_id": "syn_d5d3ae2839e765578fa95b9656805747",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d7731fd4c066436f57ccea1ff7436857",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_fe60c30ae5c1d2a61f2cf03a96648b11",
+                  "field": "constraints"
+                },
+                {
+                  "member_id": "syn_d34002bac48697d85f597f4e715f7153",
+                  "field": "constraints"
+                }
+              ]
+            },
+            "match": {
+              "day": 0,
+              "candidate_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3053b59cc41615383949b0e596981def",
+                  "syn_76fce916ca562e225205f608cb388ca7"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_8ca1e3002db2a39439dfc2465dc39ed2",
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac"
+                ]
+              ],
+              "control_action": [
+                [
+                  "syn_068046e0e76794b1daca39f2c92d92a3",
+                  "syn_0d234d0ef486708cdb12f629745f633d"
+                ],
+                [
+                  "syn_288585d71b1157834958daef36f51b10",
+                  "syn_ed28c996a965d1b282bb60671299eff8"
+                ],
+                [
+                  "syn_2e8fdc802b548d23af80d25b21622af9",
+                  "syn_d3dc7d3888b1cfb778575930af77806c"
+                ],
+                [
+                  "syn_3696a3fba4f33e9f2255f7e6d5964d46",
+                  "syn_90476a5b719d493f07e475fa2f5d6277"
+                ],
+                [
+                  "syn_3767dafb38138175063aa437aae20469",
+                  "syn_5c5b574512858c03dde7c096eb48b328"
+                ],
+                [
+                  "syn_6671d757132aa1a0be479afe381cfc56",
+                  "syn_9a6d24f7f1060fd9d7a07166a764d74d"
+                ],
+                [
+                  "syn_72ba908d8c41018ab7cd90eee0e5797e",
+                  "syn_ccc981b1a87c19f8a499fa8d378500a5"
+                ],
+                [
+                  "syn_76fce916ca562e225205f608cb388ca7",
+                  "syn_c5735314d18d4a514ee77665cb8c56c5"
+                ],
+                [
+                  "syn_b0d6a0f5faa0998eff61eb731f19f1ac",
+                  "syn_d7731fd4c066436f57ccea1ff7436857"
+                ],
+                [
+                  "syn_d34002bac48697d85f597f4e715f7153",
+                  "syn_fe60c30ae5c1d2a61f2cf03a96648b11"
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

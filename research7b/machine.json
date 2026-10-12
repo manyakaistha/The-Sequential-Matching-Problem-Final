@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "branch": "7b",
+  "host_id": "mac-01",
+  "status": "setup_implementation_handoff_not_execution_registration",
+  "workspace": "workspace",
+  "default_simulation_workers_later": 2,
+  "numerical_threads": 1,
+  "working_RSS_GiB_max": 10,
+  "new_output_GiB_max": 100,
+  "free_reserve_GiB": 30,
+  "simulation_test_CPU_hours_max": 160,
+  "fit_CPU_hours_max": 24,
+  "global_simulation_workers_max": 3,
+  "global_agent_slots_including_root": 4,
+  "child_agents_max": 3,
+  "runtime_implemented": false,
+  "experiments_authorized": false,
+  "seed_freshness_certified": false,
+  "hardware_observation": "planning observation: Apple M4 Mac mini, 10 cores,16 GiB; recheck locally"
+}

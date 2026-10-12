@@ -1,0 +1,40 @@
+{
+  "cpu_allowance_seconds": 300,
+  "held_out_definition": "Fixed deterministic graph/horizon sweep separate from named counterexample assertions; no fit or model selection.",
+  "model_ids": [
+    "local_cardinality_repair",
+    "cardinality_reward_reversal",
+    "odd_triangle",
+    "known_return_reservation",
+    "known_return_removed",
+    "repeat_opportunities",
+    "repeat_short_horizon",
+    "nonseparable_alternatives",
+    "last_action_day",
+    "single_introduction_no_learning",
+    "inherited_throughput_last_day",
+    "inherited_waiting_future_arrival",
+    "inherited_retry_option",
+    "inherited_static_greedy_trap",
+    "inherited_known_future_arrivals",
+    "inherited_early_exit",
+    "inherited_stochastic_returning",
+    "pause_not_qualified_penalty",
+    "renewal_certificate_toy",
+    "complementary_verification",
+    "collision_distinct_partners",
+    "soft_value_hard_cost",
+    "no_return_can_still_have_learning"
+  ],
+  "registered_utc": "20261011T041946.639650Z",
+  "reviewer": "Separate Sol-high critic; development policy enumerator does not close independent review.",
+  "scope": "Constructed exact reduced models only; no simulator worlds, seeds or empirical policy claims.",
+  "source_sha256": {
+    "research6/exact/__init__.py": "f49e8acfdb08252490226d7099dd06668eedc1ff93e1ff57433efe76fb62c79d",
+    "research6/exact/run.py": "6c4edbe142187255440a70ac66b631f795256dd0106166ebaf1db3ca14ca41b8",
+    "research6/exact/solver.py": "1023fb9077ded470f2cdc76660357260d6632b66e03beeb2eddfdc5afce2906c",
+    "research6/exact/specifications.py": "b7e1ade36ce343354e97d1dd5df944f753ad10f61cda820678d2754600fc7e47"
+  },
+  "specifications_sha256": "68185d4f437e5e4746cee4a84e2641c01ea8a08a4cba6520f58c83303563e717",
+  "status": "registered_before_solution_evaluation"
+}

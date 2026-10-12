@@ -1,0 +1,395 @@
+{
+  "scope": "Independent critic grid/count/design/sourceAST/recovery/orphan-public-log audit. No worlds parsed/generated; no episodes or fitting. Archive content hashes owned by production/provenance; this critic verifies sizes and hashes orphanlogs only.",
+  "source_checks": {
+    "kit.py": true,
+    "evaluate.py": true,
+    "research/terminal_model.py": true,
+    "research3/policy.py": true,
+    "research3/model_candidates.py": true,
+    "research4/candidates.py": true,
+    "research4/policy.py": true,
+    "research4/benchmark.py": true,
+    "research3/__init__.py": true,
+    "research4/__init__.py": true,
+    "research5/__init__.py": true,
+    "research5/prepare.py": true,
+    "research5/run_test.py": true,
+    "research5/analyze.py": true,
+    "research5/benchmark.py": true,
+    "research3/analyze.py": true
+  },
+  "science_fields_unchanged": [
+    "candidate",
+    "configuration",
+    "baseline",
+    "policies",
+    "families",
+    "seeds",
+    "n_clusters",
+    "planned_episodes",
+    "decision_days",
+    "follow_up_days",
+    "alpha",
+    "family_size",
+    "adjusted_confidence",
+    "primary_target_effect_for_power",
+    "planning_sd",
+    "minimum_n_model_power90",
+    "sample_inflation",
+    "model_power_at_fixed_n"
+  ],
+  "full_grid_cells": 5160,
+  "valid_committed_rows": 5160,
+  "fallbacks_committed": 0,
+  "failures_committed": 0,
+  "recorders": {
+    "28c41137ce30508c0bb3933c5d09ef14404917878468a7443ad9ab3b990515ee": 108,
+    "ea0c115df9eb6f2ae215945eefec6d089104d8a27d6ad41d973b4d7e7d0da4da": 10,
+    "87180ef159acd2903dd101524604301013a059b1881f196081ddf505dfe9b2e8": 5042
+  },
+  "totals": {
+    "greedy": {
+      "assignments": 193225,
+      "mutual_second_meeting_intention": 1968,
+      "arrived_members": 516000
+    },
+    "population_control": {
+      "assignments": 192455,
+      "mutual_second_meeting_intention": 1972,
+      "arrived_members": 516000
+    }
+  },
+  "independent_statistics": {
+    "mean": 0.0007751937984496128,
+    "sd": 0.2314037623335451,
+    "p_two_sided": 0.9446508326538576,
+    "adjusted_ci98_75": [
+      -0.027215446259080726,
+      0.02876583385597995
+    ],
+    "superiority": false,
+    "practical_gain_lower_above_05": false,
+    "effect_05_excluded_by_upper": true
+  },
+  "recovery": [
+    {
+      "archive": "results/research5/interrupted_runs/20261010T170752Z",
+      "committed_rows": 108,
+      "all_saved_scientific_rows_identical_final": true,
+      "run_function_ast_unchanged": true,
+      "manifest_file_count": 372,
+      "all_manifest_sizes_present": true,
+      "orphan_invocation_logs": 7,
+      "complete_trace_stems_without_committed_row": [
+        "greedy_delayed_90010",
+        "population_control_cold_start_90010",
+        "greedy_cold_start_90010"
+      ]
+    },
+    {
+      "archive": "results/research5/interrupted_runs/20261010T171453Z",
+      "committed_rows": 118,
+      "all_saved_scientific_rows_identical_final": true,
+      "run_function_ast_unchanged": true,
+      "manifest_file_count": 375,
+      "all_manifest_sizes_present": true,
+      "orphan_invocation_logs": 2,
+      "complete_trace_stems_without_committed_row": []
+    }
+  ],
+  "orphan_attempt_logs": [
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/population_control_sparse_90010.invocations.jsonl.gz",
+      "bytes": 287261,
+      "sha256": "603b9965af6d04b98992ffbbbe26a1ae2a3fc503b073973acb454b52179e353e",
+      "record_counts": {
+        "request": 11,
+        "response": 9
+      },
+      "request_count": 11,
+      "response_count": 9,
+      "unanswered_requests": [
+        {
+          "sequence": 10,
+          "phase": "match",
+          "day": 4
+        },
+        {
+          "sequence": 10,
+          "phase": "match",
+          "day": 4
+        }
+      ],
+      "read_error": "BadGzipFile: CRC check failed 0x8421abd1 != 0x81ac7d41",
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_sparse_90010.invocations.jsonl.gz",
+      "bytes": 232025,
+      "sha256": "700e46acabcd0c35682c65af2328cc4478e2ee0a1f92f0048cc9aa744f09ed55",
+      "record_counts": {
+        "request": 9,
+        "response": 9
+      },
+      "request_count": 9,
+      "response_count": 9,
+      "unanswered_requests": [],
+      "read_error": null,
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_development_90010.invocations.jsonl.gz",
+      "bytes": 1542915,
+      "sha256": "9f18d832b97b1a8eafb628e82776294564fa5e3c3f9a83890ef09cded7d46a85",
+      "record_counts": {
+        "request": 43,
+        "response": 43
+      },
+      "request_count": 43,
+      "response_count": 43,
+      "unanswered_requests": [],
+      "read_error": null,
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_cold_start_90010.invocations.jsonl.gz",
+      "bytes": 5165889,
+      "sha256": "36a724c32638ecadd302d44a0690fd8b6ac7ff17ddd54ba55cc972cf70c27562",
+      "record_counts": {
+        "request": 120,
+        "response": 120
+      },
+      "request_count": 120,
+      "response_count": 120,
+      "unanswered_requests": [],
+      "read_error": null,
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/population_control_cold_start_90010.invocations.jsonl.gz",
+      "bytes": 5147854,
+      "sha256": "0a416bf559b3377b75b85d5525d8de1478c187247f103fb19617944462b81dfc",
+      "record_counts": {
+        "request": 120,
+        "response": 120
+      },
+      "request_count": 120,
+      "response_count": 120,
+      "unanswered_requests": [],
+      "read_error": null,
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/population_control_development_90010.invocations.jsonl.gz",
+      "bytes": 1400462,
+      "sha256": "82a98a5313210f84ebcbc0325725531ef9a0041e338b6cd2cc8626b0ad44fa83",
+      "record_counts": {
+        "request": 40,
+        "response": 39,
+        "invocation_error": 1
+      },
+      "request_count": 40,
+      "response_count": 39,
+      "unanswered_requests": [
+        {
+          "sequence": 40,
+          "phase": "match",
+          "day": 19
+        }
+      ],
+      "read_error": null,
+      "logged_errors": [
+        {
+          "kind": "invocation_error",
+          "sequence": 40,
+          "error_type": "KeyboardInterrupt",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_delayed_90010.invocations.jsonl.gz",
+      "bytes": 5311304,
+      "sha256": "3393529975b437eb39b20efc5ad2891cc9338c6bb7bde70234e31162fefcd1c8",
+      "record_counts": {
+        "request": 120,
+        "response": 120
+      },
+      "request_count": 120,
+      "response_count": 120,
+      "unanswered_requests": [],
+      "read_error": null,
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T171453Z/confirmation_traces_full/greedy_drift_90010.invocations.jsonl.gz",
+      "bytes": 454094,
+      "sha256": "127ec52389c89e6b6cc9fd617de49efef5659f0c2a2706b983dca257b5628126",
+      "record_counts": {
+        "request": 16,
+        "response": 15
+      },
+      "request_count": 16,
+      "response_count": 15,
+      "unanswered_requests": [
+        {
+          "sequence": 16,
+          "phase": "match",
+          "day": 7
+        }
+      ],
+      "read_error": "EOFError: Compressed file ended before the end-of-stream marker was reached",
+      "logged_errors": []
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T171453Z/confirmation_traces_full/population_control_drift_90010.invocations.jsonl.gz",
+      "bytes": 389508,
+      "sha256": "ada4f51e3dfb1f4a68dc218e11edc72ed5509016fd19c2684ac9a95d1f2c7395",
+      "record_counts": {
+        "request": 14,
+        "response": 13
+      },
+      "request_count": 14,
+      "response_count": 13,
+      "unanswered_requests": [
+        {
+          "sequence": 14,
+          "phase": "match",
+          "day": 6
+        }
+      ],
+      "read_error": "EOFError: Compressed file ended before the end-of-stream marker was reached",
+      "logged_errors": []
+    }
+  ],
+  "warnings": [
+    "No committed failures is not proof of every attempted invocation succeeding; truncated or unwritten pending evidence may conceal status without selection.",
+    "FinitefourBonferroni requires validindividualtests and applies only specified family/commonalpha, not unboundedadaptiveresearch.",
+    "Sourcehashes/AST equality supportbyteequivalence, not universal resourceequivalence."
+  ],
+  "input_sha256": {
+    "results/research5/design.json": "56a8eb63200c069d3a64185c716ab62986d61f423a762e675d16f22f389663dc",
+    "results/research5/confirmation.json": "c45624e0ad7f77c763b5bca62d7296f2199eb37ad4dc4a56bf3fc4b37df8b334",
+    "results/research5/analysis.json": "213c60c177953e52437b7348138b8bada03af519785f17b102d33ec47617ff95",
+    "results/research5/recovery.json": "fbef353d915250f439bf1b3f8dd45a9deb54c898ed315f790b1c2188d7c8c4a5",
+    "results/research5/execution.json": "22d7719972791a81f3ab4c1b9b72321e3de7e7b0a78181b4d13ca03374dbf85d"
+  },
+  "cpu_seconds": 0.97833,
+  "orphan_prefix_and_complete_trace_check": [
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/population_control_sparse_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 9,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [
+        10
+      ],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": null,
+      "read_error": "BadGzipFile: CRC check failed 0x8421abd1 != 0x81ac7d41"
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_sparse_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 9,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": null,
+      "read_error": null
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_development_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 43,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": null,
+      "read_error": null
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_cold_start_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 120,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": true,
+      "read_error": null
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/population_control_cold_start_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 120,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": true,
+      "read_error": null
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/population_control_development_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 39,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": null,
+      "read_error": null
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T170752Z/confirmation_traces_full/greedy_delayed_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 120,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": true,
+      "read_error": null
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T171453Z/confirmation_traces_full/greedy_drift_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 15,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": null,
+      "read_error": "EOFError: Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "path": "results/research5/interrupted_runs/20261010T171453Z/confirmation_traces_full/population_control_drift_90010.invocations.jsonl.gz",
+      "matched_completed_responses": 13,
+      "all_parsable_response_actions_equal_final": true,
+      "duplicate_request_sequence_in_salvaged_log": [],
+      "complete_uncommitted_trace_equal_final_actions_introductions_feedback": null,
+      "read_error": "EOFError: Compressed file ended before the end-of-stream marker was reached"
+    }
+  ],
+  "configurations_verified": {
+    "greedy": {
+      "match": "greedy",
+      "ask": "fifo"
+    },
+    "population_control": {
+      "match": "population",
+      "ask": "fifo"
+    }
+  },
+  "additional_cpu_seconds": 2.384102,
+  "total_reviewer_cpu_seconds": 3.362432,
+  "external_review_artifacts_read": {
+    "research5/PRODUCTION_REVIEW.md": "04f2e40ae4c39924e58b19838c8abec0d322f67a86df60326f954e4c9431ce06",
+    "results/research5/production_validation.json": "8e9d8783a75b65a42cf747c909a1ee83311666fab1b27b373b416ed48d7db84a",
+    "results/research5/independent_statistics.json": "6ed8aef0082dd2f16bf7a958262f906c0cb3873d0cd5bc54a24b5a1435614f99",
+    "results/research5/independent_replay_direct.json": "ae5f98ed596e61d7edc73d288525eb3aa51d4808a48b4bfa41f180f31b9bd1a8",
+    "results/research5/independent_replay_subprocess.json": "4832e9015bd1a7cee09adc4225c663b84ae6d3a5e11bc565ab4a6357e80ed516",
+    "research5/RESULT_REPLICATION.md": "553cfb63f980cce61864b37c7090be1dc3a2d6aab63c57be73f1ae0f486258e1"
+  },
+  "independent_replay_status_at_review": {
+    "direct": {
+      "complete": true,
+      "episodes": 24,
+      "all_valid": true,
+      "all_ordered_actions_equal": true,
+      "all_semantic_actions_equal": true,
+      "metric_mismatches": 0,
+      "fallbacks": 0
+    },
+    "subprocess": {
+      "complete": true,
+      "episodes": 24,
+      "all_valid": true,
+      "all_ordered_actions_equal": true,
+      "all_semantic_actions_equal": true,
+      "metric_mismatches": 0,
+      "fallbacks": 0
+    }
+  },
+  "written_review_conclusion": "No material numerical/public-input blocker for the completed fixed grid; no superiority; preserve interrupted-attempt uncertainty and finite-family/production-scope limits. Final archive sealing is separate."
+}

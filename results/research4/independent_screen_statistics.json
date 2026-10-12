@@ -1,0 +1,147 @@
+{
+  "source": "results/research4/screen.json",
+  "clusters": {
+    "acceptance_shrinkage": {
+      "n": 12,
+      "mean": 0.4791666666666667,
+      "paired_difference": 0.1736111111111111,
+      "paired_sd": 0.2115906966187854,
+      "ci95": [
+        0.03917279635836121,
+        0.30804942586386097
+      ],
+      "p_two_sided": 0.016015525716662832
+    },
+    "coordinated_goal": {
+      "n": 12,
+      "mean": 0.39583333333333337,
+      "paired_difference": 0.09027777777777779,
+      "paired_sd": 0.3453484796413217,
+      "ci95": [
+        -0.1291461777520405,
+        0.3097017333075961
+      ],
+      "p_two_sided": 0.3845782167995456
+    },
+    "goal_surplus_control": {
+      "n": 12,
+      "mean": 0.5,
+      "paired_difference": 0.19444444444444445,
+      "paired_sd": 0.2690549616538829,
+      "ci95": [
+        0.02349507758365968,
+        0.3653938113052292
+      ],
+      "p_two_sided": 0.029324106739197976
+    },
+    "greedy": {
+      "n": 12,
+      "mean": 0.3055555555555556,
+      "paired_difference": 0.0,
+      "paired_sd": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_two_sided": null
+    },
+    "hard_priority": {
+      "n": 12,
+      "mean": 0.5069444444444444,
+      "paired_difference": 0.2013888888888889,
+      "paired_sd": 0.244789987636623,
+      "ci95": [
+        0.04585675098253664,
+        0.3569210267952412
+      ],
+      "p_two_sided": 0.015799026009779202
+    },
+    "population_control": {
+      "n": 12,
+      "mean": 0.5,
+      "paired_difference": 0.19444444444444445,
+      "paired_sd": 0.21418548241050528,
+      "ci95": [
+        0.05835748145451952,
+        0.3305314074343694
+      ],
+      "p_two_sided": 0.009327869591081433
+    },
+    "response_beta_control": {
+      "n": 12,
+      "mean": 0.4791666666666667,
+      "paired_difference": 0.1736111111111111,
+      "paired_sd": 0.2145536043935155,
+      "ci95": [
+        0.037290254571941434,
+        0.30993196765028075
+      ],
+      "p_two_sided": 0.017180487343013168
+    },
+    "response_uniform": {
+      "n": 12,
+      "mean": 0.4861111111111111,
+      "paired_difference": 0.18055555555555555,
+      "paired_sd": 0.22706219204711087,
+      "ci95": [
+        0.036287121589973104,
+        0.324823989521138
+      ],
+      "p_two_sided": 0.018736317066361998
+    }
+  },
+  "method": "independent six-family seed average and paired t; no director analysis imports",
+  "parent_contrasts": {
+    "hard_priority minus population_control": {
+      "mean": 0.006944444444444447,
+      "sd": 0.21159069661878543,
+      "ci95": [
+        -0.12749387030830545,
+        0.14138275919719434
+      ],
+      "p": 0.9115301261676805,
+      "scope": "exploratory same-screen parent contrast; no independent reward evidence or confirmatory claim"
+    },
+    "goal_surplus_control minus population_control": {
+      "mean": -1.1564823173178713e-18,
+      "sd": 0.1465081788319221,
+      "ci95": [
+        -0.09308685577581977,
+        0.09308685577581977
+      ],
+      "p": 1.0,
+      "scope": "exploratory same-screen parent contrast; no independent reward evidence or confirmatory claim"
+    },
+    "coordinated_goal minus goal_surplus_control": {
+      "mean": -0.10416666666666667,
+      "sd": 0.29543026318243093,
+      "ci95": [
+        -0.29187410061289637,
+        0.08354076727956301
+      ],
+      "p": 0.2474594199604838,
+      "scope": "exploratory same-screen parent contrast; no independent reward evidence or confirmatory claim"
+    },
+    "response_uniform minus response_beta_control": {
+      "mean": 0.006944444444444444,
+      "sd": 0.024056261216234404,
+      "ci95": [
+        -0.0083401747228586,
+        0.022229063611747486
+      ],
+      "p": 0.3388006961962017,
+      "scope": "exploratory same-screen parent contrast; no independent reward evidence or confirmatory claim"
+    },
+    "acceptance_shrinkage minus response_uniform": {
+      "mean": -0.006944444444444443,
+      "sd": 0.10334270078101213,
+      "ci95": [
+        -0.07260526392757996,
+        0.05871637503869107
+      ],
+      "p": 0.8202057391108901,
+      "scope": "exploratory same-screen parent contrast; no independent reward evidence or confirmatory claim"
+    }
+  },
+  "cpu_seconds": 0.03209099999999998
+}

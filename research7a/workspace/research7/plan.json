@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "status": "planning_only_not_execution_registration",
+  "created": "2026-10-11",
+  "finalized": "2026-10-12",
+  "authorization": "planning_only",
+  "new_policy_episodes_executed": 0,
+  "fits_executed": 0,
+  "phase_tests_executed": 0,
+  "seed_freshness_verified": false,
+  "runtime_implemented": false,
+  "families": [
+    "development",
+    "sparse",
+    "cold_start",
+    "delayed",
+    "shift",
+    "drift"
+  ],
+  "members_per_episode": 200,
+  "action_days": 60,
+  "follow_up_days": 40,
+  "baseline_panel": [
+    "G",
+    "N",
+    "R",
+    "P",
+    "K",
+    "Q6"
+  ],
+  "candidates": [
+    {
+      "id": "Q1",
+      "cost_class": "light",
+      "primary_parent": "G",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "H1",
+      "cost_class": "light",
+      "primary_parent": "P",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "A1",
+      "cost_class": "light",
+      "primary_parent": "P",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "A2",
+      "cost_class": "light",
+      "primary_parent": "P",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "Q2",
+      "cost_class": "bounded_heavy",
+      "primary_parent": "FIFO_A1",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "D1",
+      "cost_class": "heavy",
+      "primary_parent": "A1",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "D2",
+      "cost_class": "heavy_integrated",
+      "primary_parent": "FIFO_D1",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "L1",
+      "cost_class": "heavy_fit",
+      "primary_parent": "P",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    },
+    {
+      "id": "L2",
+      "cost_class": "conditional_student",
+      "primary_parent": "A1",
+      "first_empirical_phase": "P4",
+      "status": "unvalidated"
+    },
+    {
+      "id": "X1",
+      "cost_class": "conditional_light",
+      "primary_parent": "H1_or_P_frozen_before_screen",
+      "first_empirical_phase": "P3",
+      "status": "unvalidated"
+    }
+  ],
+  "stages": [
+    {
+      "id": "P1_smoke",
+      "clusters": 4,
+      "first_seed": 700001,
+      "last_seed": 700004,
+      "arms_max": 16,
+      "episodes_max": 384,
+      "machine": "7b",
+      "inferential": false
+    },
+    {
+      "id": "P2_train",
+      "clusters": 128,
+      "first_seed": 720001,
+      "last_seed": 720128,
+      "arms_max": 4,
+      "episodes_max": 3072,
+      "machine": "7b",
+      "conditional": true
+    },
+    {
+      "id": "P2_validation",
+      "clusters": 64,
+      "first_seed": 721001,
+      "last_seed": 721064,
+      "arms_max": 4,
+      "episodes_max": 1536,
+      "machine": "7b",
+      "conditional": true
+    },
+    {
+      "id": "P2a_pilot",
+      "clusters": 12,
+      "first_seed": 710001,
+      "last_seed": 710012,
+      "arms_max": 5,
+      "episodes_max": 360,
+      "machine": "7a",
+      "inferential": false
+    },
+    {
+      "id": "P3_screen",
+      "clusters": 48,
+      "first_seed": 730001,
+      "last_seed": 730048,
+      "arms_max": 16,
+      "episodes_max": 4608,
+      "machine": "7b"
+    },
+    {
+      "id": "P4_replication",
+      "clusters": 96,
+      "first_seed": 740001,
+      "last_seed": 740096,
+      "arms_max": 12,
+      "episodes_max": 6912,
+      "machine": "7b"
+    },
+    {
+      "id": "P5_selection",
+      "clusters": 128,
+      "first_seed": 750001,
+      "last_seed": 750128,
+      "arms_max": 9,
+      "episodes_max": 6912,
+      "machine": "7b"
+    },
+    {
+      "id": "P6_confirmation",
+      "clusters_max": 1800,
+      "first_seed": 760001,
+      "last_seed": 761800,
+      "arms_max": 7,
+      "episodes_max": 75600,
+      "machine": "7b",
+      "optional_7a_complete_clusters_max": 24,
+      "n_status": "variance_sized_before_any_E_generation"
+    }
+  ],
+  "episode_ceiling": 99384,
+  "slots": {
+    "agents_global_including_root": 4,
+    "children_max": 3,
+    "simulation_processes_global": 3,
+    "default_7a": 1,
+    "default_7b": 2,
+    "nested_delegation": false
+  },
+  "search_caps": {
+    "portfolio_entries": 10,
+    "P3_promoted_mechanism_families": 2,
+    "P4_arms": 12,
+    "P5_contenders": 3,
+    "integrated_entries": 1,
+    "fits_all_subsystems_total": 12
+  },
+  "statistics": {
+    "primary": "seed_mean_equal_six_family_qualified_MSMI_per_100_arrived_by59",
+    "alpha_round_family": 0.01,
+    "comparisons": 6,
+    "practical_observed_G_gain_min": 0.025,
+    "confirmatory_all_panel_lower_min_strict": 0,
+    "design_effect": 0.05,
+    "sd_floor": 0.3,
+    "D_sd_inflation": 1.1,
+    "n_inflation": 1.1,
+    "per_contrast_power_target": 0.9833333333333333,
+    "joint_power_target": 0.9,
+    "n_max": 1800,
+    "bootstrap_replicates": 10000,
+    "bootstrap_analysis_seed": 907007,
+    "family_safety": "descriptive_not_powered_NI",
+    "extend_after_E": false
+  },
+  "budgets": {
+    "7a_total_CPU_hours": 6,
+    "7a_output_GiB_max": 8,
+    "7a_free_reserve_GiB": 4,
+    "7a_working_RSS_GiB_max": 2,
+    "7b_simulation_test_CPU_hours": 160,
+    "7b_fit_CPU_hours": 24,
+    "7b_output_GiB_max": 100,
+    "7b_free_reserve_GiB": 30,
+    "7b_combined_working_RSS_GiB_max": 10,
+    "forecast_headroom_multiplier": 1.5
+  },
+  "work_caps": {
+    "planner_selection_particles": 32,
+    "planner_margin_particles": 32,
+    "planner_actions": 12,
+    "planner_future_epochs": 12,
+    "planner_future_model_steps_total_max": 5376,
+    "acquisition_packages": 96,
+    "acquisition_selection_particles": 32,
+    "acquisition_margin_particles": 32,
+    "acquisition_surrogate_branch_evaluations_max": 3136,
+    "affected_actors_max": 6,
+    "boundary_actors_max": 6,
+    "internal_exceptional_guard_seconds": 6
+  },
+  "machine_plans": {
+    "7a": "PLAN_7A.md",
+    "7b": "PLAN_7B.md"
+  },
+  "implementation_contract": "All referenced future research7 runtime/registry/merge modules and CLIs are specifications; no phase execution permitted from this JSON.",
+  "episode_ceiling_scope": "Distinct cells in listed main grids; physical verification replays and retries are additional attempts counted in finite CPU/storage budgets, never independent samples."
+}

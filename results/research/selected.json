@@ -1,0 +1,13 @@
+{
+  "selected": "product",
+  "config": {
+    "fusion": "product"
+  },
+  "source": "selection.json",
+  "seeds": [
+    201,
+    202,
+    203
+  ],
+  "rule": "Highest scenario-balanced primary score"
+}

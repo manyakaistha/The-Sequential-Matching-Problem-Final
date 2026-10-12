@@ -1,0 +1,726 @@
+THE ONE INTRODUCTION PROBLEM                                                 ROUND 1 RESEARCH APPROACH NOTE                                                                        OCTOBER 2026
+
+
+
+
+Better Questions.
+Better Matches.
+Allocation-Aware Clarification and Global Reciprocal
+Matching Under Uncertainty
+
+MANAMI BERA · TEAM ME
+
+
+
+
+RESEARCH HYPOTHESIS
+                                                  Problem. Clarification decisions and introduction allocation are interdependent under uncertainty and
+                                                  reciprocal hard constraints.
+Proposed, not established.                        Mechanism. We propose a feasibility-first policy that prioritises questions by their estimated effect on the best
+Assessed by paired simulator                      feasible matching, values feasible edges by downstream MSMI, and selects introductions jointly through
+evaluation and exact validity
+                                                  maximum-weight general-graph matching.
+checks [1].
+                                                  Testable claim. We hypothesise that the integrated policy improves family-averaged MSMI per 100 arrived
+                                                  members over the official greedy, no-clarification and random-feasible baselines. Paired simulator evaluation
+                                                  may falsify this claim; improvement is not assumed.
+
+
+
+
+                                                                                    next day · 60 decision days
+
+
+
+
+    OBSERVE                                                    CLARIFY                                                    OPTIMISE                                                     LEARN
+     state Oₜ                                                 ask batch Qₜ                                               matching Mₜ                                               mature feedback
+
+
+
+
+01 GATE                                                            02 ASK                                                              03 ALLOCATE
+
+
+Hard constraints define what may be done. A score                  Information is valuable only if it can change today’s               Introductions compete for people; choose them
+never overrides them.                                              best allocation.                                                    together, not one by one.
+
+
+
+
+All profiles and outcomes in the challenge environment are synthetic. This note proposes a method and a pre-specified evaluation plan; it reports no experimental results. Rules follow the official
+participant specification, release 1.0.0 (5 October 2026) [1].
+
+
+
+
+ROUND 1 RESEARCH SUBMISSION                                                                                                                                                                 01 / 12
+THE ONE INTRODUCTION PROBLEM                                                                          ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+PROBLEM FORMULATION
+
+
+The Sequential Decision Problem
+The challenge is a finite-horizon policy problem, not independent pair
+                                                                                          OFFICIAL HORIZON
+ranking. On decision day t in {0,...,59}, the observable state is
+                                                                                          60 decision days
+                                                                                          40 follow-up days
+                            O = (A , X , Z , H , B )                                      12 ask units/day
+                               t            t   t   t   t   t                             Hard bundle: 3 units
+                                                                                          Soft field: 1 unit
+At contains arrived and available members; Xt observable profiles; Zt
+                                                                                          Response deadline: 7 days
+field status and observation time; Ht released interaction history; and Bt
+remaining ask budget plus permitted memory. Future arrivals, hidden
+state, undisclosed answers and unreleased outcomes are excluded [1].
+
+Each day has two legal phases: submit one batch of clarification requests, receive results and refresh the observation,
+then submit a feasible non-overlapping introduction batch. There is no intra-day adaptive question-by-question loop.
+Objective and Ranking
+
+For episode s, let Ms be qualifying introductions and Ns members arrived by day 59:
+                                                        Rs = 100 × Ms / Ns
+One qualifying pair counts once. The primary score averages episode scores within each of six families, then averages
+the six family means equally. Tie-breaks are coverage, mutual acceptances per 100, lower ask cost and lower inference
+time [1].
+
+   ENDPOINT COMPETITION - ILLUSTRATIVE ONLY
+
+    Pair                            Value
+
+    A-B                             0.90
+                                                                                          0.90
+    C-D                             0.05                                  A                                  B
+    A-D                             0.65
+    B-C                             0.65                           0.65                                          0.65
+
+
+
+                                                                          D                                  C
+                                                                                          0.05
+
+
+                                                                          Greedy total: 0.95       Global total: 1.30
+
+
+
+  Validity is lexicographic. A favourable score never overrides a hard constraint. An invalid ask, malformed response,
+  runtime failure or invalid batch makes the assessed episode invalid and ineligible for ranking [1].
+
+
+
+
+Better Questions. Better Matches.                                                                                          02 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                        ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+RESEARCH FOUNDATION
+
+
+Established Tools, Challenge-Specific Integration
+The proposal combines established ideas without claiming that their combination is already proven. Reciprocal
+recommendation motivates modelling value to both endpoints [2,3]; active feature acquisition motivates paying for
+information only when it can improve a downstream decision [5]; Edmonds supplies the general-graph matching
+abstraction [4]; selective-label and delayed-learning work motivate time-safe, cautious updating [6,8].
+
+FOUNDATION                          ESTABLISHED PRINCIPLE                    OUR CHALLENGE-SPECIFIC USE
+
+Reciprocal recommendation           People are both recommenders and         Symmetric pair/context features and a pair-level downstream outcome,
+                                    recommendands; bilateral utility         never one-sided relevance.
+                                    matters.
+
+Active feature acquisition          Information has value relative to a      Approximate the change in the best feasible matching value under
+                                    downstream decision and cost.            plausible clarification answers.
+
+General-graph matching              A matching contains edges sharing no     Jointly select introductions because preferences do not guarantee a
+                                    endpoint.                                fixed bipartition.
+
+Sequential learning                 Actions select labels; rewards can be    Train only on mature, released feedback; exploration remains bounded
+                                    delayed.                                 and optional.
+
+One Organising Decision Principle
+
+
+         Hard feasibility                          MSMI funnel                     Allocation-aware VOI                    Global matching
+         what may be done                       what an edge is worth                what is worth asking                  what to do together
+
+
+
+
+STATUS                  MECHANISMS                                                                               BURDEN OF PROOF
+
+CORE                    Exact feasibility; time-safe features; conditional MSMI; maturity masks; calibration     Validity and basic fidelity.
+                        when useful.
+
+PRIMARY                 Allocation-aware clarification and maximum-weight general-graph matching.                Central hypothesis.
+
+OPTIONAL                Bootstrap exploration; conservative recency adaptation; strategic waiting.               Include only if ablations help.
+
+
+
+  Scientific boundary. Prior work supports the components, not the success of this exact policy in this simulator. We
+  propose a falsifiable integration and will evaluate it against the official baselines; we do not claim measured
+  improvement.
+
+
+
+
+Better Questions. Better Matches.                                                                                                                03 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                    ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+VALIDITY LAYER
+
+
+Exact Reciprocal Feasibility
+For any arrived candidate pair (i,j), the official eligibility semantics induce the three-state gate
+                                       gt(i,j) in {infeasible, unresolved, feasible}
+A known hard failure dominates missingness. Unknown or declined mandatory information cannot be imputed into
+feasibility. Only currently feasible edges may enter the final matching graph [1].
+
+
+
+                                                         RECIPROCAL HARD CHECKS
+                                                           both directions, current state
+
+
+
+
+                  INFEASIBLE                                     UNRESOLVED                                          FEASIBLE
+               known hard failure                               hard data missing                                   all checks pass
+
+
+
+
+                 discard edge                            legal clarification candidate                       admit to matching graph
+
+
+Pair-Level Hard Checks                                                       Operational Checks at Output
+
+• Distinct adults in the same pool.                                           • Both members currently available.
+• Each age lies inside the other's stated range.                              • No outstanding concurrent introduction.
+• Each stated gender is accepted by the other.                                • Pair not previously introduced in the episode.
+• Relationship structures agree.                                              • Each endpoint used at most once in the batch.
+• Reciprocal smoking and current-children constraints.                        • Batch shape and identifiers are valid.
+• No explicit yes/no conflict on wanting children.                            • Empty graphs safely return an empty batch.
+• Each accepts the other's current zone.
+• At least one overlapping schedule slot.                                      Atomicity matters. The simulator validates the complete batch
+                                                                               before applying it; an invalid action creates no partial batch
+                                                                               and invalidates the episode.
+
+
+
+  Time-safety rule. Reconstruct eligibility from values, field status and observation times available at day t. Never backfill an early
+  decision with a later answer, private truth, generator seed or opaque-ID inference.
+
+
+
+
+Better Questions. Better Matches.                                                                                                         04 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                   ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+OUTCOME MODEL
+
+
+Estimating Downstream MSMI
+For each currently feasible edge e, estimate the probability of the exact downstream outcome through nested
+conditional events:
+
+
+                                    μ̂ = P̂(A | x ) × P̂(D | A, x ) × P̂(S | D, A, x )
+                                      e             e                        e                            e
+
+A is recorded mutual acceptance; D is a qualifying date within 30 days of assignment; S is two timely 'Yes'
+second-meeting intentions. This is a chain-rule factorisation of nested events - not an independence claim about the
+two people [1].
+
+
+               A mutual recorded acceptance                                                                                 P(A | x)
+
+
+
+
+                             D qualifying date                                                              P(D | A,x)
+
+
+
+
+                                          S mutual second-meeting intention               P(S | D,A,x)
+
+
+
+Lightweight Model Stack                                                  Training and Diagnostics
+
+• Regularised logistic models as default; a small tree model as           • Store action-time feature snapshots; never attach final profiles
+  challenger.                                                               retrospectively.
+• Reciprocal similarities/differences, age gap, schedule overlap          • Train each stage only after its target window is mature.
+  and context.                                                            • Fit population priors and partial-pooling shrinkage for sparse
+• Missingness and disclosure-status indicators.                             histories.
+• Time since arrival, candidate scarcity and current graph degree.        • Assess reliability, Brier score and log loss on held-out mature
+• Shrunk member-history summaries using only released                       observations.
+  outcomes.                                                               • Apply low-parameter calibration only if held-out probability
+                                                                            quality improves [10].
+
+
+  Comparator, not assumption. A direct regularised MSMI classifier will be evaluated against the funnel. The funnel may use
+  intermediate supervision; the direct model may avoid propagated stage error. Neither is declared superior before experiments.
+
+Target-Specific Maturity Gates
+
+
+                A ACCEPTANCE                                     D DATE                                    S SECOND INTENTION
+             response window closed                     qualifying-date window closed                    date plus response window closed
+
+
+
+
+Better Questions. Better Matches.                                                                                                           05 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                     ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+PRIMARY CONTRIBUTION
+
+
+Allocation-Aware Clarification
+Let V*(Ot) be the estimated value of the best current feasible matching. For a legal question q with answer model P̂(a |
+Ot, q):
+
+
+                                       aVOI(q) = E [V*(O after q = a)] - V*(O )
+                                                        a      t                                     t
+                                                priority(q) = max{0, aVOI(q)} / c(q)
+
+
+Uncertainty alone is insufficient. A question matters only if plausible answers can unlock feasible edges, alter edge
+values, or change the coordinated allocation. Declined or undisclosed answers are explicit scenarios in the answer
+model. This is an approximation to decision-relevant information value, not an exact POMDP solution [5].
+
+
+                  1 BUILD                                  2 SCREEN                                       3 SHORTLIST
+             feasible + unlockable                       legal questions                                 allocation frontier
+
+
+
+
+                 6 SELECT                                 5 RE-SOLVE                                      4 SIMULATE
+             batch within budget                        affected matchings                                plausible answers
+
+
+
+
+                7 REFRESH                                 8 REBUILD                                         9 MATCH
+                 resolve asks                            exact feasibility                                global allocation
+
+
+
+Cheap Screen                                                                 Capped Hypothetical Evaluation
+
+Hard-bundle asks are favoured when a member has several                      For a small shortlist, enumerate legal categorical answers or
+unresolved, otherwise promising edges, especially to scarce                  sample a few bundle outcomes from legitimately observed
+endpoints. Soft-field asks are considered near the allocation                training rollouts. Cache unaffected work, cap total matching
+frontier: endpoints in the current matching or close high-value              re-solves, then select a cost-constrained batch with a redundancy
+alternatives. Known hard failures are removed first.                         penalty.
+
+
+  Batched-interface compliance. All asks are chosen before any same-day answer is revealed. The policy refreshes once after the batch,
+  then reconstructs exact feasibility before matching. No intra-day adaptive interrogation is assumed.
+
+
+
+
+Better Questions. Better Matches.                                                                                                      06 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                                   ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+ALLOCATION LAYER
+
+
+Global Reciprocal Matching
+After clarification, construct the feasible general graph Gt=(Vt,Et) and assign each edge {i,j} the calibrated downstream
+estimate wij=μ̂ij. Select:
+
+
+                                                        M * = arg max                 ∑               w
+                                                            t                     M      {i,j} in M       ij
+                                                   M is a matching on Et; degM(i) ≤ 1 for every i
+
+
+All availability, eligibility, repeat-pair and outstanding-introduction rules are enforced before output. Reciprocal
+gender preferences do not guarantee a fixed two-sided partition, so the graph must not be treated as bipartite by
+default. Edmonds-style general-graph matching is the correct abstraction [4].
+           Descending-edge greedy                                                                    Maximum-weight matching
+
+
+
+
+                                    0.90                                                                                    0.90
+                A                                       B                                                 A                                        B
+
+
+
+         0.65                                               0.65                                   0.65                                                0.65
+
+
+
+
+                D                                       C                                                 D                                        C
+                                    0.05                                                                                    0.05
+
+
+                      Total = 0.95                                                                             Total = 1.30
+
+
+
+                    Selected edges are teal; unselected alternatives are grey. Values are illustrative, not predictions or experimental results.
+
+Why Greedy Can Lose                                                                 Operational Safeguards
+
+The highest single edge may consume two endpoints whose                             Prune impossible pairs, score only feasible edges, solve
+separate alternatives jointly create more value. Sorting edges is                   components where useful, and enforce an internal solver
+useful as a fallback, but it does not optimise the sum over a                       deadline. If the bounded solve has not completed, use a
+non-overlapping set.                                                                precomputed valid greedy matching, then run the final guard.
+
+
+  Guarantee versus hypothesis. When the exact solver completes successfully, its result maximises total estimated edge weight for the
+  graph it receives. A deadline-triggered greedy fallback remains feasible but is not guaranteed maximum-weight. Neither case
+  guarantees actual downstream MSMI, that matching now beats waiting, or that the full sequential policy is optimal.
+
+
+
+
+Better Questions. Better Matches.                                                                                                                             07 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                  ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+SYSTEM DESIGN
+
+
+Complete Policy and Computational Implementation
+
+     OBSERVABLE STATE                             EXACT TRIAGE              aVOI SCREEN                           ASK BATCH
+            + memory                                  + caches              + capped solves                       within budget
+
+
+
+
+         FINAL GUARD                             GLOBAL MATCH              MSMI SCORES                        REFRESHED STATE
+         + JSON response                           or valid fallback          calibrated                            after asks
+
+
+
+Policy Skeleton                                                                        Runtime Discipline
+
+                                                                                           • Hard-rule and coarse geography pruning before
+   ON ASK(state, memory)
+                                                                                             feature work.
+   memory = update_observed(state,memory)
+                                                                                           • Cache member transforms, pair features and
+   F,U = exact_triage(state)
+                                                                                             unchanged edge scores.
+   if F and U are empty: return {"asks": [], "memory": memory}
+                                                                                           • Use low-dimensional models with bounded
+   w0 = cached_scores(F)                                                                     inference cost.
+   fallback0 = valid_greedy(F,w0)
+                                                                                           • Limit shortlist size, answer scenarios and
+   base = bounded_matching(F,w0,ask_deadline,fallback0)                                      matching re-solves.
+   Q = cheap_screen(legal_asks,F,U,base)                                                   • Give ASK and MATCH separate cancellable
+   Q = capped_hypothetical_value(topK(Q))                                                    internal deadlines.
+   return {"asks": budgeted_batch(Q,12), "memory": memory}                                 • Reserve headroom in both phases for validation,
+                                                                                             memory output and serialization.
+   ON MATCH(refreshed_state, memory)
+   memory = update_observed(refreshed_state,memory)
+   F,_ = exact_triage(refreshed_state)
+   if F is empty: return {"pairs": [], "memory": memory}
+   w = calibrated_funnel_scores(F)
+   fallback = valid_greedy(F,w)
+   M = bounded_matching(F,w,match_deadline,fallback)
+   return {"pairs": final_exact_guard(M), "memory": memory}
+
+
+
+
+  Official envelope. Each offline invocation includes process startup and must fit 10 seconds, 2 CPU cores, 1 GiB RAM, 64 processes
+  and 1 MiB request/response/memory limits. Network and GPU access are unavailable. No latency is claimed here; worst-case
+  container profiling is required [1].
+
+
+Compute the deterministic feasible-greedy fallback before launching the bounded optimiser. If the internal solver deadline is reached,
+return that already available fallback, preserving time for the final guard and JSON serialization.
+
+
+
+
+Better Questions. Better Matches.                                                                                                    08 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                                                  ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+LEARNING LAYER
+
+
+Delayed Feedback and Robust Updating
+Assignments, directional responses, dates and second-meeting intentions are distinct events. The policy must learn
+from what has been released, not from what will eventually happen.
+                                                                                                      3 days after actual qualifying date
+
+                                    qualifying date within 30 days of assignment
+
+             up to 7 days
+
+
+
+
+assign                         response                                                     example qualifying         day 30    second-intention                    follow-up
+                               deadline                                                           date               date cutoff     deadline                    matures late actions
+
+
+                                      The day-30 cutoff is assignment-relative; the intention deadline is date-relative and may fall later.
+                                                        Illustrative event timing; horizontal distances are not to scale.
+
+Maturity, Censoring, Missingness                                                           Selective Feedback and Drift
+
+ • A pending response is not a negative label.                                             Only introduced pairs reveal downstream outcomes, so the policy
+ • No response by a target deadline means the recorded event                               shapes its own training data [6]. Historical propensities are null;
+   did not occur; it does not prove dislike.                                               unbiased inverse-propensity evaluation is not claimed. Diverse
+ • A pair that never dates has no observed second-meeting                                  rollout policies and small feasibility-safe exploration may reduce
+   preference.                                                                             lock-in [7]. Conservative recency weighting or a simple change
+                                                                                           detector can be tested for changing response conditions [11].
+ • Train a stage only when its window has closed and required
+   history is visible.
+ • Retain late feedback for diagnostics without counting it toward
+   on-time MSMI.
+
+
+  Time-safe update contract. Save the observation and features used at action time. Join only feedback whose observed_day is no later
+  than the update day. Apply target-specific maturity masks. Reinitialise memory for each episode. Never carry evidence from private
+  evaluation runs.
+
+Optional Modules Must Earn Inclusion
+
+ EXTENSION                          POTENTIAL VALUE                                                          GUARDRAIL
+
+ Bootstrap exploration              Diversifies uncertain feasible edges and may reduce                      Small/decaying randomisation; strict feasibility;
+                                    selective-label lock-in.                                                 no-exploration ablation.
+
+ Recency adaptation                 Responds to changing conditions with released                            Conservative weighting; stable base; adaptation-off
+                                    intermediate feedback.                                                   ablation.
+
+ Strategic waiting                  Preserves option value for future arrivals or scarce                     Default no-wait unless paired validation improves MSMI
+                                    members.                                                                 without unacceptable coverage loss.
+
+Waiting is not assumed beneficial: dynamic matching theory makes its value conditional on market thickness, information and waiting
+costs [9].
+
+
+
+
+Better Questions. Better Matches.                                                                                                                                    09 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                              ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+EVIDENCE PLAN
+
+
+Rigorous Evaluation Protocol
+The central hypothesis will be tested by complete-policy simulator rollouts, never by fabricated results or row-wise
+splits of participant histories.
+Data and Scenario Separation                                                         Official Comparisons
+
+• Keep the official six training, two validation and two                             • Greedy: baseline asks plus descending feasible-edge selection.
+  development-test pools disjoint.
+                                                                                     • No clarification: the official no-asks baseline.
+• Train, tune and freeze in that order; never split rows from the
+  same people or pools across stages.                                                • Random feasible: shuffled feasible edges with non-overlap.
+• Evaluate six families: standard (development in public code),                      Our full policy and every ablation receive the same seeds,
+  sparse geography, cold start, delayed dates, shifted outcome                       scenarios, horizon and follow-up. Each episode begins with empty
+  weights and changing response conditions (drift).                                  memory. All methods must pass interface and validity checks
+• Use identical worlds and paired seeds for every method.                            before scores are compared.
+• Private design: 20 seeds/family, 120 episodes; local work uses
+  multiple declared public seeds [1].
+
+Pre-Specified Measurement Stack
+
+LAYER                       MEASURE                                                                             INTERPRETATION
+
+Primary                     MSMI per 100 arrived; equal-weight mean across family means.                        Direct ranking objective.
+
+Service                     Coverage; first-introduction wait; unserved count.                                  Detects gains from serving fewer people.
+
+Funnel                      Assignments, mutual acceptances, dates, MSMI, missing feedback.                     Locates where outcomes change.
+
+Information                 Ask units, hard/soft mix, disclosure/decline outcomes.                              Tests whether questions are
+                                                                                                                decision-relevant.
+
+Reliability                 Calibration, Brier score, log loss on mature held-out labels.                       Checks cardinal edge values.
+
+Safety/compute              Invalid episodes, time, sizes, fallback rate.                                       Confirms deployability and eligibility.
+
+Paired Uncertainty Analysis
+
+Compute within-seed, within-family differences; report family means and dispersion. Where sample size supports it, use paired bootstrap
+intervals over episode seeds while preserving family structure. Report raw counts when outcomes are sparse. A zero count in a small
+episode is not evidence of equivalence.
+
+
+  Decision Rule. The hypothesis is supported only if the full policy improves family-averaged MSMI over all three official baselines with
+  zero invalid assessed episodes, and the gain is not explained by one favourable family, seed, or hidden coverage collapse.
+
+Paired Comparison Workflow
+
+
+          SAME WORLD                                ALL METHODS                              DIFFERENCE                              SUMMARY
+              paired seed                              fixed settings                          within seed                        equal family weight
+
+
+
+
+Better Questions. Better Matches.                                                                                                                         10 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                                             ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+STRESS TEST
+
+
+Ablations, Failure Modes and Falsification
+Ablation Ladder                                                                                   Compact Experimental Matrix
+
+VARIANT                       QUESTION ISOLATED                                                   VARIANT             REFERENCE              ONE CHANGE
+Full core policy              Does the integrated core improve the primary metric?                Core full           -                      Core policy; optional modules off
+
+Greedy allocation             Is joint allocation responsible for gain?                           Greedy              Core full              Replace MWM with greedy
+
+Baseline clarification        Does allocation-aware clarification improve decisions?              Base clarif.        Core full              Replace aVOI with baseline asks
+                                                                                                  No clarif.          Core full              Remove clarification asks
+No clarification              Does clarification improve matching outcomes?
+                                                                                                  Direct              Core full              Replace funnel with direct model
+Direct MSMI model             Does the conditional funnel help?
+                                                                                                  Raw weights         Core full              Disable calibration
+Uncalibrated weights          Does held-out calibration improve decisions?
+                                                                                                  Explore on          Core full              Enable exploration
+Exploration on/off            If considered, does bounded exploration repay its cost?
+                                                                                                  Wait on             Core full              Enable waiting
+Waiting on/off                If considered, does strategic deferral add value?
+                                                                                                  Adapt on            Core full, drift       Enable adaptation
+Adaptation on/off             If considered, does recency adaptation help under drift?
+
+                                                                                                   Interpretation discipline. Core ablations change one core
+                                                                                                   mechanism at a time. Optional modules are off by default; test
+                                                                                                   an on/off pair only when that module is a candidate addition,
+                                                                                                   using identical paired worlds.
+
+Failure Register
+
+RISK                                    FAILURE MECHANISM                                               MITIGATION / EVIDENCE
+
+Sparse graph / nondisclosure            Hard constraints or declined fields eliminate supply.           Plausibly unlocking asks; never impute; report unserved
+                                                                                                        members.
+
+Miscalibration / sparse MSMI            Cardinal weights mislead matching and VOI.                      Shrinkage, held-out reliability, direct-model comparator.
+
+Selection bias / delays                 Chosen pairs alone reveal outcomes; pending looks               Diverse rollouts, maturity masks, no unsupported propensity
+                                        negative.                                                       correction.
+
+Drift                                   Historical probabilities become stale.                          Conservative released-feedback adaptation; off ablation.
+
+Runtime spikes                          Dense graphs and re-solves exceed limits.                       Pruning, caching, caps, fallback, container profiling.
+
+Waiting / coverage loss                 Option value is overestimated.                                  No-wait default; horizon cap; service diagnostics.
+
+
+
+  What Would Falsify or Weaken the Hypothesis
+  The thesis is weakened if aVOI fails to beat baseline clarification, global matching does not beat greedy in paired rollouts,
+  calibration does not improve decisions, gains vanish after coverage/runtime controls, or any assessed episode is invalid. It is falsified
+  for this challenge if the full policy fails to outperform all three official baselines on the pre-specified family-averaged primary metric.
+
+Pre-Specified Interpretation
+
+
+                    RETAIN CORE                                           REMOVE OPTIONAL                                                  REJECT BUILD
+                   paired MSMI gain                                       no consistent benefit                                          invalid or over budget
+
+
+
+
+Better Questions. Better Matches.                                                                                                                                        11 / 12
+THE ONE INTRODUCTION PROBLEM                                                                                                           ROUND 1 RESEARCH SUBMISSION
+
+
+
+
+SOURCES AND AUDIT TRAIL
+
+
+References and Reproducibility
+[1] Official challenge specification. The One Introduction Problem:                          [7] Agrawal, S., and Goyal, N. 'Thompson Sampling for Contextual
+Sequential Reciprocal Matching Under Uncertainty. Final Participant                          Bandits with Linear Payoffs.' ICML / PMLR 28, 127-135, 2013. PMLR
+Specification 1.0.0, 5 Oct. 2026. Supplied archive. Official GitHub                          paper.
+repository.
+                                                                                             [8] Zhou, Z., Xu, R., and Blanchet, J. 'Learning in Generalized Linear
+[2] Pizzato, L. A. S., Rej, T., Chung, T., Koprinska, I., and Kay, J. 'RECON: A              Contextual Bandits with Stochastic Delays.' NeurIPS 32, 2019. NeurIPS
+Reciprocal Recommender for Online Dating.' ACM RecSys, 207-214,                              proceedings.
+2010. doi:10.1145/1864708.1864747.
+                                                                                             [9] Akbarpour, M., Li, S., and Oveis Gharan, S. 'Thickness and Information
+[3] Li, L., and Li, T. 'MEET: A Generalized Framework for Reciprocal                         in Dynamic Matching Markets.' Journal of Political Economy,
+Recommender Systems.' ACM CIKM, 35-44, 2012.                                                 128(3):783-815, 2020. doi:10.1086/704761.
+doi:10.1145/2396761.2396770.
+                                                                                             [10] Niculescu-Mizil, A., and Caruana, R. 'Predicting Good Probabilities
+[4] Edmonds, J. 'Paths, Trees, and Flowers.' Canadian Journal of                             with Supervised Learning.' ICML, 625-632, 2005.
+Mathematics, 17:449-467, 1965. doi:10.4153/CJM-1965-045-4.                                   doi:10.1145/1102351.1102430.
+[5] Valancius, M., Lennon, M., and Oliva, J. 'Acquisition Conditioned                        [11] Bifet, A., and Gavalda, R. 'Learning from Time-Changing Data with
+Oracle for Nongreedy Active Feature Acquisition.' ICML / PMLR 235,                           Adaptive Windowing.' SIAM SDM, 443-448, 2007.
+48957-48975, 2024. PMLR paper.                                                               doi:10.1137/1.9781611972771.42.
+[6] Wei, D. 'Decision-Making Under Selective Labels: Optimal
+Finite-Domain Policies and Beyond.' ICML / PMLR 139, 11035-11046,
+2021. PMLR paper.
+
+Reproducibility and Compliance
+
+  Reproducibility. Freeze code, dependencies, model assets, declared                           Compliance. All profiles and outcomes are synthetic. Inputs are
+  training seeds and inference seed. Preserve pool separation,                                 limited to observable state, clarification results, released feedback,
+  pre-action snapshots, clarification logs, maturity masks, scenario-level                     declared assets and policy-owned memory. No experimental scores,
+  outputs and full episode JSON. Re-run tests, data verification and                           latency measurements or confidence intervals are asserted.
+  isolated container evaluation.
+
+
+
+  Version boundary. Mechanics were checked against the supplied official challenge archive. If organisers issue a later correction, the implementation
+  and fixed submission version should record the governing specification explicitly.
+
+Final Audit Checklist
+
+ AUDIT AREA                         VERIFIED IN DESIGN                                                        EVIDENCE TO RETAIN
+
+ State and interface                Batched asks; exact refresh; no future/private state.                     Action-time snapshots, ask logs and memory resets.
+
+ Validity and allocation            Exact feasibility, non-overlap and bounded fallback.                      Validity tests, solver status and fallback counts.
+
+ Evaluation                         Mature labels; six families; three official baselines.                    Paired seeds, scenario outputs and raw counts.
+
+
+
+
+Better Questions. Better Matches.                                                                                                                                  12 / 12
+

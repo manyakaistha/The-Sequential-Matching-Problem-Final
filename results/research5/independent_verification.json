@@ -1,0 +1,23 @@
+{
+  "complete_registered_verification_grid": true,
+  "episodes": 48,
+  "invocations": 5760,
+  "all_valid_zero_fallback": true,
+  "all_ordered_semantic_actions_digests_shared_metrics_equal": true,
+  "max_call_seconds": 0.24222329199983506,
+  "direct_max_call_seconds": 0.06134737499996845,
+  "subprocess_max_call_seconds": 0.24222329199983506,
+  "verification_source_unchanged": true,
+  "reference_sha256": "c45624e0ad7f77c763b5bca62d7296f2199eb37ad4dc4a56bf3fc4b37df8b334",
+  "cpu": {
+    "direct_loop_self_seconds": 63.89110899999999,
+    "subprocess_full_tree_os_seconds": 287.33636,
+    "known_measured_replay_cpu_seconds": 351.227469,
+    "scope": "Direct loop excludes interpreter/module/reference-load startup; subprocess measured by outerRUSAGE_CHILDREN includes childtree. Innerchildcpu notdoublecounted."
+  },
+  "files": {
+    "independent_statistics.json": "6ed8aef0082dd2f16bf7a958262f906c0cb3873d0cd5bc54a24b5a1435614f99",
+    "independent_replay_direct.json": "ae5f98ed596e61d7edc73d288525eb3aa51d4808a48b4bfa41f180f31b9bd1a8",
+    "independent_replay_subprocess.json": "4832e9015bd1a7cee09adc4225c663b84ae6d3a5e11bc565ab4a6357e80ed516"
+  }
+}

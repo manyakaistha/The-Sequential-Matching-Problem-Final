@@ -1,0 +1,25 @@
+{"policy": "greedy", "seed": 90001, "variant": "development", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "development", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "sparse", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "sparse", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "cold_start", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "cold_start", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "delayed", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "delayed", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "shift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "shift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90001, "variant": "drift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90001, "variant": "drift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "development", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "development", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "sparse", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "sparse", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "cold_start", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "cold_start", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "delayed", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "delayed", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "shift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "shift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "greedy", "seed": 90002, "variant": "drift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"policy": "population_control", "seed": 90002, "variant": "drift", "execution": "subprocess", "valid": true, "fallback_count": 0, "byte_digest_match": true, "metric_differences": {}}
+{"self_cpu_seconds": 32.859947, "os_child_cpu_seconds": 254.200614, "wall_seconds": 299.09310837500016, "source_bytes_unchanged": true}

@@ -1,0 +1,47 @@
+{
+  "recorded_utc": "2026-10-10T03:43:41.813160+00:00",
+  "prior_manifest_sha256": "db19130907053ac1bb06e73a620dd5c2319d4840524470af5182cba876a261d2",
+  "exceptions": [
+    {
+      "path": "research3/FINAL_REVIEW.md",
+      "manifest_record": {
+        "bytes": 8359,
+        "sha256": "aa1380c2a2d3f68be040ab2ff511803628fa76e3e4b3fc7fcf2ba1a71bc02c1f"
+      },
+      "current_bytes": 9349,
+      "current_sha256": "40df3e70a1945873fbfb5be246c3822ca049e5eaebf2e1de77b6df9fe289a1dc",
+      "manifest_matching_prefix_copy": "research4/inherited_manifest_exceptions/FINAL_REVIEW.md.manifested",
+      "append_only": true,
+      "appended_bytes": 990,
+      "reason": "Post-manifest final replay review addendum"
+    },
+    {
+      "path": "research3/REPLICATION.md",
+      "manifest_record": {
+        "bytes": 3995,
+        "sha256": "307d728c17796feda9bb72651509b7d58661b004bb0ee54b4e0795fc988892a0"
+      },
+      "current_bytes": 6163,
+      "current_sha256": "035a70fe0f2f1d5c5e2f01aece8118476c495e5e8cdda8ea94f3b29dec56abe5",
+      "manifest_matching_prefix_copy": "research4/inherited_manifest_exceptions/REPLICATION.md.manifested",
+      "append_only": true,
+      "appended_bytes": 2168,
+      "reason": "Post-manifest final replay review addendum"
+    },
+    {
+      "path": "results/research3/package_gate.log",
+      "manifest_record": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "current_bytes": 146,
+      "current_sha256": "72c47f6c125de4ec18d0eb4a3a7ff5fb03b00af462a2829a66956eb558ab39ef",
+      "manifest_matching_prefix_copy": "research4/inherited_manifest_exceptions/package_gate.log.manifested",
+      "append_only": true,
+      "appended_bytes": 146,
+      "reason": "Gate stdout written after manifest hashed its own initially empty redirect target"
+    }
+  ],
+  "all_other_prior_records_match": true,
+  "audit_scope": "Compared all3380 round3 and1889 older manifest records. Current copies/prefix recovery are recorded now, not falsely represented as prelaunch historical snapshots. Prior files/manifest untouched."
+}

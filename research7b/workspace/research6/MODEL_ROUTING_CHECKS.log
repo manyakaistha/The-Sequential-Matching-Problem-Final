@@ -1,0 +1,43 @@
+[PASS] planning only; zero new episodes
+[PASS] freshness remains an execution prerequisite
+[PASS] 12 unique candidate/control IDs
+[PASS] two learning representatives
+[PASS] all six distinct shipped families
+[PASS] training proposed range is disjoint
+[PASS] training maximum grid = 2160
+[PASS] validation proposed range is disjoint
+[PASS] validation maximum grid = 720
+[PASS] B proposed range is disjoint
+[PASS] B maximum grid = 2880
+[PASS] C proposed range is disjoint
+[PASS] C maximum grid = 4320
+[PASS] D proposed range is disjoint
+[PASS] D maximum grid = 1920
+[PASS] E_reserve proposed range is disjoint
+[PASS] E cap fits proposed reserve
+[PASS] E illustrative count = 5364
+[PASS] illustrative whole grid = 17364
+[PASS] finite five-test alpha = .01
+[PASS] registered primary confidence = .99
+[PASS] no repeated/extended confirmation
+[PASS] baseline/no-gain stopping
+[PASS] 3 research workers / 4 total agent slots
+[PASS] 60 action + 40 follow-up days
+[PASS] full logging without privileged policy access
+[PASS] routing caps efforts at high
+[PASS] file_discovery model/effort and bounded context
+[PASS] structured_extraction model/effort and bounded context
+[PASS] bounded_implementation model/effort and bounded context
+[PASS] statistical_design model/effort and bounded context
+[PASS] mathematical_proof model/effort and bounded context
+[PASS] router rejects fifth active agent
+[PASS] live routing is separate from experiment runner
+[PASS] normal-model power minimum 406, inflated 447
+[PASS] local document links exist
+{
+  "planning_checks_passed": true,
+  "checks": 36,
+  "policy_tests_executed": 0,
+  "research_orchestrator_implemented": false,
+  "seed_freshness_certified": false
+}

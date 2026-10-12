@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "fixed_episode_count": 5160,
+  "seed_clusters": 430,
+  "checked_policy_calls": 619200,
+  "independent_replays": 48,
+  "production_calls": 360,
+  "archive_members": 15501,
+  "superiority": false,
+  "preserved_prior_file_counts": {
+    "results/research4/manifest.json": 2524,
+    "results/research3/manifest.json": 3380,
+    "results/research3/inherited_manifest.json": 1889
+  },
+  "interrupted_attempts": "Preserved separately; not certified failure-free. See FINAL_REVIEW.md.",
+  "scope": "Complete fixed-grid verification, finite tested production scope and lossless archival integrity; no universal timeout guarantee or proof of historical timestamps.",
+  "completed_utc": "2026-10-11T01:21:51.734980+00:00",
+  "gate_wall_seconds": 72.85276870899906,
+  "gate_cpu_seconds": 56.710851999999996,
+  "compute_scope": "Includes validation/preservation and manifest input hashing; excludes final small JSON writes."
+}

@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "status": "final_planning_package_no_research_execution",
+  "prepared_dates": [
+    "2026-10-11",
+    "2026-10-12"
+  ],
+  "git_HEAD_at_start": "a8e26b35118cfa8e886a02f93984923e43ab64f6",
+  "git_HEAD_is_not_source_closure": true,
+  "old_core_sources_unchanged": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+    "research6/REPORT.md": "c74482d119547a9a8b3a5f3b2c90d4e245a53a6f13cc15c0cb9ba8c6adbc2287",
+    "research6/MANIFEST.json": "b638f253b2810630aa0830591052df15f7cc66123b0a9689a43517f2bae7fae5",
+    "research6/agent_routing.json": "1f323948f346c44da081176e6169f6099056c597c61f49ba78dc27f79739c6f4",
+    "research6/agent_router.py": "4ae198f7d821acdc91881d0036aa8a416c480b536aecffade0aa9178c1aad933"
+  },
+  "reviewed_source_fingerprints": [
+    {
+      "path": "kit.py",
+      "sha256": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+      "bytes": 16218
+    },
+    {
+      "path": "evaluate.py",
+      "sha256": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+      "bytes": 8353
+    },
+    {
+      "path": "research6/REPORT.md",
+      "sha256": "c74482d119547a9a8b3a5f3b2c90d4e245a53a6f13cc15c0cb9ba8c6adbc2287",
+      "bytes": 9068
+    },
+    {
+      "path": "research6/MANIFEST.json",
+      "sha256": "b638f253b2810630aa0830591052df15f7cc66123b0a9689a43517f2bae7fae5",
+      "bytes": 5418
+    },
+    {
+      "path": "research6/agent_routing.json",
+      "sha256": "1f323948f346c44da081176e6169f6099056c597c61f49ba78dc27f79739c6f4",
+      "bytes": 4880
+    },
+    {
+      "path": "research6/agent_router.py",
+      "sha256": "4ae198f7d821acdc91881d0036aa8a416c480b536aecffade0aa9178c1aad933",
+      "bytes": 7563
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "51c4eaa09ecafbec45c485c1318edeb951c0d35365b4687e8e7dfe3a43a2b0c4",
+      "bytes": 2737
+    },
+    {
+      "path": "PROBLEM_STATEMENT.md",
+      "sha256": "f38e340f27d02df0b52c1d15b461d6d89e688529a6306a381e48f79a83ca0b09",
+      "bytes": 27458
+    },
+    {
+      "path": "policy.py",
+      "sha256": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+      "bytes": 1540
+    },
+    {
+      "path": "research6/policies/acquisition.py",
+      "sha256": "69991fee0c8705b6e161168fa019ab48c2bb799fed9a5740a7cb9d4bd4edc7ef",
+      "bytes": 12420
+    },
+    {
+      "path": "research6/policies/allocation.py",
+      "sha256": "296ed10fcde8fc65b5e5dbca76ed3dd25da80a9b002b0e89794399d35c9ce1f3",
+      "bytes": 5112
+    },
+    {
+      "path": "research6/policies/policy.py",
+      "sha256": "67c733565b9869dfb6c36b4a61046893a2c16bfc2e035eda7d6a83c08b12ff97",
+      "bytes": 5562
+    },
+    {
+      "path": "research6/exact/THEORY.md",
+      "sha256": "cf62f463b88a39e88ce20d5f70d893747053bd0799253c7aa42072ca073394d6",
+      "bytes": 13690
+    },
+    {
+      "path": "research6/audits/simulator_contract.md",
+      "sha256": "2aff2a1c6785ea01237b86808e3e5972ef5a58ae5b9e3cf5627a8c050376f5c8",
+      "bytes": 22290
+    },
+    {
+      "path": "research6/analysis.py",
+      "sha256": "0a471c00dc67da774a9f53d2b36a5af9aff90ae162e43c8a67396aa609b745f0",
+      "bytes": 3587
+    },
+    {
+      "path": "research6/confirm.py",
+      "sha256": "281753f858d0fcbad41c043abd2a2f0a9dbd278ffa2ed20300938b6606f57ffd",
+      "bytes": 5142
+    },
+    {
+      "path": "research6/orchestrator.py",
+      "sha256": "f80018abe9fe73bf3f77ebe3e90cb6c9483ee58cacfb48558362fa7be6092b50",
+      "bytes": 9999
+    },
+    {
+      "path": "research6/recorder.py",
+      "sha256": "b1feddc2698ebdc80cfccdf5aa804b58c15c5814720affc2b655e835942d6a1a",
+      "bytes": 8649
+    },
+    {
+      "path": "results/research6/stage_b_screen/analysis.json",
+      "sha256": "113ee32010b0f10e4f1b58dcfe3c9b4483c7c42f88fe159ee3ada827ee632b3b",
+      "bytes": 21016
+    },
+    {
+      "path": "results/research6/stage_c_replication/analysis.json",
+      "sha256": "b0f151113de16ef2a1b16ce661833be8623e2939d403133f3dfe182acc115741",
+      "bytes": 21791
+    },
+    {
+      "path": "results/research6/stage_d_selection/analysis.json",
+      "sha256": "de6cb78923f68e7d40e5927b39e454d7231772b649b5e55588a0f59f1a2803db",
+      "bytes": 22086
+    },
+    {
+      "path": "results/research6/stage_e_confirmation/confirmation_analysis.json",
+      "sha256": "32f73b34cc1b1c01552c46a6bb219dccefbd6faefccc5647b8a76d1d41a4404e",
+      "bytes": 1448
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "EVIDENCE_REVIEW.md",
+      "bytes": 12331,
+      "sha256": "68363e24e733c009afcb5ac59eb45d84063be26b1f81a02ce96c9ccc78e4b0f1"
+    },
+    {
+      "path": "LITERATURE.md",
+      "bytes": 5727,
+      "sha256": "2aae940dd22325db4241a849ce3232a87420339b72c713a3cbbca61cb9f54672"
+    },
+    {
+      "path": "MERGE_PROTOCOL.md",
+      "bytes": 11843,
+      "sha256": "8019bf2e4544242e8c680146199bf5a5b5ee4a4d0d5641ded3e4fbff6d18c376"
+    },
+    {
+      "path": "ORCHESTRATION.md",
+      "bytes": 12161,
+      "sha256": "f99495ec9400122796b449e1d8e913bd14bc69f6cd111839780c542004089e9f"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 15622,
+      "sha256": "36effaf224600f17b51a436c1ab85337d82d838d281674a23503cb8ed715b94a"
+    },
+    {
+      "path": "PLAN_7A.md",
+      "bytes": 12589,
+      "sha256": "b5f1349bce75b31c3a14e8907e54a27ecc19f297bc8720764edefab39087ee98"
+    },
+    {
+      "path": "PLAN_7B.md",
+      "bytes": 16190,
+      "sha256": "743428bfc013fa0c13a222ba78bfb4a0c0950a194851afb7015d50f908cab2bc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3071,
+      "sha256": "7a39fc3be48b05bb0a191b18ded704a68ad21ed93ecf4665d850aac6fdddbafe"
+    },
+    {
+      "path": "STATIC_CHECKS.md",
+      "bytes": 2443,
+      "sha256": "775320f9039ec1521a2f1ae63af16e958c4fc331cb00c09111212327c1d6ccc6"
+    },
+    {
+      "path": "STATISTICS.md",
+      "bytes": 10363,
+      "sha256": "bdf8b06fb43038e080c2c5b6d411e2176485f5c9b4cc5f7dbbed52a4a66bdbda"
+    },
+    {
+      "path": "STRATEGIES.md",
+      "bytes": 30096,
+      "sha256": "e1660891ee7d356f4a80efaffccf66a251a1ab88e569effeec7e3772bc16d7f6"
+    },
+    {
+      "path": "TEST_SPEC.md",
+      "bytes": 13821,
+      "sha256": "86d4ba88b3119aaf8954adef46c36eac70eb6d2610c85353a378f38d8d3181c2"
+    },
+    {
+      "path": "inputs/Research_Approach.pdf",
+      "bytes": 92674,
+      "sha256": "88501b4a119837f5387ffdecba491ff536c43c6fc420d3d193e36c0cd35d4f7d"
+    },
+    {
+      "path": "inputs/Research_Approach_extracted.txt",
+      "bytes": 42657,
+      "sha256": "bd3564e1ad7d5425d41eb5c2d6696efb6b392f565b6b15a96dda77c2b0bf090d"
+    },
+    {
+      "path": "inputs/research6_evidence/MANIFEST.json",
+      "bytes": 5418,
+      "sha256": "b638f253b2810630aa0830591052df15f7cc66123b0a9689a43517f2bae7fae5"
+    },
+    {
+      "path": "inputs/research6_evidence/REPORT.md",
+      "bytes": 9068,
+      "sha256": "c74482d119547a9a8b3a5f3b2c90d4e245a53a6f13cc15c0cb9ba8c6adbc2287"
+    },
+    {
+      "path": "inputs/research6_evidence/stage_b_screen_analysis.json",
+      "bytes": 21016,
+      "sha256": "113ee32010b0f10e4f1b58dcfe3c9b4483c7c42f88fe159ee3ada827ee632b3b"
+    },
+    {
+      "path": "inputs/research6_evidence/stage_c_replication_analysis.json",
+      "bytes": 21791,
+      "sha256": "b0f151113de16ef2a1b16ce661833be8623e2939d403133f3dfe182acc115741"
+    },
+    {
+      "path": "inputs/research6_evidence/stage_d_selection_analysis.json",
+      "bytes": 22086,
+      "sha256": "de6cb78923f68e7d40e5927b39e454d7231772b649b5e55588a0f59f1a2803db"
+    },
+    {
+      "path": "inputs/research6_evidence/stage_e_confirmation_confirmation_analysis.json",
+      "bytes": 1448,
+      "sha256": "32f73b34cc1b1c01552c46a6bb219dccefbd6faefccc5647b8a76d1d41a4404e"
+    },
+    {
+      "path": "inputs/research6_transcript.txt",
+      "bytes": 63973,
+      "sha256": "e30f30f4ac78e646d76dbd6b5038c995995130ee6121b276b6711e653a217a87"
+    },
+    {
+      "path": "inputs/research_proposal.pdf",
+      "bytes": 347770,
+      "sha256": "28aa6465e8ad7df9e0cf9991ac991df7902b01840970e463f9ede47c83fa454a"
+    },
+    {
+      "path": "inputs/research_proposal_extracted.txt",
+      "bytes": 46943,
+      "sha256": "d45799b343a46145254cd99f947664f73348fda53c8276573f400b58f3bfe53a"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 6324,
+      "sha256": "5b377c2bd426e9902999c5f24127d9479db022f6587e092a980b659deed28a50"
+    },
+    {
+      "path": "reviews/FINAL_PLAN_REVIEW.md",
+      "bytes": 15169,
+      "sha256": "62033c954676fbc7f44fd0cc40cbba42d42c72ae703e4a6b51345afe52d93a83"
+    },
+    {
+      "path": "reviews/STRATEGY_PLAN_REVIEW.md",
+      "bytes": 16923,
+      "sha256": "a77a30fa31abe49167cce3052d6a70b8ad4e84d4e52b6c0355120f7cdbdb9516"
+    },
+    {
+      "path": "reviews/evidence_inventory.md",
+      "bytes": 13296,
+      "sha256": "510a5a2b92a5801bf370d45198e374b5fab7dca3b0e80f4b3558795658de1fd0"
+    },
+    {
+      "path": "reviews/statistics_design.md",
+      "bytes": 22266,
+      "sha256": "cf1f81b09ee9e48b6e86eb0f6476ad1d0ff24bb641a28c17e9a322a56080c52d"
+    },
+    {
+      "path": "reviews/strategy_theory.md",
+      "bytes": 19420,
+      "sha256": "4ae2b70bbf537fecce8d3502ffb3868474a3e61013efff7eac8de8531786e285"
+    },
+    {
+      "path": "routing_profiles.json",
+      "bytes": 3355,
+      "sha256": "ac012e259631d3635f48a508ae1f221ad90049b14c07a4ed0c929fe727a9ad39"
+    },
+    {
+      "path": "work_orders.json",
+      "bytes": 20066,
+      "sha256": "73279152418317f0897cc4b6f39cea88a79b045bfaba52928df8482dccfb3c81"
+    }
+  ],
+  "manifest_self_hash_excluded": true,
+  "machine_observation": {
+    "host": "Mac mini M4",
+    "cores_total": 10,
+    "cores_performance": 4,
+    "cores_efficiency": 6,
+    "RAM_GiB": 16,
+    "free_disk_GiB_approx_at_initial_read": 173,
+    "observation_is_not_capacity_test": true,
+    "smaller_machine_hardware": "unknown; preflight required"
+  },
+  "planning_delegations": [
+    {
+      "role": "evidence_extraction_and_mechanical_spacing",
+      "task": "r7_evidence",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "fork_turns": "none"
+    },
+    {
+      "role": "statistics_adversarial_critic",
+      "task": "r7_critic",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "fork_turns": "none"
+    },
+    {
+      "role": "coupled_dynamic_planning_theory",
+      "task": "r7_theory",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "fork_turns": "none"
+    }
+  ],
+  "routing_conflict_handling": "Explicit user AGENTS Codex routes for live review; new provider-specific inert profiles for future Antigravity/Gemini; R6 aliases unchanged.",
+  "scope": {
+    "new_R7_policy_episodes": 0,
+    "new_R7_generated_worlds": 0,
+    "fitting_runs": 0,
+    "research_phase_tests_executed": 0,
+    "exact_model_solver_runs": 0,
+    "production_replays": 0,
+    "confirmation_runs": 0,
+    "performed": "source/PDF reading, targeted primary-source browsing, analytic planning arithmetic, independent document reviews and static package integrity checks"
+  },
+  "static_checks": {
+    "json_parsing": "passed",
+    "required_artifacts": "passed",
+    "grid_arithmetic": "passed",
+    "proposed_internal_seed_ranges": "disjoint, not freshness-certified",
+    "baseline_portfolio_counts": "passed",
+    "old_core_hash_preservation": "passed",
+    "relative_links": "passed",
+    "input_copy_identity": "verified_by_expected_hashes"
+  },
+  "unvalidated": [
+    "seed freshness",
+    "runtime implementation",
+    "model quality",
+    "lossless compression capacity",
+    "host/container parity",
+    "resource compliance",
+    "empirical policy improvement"
+  ],
+  "archive_scope": "Plan-only artifacts and supporting input reports/selectedR6evidence; no runtime/source/rawworld execution package."
+}

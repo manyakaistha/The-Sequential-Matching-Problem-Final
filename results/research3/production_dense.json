@@ -1,0 +1,153 @@
+{
+  "scope": "Constructed200member dense graph plus800public history events, existingseed101, all13candidates",
+  "rows": [
+    {
+      "candidate": "greedy",
+      "seconds": 0.33942679199981285,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "clean",
+      "seconds": 0.38476554099997884,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "goal",
+      "seconds": 0.3870735840000634,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "canonical",
+      "seconds": 0.3372626250002213,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "random_order",
+      "seconds": 0.37995550000005096,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "public_weight",
+      "seconds": 0.3790650410001035,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "population",
+      "seconds": 0.3901179160002357,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "scarce",
+      "seconds": 0.38976129200000287,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "response",
+      "seconds": 0.3952372919998197,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "throughput",
+      "seconds": 0.32905658399977256,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "offline",
+      "seconds": 0.33960912500015183,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "goal_queries",
+      "seconds": 0.3274059999998826,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    },
+    {
+      "candidate": "four_queries",
+      "seconds": 0.3324276670000472,
+      "exact_response_equal": true,
+      "pairs": 100,
+      "request_bytes": 439900,
+      "memory_bytes": 2
+    }
+  ],
+  "application_files": [
+    [
+      "/app",
+      "kit.py"
+    ],
+    [
+      "/app/research3",
+      "model_candidates.py"
+    ],
+    [
+      "/app/research3",
+      "__init__.py"
+    ],
+    [
+      "/app/research3",
+      "policy.py"
+    ],
+    [
+      "/app/research",
+      "terminal_model.py"
+    ]
+  ],
+  "resource_command": [
+    "docker",
+    "run",
+    "--rm",
+    "-i",
+    "--name",
+    "sequential-76af2e8a350841319725ab714f8bbfd8",
+    "--network=none",
+    "--cpus=2",
+    "--memory=1g",
+    "--memory-swap=1g",
+    "--pids-limit=64",
+    "--read-only",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--user=65534:65534",
+    "--tmpfs=/tmp:rw,noexec,nosuid,size=64m",
+    "sequential-round3:research"
+  ],
+  "policy_sha256": "365c393d40156446b3b0ab803462c7f5266c974ddad1ca4d49b0550076512476",
+  "image": "sequential-round3:research",
+  "max_seconds": 0.3952372919998197
+}

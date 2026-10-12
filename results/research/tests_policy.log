@@ -1,0 +1,12 @@
+test_empty_and_exhausted_budget (research.test_policy.PolicyTests.test_empty_and_exhausted_budget) ... ok
+test_malformed_json_cli (research.test_policy.PolicyTests.test_malformed_json_cli) ... ok
+test_official_action_validation_rollout (research.test_policy.PolicyTests.test_official_action_validation_rollout) ... ok
+test_pending_not_counted_as_negative (research.test_policy.PolicyTests.test_pending_not_counted_as_negative) ... ok
+test_permanent_declines_pruned (research.test_policy.PolicyTests.test_permanent_declines_pruned) ... ok
+test_solver_exception_fallback_valid (research.test_policy.PolicyTests.test_solver_exception_fallback_valid) ... ok
+test_timeout_interrupts_and_restores_handler (research.test_policy.PolicyTests.test_timeout_interrupts_and_restores_handler) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.097s
+
+OK
