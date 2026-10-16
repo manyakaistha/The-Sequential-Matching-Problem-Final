@@ -1,0 +1,507 @@
+{
+  "bootstrap_interval_scope": "upperendpointoftwo-sided95percentileinterval",
+  "constant_probability": 0.010339663680023077,
+  "controls": {
+    "development_test": {
+      "agreement": {
+        "brier": 0.008027946213385411,
+        "calibration_mean_error": 0.0022528003421765277,
+        "log_loss": 0.04710928474356523,
+        "positives": 243,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": 0.00930148885993484,
+            "n": 16399,
+            "observed_rate": 0.007709384233742724,
+            "positives": 111,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.011441108200217197,
+            "n": 16325,
+            "observed_rate": 0.00849485860890361,
+            "positives": 132,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 32724
+      },
+      "constant": {
+        "brier": 0.00803218071108392,
+        "calibration_mean_error": 0.0022470416334529936,
+        "log_loss": 0.047306968764210366,
+        "positives": 243,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.010339663680023077,
+            "n": 32724,
+            "observed_rate": 0.00809262204657008,
+            "positives": 243,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 32724
+      }
+    },
+    "validation": {
+      "agreement": {
+        "brier": 0.009894614624053727,
+        "calibration_mean_error": 0.00032020850957034837,
+        "log_loss": 0.05574099878855854,
+        "positives": 368,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": 0.009301488859934842,
+            "n": 18690,
+            "observed_rate": 0.007185302534671652,
+            "positives": 135,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.011471481814529902,
+            "n": 17217,
+            "observed_rate": 0.013181295886697397,
+            "positives": 233,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 35907
+      },
+      "constant": {
+        "brier": 0.009900022564355078,
+        "calibration_mean_error": 0.00033975844679666456,
+        "log_loss": 0.05600680155538078,
+        "positives": 368,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.010339663680023075,
+            "n": 35907,
+            "observed_rate": 0.009999905233226414,
+            "positives": 368,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": null,
+            "n": 0,
+            "observed_rate": null,
+            "positives": 0,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 35907
+      }
+    }
+  },
+  "fit_scope": "previously examined development worlds; no counterfactual policy-value claim",
+  "models": {
+    "direct": {
+      "validation": {
+        "bootstrap95_upper_difference": 0.002650885848213474,
+        "brier": 0.009914772239086302,
+        "calibration_mean_error": 4.831076830917643e-05,
+        "constant_loss_difference": 0.0009567315060053009,
+        "log_loss": 0.056963533061386074,
+        "positives": 368,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": 0.003207867961168598,
+            "n": 8237,
+            "observed_rate": 0.009147570128089958,
+            "positives": 71,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": 0.007556429869201067,
+            "n": 13448,
+            "observed_rate": 0.008347899602825394,
+            "positives": 120,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.013496203020760338,
+            "n": 11739,
+            "observed_rate": 0.00958966438977768,
+            "positives": 123,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": 0.027061023799936842,
+            "n": 2405,
+            "observed_rate": 0.022849335617346422,
+            "positives": 50,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": 0.06268749658882602,
+            "n": 78,
+            "observed_rate": 0.05163109119144271,
+            "positives": 4,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 35907
+      }
+    },
+    "funnel": {
+      "development_test": {
+        "bootstrap95_upper_difference": 6.973698982272678e-05,
+        "brier": 0.008018500508094557,
+        "calibration_mean_error": 0.001996750014009073,
+        "constant_loss_difference": -0.0013523667686707766,
+        "log_loss": 0.045954601995539586,
+        "positives": 243,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": 0.0030510188343490056,
+            "n": 7343,
+            "observed_rate": 0.0016166236490416793,
+            "positives": 13,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": 0.007558726747034797,
+            "n": 12059,
+            "observed_rate": 0.006849108177940752,
+            "positives": 70,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.013355550225410647,
+            "n": 10739,
+            "observed_rate": 0.011914995113352197,
+            "positives": 115,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": 0.027839171835975632,
+            "n": 2500,
+            "observed_rate": 0.016737530515957926,
+            "positives": 44,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": 0.05677880387906897,
+            "n": 83,
+            "observed_rate": 0.009553249640099022,
+            "positives": 1,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 32724
+      },
+      "validation": {
+        "bootstrap95_upper_difference": 0.0026376606348968656,
+        "brier": 0.009910547429919703,
+        "calibration_mean_error": 8.85354981851577e-05,
+        "constant_loss_difference": 0.0009190303271009614,
+        "log_loss": 0.05692583188248174,
+        "positives": 368,
+        "reliability": [
+          {
+            "lower": 0,
+            "mean_prediction": 0.003111237706355826,
+            "n": 7969,
+            "observed_rate": 0.009121418844055594,
+            "positives": 69,
+            "upper": 0.005
+          },
+          {
+            "lower": 0.005,
+            "mean_prediction": 0.007569811618093587,
+            "n": 13589,
+            "observed_rate": 0.008186616451920295,
+            "positives": 117,
+            "upper": 0.01
+          },
+          {
+            "lower": 0.01,
+            "mean_prediction": 0.013483194540592448,
+            "n": 12058,
+            "observed_rate": 0.009646178321945788,
+            "positives": 128,
+            "upper": 0.02
+          },
+          {
+            "lower": 0.02,
+            "mean_prediction": 0.02740058354576965,
+            "n": 2226,
+            "observed_rate": 0.024779739804068248,
+            "positives": 51,
+            "upper": 0.05
+          },
+          {
+            "lower": 0.05,
+            "mean_prediction": 0.06254914061362159,
+            "n": 65,
+            "observed_rate": 0.05821149659213488,
+            "positives": 3,
+            "upper": 1.000001
+          }
+        ],
+        "rows": 35907
+      }
+    }
+  },
+  "probability_admitted": false,
+  "schema": "r9-prediction-report-v1",
+  "selected_family": "funnel",
+  "source_identity": {
+    "TRAINING_PROTOCOL.md": "2cb2cf91a5e6d627a67c94fa0b61376a0935dc8a52e02e11f0ef726b0dd03e59",
+    "dataset.py": "63b4a8e8884aedf7e5966aa05a6933a6b319b00b0409743d6eee60cbc33eaf25",
+    "features.py": "c5697ad9994c26111ae9728958009b1647fc1879b431fbad6361f1673d2b658c",
+    "models.py": "4410554a7e84a52a72e8d75d8c0914b4144b86acf31a00c087e8e94131b57271",
+    "train.py": "02a4f9b729b5dd065fa9ac7e14a69e0f43b778e9aabc5919460c7d5f712ec6b2"
+  },
+  "split": {
+    "development_test": [
+      840035,
+      840071,
+      840053,
+      840074,
+      840046,
+      840075,
+      840072,
+      840092,
+      840033,
+      840019,
+      840006,
+      840054,
+      840050,
+      840093,
+      840089,
+      840051
+    ],
+    "salt": "final_campaign_v1",
+    "schema": "final-campaign-split-v1",
+    "scope": "previously examined development groups only",
+    "train": [
+      840086,
+      840065,
+      840023,
+      840066,
+      840030,
+      840036,
+      840032,
+      840025,
+      840034,
+      840028,
+      840031,
+      840014,
+      840038,
+      840011,
+      840008,
+      840064,
+      840059,
+      840029,
+      840062,
+      840058,
+      840026,
+      840042,
+      840057,
+      840079,
+      840084,
+      840003,
+      840009,
+      840022,
+      840078,
+      840067,
+      840060,
+      840001,
+      840017,
+      840069,
+      840027,
+      840049,
+      840094,
+      840043,
+      840087,
+      840020,
+      840068,
+      840012,
+      840024,
+      840007,
+      840096,
+      840082,
+      840002,
+      840073,
+      840063,
+      840016,
+      840055,
+      840061,
+      840080,
+      840039,
+      840047,
+      840004,
+      840005,
+      840037,
+      840076,
+      840077,
+      840013,
+      840044,
+      840015,
+      840091
+    ],
+    "validation": [
+      840088,
+      840085,
+      840048,
+      840095,
+      840040,
+      840018,
+      840056,
+      840090,
+      840083,
+      840052,
+      840010,
+      840021,
+      840070,
+      840045,
+      840081,
+      840041
+    ]
+  },
+  "stage_support": [
+    {
+      "label": "y_first",
+      "personalized": true,
+      "positives": 21915,
+      "rows": 148231
+    },
+    {
+      "label": "y_date_given_first",
+      "personalized": true,
+      "positives": 17049,
+      "rows": 21915
+    },
+    {
+      "label": "y_second_given_timelydate",
+      "personalized": true,
+      "positives": 1432,
+      "rows": 17049
+    }
+  ],
+  "support_gate": true,
+  "total_rows": 216862,
+  "train_positives": 1432,
+  "train_rows": 148231
+}

@@ -1,0 +1,26 @@
+test_all_sixty_four_graphs_match_independent_edge_subsets (test_planner.PlannerTests.test_all_sixty_four_graphs_match_independent_edge_subsets) ... ok
+test_bounded_menu_legal_and_keeps_parent (test_planner.PlannerTests.test_bounded_menu_legal_and_keeps_parent) ... ok
+test_caps_and_invalid_inputs_fail_explicitly (test_planner.PlannerTests.test_caps_and_invalid_inputs_fail_explicitly) ... ok
+test_even_static_max_weight_tail_misses_future_waiting (test_planner.PlannerTests.test_even_static_max_weight_tail_misses_future_waiting) ... ok
+test_exact_dynamic_tie_retains_distinct_static_parent (test_planner.PlannerTests.test_exact_dynamic_tie_retains_distinct_static_parent) ... ok
+test_final_day_full_reward_static_and_greedy_trap (test_planner.PlannerTests.test_final_day_full_reward_static_and_greedy_trap) ... ok
+test_future_arrival_is_not_known_before_action (test_planner.PlannerTests.test_future_arrival_is_not_known_before_action) ... ok
+test_greedy_tail_falsifier_and_static_myopic_repair (test_planner.PlannerTests.test_greedy_tail_falsifier_and_static_myopic_repair) ... ok
+test_hidden_return_clock_oracle_trap (test_planner.PlannerTests.test_hidden_return_clock_oracle_trap) ... ok
+test_joint_shared_future_not_double_counted (test_planner.PlannerTests.test_joint_shared_future_not_double_counted) ... ok
+test_menu_overflow_fails_closed_and_outside_pairs_fixed (test_planner.PlannerTests.test_menu_overflow_fails_closed_and_outside_pairs_fixed) ... ok
+test_previously_booked_pending_introduction_not_rewarded_again (test_planner.PlannerTests.test_previously_booked_pending_introduction_not_rewarded_again) ... ok
+test_return_law_reverses_hold (test_planner.PlannerTests.test_return_law_reverses_hold) ... ok
+test_reuse_and_exhaustion (test_planner.PlannerTests.test_reuse_and_exhaustion) ... ok
+test_cap_invalid_package_and_probability (test_query_packages.QueryTests.test_cap_invalid_package_and_probability) ... ok
+test_collision_joint_scenarios (test_query_packages.QueryTests.test_collision_joint_scenarios) ... ok
+test_decline_and_observed_false_are_not_truthy (test_query_packages.QueryTests.test_decline_and_observed_false_are_not_truthy) ... ok
+test_every_eight_actor_hard_package (test_query_packages.QueryTests.test_every_eight_actor_hard_package) ... ok
+test_hard_complement_and_soft_cannot_legalize (test_query_packages.QueryTests.test_hard_complement_and_soft_cannot_legalize) ... ok
+test_hidden_profile_not_oracle_without_query (test_query_packages.QueryTests.test_hidden_profile_not_oracle_without_query) ... ok
+test_soft_displaces_hard_under_actual_twelve_units (test_query_packages.QueryTests.test_soft_displaces_hard_under_actual_twelve_units) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.031s
+
+OK

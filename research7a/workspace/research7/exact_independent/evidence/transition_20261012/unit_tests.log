@@ -1,0 +1,12 @@
+test_all_constructed_assertions (research7.test_exact_transitions.ExactTransitions.test_all_constructed_assertions) ... ok
+test_full_reachable_traces_and_bellman_values (research7.test_exact_transitions.ExactTransitions.test_full_reachable_traces_and_bellman_values) ... ok
+test_hidden_dependent_menu_rejected (research7.test_exact_transitions.ExactTransitions.test_hidden_dependent_menu_rejected) ... ok
+test_mask_busy_pause_repeat_overlap_and_queries (research7.test_exact_transitions.ExactTransitions.test_mask_busy_pause_repeat_overlap_and_queries) ... ok
+test_nonanticipation_not_first_hidden_state (research7.test_exact_transitions.ExactTransitions.test_nonanticipation_not_first_hidden_state) ... ok
+test_private_timers_and_pending_expectation_are_masked (research7.test_exact_transitions.ExactTransitions.test_private_timers_and_pending_expectation_are_masked) ... ok
+test_reject_float_invalid_probability_and_enforce_cap (research7.test_exact_transitions.ExactTransitions.test_reject_float_invalid_probability_and_enforce_cap) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 12.303s
+
+OK

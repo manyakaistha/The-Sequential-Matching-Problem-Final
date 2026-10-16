@@ -31,8 +31,8 @@ def compute_cell_key(
     source_tree_sha256: str,
     inference_assets_sha256: str
 ) -> str:
-    """Compute stable canonical cell identity digest as specified in MERGE_PROTOCOL.md."""
-    payload = f"{program_id}|{stage_id}|{seed}|{family}|{policy_id}|{config_sha256}|{source_tree_sha256}|{inference_assets_sha256}"
+    """Compute the 7a pipe-delimited identity (7b colon format remains incompatible)."""
+    payload = json.dumps([program_id, stage_id, seed, family, policy_id, config_sha256, source_tree_sha256, inference_assets_sha256], separators=(",", ":"), allow_nan=False)
     return hashlib.sha256(payload.encode('utf-8')).hexdigest()
 
 
@@ -99,6 +99,12 @@ class IndependentMerger:
         authoritative_commits: Dict[str, Dict[str, Any]] = {}
         quarantined_conflicts: List[Dict[str, Any]] = []
         integrity_errors: List[str] = []
+        if not self.registered_cells or not all((self.program_id, self.stage_id,
+                self.expected_seeds, self.expected_families, self.expected_policies)):
+            integrity_errors.append('Registration must specify a nonempty registered grid and identity axes')
+        expected_count = len(self.expected_seeds) * len(self.expected_families) * len(self.expected_policies)
+        if len(self.registered_cells) != expected_count:
+            integrity_errors.append('Registered grid size disagrees with seed/family/policy axes')
 
         # 1. Ingest all commits and attempts from all bundles
         for b_idx, b in enumerate(bundles):
@@ -118,6 +124,23 @@ class IndependentMerger:
                     integrity_errors.append(f"Commit missing cell_key in {bundle_id}")
                     continue
 
+                identity_fields = ('program_id', 'stage_id', 'seed', 'family', 'policy_id',
+                                   'config_sha256', 'source_tree_sha256', 'inference_assets_sha256')
+                if not all(k in c for k in identity_fields):
+                    integrity_errors.append(f'Commit missing full identity metadata in {bundle_id}')
+                    continue
+                if (type(c['seed']) is not int or any(not isinstance(c[k], str) or not c[k] or '|' in c[k]
+                        for k in identity_fields if k != 'seed')):
+                    integrity_errors.append(f'Invalid identity metadata in {bundle_id}')
+                    continue
+                reconstructed = compute_cell_key(*(c[k] for k in identity_fields))
+                if (cell_key != reconstructed or c['program_id'] != self.program_id
+                        or c['stage_id'] != self.stage_id or c['seed'] not in self.expected_seeds
+                        or c['family'] not in self.expected_families or c['policy_id'] not in self.expected_policies):
+                    integrity_errors.append(f'Commit identity metadata mismatch in {bundle_id}')
+                    continue
+                if c.get('valid') is not True:
+                    integrity_errors.append(f"Durable invalidity committed in cell {cell_key}: {c.get('error')}")
                 c_record = copy.deepcopy(c)
                 c_record['origin_bundle_id'] = bundle_id
                 c_record['origin_host_id'] = host_id
@@ -128,14 +151,12 @@ class IndependentMerger:
         # 2. Check each cell for conflicts, duplicates, or invalidity
         for cell_key, commit_list in seen_cells.items():
             # Check if cell is registered
-            if self.registered_cells and cell_key not in self.registered_cells:
+            if cell_key not in self.registered_cells:
                 integrity_errors.append(f"Unregistered cell key found: {cell_key}")
                 continue
 
             if len(commit_list) == 1:
                 commit = commit_list[0]
-                if not commit.get('valid', True):
-                    integrity_errors.append(f"Durable invalidity committed in cell {cell_key}: {commit.get('error')}")
                 authoritative_commits[cell_key] = commit
             else:
                 # Multiple commits for the exact same cell
@@ -143,14 +164,11 @@ class IndependentMerger:
                 first = commit_list[0]
                 is_exact_transport_dup = True
                 
-                compare_keys = ('action_sha256', 'seed', 'family', 'policy_id', 'valid', 'primary_score')
-                for other in commit_list[1:]:
-                    for k in compare_keys:
-                        if first.get(k) != other.get(k):
-                            is_exact_transport_dup = False
-                            break
-                    if not is_exact_transport_dup:
-                        break
+                def scientific_record(commit):
+                    return {k: v for k, v in commit.items() if k not in
+                            ('origin_bundle_id', 'origin_host_id')}
+                is_exact_transport_dup = all(scientific_record(first) == scientific_record(other)
+                                             for other in commit_list[1:])
 
                 if is_exact_transport_dup:
                     # Transport duplicate: retain provenance, count 1 cell
@@ -228,6 +246,8 @@ def run_merge_failure_injection_suite() -> Dict[str, Any]:
         'lease': {'revoked': False, 'expired': False},
         'commits': [{
             'cell_key': reg_cell_1,
+            'program_id': 'r7', 'stage_id': 'P1', 'config_sha256': 'cfg1',
+            'source_tree_sha256': 'src1', 'inference_assets_sha256': 'ast1',
             'seed': 101, 'family': 'sparse', 'policy_id': 'G',
             'action_sha256': 'act_hash_g', 'valid': True, 'primary_score': 0.85
         }]
@@ -238,6 +258,8 @@ def run_merge_failure_injection_suite() -> Dict[str, Any]:
         'lease': {'revoked': False, 'expired': False},
         'commits': [{
             'cell_key': reg_cell_2,
+            'program_id': 'r7', 'stage_id': 'P1', 'config_sha256': 'cfg2',
+            'source_tree_sha256': 'src1', 'inference_assets_sha256': 'ast1',
             'seed': 101, 'family': 'sparse', 'policy_id': 'Q1',
             'action_sha256': 'act_hash_q1', 'valid': True, 'primary_score': 0.88
         }]
@@ -258,6 +280,8 @@ def run_merge_failure_injection_suite() -> Dict[str, Any]:
         'lease': {'revoked': False, 'expired': False},
         'commits': [{
             'cell_key': reg_cell_1,
+            'program_id': 'r7', 'stage_id': 'P1', 'config_sha256': 'cfg1',
+            'source_tree_sha256': 'src1', 'inference_assets_sha256': 'ast1',
             'seed': 101, 'family': 'sparse', 'policy_id': 'G',
             'action_sha256': 'DIFFERING_ACTION_HASH', 'valid': True, 'primary_score': 0.90
         }]
@@ -280,6 +304,8 @@ def run_merge_failure_injection_suite() -> Dict[str, Any]:
         'lease': {'revoked': False, 'expired': False},
         'commits': [{
             'cell_key': reg_cell_2,
+            'program_id': 'r7', 'stage_id': 'P1', 'config_sha256': 'cfg2',
+            'source_tree_sha256': 'src1', 'inference_assets_sha256': 'ast1',
             'seed': 101, 'family': 'sparse', 'policy_id': 'Q1',
             'action_sha256': 'act_hash_q1', 'valid': False, 'error': 'Policy timeout', 'primary_score': None
         }]

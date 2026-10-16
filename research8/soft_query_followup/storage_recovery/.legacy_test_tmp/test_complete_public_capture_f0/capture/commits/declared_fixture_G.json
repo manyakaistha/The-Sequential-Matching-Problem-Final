@@ -1,0 +1,67 @@
+{
+  "action_sha256": "65cc3723e201674d95bef62241ee1dcbe61a293f92553b38738328be49932ce1",
+  "artifact_hashes": {
+    "actions.jsonl": "d3fdc4f3adb2320cc0ee8a206350221b4c460049c2200850064fdfd538e4dee1",
+    "arrived_by59.json": "04aa143989c84ebbca6302ac154972fe54589e09852ec166d2bd93a681425cc8",
+    "daily_telemetry.jsonl": "c5103bf8cebca5629a188f5ca3c6a97a996c778768da12fc59e17ad3d1cc1652",
+    "event_log.jsonl": "42598dae7df12c9f4ae205d38777559fdef5952a8180799cafe92d10b2ec8f68",
+    "final_public.json": "d7d46b3ac0d38177b3a3d6f510fbbe3e712d33ec034aae7c58f9e715d69ac454",
+    "invocations.jsonl": "d7a49e763d48e45fed6af91357a7fb6b177060788e6ef9b730e83ac4dbed1121",
+    "query_answers.jsonl": "6cac44483aba49cfd31040486c82123808eba87523fa543cfbed23e1a4e473e6",
+    "released_feedback.jsonl": "627ba0eebaffba0fdf0935b5263c7485cf67a70395092bc4ea225531676fefd6",
+    "requests.jsonl": "5736adc0a6e0714f272e59e464db318d506955b9255211b79cd97ab588310aa8",
+    "responses.jsonl": "6865da644f75d44b03b86705c1a5a93805432ceca173a1aa9a1aafacb1f2619b",
+    "status.json": "0842f5b922b3a7b3c79ec94ca7f3de2f8b654e61ade872fcff5534aaa31ec6b9"
+  },
+  "attempt_id": "edb4c310fdcc482ba068515bf490fa68",
+  "attempt_relative_path": "attempts/declared_fixture_G/edb4c310fdcc482ba068515bf490fa68",
+  "cell": {
+    "cell_key": "declared_fixture_G",
+    "family": "development",
+    "policy_id": "G",
+    "seed": 1,
+    "stage_id": "declared_fixture"
+  },
+  "cpu_seconds": 11.679875000000001,
+  "error": null,
+  "fallback_count": 0,
+  "invocation_count": 120,
+  "invocation_seconds_max": 0.10251333300038823,
+  "invocation_seconds_total": 11.561114167005144,
+  "is_valid": true,
+  "metrics": {
+    "arrived_members": 4,
+    "ask_cost": 0,
+    "assignments": 2,
+    "coverage": 1.0,
+    "dates": 1,
+    "first_introduction_wait_days": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "hard_asks": 0,
+    "missing_feedback": 0,
+    "msmi_per_100_arrived_members": 0.0,
+    "mutual_acceptances": 2,
+    "mutual_acceptances_per_100": 50.0,
+    "mutual_second_meeting_intention": 0,
+    "served_members": 4,
+    "soft_asks": 0,
+    "status": "simulated_not_observed_product_performance",
+    "total_asks": 0,
+    "unqualified_pause_count": 1,
+    "unserved_members": 0,
+    "valid": true,
+    "validation_errors": []
+  },
+  "registration_sha256": "a9ee96d80412a3eeefabdc8f42ef76166ffdef76128d32f488dcf02f0a324fb9",
+  "rss_raw": 122585088,
+  "rss_units": "bytes",
+  "source_sha256": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e"
+  },
+  "wall_seconds": 11.728069374999905,
+  "world_sha256": "b9bba4fb7bd109c5855865dfec1cbe4391100290b74f0f144983379b6e4d096d"
+}

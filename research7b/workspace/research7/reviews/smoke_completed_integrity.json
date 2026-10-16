@@ -1,0 +1,48 @@
+{
+  "audit_cpu_seconds": 72.361882,
+  "checked_cells": 144,
+  "claims_excluded": [
+    "reward_superiority",
+    "candidate_admission",
+    "learning_or_fitting",
+    "production_container_certification",
+    "scientific_merge_archive_seal"
+  ],
+  "critic_empirical_replays": 0,
+  "critic_fits": 0,
+  "critic_worlds_generated": 0,
+  "design_sha256": "9edfe0fa1139f653684311ab05c66cd0afe54a15af73e997d4c2a888c593ec8d",
+  "errors": [],
+  "expected_cells": 144,
+  "fallbacks": 0,
+  "finished_attempts": 144,
+  "incomplete_policy_panels": [],
+  "independent_metric_source_sha256": "3c8fb795bf273131f5bacaabfacd58c58d05030030d1df147130cb6e7d791320",
+  "invalid_commits": 0,
+  "max_observed_attempt_concurrency": 2,
+  "metric_scope": "Released events <=100; exact counts/waits/ask costs and independent7a rounded coverage/primary tolerance5.1e-7/5.1e-9.",
+  "physical_reservations": 144,
+  "policies": {
+    "G": 24,
+    "K": 24,
+    "N": 24,
+    "P": 24,
+    "Q6": 24,
+    "R": 24
+  },
+  "prior_snapshot_audit_cpu_seconds": 15.525759,
+  "registration_sha256": "acc210b161fef088996b11bfd2e81a204d81db54ec6390202c362d16d3d29060",
+  "resource_observations": {
+    "actual_output_bytes": 1721911410,
+    "max_worker_peak_rss_bytes": 73482240,
+    "recorded_attempt_cpu_seconds": 861.5709030000005,
+    "recorded_attempt_wall_seconds_sum": 888.9559132390011
+  },
+  "reviewer": "r7_live_critic",
+  "scope": "read_only_completed_baseline_P1_smoke",
+  "started_attempts": 144,
+  "status": "completed_smoke_integrity_pass",
+  "verified_wire_invocations": 17280,
+  "world_conflicts": [],
+  "world_groups": 24
+}

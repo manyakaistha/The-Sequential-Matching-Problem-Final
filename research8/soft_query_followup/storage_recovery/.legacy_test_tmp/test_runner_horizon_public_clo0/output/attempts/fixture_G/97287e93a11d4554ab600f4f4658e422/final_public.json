@@ -1,0 +1,17 @@
+{
+  "ask_log": [],
+  "feedback": [
+    {
+      "event": "date_happened",
+      "introduction_id": "fixture",
+      "member_id": null,
+      "observed_day": 99,
+      "occurred_day": 99,
+      "value": false
+    }
+  ],
+  "final_day": 100,
+  "introductions": [],
+  "members": [],
+  "observed_day_cutoff": 99
+}

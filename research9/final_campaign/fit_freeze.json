@@ -1,0 +1,19 @@
+{
+  "families": [
+    "direct",
+    "funnel"
+  ],
+  "l2": 1.0,
+  "no_more_fits": true,
+  "schema": "r9-fit-freeze-v1",
+  "source_manifest": {
+    "research9/final_campaign/TRAINING_PROTOCOL.md": "2cb2cf91a5e6d627a67c94fa0b61376a0935dc8a52e02e11f0ef726b0dd03e59",
+    "research9/final_campaign/data_freeze.json": "4c244aa1e00a592c1317413b820688dbe1aea8640199ac731918926c76b5d788",
+    "research9/final_campaign/dataset.py": "63b4a8e8884aedf7e5966aa05a6933a6b319b00b0409743d6eee60cbc33eaf25",
+    "research9/final_campaign/dataset_ready.json": "54096f21c9b84d7ee317012ba135512de526d228db3b3317326a971ac0e7ae42",
+    "research9/final_campaign/features.py": "c5697ad9994c26111ae9728958009b1647fc1879b431fbad6361f1673d2b658c",
+    "research9/final_campaign/models.py": "4410554a7e84a52a72e8d75d8c0914b4144b86acf31a00c087e8e94131b57271",
+    "research9/final_campaign/split.json": "4bace1a89d926a5392fa25abcac3bfc5d80006551baa2d9a558f2ffb7236466a",
+    "research9/final_campaign/train.py": "02a4f9b729b5dd065fa9ac7e14a69e0f43b778e9aabc5919460c7d5f712ec6b2"
+  }
+}

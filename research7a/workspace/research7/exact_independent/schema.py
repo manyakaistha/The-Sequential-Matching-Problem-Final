@@ -1,30 +1,33 @@
 """Independent reduced-model data contracts and case representations.
 
-Pure Python stdlib, zero simulator or developer solver dependencies.
+Legacy data contracts retained for import compatibility. New belief enumeration
+uses immutable constructed states in models.py and rejects the old single-state
+callback API. Pure Python stdlib, zero simulator or developer solver dependencies.
 """
 
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, FrozenSet, List, Optional, Tuple, Union
 import json
+from fractions import Fraction
 
 
 @dataclass(frozen=True)
 class ReducedActor:
     actor_id: str
     attributes: Dict[str, Any] = field(default_factory=dict)
-    response_rate: float = 1.0
-    bias: float = 0.0
-    type_prior: Optional[Dict[str, float]] = None
+    response_rate: Fraction = Fraction(1)
+    bias: Fraction = Fraction(0)
+    type_prior: Optional[Dict[str, Fraction]] = None
 
 
 @dataclass(frozen=True)
 class ReducedEdge:
     user_a: str
     user_b: str
-    q: float  # Base qualified expectation
-    p: float = 1.0  # Return probability
-    weight: float = 1.0  # Static weight or instant value
+    q: Fraction  # Base qualified expectation
+    p: Fraction = Fraction(1)  # Pause probability
+    weight: Fraction = Fraction(1)  # Static weight or instant value
 
 
 @dataclass(frozen=True)
@@ -34,7 +37,7 @@ class ReducedState:
     busy_until: Tuple[Tuple[str, int], ...] = ()
     paused: FrozenSet[str] = frozenset()
     past_dyads: FrozenSet[Tuple[str, str]] = frozenset()
-    pending_rewards: float = 0.0
+    pending_rewards: Fraction = Fraction(0)
     observation_history: Tuple[Tuple[str, Any], ...] = ()
 
     def is_available(self, actor: str) -> bool:
@@ -63,9 +66,9 @@ class ReducedAction:
 
 @dataclass(frozen=True)
 class ReducedBranch:
-    probability: float
+    probability: Fraction
     next_state: ReducedState
-    immediate_reward: float = 0.0
+    immediate_reward: Fraction = Fraction(0)
     observable_reveal: Tuple[Tuple[str, Any], ...] = ()
 
 

@@ -1,0 +1,504 @@
+{
+  "status": "passed",
+  "model_fidelity_scope": "27 declaredfouractor threeepoch cases",
+  "grid_rows": [
+    {
+      "today": "1/5",
+      "middle": "1/5",
+      "future": "1/2",
+      "action": [],
+      "expected": "1/2",
+      "oracle": "1/2",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0005230410024523735
+    },
+    {
+      "today": "1/5",
+      "middle": "1/5",
+      "future": "7/10",
+      "action": [],
+      "expected": "7/10",
+      "oracle": "7/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0005725829978473485
+    },
+    {
+      "today": "1/5",
+      "middle": "1/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004000410044682212
+    },
+    {
+      "today": "1/5",
+      "middle": "2/5",
+      "future": "1/2",
+      "action": [],
+      "expected": "1/2",
+      "oracle": "1/2",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0003952080005547032
+    },
+    {
+      "today": "1/5",
+      "middle": "2/5",
+      "future": "7/10",
+      "action": [],
+      "expected": "7/10",
+      "oracle": "7/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004048750051879324
+    },
+    {
+      "today": "1/5",
+      "middle": "2/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00041933299507945776
+    },
+    {
+      "today": "1/5",
+      "middle": "3/5",
+      "future": "1/2",
+      "action": [],
+      "expected": "3/5",
+      "oracle": "3/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00042299999768147245
+    },
+    {
+      "today": "1/5",
+      "middle": "3/5",
+      "future": "7/10",
+      "action": [],
+      "expected": "7/10",
+      "oracle": "7/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0003974589999415912
+    },
+    {
+      "today": "1/5",
+      "middle": "3/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00041370800317963585
+    },
+    {
+      "today": "1/2",
+      "middle": "1/5",
+      "future": "1/2",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "1/2",
+      "oracle": "1/2",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004215000008116476
+    },
+    {
+      "today": "1/2",
+      "middle": "1/5",
+      "future": "7/10",
+      "action": [],
+      "expected": "7/10",
+      "oracle": "7/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004248749974067323
+    },
+    {
+      "today": "1/2",
+      "middle": "1/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00041466599941486493
+    },
+    {
+      "today": "1/2",
+      "middle": "2/5",
+      "future": "1/2",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "1/2",
+      "oracle": "1/2",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00040012499812291935
+    },
+    {
+      "today": "1/2",
+      "middle": "2/5",
+      "future": "7/10",
+      "action": [],
+      "expected": "7/10",
+      "oracle": "7/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00040195899782702327
+    },
+    {
+      "today": "1/2",
+      "middle": "2/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0005569589993683621
+    },
+    {
+      "today": "1/2",
+      "middle": "3/5",
+      "future": "1/2",
+      "action": [],
+      "expected": "3/5",
+      "oracle": "3/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004134999981033616
+    },
+    {
+      "today": "1/2",
+      "middle": "3/5",
+      "future": "7/10",
+      "action": [],
+      "expected": "7/10",
+      "oracle": "7/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00039479200495406985
+    },
+    {
+      "today": "1/2",
+      "middle": "3/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004008329997304827
+    },
+    {
+      "today": "4/5",
+      "middle": "1/5",
+      "future": "1/2",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "4/5",
+      "oracle": "4/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00041362499905517325
+    },
+    {
+      "today": "4/5",
+      "middle": "1/5",
+      "future": "7/10",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "4/5",
+      "oracle": "4/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004182920019957237
+    },
+    {
+      "today": "4/5",
+      "middle": "1/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0005476670048665255
+    },
+    {
+      "today": "4/5",
+      "middle": "2/5",
+      "future": "1/2",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "4/5",
+      "oracle": "4/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00040845799958333373
+    },
+    {
+      "today": "4/5",
+      "middle": "2/5",
+      "future": "7/10",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "4/5",
+      "oracle": "4/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.00040220800292445347
+    },
+    {
+      "today": "4/5",
+      "middle": "2/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0003942079929402098
+    },
+    {
+      "today": "4/5",
+      "middle": "3/5",
+      "future": "1/2",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "4/5",
+      "oracle": "4/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0003972080012317747
+    },
+    {
+      "today": "4/5",
+      "middle": "3/5",
+      "future": "7/10",
+      "action": [
+        [
+          "A",
+          "B"
+        ]
+      ],
+      "expected": "4/5",
+      "oracle": "4/5",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004285000031813979
+    },
+    {
+      "today": "4/5",
+      "middle": "3/5",
+      "future": "9/10",
+      "action": [],
+      "expected": "9/10",
+      "oracle": "9/10",
+      "regret": "0",
+      "states": 6,
+      "transitions": 7,
+      "support_entries": 6,
+      "solve_seconds": 0.0004009589974884875
+    }
+  ],
+  "max_grid_regret": "0",
+  "max_bounded_solve_seconds": 0.0005725829978473485,
+  "runtime": [
+    {
+      "phase": "ask",
+      "kind": "direct",
+      "n": 10,
+      "seconds": [
+        0.0045650839965674095,
+        0.004581499997584615,
+        0.004529040998022538,
+        0.004563292000966612,
+        0.004640625003958121,
+        0.004577250001602806,
+        0.00458562499989057,
+        0.004680999998527113,
+        0.004610124997270759,
+        0.004312875003961381
+      ],
+      "max_seconds": 0.004680999998527113,
+      "below_user_target": true,
+      "active_planning": false
+    },
+    {
+      "phase": "ask",
+      "kind": "subprocess",
+      "n": 3,
+      "seconds": [
+        0.03891291599575197,
+        0.04136991700215731,
+        0.040637124999193475
+      ],
+      "max_seconds": 0.04136991700215731,
+      "below_user_target": true,
+      "active_planning": false
+    },
+    {
+      "phase": "match",
+      "kind": "direct",
+      "n": 10,
+      "seconds": [
+        0.05007162500260165,
+        0.05031374999816762,
+        0.050686084003245924,
+        0.04982695799844805,
+        0.05033529199863551,
+        0.050213624999742024,
+        0.05142258399428101,
+        0.050508915999671444,
+        0.050451625000278,
+        0.05017312500422122
+      ],
+      "max_seconds": 0.05142258399428101,
+      "below_user_target": true,
+      "active_planning": false
+    },
+    {
+      "phase": "match",
+      "kind": "subprocess",
+      "n": 3,
+      "seconds": [
+        0.09084762499696808,
+        0.09188062499742955,
+        0.09342100000503706
+      ],
+      "max_seconds": 0.09342100000503706,
+      "below_user_target": true,
+      "active_planning": false
+    }
+  ],
+  "offline_fouractor_projection_seconds": [
+    0.0020444580004550517,
+    0.0017776669992599636,
+    0.0016851250038598664,
+    0.0017122080025728792,
+    0.002017250000790227,
+    0.001807166998332832,
+    0.0017222080059582368,
+    0.0017324169966741465,
+    0.001743834000080824,
+    0.0017749999969964847
+  ],
+  "tested_runtime_gate_passed": true,
+  "live_model_asset_admitted": false,
+  "live_candidate_switches": false,
+  "production_reward_admitted": false,
+  "host": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  },
+  "source_sha256": {
+    "bounded.py": "694328acee494938bf2c0325a0bd3a7ca1c9e6ddaa7114d12c73cd819dcf1be1",
+    "public_adapter.py": "5d153751e3fb0a88df9e32b143db4e46922241d646b41cc1a323f5666d85714d",
+    "public_rules.py": "694f816764a3fb863561394274b2fe315a45146ad17ffed0a3e9bce91cdb57c2",
+    "protocol.py": "66bcd17310e2a82e71a8cf9d7f11baac1d35c1dc946a0829808691766abc8d7d",
+    "registration.json": "95c7433675ed29b2d9e98a849d545cc98120baa6c6e1d72ca08e281af36b14c0",
+    "run_validation.py": "f00e6830cb04d72183f99a6ca240ece6c3159c0eff4bc42834044587325f2a75"
+  },
+  "frozen_old_core_sha256": "49d1332459c09be381b86f070c5238f580ea8305530d16de09ccfd95d5834153",
+  "official_episodes": 0,
+  "fits": 0,
+  "limits": [
+    "Constructed200member Gfallback timing, not active200member B1 timing",
+    "Availability-only finitebelief core, not full publicfeedback/uncertainexit kernel",
+    "Zero tail after12futureepochs not fullhorizon certificate",
+    "No qualifiedreward prediction assets admitted"
+  ]
+}

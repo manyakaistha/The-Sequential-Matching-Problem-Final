@@ -1,0 +1,21 @@
+{
+  "kind": "public-only-vendoring",
+  "source_kit_sha256": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+  "source_interfaces_sha256": "85e9cd8e8bacf9b59859e8f8598d623f574e6fb044456847a119d4e0bf85d243",
+  "selected_symbols": [
+    "VERSION",
+    "HARD",
+    "SOFT",
+    "eligibility",
+    "baseline_asks",
+    "baseline_match"
+  ],
+  "excluded": [
+    "generate",
+    "Simulator",
+    "rand_for",
+    "OPTIONS",
+    "private probabilities"
+  ],
+  "reason": "Keep exactpublic legality and G fallback without importing simulator module"
+}

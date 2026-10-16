@@ -1,0 +1,271 @@
+{
+  "arm_summary": {
+    "Q6_parent": {
+      "cells": 12,
+      "fallbacks": 0,
+      "max_cold_transport_seconds": 0.47791137500462355,
+      "max_function_seconds": 0.13778174999606563,
+      "mean_assignments": 80,
+      "mean_msmi_per100": 0.4166666666666667,
+      "qualified_pairs": 10
+    },
+    "Q6_return_hold": {
+      "cells": 12,
+      "fallbacks": 0,
+      "max_cold_transport_seconds": 0.5565985830035061,
+      "max_function_seconds": 0.21084420799888903,
+      "mean_assignments": 79.5,
+      "mean_msmi_per100": 0.4166666666666667,
+      "qualified_pairs": 10
+    }
+  },
+  "audit": {
+    "all_valid": true,
+    "complete_registered_grid": true,
+    "denominator_parity_verified": true,
+    "expected_cells": 24,
+    "private_world_read": false,
+    "public_event_reconstruction_verified": true,
+    "status": "passed",
+    "verified_cells": 24,
+    "world_parity_verified": true
+  },
+  "commit_sha256": {
+    "R8_return_hold_mechanism_v1_840001_cold_start_Q6_parent": "3e2a611c6e761be9b06bc09e8836b825066763956cd215d1946e5dbd95fb3a30",
+    "R8_return_hold_mechanism_v1_840001_cold_start_Q6_return_hold": "8ee5cf8ef6e6087d03220e80f3fc0beabef811970493c709978aa9ed5aabeb10",
+    "R8_return_hold_mechanism_v1_840001_delayed_Q6_parent": "66aa67d0fecb1bb5f211b668dde76b603ab85962c869482286f8f48f0c806f61",
+    "R8_return_hold_mechanism_v1_840001_delayed_Q6_return_hold": "7eb1f0ab248d2148f537fec4aad1c925a9eaba0cddedb65c14c99744d8982436",
+    "R8_return_hold_mechanism_v1_840001_development_Q6_parent": "248705d019e9bb232978c7b0caca540db6737c93c8bed3fbfadb882135a68162",
+    "R8_return_hold_mechanism_v1_840001_development_Q6_return_hold": "8b8a7a220d7c255b1b87b7c68c4820c4e68b0c0754f904f5a8a2cf769c6971a3",
+    "R8_return_hold_mechanism_v1_840001_drift_Q6_parent": "b05623185a21a47064b8550bf28c2d804a33dfb851e49b11cd45afce1c79eba8",
+    "R8_return_hold_mechanism_v1_840001_drift_Q6_return_hold": "88dd0d11dec446837c12cb57a55e8cc6e06ad00af401fe3bda0352be648b399b",
+    "R8_return_hold_mechanism_v1_840001_shift_Q6_parent": "2fc1b44d5f170ee0966bf41828999519844df90c32b5199039e9970140ad2324",
+    "R8_return_hold_mechanism_v1_840001_shift_Q6_return_hold": "852264f9c31504a3d7a4b07a3dbd188e8479d5927b757c626d48f9f53c079e50",
+    "R8_return_hold_mechanism_v1_840001_sparse_Q6_parent": "f67635665fdbeeaba350739fb28c8b1a7095f6ac89acb6931a86021639286612",
+    "R8_return_hold_mechanism_v1_840001_sparse_Q6_return_hold": "e576943c575d3e03842d8c906ce0657cd343e07e2109696dfca81f22616d5996",
+    "R8_return_hold_mechanism_v1_840002_cold_start_Q6_parent": "d057b13a0d5006a420b8b0a95d602883208bf822724644a2bb7bf5d1af619d77",
+    "R8_return_hold_mechanism_v1_840002_cold_start_Q6_return_hold": "5e2b44d8f44e060b9df17b1dc3e82c37d3592a48531cccb840f1993bcb2c8e7f",
+    "R8_return_hold_mechanism_v1_840002_delayed_Q6_parent": "304f49ff2499d31e3657dd4cfa69006da05ce7d1667b176529974734e244e4b2",
+    "R8_return_hold_mechanism_v1_840002_delayed_Q6_return_hold": "24db274a2c91d92ae8dc080948ba605d26f5c05d161632cd5506f4fed4d87395",
+    "R8_return_hold_mechanism_v1_840002_development_Q6_parent": "ef6ca545cf676f5d1239c9aef6655fbc54acd66a157726cc80baf618cb3fbb0b",
+    "R8_return_hold_mechanism_v1_840002_development_Q6_return_hold": "40a99f8005dca02cc4ddcc1a1d4a8197c72ffe483502b2ddf962c03ba2c8d238",
+    "R8_return_hold_mechanism_v1_840002_drift_Q6_parent": "9e4d3610085a5e7add3d162749053b3b9c0cf208acd85efacc8dccf8f50a5a41",
+    "R8_return_hold_mechanism_v1_840002_drift_Q6_return_hold": "bf3c241ebaaa8192aef2d4983edec9906f0baf68255b9fcac0378b9dab95a9e0",
+    "R8_return_hold_mechanism_v1_840002_shift_Q6_parent": "0d0e08ae9e251774bc115a4dce6224915133728389bd1cc893d2e6452a62d217",
+    "R8_return_hold_mechanism_v1_840002_shift_Q6_return_hold": "ca7963e6e23639e6fb6d8a3e1d28c1b07e56ae5e1fabe4134be94792dad160ab",
+    "R8_return_hold_mechanism_v1_840002_sparse_Q6_parent": "8437d02bbd89942483c603484aea9fa6bff0f511e28ac5bcec7179e443162363",
+    "R8_return_hold_mechanism_v1_840002_sparse_Q6_return_hold": "dece5c6ba62b2b22305ea71d236c0120344ee26beb0d0df28f5157fdf4bce3db"
+  },
+  "decision": "mechanism_active_requires_further_development_not_superiority",
+  "hold_events": {
+    "R8_return_hold_mechanism_v1_840001_cold_start_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840001_cold_start_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840001_delayed_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840001_delayed_Q6_return_hold": [
+      {
+        "alternative": "syn_a801d398fac35e5b590ae41b943f68b2",
+        "alternative_available_next_day": true,
+        "day": 11,
+        "endpoints": [
+          "syn_4b0601ed9047a0b419cfbd4feb7fca27",
+          "syn_f2a0724150f8d97bb59bf2fdd1c44f02"
+        ],
+        "held_endpoint": "syn_f2a0724150f8d97bb59bf2fdd1c44f02",
+        "held_endpoints_never_introduced_later": 1,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": false,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 12,
+        "witness_used_next_day": true
+      },
+      {
+        "alternative": "syn_d9bf1e4edf33d723aef1a34ed62652ce",
+        "alternative_available_next_day": true,
+        "day": 40,
+        "endpoints": [
+          "syn_0de0197f1e6dc0505c124b3ab6af0063",
+          "syn_3871d6bb4879ff5aa6e18fc75b99d3fb"
+        ],
+        "held_endpoint": "syn_0de0197f1e6dc0505c124b3ab6af0063",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 2,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 41,
+        "witness_used_next_day": true
+      }
+    ],
+    "R8_return_hold_mechanism_v1_840001_development_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840001_development_Q6_return_hold": [
+      {
+        "alternative": "syn_a801d398fac35e5b590ae41b943f68b2",
+        "alternative_available_next_day": true,
+        "day": 11,
+        "endpoints": [
+          "syn_4b0601ed9047a0b419cfbd4feb7fca27",
+          "syn_f2a0724150f8d97bb59bf2fdd1c44f02"
+        ],
+        "held_endpoint": "syn_f2a0724150f8d97bb59bf2fdd1c44f02",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 12,
+        "witness_used_next_day": false
+      },
+      {
+        "alternative": "syn_785aef5aa156c3c9bb39b1615c7641dc",
+        "alternative_available_next_day": true,
+        "day": 23,
+        "endpoints": [
+          "syn_7785c8a690f370b06d0401066df0b176",
+          "syn_d9f91c3dea345400634373a4ee0cf687"
+        ],
+        "held_endpoint": "syn_7785c8a690f370b06d0401066df0b176",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 24,
+        "witness_used_next_day": false
+      }
+    ],
+    "R8_return_hold_mechanism_v1_840001_drift_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840001_drift_Q6_return_hold": [
+      {
+        "alternative": "syn_a801d398fac35e5b590ae41b943f68b2",
+        "alternative_available_next_day": true,
+        "day": 11,
+        "endpoints": [
+          "syn_4b0601ed9047a0b419cfbd4feb7fca27",
+          "syn_f2a0724150f8d97bb59bf2fdd1c44f02"
+        ],
+        "held_endpoint": "syn_f2a0724150f8d97bb59bf2fdd1c44f02",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 12,
+        "witness_used_next_day": false
+      },
+      {
+        "alternative": "syn_785aef5aa156c3c9bb39b1615c7641dc",
+        "alternative_available_next_day": true,
+        "day": 23,
+        "endpoints": [
+          "syn_7785c8a690f370b06d0401066df0b176",
+          "syn_d9f91c3dea345400634373a4ee0cf687"
+        ],
+        "held_endpoint": "syn_7785c8a690f370b06d0401066df0b176",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 24,
+        "witness_used_next_day": false
+      }
+    ],
+    "R8_return_hold_mechanism_v1_840001_shift_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840001_shift_Q6_return_hold": [
+      {
+        "alternative": "syn_d9bf1e4edf33d723aef1a34ed62652ce",
+        "alternative_available_next_day": true,
+        "day": 8,
+        "endpoints": [
+          "syn_0de0197f1e6dc0505c124b3ab6af0063",
+          "syn_ade8e92d0c985c7280b485723ca2cd80"
+        ],
+        "held_endpoint": "syn_0de0197f1e6dc0505c124b3ab6af0063",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 2,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 9,
+        "witness_used_next_day": true
+      },
+      {
+        "alternative": "syn_a801d398fac35e5b590ae41b943f68b2",
+        "alternative_available_next_day": true,
+        "day": 11,
+        "endpoints": [
+          "syn_4b0601ed9047a0b419cfbd4feb7fca27",
+          "syn_f2a0724150f8d97bb59bf2fdd1c44f02"
+        ],
+        "held_endpoint": "syn_f2a0724150f8d97bb59bf2fdd1c44f02",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": true,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 12,
+        "witness_used_next_day": false
+      },
+      {
+        "alternative": "syn_d4bfe1eecc7bc7d63ca7a04f240c089d",
+        "alternative_available_next_day": true,
+        "day": 25,
+        "endpoints": [
+          "syn_85e940d696646efecac10efa0b6546ca",
+          "syn_b4e0ddda03c118d4c98336da08e74f4f"
+        ],
+        "held_endpoint": "syn_85e940d696646efecac10efa0b6546ca",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 5,
+        "old_score": 0,
+        "original_pair_used_later": false,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 26,
+        "witness_used_next_day": true
+      },
+      {
+        "alternative": "syn_934033faadc82d29a997b145a8846965",
+        "alternative_available_next_day": true,
+        "day": 40,
+        "endpoints": [
+          "syn_785aef5aa156c3c9bb39b1615c7641dc",
+          "syn_7ced0364695cffa9781ccd4689f719dd"
+        ],
+        "held_endpoint": "syn_785aef5aa156c3c9bb39b1615c7641dc",
+        "held_endpoints_never_introduced_later": 0,
+        "new_score": 1,
+        "old_score": 0,
+        "original_pair_used_later": false,
+        "public_reason": "latest_nonmutual_assignment_plus_8",
+        "target_day": 41,
+        "witness_used_next_day": true
+      }
+    ],
+    "R8_return_hold_mechanism_v1_840001_sparse_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840001_sparse_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840002_cold_start_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840002_cold_start_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840002_delayed_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840002_delayed_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840002_development_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840002_development_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840002_drift_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840002_drift_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840002_shift_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840002_shift_Q6_return_hold": [],
+    "R8_return_hold_mechanism_v1_840002_sparse_Q6_parent": [],
+    "R8_return_hold_mechanism_v1_840002_sparse_Q6_return_hold": []
+  },
+  "inference_scope": "two reused development seeds; no significance or policy superiority claim",
+  "mechanism": {
+    "held_endpoints_never_introduced_later": 1,
+    "holds": 10,
+    "original_pair_used_later": 7,
+    "potential_returns_observed": 10,
+    "witness_used_next_day": 5
+  },
+  "parent_exact_replays": 12,
+  "registration_sha256": "ad72796e609ab44f7d6341359fc71f8e8849f5202851f61352befa4986b13ce4",
+  "status": "completed_audited_development_mechanism_probe"
+}

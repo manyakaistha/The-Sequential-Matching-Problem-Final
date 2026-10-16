@@ -1,0 +1,13 @@
+{
+  "cases": 144,
+  "holds": 20,
+  "strict_model_improvements": 20,
+  "mean_model_gain": "31/720",
+  "max_menu_regret": "0",
+  "max_zero_horizon_regret": "7/10",
+  "max_states": 21,
+  "max_support_entries": 28,
+  "max_transitions": 27,
+  "max_toy_solve_seconds": 0.0020904999983031303,
+  "total_toy_solve_cpu_seconds": 0.14000200000000043
+}

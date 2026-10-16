@@ -1,0 +1,27 @@
+test_ask_budget_atomic (test_kit.ContractTests.test_ask_budget_atomic) ... ok
+test_declined_stays_declined (test_kit.ContractTests.test_declined_stays_declined) ... ok
+test_invalid_match_atomic (test_kit.ContractTests.test_invalid_match_atomic) ... ok
+test_no_future_members (test_kit.ContractTests.test_no_future_members) ... ok
+test_no_latent_leak (test_kit.ContractTests.test_no_latent_leak) ... ok
+test_observation_is_copy (test_kit.ContractTests.test_observation_is_copy) ... ok
+test_order_independent_world_randomness (test_kit.ContractTests.test_order_independent_world_randomness) ... ok
+test_outcome_funnel (test_kit.ContractTests.test_outcome_funnel) ... ok
+test_reproducible (test_kit.ContractTests.test_reproducible) ... ok
+test_symmetric_feasibility (test_kit.ContractTests.test_symmetric_feasibility) ... ok
+test_temporal_integrity (test_kit.ContractTests.test_temporal_integrity) ... ok
+test_unknown_not_pass (test_kit.ContractTests.test_unknown_not_pass) ... ok
+test_container_has_no_host_mount (test_runner.RunnerTests.test_container_has_no_host_mount) ... ok
+test_empty_request_through_real_process (test_runner.RunnerTests.test_empty_request_through_real_process) ... ok
+test_equal_scenario_weights (test_runner.RunnerTests.test_equal_scenario_weights) ... ok
+test_malformed_output_rejected (test_runner.RunnerTests.test_malformed_output_rejected) ... ok
+test_nan_rejected (test_runner.RunnerTests.test_nan_rejected) ... ok
+test_observed_policy_never_receives_world_fields (test_runner.RunnerTests.test_observed_policy_never_receives_world_fields) ... ok
+test_timeout_rejected (test_runner.RunnerTests.test_timeout_rejected) ... ok
+test_empty_population_returns_zero_metrics (test_release.ReleaseTests.test_empty_population_returns_zero_metrics) ... ok
+test_episode_denominator_and_distinct_coverage (test_release.ReleaseTests.test_episode_denominator_and_distinct_coverage) ... ok
+test_one_successful_pair_is_one_outcome (test_release.ReleaseTests.test_one_successful_pair_is_one_outcome) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.733s
+
+OK

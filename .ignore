@@ -1,0 +1,8 @@
+# Ignore massive results trees from file watchers and indexing
+results/**
+research7b/workspace/results/**
+research7a/workspace/results/**
+**/attempts/**
+**/commits/**
+.tmp/**
+**/.tmp/**

@@ -1,0 +1,6 @@
+{
+  "status": "coordinator_terminated_after_workers_finished",
+  "committed_cells_preserved": 480,
+  "pending_worker_processes": 0,
+  "terminated_unix": 1791993944.110286
+}

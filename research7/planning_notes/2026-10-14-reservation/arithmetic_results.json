@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "exact reduced arithmetic only; no production policy tests",
+  "results": {
+    "return_fast_slow_hold": [
+      "21/25",
+      "13/25",
+      "4/5"
+    ],
+    "reuse": "271/1000",
+    "terminal_matching": "13/10",
+    "hard_package_optimum": "9/5",
+    "soft_hard_budget12": {
+      "soft_optimum": "9/5",
+      "all_hard": "17/10"
+    },
+    "future_query_threshold_scaled_budget": "1/4"
+  }
+}

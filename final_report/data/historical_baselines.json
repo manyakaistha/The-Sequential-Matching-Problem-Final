@@ -1,0 +1,47 @@
+{
+  "greedy": {
+    "episodes": 30,
+    "seeds": [
+      301,
+      302,
+      303,
+      304,
+      305
+    ],
+    "qualified_pairs": 21,
+    "mean_msmi": 0.35,
+    "dates_per_100": 4.9,
+    "coverage": 0.3476666666666667,
+    "ask_cost": 201.0
+  },
+  "no_asks": {
+    "episodes": 30,
+    "seeds": [
+      301,
+      302,
+      303,
+      304,
+      305
+    ],
+    "qualified_pairs": 3,
+    "mean_msmi": 0.05,
+    "dates_per_100": 0.85,
+    "coverage": 0.107,
+    "ask_cost": 0.0
+  },
+  "random": {
+    "episodes": 30,
+    "seeds": [
+      301,
+      302,
+      303,
+      304,
+      305
+    ],
+    "qualified_pairs": 19,
+    "mean_msmi": 0.31666666666666665,
+    "dates_per_100": 4.633333333333334,
+    "coverage": 0.3425,
+    "ask_cost": 201.0
+  }
+}

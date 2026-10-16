@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "cases": 27,
+  "max_grid_regret": "0",
+  "max_bounded_solve_seconds": 0.0005725829978473485,
+  "runtime": [
+    {
+      "phase": "ask",
+      "kind": "direct",
+      "max_seconds": 0.004680999998527113,
+      "below_user_target": true
+    },
+    {
+      "phase": "ask",
+      "kind": "subprocess",
+      "max_seconds": 0.04136991700215731,
+      "below_user_target": true
+    },
+    {
+      "phase": "match",
+      "kind": "direct",
+      "max_seconds": 0.05142258399428101,
+      "below_user_target": true
+    },
+    {
+      "phase": "match",
+      "kind": "subprocess",
+      "max_seconds": 0.09342100000503706,
+      "below_user_target": true
+    }
+  ],
+  "tested_runtime_gate_passed": true,
+  "live_model_asset_admitted": false
+}

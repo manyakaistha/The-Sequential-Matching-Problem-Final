@@ -1,0 +1,17 @@
+{
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/results/**": true,
+    "**/attempts/**": true,
+    "**/commits/**": true,
+    "**/.tmp/**": true
+  },
+  "search.exclude": {
+    "**/results/**": true,
+    "**/attempts/**": true,
+    "**/commits/**": true,
+    "**/.tmp/**": true
+  }
+}

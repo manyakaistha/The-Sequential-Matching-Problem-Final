@@ -1,0 +1,3127 @@
+{
+  "authorized_scope": "R8_primary",
+  "cells": [
+    {
+      "cell_key": "R8_primary_820001_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820001_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820001,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820002_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820002,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820003_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820003,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820004_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820004,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820005_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820005,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820006_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820006,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820007_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820007,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820008_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820008,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820009_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820009,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820010_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820010,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820011_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820011,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820012_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820012,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820013_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820013,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820014_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820014,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820015_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820015,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820016_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820016,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820017_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820017,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820018_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820018,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820019_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820019,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820020_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820020,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820021_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820021,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820022_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820022,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820023_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820023,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    },
+    {
+      "cell_key": "R8_primary_820024_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 820024,
+      "stage_id": "R8_primary"
+    }
+  ],
+  "execution_authorized": true,
+  "families": [
+    "development",
+    "sparse",
+    "cold_start",
+    "delayed",
+    "shift",
+    "drift"
+  ],
+  "governing_simulator": {
+    "kit_sha256": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "version": "1.0.0"
+  },
+  "hypotheses": {
+    "H1": "Soft-budget filling improves reward vs no soft-budget filling (G_targeted_soft vs G, G_random_soft vs G)",
+    "H2": "Targeted soft-budget filling improves reward vs random eligible soft-budget filling (G_targeted_soft vs G_random_soft)"
+  },
+  "ordered_seed_list": [
+    820001,
+    820002,
+    820003,
+    820004,
+    820005,
+    820006,
+    820007,
+    820008,
+    820009,
+    820010,
+    820011,
+    820012,
+    820013,
+    820014,
+    820015,
+    820016,
+    820017,
+    820018,
+    820019,
+    820020,
+    820021,
+    820022,
+    820023,
+    820024
+  ],
+  "policies": {
+    "G": {
+      "config": {
+        "id": "G"
+      },
+      "description": "Frozen greedy hard query batch + greedy matching, no soft queries",
+      "entrypoint": "research8.soft_query_trial.policies.g:decide"
+    },
+    "G_random_soft": {
+      "config": {
+        "id": "G_random_soft",
+        "salt": "research8_g_random_soft_v1"
+      },
+      "description": "Greedy hard batch + random eligible soft questions from candidate set C",
+      "entrypoint": "research8.soft_query_trial.policies.g_random_soft:decide"
+    },
+    "G_targeted_soft": {
+      "config": {
+        "id": "G_targeted_soft"
+      },
+      "description": "Greedy hard batch + targeted eligible soft questions from candidate set C",
+      "entrypoint": "research8.soft_query_trial.policies.g_targeted_soft:decide"
+    }
+  },
+  "policy_ids": [
+    "G",
+    "G_random_soft",
+    "G_targeted_soft"
+  ],
+  "registration_sha256": "89c2d57d84e857a4162580ed68df2576f1cf38fdd3e4165e03cd03e436b70d13",
+  "resource_forecast": {
+    "free_reserve_gib_min": 10.0,
+    "max_attempt_cpu_seconds": 90,
+    "max_attempt_wall_seconds": 180,
+    "max_rss_gib": 4.0,
+    "max_workers": 3
+  },
+  "schema_version": "1.0.0",
+  "seed_freshness_certified": true,
+  "source_manifest": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "policy.py": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+    "research8/soft_query_trial/audits/seed_freshness_audit.json": "3fe2d076116124c6a8bf9c6c53589ffa469234a3821f23497362e3fd752e13bb",
+    "research8/soft_query_trial/policies/cli_adapter.py": "510cb52f972e4a8f8bb3ef942ac1174976dd6ac8b97594738f205b7effca369c",
+    "research8/soft_query_trial/policies/g.py": "d45a1b787aa71ff5df37dbe88c3b5f17c9f3334c870efcfce06d5cf14d75202a",
+    "research8/soft_query_trial/policies/g_random_soft.py": "5314aefde6d11283945078e43bc748d7cf6d674b65b9db2ca7b6c8f94a4a0272",
+    "research8/soft_query_trial/policies/g_targeted_soft.py": "e2b9ada5fd2e0d68b6dab92c9e3a5e7e7fcc7d67b17177ec216f8c1f8c0672c7",
+    "research8/soft_query_trial/policies/targeting.py": "564e820694139c2c6487b44cc648946078bc645217e7fb01b3d1912e043765d4",
+    "research8/soft_query_trial/runtime/launcher.py": "cae24d346220228d181a189cfe783d3626b4aa49ebeccf2d025a5251f9c2238e",
+    "research8/soft_query_trial/runtime/metrics.py": "8fe2fca42671ec68479dbec7044a4052c283aff61c06d8c75d519bec468f8ff5",
+    "research8/soft_query_trial/runtime/runner.py": "21bf48052f563f6897edb2b2fa34cedab54659674a694ad7d307c0ade2ab8259"
+  },
+  "stage_id": "R8_primary",
+  "status": "frozen_execution_registration",
+  "total_cells": 432
+}

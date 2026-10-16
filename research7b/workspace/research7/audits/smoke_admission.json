@@ -1,0 +1,34 @@
+{
+  "review_id": "R7-P1-SMOKE-INDEPENDENT-20261012",
+  "reviewer": "r7_live_critic",
+  "developers": ["root", "r7_episode_developer"],
+  "scope": "P1_smoke",
+  "status": "approved",
+  "reviewed_design_sha256": "9edfe0fa1139f653684311ab05c66cd0afe54a15af73e997d4c2a888c593ec8d",
+  "pathassessment": "research7/reviews/live_execution_review.md",
+  "approved_cells": 144,
+  "approved_seed_list": [700001, 700002, 700003, 700004],
+  "approved_policy_panel": ["G", "N", "R", "P", "K", "Q6"],
+  "mode": "trusted_inprocess_non_sandbox",
+  "topology": "single_mac_01_one_coordinator_max_two_workers",
+  "launch_context": "Run from verified research7b/workspace; imported governing simulator, reference and runtime modules must resolve to the frozen workspace source bytes.",
+  "freshness_scope": "Repository-visible four-smoke-seed audit with closed inherited trace/archive coverage, conservative prior guard 1-699999, zero proposed literal intersections and user declaration of no prior R7 use. Unknown private/deleted/external older-round uses are not globally certified.",
+  "evidence": {
+    "runtime_constructed_tests": {"passed": 34, "seconds": 0.281},
+    "exact_reduced_model_tests": {"passed": 7, "seconds": 12.281},
+    "independent_historical_result_metadata_literal_scan": {"files": 14172, "proposed_seed_hits": 0},
+    "source_files_verified": 182,
+    "frozen_inherited_original_mismatches": 0,
+    "draft_readiness_blockers_before_this_review": ["Execution blocked: no hash-bound independent admission review."]
+  },
+  "conditions": [
+    "Bind this immutable admission document hash and reviewed design to the frozen execution registration before generation.",
+    "Use only the registered 144 cells and preserve all attempts, invalidities and resource stops; do not silently retry or replace cells.",
+    "Charge physical attempts and all failure overhead to the registered CPU/output ledgers; resource stop can yield incomplete smoke.",
+    "Use results for integration/resource calibration only; no candidate admission, fits, superiority inference, selection or confirmation.",
+    "Candidate protocol/exact agreement, restricted-container production, cross-host parity and final scientific merge/archive certification remain separate gates."
+  ],
+  "critic_worlds_generated": 0,
+  "critic_empirical_episodes": 0,
+  "critic_fits": 0
+}

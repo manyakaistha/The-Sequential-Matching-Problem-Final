@@ -1,0 +1,1 @@
+{"cell": {"seed": 2, "family": "drift", "policy_id": "G_targeted_soft"}, "metrics": {"arrived_members": 200, "mutual_second_meeting_intention": 3, "coverage": 0.3, "hard_asks": 1, "soft_asks": 0}, "attempt_relative_path": "attempts/2_drift_G_targeted_soft", "invocation_seconds_max": 0.1}

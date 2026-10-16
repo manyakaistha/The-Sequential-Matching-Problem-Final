@@ -1,0 +1,13 @@
+{
+  "stage":"R8-W2-bounded-future-waiting-and-public-adapter",
+  "authorization":"User: Great, please do that (bounded future-waiting planner, counterexamples, public observations, correctness/runtime before reward comparison)",
+  "scope":"Finite belief continuation correctness; isolated public protocol adapter; runtime on constructed200-member requests",
+  "baseline":"Purepublic vendored unchanged G ask/match behavior",
+  "planner":"B1 boundedwholeaction menu at every future public belief epoch; preserve futurewaits; no per-hidden-scenario optimization",
+  "limits":{"future_epochs":12,"actors_in_model":8,"states":2000,"support_entries":10000,"transitions":50000,"joint_branches":128,"menu_actions":12,"changed_actors":6,"boundary_actors":6,"search_wall_guard_seconds":0.75,"memory_bytes":1048576,"wire_bytes":1048576,"test_cpu_seconds":90,"test_wall_seconds":120,"official_episodes":0,"fits":0},
+  "gate":{"maximum_constructed_first_action_regret":"1/100","no_clairvoyance":true,"invalid_actions":0,"full_invocation_target_seconds":1.0,"governing_hard_limit_seconds":10.0},
+  "fixed_grid":{"current_reward":["1/5","1/2","4/5"],"intermediate_reward":["1/5","2/5","3/5"],"future_reward":["1/2","7/10","9/10"],"epochs":[0,1,2],"structure":"AB thenAC thenAD, pairabsorption probability1, fouractors","cases":27},
+  "benchmarks":{"constructed_dense_members":200,"direct_repeats":10,"subprocess_repeats":3,"phases":["ask","match"],"interpretation":"Constructed wire/runtime tests, not simulator reward or worst-case guarantee"},
+  "asset_gate":"Production switches require reviewed public joint transition/answer/arrival assets and supported observation emissions; none available currently; adapter must return validated G on missing/unsupported assets.",
+  "claim_limit":"Reduced model correctness and tested runtime scope only. No winner over G/Q6/P, fitting or official episodes. Prior closed files untouched."
+}

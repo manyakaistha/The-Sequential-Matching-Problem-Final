@@ -1,0 +1,1001 @@
+{
+  "active_days": 60,
+  "analysis": {
+    "confidence": "exploratory95",
+    "contrasts": [
+      [
+        "G_random_soft",
+        "G"
+      ],
+      [
+        "G_random_soft",
+        "Q6"
+      ],
+      [
+        "G_random_soft",
+        "P"
+      ],
+      [
+        "G_targeted_soft",
+        "G"
+      ],
+      [
+        "G_targeted_soft",
+        "Q6"
+      ],
+      [
+        "G_targeted_soft",
+        "P"
+      ],
+      [
+        "G_targeted_soft",
+        "G_random_soft"
+      ]
+    ],
+    "multiplicity": "Holm_all_registered_contrasts",
+    "unit": "seed_cluster_mean_of_six_family_differences"
+  },
+  "cells": [
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_development_Q6",
+      "family": "development",
+      "policy_id": "Q6",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_development_P",
+      "family": "development",
+      "policy_id": "P",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_sparse_Q6",
+      "family": "sparse",
+      "policy_id": "Q6",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_sparse_P",
+      "family": "sparse",
+      "policy_id": "P",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_cold_start_Q6",
+      "family": "cold_start",
+      "policy_id": "Q6",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_cold_start_P",
+      "family": "cold_start",
+      "policy_id": "P",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_delayed_Q6",
+      "family": "delayed",
+      "policy_id": "Q6",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_delayed_P",
+      "family": "delayed",
+      "policy_id": "P",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_shift_Q6",
+      "family": "shift",
+      "policy_id": "Q6",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_shift_P",
+      "family": "shift",
+      "policy_id": "P",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_drift_Q6",
+      "family": "drift",
+      "policy_id": "Q6",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830001_drift_P",
+      "family": "drift",
+      "policy_id": "P",
+      "seed": 830001,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_development_Q6",
+      "family": "development",
+      "policy_id": "Q6",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_development_P",
+      "family": "development",
+      "policy_id": "P",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_sparse_Q6",
+      "family": "sparse",
+      "policy_id": "Q6",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_sparse_P",
+      "family": "sparse",
+      "policy_id": "P",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_cold_start_Q6",
+      "family": "cold_start",
+      "policy_id": "Q6",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_cold_start_P",
+      "family": "cold_start",
+      "policy_id": "P",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_delayed_Q6",
+      "family": "delayed",
+      "policy_id": "Q6",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_delayed_P",
+      "family": "delayed",
+      "policy_id": "P",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_shift_Q6",
+      "family": "shift",
+      "policy_id": "Q6",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_shift_P",
+      "family": "shift",
+      "policy_id": "P",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_drift_Q6",
+      "family": "drift",
+      "policy_id": "Q6",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830002_drift_P",
+      "family": "drift",
+      "policy_id": "P",
+      "seed": 830002,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_development_Q6",
+      "family": "development",
+      "policy_id": "Q6",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_development_P",
+      "family": "development",
+      "policy_id": "P",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_sparse_Q6",
+      "family": "sparse",
+      "policy_id": "Q6",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_sparse_P",
+      "family": "sparse",
+      "policy_id": "P",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_cold_start_Q6",
+      "family": "cold_start",
+      "policy_id": "Q6",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_cold_start_P",
+      "family": "cold_start",
+      "policy_id": "P",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_delayed_Q6",
+      "family": "delayed",
+      "policy_id": "Q6",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_delayed_P",
+      "family": "delayed",
+      "policy_id": "P",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_shift_Q6",
+      "family": "shift",
+      "policy_id": "Q6",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_shift_P",
+      "family": "shift",
+      "policy_id": "P",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_drift_Q6",
+      "family": "drift",
+      "policy_id": "Q6",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830003_drift_P",
+      "family": "drift",
+      "policy_id": "P",
+      "seed": 830003,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_development_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_development_G_random_soft",
+      "family": "development",
+      "policy_id": "G_random_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_development_G_targeted_soft",
+      "family": "development",
+      "policy_id": "G_targeted_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_development_Q6",
+      "family": "development",
+      "policy_id": "Q6",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_development_P",
+      "family": "development",
+      "policy_id": "P",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_sparse_G",
+      "family": "sparse",
+      "policy_id": "G",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_sparse_G_random_soft",
+      "family": "sparse",
+      "policy_id": "G_random_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_sparse_G_targeted_soft",
+      "family": "sparse",
+      "policy_id": "G_targeted_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_sparse_Q6",
+      "family": "sparse",
+      "policy_id": "Q6",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_sparse_P",
+      "family": "sparse",
+      "policy_id": "P",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_cold_start_G",
+      "family": "cold_start",
+      "policy_id": "G",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_cold_start_G_random_soft",
+      "family": "cold_start",
+      "policy_id": "G_random_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_cold_start_G_targeted_soft",
+      "family": "cold_start",
+      "policy_id": "G_targeted_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_cold_start_Q6",
+      "family": "cold_start",
+      "policy_id": "Q6",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_cold_start_P",
+      "family": "cold_start",
+      "policy_id": "P",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_delayed_G",
+      "family": "delayed",
+      "policy_id": "G",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_delayed_G_random_soft",
+      "family": "delayed",
+      "policy_id": "G_random_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_delayed_G_targeted_soft",
+      "family": "delayed",
+      "policy_id": "G_targeted_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_delayed_Q6",
+      "family": "delayed",
+      "policy_id": "Q6",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_delayed_P",
+      "family": "delayed",
+      "policy_id": "P",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_shift_G",
+      "family": "shift",
+      "policy_id": "G",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_shift_G_random_soft",
+      "family": "shift",
+      "policy_id": "G_random_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_shift_G_targeted_soft",
+      "family": "shift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_shift_Q6",
+      "family": "shift",
+      "policy_id": "Q6",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_shift_P",
+      "family": "shift",
+      "policy_id": "P",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_drift_G",
+      "family": "drift",
+      "policy_id": "G",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_drift_G_random_soft",
+      "family": "drift",
+      "policy_id": "G_random_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_drift_G_targeted_soft",
+      "family": "drift",
+      "policy_id": "G_targeted_soft",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_drift_Q6",
+      "family": "drift",
+      "policy_id": "Q6",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    },
+    {
+      "cell_key": "R8V2_instrumentation_smoke_830004_drift_P",
+      "family": "drift",
+      "policy_id": "P",
+      "seed": 830004,
+      "stage_id": "R8V2_instrumentation_smoke"
+    }
+  ],
+  "execution_authorized": true,
+  "families": [
+    "development",
+    "sparse",
+    "cold_start",
+    "delayed",
+    "shift",
+    "drift"
+  ],
+  "followup_days": 40,
+  "freshness_evidence": {
+    "audit_path": "research8/soft_query_followup/campaign_v2/smoke_seed_audit.json",
+    "audit_sha256": "617911f34e8eaf4f44de5383dcaeab40e81029a7a49f45af84a4e79602f13865",
+    "review_path": "research8/soft_query_followup/campaign_v2/smoke_seed_review.json",
+    "review_sha256": "1c8eddd8dc0f0a48bb50b1e8eb813b43970d69f774395532b015f67912d2b407"
+  },
+  "observation_cutoff": 99,
+  "ordered_seed_list": [
+    830001,
+    830002,
+    830003,
+    830004
+  ],
+  "policies": {
+    "G": {
+      "config": {
+        "id": "G"
+      },
+      "entrypoint": "research8.soft_query_trial.policies.g:decide"
+    },
+    "G_random_soft": {
+      "config": {
+        "id": "G_random_soft",
+        "salt": "research8_g_random_soft_v1"
+      },
+      "entrypoint": "research8.soft_query_trial.policies.g_random_soft:decide"
+    },
+    "G_targeted_soft": {
+      "config": {
+        "id": "G_targeted_soft"
+      },
+      "entrypoint": "research8.soft_query_trial.policies.g_targeted_soft:decide"
+    },
+    "P": {
+      "config": {
+        "id": "P"
+      },
+      "entrypoint": "research8.soft_query_followup.v2.reference_adapter:decide"
+    },
+    "Q6": {
+      "config": {
+        "id": "Q6"
+      },
+      "entrypoint": "research8.soft_query_followup.v2.reference_adapter:decide"
+    }
+  },
+  "policy_ids": [
+    "G",
+    "G_random_soft",
+    "G_targeted_soft",
+    "Q6",
+    "P"
+  ],
+  "registration_sha256": "aa14878105f03a453a116603822f5bd40c8debfaef5e36ba924802d2217eee4e",
+  "resource_forecast": {
+    "boot_free_reserve_gib_min": 0.25,
+    "free_reserve_gib_min": 10.0,
+    "invocation_wall_seconds": 10.0,
+    "max_attempt_cpu_seconds": 90,
+    "max_attempt_wall_seconds": 180,
+    "max_rss_gib": 4.0,
+    "max_total_worker_rss_gib": 8.0,
+    "max_workers": 6,
+    "wire_limit_bytes": 1048576
+  },
+  "schema_version": "R8-evidence-v2",
+  "source_manifest": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+    "policy.py": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+    "research/terminal_model.py": "2a27fae75a98ab4e3f4f2ee6e498c22016ffb6becbe5682f932e33427ba75eaf",
+    "research3/__init__.py": "3f013c7dd9e67cff6d5a54f3fe3e23f638557393d1b4fb578f631cf14b7f228d",
+    "research3/model_candidates.py": "ff69b739f5d4937cd10ccf1293c762412217250f91ce57a3dead6d36a6405b74",
+    "research6/__init__.py": "9232cf775155fedd1946a112d4060361e301cf6530cd0f1fb54d1c19f8997910",
+    "research6/policies/__init__.py": "364eaec0f403075068055a41bfe284736339cbcb200027935c7bb5dd817fcdff",
+    "research6/policies/acquisition.py": "69991fee0c8705b6e161168fa019ab48c2bb799fed9a5740a7cb9d4bd4edc7ef",
+    "research6/policies/allocation.py": "296ed10fcde8fc65b5e5dbca76ed3dd25da80a9b002b0e89794399d35c9ce1f3",
+    "research6/policies/policy.py": "67c733565b9869dfb6c36b4a61046893a2c16bfc2e035eda7d6a83c08b12ff97",
+    "research7b/workspace/research7/policies/references.py": "91fe001e6382702c39f3d83cd83cda56537331f8c9b432ead4d0e4e6a8436628",
+    "research7b/workspace/research7/runtime/__init__.py": "f239815f9dc6c563c902020b3b53a6d78b5b13e0c948afc4982b9cf964d207c6",
+    "research7b/workspace/research7/runtime/interfaces.py": "85e9cd8e8bacf9b59859e8f8598d623f574e6fb044456847a119d4e0bf85d243",
+    "research8/__init__.py": "d8dcf589043d27611251018f409b138f126ba1eb54db52dec91951d672b2a962",
+    "research8/soft_query_followup/v2/__init__.py": "222974223766c3e2cc8c204ea532ea7a055499c0aedecf996f5a1e8d22532523",
+    "research8/soft_query_followup/v2/analysis.py": "5b0fcd3f5ab9fae80a401d0f00b5000b7a0eec582795dd090f9dd1903a9e077e",
+    "research8/soft_query_followup/v2/audit.py": "9495186c270cf6ef2963df57ccc5e7b2da5970bc7a733eb61950fabe42781217",
+    "research8/soft_query_followup/v2/invoke.py": "78a046a9c1e13f467ae3d95af12ffefd0d3f6fd219f39a0f45374f3efb36afc8",
+    "research8/soft_query_followup/v2/launcher.py": "135d756b9db357c32adfb95295f465dd848b1d3739f039597af5861ee745b980",
+    "research8/soft_query_followup/v2/metrics.py": "c1604508ebc75d6afdca066d2eb5f8eb0f78fd3da163039078a5686925e27661",
+    "research8/soft_query_followup/v2/policy_cli.py": "cb359d7281689bfecd15a4f3191a55fd9e47666ed12745d13acfee330e35754a",
+    "research8/soft_query_followup/v2/reference_adapter.py": "a1c73a59101533672ed7146a8c69c7884b6d77f6ad397a84a04ee95ee0812806",
+    "research8/soft_query_followup/v2/registration.py": "13a705c7cf50cde8ee0c89a61d5c7b4e9ef40847bc794666a6e113b4d34ae14b",
+    "research8/soft_query_followup/v2/runner.py": "629173529b89e2e3bf2d0fb8cb99253af09c78fb2575b6903df137d102c227b8",
+    "research8/soft_query_followup/v2/tests/__init__.py": "b06cf9f0419fb58efe4b8f84374c7fb272e8b88f6adc4cf4b305dc628a4649d7",
+    "research8/soft_query_followup/v2/tests/test_adversarial.py": "282b8b536a1ac1b039ec96030a61f9e4b50c73f6b56c8cec4f9ff6347034a05d",
+    "research8/soft_query_followup/v2/tests/test_analysis.py": "e5f020f95e0b248d385d6be6c0c3c87a788e6c2f5882f8941097f8ba86ef6282",
+    "research8/soft_query_followup/v2/tests/test_capture_integration.py": "8d29f4a8514c637dc44d4ac3bb998426eae1d0655c0dbe88bdf1dbf7755d8e15",
+    "research8/soft_query_followup/v2/tests/test_enforcement.py": "0f9b689f6ff422e29bfe5ddaaba9239306cd194734cdf25aaed519dee4f33188",
+    "research8/soft_query_followup/v2/tests/test_metrics_audit.py": "cb04b46eefb7de439b27a0a0c08a9632cfc1b1692a60a8e394a1c98955954fac",
+    "research8/soft_query_followup/v2/tests/test_runner.py": "d0302de1dcf6a8e71a78e1cd8c715f8e78ea0ca114ba1939eadcde409c4bb6ac",
+    "research8/soft_query_trial/policies/__init__.py": "680b495f5bff5699acb7ea1eb439212dbd4d5110bd8e7abd02e1480260062dfb",
+    "research8/soft_query_trial/policies/cli_adapter.py": "510cb52f972e4a8f8bb3ef942ac1174976dd6ac8b97594738f205b7effca369c",
+    "research8/soft_query_trial/policies/g.py": "d45a1b787aa71ff5df37dbe88c3b5f17c9f3334c870efcfce06d5cf14d75202a",
+    "research8/soft_query_trial/policies/g_random_soft.py": "5314aefde6d11283945078e43bc748d7cf6d674b65b9db2ca7b6c8f94a4a0272",
+    "research8/soft_query_trial/policies/g_targeted_soft.py": "e2b9ada5fd2e0d68b6dab92c9e3a5e7e7fcc7d67b17177ec216f8c1f8c0672c7",
+    "research8/soft_query_trial/policies/targeting.py": "564e820694139c2c6487b44cc648946078bc645217e7fb01b3d1912e043765d4",
+    "research8/w2/__init__.py": "76bbe98b163be079d818c852905b9b5f9e8e645d33f85b3aeddc258e121506b5",
+    "research8/w2/protocol.py": "66bcd17310e2a82e71a8cf9d7f11baac1d35c1dc946a0829808691766abc8d7d",
+    "research8/w2/public_rules.py": "694f816764a3fb863561394274b2fe315a45146ad17ffed0a3e9bce91cdb57c2"
+  },
+  "stage_id": "R8V2_instrumentation_smoke",
+  "status": "frozen_execution_registration",
+  "total_cells": 120
+}

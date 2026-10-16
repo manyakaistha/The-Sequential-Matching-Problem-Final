@@ -1,0 +1,6 @@
+{
+  "error": "RuntimeError: screen stage failed; all evidence preserved, no automatic retry/repair. Exit2",
+  "evidence_preserved": true,
+  "status": "stopped_fail_closed",
+  "stopped_unix": 1792040444.330435
+}

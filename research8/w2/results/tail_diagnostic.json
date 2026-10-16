@@ -1,0 +1,18 @@
+{
+  "scope": "outside12futureepoch tail diagnostic",
+  "bounded_action": [
+    [
+      "A",
+      "B"
+    ]
+  ],
+  "bounded_value": "1/2",
+  "oracle_action": [],
+  "oracle_value": "9/10",
+  "full_first_action_regret": "2/5",
+  "tail_gate": "NOT_CERTIFIED",
+  "production_admitted": false,
+  "official_episodes": 0,
+  "fits": 0,
+  "registration_sha256": "7d6e6e6336c3f7790fd14d4a6a7bfa8b76c568c6f466d46a525a192773ff5a72"
+}

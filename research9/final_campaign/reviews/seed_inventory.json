@@ -1,0 +1,77 @@
+{
+  "artifact": "bounded_seed_inventory_for_proposed_final_campaign",
+  "created_utc_date": "2026-10-15",
+  "purpose": "Evidence-only inventory for review of proposed seed IDs 950001-950096. This file makes no freshness or execution-readiness determination.",
+  "proposed_seed_ids": {
+    "range_inclusive": [950001, 950096],
+    "count": 96,
+    "ids": [950001, 950002, 950003, 950004, 950005, 950006, 950007, 950008, 950009, 950010, 950011, 950012, 950013, 950014, 950015, 950016, 950017, 950018, 950019, 950020, 950021, 950022, 950023, 950024, 950025, 950026, 950027, 950028, 950029, 950030, 950031, 950032, 950033, 950034, 950035, 950036, 950037, 950038, 950039, 950040, 950041, 950042, 950043, 950044, 950045, 950046, 950047, 950048, 950049, 950050, 950051, 950052, 950053, 950054, 950055, 950056, 950057, 950058, 950059, 950060, 950061, 950062, 950063, 950064, 950065, 950066, 950067, 950068, 950069, 950070, 950071, 950072, 950073, 950074, 950075, 950076, 950077, 950078, 950079, 950080, 950081, 950082, 950083, 950084, 950085, 950086, 950087, 950088, 950089, 950090, 950091, 950092, 950093, 950094, 950095, 950096]
+  },
+  "evidence_reviewed": [
+    {
+      "path": "research6/audits/seed_inventory.json",
+      "sha256": "d44c53cb537ed82100a4278a234480a714f53c7763e9f276ce83f57303afc958",
+      "reported_results_tree": {"files": 23227, "logical_bytes": 139946509972},
+      "limitation": "Its own completeness limits say trace JSON was not parsed exhaustively, large trace archives were not decompressed, and the inventory predates later R7/R8/R9 activity."
+    },
+    {
+      "path": "research6/audits/seed_inventory_extended.json",
+      "sha256": "4d32d440b853e97e1da187e62db69ac069f7e4d548c0697c233850bdfcd7a60e",
+      "note": "Contains indexed prior ranges through R5, archive-member filename inventory, and source-scan scope/exclusions. The recorded prior range evidence includes R3 70001-73040, R4 80001-83160 (with 83057-83160 reserved), and R5 90001-90430."
+    },
+    {
+      "path": "research6/audits/seed_inventory_closure.json",
+      "sha256": "dbf38445e3c7bda27d94acf2463814d122aa84a81f35db32c48695d840a75288",
+      "note": "Historical snapshot reports max_prior_seed 90430 and covers R6 reservations only through 142000; this is not a current universal bound and is not treated as a freshness certificate here."
+    },
+    {
+      "path": "research8/soft_query_followup/campaign_v2/replication_registration.json",
+      "sha256": "9bc230a0f2f1d60fa1562f14c0e45b0e4d9330fb08e6c637ce6e9625f61428ff",
+      "registered_seeds": {"count": 96, "range": [840001, 840096]},
+      "registered_cells": 2880,
+      "registration_status": "frozen_execution_registration",
+      "execution_authorized_field": true
+    },
+    {
+      "path": "research8/soft_query_followup/campaign_v2/replication_seed_audit.json",
+      "sha256": "ba57bbc1f3051aed4de2ddcc828742a67ee118396884a40980978118fc0b1b1f",
+      "recorded_status": "repository_visible_no_overlap",
+      "recorded_scope": "repository-visible metadata; not universal freshness",
+      "recorded_archive_omission": "research7_plan_only.zip was not decoded",
+      "recorded_unreadable_file": "research8/soft_query_followup/campaign_v2/smoke_seed_audit.json"
+    },
+    {
+      "path": "research8/soft_query_followup/campaign_v2/replication_seed_review.json",
+      "sha256": "1f37673ae025993f87cd7aa7dad6c06acc5d1add4897a880c6a8d2ea10c21f25",
+      "note": "Independent review accepted repository-visible freshness for R8's 840001-840096 list under the recorded scan and omissions. Its statement does not establish universal freshness for this R9 proposal."
+    },
+    {
+      "path": "results/research8/soft_query_followup/v2_replication/commits/ and attempts/",
+      "method": "Filename-only bounded directory enumeration; no result payloads opened",
+      "observed": {"commit_entries": 2880, "attempt_entries": 2880, "distinct_seed_ids_in_each": 96, "range": [840001, 840096], "missing_ids_in_range": 0}
+    },
+    {
+      "path": "research9/final_campaign/CAMPAIGN_PLAN.md",
+      "sha256": "75ebe6b6b777214433774a3b98271d20f27744bb9490d36725cae66ecf3da70f",
+      "note": "Plan requests a new seed audit against registrations/commits/archived indexes and explicit omissions. The repository-visible R9 folder had no seed registration, reservation, inventory, or commit ledger during this inventory."
+    }
+  ],
+  "known_indexed_history": [
+    {"label": "R3-R5 indexed historical ranges", "ranges": [[4001, 4040], [5001, 5020], [6001, 6040], [70001, 70012], [71001, 71032], [72001, 72020], [73001, 73040], [80001, 80012], [81001, 81032], [82001, 82020], [83001, 83160], [90001, 90430]], "source": "research6/audits/seed_inventory_extended.json; registration/index summary only"},
+    {"label": "R6 proposed/registered partitions", "ranges": [[100001, 100120], [101001, 101040], [110001, 110040], [120001, 120060], [130001, 130080], [140001, 142000]], "source": "research6/audits/seed_inventory_closure.json; reservation coverage, not proof all were run"},
+    {"label": "R8 V2 replication", "ranges": [[840001, 840096]], "source": "registration plus complete commit/attempt filename seed coverage in results/research8/soft_query_followup/v2_replication"}
+  ],
+  "unknown_or_excluded_scope": [
+    "An external report says 125 earlier seed-bearing items from the 840001+ namespace were deleted. Their exact IDs, run/reservation status, provenance, and deletion evidence are not present in the bounded evidence read here; the local R8 registration and current files do not resolve that external history.",
+    "Private organizer outputs, other machines, untracked/deleted files, undocumented commands, and externally supplied seed runs are outside repository-visible coverage.",
+    "Historical seed_inventory and closure artifacts are snapshots; they cannot prove that all later registrations, attempts, commits, or archives are indexed.",
+    "The 584,725,077-byte R8 smoke seed audit was not opened. The separate R8 replication audit records it as unreadable/oversized; this inventory does not repair or validate that omission.",
+    "No full results-tree walk or extraction/decompression of large historical trace archives was performed. R3-R5 coverage relies on existing indexes; the R8 replication ledger was checked by directory names only. Archive contents and archive hashes were not revalidated."
+  ],
+  "overlap_result": {
+    "repository_visible_listed_overlap": "No matching 950001-950096 IDs were found in the enumerated registration/range evidence listed above.",
+    "interpretation": "This is a bounded observation only. It is not a freshness conclusion and does not clear the externally deleted 125 items or other excluded scopes.",
+    "freshness_verdict": null
+  },
+  "method_bounds": {"files_read_for_this_inventory": 10, "large_archives_decompressed": 0, "result_payloads_read": 0, "repository_wide_four_million_file_walk": false}
+}

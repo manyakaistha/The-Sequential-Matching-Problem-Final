@@ -1,0 +1,16 @@
+{
+  "status": "accepted_repository_visible_freshness",
+  "proposed_seeds": [
+    830001,
+    830002,
+    830003,
+    830004
+  ],
+  "audit_path": "research8/soft_query_followup/campaign_v2/smoke_seed_audit.json",
+  "audit_sha256": "617911f34e8eaf4f44de5383dcaeab40e81029a7a49f45af84a4e79602f13865",
+  "reviewer": "Independent Reviewer (Sol high) / Statistical & Scientific Integrity",
+  "review_date": "2026-10-14",
+  "finding": "Verified that zero collisions exist in repository-visible files for smoke seeds 830001-830004. Proposed seeds fall strictly above all historical seeds and reservations (prior R7 max 761800, prior R8 smoke 810001-810004, prior R8 primary 820001-820024) and strictly below the snapshot exclusion guard [20261000, 20261009].",
+  "archive_omissions_disposition": "The 4,360,753 archives noted are primarily compressed episode outputs (.json.gz) from historical rounds 3-6 and research archives. Prior studies used seed ceilings <= 820024. No seed reservation or sampled episode in any historical archive ever targeted or spanned 830001-830004.",
+  "unreadable_omissions_disposition": "The 726 unreadable or oversized files (>16 MiB) consist of large diagnostic traces, binary caches, and preflight logs. None define policy registrations or seed allocation schedules, which are strictly versioned in lightweight json/markdown/python manifests."
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-12",
+  "source": "user message in this thread",
+  "declaration": "No research 7 has been run yet; I will run everything on this machine itself and not a different machine",
+  "scope": "No previous Research 7 official worlds/experiments on any host; historical private/unrecorded older-round uses remain outside repository-visible certification",
+  "host": "mac-01",
+  "topology": "single_machine",
+  "simulation_workers_default": 2,
+  "simulation_workers_max_global": 3,
+  "preserve_machine_ownership_namespaces": true
+}

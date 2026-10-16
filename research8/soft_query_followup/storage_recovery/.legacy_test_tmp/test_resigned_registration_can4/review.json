@@ -1,0 +1,9 @@
+{
+  "archive_omissions_disposition": "fixture has no archives",
+  "audit_sha256": "85a0ccffceedc3828968a5d079b1d88652d097672800a93bb84e7b38c2f95f58",
+  "proposed_seeds": [
+    1
+  ],
+  "reviewer": "constructed fixture",
+  "status": "accepted_repository_visible_freshness"
+}

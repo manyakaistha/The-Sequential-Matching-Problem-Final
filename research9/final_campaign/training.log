@@ -1,0 +1,107 @@
+{
+  "selected": "funnel",
+  "probability_admitted": false,
+  "rows": 216862,
+  "validation": {
+    "rows": 35907,
+    "positives": 368,
+    "log_loss": 0.05692583188248174,
+    "brier": 0.009910547429919703,
+    "calibration_mean_error": 8.85354981851577e-05,
+    "reliability": [
+      {
+        "lower": 0,
+        "upper": 0.005,
+        "n": 7969,
+        "positives": 69,
+        "mean_prediction": 0.003111237706355826,
+        "observed_rate": 0.009121418844055594
+      },
+      {
+        "lower": 0.005,
+        "upper": 0.01,
+        "n": 13589,
+        "positives": 117,
+        "mean_prediction": 0.007569811618093587,
+        "observed_rate": 0.008186616451920295
+      },
+      {
+        "lower": 0.01,
+        "upper": 0.02,
+        "n": 12058,
+        "positives": 128,
+        "mean_prediction": 0.013483194540592448,
+        "observed_rate": 0.009646178321945788
+      },
+      {
+        "lower": 0.02,
+        "upper": 0.05,
+        "n": 2226,
+        "positives": 51,
+        "mean_prediction": 0.02740058354576965,
+        "observed_rate": 0.024779739804068248
+      },
+      {
+        "lower": 0.05,
+        "upper": 1.000001,
+        "n": 65,
+        "positives": 3,
+        "mean_prediction": 0.06254914061362159,
+        "observed_rate": 0.05821149659213488
+      }
+    ],
+    "constant_loss_difference": 0.0009190303271009614,
+    "bootstrap95_upper_difference": 0.0026376606348968656
+  },
+  "development_test": {
+    "rows": 32724,
+    "positives": 243,
+    "log_loss": 0.045954601995539586,
+    "brier": 0.008018500508094557,
+    "calibration_mean_error": 0.001996750014009073,
+    "reliability": [
+      {
+        "lower": 0,
+        "upper": 0.005,
+        "n": 7343,
+        "positives": 13,
+        "mean_prediction": 0.0030510188343490056,
+        "observed_rate": 0.0016166236490416793
+      },
+      {
+        "lower": 0.005,
+        "upper": 0.01,
+        "n": 12059,
+        "positives": 70,
+        "mean_prediction": 0.007558726747034797,
+        "observed_rate": 0.006849108177940752
+      },
+      {
+        "lower": 0.01,
+        "upper": 0.02,
+        "n": 10739,
+        "positives": 115,
+        "mean_prediction": 0.013355550225410647,
+        "observed_rate": 0.011914995113352197
+      },
+      {
+        "lower": 0.02,
+        "upper": 0.05,
+        "n": 2500,
+        "positives": 44,
+        "mean_prediction": 0.027839171835975632,
+        "observed_rate": 0.016737530515957926
+      },
+      {
+        "lower": 0.05,
+        "upper": 1.000001,
+        "n": 83,
+        "positives": 1,
+        "mean_prediction": 0.05677880387906897,
+        "observed_rate": 0.009553249640099022
+      }
+    ],
+    "constant_loss_difference": -0.0013523667686707766,
+    "bootstrap95_upper_difference": 6.973698982272678e-05
+  }
+}

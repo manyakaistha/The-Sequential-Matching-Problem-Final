@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "stage": "R8-W1-exact-development",
+  "status": "development_registered_before_tests",
+  "authorization": "User 2026-10-14: proceed with future tests and algorithms",
+  "scope": "Independent exact reduced belief-state matching and query algorithms; correctness and bounded resource tests",
+  "excluded": [
+    "official simulator episodes",
+    "model fitting",
+    "confirmation",
+    "changes to completed research7 artifacts"
+  ],
+  "models": "Explicit finite rational toy laws, not simulator generator parameters or calibrated public assets",
+  "limits": {
+    "actors": 8,
+    "states_per_case": 100000,
+    "query_actions": 12,
+    "query_packages": 4096,
+    "test_process_wall_seconds": 120,
+    "test_process_cpu_seconds": 90,
+    "test_output_bytes": 1048576,
+    "official_episodes": 0,
+    "fits": 0,
+    "transitions_per_case": 1000000,
+    "joint_branches": 4096,
+    "edge_outcomes": 16,
+    "arrival_outcomes": 32,
+    "query_scenarios": 64,
+    "cumulative_support_entries_per_case": 200000
+  },
+  "controls": [
+    "exact belief DP",
+    "same-model immediate maximum weight",
+    "same-model score-greedy continuation",
+    "no-wait",
+    "complete-query packages",
+    "no-query"
+  ],
+  "pass_conditions": [
+    "all exact fractions and policies match independently specified witnesses",
+    "indistinguishable public histories share current action",
+    "legal vertex-disjoint no-repeat matchings",
+    "single nonadaptive query package cost at most12",
+    "soft answers never legalize missing hard constraints",
+    "caps fail explicitly",
+    "independent review closes"
+  ],
+  "claim_limit": "Passing gates establishes reduced-model correctness only; no greedy or frozen panel superiority in simulator",
+  "next_gate": "Public model provenance/calibration, full transition adapter, measured runtime and new seed audit/registration before reward comparison",
+  "reduced_grid": {
+    "cases": 144,
+    "today_q": [
+      "1/10",
+      "1/5",
+      "1/2",
+      "9/10"
+    ],
+    "future_q": [
+      "1/5",
+      "1/2",
+      "4/5"
+    ],
+    "arrival_probability": [
+      "0",
+      "1/10",
+      "1/2",
+      "1"
+    ],
+    "return_modes": [
+      "fast8",
+      "slow9",
+      "absorbing"
+    ],
+    "horizon": "days0..8; C departs9",
+    "controllers": [
+      "exact belief DP",
+      "myopic scoregreedy",
+      "menu+greedy continuation h12",
+      "menu+greedy continuation h0"
+    ],
+    "endpoints": [
+      "exact actionvalue agreement",
+      "full horizon regret",
+      "switch counts",
+      "state/support/transition use",
+      "elapsed toy solve time"
+    ],
+    "interpretation": "Exhaustive predetermined reduced parameter grid; not simulator samples, fitting or inference-runtime benchmark"
+  }
+}

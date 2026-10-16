@@ -1,0 +1,1 @@
+{"cell": {"stage_id": "fixed", "seed": 0, "family": "family0", "policy_id": "policy0", "cell_key": "fixed_0_family0_policy0"}, "registration_sha256": "e6700f646349f1a6cfb9e1dc6dad3253ccfd255c4e6f46fa78fe0d85f24fdb2b", "source_sha256": {"original.py": "c47e0b50278e6629dc2a29b6df1a8b7e296897d994e286d8461d9b224df11ccb"}, "is_valid": true, "metrics": {"valid": true}}

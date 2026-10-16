@@ -1,0 +1,13 @@
+# Proposed final-campaign seed inventory
+
+This is a bounded evidence inventory for proposed IDs **950001–950096** (96 IDs). It is not a freshness verdict and does not authorize fitting, simulation, or campaign execution.
+
+The repository contains useful range indexes from earlier work. The R6 audit snapshot reports R3–R5 seed ranges up to 90430 and R6 reserved partitions up to 142000. Its later archive/source inventory records R3 and R4 trace filename coverage and R5 archive member names. Those files explicitly limit their claims: they do not cover all invocations, do not parse every trace, and omit external/private and deleted history. They predate later campaigns and cannot serve as a current universal bound.
+
+The main later repository-visible registration is R8 V2 replication, which registered 96 seeds, 840001–840096, across 2880 cells. A filename-only check of its current `commits/` and `attempts/` directories found all 2880 entries in each directory and all 96 registered seed IDs with no gaps. This establishes the presence of that local registration/results cohort; it does not establish any broader history. Its seed audit records a repository-visible scan, lists an undecoded `research7_plan_only.zip`, and lists the 584,725,077-byte smoke seed audit as unreadable/oversized. The related independent review accepts repository-visible freshness for that R8 proposal only.
+
+The R9 campaign folder did not contain a seed registration, reservation, inventory, or commit ledger during this check. Its campaign plan calls for an audit against registrations, commits, and archive indexes with omissions stated. The bounded evidence enumerated here contains no matching target ID, but that observation is not a freshness finding.
+
+One material unresolved report is that **125 prior seed-bearing items in the 840001+ namespace were deleted externally**. Their exact IDs and status are not in the inspected local evidence, so this inventory cannot determine whether they intersect the proposed set or whether they represent runs, reservations, or duplicate records. Private organizer files, external machines, untracked/deleted records, undocumented invocations, and the uninspected large audit/archive payloads also remain outside the bounded coverage. No broad results-tree scan or archive decompression was performed.
+
+The machine-readable ledger records source hashes, known indexed ranges, exact target IDs, inspected scope, and omissions in [seed_inventory.json](seed_inventory.json). A reviewer should resolve the 125 deleted items and validate current registrations/commit/archive indexes before making any freshness determination.

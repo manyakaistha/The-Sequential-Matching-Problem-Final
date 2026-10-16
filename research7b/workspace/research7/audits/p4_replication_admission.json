@@ -1,0 +1,79 @@
+{
+  "review_id": "R7-P4-REPLICATION-INDEPENDENT-20261013-V2",
+  "reviewer": "r7_live_critic",
+  "developers": [
+    "research7_coordinator",
+    "candidate_developer"
+  ],
+  "scope": "P4_replication",
+  "status": "approved",
+  "reviewed_design_sha256": "468f86089623306effad44aa1ab14f8fac4c2dce9a17b3fb1c3bde8b85e6e5c1",
+  "pathassessment": "research7/reviews/p4_replication_review.md",
+  "approved_cells": 4608,
+  "approved_seed_list": [
+    740001, 740002, 740003, 740004, 740005, 740006, 740007, 740008,
+    740009, 740010, 740011, 740012, 740013, 740014, 740015, 740016,
+    740017, 740018, 740019, 740020, 740021, 740022, 740023, 740024,
+    740025, 740026, 740027, 740028, 740029, 740030, 740031, 740032,
+    740033, 740034, 740035, 740036, 740037, 740038, 740039, 740040,
+    740041, 740042, 740043, 740044, 740045, 740046, 740047, 740048,
+    740049, 740050, 740051, 740052, 740053, 740054, 740055, 740056,
+    740057, 740058, 740059, 740060, 740061, 740062, 740063, 740064,
+    740065, 740066, 740067, 740068, 740069, 740070, 740071, 740072,
+    740073, 740074, 740075, 740076, 740077, 740078, 740079, 740080,
+    740081, 740082, 740083, 740084, 740085, 740086, 740087, 740088,
+    740089, 740090, 740091, 740092, 740093, 740094, 740095, 740096
+  ],
+  "approved_policy_panel": [
+    "G",
+    "N",
+    "R",
+    "P",
+    "K",
+    "Q6",
+    "Q1",
+    "A1"
+  ],
+  "mode": "subprocess_json_isolated",
+  "topology": "single_mac_01_one_coordinator_six_workers",
+  "launch_context": "Run from verified research7b/workspace; imported governing simulator, reference panel (G, N, R, P, K, Q6), and promoted candidates (Q1, A1) resolve to frozen workspace source bytes. Subprocess isolation enforced with 6 concurrent simulation workers under P4_SCOPE.md and CONCURRENCY_AMENDMENT.md.",
+  "freshness_scope": "Repository-visible 96-cluster replication audit (740001-740096) in program_freshness_audit.json with closed inherited trace/archive coverage, conservative prior guard 1-699999, zero proposed literal intersections and user external use declaration.",
+  "evidence": {
+    "p3_screening_closure": {
+      "cells_committed": 2592,
+      "cpu_hours": 11.19,
+      "output_gib": 28.51
+    },
+    "promoted_candidates_vs_g": {
+      "Q1": { "delta": 0.0503, "t_stat": 1.79, "nonneg_fams": 5 },
+      "A1": { "delta": 0.0538, "t_stat": 1.82, "nonneg_fams": 4 }
+    },
+    "resource_calibration": {
+      "workers": 6,
+      "calibrated_max_cpu_hours": 120,
+      "calibrated_max_output_gib": 55,
+      "temp_dir": "workspace_apfs_tmp",
+      "startup_caching": "cached_in_registered_runner"
+    },
+    "spec_fixtures_tests": {
+      "passed": 6,
+      "test_file": "research7/tests/test_spec_fixtures.py"
+    },
+    "exact_oracle_tests": {
+      "passed": 52,
+      "test_file": "research7a/workspace/research7"
+    }
+  },
+  "conditions": [
+    "Bind this immutable admission document hash and reviewed design to the frozen execution registration before generation.",
+    "Use only the registered 4,608 replication cells (96 seeds x 6 families x 8 policies) and preserve all attempts, invalidities, fallbacks and resource stops.",
+    "Primary endpoint: qualified MSMI per 100 arrived members by day 59.",
+    "Candidate must demonstrate Delta >= +0.025 vs G and > 0 vs designated own-parent baseline.",
+    "At most 3 contenders advance to Phase P5 selection.",
+    "If no candidate qualifies, declare the scoped null outcome cleanly.",
+    "All physical attempts and worker resource usage are charged to the program CPU and output ledgers."
+  ],
+  "critic_worlds_generated": 0,
+  "critic_empirical_episodes": 0,
+  "critic_fits": 0
+}

@@ -1,0 +1,55 @@
+{
+  "artifact_hashes": {
+    "actions.jsonl": "7cbf4092618a2271c5157b1ba3d7af68a8f03bbe69048c88b4b7beb5bffee01f",
+    "arrived_by59.json": "04aa143989c84ebbca6302ac154972fe54589e09852ec166d2bd93a681425cc8",
+    "daily_telemetry.jsonl": "c5103bf8cebca5629a188f5ca3c6a97a996c778768da12fc59e17ad3d1cc1652",
+    "event_log.jsonl": "9759289671f03cb27c33ae7067ca3c164524e26dd4b3f842593b2fedb662043c",
+    "final_public.json": "d7d46b3ac0d38177b3a3d6f510fbbe3e712d33ec034aae7c58f9e715d69ac454",
+    "invocations.jsonl": "f3629feb6937ee69a665138ad38b30cbef0053ea199d0ab42ba6f2d2af6d9a6d",
+    "query_answers.jsonl": "6cac44483aba49cfd31040486c82123808eba87523fa543cfbed23e1a4e473e6",
+    "released_feedback.jsonl": "627ba0eebaffba0fdf0935b5263c7485cf67a70395092bc4ea225531676fefd6",
+    "requests.jsonl": "5736adc0a6e0714f272e59e464db318d506955b9255211b79cd97ab588310aa8",
+    "responses.jsonl": "6865da644f75d44b03b86705c1a5a93805432ceca173a1aa9a1aafacb1f2619b",
+    "status.json": "379913f38d37728f4bd775b6f7b6a65fa18d698a12e714c7711af5d3d05e974b"
+  },
+  "audit": {
+    "all_valid": true,
+    "denominator_parity_verified": true,
+    "expected_cells": 1,
+    "private_world_read": false,
+    "public_event_reconstruction_verified": true,
+    "status": "passed",
+    "verified_cells": 1,
+    "world_parity_verified": true
+  },
+  "invocation_seconds_max": 0.1819726669928059,
+  "invocations": 120,
+  "metrics": {
+    "arrived_members": 4,
+    "ask_cost": 0,
+    "assignments": 2,
+    "coverage": 1.0,
+    "dates": 1,
+    "first_introduction_wait_days": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "hard_asks": 0,
+    "missing_feedback": 0,
+    "msmi_per_100_arrived_members": 0.0,
+    "mutual_acceptances": 2,
+    "mutual_acceptances_per_100": 50.0,
+    "mutual_second_meeting_intention": 0,
+    "served_members": 4,
+    "soft_asks": 0,
+    "status": "simulated_not_observed_product_performance",
+    "total_asks": 0,
+    "unqualified_pause_count": 1,
+    "unserved_members": 0,
+    "valid": true,
+    "validation_errors": []
+  },
+  "scope": "one constructed four-actor test, not a sampled reward study"
+}

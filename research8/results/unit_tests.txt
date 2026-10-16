@@ -1,0 +1,20 @@
+test_all_sixty_four_graphs_match_independent_edge_subsets (test_planner.PlannerTests.test_all_sixty_four_graphs_match_independent_edge_subsets) ... ok
+test_caps_and_invalid_inputs_fail_explicitly (test_planner.PlannerTests.test_caps_and_invalid_inputs_fail_explicitly) ... ok
+test_final_day_full_reward_static_and_greedy_trap (test_planner.PlannerTests.test_final_day_full_reward_static_and_greedy_trap) ... ok
+test_future_arrival_is_not_known_before_action (test_planner.PlannerTests.test_future_arrival_is_not_known_before_action) ... ok
+test_hidden_return_clock_oracle_trap (test_planner.PlannerTests.test_hidden_return_clock_oracle_trap) ... ok
+test_joint_shared_future_not_double_counted (test_planner.PlannerTests.test_joint_shared_future_not_double_counted) ... ok
+test_return_law_reverses_hold (test_planner.PlannerTests.test_return_law_reverses_hold) ... ok
+test_reuse_and_exhaustion (test_planner.PlannerTests.test_reuse_and_exhaustion) ... ok
+test_cap_invalid_package_and_probability (test_query_packages.QueryTests.test_cap_invalid_package_and_probability) ... ok
+test_collision_joint_scenarios (test_query_packages.QueryTests.test_collision_joint_scenarios) ... ok
+test_decline_and_observed_false_are_not_truthy (test_query_packages.QueryTests.test_decline_and_observed_false_are_not_truthy) ... ok
+test_every_eight_actor_hard_package (test_query_packages.QueryTests.test_every_eight_actor_hard_package) ... ok
+test_hard_complement_and_soft_cannot_legalize (test_query_packages.QueryTests.test_hard_complement_and_soft_cannot_legalize) ... ok
+test_hidden_profile_not_oracle_without_query (test_query_packages.QueryTests.test_hidden_profile_not_oracle_without_query) ... ok
+test_soft_displaces_hard_under_actual_twelve_units (test_query_packages.QueryTests.test_soft_displaces_hard_under_actual_twelve_units) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.025s
+
+OK

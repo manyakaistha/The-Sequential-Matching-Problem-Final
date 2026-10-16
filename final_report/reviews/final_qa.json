@@ -1,0 +1,15 @@
+{
+  "report_sha256": "8e7b9ca264c6dfb1f171cd2150513b9325bb926e40ce948614ba01ed0775b14e",
+  "markdown_links_checked": 70,
+  "missing_local_links": [],
+  "input_and_output_hash_mismatches": [],
+  "embedded_figures": 12,
+  "all_figures_have_svg": true,
+  "unit_tests_passed": 22,
+  "public_data_verified": true,
+  "independent_scientific_review": "passed with limitations explicit",
+  "independent_analysis_code_review": "passed after uncertainty-display fix",
+  "visual_review": "12 figures inspected; selected-figure HTML preview loaded all images without horizontal overflow",
+  "new_research_simulations": 0,
+  "container_validation": "not performed; Docker daemon unavailable"
+}

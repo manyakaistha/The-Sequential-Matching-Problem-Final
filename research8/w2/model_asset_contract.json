@@ -1,0 +1,11 @@
+{
+ "schema":"B1-public-joint-model/v1",
+ "status":"not_implemented_or_admitted",
+ "required_manifest":["asset_id","sha256","public_training_log_hashes","whole_world_train_validation_split","feature_allowlist","frozen_fit_recipe_hash","independent_admission_receipt"],
+ "required_components":["joint_qualified_pause_return_feedback_law","posterior_for_pending_released_history","anonymous_public_arrival_profile_missingness_law","uncertain_exit_law","public_observation_emissions"],
+ "forbidden_inputs":["world_seed","simulator_family","latent_generator_parameters","truth","actual_future_arrivals","real_exit_day","real_busy_until","decoded_member_id"],
+ "guards":["signature is not calibration proof","observed False and declines preserved","q reward and pause distinction","public history conditioning and censoring","joint actor draws reused across edges","future model realizations hidden from controller","no current graph/boundary truncation","tail sensitivity or bias bound before reward admission"],
+ "current_blocker":"Existing finite core emits availability only and assumes declared toy exit calendars; full feedback and uncertain exit model bridge not certified. No trained public joint assets exist for B1.",
+ "deployment_behavior":"Use validated frozen G until independent model and production admission closes. Config and memory cannot turn on unreviewed model injection.",
+ "offline_fixture_behavior":"Declared finite law projections may be evaluated after publicclock/history/mapping/realeligibility/closure checks; no deployment certificate implied."
+}

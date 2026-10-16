@@ -1,0 +1,27 @@
+{
+  "scope": "First verified member from each unchanged archive restored to isolated temporary directory; exhaustive historical verification remains hash anchored",
+  "samples": [
+    {
+      "archive": "results/research5/raw_greedy.tar.gz",
+      "restored_member": "results/research5/confirmation_traces/greedy_cold_start_90011.json",
+      "bytes": 21952095,
+      "sha256": "1fb876c98cf96dafe1ab071d7fbec9e9151fab3d3c60cc8cabf133ba82f6c70c",
+      "passed": true
+    },
+    {
+      "archive": "results/research5/raw_population_control.tar.gz",
+      "restored_member": "results/research5/confirmation_traces/population_control_cold_start_90011.json",
+      "bytes": 418369,
+      "sha256": "e4044738004fc2c4d514470efd8d643ef97338b8bbebbbeb95c93d165bbb4427",
+      "passed": true
+    },
+    {
+      "archive": "results/research5/raw_full_logs.tar",
+      "restored_member": "results/research5/confirmation_traces_full/greedy_cold_start_90011.invocations.jsonl.gz",
+      "bytes": 5536234,
+      "sha256": "fe90e18cc765f87e18637b9dbc6276b99355cab546e63f870a6e83145e5c8e69",
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

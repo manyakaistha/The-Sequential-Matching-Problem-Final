@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "status": "p0_p1_scaffolding_dispatched",
+  "branch": "7b",
+  "global_active_slots_max": 4,
+  "child_agents_max": 3,
+  "work_orders": [
+    {
+      "id": "WO01",
+      "phase": "P0",
+      "host": "7b",
+      "role_profile": "science_high",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "clean_context": true,
+      "fork_turns": "none",
+      "task_kind": "simulator_forensics",
+      "question": "What public transitions can change future opportunities?",
+      "falsifiable_hypothesis": "Immediate queries and downstream occupancy are correctly distinguished without private leakage.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md",
+        "kit.py",
+        "evaluate.py",
+        "research6/audits/simulator_contract.md"
+      ],
+      "concrete_input_hashes": {
+        "research7/PLAN.md": "36effaf224600f17b51a436c1ab85337d82d838d281674a23503cb8ed715b94a",
+        "research7/STRATEGIES.md": "e1660891ee7d356f4a80efaffccf66a251a1ab88e569effeec7e3772bc16d7f6",
+        "research7/TEST_SPEC.md": "86d4ba88b3119aaf8954adef46c36eac70eb6d2610c85353a378f38d8d3181c2",
+        "research7/PLAN_7B.md": "743428bfc013fa0c13a222ba78bfb4a0c0950a194851afb7015d50f908cab2bc",
+        "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e",
+        "evaluate.py": "d09cc14bf634a741515ad9965469821cac336a0d037b4da265eb1bf5fe20e162",
+        "research6/audits/simulator_contract.md": "2aff2a1c6785ea01237b86808e3e5972ef5a58ae5b9e3cf5627a8c050376f5c8"
+      },
+      "exclusive_ownership": [
+        "research7/reviews/simulator_semantics.md"
+      ],
+      "developer": "simulator_analyst_7b",
+      "named_reviewer": "critic",
+      "agent_CPU_seconds_allowance": 150,
+      "execution_CPU_budget": "0 (bounded static analysis; no simulator worlds or fitting authorized)",
+      "status": "completed",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "deliverable": "Source deductions and falsifiers in research7/reviews/simulator_semantics.md",
+      "authorization": "P0 static analysis delivery authorized; empirical simulator calls remain blocked"
+    },
+    {
+      "id": "WO03",
+      "phase": "P1",
+      "host": "7b",
+      "role_profile": "implementation_medium",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "clean_context": true,
+      "fork_turns": "none",
+      "task_kind": "bounded_implementation",
+      "question": "Can logs/leases resume without deleting failure?",
+      "falsifiable_hypothesis": "Lossless chunks and authoritative commits survive injected interruption.",
+      "input_scope": [
+        "research7/PLAN.md",
+        "research7/STRATEGIES.md",
+        "research7/TEST_SPEC.md",
+        "research7/PLAN_7B.md"
+      ],
+      "concrete_input_hashes": {
+        "research7/PLAN.md": "36effaf224600f17b51a436c1ab85337d82d838d281674a23503cb8ed715b94a",
+        "research7/STRATEGIES.md": "e1660891ee7d356f4a80efaffccf66a251a1ab88e569effeec7e3772bc16d7f6",
+        "research7/TEST_SPEC.md": "86d4ba88b3119aaf8954adef46c36eac70eb6d2610c85353a378f38d8d3181c2",
+        "research7/PLAN_7B.md": "743428bfc013fa0c13a222ba78bfb4a0c0950a194851afb7015d50f908cab2bc"
+      },
+      "exclusive_ownership": [
+        "research7/runtime/runner.py",
+        "research7/runtime/recorder.py",
+        "research7/runtime/leases.py"
+      ],
+      "developer": "runtime_developer_7b",
+      "named_reviewer": "independent_runtime_reviewer",
+      "agent_CPU_seconds_allowance": 120,
+      "execution_CPU_budget": "0 (bounded code implementation; no simulator calls or empirical runs authorized)",
+      "status": "completed",
+      "no_nested_agents": true,
+      "output_required": [
+        "status",
+        "evidence_class",
+        "files",
+        "raw_artifacts",
+        "resource_totals",
+        "tested_scope",
+        "omissions",
+        "counterexamples"
+      ],
+      "deliverable": "Focused implementation with raw failure fixtures and unit test suite",
+      "authorization": "P1 scaffolding delivery authorized; empirical runs remain blocked"
+    }
+  ]
+}

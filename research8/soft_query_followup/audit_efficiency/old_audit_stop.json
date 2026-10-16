@@ -1,0 +1,7 @@
+{
+  "pid": 66008,
+  "reason": "replace quadratic canonical-history recomputation with equivalent pinned cache; no simulation changes",
+  "cell_count": 2880,
+  "stopped_unix": 1792008532.058676,
+  "old_partial_audit_reused": false
+}

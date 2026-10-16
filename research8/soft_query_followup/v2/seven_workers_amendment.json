@@ -1,0 +1,25 @@
+{
+  "status": "user_authorized_concurrency_amendment_independently_reviewed",
+  "user_instruction": "use 7 workers as we still have some idel cpu. and ample ram",
+  "simulator_workers_max": 7,
+  "agent_concurrency_changed": false,
+  "combined_monitored_worker_rss_gib": 8,
+  "host_observed": {
+    "physical_cores": 10,
+    "logical_cores": 10,
+    "ram_gib": 16
+  },
+  "coordinator_dispatch_optimization": "verify_registration executed only before cell dispatch rather than in 100ms idle poll loop",
+  "seed_inventory_optimization": "excluded historical results/ run archives from recursive file list",
+  "independent_review": "review_seven_workers.md",
+  "verification": {
+    "enforcement_tests_passed": 23,
+    "current_suite_inventory": 83,
+    "subtests": 2
+  },
+  "files_sha256": {
+    "registration.py": "4fda6e5765063043a3acfa844338cdd17101e92f3603e325b7729291589b6353",
+    "launcher.py": "4b2f56b06dc0b16fc5dd41a5243f4c816b4315e32f7d57c95e05036bb9393bd4",
+    "tests/test_enforcement.py": "90450b874827244c13a469207597b48591f9d6e35e5bde5a560cbbd7423443c7"
+  }
+}

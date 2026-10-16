@@ -1,0 +1,31 @@
+{
+  "status": "user_authorized_concurrency_amendment_independently_reviewed",
+  "user_instruction": "i think its sage to run it with 6 workers",
+  "simulator_workers_max": 6,
+  "agent_concurrency_changed": false,
+  "combined_monitored_worker_rss_gib": 8,
+  "host_observed": {
+    "physical_cores": 10,
+    "logical_cores": 10,
+    "ram_gib": 16
+  },
+  "no_active_campaign_or_new_frozen_registration_at_change": true,
+  "preserved_prior_sources": "../history/before_six_workers",
+  "independent_review": "review_six_workers.md",
+  "verification": {
+    "guard_analysis_tests_passed": 23,
+    "independent_tests_passed": 23,
+    "current_suite_inventory": 82,
+    "subtests": 2,
+    "six_worker_simulation_load_test": "unrun"
+  },
+  "future_gate": "120-cell instrumentation smoke using six workers; resource forecast before2880-cell replication",
+  "files_sha256": {
+    "registration.py": "13a705c7cf50cde8ee0c89a61d5c7b4e9ef40847bc794666a6e113b4d34ae14b",
+    "launcher.py": "135d756b9db357c32adfb95295f465dd848b1d3739f039597af5861ee745b980",
+    "tests/test_enforcement.py": "0f9b689f6ff422e29bfe5ddaaba9239306cd194734cdf25aaed519dee4f33188",
+    "README.md": "de74531c6f79d27f548fc3540559ce84fea3ac2e686d9f556b6a82c806bc233f",
+    "TESTING_PROMPT.md": "4185957be5ce5fe5c2b3bdaff668986e48d6df6698dd524b651b3f9d17ec0fa7",
+    "review_six_workers.md": "adc7d6dea7c572dd9f33aa9206ba704da58d79668f50a14016f17bccb082fa2b"
+  }
+}

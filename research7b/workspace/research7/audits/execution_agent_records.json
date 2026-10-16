@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "global_active_slots_including_root_max": 4,
+  "tasks": [
+    {
+      "task_name": "r7_live_critic",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "named_reviewer": "root",
+      "exclusive_ownership": [
+        "research7/reviews/live_execution_review.md",
+        "research7/audits/smoke_admission.json"
+      ],
+      "compute_allowance_cpu_seconds": 300,
+      "no_nested_delegation": true,
+      "input_specification_hashes": {
+        "research7/PLAN.md": "36effaf224600f17b51a436c1ab85337d82d838d281674a23503cb8ed715b94a",
+        "research7/TEST_SPEC.md": "86d4ba88b3119aaf8954adef46c36eac70eb6d2610c85353a378f38d8d3181c2",
+        "research7/STRATEGIES.md": "e1660891ee7d356f4a80efaffccf66a251a1ab88e569effeec7e3772bc16d7f6"
+      },
+      "hash_scope": "unchanged planning specifications used for dispatch; actual modified code frozen separately in registration",
+      "worlds_generated_by_agent": 0,
+      "status": "admission_review"
+    },
+    {
+      "task_name": "r7_episode_developer",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "fork_turns": "none",
+      "named_reviewer": "r7_live_critic",
+      "exclusive_ownership": [
+        "research7/runtime/runner.py",
+        "research7/runtime/recorder.py",
+        "research7/runtime/leases.py",
+        "research7/runtime/invocation.py",
+        "research7/runtime/cli.py",
+        "research7/tests/test_episode_execution.py",
+        "research7/tests/test_recorder_recovery.py"
+      ],
+      "compute_allowance_cpu_seconds": 300,
+      "no_nested_delegation": true,
+      "input_specification_hashes": {
+        "research7/PLAN.md": "36effaf224600f17b51a436c1ab85337d82d838d281674a23503cb8ed715b94a",
+        "research7/TEST_SPEC.md": "86d4ba88b3119aaf8954adef46c36eac70eb6d2610c85353a378f38d8d3181c2",
+        "research7/STRATEGIES.md": "e1660891ee7d356f4a80efaffccf66a251a1ab88e569effeec7e3772bc16d7f6"
+      },
+      "hash_scope": "unchanged planning specifications used for dispatch; actual modified code frozen separately in registration",
+      "worlds_generated_by_agent": 0,
+      "status": "completed"
+    },
+    {
+      "task_name": "r7_exact_repair",
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "fork_turns": "none",
+      "named_reviewer": "r7_live_critic",
+      "exclusive_ownership": [
+        "research7a/workspace/research7/exact_independent",
+        "research7a/workspace/research7/test_exact_transitions.py"
+      ],
+      "compute_allowance_cpu_seconds": 300,
+      "no_nested_delegation": true,
+      "input_specification_hashes": {
+        "research7/PLAN.md": "36effaf224600f17b51a436c1ab85337d82d838d281674a23503cb8ed715b94a",
+        "research7/TEST_SPEC.md": "86d4ba88b3119aaf8954adef46c36eac70eb6d2610c85353a378f38d8d3181c2",
+        "research7/STRATEGIES.md": "e1660891ee7d356f4a80efaffccf66a251a1ab88e569effeec7e3772bc16d7f6"
+      },
+      "hash_scope": "unchanged planning specifications used for dispatch; actual modified code frozen separately in registration",
+      "worlds_generated_by_agent": 0,
+      "status": "completed"
+    }
+  ],
+  "single_machine": true
+}

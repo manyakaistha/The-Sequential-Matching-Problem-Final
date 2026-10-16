@@ -1,0 +1,41 @@
+{
+  "action_sha256": "b5a6b76ea600729ddb83c6a92aa6c6e7b5bba9120da9b155257fb4233e0ee0f3",
+  "artifact_hashes": {
+    "actions.jsonl": "539d8c11c0cc4a9938ded80f3a864e007d3a1dbba24a643834a338183962e2de",
+    "arrived_by59.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "daily_telemetry.jsonl": "a97930d72738d2f15edc7c5e63e45c785ca72f199d162e18c4a224fc5c7376f4",
+    "event_log.jsonl": "e5944e16b29f7dff5a0de9d038550fc85aabc0e62006a4415f32c4ccb48bb415",
+    "final_public.json": "844f7e85f5526a754da672ca6d852eae1087dcc56216a10f1e9e5df7fa0ccb66",
+    "invocations.jsonl": "35dae9f15b3e46376db0d1fda85b7be1c1aa0897e0f2137b1d459e90c7bba276",
+    "query_answers.jsonl": "6cac44483aba49cfd31040486c82123808eba87523fa543cfbed23e1a4e473e6",
+    "released_feedback.jsonl": "df755ca77b45fb6d760ec6c596e75235e6c9acce518f5bbc4aaec6bf44cfed66",
+    "requests.jsonl": "93b7591ac6291457d0b382e3f133cd2b3df5997253d2554c9d41e854b5913289",
+    "responses.jsonl": "e96c259c4dda40ee64e49cbbf8eeced0ee38b0aa3eb05c89fadc79c99b946c9a",
+    "status.json": "64ca98562acf01f96b1cb34eb8a58c77ba3105d1cf39e463f2f36d5ffa81d052"
+  },
+  "attempt_id": "7bf9988d8965459296750b098cdaf089",
+  "attempt_relative_path": "attempts/fixture_G/7bf9988d8965459296750b098cdaf089",
+  "cell": {
+    "cell_key": "fixture_G",
+    "family": "development",
+    "policy_id": "G",
+    "seed": 1
+  },
+  "cpu_seconds": 0.03488099999999861,
+  "error": null,
+  "fallback_count": 0,
+  "invocation_count": 120,
+  "invocation_seconds_max": 4.999999873689376e-06,
+  "invocation_seconds_total": 0.0002605299978313269,
+  "is_valid": true,
+  "metrics": {
+    "observed_day": 99,
+    "valid": true
+  },
+  "registration_sha256": "fixture",
+  "rss_raw": 139214848,
+  "rss_units": "bytes",
+  "source_sha256": {},
+  "wall_seconds": 0.04740941699947143,
+  "world_sha256": "e0c71b9f9be6d1b82b39dfc3afc49a183d938943eb4aa253e320632d439f4e9e"
+}

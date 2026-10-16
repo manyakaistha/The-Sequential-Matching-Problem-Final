@@ -1,0 +1,29 @@
+25/480 attempts verified and archived; 20.5MiB compressed
+50/480 attempts verified and archived; 39.4MiB compressed
+75/480 attempts verified and archived; 58.2MiB compressed
+100/480 attempts verified and archived; 77.4MiB compressed
+125/480 attempts verified and archived; 96.5MiB compressed
+150/480 attempts verified and archived; 114.8MiB compressed
+175/480 attempts verified and archived; 134.5MiB compressed
+200/480 attempts verified and archived; 152.2MiB compressed
+225/480 attempts verified and archived; 171.1MiB compressed
+250/480 attempts verified and archived; 189.6MiB compressed
+275/480 attempts verified and archived; 207.6MiB compressed
+300/480 attempts verified and archived; 225.6MiB compressed
+325/480 attempts verified and archived; 245.1MiB compressed
+350/480 attempts verified and archived; 263.6MiB compressed
+375/480 attempts verified and archived; 283.0MiB compressed
+400/480 attempts verified and archived; 301.9MiB compressed
+425/480 attempts verified and archived; 319.8MiB compressed
+450/480 attempts verified and archived; 339.2MiB compressed
+475/480 attempts verified and archived; 358.8MiB compressed
+480/480 attempts verified and archived; 361.6MiB compressed
+{
+  "status": "all_attempts_archived_exact_bytes",
+  "committed_cells": 480,
+  "attempts_archived": 480,
+  "logical_bytes_preserved": 47520617679,
+  "archive_bytes": 379165348,
+  "elapsed_seconds": 144.4584592500014,
+  "commits_unchanged": true
+}

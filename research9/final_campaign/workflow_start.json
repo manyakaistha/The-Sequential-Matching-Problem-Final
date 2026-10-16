@@ -1,0 +1,8 @@
+{
+  "confirmation_cells": 2304,
+  "scope": "one selection then one independent final test; no outcome-based sample extension",
+  "screen_cap": 336,
+  "sim_workers": 7,
+  "started_unix": 1792038536.9108438,
+  "status": "running_final_finite_campaign"
+}

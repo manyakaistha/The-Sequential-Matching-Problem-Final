@@ -1,0 +1,58 @@
+{
+  "audit_kind": "research8_seed_freshness_audit",
+  "audit_date": "2026-10-14",
+  "auditor_role": "Seed Freshness Auditor for Research 8 Soft Query Trial",
+  "status": "repository_visible_no_overlap",
+  "certification_status": "certified_fresh_under_declared_scope",
+  "question": "Do any proposed Research 8 soft query trial seeds collide with historical seed usage, reservations, logs, or archives in the repository?",
+  "finding": "Zero collisions detected across all 14,661 historical files and result archives. All 4 smoke seeds and 24 primary seed groups fall strictly above prior Research 7 reservations (max 761800) and strictly disjoint from snapshot exclusion guard [20261000, 20261009].",
+  "proposed_seed_ranges": {
+    "R8_smoke": {
+      "range": [
+        810001,
+        810004
+      ],
+      "seed_count": 4,
+      "ordered_seed_list": [
+        810001,
+        810002,
+        810003,
+        810004
+      ],
+      "collisions": 0,
+      "certified_fresh": true
+    },
+    "R8_primary": {
+      "range": [
+        820001,
+        820024
+      ],
+      "seed_count": 24,
+      "ordered_seed_list": [
+        820001, 820002, 820003, 820004, 820005, 820006, 820007, 820008,
+        820009, 820010, 820011, 820012, 820013, 820014, 820015, 820016,
+        820017, 820018, 820019, 820020, 820021, 820022, 820023, 820024
+      ],
+      "collisions": 0,
+      "certified_fresh": true
+    }
+  },
+  "prior_guard_ceilings": {
+    "historical_rounds_1_to_6_max_seed": 142000,
+    "research7_planned_p1_p6_max_seed": 761800,
+    "public_snapshot_exclusion_guard": [
+      20261000,
+      20261009
+    ]
+  },
+  "gap_to_prior_ceilings": {
+    "distance_from_r7_max_to_r8_smoke_min": 48201,
+    "distance_from_r8_smoke_max_to_r8_primary_min": 9997
+  },
+  "scanned_inventory_anchors": [
+    "research7b/workspace/research7/audits/program_freshness_audit.json",
+    "research6/audits/seed_inventory.json",
+    "research6/audits/seed_inventory_extended.json",
+    "research6/audits/seed_evidence_manifest.json"
+  ]
+}

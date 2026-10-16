@@ -1,0 +1,61 @@
+{
+  "review_id": "R7-P1-CANDIDATE-SMOKE-INDEPENDENT-20261012",
+  "reviewer": "r7_live_critic",
+  "developers": [
+    "research7_coordinator",
+    "candidate_developer"
+  ],
+  "scope": "P1_smoke",
+  "status": "approved",
+  "reviewed_design_sha256": "ebb2b731012c5afd7a19279a6b05ed14777cc8558692ebfbfe62f2cd758096b8",
+  "pathassessment": "research7/reviews/candidate_smoke_review.md",
+  "approved_cells": 72,
+  "approved_seed_list": [
+    700001,
+    700002,
+    700003,
+    700004
+  ],
+  "approved_policy_panel": [
+    "Q1",
+    "A1",
+    "H1"
+  ],
+  "mode": "subprocess_json_isolated",
+  "topology": "single_mac_01_one_coordinator_max_two_workers",
+  "launch_context": "Run from verified research7b/workspace; imported governing simulator, candidates, and runtime modules resolve to the frozen workspace source bytes. Subprocess isolation enforces process group cancellation and 10s timeout.",
+  "freshness_scope": "Repository-visible four-smoke-seed audit with closed inherited trace/archive coverage, conservative prior guard 1-699999, zero proposed literal intersections and user declaration of no prior R7 use. Subprocess candidate smoke runs on the exact 4 examined smoke seeds.",
+  "evidence": {
+    "portfolio_candidate_tests": {
+      "passed": 8,
+      "test_file": "research7/tests/test_portfolio_candidates.py"
+    },
+    "spec_fixtures_tests": {
+      "passed": 6,
+      "test_file": "research7/tests/test_spec_fixtures.py"
+    },
+    "production_execution_tests": {
+      "passed": 5,
+      "test_file": "research7/tests/test_production_execution.py"
+    },
+    "lossless_recorder_tests": {
+      "passed": 9,
+      "test_file": "research7/tests/test_lossless_recorder_recovery.py"
+    },
+    "exact_oracle_tests": {
+      "passed": 14,
+      "test_file": "research7a/workspace/research7/test_exact_transitions.py"
+    },
+    "source_files_verified": 185
+  },
+  "conditions": [
+    "Bind this immutable admission document hash and reviewed design to the frozen execution registration before generation.",
+    "Use only the registered 72 candidate cells (4 seeds x 6 families x 3 policies) and preserve all attempts, invalidities, fallbacks and resource stops.",
+    "Candidate smoke is integration and calibration only; no promotion, superiority claims, or confirmatory selection permitted from P1 smoke.",
+    "All physical attempts and worker resource usage are charged to the registered CPU and output ledgers.",
+    "Separate designated output directory (research7b/workspace/results/research7/research7_20261012/7b/P1_candidates) preserves prior reference smoke output unmodified."
+  ],
+  "critic_worlds_generated": 0,
+  "critic_empirical_episodes": 0,
+  "critic_fits": 0
+}

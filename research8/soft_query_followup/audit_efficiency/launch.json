@@ -1,0 +1,21 @@
+{
+  "pid": 53008,
+  "started_unix": 1792008622.415918,
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-B",
+    "-m",
+    "research8.soft_query_followup.audit_efficiency.fast_audit",
+    "--output",
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/results/research8/soft_query_followup/v2_replication",
+    "--registration",
+    "research8/soft_query_followup/storage_recovery/campaign_before_recovery/replication_registration.json",
+    "--continuation",
+    "research8/soft_query_followup/storage_recovery/continuation_registration.json",
+    "--checkpoints",
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research8/soft_query_followup/audit_efficiency/checkpoints",
+    "--proof",
+    "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/research8/soft_query_followup/audit_efficiency/full_grid_proof.json"
+  ],
+  "scope": "full2880-cell equivalentchecks; checkpointed; no simulation reruns"
+}

@@ -1,0 +1,102 @@
+{
+  "accept": {
+    "bias_sd": 0.65,
+    "intercept": -0.1963,
+    "shared_sd": 0.45,
+    "weights": {
+      "conversations": 0.1471,
+      "lifestyle": 0.195,
+      "relationship_goal": 0.4899,
+      "relationship_pace": 0.2908
+    }
+  },
+  "date": {
+    "p_happen": 0.4762,
+    "p_within30": 1.0
+  },
+  "hard": {
+    "age_max_offset": {
+      "10": 0.1097,
+      "3": 0.1228,
+      "4": 0.1214,
+      "5": 0.1286,
+      "6": 0.1344,
+      "7": 0.1366,
+      "8": 0.1185,
+      "9": 0.1221
+    },
+    "age_min_offset": {
+      "10": 0.0745,
+      "3": 0.1759,
+      "4": 0.1431,
+      "5": 0.1533,
+      "6": 0.1314,
+      "7": 0.1226,
+      "8": 0.0956,
+      "9": 0.0978
+    },
+    "extra_zone": 0.2173,
+    "extra_zone_choice": {
+      "zone_a": 0.1115,
+      "zone_b": 0.25,
+      "zone_c": 0.2905,
+      "zone_d": 0.348
+    },
+    "gender_inclusion": {
+      "man": 0.3257,
+      "non_binary": 0.3237,
+      "woman": 0.3506
+    },
+    "has_children": 0.152,
+    "partner_children": {
+      "any": 0.5121,
+      "no_children": 0.4879
+    },
+    "partner_smoking": {
+      "any": 0.5169,
+      "no_smoking": 0.4831
+    },
+    "relationship_structure": {
+      "monogamous": 0.8864,
+      "non_monogamous": 0.1136
+    },
+    "schedule_size": {
+      "1": 0.354,
+      "2": 0.3378,
+      "3": 0.3083
+    },
+    "smoking": {
+      "no": 0.7416,
+      "occasionally": 0.208,
+      "yes": 0.0504
+    },
+    "wants_children": {
+      "no": 0.3316,
+      "unsure": 0.3156,
+      "yes": 0.3528
+    },
+    "who_to_meet_size": {
+      "1": 0.6963,
+      "2": 0.193,
+      "3": 0.1108
+    }
+  },
+  "name": "emp",
+  "response": {
+    "alpha": 15.9299,
+    "beta": 4.4769
+  },
+  "second": {
+    "bias_sd": 0.5,
+    "goal_coef": 0.394,
+    "intercept": 0.168,
+    "p_on_time": 0.5616
+  },
+  "soft_equal_prob": {
+    "conversations": 0.2504,
+    "lifestyle": 0.3334,
+    "relationship_goal": 0.5018,
+    "relationship_pace": 0.3336
+  },
+  "source": "Fitted strictly from observable training data (data/public_*)"
+}

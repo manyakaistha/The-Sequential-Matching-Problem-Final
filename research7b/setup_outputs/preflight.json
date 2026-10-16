@@ -1,0 +1,40 @@
+{
+  "status": "static_checks_only",
+  "host": "mac-01",
+  "integrity_errors": [],
+  "syntax_errors": [],
+  "checked_files": 506,
+  "runtime_status": "pending_implementation_and_review",
+  "execution_authorized": false,
+  "seed_freshness_certified": false,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "cpu_count": 10,
+  "physical_memory_bytes": 17179869184,
+  "free_disk_bytes": 178024468480,
+  "docker_executable_present": true,
+  "dependencies": [
+    {
+      "distribution": "numpy",
+      "required": "2.5.3",
+      "installed": "2.5.3",
+      "ok": true
+    },
+    {
+      "distribution": "scipy",
+      "required": "1.18.1",
+      "installed": "1.18.1",
+      "ok": true
+    },
+    {
+      "distribution": "networkx",
+      "required": "3.7",
+      "installed": "3.7",
+      "ok": true
+    }
+  ],
+  "free_disk_reserve_met": true,
+  "working_memory_cap_bytes": 10737418240,
+  "hardware_note": "Presence/capacity only; no workload, benchmark, Docker daemon call, or available-RAM guarantee."
+}

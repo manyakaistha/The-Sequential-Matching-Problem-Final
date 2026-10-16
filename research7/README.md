@@ -1,6 +1,8 @@
 # Research7: a testable attempt to improve on greedy
 
-Status: **planning only, prepared 11-12 October 2026**. No round-seven simulator episodes, fitting, candidate benchmarks, confirmation, or exact-model solver runs have been performed. No policy improvement is claimed. The user requested planning, not execution.
+**12 October execution-preparation update:** the original planning snapshot below is preserved. Separate workspace evidence now includes a completed 144-cell reference-only smoke and an independently reviewed finite reduced-model oracle. See the [methodology and requirements guide](execution_guide/METHODOLOGY.md) for current evidence, unresolved admission gates and later batch organization. These receipts do not establish candidate superiority or admit P2–P6. Preparing the guide launched no new experiments.
+
+Original snapshot status: **planning only, prepared 11-12 October 2026**. At snapshot creation, no round-seven simulator episodes, fitting, candidate benchmarks, confirmation, or exact-model solver runs had been performed. No policy improvement was claimed. The snapshot was prepared for planning, not execution.
 
 Start with [PLAN.md](PLAN.md), then give the smaller machine [PLAN_7A.md](PLAN_7A.md) and this Mac [PLAN_7B.md](PLAN_7B.md). These are cooperating branches of one experiment program, not two independent opportunities to select a winner.
 

@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "removed_files": 15501,
+  "removed_logical_bytes": 85029342282,
+  "free_disk_bytes_before": 174975143936,
+  "free_disk_bytes_after": 260040126464,
+  "archives_retained": [
+    {
+      "path": "results/research5/raw_greedy.tar.gz",
+      "bytes": 6351568515,
+      "sha256": "04c022a38dc9d3b739c9a8758a238e3b3a1f9cb014676544e1da85a345179d91"
+    },
+    {
+      "path": "results/research5/raw_population_control.tar.gz",
+      "bytes": 96050915,
+      "sha256": "ac82f93f9087e9ce8a1880b8e9fd65950fd81f18c47810b58fe04a69834a69dd"
+    },
+    {
+      "path": "results/research5/raw_full_logs.tar",
+      "bytes": 28249620480,
+      "sha256": "bc4081ea07f343634b5edafa51e552041a8e5a09b5380d3cf1401d56a9acdf13"
+    }
+  ],
+  "manifest_sha256": "188515d0e65f1db081673a0cf6770514af164e5469d5bb3c877551782f8f813a",
+  "independent_approval_sha256": "1bbd6f77c9310774c3a57cd38b10866d9ac3783b19d1ac17a303a66365c70217",
+  "restore_command": "python3 research5/archive_results.py restore --destination .",
+  "all_indexed_duplicates_removed": true
+}

@@ -1,0 +1,14 @@
+{
+  "cells": 2880,
+  "dataset": "/Volumes/1700 APFS/PERSONAL_PROGRAMMING_PROJECTS/romio-juliet/The-Sequential-Matching-Problem/results/research9/final_campaign/dataset",
+  "elapsed_seconds": 505.8551958340031,
+  "sources": {
+    "research9/final_campaign/CAMPAIGN_PLAN.md": "75ebe6b6b777214433774a3b98271d20f27744bb9490d36725cae66ecf3da70f",
+    "research9/final_campaign/dataset.py": "63b4a8e8884aedf7e5966aa05a6933a6b319b00b0409743d6eee60cbc33eaf25",
+    "research9/final_campaign/extract.py": "930d6282dbd820377b7107fd968d9ef99f2d7333e53305668985df54e263f9fb",
+    "research9/final_campaign/features.py": "c5697ad9994c26111ae9728958009b1647fc1879b431fbad6361f1673d2b658c",
+    "research9/final_campaign/models.py": "4410554a7e84a52a72e8d75d8c0914b4144b86acf31a00c087e8e94131b57271",
+    "research9/final_campaign/split.json": "4bace1a89d926a5392fa25abcac3bfc5d80006551baa2d9a558f2ffb7236466a"
+  },
+  "status": "complete"
+}

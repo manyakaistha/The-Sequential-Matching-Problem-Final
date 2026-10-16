@@ -1,0 +1,77 @@
+{
+  "status": "falsifiers_reproduced",
+  "production_fidelity_gate": "FAIL",
+  "gate": "approximate first-action regret must be <=1/100 on declared fidelity cases",
+  "disposition": "Do not admit greedy or myopic continuation prototype to reward screen",
+  "exact_belief_core": "passes declared cases; not production-admitted",
+  "official_episodes": 0,
+  "fits": 0,
+  "source_sha256": {
+    "planner.py": "49d1332459c09be381b86f070c5238f580ea8305530d16de09ccfd95d5834153",
+    "continuation_amendment.json": "3803638b6702cba6cc7bd8e563895f3af1fb53f5ba3338692152d062b42cf9d6",
+    "run_falsifiers.py": "5a94992d0f5bf2288ee073e55620dcd5d6e0d78d2a61d48587ca8d876abdf1df"
+  },
+  "rows": [
+    {
+      "case": "future_static_matching",
+      "oracle_value": "1",
+      "oracle_action": [],
+      "greedy": {
+        "action": [
+          [
+            "A",
+            "B"
+          ]
+        ],
+        "estimated_value": "7/10",
+        "true_first_action_value": "7/10",
+        "regret": "3/10"
+      },
+      "myopic": {
+        "action": [],
+        "estimated_value": "1",
+        "true_first_action_value": "1",
+        "regret": "0"
+      },
+      "exact": {
+        "action": [],
+        "estimated_value": "1",
+        "true_first_action_value": "1",
+        "regret": "0"
+      }
+    },
+    {
+      "case": "future_waiting",
+      "oracle_value": "9/10",
+      "oracle_action": [],
+      "greedy": {
+        "action": [
+          [
+            "A",
+            "B"
+          ]
+        ],
+        "estimated_value": "1/2",
+        "true_first_action_value": "1/2",
+        "regret": "2/5"
+      },
+      "myopic": {
+        "action": [
+          [
+            "A",
+            "B"
+          ]
+        ],
+        "estimated_value": "1/2",
+        "true_first_action_value": "1/2",
+        "regret": "2/5"
+      },
+      "exact": {
+        "action": [],
+        "estimated_value": "9/10",
+        "true_first_action_value": "9/10",
+        "regret": "0"
+      }
+    }
+  ]
+}

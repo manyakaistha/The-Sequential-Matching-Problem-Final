@@ -22,6 +22,10 @@ results/extended/audit_common_cohort_calibration.json
 !results/research6/
 results/**/attempts/
 results/**/commits/
+research7b/workspace/results/**
+research7a/workspace/results/**
+.tmp/
+**/.tmp/**
 results/**/events.jsonl
 results/**/*traces*/
 results/research5/preparation_v1/

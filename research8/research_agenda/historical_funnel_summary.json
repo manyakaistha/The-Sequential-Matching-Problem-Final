@@ -1,0 +1,29 @@
+{
+  "scope": "descriptive arm means from stored commit metrics; not causal mediation or independent events reconstruction",
+  "means": {
+    "G": {
+      "assignments": 73.93923611111111,
+      "mutual_acceptances": 10.894097222222221,
+      "dates": 8.46701388888889,
+      "mutual_second_meeting_intention": 0.6875,
+      "hard_asks": 65.45833333333333,
+      "soft_asks": 0
+    },
+    "P": {
+      "assignments": 73.90277777777777,
+      "mutual_acceptances": 10.722222222222221,
+      "dates": 8.385416666666666,
+      "mutual_second_meeting_intention": 0.7534722222222222,
+      "hard_asks": 65.45833333333333,
+      "soft_asks": 0
+    },
+    "Q6": {
+      "assignments": 74.48958333333333,
+      "mutual_acceptances": 10.675347222222221,
+      "dates": 8.383680555555555,
+      "mutual_second_meeting_intention": 0.7569444444444444,
+      "hard_asks": 65.45833333333333,
+      "soft_asks": 0
+    }
+  }
+}

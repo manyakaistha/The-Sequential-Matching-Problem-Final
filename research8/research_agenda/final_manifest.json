@@ -1,0 +1,48 @@
+{
+  "status": "closed_research_synthesis_independently_reviewed",
+  "result": "two practical paths proposed; no demonstrated superior policy",
+  "new_simulator_episodes": 0,
+  "fits": 0,
+  "historical_metric_audit": {
+    "cells": 4608,
+    "clusters": 96,
+    "normalization_discrepancy": "oldreportvalues2xstoredMSMIper100",
+    "proper_cluster_intervals_P_G_and_Q6_G": "include_zero;exploratory95",
+    "event_level_reconstruction": false
+  },
+  "reference_source_finding": "G/P/Q6softasks0;RrandommatchingandFIFOhardasks;frozenhashesverified",
+  "constructed_checks": "six mechanisms,seven rational rows; reproduced independently",
+  "recommended_order": [
+    "missingness_and_outcome_scoring",
+    "targeted_genuinely_slack_soft_asks",
+    "same_score_local_repair",
+    "finite_complete_episode_policy_search",
+    "full_horizon_policy_library_with_retained_incumbent"
+  ],
+  "claims_unestablished": [
+    "public_model_calibration",
+    "trueconditional_model_error_bounds",
+    "active200memberplanner_subsecondruntime",
+    "empiricalsuperiority_G_Q6_P",
+    "confirmation"
+  ],
+  "future_development_proposed_max_episodes": 5472,
+  "independent_review": "final_review.md",
+  "files_sha256": {
+    "README.md": "9581880c001d83ee4e7d876bc631fecd39c7036aee858326a37675f2fbc0ed83",
+    "REPORT.md": "de0237de19f043801bdd31468fbed0113cd27ace3e0e744f61e2bd6aa15c03f5",
+    "check_theory_examples.py": "b7329b2a2fd3d99e0a06e21fa6143eb6b3b66c8d0001b5bbf4c175fe58382d59",
+    "constructed_results.json": "b7aa4ec9101b88d3cae938d0ff5c6aa849e8a9b6441e45278f22876c1f8270cb",
+    "critique.md": "b36327020682ef47e8c7adcf1e2a75a2d04834c5dd9599decff3f69edcacfcd2",
+    "final_review.md": "3501dfcc215c8c2ef1197be3161761ab398b2462d7ee643450059c47c8b26a48",
+    "historical_funnel_summary.json": "945a539d37b21030ae58a05f9d5e6b185707a5af1eb57859fb903947df85837f",
+    "historical_metric_audit.json": "d2b6270d576a1fe4baeb2c77c1eff657bafac78178ed061b2276da940a90a64d",
+    "model.md": "b0474580743a6c0dc81e2a16c7d26a465020c2575f9244ce2136936c6a0fb730",
+    "reconstruct_commit_metrics.py": "839611a29dccfe8161aef583ce34158a1c5c75ba2c1f2f1f1be383a80af252d3",
+    "reference_source_audit.json": "24a56797684bb62d20e0904a60708f400151d986d1f8f8da65f686a8e920bcb0",
+    "root_metric_check.json": "a3ef4f9bcd118ba7fb0a051810e069c463f5c2ce9cfc4b6958f13555f3dcf8c3",
+    "scope.json": "4c7026eb1ca2bef7d2138cb938be07c20389293a613c1c31fc16085b8cf48f28",
+    "scope_amendment.json": "aba88743c6a37d584464e1c43341f11c504aabcc7e89946b964d7fbc2d1534c9",
+    "theory.md": "c3ba3010c6c348c9e4f1751c56ecd6abe203675c460e8963b7fe64dd3727a26b"
+  }
+}

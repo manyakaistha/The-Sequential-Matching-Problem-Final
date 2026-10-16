@@ -1,0 +1,34 @@
+{
+  "cells": [
+    {
+      "cell_key": "declared_fixture_G",
+      "family": "development",
+      "policy_id": "G",
+      "seed": 1,
+      "stage_id": "declared_fixture"
+    }
+  ],
+  "policies": {
+    "G": {
+      "config": {
+        "id": "G"
+      },
+      "entrypoint": "research8.soft_query_trial.policies.g:decide"
+    }
+  },
+  "registration_sha256": "a9ee96d80412a3eeefabdc8f42ef76166ffdef76128d32f488dcf02f0a324fb9",
+  "resource_forecast": {
+    "boot_free_reserve_gib_min": 0.25,
+    "free_reserve_gib_min": 10.0,
+    "invocation_wall_seconds": 10.0,
+    "max_attempt_cpu_seconds": 90,
+    "max_attempt_wall_seconds": 180,
+    "max_rss_gib": 4.0,
+    "max_total_worker_rss_gib": 8.0,
+    "max_workers": 7,
+    "wire_limit_bytes": 1048576
+  },
+  "source_manifest": {
+    "kit.py": "0d2cb3d3b46ca2a6ee7c8b74b78c55642ef98686e59a890ec18f66f2cabc1f3e"
+  }
+}

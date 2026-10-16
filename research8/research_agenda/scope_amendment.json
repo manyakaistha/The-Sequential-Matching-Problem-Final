@@ -1,0 +1,17 @@
+{
+  "scope": "read-only retrospective metric and frozen reference identity checks added during literature/theory research",
+  "new_simulator_episodes": 0,
+  "fits": 0,
+  "private_realized_world_reads": 0,
+  "examined_historical_commits": 4608,
+  "units": "96 seed clusters;6families;8arms",
+  "independent_reviewer": "agenda_final_review",
+  "retrospective_evidence_not_confirmation": true,
+  "routing_exception": "model_research final followup returned usage-limit error after revised model.md delivered; no substitution; root integrated completed draft and Sol/high independent review closed",
+  "root_integration_edit": [
+    "REPORT.md",
+    "model.md director clarification",
+    "README.md"
+  ],
+  "old_files_preserved": true
+}

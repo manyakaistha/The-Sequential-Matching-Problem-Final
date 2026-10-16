@@ -1,0 +1,14 @@
+{
+  "stage": "W2 metadata shape hardening",
+  "reason": "Prevent nested hidden maps in otherwise public source/pool/gender/logging/event metadata",
+  "before_tests": true,
+  "prior_snapshot": "history/adapter_v1",
+  "tests": "Rejectnestedtruth/source/pool/logging/event/status metadata; rerunexisting34tests",
+  "limits": {
+    "cpu_seconds": 90,
+    "wall_seconds": 120,
+    "official_episodes": 0,
+    "fits": 0
+  },
+  "artifacts": "Preserveoriginalvalidation; newsourcehashesand timings in validation_hardening.json"
+}

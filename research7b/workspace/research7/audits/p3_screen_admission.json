@@ -1,0 +1,73 @@
+{
+  "review_id": "R7-P3-SCREEN-INDEPENDENT-20261012",
+  "reviewer": "r7_live_critic",
+  "developers": [
+    "research7_coordinator",
+    "candidate_developer"
+  ],
+  "scope": "P3_screen",
+  "status": "approved",
+  "reviewed_design_sha256": "c8cf3190c4e22294ac99159bcec9c680cf6d3007c06448f6060cd8b8ce81da69",
+  "pathassessment": "research7/reviews/p3_screen_review.md",
+  "approved_cells": 2592,
+  "approved_seed_list": [
+    730001, 730002, 730003, 730004, 730005, 730006, 730007, 730008,
+    730009, 730010, 730011, 730012, 730013, 730014, 730015, 730016,
+    730017, 730018, 730019, 730020, 730021, 730022, 730023, 730024,
+    730025, 730026, 730027, 730028, 730029, 730030, 730031, 730032,
+    730033, 730034, 730035, 730036, 730037, 730038, 730039, 730040,
+    730041, 730042, 730043, 730044, 730045, 730046, 730047, 730048
+  ],
+  "approved_policy_panel": [
+    "G",
+    "N",
+    "R",
+    "P",
+    "K",
+    "Q6",
+    "Q1",
+    "A1",
+    "H1"
+  ],
+  "mode": "subprocess_json_isolated",
+  "topology": "single_mac_01_one_coordinator_max_two_workers",
+  "launch_context": "Run from verified research7b/workspace; imported governing simulator, reference panel (G, N, R, P, K, Q6), and candidate panel (Q1, A1, H1) resolve to frozen workspace source bytes. Subprocess isolation enforced for all arms under P3_SCOPE.md amendment.",
+  "freshness_scope": "Repository-visible 48-cluster screening audit (730001-730048) in program_freshness_audit.json with closed inherited trace/archive coverage, conservative prior guard 1-699999, zero proposed literal intersections and user external use declaration.",
+  "evidence": {
+    "prior_stages_completed": {
+      "p1_reference_smoke_cells": 144,
+      "p1_candidate_smoke_v2_cells": 72,
+      "p2a_pilot_cells": 288
+    },
+    "p2a_pilot_msmi_totals": {
+      "H1": 70,
+      "G": 66,
+      "A1": 56,
+      "Q1": 49
+    },
+    "resource_calibration": {
+      "observed_cpu_seconds_per_cell_p2a": 16.35,
+      "calibrated_max_cpu_hours": 65,
+      "calibrated_max_output_gib": 35
+    },
+    "spec_fixtures_tests": {
+      "passed": 6,
+      "test_file": "research7/tests/test_spec_fixtures.py"
+    },
+    "exact_oracle_tests": {
+      "passed": 14,
+      "test_file": "research7a/workspace/research7/test_exact_transitions.py"
+    }
+  },
+  "conditions": [
+    "Bind this immutable admission document hash and reviewed design to the frozen execution registration before generation.",
+    "Use only the registered 2,592 screening cells (48 seeds x 6 families x 9 policies) and preserve all attempts, invalidities, fallbacks and resource stops.",
+    "Primary endpoint: qualified MSMI per 100 arrived members by day 59.",
+    "At most 2 mechanism families advance to Phase P4 replication/ablations.",
+    "If no candidate meets the eligibility threshold vs G, declare the scoped null outcome cleanly.",
+    "All physical attempts and worker resource usage are charged to the program CPU and output ledgers."
+  ],
+  "critic_worlds_generated": 0,
+  "critic_empirical_episodes": 0,
+  "critic_fits": 0
+}

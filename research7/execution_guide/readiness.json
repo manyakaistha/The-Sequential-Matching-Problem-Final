@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "readiness_evidence_inventory",
+  "as_of_date": "2026-10-12",
+  "scope": "Read-only source and metadata inventory for a future Research7 execution guide; no worlds, policy episodes, fitting, empirical replay, or hour-scale batch runs were performed for this inventory.",
+  "review_ownership": {
+    "evidence_inventory_owner": "root/r7_readiness_inventory",
+    "methodology_and_conclusion_reviewer": "root (methodologycritic)",
+    "independent_critic_receipt_for_P1_smoke": "research7b/workspace/research7/audits/smoke_admission.json"
+  },
+  "authoritative_planning_artifacts": {
+    "plan": "research7/plan.json",
+    "test_spec": "research7/TEST_SPEC.md",
+    "routing_profiles": "research7/routing_profiles.json",
+    "orchestration": "research7/ORCHESTRATION.md",
+    "plan_status": "planning_only_not_execution_registration",
+    "authorization": "planning_only",
+    "plan_new_policy_episodes_executed": 0,
+    "plan_fits_executed": 0,
+    "plan_phase_tests_executed": 0,
+    "runtime_implemented_in_plan": false,
+    "execution_guide_interpretation": "The plan and test specification describe intended future phases and gates. They do not authorize or register those phases."
+  },
+  "implemented_7b_execution_surface": {
+    "runtime_cli": "research7b/workspace/research7/runtime/cli.py",
+    "runner": "research7b/workspace/research7/runtime/runner.py",
+    "registry_validator": "research7b/workspace/research7/registry/validator.py",
+    "registration_builder": "research7b/workspace/research7/registry/build_smoke.py",
+    "implemented_cli_arguments": ["--registration", "--output", "--workers", "--workspace"],
+    "worker_limit": "1..2",
+    "registration_requirements": [
+      "frozen_execution_registration status and explicit execution_authorized=true",
+      "seed_freshness_certified=true and hash-matched closed freshness evidence for the exact ordered seed list",
+      "authorized_scope equals stage_id and names one of P1_smoke, P2_train, P2_validation, P2a_pilot, P3_screen, P4_replication, P5_selection, P6_confirmation",
+      "registration design digest, all source hashes, governing simulator hashes, asset hashes, and dependency versions match",
+      "complete exact seed x family x policy cell cross-product with canonical cell identities",
+      "one complete mac-01 shard, bounded resource caps, at least 30 GiB free reserve, and hash-bound independent approval for the exact design",
+      "preserve authoritative attempts and commits; stop on interrupted attempts, conflicts, or exhausted budget"
+    ],
+    "trusted_inprocess_scope": "P1_smoke only, and policy IDs G, N, R, P, K, Q6 only",
+    "subprocess_json": "A runner branch exists, but restricted-container admission and production-container certification are not implemented by the inspected runtime.",
+    "completed_smoke_stage_clis": "The generic registered coordinator CLI exists; no separate approved command or frozen registration for P2 through P6 was identified in the inspected artifacts.",
+    "planned_but_not_present_as_execution_authority": ["candidate training/validation batches", "P2a pilot", "P3 screen", "P4 replication", "P5 selection", "P6 confirmation", "P7 merge/archive/final seal"],
+    "no_fake_commands": "Future stage commands are intentionally left unspecified here; use only a later reviewed registration and documented implementation, not guessed CLI invocations."
+  },
+  "implemented_smoke_scope": {
+    "registration": "research7b/workspace/research7/registrations/P1_smoke.frozen.json",
+    "stage": "P1_smoke",
+    "status": "frozen_execution_registration",
+    "seeds": [700001, 700002, 700003, 700004],
+    "families": ["development", "sparse", "cold_start", "delayed", "shift", "drift"],
+    "policies_only": ["G", "K", "N", "P", "Q6", "R"],
+    "candidate_ids_absent_from_smoke_panel": ["Q1", "H1", "A1", "A2", "Q2", "D1", "D2", "L1", "L2", "X1"],
+    "expected_cells": 144,
+    "integrity_status": "completed_smoke_integrity_pass",
+    "finished_attempts": 144,
+    "verified_wire_invocations": 17280,
+    "invalid_commits": 0,
+    "fallbacks": 0,
+    "max_observed_attempt_concurrency": 2,
+    "integrity_claims_excluded": ["reward_superiority", "candidate_admission", "learning_or_fitting", "production_container_certification", "scientific_merge_archive_seal"],
+    "integrity_evidence": "research7b/workspace/research7/reviews/smoke_completed_integrity.json",
+    "admission_evidence": "research7b/workspace/research7/audits/smoke_admission.json"
+  },
+  "smoke_resource_observations": {
+    "source": "research7b/workspace/research7/reviews/smoke_completed_integrity.json",
+    "attempts": 144,
+    "recorded_attempt_cpu_seconds_total": 861.5709030000005,
+    "recorded_attempt_wall_seconds_sum": 888.9559132390011,
+    "actual_output_bytes_total": 1721911410,
+    "max_worker_peak_rss_bytes": 73482240,
+    "mean_attempt_cpu_seconds": 5.983131270833336,
+    "mean_attempt_wall_seconds": 6.173304953048619,
+    "mean_output_bytes_per_attempt": 11957718.125,
+    "mean_peak_worker_rss_bytes_max_observed": 73482240,
+    "qualification": "These are recorded averages for the six-reference P1 smoke implementation and its output format. They are not estimates or guarantees for candidate policies, fitting, future stages, physical retries, or changed logging. The max worker RSS is the largest observed worker peak, not a forecast."
+  },
+  "planned_episode_arithmetic": {
+    "plan_episode_ceiling": 99384,
+    "stage_episode_ceilings": {
+      "P1_smoke": 384,
+      "P2_train": 3072,
+      "P2_validation": 1536,
+      "P2a_pilot": 360,
+      "P3_screen": 4608,
+      "P4_replication": 6912,
+      "P5_selection": 6912,
+      "P6_confirmation": 75600
+    },
+    "stage_sum_check": "384+3072+1536+360+4608+6912+6912+75600=99384",
+    "scope_note": "Distinct cells in the listed grids; plan.json says physical verification replays and retries are additional attempts and consume finite budgets, never independent samples.",
+    "mechanical_reference_only_projection": {
+      "formula": "planned distinct episode ceiling multiplied by observed mean six-reference P1 smoke per-attempt resource average",
+      "projected_cpu_hours": 165.17431061680566,
+      "projected_serial_wall_hours_sum": 170.42437207049554,
+      "projected_output_gib": 1106.7892034864053,
+      "max_episodes_at_160_cpu_hours_at_smoke_mean": 96270.66061677336,
+      "max_episodes_at_100_gib_output_at_smoke_mean": 8994.735,
+      "label": "static arithmetic scenario, not a future candidate runtime forecast or feasibility certification"
+    }
+  },
+  "planned_budgets_and_batches": {
+    "7b_simulation_test_cpu_hours": 160,
+    "7b_fit_cpu_hours": 24,
+    "7b_output_gib_max": 100,
+    "7b_free_reserve_gib": 30,
+    "7b_combined_working_rss_gib_max": 10,
+    "7a_cpu_hours_total": 6,
+    "7a_output_gib_max": 8,
+    "7a_free_reserve_gib": 4,
+    "7a_working_rss_gib_max": 2,
+    "forecast_headroom_multiplier": 1.5,
+    "episode_ceiling": 99384,
+    "batch_guidance": "The inspected plan sets aggregate caps and requires profiling actual work, but the evidence inspected here does not define a future episode-count batch size or candidate runtime. Derive each batch from an independently reviewed stage registration, candidate-specific measured cost, 1.5x forecast headroom, retry/replay allowance, and free-space reserve. Recalculate after each finite batch; stop at any budget or validity gate. The smoke-average arithmetic above is not a sizing basis for candidate episodes."
+  },
+  "environment_snapshot": {
+    "dependency_versions_from_installed_python": {"numpy": "2.5.3", "scipy": "1.18.1", "networkx": "3.7"},
+    "dependency_versions_frozen_in_smoke_registration": {"numpy": "2.5.3", "scipy": "1.18.1", "networkx": "3.7"},
+    "disk_free_snapshot": {
+      "command": "df -k .",
+      "available_1024_byte_blocks": 253637588,
+      "available_gib_approx": 241.88765335083008,
+      "mount": "/Volumes/1700 APFS",
+      "qualification": "Point-in-time filesystem snapshot; not reserved capacity or guaranteed free space for a future batch."
+    },
+    "cleanup_prior": {
+      "source": "scratch/cleanup_research5/cleanup_result.json",
+      "status": "complete",
+      "removed_files": 15501,
+      "removed_logical_bytes": 85029342282,
+      "free_disk_bytes_before": 174975143936,
+      "free_disk_bytes_after": 260040126464,
+      "archives_retained": ["results/research5/raw_greedy.tar.gz", "results/research5/raw_population_control.tar.gz", "results/research5/raw_full_logs.tar"],
+      "interpretation": "Historical cleanup record only; the current df snapshot is the current capacity evidence."
+    }
+  },
+  "7a_exact_review_receipt": {
+    "source": "research7a/workspace/research7/exact_independent/evidence/transition_20261012/review_receipt.json",
+    "status": "accepted_declared_finite_reduced_model_oracle",
+    "independent_tests_passed": 7,
+    "seconds": 12.281,
+    "scope": "Finite declared reduced-model oracle, not deployed or full official-protocol validation",
+    "remaining_gates": ["D1/D2/L2 deployed-candidate agreement", "detailed simulator feedback/eligibility fixtures", "for broader D2 admission, dominance mapping or explicit official query action aliases"],
+    "baseline_smoke_has_no_independent_D1_D2_proof_dependency": true
+  },
+  "research7_methodology_gates_referenced": {
+    "tests_are_planned_not_executed": true,
+    "test_spec": "research7/TEST_SPEC.md",
+    "requirements_include": ["exact reduced-model and policy agreement tests", "official feedback/eligibility/terminal timing fixtures", "public-observation isolation", "memory and request/response limits", "logging round-trip and crash recovery", "whole-batch validation", "retry and lease integrity", "seed freshness", "candidate fit-data provenance", "cross-host parity", "statistics reconstruction", "archive restoration and final review"],
+    "requirement_state": "Planning requirements unless independently evidenced in a later stage registration and completed review."
+  },
+  "method_boundaries": [
+    "No new execution authorization is inferred from this inventory.",
+    "Do not treat the six reference policies as the planned candidate panel.",
+    "Do not treat the P1 smoke admission as admission for P2-P7 or candidates.",
+    "Do not infer candidate performance, fit feasibility, or future per-episode runtime from baseline smoke averages.",
+    "No fitting, world generation, replay, or hour-scale run was performed."
+  ]
+}

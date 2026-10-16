@@ -1,0 +1,16 @@
+{
+  "status": "approved",
+  "reviewer": "/root/cleanup_critic",
+  "named_reviewer": "/root",
+  "created_at_utc": "2026-10-12T11:36:42.037499+00:00",
+  "manifest_sha256": "188515d0e65f1db081673a0cf6770514af164e5469d5bb3c877551782f8f813a",
+  "script_sha256": "2d137cd880b40de1e54e29358593853e67d28bf1c95fc7e95cbccf8843f15740",
+  "review_sha256": "31a62edcdfb90c36b71a060a07f40a5041544cf5318b728bb3ffc079475bd2a5",
+  "conditions": [
+    "R5 remains quiescent with no concurrent writers",
+    "Only exact hash-bound manifest indexed untracked originals may be removed",
+    "All three evidence archives, index and original reports are retained"
+  ],
+  "verified_manifest_rows": 15501,
+  "verified_logical_bytes": 85029342282
+}

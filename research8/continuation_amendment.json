@@ -1,0 +1,46 @@
+{
+  "stage": "R8-W1b-continuation-falsifier",
+  "reason": "Independent critic supplied smallest greedy-tail false match; guard against overstating sparse-grid zero regret",
+  "historical_w1_preserved": "history/w1",
+  "actions": [
+    "Keep greedy continuation as control",
+    "Add frozen immediate max-weight myopic continuation",
+    "Test4actor2epoch falsifier before model fidelity admission"
+  ],
+  "tests": {
+    "today_AB": "7/10 certainpause",
+    "tomorrow_AB": "3/5",
+    "tomorrow_AC": "1/2",
+    "tomorrow_BD": "1/2",
+    "exact_wait_value": "1",
+    "greedy_tail_chosen_full_value": "7/10",
+    "expected_greedy_tail_regret": "3/10"
+  },
+  "limits": {
+    "test_cpu_seconds": 90,
+    "test_wall_seconds": 120,
+    "actors": 8,
+    "official_episodes": 0,
+    "fits": 0
+  },
+  "claim_limit": "Reduced mechanism/falsifier only; myopic tail still lacks future waiting",
+  "additional_falsifier": {
+    "reason": "Even static maxweight continuation may commit at future epoch when waiting is better",
+    "days": [
+      0,
+      1,
+      2
+    ],
+    "day0_AB": "1/2",
+    "day1_AC": "2/5",
+    "day2_AD": "9/10",
+    "all_introductions": "pairpause probability1; qualification probability givenbyq",
+    "exact_wait_value": "9/10",
+    "myopic_tail_chosen_full_value": "1/2",
+    "expected_myopic_tail_regret": "2/5"
+  },
+  "fidelity_gate": {
+    "maximum_first_action_regret": "1/100",
+    "fail_action": "No production or reward-screen admission; retain exact oracle and failed controller evidence"
+  }
+}

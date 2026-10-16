@@ -1,0 +1,10 @@
+{
+  "attempt": "independent-review-falsifier-exclusive-create",
+  "status": "noncommitting_duplicate_attempt",
+  "reported_by": "/root/critic",
+  "reason": "First root result already committed; exclusive creation rejected overwrite",
+  "original_authoritative_artifact": "results/falsifiers.json",
+  "extra_samples": 0,
+  "extra_simulator_episodes": 0,
+  "recovery": "Independent in-memory reconstruction against original artifact; no replacement/retry selection"
+}

@@ -1,0 +1,415 @@
+{
+  "ask_log": [],
+  "feedback": [
+    {
+      "event": "introduction_response",
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "member_id": "fixture_A",
+      "missing_reason": null,
+      "observed_day": 1,
+      "occurred_day": 1,
+      "value": "yes"
+    },
+    {
+      "event": "introduction_response",
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "member_id": "fixture_B",
+      "missing_reason": null,
+      "observed_day": 6,
+      "occurred_day": 6,
+      "value": "yes"
+    },
+    {
+      "event": "date_happened",
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "member_id": null,
+      "observed_day": 17,
+      "occurred_day": 17,
+      "value": true
+    },
+    {
+      "event": "second_meeting_intention",
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "member_id": "fixture_A",
+      "missing_reason": null,
+      "observed_day": 22,
+      "occurred_day": 22,
+      "value": "yes"
+    },
+    {
+      "event": "second_meeting_intention",
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "member_id": "fixture_B",
+      "missing_reason": null,
+      "observed_day": 21,
+      "occurred_day": 21,
+      "value": "yes"
+    },
+    {
+      "event": "pause_after_mutual_interest",
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "member_id": null,
+      "observed_day": 22,
+      "occurred_day": 22,
+      "value": true
+    },
+    {
+      "event": "introduction_response",
+      "introduction_id": "intro_b9b88e74db530c7b4a139736",
+      "member_id": "fixture_C",
+      "missing_reason": null,
+      "observed_day": 7,
+      "occurred_day": 7,
+      "value": "yes"
+    },
+    {
+      "event": "introduction_response",
+      "introduction_id": "intro_b9b88e74db530c7b4a139736",
+      "member_id": "fixture_D",
+      "missing_reason": null,
+      "observed_day": 6,
+      "occurred_day": 6,
+      "value": "yes"
+    },
+    {
+      "event": "date_happened",
+      "introduction_id": "intro_b9b88e74db530c7b4a139736",
+      "member_id": null,
+      "observed_day": 10,
+      "occurred_day": 10,
+      "value": false
+    }
+  ],
+  "final_day": 100,
+  "introductions": [
+    {
+      "assigned_day": 0,
+      "introduction_id": "intro_a1e36c839dd478762a50ec78",
+      "logging_policy": "baseline_or_submitted_policy",
+      "propensity": null,
+      "response_deadline_day": 7,
+      "user_a": "fixture_A",
+      "user_b": "fixture_B"
+    },
+    {
+      "assigned_day": 0,
+      "introduction_id": "intro_b9b88e74db530c7b4a139736",
+      "logging_policy": "baseline_or_submitted_policy",
+      "propensity": null,
+      "response_deadline_day": 7,
+      "user_a": "fixture_C",
+      "user_b": "fixture_D"
+    }
+  ],
+  "members": [
+    {
+      "age": 30,
+      "arrived_day": 0,
+      "available": false,
+      "field_observed_day": {
+        "acceptable_zones": 0,
+        "age_max": 0,
+        "age_min": 0,
+        "conversations": 0,
+        "emotional_availability": 0,
+        "has_children": 0,
+        "lifestyle": 0,
+        "partner_children": 0,
+        "partner_smoking": 0,
+        "relationship_goal": 0,
+        "relationship_pace": 0,
+        "relationship_structure": 0,
+        "relocate": 0,
+        "schedule": 0,
+        "smoking": 0,
+        "space_for_relationship": 0,
+        "wants_children": 0,
+        "who_to_meet": 0
+      },
+      "field_status": {
+        "acceptable_zones": "observed",
+        "age_max": "observed",
+        "age_min": "observed",
+        "conversations": "observed",
+        "emotional_availability": "observed",
+        "has_children": "observed",
+        "lifestyle": "observed",
+        "partner_children": "observed",
+        "partner_smoking": "observed",
+        "relationship_goal": "observed",
+        "relationship_pace": "observed",
+        "relationship_structure": "observed",
+        "relocate": "observed",
+        "schedule": "observed",
+        "smoking": "observed",
+        "space_for_relationship": "observed",
+        "wants_children": "observed",
+        "who_to_meet": "observed"
+      },
+      "fields": {
+        "acceptable_zones": [
+          "zone_a"
+        ],
+        "age_max": 65,
+        "age_min": 18,
+        "conversations": "shared",
+        "emotional_availability": "shared",
+        "has_children": false,
+        "lifestyle": "shared",
+        "partner_children": "any",
+        "partner_smoking": "any",
+        "relationship_goal": "shared",
+        "relationship_pace": "shared",
+        "relationship_structure": "monogamous",
+        "relocate": "shared",
+        "schedule": [
+          "weekend"
+        ],
+        "smoking": "no",
+        "space_for_relationship": "shared",
+        "wants_children": "yes",
+        "who_to_meet": [
+          "woman"
+        ]
+      },
+      "gender": "woman",
+      "member_id": "fixture_A",
+      "pool_id": "declared_fixture",
+      "source": "declared_test_fixture",
+      "synthetic": true,
+      "zone": "zone_a"
+    },
+    {
+      "age": 30,
+      "arrived_day": 0,
+      "available": false,
+      "field_observed_day": {
+        "acceptable_zones": 0,
+        "age_max": 0,
+        "age_min": 0,
+        "conversations": 0,
+        "emotional_availability": 0,
+        "has_children": 0,
+        "lifestyle": 0,
+        "partner_children": 0,
+        "partner_smoking": 0,
+        "relationship_goal": 0,
+        "relationship_pace": 0,
+        "relationship_structure": 0,
+        "relocate": 0,
+        "schedule": 0,
+        "smoking": 0,
+        "space_for_relationship": 0,
+        "wants_children": 0,
+        "who_to_meet": 0
+      },
+      "field_status": {
+        "acceptable_zones": "observed",
+        "age_max": "observed",
+        "age_min": "observed",
+        "conversations": "observed",
+        "emotional_availability": "observed",
+        "has_children": "observed",
+        "lifestyle": "observed",
+        "partner_children": "observed",
+        "partner_smoking": "observed",
+        "relationship_goal": "observed",
+        "relationship_pace": "observed",
+        "relationship_structure": "observed",
+        "relocate": "observed",
+        "schedule": "observed",
+        "smoking": "observed",
+        "space_for_relationship": "observed",
+        "wants_children": "observed",
+        "who_to_meet": "observed"
+      },
+      "fields": {
+        "acceptable_zones": [
+          "zone_a"
+        ],
+        "age_max": 65,
+        "age_min": 18,
+        "conversations": "shared",
+        "emotional_availability": "shared",
+        "has_children": false,
+        "lifestyle": "shared",
+        "partner_children": "any",
+        "partner_smoking": "any",
+        "relationship_goal": "shared",
+        "relationship_pace": "shared",
+        "relationship_structure": "monogamous",
+        "relocate": "shared",
+        "schedule": [
+          "weekend"
+        ],
+        "smoking": "no",
+        "space_for_relationship": "shared",
+        "wants_children": "yes",
+        "who_to_meet": [
+          "woman"
+        ]
+      },
+      "gender": "woman",
+      "member_id": "fixture_B",
+      "pool_id": "declared_fixture",
+      "source": "declared_test_fixture",
+      "synthetic": true,
+      "zone": "zone_a"
+    },
+    {
+      "age": 30,
+      "arrived_day": 0,
+      "available": true,
+      "field_observed_day": {
+        "acceptable_zones": 0,
+        "age_max": 0,
+        "age_min": 0,
+        "conversations": 0,
+        "emotional_availability": 0,
+        "has_children": 0,
+        "lifestyle": 0,
+        "partner_children": 0,
+        "partner_smoking": 0,
+        "relationship_goal": 0,
+        "relationship_pace": 0,
+        "relationship_structure": 0,
+        "relocate": 0,
+        "schedule": 0,
+        "smoking": 0,
+        "space_for_relationship": 0,
+        "wants_children": 0,
+        "who_to_meet": 0
+      },
+      "field_status": {
+        "acceptable_zones": "observed",
+        "age_max": "observed",
+        "age_min": "observed",
+        "conversations": "observed",
+        "emotional_availability": "observed",
+        "has_children": "observed",
+        "lifestyle": "observed",
+        "partner_children": "observed",
+        "partner_smoking": "observed",
+        "relationship_goal": "observed",
+        "relationship_pace": "observed",
+        "relationship_structure": "observed",
+        "relocate": "observed",
+        "schedule": "observed",
+        "smoking": "observed",
+        "space_for_relationship": "observed",
+        "wants_children": "observed",
+        "who_to_meet": "observed"
+      },
+      "fields": {
+        "acceptable_zones": [
+          "zone_a"
+        ],
+        "age_max": 65,
+        "age_min": 18,
+        "conversations": "shared",
+        "emotional_availability": "shared",
+        "has_children": false,
+        "lifestyle": "shared",
+        "partner_children": "any",
+        "partner_smoking": "any",
+        "relationship_goal": "shared",
+        "relationship_pace": "shared",
+        "relationship_structure": "monogamous",
+        "relocate": "shared",
+        "schedule": [
+          "weekend"
+        ],
+        "smoking": "no",
+        "space_for_relationship": "shared",
+        "wants_children": "yes",
+        "who_to_meet": [
+          "woman"
+        ]
+      },
+      "gender": "woman",
+      "member_id": "fixture_C",
+      "pool_id": "declared_fixture",
+      "source": "declared_test_fixture",
+      "synthetic": true,
+      "zone": "zone_a"
+    },
+    {
+      "age": 30,
+      "arrived_day": 0,
+      "available": true,
+      "field_observed_day": {
+        "acceptable_zones": 0,
+        "age_max": 0,
+        "age_min": 0,
+        "conversations": 0,
+        "emotional_availability": 0,
+        "has_children": 0,
+        "lifestyle": 0,
+        "partner_children": 0,
+        "partner_smoking": 0,
+        "relationship_goal": 0,
+        "relationship_pace": 0,
+        "relationship_structure": 0,
+        "relocate": 0,
+        "schedule": 0,
+        "smoking": 0,
+        "space_for_relationship": 0,
+        "wants_children": 0,
+        "who_to_meet": 0
+      },
+      "field_status": {
+        "acceptable_zones": "observed",
+        "age_max": "observed",
+        "age_min": "observed",
+        "conversations": "observed",
+        "emotional_availability": "observed",
+        "has_children": "observed",
+        "lifestyle": "observed",
+        "partner_children": "observed",
+        "partner_smoking": "observed",
+        "relationship_goal": "observed",
+        "relationship_pace": "observed",
+        "relationship_structure": "observed",
+        "relocate": "observed",
+        "schedule": "observed",
+        "smoking": "observed",
+        "space_for_relationship": "observed",
+        "wants_children": "observed",
+        "who_to_meet": "observed"
+      },
+      "fields": {
+        "acceptable_zones": [
+          "zone_a"
+        ],
+        "age_max": 65,
+        "age_min": 18,
+        "conversations": "shared",
+        "emotional_availability": "shared",
+        "has_children": false,
+        "lifestyle": "shared",
+        "partner_children": "any",
+        "partner_smoking": "any",
+        "relationship_goal": "shared",
+        "relationship_pace": "shared",
+        "relationship_structure": "monogamous",
+        "relocate": "shared",
+        "schedule": [
+          "weekend"
+        ],
+        "smoking": "no",
+        "space_for_relationship": "shared",
+        "wants_children": "yes",
+        "who_to_meet": [
+          "woman"
+        ]
+      },
+      "gender": "woman",
+      "member_id": "fixture_D",
+      "pool_id": "declared_fixture",
+      "source": "declared_test_fixture",
+      "synthetic": true,
+      "zone": "zone_a"
+    }
+  ],
+  "observed_day_cutoff": 99
+}

@@ -1,0 +1,13 @@
+{
+  "cell": "R8V2_development_replication_840001_cold_start_G",
+  "corruption_rejected": {
+    "optimized": "Request stream mismatch",
+    "original": "Request stream mismatch"
+  },
+  "equal_action_digest": true,
+  "optimized_seconds": 1.5538375840005756,
+  "original_seconds": 7.362875875001919,
+  "peak_rss_platform_units": 486932480,
+  "speedup": 4.738510608068283,
+  "transformed_stream_sha256": "a7c803aa327fe4bed6d6c6785b33e3c70921947e2564418bb611992be16d3c77"
+}

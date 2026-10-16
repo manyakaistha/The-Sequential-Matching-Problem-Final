@@ -1,0 +1,17 @@
+{
+  "authority": "User AGENTS.md; research6/ORCHESTRATION.md; Codex tool schema",
+  "routing_json_sha256": "1f323948f346c44da081176e6169f6099056c597c61f49ba78dc27f79739c6f4",
+  "routing_conflict": "Historical JSON uses Google aliases. Explicit Codex models follow AGENTS/Markdown routing; historical helper/JSON unchanged.",
+  "root": {"requested": "existing inherited director", "known_runtime": "gpt-6.1-sol", "effort": "medium", "owns": ["registration", "query_packages.py", "independent tests", "grid/falsifier scripts", "reports/manifests"]},
+  "work_orders": [
+    {"agent": "/root/evidence", "reuse": true, "model": "gpt-6-luna", "effort": "medium", "clean_context_origin": true, "task": "Structured public asset/runner/data inventory", "read_only": true, "command_cpu_allowance_seconds": 60, "reviewer": "/root/critic and /root"},
+    {"agent": "/root/planner_developer", "reuse": false, "model": "gpt-6.1-sol", "effort": "medium", "fork_turns": "none", "task": "Finite belief matching, menu and continuation implementation", "owns": ["planner.py", "__init__.py"], "command_cpu_allowance_seconds": 120, "reviewer": "/root/critic", "followup": "Myopic-tail falsifier repair, 60 command CPU seconds, same model/effort"},
+    {"agent": "/root/critic", "reuse": true, "model": "gpt-6.1-sol", "effort": "high", "clean_context_origin": true, "task": "Independent implementation/theory/grid review and adversarial falsifiers", "owns": ["reviews/critic_review.md"], "command_cpu_allowance_seconds": 120, "reviewer": "/root", "cannot_edit_developer_files": true}
+  ],
+  "max_concurrent_active_agents": 4,
+  "nested_agents": 0,
+  "escalations": 0,
+  "resolved_worker_model_identity": "Not exposed; requested tool arguments recorded, no claim about hidden identity/tokens",
+  "official_simulator_episodes": 0,
+  "fits": 0
+}

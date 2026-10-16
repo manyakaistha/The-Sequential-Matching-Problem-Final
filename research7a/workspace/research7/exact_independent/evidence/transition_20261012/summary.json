@@ -1,0 +1,600 @@
+{
+  "all_verified": true,
+  "case_ledger": {
+    "T02": {
+      "artifact": "T02.json.gz",
+      "artifact_sha256": "a66f75d763d3dff92da5f44f5dfe929c533caff9596f78200d4f770134970a69",
+      "case_id": "T02",
+      "checks": {
+        "all_64_full_action_sets": true,
+        "greedy": true,
+        "optimum": true,
+        "triangle_and_odd_cycles": true
+      },
+      "cycles": {
+        "3": {
+          "expected_integer_cardinality": 1,
+          "is_exact": true,
+          "is_fractional": false,
+          "max_matching_cardinality": 1
+        },
+        "5": {
+          "expected_integer_cardinality": 2,
+          "is_exact": true,
+          "is_fractional": false,
+          "max_matching_cardinality": 2
+        },
+        "7": {
+          "expected_integer_cardinality": 3,
+          "is_exact": true,
+          "is_fractional": false,
+          "max_matching_cardinality": 3
+        }
+      },
+      "greedy": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "greedy_value": "19/20",
+      "matchings": [
+        [
+          [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "13/10"
+        ],
+        [
+          [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "D"
+            ]
+          ],
+          "19/20"
+        ],
+        [
+          [
+            [
+              "A",
+              "B"
+            ]
+          ],
+          "9/10"
+        ],
+        [
+          [
+            [
+              "A",
+              "D"
+            ]
+          ],
+          "13/20"
+        ],
+        [
+          [
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "13/20"
+        ],
+        [
+          [
+            [
+              "C",
+              "D"
+            ]
+          ],
+          "1/20"
+        ],
+        [
+          [],
+          "0/1"
+        ]
+      ],
+      "runs": {},
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T03": {
+      "artifact": "T03.json.gz",
+      "artifact_sha256": "f13ef7026d51fabed20c8c61bc0a84123ef74a77f55ec1ab910f0664a0436359",
+      "case_id": "T03",
+      "checks": {
+        "fast_AB": true,
+        "fast_no_future": true,
+        "fast_short": true,
+        "reversal": true,
+        "slow_AB": true,
+        "slow_no_future": true,
+        "slow_short": true,
+        "wait_both": true
+      },
+      "expected": {
+        "fast_AB": "21/25",
+        "slow_AB": "13/25",
+        "wait": "4/5"
+      },
+      "runs": {
+        "fast": {
+          "cpu_seconds": 0.0007250000000000034,
+          "enumerated_states": 20,
+          "enumerated_transitions": 19,
+          "input_model_sha256": "ac202da735c70bafb60b8dd44bcf323c158fbc29e8a7a7f61b62d9b896277a7b",
+          "support_states": 20,
+          "value": "21/25"
+        },
+        "fast_no_future": {
+          "cpu_seconds": 0.00044900000000000495,
+          "enumerated_states": 14,
+          "enumerated_transitions": 13,
+          "input_model_sha256": "f9d3115e29a09b8023eaa2e27239b801cbd1ed5251bb2f36977f5159c81c50a2",
+          "support_states": 14,
+          "value": "1/5"
+        },
+        "fast_short": {
+          "cpu_seconds": 0.00019900000000000473,
+          "enumerated_states": 6,
+          "enumerated_transitions": 5,
+          "input_model_sha256": "59b98d7ab18e07cf2f0061932f3a4a137d0c31afcb5e30a3a8ff7523df1cbc14",
+          "support_states": 6,
+          "value": "1/5"
+        },
+        "slow": {
+          "cpu_seconds": 0.000456000000000005,
+          "enumerated_states": 18,
+          "enumerated_transitions": 17,
+          "input_model_sha256": "4c1f73b80a43fbdee26835249c03f8077178466cd1461874fcf57b6e4a6719ba",
+          "support_states": 18,
+          "value": "4/5"
+        },
+        "slow_no_future": {
+          "cpu_seconds": 0.0006019999999999914,
+          "enumerated_states": 14,
+          "enumerated_transitions": 13,
+          "input_model_sha256": "0f81ef9f35a78ceaa7b923419f7212b4309cf6045cf4c66cfb53f3d7af6269d9",
+          "support_states": 14,
+          "value": "1/5"
+        },
+        "slow_short": {
+          "cpu_seconds": 0.00032500000000000584,
+          "enumerated_states": 6,
+          "enumerated_transitions": 5,
+          "input_model_sha256": "1caecf4293f1699d73febf74922d07fe0f3b0a46a2356bfb8941072d81fcde7f",
+          "support_states": 6,
+          "value": "1/5"
+        }
+      },
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T04": {
+      "applicability": "D2 query-choice proof; D1 FIFO only requires transition correctness",
+      "artifact": "T04.json.gz",
+      "artifact_sha256": "690430f89c2066143101927f5f51552afb1a8f3c283e83094b5b5fe2ebe0f068",
+      "capacity_relaxation": "Fixed12 evidence is the zero/below/tie/above cases; real relaxation explicitly raises tomorrow to15. Scaled one-bundle3 toy relaxes tomorrow to6.",
+      "case_id": "T04",
+      "checks": {
+        "budget12_above": true,
+        "budget12_above_budget": true,
+        "budget12_above_optimum": true,
+        "budget12_below": true,
+        "budget12_below_budget": true,
+        "budget12_below_optimum": true,
+        "budget12_capacity_future15": true,
+        "budget12_capacity_future15_budget": true,
+        "budget12_capacity_future15_optimum": true,
+        "budget12_tie": true,
+        "budget12_tie_budget": true,
+        "budget12_tie_optimum": true,
+        "budget12_zero": true,
+        "budget12_zero_budget": true,
+        "budget12_zero_optimum": true,
+        "scaled3_above": true,
+        "scaled3_above_budget": true,
+        "scaled3_above_optimum": true,
+        "scaled3_below": true,
+        "scaled3_below_budget": true,
+        "scaled3_below_optimum": true,
+        "scaled3_capacity_future6": true,
+        "scaled3_capacity_future6_budget": true,
+        "scaled3_capacity_future6_optimum": true,
+        "scaled3_tie": true,
+        "scaled3_tie_budget": true,
+        "scaled3_tie_optimum": true,
+        "scaled3_zero": true,
+        "scaled3_zero_budget": true,
+        "scaled3_zero_optimum": true
+      },
+      "real_embedding": "Three useful cost-3 X bundles today, three newly arriving useful Y bundles tomorrow; each earns 1. W must also be queried after arrival.",
+      "runs": {
+        "budget12_above": {
+          "cpu_seconds": 3.5286219999999995,
+          "enumerated_states": 39584,
+          "enumerated_transitions": 39614,
+          "input_model_sha256": "04da6f6102d4f8faaad8c838d04576a43e4db8c16924bf914f95c47f3e7a1d99",
+          "support_states": 39616,
+          "value": "157/25"
+        },
+        "budget12_below": {
+          "cpu_seconds": 2.7893149999999998,
+          "enumerated_states": 39584,
+          "enumerated_transitions": 39614,
+          "input_model_sha256": "10ba340873a1e3eed9eb0da074eb62551773f226128f73c1014b1d16ae80bd7b",
+          "support_states": 39616,
+          "value": "31/5"
+        },
+        "budget12_capacity_future15": {
+          "cpu_seconds": 3.322234999999999,
+          "enumerated_states": 42284,
+          "enumerated_transitions": 42314,
+          "input_model_sha256": "bbf4243ecb3c5885934d269acdf5882e138fd479b0da3810f176d65d40f4b6c3",
+          "support_states": 42316,
+          "value": "162/25"
+        },
+        "budget12_tie": {
+          "cpu_seconds": 2.878122,
+          "enumerated_states": 39584,
+          "enumerated_transitions": 39614,
+          "input_model_sha256": "6880be4b84d4149f567fe2da5b496a014c9eb538ba1a96e618f020c16d9ce49a",
+          "support_states": 39616,
+          "value": "31/5"
+        },
+        "budget12_zero": {
+          "cpu_seconds": 0.6747259999999999,
+          "enumerated_states": 10724,
+          "enumerated_transitions": 10723,
+          "input_model_sha256": "d54a6bf4447b6b4d6cc0cc8fa8fa46143e2fdc091c0925ae611689b08ec65534",
+          "support_states": 10724,
+          "value": "31/5"
+        },
+        "scaled3_above": {
+          "cpu_seconds": 0.002124000000000001,
+          "enumerated_states": 62,
+          "enumerated_transitions": 64,
+          "input_model_sha256": "1693119982105eed365a5450888380c2cb8c6e776f38ade297be3f77042bcbc2",
+          "support_states": 66,
+          "value": "7/25"
+        },
+        "scaled3_below": {
+          "cpu_seconds": 0.002347000000000002,
+          "enumerated_states": 62,
+          "enumerated_transitions": 64,
+          "input_model_sha256": "c1cdaa0ae95dafccff74053980eedd1589761fae9be9b6606b94045ea9c2e35f",
+          "support_states": 66,
+          "value": "1/5"
+        },
+        "scaled3_capacity_future6": {
+          "cpu_seconds": 0.003136,
+          "enumerated_states": 78,
+          "enumerated_transitions": 80,
+          "input_model_sha256": "67ee5403b57c3d7c0ec27f8b188a8ba43064dcbbf8956e38b0e6b3d61b19984c",
+          "support_states": 82,
+          "value": "12/25"
+        },
+        "scaled3_tie": {
+          "cpu_seconds": 0.0026240000000000013,
+          "enumerated_states": 62,
+          "enumerated_transitions": 64,
+          "input_model_sha256": "64b9c19f832a95b0ab9d4be6c2c9a4b7747fe18642f6b98c5e10eb832107a8bb",
+          "support_states": 66,
+          "value": "1/5"
+        },
+        "scaled3_zero": {
+          "cpu_seconds": 0.0007489999999999997,
+          "enumerated_states": 27,
+          "enumerated_transitions": 26,
+          "input_model_sha256": "9fb212140fb540ffe917ade9b249faf0ddd32b73ddc770548142073f0f6be5a2",
+          "support_states": 27,
+          "value": "1/5"
+        }
+      },
+      "status": "constructed_enumeration_pass",
+      "threshold": "1/4",
+      "verified": true
+    },
+    "T05": {
+      "artifact": "T05.json.gz",
+      "artifact_sha256": "75f53e6fbc3047115cb8a21133ea84b3a5dfeb792488f993cdb220677c80915f",
+      "case_id": "T05",
+      "checks": {
+        "q_less_p": true,
+        "triangle": true,
+        "two_actors": true,
+        "zero_reward_pause_executed": true
+      },
+      "expected": {
+        "q_less_p": "271/2000",
+        "triangle": "271/1000",
+        "two_actors": "1/10"
+      },
+      "limitation": "Outcome feedback is released by next 8-day epoch in this toy; simulator delayed-label timing requires separate fixtures.",
+      "runs": {
+        "triangle_coupled": {
+          "cpu_seconds": 0.0049960000000002225,
+          "enumerated_states": 133,
+          "enumerated_transitions": 132,
+          "input_model_sha256": "91db94503400b62035279a36673e43d36f3b2b701905e88e184d0445e7e2c35b",
+          "support_states": 133,
+          "value": "271/1000"
+        },
+        "triangle_unqualified_pause": {
+          "cpu_seconds": 0.0055960000000006005,
+          "enumerated_states": 196,
+          "enumerated_transitions": 195,
+          "input_model_sha256": "c3863e1096087be1023599ede42ec7711c6b2493b4dfb881897f272db332f88f",
+          "support_states": 196,
+          "value": "271/2000"
+        },
+        "two_actors": {
+          "cpu_seconds": 0.0005819999999996384,
+          "enumerated_states": 25,
+          "enumerated_transitions": 24,
+          "input_model_sha256": "2dd1c21e6178ea4122b8187618686bbaeb2e1befb90f7020a9ed1cf91dfc6942",
+          "support_states": 25,
+          "value": "1/10"
+        }
+      },
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T06": {
+      "artifact": "T06.json.gz",
+      "artifact_sha256": "8bd29a9a7a009b2120273c9bf96b3ea284af110ea48b29b204b6d04a8eb6c30d",
+      "case_id": "T06",
+      "checks": {
+        "collision": true,
+        "complement": true,
+        "degree_wrong": true,
+        "distinct": true
+      },
+      "degree_distinct": "7/5",
+      "degree_shared": "8/5",
+      "runs": {
+        "complement": {
+          "cpu_seconds": 0.0002420000000000755,
+          "enumerated_states": 10,
+          "enumerated_transitions": 9,
+          "input_model_sha256": "5854d73e4d2c0674285729d605897ad0753f3395062b94f639e204a86413e63b",
+          "support_states": 10,
+          "value": "1/1"
+        },
+        "distinct": {
+          "cpu_seconds": 0.0010889999999985633,
+          "enumerated_states": 26,
+          "enumerated_transitions": 41,
+          "input_model_sha256": "f5d005a23cb71520b208ce7da9638694b5f1054b8b543f161b5922f7e6699dba",
+          "support_states": 45,
+          "value": "7/5"
+        },
+        "shared": {
+          "cpu_seconds": 0.001100000000000989,
+          "enumerated_states": 25,
+          "enumerated_transitions": 40,
+          "input_model_sha256": "ad7a7abd59b68d3a04874bb65146c8a132421f39796fbdddf56600a1e885c664",
+          "support_states": 44,
+          "value": "24/25"
+        }
+      },
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T07": {
+      "artifact": "T07.json.gz",
+      "artifact_sha256": "1ee0559a805c4e7259bbc793c642ee7dc4fa060e94c392667886230364a864ab",
+      "case_id": "T07",
+      "checks": {
+        "additive_rejects": true,
+        "joint": true,
+        "separate_loss_double_counts": true
+      },
+      "runs": {
+        "joint": {
+          "cpu_seconds": 0.0008879999999997779,
+          "enumerated_states": 31,
+          "enumerated_transitions": 30,
+          "input_model_sha256": "be6a40c359af455522a8439fd7d8a6eca1d2e1bd280497407db70845d785ccd2",
+          "support_states": 31,
+          "value": "1/1"
+        }
+      },
+      "scope": "Counterexample to exact additive losses, not a rejection of approximate duals.",
+      "separate_losses": [
+        "9/10",
+        "9/10"
+      ],
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T08": {
+      "artifact": "T08.json.gz",
+      "artifact_sha256": "813138b1b9c4a653e3247a3fec638543f23c483a7c071f13cd3c1b9b975d1358",
+      "case_id": "T08",
+      "checks": {
+        "symbolic_coefficients": true
+      },
+      "proof": "Disjoint matching covers each member of S exactly once; its linear penalty coefficients are the indicator vector of S, for arbitrary rational prices.",
+      "runs": {},
+      "status": "constructed_enumeration_pass",
+      "symbolic_evidence": [
+        {
+          "bonus_coefficient": 2,
+          "matching": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "D"
+            ]
+          ],
+          "price_coefficients": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "bonus_coefficient": 2,
+          "matching": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "D"
+            ]
+          ],
+          "price_coefficients": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "bonus_coefficient": 2,
+          "matching": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "price_coefficients": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "verified": true
+    },
+    "T09": {
+      "artifact": "T09.json.gz",
+      "artifact_sha256": "249b7d43219d147bf8776c86177f0a5fb268efbe2fe8021b3d14e34d1e5d3bc3",
+      "beta_surrogate": "1/3",
+      "case_id": "T09",
+      "checks": {
+        "beta_separate": true,
+        "mature_posterior": true,
+        "next_response": true,
+        "pending_prior": true
+      },
+      "post_high": "1/4",
+      "runs": {
+        "two_type": {
+          "cpu_seconds": 0.00011100000000041632,
+          "enumerated_states": 7,
+          "enumerated_transitions": 12,
+          "input_model_sha256": "cc028585284eae606c9bd8f27858d2719487dbf0f752e959b5298771ba6ef8c1",
+          "support_states": 14,
+          "value": "1/2"
+        }
+      },
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T10": {
+      "artifact": "T10.json.gz",
+      "artifact_sha256": "98ea4afe5dee6b1243c155914a89eba784cd4a2db053e9cf742d50e898ac3229",
+      "case_id": "T10",
+      "checks": {
+        "higher_q_longer": true,
+        "late_pause_zero_reward": true,
+        "no_terminal_actions": true
+      },
+      "limitation": "Constructed late-pause branch labels, not a simulator deadline implementation test.",
+      "runs": {
+        "last_day": {
+          "cpu_seconds": 0.000204000000000093,
+          "enumerated_states": 8,
+          "enumerated_transitions": 7,
+          "input_model_sha256": "699ac822803575abf95f3898f64952d6907cff907669c4cc010b3a936ec41941",
+          "support_states": 8,
+          "value": "3/5"
+        }
+      },
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    },
+    "T31": {
+      "artifact": "T31.json.gz",
+      "artifact_sha256": "e0fa0fc43dc0033aa47036c500bee3a136ffad42680070520cf92f5dac10d996",
+      "case_id": "T31",
+      "checks": {
+        "new_only_increment": true,
+        "old_contributes_zero": true,
+        "old_feedback_resolves": true
+      },
+      "expected": {
+        "new_disjoint": "3/10",
+        "old_only": "0/1"
+      },
+      "runs": {
+        "new_disjoint": {
+          "cpu_seconds": 0.00024900000000016576,
+          "enumerated_states": 8,
+          "enumerated_transitions": 8,
+          "input_model_sha256": "2f027229ccb310cf38cfaa30a0bcd0e2ab5a59bc5aabcee2caf5cfd78e33b9d6",
+          "support_states": 10,
+          "value": "3/10"
+        },
+        "old_only": {
+          "cpu_seconds": 0.00014399999999881175,
+          "enumerated_states": 4,
+          "enumerated_transitions": 4,
+          "input_model_sha256": "522cfdff2325e81a9c3fa696c5107179bf1c028bfc9ee4c981748152733bef0b",
+          "support_states": 6,
+          "value": "0/1"
+        }
+      },
+      "scope": "Independent target bookkeeping; deployed D1/D2/L2 must separately agree with this oracle.",
+      "status": "constructed_enumeration_pass",
+      "verified": true
+    }
+  },
+  "cpu_seconds": 13.265630999999999,
+  "developer": "/root/r7_exact_repair",
+  "gates": {
+    "D1_D2_L2_candidate_agreement": "unclosed",
+    "baseline_smoke": "No D1/D2 proof dependency for baseline-only arm; runtime/registration gates still apply",
+    "constructed_oracle": "executed; independent review pending",
+    "simulator_timing_and_protocol": "separate fixtures required"
+  },
+  "independent_reviewer": "/root/r7_live_critic (review pending)",
+  "source_sha256": {
+    "__init__.py": "fda44d7af6aa32c1cf3fada4392de1ed1085606f6728c3ba44465f2ed988fdee",
+    "models.py": "e5ec59bd75d66d1d5761e0011dd2265ce17d4d6cdcb14ea9cdb0345825ba78f6",
+    "schema.py": "1eda902e3602f22d257515dd0836a21118e3ac0b139a82ac186c1ec653c11e16",
+    "solver.py": "b8099255208c3fab32cef4db24f844c721ce4c1bb83f445cb8fb22dbac249d3e",
+    "specifications.py": "bf8b73cb71809c4e4d39c47d54cd57f9f5ed19d74ca4ef0a8567e6ad76626111"
+  },
+  "status": "constructed_belief_enumerations_complete",
+  "total_cases": 10
+}

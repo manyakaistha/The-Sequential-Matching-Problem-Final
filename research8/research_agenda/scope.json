@@ -1,0 +1,49 @@
+{
+  "status": "research_and_constructed_arithmetic_only",
+  "question": "Which model and policy architecture offers a falsifiable path beyond G, Q6 and P?",
+  "official_episodes": 0,
+  "fits": 0,
+  "preserve": [
+    "research8/w2",
+    "all prior reports, sources and results"
+  ],
+  "constructive_checks": [
+    "static four-node exchange",
+    "two-day coordinated waiting versus one-step rollout",
+    "day13 horizon blind spot",
+    "arrival-risk reservation threshold",
+    "joint hard-query complementarity",
+    "shared-partner nonadditivity"
+  ],
+  "compute_allowance_cpu_seconds": 60,
+  "delegations": [
+    {
+      "task": "policy_theory",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "reviewer": "w2_critic",
+      "owns": [
+        "theory.md"
+      ]
+    },
+    {
+      "task": "model_research",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "reviewer": "w2_critic",
+      "owns": [
+        "model.md"
+      ]
+    },
+    {
+      "task": "w2_critic",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "reviewer": "root",
+      "owns": [
+        "critique.md"
+      ]
+    }
+  ],
+  "routing_note": "R6 JSON has historical Google aliases; use actual Codex models required by AGENTS and R7 orchestration. Root model inherited from host. No child spawning."
+}

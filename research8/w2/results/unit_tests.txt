@@ -1,0 +1,39 @@
+test_all_sixty_four_graphs_match_independent_edge_subsets (research8.tests.test_planner.PlannerTests.test_all_sixty_four_graphs_match_independent_edge_subsets) ... ok
+test_bounded_menu_legal_and_keeps_parent (research8.tests.test_planner.PlannerTests.test_bounded_menu_legal_and_keeps_parent) ... ok
+test_caps_and_invalid_inputs_fail_explicitly (research8.tests.test_planner.PlannerTests.test_caps_and_invalid_inputs_fail_explicitly) ... ok
+test_even_static_max_weight_tail_misses_future_waiting (research8.tests.test_planner.PlannerTests.test_even_static_max_weight_tail_misses_future_waiting) ... ok
+test_exact_dynamic_tie_retains_distinct_static_parent (research8.tests.test_planner.PlannerTests.test_exact_dynamic_tie_retains_distinct_static_parent) ... ok
+test_final_day_full_reward_static_and_greedy_trap (research8.tests.test_planner.PlannerTests.test_final_day_full_reward_static_and_greedy_trap) ... ok
+test_future_arrival_is_not_known_before_action (research8.tests.test_planner.PlannerTests.test_future_arrival_is_not_known_before_action) ... ok
+test_greedy_tail_falsifier_and_static_myopic_repair (research8.tests.test_planner.PlannerTests.test_greedy_tail_falsifier_and_static_myopic_repair) ... ok
+test_hidden_return_clock_oracle_trap (research8.tests.test_planner.PlannerTests.test_hidden_return_clock_oracle_trap) ... ok
+test_joint_shared_future_not_double_counted (research8.tests.test_planner.PlannerTests.test_joint_shared_future_not_double_counted) ... ok
+test_menu_overflow_fails_closed_and_outside_pairs_fixed (research8.tests.test_planner.PlannerTests.test_menu_overflow_fails_closed_and_outside_pairs_fixed) ... ok
+test_previously_booked_pending_introduction_not_rewarded_again (research8.tests.test_planner.PlannerTests.test_previously_booked_pending_introduction_not_rewarded_again) ... ok
+test_return_law_reverses_hold (research8.tests.test_planner.PlannerTests.test_return_law_reverses_hold) ... ok
+test_reuse_and_exhaustion (research8.tests.test_planner.PlannerTests.test_reuse_and_exhaustion) ... ok
+test_cap_invalid_package_and_probability (research8.tests.test_query_packages.QueryTests.test_cap_invalid_package_and_probability) ... ok
+test_collision_joint_scenarios (research8.tests.test_query_packages.QueryTests.test_collision_joint_scenarios) ... ok
+test_decline_and_observed_false_are_not_truthy (research8.tests.test_query_packages.QueryTests.test_decline_and_observed_false_are_not_truthy) ... ok
+test_every_eight_actor_hard_package (research8.tests.test_query_packages.QueryTests.test_every_eight_actor_hard_package) ... ok
+test_hard_complement_and_soft_cannot_legalize (research8.tests.test_query_packages.QueryTests.test_hard_complement_and_soft_cannot_legalize) ... ok
+test_hidden_profile_not_oracle_without_query (research8.tests.test_query_packages.QueryTests.test_hidden_profile_not_oracle_without_query) ... ok
+test_soft_displaces_hard_under_actual_twelve_units (research8.tests.test_query_packages.QueryTests.test_soft_displaces_hard_under_actual_twelve_units) ... ok
+test_each_limit_discards_partial_comparison (research8.w2.tests.test_bounded.BoundedTests.test_each_limit_discards_partial_comparison) ... ok
+test_final_day_reward_and_horizon_limits (research8.w2.tests.test_bounded.BoundedTests.test_final_day_reward_and_horizon_limits) ... ok
+test_future_waiting_and_static_matching_falsifiers (research8.w2.tests.test_bounded.BoundedTests.test_future_waiting_and_static_matching_falsifiers) ... ok
+test_hidden_clock_and_public_menu (research8.w2.tests.test_bounded.BoundedTests.test_hidden_clock_and_public_menu) ... ok
+test_oversized_prior_still_requires_lawful_common_view (research8.w2.tests.test_bounded.BoundedTests.test_oversized_prior_still_requires_lawful_common_view) ... ok
+test_G_fallback_exact_and_public_only (research8.w2.tests.test_public_adapter.AdapterTests.test_G_fallback_exact_and_public_only) ... ok
+test_counts_idempotent_across_phases_and_unavailable (research8.w2.tests.test_public_adapter.AdapterTests.test_counts_idempotent_across_phases_and_unavailable) ... ok
+test_large_public_state_and_declined_hard (research8.w2.tests.test_public_adapter.AdapterTests.test_large_public_state_and_declined_hard) ... ok
+test_offline_declared_model_bridge_can_hold_and_revalidates (research8.w2.tests.test_public_adapter.AdapterTests.test_offline_declared_model_bridge_can_hold_and_revalidates) ... ok
+test_projection_cannot_mutate_public_boundary_or_clock (research8.w2.tests.test_public_adapter.AdapterTests.test_projection_cannot_mutate_public_boundary_or_clock) ... ok
+test_projection_prior_cap_returns_valid_G (research8.w2.tests.test_public_adapter.AdapterTests.test_projection_prior_cap_returns_valid_G) ... ok
+test_reject_hidden_future_memory_and_config_injection (research8.w2.tests.test_public_adapter.AdapterTests.test_reject_hidden_future_memory_and_config_injection) ... ok
+test_unknown_neighbor_blocks_projection (research8.w2.tests.test_public_adapter.AdapterTests.test_unknown_neighbor_blocks_projection) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.079s
+
+OK

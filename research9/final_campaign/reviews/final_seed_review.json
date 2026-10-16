@@ -1,0 +1,36 @@
+{
+  "schema": "r9-independent-seed-review-v1",
+  "status": "passed",
+  "reviewer": "/root/continuation_critic",
+  "date": "2026-10-15",
+  "reservation_path": "research9/final_campaign/final_seed_reservation.json",
+  "reservation_file_sha256": "1990fe81446c786a0155f0d198968d744ce64777323d67689aeea31037287bca",
+  "seed_list_sha256": "629730cae3e59d51182c89c7a8f462dbb49ade4d10068a82189daa5fd0fade59",
+  "seed_count": 96,
+  "unique_seed_count": 96,
+  "high_half_128_bit_range_verified": true,
+  "all_exact_python_ints": true,
+  "repository_visible_nonoverlap_checked": true,
+  "metadata_files_independently_rehashed": 8930,
+  "metadata_bytes_independently_rehashed": 71692939,
+  "metadata_hash_mismatches": 0,
+  "exact_reserved_seed_hits": 0,
+  "rejected_draws": 0,
+  "draw_method": "96 distinct independent secrets.randbits(127)+2**127 draws; no outcomes used; no undocumented redraw",
+  "admission_scope": "prospective independent randomized seed groups for the fixed statistical test; not a universal historical nonuse certificate",
+  "limitations": [
+    "historical raw/compressed episode payloads not exhaustively decoded; archive indexes only",
+    "unindexed/deleted/external/private history unresolved; prior externally deleted840001+ items not recovered",
+    "general metadata traversal prunes workspace/evidence/history; explicit later workspace registrations are separately included",
+    "Two oversized 584725077-byte smoke seed audits were omitted; their paths and identities are disclosed by the reservation.",
+    "The fixed unseen historical set size B is unknown. The collision bound is conditional, not a certified historical count.",
+    "Full arbitrary-size integer preservation must be checked in final registration, worker and inference paths before launch."
+  ],
+  "collision_bound": "For a fixed unseen history of B seeds independent of new draws, P(any overlap)<=96*B/2**127; B=1e12 gives about5.65e-25 only as an illustrative assumption.",
+  "requirements": [
+    "Bind final registration to this review and the immutable reservation SHA256.",
+    "No outcome-based reseeding, seed replacement, sample expansion or final candidate repair.",
+    "Preserve exact integers without float, JavaScript Number or NumPy int64 narrowing.",
+    "Complete source/asset, fixed-grid, runtime and independent audit admission remains separate."
+  ]
+}

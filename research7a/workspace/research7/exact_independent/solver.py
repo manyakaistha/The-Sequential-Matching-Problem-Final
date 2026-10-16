@@ -1,247 +1,187 @@
-"""Independent history-tree dynamic programming and vertex-recursive enumeration.
+"""Independent rational matching and finite public-history belief enumeration.
 
-Enforces:
-- Standalone reduced-model execution without simulator imports.
-- Vertex-recursive matching enumeration (disjoint endpoints).
-- Backward induction on observable history trees.
-- Branch merging by observable history (nonanticipation).
-- Dyad masks, busy/pause state, and one-time future reward booking.
-- Hard state cap <= 100,000 states per case.
+No simulator/policy imports. A node is a posterior over *all* hidden states
+consistent with the complete action/observation history, never its first member.
 """
-
-from __future__ import annotations
-import itertools
-from typing import Any, Callable, Dict, FrozenSet, List, Optional, Set, Tuple
-from research7.exact_independent.schema import (
-    ReducedAction,
-    ReducedActor,
-    ReducedBranch,
-    ReducedEdge,
-    ReducedModelSpec,
-    ReducedState,
-    CaseResult
-)
+from collections import defaultdict
+from fractions import Fraction as F
+from itertools import combinations
+from time import process_time
 
 
-def vertex_recursive_enumeration(
-    available_vertices: FrozenSet[str],
-    feasible_edges: List[Tuple[str, str, float]]
-) -> List[Tuple[Tuple[Tuple[str, str], ...], float]]:
-    """Enumerate all valid matchings (disjoint pairs) and their sum weights.
-    
-    Returns list of (matching_pairs, total_weight) sorted by weight descending.
-    """
-    sorted_edges = []
+def rational(x):
+    if isinstance(x, float):
+        raise TypeError('Exact model inputs must be integers or Fractions, not floats')
+    return F(x)
+
+
+def vertex_recursive_enumeration(available_vertices, feasible_edges):
+    edges = {}
     for u, v, w in feasible_edges:
+        if u == v:
+            raise ValueError('self edge')
         if u in available_vertices and v in available_vertices:
             pair = tuple(sorted((u, v)))
-            sorted_edges.append((pair, float(w)))
+            if pair in edges:
+                raise ValueError('duplicate edge')
+            edges[pair] = rational(w)
 
-    all_matchings: List[Tuple[Tuple[Tuple[str, str], ...], float]] = []
-
-    def recurse(
-        edge_idx: int,
-        current_used: Set[str],
-        current_pairs: List[Tuple[str, str]],
-        current_weight: float
-    ):
-        if edge_idx == len(sorted_edges):
-            all_matchings.append((tuple(current_pairs), round(current_weight, 8)))
-            return
-
-        pair, w = sorted_edges[edge_idx]
-        u, v = pair
-
-        # Option 1: Do not include edge
-        recurse(edge_idx + 1, current_used, current_pairs, current_weight)
-
-        # Option 2: Include edge if disjoint
-        if u not in current_used and v not in current_used:
-            current_used.add(u)
-            current_used.add(v)
-            current_pairs.append(pair)
-            recurse(edge_idx + 1, current_used, current_pairs, current_weight + w)
-            current_pairs.pop()
-            current_used.remove(u)
-            current_used.remove(v)
-
-    recurse(0, set(), [], 0.0)
-    all_matchings.sort(key=lambda item: (-item[1], len(item[0]), item[0]))
-    return all_matchings
+    def walk(vertices):
+        if not vertices:
+            return [((), F(0))]
+        u = min(vertices)
+        rest = vertices - {u}
+        out = walk(rest)
+        for v in sorted(rest):
+            pair = tuple(sorted((u, v)))
+            if pair in edges:
+                out += [(tuple(sorted((pair,) + m)), edges[pair] + value)
+                        for m, value in walk(rest - {v})]
+        return out
+    return sorted(walk(frozenset(available_vertices)), key=lambda x: (-x[1], x[0]))
 
 
-def greedy_matching(
-    available_vertices: FrozenSet[str],
-    feasible_edges: List[Tuple[str, str, float]]
-) -> Tuple[Tuple[Tuple[str, str], ...], float]:
-    """Compute greedy matching by picking highest-weight feasible disjoint edges."""
-    sorted_edges = []
-    for u, v, w in feasible_edges:
-        if u in available_vertices and v in available_vertices:
-            sorted_edges.append((tuple(sorted((u, v))), float(w)))
-
-    # Sort descending by weight, tie-break by pair
-    sorted_edges.sort(key=lambda item: (-item[1], item[0]))
-
-    used: Set[str] = set()
-    pairs: List[Tuple[str, str]] = []
-    total_w = 0.0
-
-    for pair, w in sorted_edges:
-        u, v = pair
-        if u not in used and v not in used:
-            used.add(u)
-            used.add(v)
-            pairs.append(pair)
-            total_w += w
-
-    return tuple(pairs), round(total_w, 8)
+def greedy_matching(vertices, edges):
+    used, pairs, total = set(), [], F(0)
+    for u, v, w in sorted(edges, key=lambda x: (-rational(x[2]), tuple(sorted(x[:2])))):
+        if u in vertices and v in vertices and u not in used and v not in used:
+            pairs.append(tuple(sorted((u, v))))
+            used.update((u, v))
+            total += rational(w)
+    return tuple(sorted(pairs)), total
 
 
-def enumerate_labelled_4vertex_graphs() -> List[Dict[str, Any]]:
-    """Enumerate all 64 labelled 4-vertex simple graphs and verify matching legality.
-    
-    Vertices: A, B, C, D (6 potential edges: AB, AC, AD, BC, BD, CD).
-    2^6 = 64 subgraphs.
-    For every graph, the maximum matching cardinality must be <= 2.
-    """
-    vertices = frozenset(['A', 'B', 'C', 'D'])
-    all_edges = [('A', 'B'), ('A', 'C'), ('A', 'D'), ('B', 'C'), ('B', 'D'), ('CD', 'D') if False else ('C', 'D')]
-    
-    results = []
-    for edge_mask in range(64):
-        present_edges = []
-        for i in range(6):
-            if (edge_mask >> i) & 1:
-                u, v = all_edges[i]
-                present_edges.append((u, v, 1.0))
-
-        matchings = vertex_recursive_enumeration(vertices, present_edges)
-        max_cardinality = max(len(m[0]) for m in matchings) if matchings else 0
-        if max_cardinality > 2:
-            raise ValueError(f"Matching cardinality violation on 4-vertex graph mask {edge_mask}: {max_cardinality}")
-
-        results.append({
-            'mask': edge_mask,
-            'edges': [e[:2] for e in present_edges],
-            'max_cardinality': max_cardinality,
-            'valid': True
-        })
-    return results
-
-
-def verify_matching_legality(cycle_lengths: Tuple[int, ...] = (3, 5, 7)) -> Dict[int, Dict[str, Any]]:
-    """Verify that odd cycles 3, 5, 7 have integer maximum cardinality floor(k/2).
-    
-    Triangle (C_3) has maximum matching cardinality 1, NOT fractional 1.5.
-    C_5 has 2, C_7 has 3.
-    """
-    out = {}
-    for k in cycle_lengths:
-        vertices = frozenset(f"V{i}" for i in range(k))
-        edges = [(f"V{i}", f"V{(i+1)%k}", 1.0) for i in range(k)]
-        matchings = vertex_recursive_enumeration(vertices, edges)
-        max_card = max(len(m[0]) for m in matchings) if matchings else 0
-        expected = k // 2
-        out[k] = {
-            'vertices': k,
-            'max_matching_cardinality': max_card,
-            'expected_integer_cardinality': expected,
-            'is_exact': max_card == expected,
-            'is_fractional': False
-        }
+def enumerate_labelled_4vertex_graphs():
+    vertices = frozenset('ABCD')
+    pairs = list(combinations(sorted(vertices), 2))
+    out = []
+    for mask in range(64):
+        edges = [(*e, F(1)) for i, e in enumerate(pairs) if mask & (1 << i)]
+        enumerated = vertex_recursive_enumeration(vertices, edges)
+        # Separate subset reference, with equality of *all* legal action sets.
+        reference = set()
+        for r in range(len(edges) + 1):
+            for subset in combinations(edges, r):
+                flat = [u for e in subset for u in e[:2]]
+                if len(flat) == len(set(flat)):
+                    reference.add(tuple(sorted(e[:2] for e in subset)))
+        actual = {m for m, _ in enumerated}
+        assert actual == reference
+        out.append(dict(mask=mask, edges=[e[:2] for e in edges],
+                        matchings=enumerated, max_cardinality=len(enumerated[0][0]),
+                        valid=actual == reference))
     return out
 
 
-def rational_history_tree_dp(
-    spec: ReducedModelSpec,
-    transition_fn: Callable[[ReducedState, ReducedAction], List[ReducedBranch]],
-    action_generator: Callable[[ReducedState, ReducedModelSpec], List[ReducedAction]]
-) -> CaseResult:
-    """Solve observable-history dynamic programming via backward induction.
-    
-    Ensures:
-    - Merges branches with identical observable history (nonanticipation).
-    - Hard state enumeration cap enforced.
-    - Resolves optimal actions and ties.
+def verify_matching_legality(cycle_lengths=(3, 5, 7)):
+    out = {}
+    for k in cycle_lengths:
+        vs = frozenset('V' + str(i) for i in range(k))
+        edges = [('V' + str(i), 'V' + str((i + 1) % k), F(1)) for i in range(k)]
+        maximum = max(len(m) for m, _ in vertex_recursive_enumeration(vs, edges))
+        out[k] = dict(max_matching_cardinality=maximum, expected_integer_cardinality=k // 2,
+                      is_exact=maximum == k // 2, is_fractional=False)
+    return out
+
+
+class BeliefSolver:
+    """Finite acyclic model protocol: initial, observe, terminal, actions, transition.
+
+    transition(state, action) returns (probability, next_state, booked_reward).
+    Hidden support action menus must be identical; intersection would conceal a
+    hidden-dependent legality bug. Reward is NOT automatically observed. State
+    observations must explicitly include released feedback/availability.
     """
-    state_count = 0
-    memo: Dict[Tuple[int, Tuple[Tuple[str, Any], ...]], Tuple[float, Any, List[Any]]] = {}
+    def __init__(self, model, state_cap=100000, cpu_seconds=300):
+        if not 0 < state_cap <= 100000 or not 0 < cpu_seconds <= 300:
+            raise ValueError('hard enumeration allowance exceeded')
+        self.model, self.cap, self.cpu_cap = model, state_cap, cpu_seconds
+        self.nodes = []
+        self.transitions = 0
+        self.support_states = 0
+        self.started = process_time()
 
-    def solve(state: ReducedState) -> Tuple[float, Any, List[Any]]:
-        nonlocal state_count
-        state_count += 1
-        if state_count > spec.state_cap:
-            raise OverflowError(f"State cap exceeded ({spec.state_cap}) in case {spec.case_id}")
+    def check_cap(self):
+        if len(self.nodes) + self.support_states > self.cap:
+            raise OverflowError('enumerated belief plus support state cap exceeded')
+        if process_time() - self.started > self.cpu_cap:
+            raise TimeoutError('constructed solver CPU cap exceeded')
 
-        # Horizon check
-        if state.day >= spec.horizon_days:
-            return 0.0, None, []
+    def solve(self):
+        initial = [(rational(p), s) for p, s in self.model.initial if p]
+        if sum(p for p, _ in initial) != 1 or any(p < 0 for p, _ in initial):
+            raise ValueError('initial probability must sum to one')
+        observations = {self.model.observe(s) for _, s in initial}
+        if len(observations) != 1:
+            raise ValueError('initial public observation must be fixed')
+        value, root = self._node(initial, (('initial', next(iter(observations))),))
+        return dict(value=value, root=root, nodes=self.nodes, enumerated_states=len(self.nodes),
+                    support_states=self.support_states, enumerated_transitions=self.transitions,
+                    cpu_seconds=process_time() - self.started, state_cap=self.cap)
 
-        # State key for observable nonanticipation: day + observable history
-        state_key = (state.day, state.observation_history)
-        if state_key in memo:
-            return memo[state_key]
+    def _node(self, belief, history):
+        combined = defaultdict(F)
+        for p, state in belief:
+            combined[state] += p
+        belief = sorted(((p, s) for s, p in combined.items() if p), key=lambda x: repr(x[1]))
+        assert sum(p for p, _ in belief) == 1
+        terminal = {self.model.terminal(s) for _, s in belief}
+        if len(terminal) != 1:
+            raise ValueError('hidden-dependent horizon')
+        node_id = len(self.nodes)
+        self.support_states += len(belief)
+        row = dict(id=node_id, history=history, belief=belief, actions=[], ties=[], value=F(0))
+        self.nodes.append(row)
+        self.check_cap()
+        if next(iter(terminal)):
+            return F(0), node_id
+        menus = [tuple(sorted(set(self.model.actions(s)), key=repr)) for _, s in belief]
+        if any(menu != menus[0] for menu in menus):
+            raise ValueError('action menu depends on hidden state within one public history')
+        if not menus[0]:
+            raise ValueError('nonterminal node must provide at least wait')
+        best = None
+        for action in menus[0]:
+            grouped = defaultdict(list)
+            immediate = F(0)
+            branches_ledger = []
+            for prior, state in belief:
+                branches = list(self.model.transition(state, action))
+                if sum(rational(b[0]) for b in branches) != 1:
+                    raise ValueError('transition probabilities must sum to one')
+                for probability, child, reward in branches:
+                    probability, reward = rational(probability), rational(reward)
+                    if probability < 0:
+                        raise ValueError('negative branch probability')
+                    if not probability:
+                        continue
+                    mass = prior * probability
+                    observed = self.model.observe(child)
+                    grouped[observed].append((mass, child))
+                    immediate += mass * reward
+                    branches_ledger.append(dict(mass=mass, reward=reward, observation=observed,
+                                                next_state=child))
+                    self.transitions += 1
+            value, outcomes = immediate, []
+            for observed, weighted in sorted(grouped.items(), key=lambda x: repr(x[0])):
+                mass = sum(p for p, _ in weighted)
+                child_value, child_id = self._node([(p / mass, s) for p, s in weighted],
+                                                   history + ((action, observed),))
+                value += mass * child_value
+                outcomes.append(dict(probability=mass, child=child_id))
+            row['actions'].append(dict(action=action, value=value, immediate=immediate,
+                                       outcomes=outcomes, branches=branches_ledger))
+            if best is None or value > best:
+                best, row['ties'] = value, [action]
+            elif value == best:
+                row['ties'].append(action)
+            self.check_cap()
+        row['value'] = best
+        return best, node_id
 
-        admissible_actions = action_generator(state, spec)
-        if not admissible_actions:
-            memo[state_key] = (0.0, None, [])
-            return 0.0, None, []
 
-        best_val = -float('inf')
-        best_act = None
-        ties: List[Any] = []
-
-        for action in admissible_actions:
-            branches = transition_fn(state, action)
-            expected_q = 0.0
-            for branch in branches:
-                future_val, _, _ = solve(branch.next_state)
-                expected_q += branch.probability * (branch.immediate_reward + future_val)
-            expected_q = round(expected_q, 8)
-
-            if expected_q > best_val + 1e-9:
-                best_val = expected_q
-                best_act = action
-                ties = [action]
-            elif abs(expected_q - best_val) <= 1e-9:
-                ties.append(action)
-
-        memo[state_key] = (best_val, best_act, ties)
-        return best_val, best_act, ties
-
-    # Initial state
-    init_state = ReducedState(
-        day=spec.decision_days[0] if spec.decision_days else 0,
-        available_actors=frozenset(a.actor_id for a in spec.actors),
-        busy_until=(),
-        paused=frozenset(),
-        past_dyads=frozenset(),
-        pending_rewards=0.0,
-        observation_history=()
-    )
-
-    try:
-        val, act, ties = solve(init_state)
-        return CaseResult(
-            case_id=spec.case_id,
-            status='verified',
-            expected_value=spec.parameters.get('expected_rational_value'),
-            computed_value=val,
-            expected_action=spec.parameters.get('expected_action'),
-            computed_action=act,
-            tie_action_set=ties,
-            enumerated_states=state_count,
-            details={'memo_size': len(memo)}
-        )
-    except OverflowError as exc:
-        return CaseResult(
-            case_id=spec.case_id,
-            status='exceeded_cap',
-            expected_value=spec.parameters.get('expected_rational_value'),
-            computed_value=None,
-            expected_action=spec.parameters.get('expected_action'),
-            computed_action=None,
-            enumerated_states=state_count,
-            details={'error': str(exc)}
-        )
+def rational_history_tree_dp(spec, transition_fn=None, action_generator=None):
+    """New API accepts an explicit belief model; unsafe callback API is rejected."""
+    if transition_fn is not None or action_generator is not None:
+        raise TypeError('legacy single-state callbacks cannot certify public beliefs; use BeliefSolver model')
+    return BeliefSolver(spec).solve()

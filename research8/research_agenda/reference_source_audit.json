@@ -1,0 +1,27 @@
+{
+  "scope": "source/config identity only; no action replay or new episodes",
+  "files": {
+    "policy.py": {
+      "sha256": "c745c385a5a1e8dd0ac88320ec8bee2c3d3270e0b23cce3d847b743c551d650a",
+      "matches_frozen_p4": true
+    },
+    "research7/policies/references.py": {
+      "sha256": "91fe001e6382702c39f3d83cd83cda56537331f8c9b432ead4d0e4e6a8436628",
+      "matches_frozen_p4": true
+    },
+    "research6/policies/allocation.py": {
+      "sha256": "296ed10fcde8fc65b5e5dbca76ed3dd25da80a9b002b0e89794399d35c9ce1f3",
+      "matches_frozen_p4": true
+    },
+    "research6/policies/acquisition.py": {
+      "sha256": "69991fee0c8705b6e161168fa019ab48c2bb799fed9a5740a7cb9d4bd4edc7ef",
+      "matches_frozen_p4": true
+    },
+    "research7/runtime/metrics.py": {
+      "sha256": "ecd63a49435e72d53db5f39e138d46f2a14c5f7659fabedcde0b104a8dcc4169",
+      "matches_frozen_p4": true
+    }
+  },
+  "R_behavior": "FIFO constraints asks; random legal edge-order matching",
+  "soft_counts_G_P_Q6": "stored soft_asks=0 in every P4 commit for each arm"
+}

@@ -1,0 +1,2 @@
+{"event": "attempt_started", "attempt_id": "fixture"}
+{"status": "completed", "is_valid": true, "error": null, "sequence": 120, "attempt_id": "fixture", "event": "attempt_finished"}

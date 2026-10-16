@@ -1,0 +1,89 @@
+{
+  "selection": "G; first two ascending seeds; all six families; no outcome selection",
+  "seeds": [
+    700001,
+    700002
+  ],
+  "families": [
+    "cold_start",
+    "delayed",
+    "development",
+    "drift",
+    "shift",
+    "sparse"
+  ],
+  "cells": [
+    {
+      "key": "14b0dd05954f85a768e1250624a8b5f8fc2cf49dd47a9477883a18438e82796f",
+      "attempt": "140e9b3c003048c09951e037eed1eff1",
+      "seed": 700001,
+      "family": "cold_start"
+    },
+    {
+      "key": "cffd914b802c940432aa3bdc8180d0b0396bb324c773d1eedd4c1662d795173a",
+      "attempt": "32d59d64444f46e2b318b638ec0bfe60",
+      "seed": 700001,
+      "family": "delayed"
+    },
+    {
+      "key": "154468bce9ad7ca0c9de17a8246b585e089ec859bdffb03a4f4ec662b2628a0f",
+      "attempt": "7a3d0b5843c044999fb5ceef1b39ec46",
+      "seed": 700001,
+      "family": "development"
+    },
+    {
+      "key": "3ffdbe1ad18eac9e9abdb761e2dd4189cb7930f688c51d44d52afbd82d82a3c0",
+      "attempt": "1fe28d8dd46149908492c9142ef0b1aa",
+      "seed": 700001,
+      "family": "drift"
+    },
+    {
+      "key": "e20df41fe4251b9f0b8a550ddea4a3be00ebd365c5f73ec290513b66842a9c3b",
+      "attempt": "ddb2fc1952bd4a8e800cc65a0dc5357d",
+      "seed": 700001,
+      "family": "shift"
+    },
+    {
+      "key": "9a0da653e22f645da3f97f16b1bf344204c17bb568e617f149060a696b77bc32",
+      "attempt": "eaf5d0449c4c4aa8880aec1566ce4b5e",
+      "seed": 700001,
+      "family": "sparse"
+    },
+    {
+      "key": "acbacc8f52f71a52289cce61f393c5dc7f48aba6815cd688123389661c2285b8",
+      "attempt": "b0e0dca567b24c2e8ee088ef7d81dc09",
+      "seed": 700002,
+      "family": "cold_start"
+    },
+    {
+      "key": "758bdcf6ebbc866578c5608a5b25804d23adb94c7c907ba521e69abca148a0f6",
+      "attempt": "46cd47bcdc0b4428b7a3386e7b9592d7",
+      "seed": 700002,
+      "family": "delayed"
+    },
+    {
+      "key": "c294df8143b9d4eca715af1dd51910cec49b707091924dc40f5784041c9ffdbd",
+      "attempt": "f30a14ac67ca46f3b88e845d5fa4b699",
+      "seed": 700002,
+      "family": "development"
+    },
+    {
+      "key": "08764cf9aba03332c52aa0bcc9a665d5dba77d1422ccc2e60d75303be4a964df",
+      "attempt": "6b618ca1e7864332b53bdc97207e7135",
+      "seed": 700002,
+      "family": "drift"
+    },
+    {
+      "key": "0ba30b45f2e9d7d917123e558d6d6073a3a2a10fba5be153dc6762fed74f4d96",
+      "attempt": "c835cee1d31644328f1c04413c8dbb89",
+      "seed": 700002,
+      "family": "shift"
+    },
+    {
+      "key": "9519437bf5ab22b01be1aef144ddbcf155615eb15e8d2a73770154bd01fe9b20",
+      "attempt": "3bded973bd2544b6a7e7081db98e1e6c",
+      "seed": 700002,
+      "family": "sparse"
+    }
+  ]
+}

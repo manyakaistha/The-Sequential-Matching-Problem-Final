@@ -1,0 +1,102 @@
+{
+  "accept": {
+    "bias_sd": 0.7,
+    "intercept": -0.25,
+    "shared_sd": 0.45,
+    "weights": {
+      "conversations": 0.2,
+      "lifestyle": 0.25,
+      "relationship_goal": 0.7,
+      "relationship_pace": 0.4
+    }
+  },
+  "date": {
+    "p_happen": 0.78,
+    "p_within30": 0.9963556851311953
+  },
+  "hard": {
+    "age_max_offset": {
+      "10": 0.125,
+      "3": 0.125,
+      "4": 0.125,
+      "5": 0.125,
+      "6": 0.125,
+      "7": 0.125,
+      "8": 0.125,
+      "9": 0.125
+    },
+    "age_min_offset": {
+      "10": 0.125,
+      "3": 0.125,
+      "4": 0.125,
+      "5": 0.125,
+      "6": 0.125,
+      "7": 0.125,
+      "8": 0.125,
+      "9": 0.125
+    },
+    "extra_zone": 0.3,
+    "extra_zone_choice": {
+      "zone_a": 0.25,
+      "zone_b": 0.25,
+      "zone_c": 0.25,
+      "zone_d": 0.25
+    },
+    "gender_inclusion": {
+      "man": 0.3333333333333333,
+      "non_binary": 0.3333333333333333,
+      "woman": 0.3333333333333333
+    },
+    "has_children": 0.15,
+    "partner_children": {
+      "any": 0.5,
+      "no_children": 0.5
+    },
+    "partner_smoking": {
+      "any": 0.5,
+      "no_smoking": 0.5
+    },
+    "relationship_structure": {
+      "monogamous": 0.9,
+      "non_monogamous": 0.1
+    },
+    "schedule_size": {
+      "1": 0.3333333333333333,
+      "2": 0.3333333333333333,
+      "3": 0.3333333333333333
+    },
+    "smoking": {
+      "no": 0.75,
+      "occasionally": 0.2,
+      "yes": 0.05
+    },
+    "wants_children": {
+      "no": 0.3333333333333333,
+      "unsure": 0.3333333333333333,
+      "yes": 0.3333333333333333
+    },
+    "who_to_meet_size": {
+      "1": 0.7,
+      "2": 0.2,
+      "3": 0.1
+    }
+  },
+  "name": "sim",
+  "response": {
+    "alpha": 8.160551649540293,
+    "beta": 2.5068361276365607
+  },
+  "second": {
+    "bias_sd": 0.5,
+    "goal_coef": 0.4,
+    "intercept": 0.15,
+    "p_on_time": 0.6
+  },
+  "soft_equal_prob": {
+    "conversations": 0.25,
+    "lifestyle": 0.3333333333333333,
+    "relationship_goal": 0.5,
+    "relationship_pace": 0.3333333333333333
+  },
+  "source": "transcribed from kit.py generate/_prob/advance literals"
+}

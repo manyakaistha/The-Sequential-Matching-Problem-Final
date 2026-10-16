@@ -1,0 +1,9 @@
+{"event": "introduction_response", "introduction_id": "intro_a1e36c839dd478762a50ec78", "member_id": "fixture_A", "missing_reason": null, "observed_day": 1, "occurred_day": 1, "value": "yes"}
+{"event": "introduction_response", "introduction_id": "intro_a1e36c839dd478762a50ec78", "member_id": "fixture_B", "missing_reason": null, "observed_day": 6, "occurred_day": 6, "value": "yes"}
+{"event": "introduction_response", "introduction_id": "intro_b9b88e74db530c7b4a139736", "member_id": "fixture_D", "missing_reason": null, "observed_day": 6, "occurred_day": 6, "value": "yes"}
+{"event": "introduction_response", "introduction_id": "intro_b9b88e74db530c7b4a139736", "member_id": "fixture_C", "missing_reason": null, "observed_day": 7, "occurred_day": 7, "value": "yes"}
+{"event": "date_happened", "introduction_id": "intro_b9b88e74db530c7b4a139736", "member_id": null, "observed_day": 10, "occurred_day": 10, "value": false}
+{"event": "date_happened", "introduction_id": "intro_a1e36c839dd478762a50ec78", "member_id": null, "observed_day": 17, "occurred_day": 17, "value": true}
+{"event": "second_meeting_intention", "introduction_id": "intro_a1e36c839dd478762a50ec78", "member_id": "fixture_B", "missing_reason": null, "observed_day": 21, "occurred_day": 21, "value": "yes"}
+{"event": "second_meeting_intention", "introduction_id": "intro_a1e36c839dd478762a50ec78", "member_id": "fixture_A", "missing_reason": null, "observed_day": 22, "occurred_day": 22, "value": "yes"}
+{"event": "pause_after_mutual_interest", "introduction_id": "intro_a1e36c839dd478762a50ec78", "member_id": null, "observed_day": 22, "occurred_day": 22, "value": true}

@@ -1,0 +1,9 @@
+{
+  "status": "dispatch_stopped_workers_allowed_to_finish",
+  "coordinator_pid": 50546,
+  "command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -m research8.soft_query_followup.v2.launcher --registration research8/soft_query_followup/campaign_v2/replication_registration.json --output results/research8/soft_query_followup/v2_replication --workers 7",
+  "stopped_unix": 1791993851.831808,
+  "committed_at_stop": 473,
+  "registration_sha256": "c9d55912a556c9c426571804857c6c69305072e7ca3a14a2ba6eb14672783e78",
+  "preserve_all_attempts": true
+}

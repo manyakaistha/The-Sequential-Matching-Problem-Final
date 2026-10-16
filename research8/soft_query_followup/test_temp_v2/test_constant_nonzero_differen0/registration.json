@@ -1,0 +1,1 @@
+{"ordered_seed_list": [1, 2], "families": ["development", "sparse", "cold_start", "delayed", "shift", "drift"], "policy_ids": ["G", "G_random_soft", "G_targeted_soft"], "registration_sha256": "fixture", "analysis": {"contrasts": [["G_random_soft", "G"], ["G_targeted_soft", "G"], ["G_targeted_soft", "G_random_soft"]]}}
