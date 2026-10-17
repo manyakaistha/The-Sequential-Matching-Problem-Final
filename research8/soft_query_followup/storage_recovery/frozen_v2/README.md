@@ -41,7 +41,6 @@ Publicfixtureaudit (not a campaignregistration):
 PYTHONPATH=. python3 -m research8.soft_query_followup.v2.audit --registration research8/soft_query_followup/v2/validation/declared_fixture_registration.json --output research8/soft_query_followup/v2/validation/declared_capture
 ```
 
-For the exact freshseedreview, freeze,120-cellsmoke,2880-cellreplication andanalysis workflow, copy [TESTING_PROMPT.md](TESTING_PROMPT.md) into the next agent. The registrationCLI writes once and refusesunreviewedseedfreshness, changedpolicies or alteredguards; the launcher stops on invalidity rather than silentlydroppingcells.
 
 Historical records remain preliminary. Thev2repair does not retroactively independentlycertify theold432episodeaggregates.
 
