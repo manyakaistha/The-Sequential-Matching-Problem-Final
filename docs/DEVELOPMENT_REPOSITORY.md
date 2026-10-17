@@ -12,7 +12,9 @@ The 7a/7b workspaces contain duplicated historical source to preserve handoff co
 
 ## Repository
 
-Development: https://github.com/manyakaistha/the-sequential-matching-problem-dev-repo-final
+Final repository: https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final
+
+Development history: https://github.com/manyakaistha/the-sequential-matching-problem-dev-repo-final
 
 Original benchmark: https://github.com/RomeoJulietLove/The-Sequential-Matching-Problem
 

@@ -18,12 +18,12 @@ Install Git LFS before cloning; some saved result files are stored through LFS.
 
 ```bash
 git lfs install
-git clone https://github.com/manyakaistha/the-sequential-matching-problem-dev-repo-final.git
-cd the-sequential-matching-problem-dev-repo-final
+git clone https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final.git
+cd The-Sequential-Matching-Problem-Final
 git lfs pull
 ```
 
-See [cloning and updating](docs/CLONING.md) for existing checkouts and the limits of the versioned evidence. This presentation cleanup is on `cleanup/repository-presentation`; `main` retains the previous layout.
+See [cloning and updating](docs/CLONING.md) for existing checkouts and the limits of the versioned evidence. The final repository uses `main`; earlier development snapshots remain in the development repository.
 
 ## Run the baseline
 

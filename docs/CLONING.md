@@ -4,8 +4,8 @@ Large evidence JSON files use Git LFS. Install Git and Git LFS before cloning, t
 
 ```bash
 git lfs install
-git clone https://github.com/manyakaistha/the-sequential-matching-problem-dev-repo-final.git
-cd the-sequential-matching-problem-dev-repo-final
+git clone https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final.git
+cd The-Sequential-Matching-Problem-Final
 git lfs pull
 ```
 
@@ -13,15 +13,6 @@ For an existing checkout:
 
 ```bash
 git pull --ff-only origin main
-git lfs pull
-```
-
-To use the cleanup branch rather than `main`:
-
-```bash
-git fetch origin
-git switch cleanup/repository-presentation
-git pull --ff-only origin cleanup/repository-presentation
 git lfs pull
 ```
 
