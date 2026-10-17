@@ -10,6 +10,7 @@ The cleanup changes navigation and removes obsolete instruction documents. It do
 - Moved cloning instructions to `docs/CLONING.md` and added `docs/RESEARCH_INDEX.md`.
 - Removed the three `TESTING_PROMPT.md` copies under the soft-query follow-up and their README links.
 - Removed redundant `final_report/work/` preparation notes and the standalone generated HTML figure preview. Report figures, analysis tables, source documents and independent reviews remain.
+- Removed the study-notes directory, exercises, question banks and duplicated learning assets. Removed the report’s form-answer appendix and replaced its question checklist with a research-scope introduction.
 - Retained `AGENTS.md`, research source locations and historical operational/audit records.
 
 ## Historical identities

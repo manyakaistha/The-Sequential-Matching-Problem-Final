@@ -1,5 +1,5 @@
 {
-  "report_sha256": "8e7b9ca264c6dfb1f171cd2150513b9325bb926e40ce948614ba01ed0775b14e",
+  "report_sha256": "6de257c75225fad9be8c5c47f4fa6dacf444c0870a2acea0d79dbd736a495d72",
   "markdown_links_checked": 70,
   "missing_local_links": [],
   "input_and_output_hash_mismatches": [],
@@ -11,5 +11,7 @@
   "independent_analysis_code_review": "passed after uncertainty-display fix",
   "visual_review": "12 figures inspected; selected-figure HTML preview loaded all images without horizontal overflow",
   "new_research_simulations": 0,
-  "container_validation": "not performed; Docker daemon unavailable"
+  "container_validation": "not performed; Docker daemon unavailable",
+  "reviewed_report_sha256_before_presentation_cleanup": "8e7b9ca264c6dfb1f171cd2150513b9325bb926e40ce948614ba01ed0775b14e",
+  "presentation_revision": "Removed form-answer appendix and question checklist; scientific results, figures and source data unchanged. Prior independent reviews apply to the original report identified above."
 }

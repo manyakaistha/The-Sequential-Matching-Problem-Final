@@ -6,7 +6,7 @@ The final implementation retains the supplied Greedy policy. Our tested alternat
 
 ## Report and implementation
 
-- [Final Round 2 report](final_report/REPORT.md): methodology, results, limitations and responses to the Round 1 feedback.
+- [Final Round 2 report](final_report/REPORT.md): methodology, results, limitations and evaluation under changing conditions.
 - [Report assets and reproduction](final_report/README.md): 12 figures, source tables and plotting code.
 - [Research index](docs/RESEARCH_INDEX.md): experiments, earlier reports and evidence locations.
 - [Problem statement](PROBLEM_STATEMENT.md): the original task and evaluation rules.

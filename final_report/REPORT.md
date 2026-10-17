@@ -16,19 +16,11 @@ Round 2 evidence examines changes in arrivals, preference weights and response c
 
 The practical result is a conservative final policy choice supported by transparent negative findings. We also identify limitations in empirical-prior estimation, calibration, service access and experiment provenance. The evidence does not prove Greedy optimal, establish demographic fairness, or rule out all learned or dynamic policies.
 
-## 1. Direct answers to the submission questions and Round 1 feedback
+## 1. Research scope
 
-| Required question | Answer and location |
-|---|---|
-| **Brief solution summary** | Retain reciprocal hard-constraint verification, baseline list-order hard-bundle questioning and greedy matching by observed soft agreement. Richer tested alternatives did not earn promotion. Sections 2–3 and 12. |
-| **Methodology and algorithms** | Separate eligibility, information acquisition, scoring and allocation; compare query ordering, priors, recency-weighted learning and directional calibration with explicit controls. Sections 3–4. |
-| **Baselines and experimental results** | Supplied Greedy, no-clarification and random-feasible comparisons are shown on a historical common grid; later G/P/Q6 and mechanism comparisons remain separate. Metrics, uncertainty and figures appear in Sections 4–10. |
-| **Limitations and improvements from Round 1** | More changing-condition coverage, prior sensitivity, adaptive ablations, assignment-time public features in the learned campaign, and explicit waiting/calibration diagnostics; remaining shortcomings are stated in Sections 11–13. |
-| **Does FIFO retain its advantage when arrival order, weights and response conditions change?** | The premise needs qualification: the submitted FIFO-named candidate had no confirmed advantage. In the new robustness grid, chronology-based asking has the highest mean, but no arm establishes a corrected seed-cluster gain over G. Section 5. |
-| **Would observable-training priors change conclusions based on simulator parameters?** | Point estimates and calibration change; no tested prior variant establishes a better policy. The `emp` implementation retains fixed structural assumptions and snapshot-censoring limitations, so this is only a partial answer to a strictly observable-only prior question. Section 6. |
-| **Can a small adaptive method address drift, with directional calibration and identical asking controls?** | X1 was implemented and tested with identical ask-log hashes. It did not establish improvement. Removing calibration preserves all 72 action digests in the drift study. Sections 7–8. |
-| **Keep meetings and mutual second-meeting intention central; report who waits** | Date occurrence and qualified MSMI are shown together; coverage, served waiting distributions and unserved subgroup rates are reported with their denominators. Sections 2, 8–9. |
-| **Working implementation, environment and ablations** | The retained baseline is executable from the root CLI/Dockerfile. Reproduction, current validation and outstanding packaging checks are documented in Section 13. A final restricted-container rerun was unavailable during report preparation. |
+The study evaluates information acquisition and matching under three kinds of change: arrival order and timing, preference weights, and response conditions. It also compares prior specifications and adaptive scoring under controlled asking rules.
+
+The analysis separates eligibility, questioning, prediction and allocation. Results are reported with their experimental cohort and evidence status, alongside calibration, meetings, qualified outcomes, coverage and waiting. The implementation and reproduction details appear in Sections 3 and 13.
 
 ## 2. Problem, information boundary and outcomes
 
@@ -172,7 +164,7 @@ Each arm has 192 episodes, but uncertainty uses 12 seed clusters. These totals a
 
 *Figure 2. Per-law mean differences and the corresponding G level. Each law has 12 seeds. The heatmap shows heterogeneity, not independent replications or significant cells.*
 
-**Answer to the feedback:** the evidence supports keeping the simple baseline as the default; it does not show universal FIFO dominance. G_arr is a possible asking-order lead, not a confirmed replacement. It also does not reduce served waiting in this grid (Section 9). Earlier explanations that it wins by allowing feedback to arrive before day 60 are incompatible with the 40-day follow-up. Earlier verification could affect availability and future opportunities, but no intervention here isolates that mechanism.
+**Findings:** the evidence supports keeping the simple baseline as the default; it does not show universal FIFO dominance. G_arr is a possible asking-order lead, not a confirmed replacement. It also does not reduce served waiting in this grid (Section 9). Earlier explanations that it wins by allowing feedback to arrive before day 60 are incompatible with the 40-day follow-up. Earlier verification could affect availability and future opportunities, but no intervention here isolates that mechanism.
 
 ## 6. Priors estimated from public observations
 
@@ -196,7 +188,7 @@ Each arm has 60 episodes: 12 seeds × five laws. All arm-versus-G Holm p-values 
 
 *Figure 3. Realized outcomes and host-only conditional-expectation diagnostics on the same fixed Q2 grid. The diagnostics use privileged information and do not represent calibrated policy predictions or an independent confirmation sample.*
 
-**Answer to the feedback:** substituting the implemented public-fit prior does not establish a stronger policy, but it materially changes prediction levels. A fully observable, censoring-aware prior analysis remains unfinished. We do not describe this partial result as invariance to priors.
+**Findings:** substituting the implemented public-fit prior does not establish a stronger policy, but it materially changes prediction levels. A fully observable, censoring-aware prior analysis remains unfinished. We do not describe this partial result as invariance to priors.
 
 ## 7. Adaptive drift alternative and ablations
 
@@ -220,7 +212,7 @@ Each arm has 72 episodes: 12 seeds × six laws. All arm-versus-G Holm p-values a
 
 The direct X1_emp-minus-PS_emp difference is +0.0139, with 95% CI [−0.0167, +0.0445]. Thus weight adaptation has a small observed difference without an established gain. Removing directional calibration leaves **all 72 action digests unchanged**, and both variants produce 64 qualified pairs. The no-learning variant has the same primary outcome totals as PS_emp. These are finite-grid observations, not population equivalence. Calibration can alter a probability level without changing the matching order or selected batch.
 
-**Answer to the feedback:** a small adaptive alternative was implemented under controlled asking, but the tested versions do not earn promotion. The result does not demonstrate that adaptation cannot help. It also does not prove waiting harmful: these scorers contain no waiting threshold, and the oracle arm knows only the drift schedule.
+**Findings:** a small adaptive alternative was implemented under controlled asking, but the tested versions do not earn promotion. The result does not demonstrate that adaptation cannot help. It also does not prove waiting harmful: these scorers contain no waiting threshold, and the oracle arm knows only the drift schedule.
 
 ## 8. Calibration and the outcome funnel
 
@@ -429,29 +421,7 @@ No further algorithm search is recommended. The following are validation or evid
 
 A fully censoring-aware, observable-only prior study would be new research, not a packaging check. It is recorded as unfinished and is not necessary to state this report's negative policy decision honestly.
 
-## Appendix A. Submission-form answer text
-
-### Brief Solution Summary
-
-We retain the supplied Greedy policy: verify reciprocal hard eligibility using budgeted hard-constraint questions, then greedily introduce non-overlapping feasible pairs ranked by observed soft agreement. Round 2 tested arrival ordering, changing preference/response conditions, alternative priors and a small adaptive scorer. No replacement established confirmatory superiority. The report includes qualified mutual second-meeting intention, meetings, calibration, coverage and waiting diagnostics, and distinguishes exploratory findings from confirmation.
-
-### Methodology and Algorithms
-
-The architecture separates eligibility, asking, scoring and allocation. We compare baseline list-order asks with chronological/reverse/degree priorities; parametric scoring and coordinated acquisition under simulator-informed, partially empirical and flat priors; and recency-weighted acceptance updates with directional calibration and component ablations. Comparisons use common seed/law cells and equal-law paired differences aggregated within seed. Supplemental uncertainty uses 12 seed clusters with Student-t intervals and within-study Holm corrections. No soft score overrides stated hard preferences.
-
-### Baselines and Experimental Results
-
-Historical matched supplied controls cover Greedy, no-clarification and random-feasible. Supplemental Q1–Q3 studies contain 2,076 recorded episodes over 12 shared seed identifiers and 20 executed laws, analyzed as exploratory evidence. Arrival-ordered asking has a +0.099 MSMI/100 point difference versus Greedy, but its seed-cluster 95% interval [−0.070, +0.268] includes zero. Prior substitution and adaptive ablations do not establish improvement. The separate audited learned-policy screen admitted no candidate, while larger earlier confirmation also failed to establish superiority. The report supplies tables, 12 figures, source data, calibration and waiting summaries.
-
-### Limitations and Improvements from Round 1
-
-We added changing-condition stress tests, prior sensitivity, controlled adaptive ablations and more explicit calibration/access diagnostics. The report corrects earlier independence assumptions and unsupported causal/fairness claims. Remaining limitations include sparse terminal outcomes, only 12 supplemental seed clusters, hybrid rather than strictly observable-only priors, snapshot censoring, incomplete supplemental audit provenance and unavailable fresh container validation. We retain the simpler policy because the evidence does not justify promotion; we do not claim it is globally optimal.
-
-### Report Link and Optional Demo
-
-Publish this report and its `assets/` folder together, then use that actual URL in the required field. No optional demo link is claimed. The executable source and reproduction commands are supplied instead.
-
-## Appendix B. Evidence and asset index
+## Appendix A. Evidence and asset index
 
 | Artifact | Purpose |
 |---|---|

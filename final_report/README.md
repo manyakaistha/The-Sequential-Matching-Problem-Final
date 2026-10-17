@@ -2,7 +2,7 @@
 
 Open [REPORT.md](REPORT.md). Keep `assets/` beside it when publishing or sharing the Markdown.
 
-The report contains 12 figures (PNG and SVG), explicit answers to the submission form and feedback, source-linked results, calibration and waiting analyses, limitations, and reproduction commands. The evidence supports retaining Greedy; it does not establish a new winner.
+The report contains 12 figures (PNG and SVG), source-linked results, calibration and waiting analyses, limitations, and reproduction commands. The evidence supports retaining Greedy; it does not establish a new winner.
 
 `data/` holds extracted tables, corrected seed-cluster analyses and input/output hashes. `sources/` preserves the submitted Round 1 PDF and extracted text. `reviews/` contains independent reviews and the validation logs recorded during report preparation.
 
