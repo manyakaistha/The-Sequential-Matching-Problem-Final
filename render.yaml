@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: sequential-matching-demo
+    runtime: python
+    repo: https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final
+    branch: cleanup/repository-presentation
+    plan: free
+    buildCommand: python -m pip install -r demo/requirements.txt
+    startCommand: python -m uvicorn demo.app:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DEMO_MAX_RUNS
+        value: "8"
+      - key: DEMO_RUN_TTL_SECONDS
+        value: "1200"
+      - key: DEMO_MAX_LIFETIME_SECONDS
+        value: "3600"

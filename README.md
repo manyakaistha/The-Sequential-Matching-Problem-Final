@@ -8,6 +8,8 @@ The final implementation retains the supplied Greedy policy. Our tested alternat
 
 - [Final Round 2 report](final_report/REPORT.md): methodology, results, limitations and evaluation under changing conditions.
 - [Report assets and reproduction](final_report/README.md): 12 figures, source tables and plotting code.
+- [Public interactive demo](https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final/tree/cleanup/repository-presentation/demo): a FastAPI walkthrough of the retained Greedy baseline on a fixed synthetic preset.
+- [Demo deployment and reviewer guide](docs/DEMO.md): local commands, Render settings and the bounded public journey.
 - [Research index](docs/RESEARCH_INDEX.md): experiments, earlier reports and evidence locations.
 - [Problem statement](PROBLEM_STATEMENT.md): the original task and evaluation rules.
 - [Policy implementation](policy.py), [simulator](kit.py) and [evaluator](evaluate.py).

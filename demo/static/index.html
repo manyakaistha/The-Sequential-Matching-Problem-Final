@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f1eb">
+    <meta name="description" content="An interactive, synthetic walkthrough of sequential reciprocal matching.">
+    <title>One Introduction · Sequential reciprocal matching</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#overview" data-nav="overview" aria-label="One Introduction home">
+        <span class="mark" aria-hidden="true">◎</span>
+        <span>one introduction</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <button class="nav-link is-active" data-nav="overview">Overview</button>
+        <button class="nav-link" data-nav="simulation">Walkthrough</button>
+        <button class="nav-link" data-nav="compare">Compare controls</button>
+      </nav>
+      <div class="header-meta"><span class="live-dot" aria-hidden="true"></span><span>SYNTHETIC / PUBLIC</span></div>
+    </header>
+
+    <main id="main-content">
+      <section id="overview-view" class="view overview-view" aria-labelledby="overview-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-rule"></span>Sequential reciprocal matching</p>
+            <h1 id="overview-title">Choose the next introduction with the information you have.</h1>
+            <p class="hero-lede">A small, inspectable walkthrough of a changing pool: ask for a missing hard constraint, respect both people’s boundaries, then wait for feedback to arrive.</p>
+            <div class="hero-actions">
+              <button class="button button-primary" id="start-demo"><span>Start the public preset</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+              <a class="text-link" href="https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final/blob/cleanup/repository-presentation/final_report/REPORT.md" target="_blank" rel="noreferrer">Read the report <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="micro-note"><span class="micro-dot"></span> Seed 101 · development family · 200 synthetic members · 60 decision days + 40 follow-up days</p>
+          </div>
+          <div class="hero-panel" aria-label="What the walkthrough shows">
+            <div class="panel-kicker">THE VISITOR PATH</div>
+            <ol class="path-list">
+              <li><span class="path-number">01</span><div><strong>Observe</strong><p>See only what the simulator has released today.</p></div></li>
+              <li><span class="path-number">02</span><div><strong>Clarify</strong><p>Spend the daily budget on a hard field when it can unblock a pair.</p></div></li>
+              <li><span class="path-number">03</span><div><strong>Match</strong><p>Allocate feasible edges once per member, then let feedback mature.</p></div></li>
+            </ol>
+            <div class="panel-foot"><span>Retained policy</span><strong>Greedy baseline</strong></div>
+          </div>
+        </div>
+        <div class="overview-strip">
+          <article><span class="strip-index">01</span><h2>Constraints first</h2><p>Age, gender preference, structure, smoking, children, zone and schedule are reciprocal checks.</p></article>
+          <article><span class="strip-index">02</span><h2>Answers are delayed</h2><p>An introduction is not a rejection. Dates and second-meeting intention arrive on their own clocks.</p></article>
+          <article><span class="strip-index">03</span><h2>Evidence stays modest</h2><p>This is one curated episode for understanding behavior, not a new evaluation or relationship prediction.</p></article>
+        </div>
+      </section>
+
+      <section id="simulation-view" class="view simulation-view is-hidden" aria-labelledby="simulation-title">
+        <div class="run-header">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-rule"></span><span id="run-preset-label">Public preset</span></p>
+            <h1 id="simulation-title">A living pool, one bounded step at a time.</h1>
+          </div>
+          <div class="run-header-meta"><span class="policy-chip" id="run-policy">GREEDY</span><span class="run-id" id="run-id">—</span></div>
+        </div>
+        <div class="phase-rail" aria-label="Simulation phase and day">
+          <div class="phase-step is-current" data-phase-step="ask"><span class="phase-icon">?</span><span>Questioning</span></div>
+          <div class="phase-line"></div>
+          <div class="phase-step" data-phase-step="match"><span class="phase-icon">↗</span><span>Matching</span></div>
+          <div class="phase-line"></div>
+          <div class="phase-step" data-phase-step="followup"><span class="phase-icon">◷</span><span>Follow-up</span></div>
+          <div class="day-readout"><span id="day-label">DAY 00</span><strong id="phase-label">Questioning</strong><span id="phase-detail">Observe and ask before matching</span></div>
+        </div>
+        <div class="control-bar">
+          <div class="control-group">
+            <button class="button button-primary button-small" id="next-phase">Next phase <span aria-hidden="true">→</span></button>
+            <button class="button button-quiet button-small" id="next-day">Next day</button>
+            <button class="button button-quiet button-small" id="play-button" aria-pressed="false"><span id="play-icon">▶</span><span id="play-label">Play</span></button>
+            <button class="button button-quiet button-small" id="finish-button">Finish episode</button>
+          </div>
+          <div class="control-group control-group-right">
+            <button class="icon-button" id="export-button" title="Download public run export" aria-label="Download public run export">↓</button>
+            <button class="button button-quiet button-small" id="reset-button">Reset</button>
+          </div>
+        </div>
+        <div id="run-message" class="run-message" role="status" aria-live="polite"></div>
+
+        <div class="metric-grid" aria-label="Current outcome metrics">
+          <article class="metric-card metric-card-accent"><span class="metric-label">Clarification budget</span><strong id="metric-budget">12</strong><span class="metric-sub" id="metric-budget-sub">units remaining today</span><div class="budget-track"><span id="budget-fill"></span></div></article>
+          <article class="metric-card"><span class="metric-label">Introductions</span><strong id="metric-assignments">0</strong><span class="metric-sub">valid assignments</span></article>
+          <article class="metric-card"><span class="metric-label">Dates</span><strong id="metric-dates">0</strong><span class="metric-sub">recorded by the simulator</span></article>
+          <article class="metric-card"><span class="metric-label">Qualified MSMI</span><strong id="metric-msmi">0</strong><span class="metric-sub" id="metric-msmi-sub">provisional outcome count</span></article>
+          <article class="metric-card metric-card-warm"><span class="metric-label">Coverage</span><strong id="metric-coverage">0%</strong><span class="metric-sub" id="metric-coverage-sub">served / arrived</span></article>
+        </div>
+
+        <div class="workspace-grid">
+          <section class="surface member-surface" aria-labelledby="members-heading">
+            <div class="surface-heading"><div><p class="section-kicker">VISIBLE POOL</p><h2 id="members-heading">Available members</h2></div><span class="count-badge" id="member-count">0</span></div>
+            <div class="member-tools"><label class="search-field"><span class="sr-only">Search members</span><span aria-hidden="true">⌕</span><input id="member-search" type="search" placeholder="Search ID, zone or status"></label><button class="filter-button is-active" data-filter="all">All</button><button class="filter-button" data-filter="available">Available</button></div>
+            <div class="table-wrap"><table class="member-table"><caption class="sr-only">Synthetic members visible at the current day</caption><thead><tr><th scope="col">Member</th><th scope="col">Age / zone</th><th scope="col">Fields</th><th scope="col">State</th></tr></thead><tbody id="member-table-body"></tbody></table></div>
+            <p class="table-footnote" id="member-table-note">Public observations only. Select a row to inspect reciprocal eligibility.</p>
+          </section>
+
+          <aside class="surface inspector-surface" aria-labelledby="inspector-heading">
+            <div class="surface-heading"><div><p class="section-kicker">DECISION INSPECTOR</p><h2 id="inspector-heading">Select a member</h2></div><span class="inspector-mark" aria-hidden="true">✳</span></div>
+            <div id="inspector-content" class="inspector-empty"><span class="empty-glyph" aria-hidden="true">◎</span><p>Choose a row to see missing hard fields, feasible candidates and the reason a pair is waiting.</p></div>
+          </aside>
+
+          <section class="surface action-surface" aria-labelledby="action-heading">
+            <div class="surface-heading"><div><p class="section-kicker">LATEST TRACE</p><h2 id="action-heading">What just happened</h2></div><span class="trace-live"><span class="live-dot"></span> live</span></div>
+            <div id="latest-action" class="latest-action"><p class="empty-copy">Start the run to reveal the policy’s first action.</p></div>
+            <div class="action-divider"></div>
+            <div class="surface-heading compact-heading"><h3>Outcome funnel</h3><span class="definition-hint" tabindex="0" title="Counts are cumulative and provisional until follow-up completes.">?</span></div>
+            <div id="outcome-funnel" class="funnel-list"></div>
+          </section>
+        </div>
+
+        <section class="surface timeline-surface" aria-labelledby="timeline-heading">
+          <div class="surface-heading"><div><p class="section-kicker">RELEASED EVENTS</p><h2 id="timeline-heading">Timeline</h2></div><span class="timeline-note">No future feedback is shown</span></div>
+          <div id="timeline" class="timeline-list"><p class="empty-copy">Events will appear here as the episode advances.</p></div>
+        </section>
+        <p class="simulation-disclaimer"><span class="micro-dot"></span> The web adapter runs the trusted in-process simulator. It receives public observations only; it is a teaching interface, not the restricted competition assessment environment.</p>
+      </section>
+
+      <section id="compare-view" class="view compare-view is-hidden" aria-labelledby="compare-title">
+        <div class="compare-header"><div><p class="eyebrow"><span class="eyebrow-rule"></span>Same preset, three supplied controls</p><h1 id="compare-title">Watch the controls diverge on one episode.</h1><p class="hero-lede">Greedy, No clarification and Random feasible share the same seed, population and simulator family. The result is illustrative and can change with a different realization.</p></div><button class="button button-primary" id="start-compare">Run illustrative comparison <span aria-hidden="true">↗</span></button></div>
+        <div id="compare-message" class="run-message" role="status" aria-live="polite"></div>
+        <div id="compare-cards" class="compare-grid">
+          <article class="compare-card compare-card-featured"><div class="compare-card-head"><span class="policy-chip">GREEDY</span><span class="compare-state">ready</span></div><h2>Clarify, then allocate</h2><p>Supplied retained baseline. Uses shared soft answers after hard eligibility is known.</p><div class="compare-placeholder">—</div><span class="compare-foot">Illustrative MSMI / coverage</span></article>
+          <article class="compare-card"><div class="compare-card-head"><span class="policy-chip policy-chip-muted">NO CLARIFICATION</span><span class="compare-state">ready</span></div><h2>Wait on unknowns</h2><p>Supplied control that never spends the daily clarification budget.</p><div class="compare-placeholder">—</div><span class="compare-foot">Illustrative MSMI / coverage</span></article>
+          <article class="compare-card"><div class="compare-card-head"><span class="policy-chip policy-chip-warm">RANDOM FEASIBLE</span><span class="compare-state">ready</span></div><h2>Shuffle feasible edges</h2><p>Supplied control that samples a non-overlapping feasible batch.</p><div class="compare-placeholder">—</div><span class="compare-foot">Illustrative MSMI / coverage</span></article>
+        </div>
+        <div class="compare-note"><span class="note-mark">i</span><p>Historical report aggregates are linked separately. A single run here is a demonstration of mechanics, not a statistically significant policy comparison.</p><a class="text-link" href="https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final/blob/cleanup/repository-presentation/final_report/REPORT.md" target="_blank" rel="noreferrer">Open corrected report ↗</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>One Introduction · synthetic research demo</span><span><a href="https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final/tree/cleanup/repository-presentation" target="_blank" rel="noreferrer">source ↗</a><span class="footer-sep">/</span><a href="https://github.com/manyakaistha/The-Sequential-Matching-Problem-Final/blob/cleanup/repository-presentation/docs/DEMO.md" target="_blank" rel="noreferrer">technical notes ↗</a></span></footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/static/app.js"></script>
+  </body>
+</html>
